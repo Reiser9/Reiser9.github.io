@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Список покупок</title>
+
+	<!-- Fonts -->
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<!-- Favicon -->
+
+</head>
+<body>
+
+	<div class="headertop">
+		<div class="container">
+			<div class="header__top">
+				<div class="header__top--wrapper">
+					<div class="header__block--wrapper">
+						<div class="header__city--inner">
+							<img src="img/map.png" alt="Город" class="city__icon">
+
+							<p class="city__name">
+								Москва
+							</p>
+						</div>
+
+						<div class="header__citylist">
+							<img src="img/cross.png" alt="Закрыть" class="headerlist__cross">
+
+							<div class="header__citylist--search--inner">
+								<input type="text" class="input header__search--input" placeholder="Поиск">
+
+								<img src="img/search.png" alt="Поиск" class="header__search--icon">
+							</div>
+
+							<div class="header__citylist--content">
+								<div class="header__citylist--item">
+									<a href="#" class="header__citylist--point">
+										Москва
+									</a>
+
+									<a href="#" class="header__citylist--point">
+										Тюмень
+									</a>
+
+									<a href="#" class="header__citylist--point">
+										Архангельск
+									</a>
+
+									<a href="#" class="header__citylist--point">
+										Нальчик
+									</a>
+								</div>
+
+								<div class="header__citylist--item">
+									<a href="#" class="header__citylist--point">
+										Тула
+									</a>
+
+									<a href="#" class="header__citylist--point">
+										Якутск
+									</a>
+
+									<a href="#" class="header__citylist--point">
+										Новосибирск
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="header__user--inner">
+						<img src="img/user.png" alt="Пользователь" class="header__user--img">
+
+						<p class="header__user--text">
+							Антон - Личный кабинет
+						</p>
+					</a>
+				</div>
+
+				<a href="#" class="header__cart--inner open__list">
+					<img src="img/cart.png" alt="Корзина" class="header__cart--img">
+
+					<p class="header__cart--text">
+						5 товаров на сумму 700 рублей
+					</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__inner flex100">
+				<div class="header__content">
+					<div class="header__wrapper">
+						<a href="/" class="logo__inner">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</a>
+
+						<div class="header__search--inner">
+							<input type="text" class="input header__search--input" placeholder="Поиск">
+
+							<img src="img/search.png" alt="Поиск" class="header__search--icon">
+
+							<div class="header__search--info active">
+								<div class="header__search--item">
+									<div class="header__search--wrapper">
+										<p class="header__search--item--title">
+											Категории
+										</p>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/product1.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Категория
+											</span>
+										</a>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/product1.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Категория
+											</span>
+										</a>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/product2.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Категория
+											</span>
+										</a>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/product3.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Категория
+											</span>
+										</a>
+									</div>
+
+									<div class="header__search--wrapper">
+										<p class="header__search--item--title">
+											Магазины
+										</p>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/store1.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Пятерочка
+											</span>
+										</a>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/store2.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Магнит
+											</span>
+										</a>
+
+										<a href="#" class="header__search--item--point">
+											<img src="img/store3.png" alt="Товар" class="header__search--item--point--img">
+
+											<span class="header__search--item--point--name">
+												Перекресток
+											</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="header__search--item--product">
+									<p class="header__search--item--title">
+										Товары
+									</p>
+
+									<a href="#" class="header__search--item--point">
+										<img src="img/product1.png" alt="Товар" class="header__search--item--point--img">
+
+										<span class="header__search--item--point--name">
+											Товар
+										</span>
+									</a>
+
+									<a href="#" class="header__search--item--point">
+										<img src="img/product4.png" alt="Товар" class="header__search--item--point--img">
+
+										<span class="header__search--item--point--name">
+											Товар
+										</span>
+									</a>
+
+									<a href="#" class="header__search--item--point">
+										<img src="img/product5.png" alt="Товар" class="header__search--item--point--img">
+
+										<span class="header__search--item--point--name">
+											Товар
+										</span>
+									</a>
+
+									<a href="#" class="header__search--item--point">
+										<img src="img/product6.png" alt="Товар" class="header__search--item--point--img">
+
+										<span class="header__search--item--point--name">
+											Товар
+										</span>
+									</a>
+
+									<a href="#" class="header__search--item--point">
+										<img src="img/product7.png" alt="Товар" class="header__search--item--point--img">
+
+										<span class="header__search--item--point--name">
+											Товар
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__nav">
+							<div class="header__menu">
+								<img src="img/menu.png" alt="Меню" class="menu open__list">
+							</div>
+
+							<a href="#" class="header__nav--link">
+								Скидки
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Меню
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Купоны
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Магазины
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Журнал
+							</a>
+						</div>
+
+						<img src="img/burger.svg" alt="Меню" class="burger">
+					</div>
+
+					<a href="#" class="header__enter">
+						<img src="img/enter.png" alt="Вход" class="header__enter--icon">
+
+						Вход/Регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<div class="main__inner">
+				<div class="main__slide">
+					<div class="main__text--inner">
+						<img src="img/store1.png" alt="Магазин" class="main__text--logo">
+
+						<h2 class="main__text--title">
+							Новый вкус
+						</h2>
+
+						<p class="main__text--text">
+							Новые вкусы Lays по специальной скидке вместе с сетью магазинов Пятерочка.
+						</p>
+
+						<p class="main__text--subtext">
+							Успей до 12 сентября 2021 года!
+						</p>
+
+						<button class="button main__text--button">
+							Подробнее
+						</button>
+					</div>
+
+					<div class="main__img--inner">
+						<img src="img/main-slide.png" alt="Картинка" class="main__img">
+					</div>
+				</div>
+
+				<div class="main__slide">
+					<div class="main__text--inner">
+						<img src="img/store1.png" alt="Магазин" class="main__text--logo">
+
+						<h2 class="main__text--title">
+							Новый вкус
+						</h2>
+
+						<p class="main__text--text">
+							Новые вкусы Lays по специальной скидке вместе с сетью магазинов Пятерочка.
+						</p>
+
+						<p class="main__text--subtext">
+							Успей до 12 сентября 2021 года!
+						</p>
+
+						<button class="button main__text--button">
+							Подробнее
+						</button>
+					</div>
+
+					<div class="main__img--inner">
+						<img src="img/main-slide.png" alt="Картинка" class="main__img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="store">
+		<div class="container">
+			<div class="store__inner flex100">
+				<div class="title__inner">
+					<img src="img/store.png" alt="Сеть магазинов" class="title__icon">
+
+					<h2 class="title review__title">
+						Сеть магазинов
+					</h2>
+				</div>
+
+				<div class="store__content">
+					<div class="store__item">
+						<div class="store__item--wrapper">
+							<a href="#" class="store__item--img--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="store__item--img">
+							</a>
+
+							<div class="store__rate--inner">
+								<img src="img/star.png" alt="Рейтинг" class="store__rate--icon">
+
+								<p class="store__rate">
+									4.9/5
+								</p>
+							</div>
+						</div>
+
+						<a href="#" class="store__item--name link__hover">
+							Пятерочка
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							13535 магазинов
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							3000 акций
+						</a>
+					</div>
+
+					<div class="store__item">
+						<div class="store__item--wrapper">
+							<a href="#" class="store__item--img--inner link__hover">
+								<img src="img/store2.png" alt="Магазин" class="store__item--img">
+							</a>
+
+							<div class="store__rate--inner">
+								<img src="img/star.png" alt="Рейтинг" class="store__rate--icon">
+
+								<p class="store__rate">
+									5/5
+								</p>
+							</div>
+						</div>
+
+						<a href="#" class="store__item--name link__hover">
+							Магнит
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							8613 магазинов
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							1352 акций
+						</a>
+					</div>
+
+					<div class="store__item">
+						<div class="store__item--wrapper">
+							<a href="#" class="store__item--img--inner link__hover">
+								<img src="img/store3.png" alt="Магазин" class="store__item--img">
+							</a>
+
+							<div class="store__rate--inner">
+								<img src="img/star.png" alt="Рейтинг" class="store__rate--icon">
+
+								<p class="store__rate">
+									4.9/5
+								</p>
+							</div>
+						</div>
+
+						<a href="#" class="store__item--name link__hover">
+							Перекресток
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							9514 магазинов
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							7461 акций
+						</a>
+					</div>
+
+					<div class="store__item">
+						<div class="store__item--wrapper">
+							<a href="#" class="store__item--img--inner link__hover">
+								<img src="img/store4.png" alt="Магазин" class="store__item--img">
+							</a>
+
+							<div class="store__rate--inner">
+								<img src="img/star.png" alt="Рейтинг" class="store__rate--icon">
+
+								<p class="store__rate">
+									4.8/5
+								</p>
+							</div>
+						</div>
+
+						<a href="#" class="store__item--name link__hover">
+							Лента
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							2514 магазинов
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							452 акций
+						</a>
+					</div>
+
+					<div class="store__item">
+						<div class="store__item--wrapper">
+							<a href="#" class="store__item--img--inner link__hover">
+								<img src="img/store2.png" alt="Магазин" class="store__item--img">
+							</a>
+
+							<div class="store__rate--inner">
+								<img src="img/star.png" alt="Рейтинг" class="store__rate--icon">
+
+								<p class="store__rate">
+									5/5
+								</p>
+							</div>
+						</div>
+
+						<a href="#" class="store__item--name link__hover">
+							Магнит
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							8613 магазинов
+						</a>
+
+						<a href="#" class="store__item--text link__hover">
+							1352 акций
+						</a>
+					</div>
+				</div>
+
+				<div class="arrows__inner">
+					<a href="#" class="link__arrow store__all">
+						Смотреть все
+
+						<img src="img/next.png" alt="Стрелка" class="read__img">
+					</a>
+
+					<div class="arrows__wrapper"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="city">
+		<div class="container">
+			<div class="city__inner flex100">
+				<div class="title__inner">
+					<img src="img/city.png" alt="Крупные города" class="title__icon">
+
+					<h2 class="title review__title">
+						Крупные города
+					</h2>
+				</div>
+
+				<div class="city__content">
+					<div class="city__wrapper">
+						<p class="city__wrapper--title">
+							Поиск по алфавиту
+						</p>
+
+						<input type="text" class="input city__input" placeholder="Поиск по алфавиту">
+
+						<div class="city__wrapper--content">
+							<div class="city__wrapper--item active" data-letter="А">
+								А
+							</div>
+
+							<div class="city__wrapper--item" data-letter="Б">
+								Б
+							</div>
+
+							<div class="city__wrapper--item" data-letter="В">
+								В
+							</div>
+
+							<div class="city__wrapper--item">
+								Г
+							</div>
+
+							<div class="city__wrapper--item">
+								Д
+							</div>
+
+							<div class="city__wrapper--item">
+								Е
+							</div>
+
+							<div class="city__wrapper--item">
+								Ж
+							</div>
+
+							<div class="city__wrapper--item">
+								З
+							</div>
+
+							<div class="city__wrapper--item">
+								И
+							</div>
+
+							<div class="city__wrapper--item">
+								К
+							</div>
+
+							<div class="city__wrapper--item">
+								Л
+							</div>
+
+							<div class="city__wrapper--item">
+								М
+							</div>
+
+							<div class="city__wrapper--item">
+								Н
+							</div>
+
+							<div class="city__wrapper--item">
+								О
+							</div>
+
+							<div class="city__wrapper--item">
+								П
+							</div>
+
+							<div class="city__wrapper--item">
+								Р
+							</div>
+
+							<div class="city__wrapper--item">
+								С
+							</div>
+
+							<div class="city__wrapper--item">
+								Т
+							</div>
+
+							<div class="city__wrapper--item">
+								У
+							</div>
+
+							<div class="city__wrapper--item">
+								Ф
+							</div>
+
+							<div class="city__wrapper--item">
+								Х
+							</div>
+
+							<div class="city__wrapper--item">
+								Ц
+							</div>
+
+							<div class="city__wrapper--item">
+								Ч
+							</div>
+
+							<div class="city__wrapper--item">
+								Ш
+							</div>
+
+							<div class="city__wrapper--item">
+								Щ
+							</div>
+
+							<div class="city__wrapper--item">
+								Ы
+							</div>
+
+							<div class="city__wrapper--item">
+								Ю
+							</div>
+
+							<div class="city__wrapper--item">
+								Я
+							</div>
+						</div>
+					</div>
+
+					<dia href="#" class="city__values">
+						<div class="city__item active" data-letter="А">
+							<a href="#" class="city__value">
+								Абaза
+							</a>
+
+							<a href="#" class="city__value">
+								Адамовка
+							</a>
+
+							<a href="#" class="city__value">
+								Аксубаево
+							</a>
+
+							<a href="#" class="city__value">
+								Абакан
+							</a>
+
+							<a href="#" class="city__value">
+								Адыгейск
+							</a>
+
+							<a href="#" class="city__value">
+								Акташ
+							</a>
+
+							<a href="#" class="city__value">
+								Абан
+							</a>
+
+							<a href="#" class="city__value">
+								Азнакаево
+							</a>
+
+							<a href="#" class="city__value">
+								Актюбинский
+							</a>
+
+							<a href="#" class="city__value">
+								Абатский
+							</a>
+
+							<a href="#" class="city__value">
+								Азов
+							</a>
+
+							<a href="#" class="city__value">
+								Акутиха
+							</a>
+
+							<a href="#" class="city__value">
+								Абдулино
+							</a>
+
+							<a href="#" class="city__value">
+								Айгунь
+							</a>
+						</div>
+
+						<div class="city__item" data-letter="Б">
+							<a href="#" class="city__value">
+								Братск
+							</a>
+
+							<a href="#" class="city__value">
+								Байтонур
+							</a>
+
+							<a href="#" class="city__value">
+								Байконур
+							</a>
+
+							<a href="#" class="city__value">
+								Балакан
+							</a>
+
+							<a href="#" class="city__value">
+								Былга
+							</a>
+
+							<a href="#" class="city__value">
+								Биктайм
+							</a>
+
+							<a href="#" class="city__value">
+								Бигик
+							</a>
+						</div>
+
+						<div class="city__item" data-letter="В">
+							<a href="#" class="city__value">
+								Войновка
+							</a>
+
+							<a href="#" class="city__value">
+								Волгоград
+							</a>
+
+							<a href="#" class="city__value">
+								Витебск
+							</a>
+
+							<a href="#" class="city__value">
+								Вилновал
+							</a>
+
+							<a href="#" class="city__value">
+								Войник
+							</a>
+
+							<a href="#" class="city__value">
+								Винко
+							</a>
+
+							<a href="#" class="city__value">
+								Ванек
+							</a>
+
+							<a href="#" class="city__value">
+								Вилконож
+							</a>
+
+							<a href="#" class="city__value">
+								Велкол
+							</a>
+
+							<a href="#" class="city__value">
+								Всков
+							</a>
+
+							<a href="#" class="city__value">
+								Восков
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sub">
+		<div class="container">
+			<div class="sub__inner flex100">
+				<h2 class="sub__title bold">
+					Подпишитесь на рассылку
+				</h2>
+
+				<div class="sub__content">
+					<div class="sub__item">
+						<p class="sub__text">
+							будьте в курсе всех новостей и всегда
+							платите меньше
+						</p>
+
+						<button class="button white sub__button">
+							Подписаться
+						</button>
+					</div>
+
+					<div class="sub__item">
+						<p class="sub__text">
+							или вступите в <span class="bold">клуб покупателей</span>
+						</p>
+
+						<button class="button white sub__button">
+							Вступить
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="rec">
+		<div class="container">
+			<div class="rec__inner flex100">
+				<div class="title__inner">
+					<img src="img/food.png" alt="Рекомендуемые товары" class="title__icon">
+
+					<h2 class="title review__title">
+						Рекомендуемые товары
+					</h2>
+				</div>
+
+				<div class="rec__content content">
+					<div class="rec__item item">
+						<div class="book__wrapper">
+							<div class="rec__item--wrapper">
+								<div class="rec__item--img--inner">
+									<img src="img/product1.png" alt="Продукт" class="rec__item--img">
+
+									<img src="img/store2.png" alt="Магазин" class="rec__item--logo">
+								</div>
+
+								<div class="rec__item--content">
+									<div class="rec__item--sale active" data-price="1">
+										-30%
+									</div>
+
+									<div class="rec__item--sale" data-price="2">
+										-20%
+									</div>
+
+									<button class="button btn fav__button">
+										<span class="btn__img--inner">
+											<img src="img/fav.png" alt="Избранное" class="cart__icon">
+										</span>
+
+										Избранное
+									</button>
+
+									<button class="button btn copy__button">
+										<span class="btn__img--inner">
+											<img src="img/copy.png" alt="Сравнить" class="cart__icon">
+										</span>
+
+										Сравнить
+									</button>
+								</div>
+							</div>
+
+							<div class="rec__item--text">
+								Пельмени «Мираторг»,
+								из говядины, 980 г
+							</div>
+
+							<div class="rec__wrapper">
+								<div class="rec__item--weight--inner active" data-price="1">
+									<p class="rec__item--weight">
+										980 г
+									</p>
+
+									<div class="rec__item--weight--line"></div>
+
+									<p class="rec__item--weight--price">
+										980 ₽ за 1 кг 
+									</p>
+								</div>
+
+								<div class="rec__item--weight--inner" data-price="2">
+									<p class="rec__item--weight">
+										800 г
+									</p>
+
+									<div class="rec__item--weight--line"></div>
+
+									<p class="rec__item--weight--price">
+										980 ₽ за 1 кг 
+									</p>
+								</div>
+							</div>
+
+							<div class="rec__item--button--inner">
+								<button class="button rec__item--button for3__button active" data-price="1" data-img="product1.png">
+									980 г
+								</button>
+
+								<button class="button rec__item--button for3__button" data-price="2" data-img="product2.png">
+									800 г
+								</button>
+							</div>
+						</div>
+
+						<div class="rec__item--cart--inner">
+							<div class="rec__item--price--inner active" data-price="1">
+								<p class="rec__item--price">
+									699.99 ₽
+								</p>
+
+								<p class="rec__item--price--prev">
+									980.99 ₽
+								</p>
+							</div>
+
+							<div class="rec__item--price--inner" data-price="2">
+								<p class="rec__item--price">
+									699.99 ₽
+								</p>
+
+								<p class="rec__item--price--prev">
+									1080.99 ₽
+								</p>
+							</div>
+
+							<button class="button btn cart__button">
+								<span class="btn__img--inner">
+									<img src="img/cart.png" alt="Корзина" class="cart__icon">
+								</span>
+
+								В список
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="book">
+		<div class="container">
+			<div class="book__inner flex100">
+				<div class="title__inner">
+					<img src="img/book.png" alt="Журналы" class="title__icon">
+
+					<h2 class="title review__title">
+						Журналы магазина
+					</h2>
+				</div>
+
+				<div class="book__content content">
+					<div class="item book__item">
+						<div class="book__wrapper">
+							<a href="#" class="book__img--inner">
+								<img src="img/book1.png" alt="Картинка" class="book__img">
+
+								<span class="book__img--pages">
+									50
+								</span>
+							</a>
+
+							<div class="book__store--inner">
+								<img src="img/store1.png" alt="Пятерочка" class="book__store--img">
+
+								Пятерочка
+							</div>
+
+							<p class="book__item--title">
+								Доступные вкусняшки
+							</p>
+
+							<p class="book__item--text">
+								Множество доступных вкусняшек по скидкам!
+							</p>
+						</div>
+
+						<div class="book__button--inner">
+							<div class="book__button">
+								до 15.02.22
+							</div>
+
+							<div class="book__map--inner">
+								<img src="img/map.png" alt="Город" class="city__icon">
+
+								<p class="city__name">
+									Москва
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item book__item">
+						<div class="book__wrapper">
+							<a href="#" class="book__img--inner">
+								<img src="img/book2.png" alt="Картинка" class="book__img">
+
+								<span class="book__img--pages">
+									24
+								</span>
+							</a>
+
+							<div class="book__store--inner">
+								<img src="img/store4.png" alt="Пятерочка" class="book__store--img">
+
+								Лента
+							</div>
+
+							<p class="book__item--title">
+								Готовим со вкусом
+							</p>
+
+							<p class="book__item--text">
+								Вкусная еда по низким ценам!
+							</p>
+						</div>
+
+						<div class="book__button--inner">
+							<div class="book__button">
+								до 13.02.22
+							</div>
+
+							<div class="book__map--inner">
+								<img src="img/map.png" alt="Город" class="city__icon">
+
+								<p class="city__name">
+									Москва
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item book__item">
+						<div class="book__wrapper">
+							<a href="#" class="book__img--inner">
+								<img src="img/book3.png" alt="Картинка" class="book__img">
+
+								<span class="book__img--pages">
+									67
+								</span>
+							</a>
+
+							<div class="book__store--inner">
+								<img src="img/store2.png" alt="Пятерочка" class="book__store--img">
+
+								Магнит
+							</div>
+
+							<p class="book__item--title">
+								Для всех Россиян
+							</p>
+
+							<p class="book__item--text">
+								Низкие цены каждому Россиянину!
+							</p>
+						</div>
+
+						<div class="book__button--inner">
+							<div class="book__button">
+								до 01.06.21
+							</div>
+
+							<div class="book__map--inner">
+								<img src="img/map.png" alt="Город" class="city__icon">
+
+								<p class="city__name">
+									Москва
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item book__item">
+						<div class="book__wrapper">
+							<a href="#" class="book__img--inner">
+								<img src="img/book4.png" alt="Картинка" class="book__img">
+
+								<span class="book__img--pages">
+									95
+								</span>
+							</a>
+
+							<div class="book__store--inner">
+								<img src="img/store3.png" alt="Пятерочка" class="book__store--img">
+
+								Перекресток
+							</div>
+
+							<p class="book__item--title">
+								Летний сезон открыт!
+							</p>
+
+							<p class="book__item--text">
+								Продолжаем сезон шашлыков и барбекю
+							</p>
+						</div>
+
+						<div class="book__button--inner">
+							<div class="book__button">
+								до 09.02.22
+							</div>
+
+							<div class="book__map--inner">
+								<img src="img/map.png" alt="Город" class="city__icon">
+
+								<p class="city__name">
+									Москва
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="link__arrow book__all">
+					Смотреть все
+
+					<img src="img/next.png" alt="Стрелка" class="read__img">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="why">
+		<div class="container">
+			<div class="why__inner flex100">
+				<div class="title__inner">
+					<img src="img/info.png" alt="Почему мы" class="title__icon">
+
+					<h2 class="title review__title">
+						Почему мы?
+					</h2>
+				</div>
+
+				<div class="why__content">
+					<div class="why__wrapper">
+						<div class="why__logo--inner">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</div>
+
+						<div class="why__point--inner">
+							<div class="why__point">
+								<span class="why__point--num total__value">1953</span> пользователей
+							</div>
+
+							<div class="why__point">
+								<span class="why__point--num total__value2">1953</span> рекомендаций
+							</div>
+
+							<div class="why__point">
+								<span class="why__point--num total__value3">1953</span> положительных отзывов
+							</div>
+
+							<div class="why__point">
+								<span class="why__point--num total__value4">1953</span> других достижений
+							</div>
+						</div>
+					</div>
+
+					<div class="why__text--inner">
+						<div class="why__text--item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+						</div>
+
+						<div class="why__text--item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="review">
+		<div class="container">
+			<div class="review__inner flex100">
+				<div class="title__inner">
+					<img src="img/like.png" alt="Отзывы" class="title__icon">
+
+					<h2 class="title review__title">
+						Отзывы
+					</h2>
+				</div>
+
+				<div class="review__content">
+					<div class="review__item">
+						<div class="review__img--inner">
+							<img src="img/person1.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Ольга
+								</p>
+
+								<a href="#" class="review__like">
+									<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+								</a>
+							</div>
+
+							<p class="review__text">
+								Добрый день, уважаемые читатели ! Очень радуют нас конфеты, которые производит "Дом сладостей" из Калининграда...
+							</p>
+						</div>
+
+						<div class="review__read--inner">
+							<a href="#" class="review__logo--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="review__logo">
+							</a>
+
+							<a href="#" class="link__arrow review__read">
+								Читать отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+						</div>
+					</div>
+
+					<div class="review__item">
+						<div class="review__img--inner">
+							<img src="img/person1.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Анастасия
+								</p>
+
+								<a href="#" class="review__like">
+									<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+								</a>
+							</div>
+
+							<p class="review__text">
+								Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка. 
+							</p>
+						</div>
+
+						<div class="review__read--inner">
+							<a href="#" class="review__logo--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="review__logo">
+							</a>
+
+							<a href="#" class="link__arrow review__read">
+								Читать отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+						</div>
+					</div>
+
+					<div class="review__item">
+						<div class="review__img--inner">
+							<img src="img/person2.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Евгений
+								</p>
+
+								<a href="#" class="review__like">
+									<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+								</a>
+							</div>
+
+							<p class="review__text">
+								Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка. 
+							</p>
+						</div>
+
+						<div class="review__read--inner">
+							<a href="#" class="review__logo--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="review__logo">
+							</a>
+
+							<a href="#" class="link__arrow review__read">
+								Читать отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<button class="button review__button">
+					Поделиться мнением
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner flex100">
+				<div class="footer__content">
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Помощь
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								Инструкции и советы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Написать в поддержку
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Правовые документы
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Мы в социальных сетях
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								ВКонтакте
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Инстраграм
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Тик-Ток
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Правообладателям
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								О предъявлении претензий
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__logo--inner">
+						<a href="#" class="footer__logo">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</a>
+
+						<p class="logo__name">
+							Company name
+						</p>
+
+						<div class="footer__social--inner">
+							<a href="#" class="footer__social--link">
+								<img src="img/tiktok.png" alt="Тик ток" class="footer__social--icon">
+							</a>
+
+							<a href="#" class="footer__social--link">
+								<img src="img/vk.png" alt="Вк" class="footer__social--icon">
+							</a>
+
+							<a href="#" class="footer__social--link">
+								<img src="img/instagram.png" alt="Инстаграм" class="footer__social--icon">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<p class="footer__copy">
+					&copy; 2014-2021
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal__menu">
+		<img src="img/cross.png" alt="Закрыть" class="modal__menu--close">
+
+		<div class="modal__nav">
+			<a href="#" class="modal__nav--link">
+				Скидки
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Меню
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Купоны
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Магазины
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Журнал
+			</a>
+
+			<a href="#" class="modal__nav--link open__list">
+				Список покупок
+			</a>
+		</div>
+
+		<a href="#" class="header__enter modal__enter">
+			<img src="img/enter.png" alt="Вход" class="header__enter--icon">
+
+			Вход/Регистрация
+		</a>
+
+		<!-- <a href="#" class="header__user--inner">
+			<img src="img/user.png" alt="Пользователь" class="header__user--img">
+
+			<p class="header__user--text">
+				Антон - Личный кабинет
+			</p>
+		</a>
+
+		<a href="#" class="header__cart--inner open__list">
+			<img src="img/cart.png" alt="Корзина" class="header__cart--img">
+
+			<p class="header__cart--text">
+				5 товаров на сумму 700 рублей
+			</p>
+		</a> -->
+	</div>
+
+	<div class="modal__list">
+		<img src="img/cross.png" alt="Закрыть" class="modal__list--cross">
+
+		<div class="modal__list--title--inner">
+			<img src="img/cart2.png" alt="Картинка" class="modal__list--title--icon">
+
+			<h2 class="modal__list--title">
+				Список покупок
+			</h2>
+		</div>
+
+		<div class="modal__list--content">
+			<div class="modal__list--item">
+				<div class="modal__list--number--inner">
+					<div class="modal__list--number">
+						1
+					</div>
+
+					Чипсы
+				</div>
+
+				<div class="shop__block--item">
+					<div class="shop__block--wrapper">
+						<div class="shop__block--img--inner">
+							<img src="img/product1.png" alt="Продукт" class="shop__block--img">
+
+							<img src="img/store2.png" alt="Магазин" class="shop__block--img--logo">
+						</div>
+
+						<div class="shop__block--content">
+							<p class="shop__block--title">
+								Пельмени «Мираторг», из говядины, 980 г
+							</p>
+
+							<div class="rec__item--weight--inner active" data-price="1">
+								<p class="rec__item--weight">
+									980 г
+								</p>
+
+								<div class="rec__item--weight--line"></div>
+
+								<p class="rec__item--weight--price">
+									980 ₽ за 1 кг 
+								</p>
+
+								<div class="rec__circle">
+									<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+								</div>
+
+								<div class="select__block">
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											780 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											780 ₽ за 1 кг 
+										</p>
+									</div>
+
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											880 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											880 ₽ за 1 кг 
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rec__item--weight--inner" data-price="2">
+								<p class="rec__item--weight">
+									800 г
+								</p>
+
+								<div class="rec__item--weight--line"></div>
+
+								<p class="rec__item--weight--price">
+									980 ₽ за 1 кг 
+								</p>
+
+								<div class="rec__circle">
+									<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+								</div>
+
+								<div class="select__block">
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											780 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											780 ₽ за 1 кг 
+										</p>
+									</div>
+
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											880 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											880 ₽ за 1 кг 
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rec__item--button--inner">
+								<button class="button rec__item--button forlist__button active" data-price="1" data-img="product1.png">
+									980 г
+								</button>
+
+								<button class="button rec__item--button forlist__button" data-price="2" data-img="product2.png">
+									800 г
+								</button>
+							</div>
+
+							<div class="shop__block--value--inner">
+								<p class="shop__block--value--text">
+									Количество
+								</p>
+
+								<input type="number" class="input shop__block--value" value="1">
+							</div>
+						</div>
+					</div>
+
+					<div class="shop__block--inner">
+						<div class="shop__block--sales">
+							<div class="rec__item--sale active" data-price="1">
+								-30%
+							</div>
+
+							<div class="rec__item--sale" data-price="2">
+								-20%
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/fav.png" alt="Картинка" class="shop__block--icon">
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/copy.png" alt="Картинка" class="shop__block--icon">
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/delete.png" alt="Картинка" class="shop__block--icon">
+							</div>
+						</div>
+
+						<div class="rec__item--price--inner active" data-price="1">
+							<p class="rec__item--price">
+								699.99 ₽
+							</p>
+
+							<p class="rec__item--price--prev">
+								980.99 ₽
+							</p>
+
+							<div class="rec__circle">
+								<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+							</div>
+
+							<div class="select__block">
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										499.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										880.99 ₽
+									</p>
+								</div>
+
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										799.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										980.99 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="rec__item--price--inner" data-price="2">
+							<p class="rec__item--price">
+								599.99 ₽
+							</p>
+
+							<p class="rec__item--price--prev">
+								1080.99 ₽
+							</p>
+
+							<div class="rec__circle">
+								<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+							</div>
+
+							<div class="select__block">
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										499.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										880.99 ₽
+									</p>
+								</div>
+
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										799.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										980.99 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal__list--item">
+				<div class="modal__list--number--inner">
+					<div class="modal__list--number">
+						2
+					</div>
+
+					Пельмени
+				</div>
+
+				<div class="shop__block--item">
+					<div class="shop__block--wrapper">
+						<div class="shop__block--img--inner">
+							<img src="img/product1.png" alt="Продукт" class="shop__block--img">
+
+							<img src="img/store2.png" alt="Магазин" class="shop__block--img--logo">
+						</div>
+
+						<div class="shop__block--content">
+							<p class="shop__block--title">
+								Пельмени «Мираторг», из говядины, 980 г
+							</p>
+
+							<div class="rec__item--weight--inner active" data-price="1">
+								<p class="rec__item--weight">
+									980 г
+								</p>
+
+								<div class="rec__item--weight--line"></div>
+
+								<p class="rec__item--weight--price">
+									980 ₽ за 1 кг 
+								</p>
+
+								<div class="rec__circle">
+									<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+								</div>
+
+								<div class="select__block">
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											780 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											780 ₽ за 1 кг 
+										</p>
+									</div>
+
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											880 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											880 ₽ за 1 кг 
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rec__item--weight--inner" data-price="2">
+								<p class="rec__item--weight">
+									800 г
+								</p>
+
+								<div class="rec__item--weight--line"></div>
+
+								<p class="rec__item--weight--price">
+									980 ₽ за 1 кг 
+								</p>
+
+								<div class="rec__circle">
+									<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+								</div>
+
+								<div class="select__block">
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											780 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											780 ₽ за 1 кг 
+										</p>
+									</div>
+
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											880 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											880 ₽ за 1 кг 
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rec__item--button--inner">
+								<button class="button rec__item--button forlist__button active" data-price="1" data-img="product1.png">
+									980 г
+								</button>
+
+								<button class="button rec__item--button forlist__button" data-price="2" data-img="product2.png">
+									800 г
+								</button>
+							</div>
+
+							<div class="shop__block--value--inner">
+								<p class="shop__block--value--text">
+									Количество
+								</p>
+
+								<input type="number" class="input shop__block--value" value="1">
+							</div>
+						</div>
+					</div>
+
+					<div class="shop__block--inner">
+						<div class="shop__block--sales">
+							<div class="rec__item--sale active" data-price="1">
+								-30%
+							</div>
+
+							<div class="rec__item--sale" data-price="2">
+								-20%
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/fav.png" alt="Картинка" class="shop__block--icon">
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/copy.png" alt="Картинка" class="shop__block--icon">
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/delete.png" alt="Картинка" class="shop__block--icon">
+							</div>
+						</div>
+
+						<div class="rec__item--price--inner active" data-price="1">
+							<p class="rec__item--price">
+								699.99 ₽
+							</p>
+
+							<p class="rec__item--price--prev">
+								980.99 ₽
+							</p>
+
+							<div class="rec__circle">
+								<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+							</div>
+
+							<div class="select__block">
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										499.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										880.99 ₽
+									</p>
+								</div>
+
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										799.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										980.99 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="rec__item--price--inner" data-price="2">
+							<p class="rec__item--price">
+								599.99 ₽
+							</p>
+
+							<p class="rec__item--price--prev">
+								1080.99 ₽
+							</p>
+
+							<div class="rec__circle">
+								<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+							</div>
+
+							<div class="select__block">
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										499.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										880.99 ₽
+									</p>
+								</div>
+
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										799.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										980.99 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal__list--item">
+				<div class="modal__list--number--inner">
+					<div class="modal__list--number">
+						3
+					</div>
+
+					Макароны
+				</div>
+
+				<div class="shop__block--item">
+					<div class="shop__block--wrapper">
+						<div class="shop__block--img--inner">
+							<img src="img/product1.png" alt="Продукт" class="shop__block--img">
+
+							<img src="img/store2.png" alt="Магазин" class="shop__block--img--logo">
+						</div>
+
+						<div class="shop__block--content">
+							<p class="shop__block--title">
+								Пельмени «Мираторг», из говядины, 980 г
+							</p>
+
+							<div class="rec__item--weight--inner active" data-price="1">
+								<p class="rec__item--weight">
+									980 г
+								</p>
+
+								<div class="rec__item--weight--line"></div>
+
+								<p class="rec__item--weight--price">
+									980 ₽ за 1 кг 
+								</p>
+
+								<div class="rec__circle">
+									<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+								</div>
+
+								<div class="select__block">
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											780 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											780 ₽ за 1 кг 
+										</p>
+									</div>
+
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											880 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											880 ₽ за 1 кг 
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rec__item--weight--inner" data-price="2">
+								<p class="rec__item--weight">
+									800 г
+								</p>
+
+								<div class="rec__item--weight--line"></div>
+
+								<p class="rec__item--weight--price">
+									980 ₽ за 1 кг 
+								</p>
+
+								<div class="rec__circle">
+									<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+								</div>
+
+								<div class="select__block">
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											780 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											780 ₽ за 1 кг 
+										</p>
+									</div>
+
+									<div class="select__block--item" data-item="weight">
+										<p class="rec__item--weight">
+											880 г
+										</p>
+
+										<div class="rec__item--weight--line"></div>
+
+										<p class="rec__item--weight--price">
+											880 ₽ за 1 кг 
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rec__item--button--inner">
+								<button class="button rec__item--button forlist__button active" data-price="1" data-img="product1.png">
+									980 г
+								</button>
+
+								<button class="button rec__item--button forlist__button" data-price="2" data-img="product2.png">
+									800 г
+								</button>
+							</div>
+
+							<div class="shop__block--value--inner">
+								<p class="shop__block--value--text">
+									Количество
+								</p>
+
+								<input type="number" class="input shop__block--value" value="1">
+							</div>
+						</div>
+					</div>
+
+					<div class="shop__block--inner">
+						<div class="shop__block--sales">
+							<div class="rec__item--sale active" data-price="1">
+								-30%
+							</div>
+
+							<div class="rec__item--sale" data-price="2">
+								-20%
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/fav.png" alt="Картинка" class="shop__block--icon">
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/copy.png" alt="Картинка" class="shop__block--icon">
+							</div>
+
+							<div class="shop__block--button">
+								<img src="img/delete.png" alt="Картинка" class="shop__block--icon">
+							</div>
+						</div>
+
+						<div class="rec__item--price--inner active" data-price="1">
+							<p class="rec__item--price">
+								699.99 ₽
+							</p>
+
+							<p class="rec__item--price--prev">
+								980.99 ₽
+							</p>
+
+							<div class="rec__circle">
+								<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+							</div>
+
+							<div class="select__block">
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										499.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										880.99 ₽
+									</p>
+								</div>
+
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										799.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										980.99 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="rec__item--price--inner" data-price="2">
+							<p class="rec__item--price">
+								599.99 ₽
+							</p>
+
+							<p class="rec__item--price--prev">
+								1080.99 ₽
+							</p>
+
+							<div class="rec__circle">
+								<img src="img/arrow-down.png" alt="Стрелка" class="rec__select">
+							</div>
+
+							<div class="select__block">
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										499.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										880.99 ₽
+									</p>
+								</div>
+
+								<div class="select__block--item" data-item="price">
+									<p class="rec__item--price">
+										799.99 ₽
+									</p>
+
+									<p class="rec__item--price--prev">
+										980.99 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__list--total">
+			Общая стоимость: <span class="span bold">1398</span> ₽
+		</div>
+
+		<div class="modal__list--button--inner">
+			<button class="button modal__list--button">
+				Сделать дешевле
+			</button>
+
+			<div class="modal__list--list">
+				Список покупок
+
+				<img src="img/next.png" alt="Стрелка" class="modal__list--list--icon">
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.spincrement.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

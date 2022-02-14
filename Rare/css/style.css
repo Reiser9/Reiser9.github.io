@@ -1,0 +1,273 @@
+:root{
+	font-size: 10px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 1.6rem;
+	font-family: 'Inter', sans-serif;
+	background: #F9F9F9;
+}
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+a, button, input{
+	transition: .2s linear;
+	font-family: 'Inter', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h5, p{
+	margin: 0;
+	font-weight: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	appearance: none;
+}
+
+.button{
+	
+}
+
+.input{
+	
+}
+
+.input::placeholder{
+
+}
+
+.input:focus::placeholder{
+	opacity: 0;	
+}
+
+.container{
+	width: 100%;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+/* Шапка */
+.header{
+	padding: 1.8rem 0;
+	background: #F9F9F9;
+	box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.13);
+}
+
+.header__inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo--inner{
+	display: flex;
+	align-items: flex-start;
+	font-size: 2.1rem;
+	font-weight: 600;
+}
+
+.header__logo{
+	font-size: 0.9rem;
+}
+
+.header__text{
+	font-size: 2.1rem;
+}
+
+/* Контент */
+.content{
+	padding: 5rem 0;
+	min-height: calc(100vh - 71px - 63px);
+}
+
+.content__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 100%;
+}
+
+.content__content{
+	width: 100%;
+	padding: 1rem 5rem 4rem 5rem;
+	background: #FFFFFF;
+	border-radius: 10px;
+	height: 100%;
+}
+
+.content__wrapper{
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.content__wrapper.active{
+	display: flex;
+}
+
+.content__tab--inner{
+	margin: 0rem 5rem;
+	display: flex;
+	align-items: center;
+}
+
+.content__tab{
+	font-size: 2rem;
+	color: #555;
+	padding-bottom: 1.5rem;
+	position: relative;
+	margin-right: 4rem;
+	cursor: pointer;
+}
+
+.content__tab:last-child{
+	margin-right: 0;
+}
+
+.content__tab.active:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.content__item{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 1.6rem;
+	color: #3c3c3c;
+	padding: 2rem 0;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.content__item.bold{
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+
+.content__social{
+	display: flex;
+	align-items: center;
+	width: 15%;
+}
+
+.content__social--link{
+	margin-right: 1rem;
+}
+
+.content__social--link:last-child{
+	margin-right: 0;
+}
+
+.content__social--link:hover{
+	opacity: 0.6;
+}
+
+.content__date{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 16%;
+}
+
+.content__price{
+	width: 14%;
+	text-align: center;
+}
+
+.content__limit, .content__total{
+	width: 15%;
+	text-align: center;
+}
+
+.content__public{
+	width: 10%;
+}
+
+.content__date, .content__time{
+	font-size: 1.6rem;
+}
+
+.content__time{
+	margin-top: 1rem;
+}
+
+.content__name{
+	width: 15%;
+}
+
+.public__item{
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #000;
+	border-radius: 5px;
+}
+
+/* Подвал */
+.footer{
+	padding: 2.4rem 0;
+}
+
+.footer__inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__copy{
+	font-size: 1.5rem;
+	color: #3c3c3c;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer__social{
+	display: flex;
+	align-items: center;
+}
+
+.footer__social--link{
+	margin-right: 1.2rem;
+}
+
+.footer__social--link:hover{
+	opacity: 0.6;
+}
+
+.footer__social--link:last-child{
+	margin-right: 0;
+}

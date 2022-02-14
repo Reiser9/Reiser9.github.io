@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Список покупок</title>
+
+	<!-- Fonts -->
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<!-- Favicon -->
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__city--inner">
+					<img src="img/map.png" alt="Город" class="city__icon">
+
+					<p class="city__name">
+						Москва
+					</p>
+				</div>
+
+				<div class="header__content">
+					<div class="header__wrapper">
+						<a href="/" class="logo__inner">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</a>
+
+						<div class="header__search--inner">
+							<input type="text" class="input header__search--input" placeholder="Поиск">
+
+							<img src="img/search.png" alt="Поиск" class="header__search--icon">
+						</div>
+
+						<div class="header__nav">
+							<div class="header__menu">
+								<img src="img/menu.png" alt="Меню" class="menu">
+							</div>
+
+							<a href="#" class="header__nav--link">
+								Скидки
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Меню
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Купоны
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Магазины
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Журнал
+							</a>
+						</div>
+
+						<img src="img/burger.svg" alt="Меню" class="burger">
+					</div>
+
+					<a href="#" class="header__enter">
+						<img src="img/enter.png" alt="Вход" class="header__enter--icon">
+
+						Вход/Регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="citylist">
+		<div class="container">
+			<div class="citylist__inner flex100">
+				<a href="#" class="link__arrow prev__link">
+					<img src="img/prev.png" alt="Стрелка" class="read__img">
+
+					Назад
+				</a>
+
+				<div class="title__inner contact__title--inner">
+					<img src="img/store.png" alt="Город с магазинами" class="title__icon">
+
+					<h2 class="title review__title">
+						Промокоды сети «Пятерочка
+					</h2>
+				</div>
+
+				<div class="network__wrapper">
+					<div class="network__wrapper--item">
+						<img src="img/store1.png" alt="Магазин" class="network__wrapper--img">
+
+						<div class="network__wrapper--item--block">
+							<div class="network__review--value--inner">
+								<p class="network__review--value">
+									5.0
+								</p>
+
+								<img src="img/like-green.png" alt="Лайк" class="network__review--icon">
+							</div>
+
+							<a href="#" class="link__arrow review__read network__review">
+								Смотреть отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+
+							<div class="contact__point--inner flex100">
+								<div class="contact__point">
+									<img src="img/clock.png" alt="Картинка" class="contact__point--img">
+
+									8:00-21:00
+								</div>
+
+								<div class="contact__point">
+									<img src="img/phone.png" alt="Картинка" class="contact__point--img">
+
+									<a href="tel:7 905 935 99 11">7 905 935 99 11</a>
+								</div>
+
+								<div class="contact__point">
+									<img src="img/star-contact.png" alt="Картинка" class="contact__point--img">
+
+									Самообслуживание
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="network__wrapper--text">
+						«Пятерочка» — российская сеть продовольственных магазинов «у дома», которой управляет X5 Retail Group. Первый магазин торговой сети открылся в 1999 году в Санкт-Петербурге. В 2001 году она вышла на московский рынок. В 2002 году сеть стала развивать франчайзинговую программу.
+					</div>
+				</div>
+
+				<div class="citywith__content network__content">
+					<div class="filter__inner">
+						<div class="filter__item">
+							<p class="filter__item--title">
+								Категория
+							</p>
+
+							<div class="filter__item--content">
+								<div class="filter__item--wrapper">
+									<input type="checkbox" id="store1" class="filter__item--input">
+
+									<label for="store1" class="filter__item--label">Мясное</label>
+								</div>
+
+								<div class="filter__item--wrapper">
+									<input type="checkbox" id="store2" class="filter__item--input">
+
+									<label for="store2" class="filter__item--label">Молочное</label>
+								</div>
+
+								<div class="filter__item--wrapper">
+									<input type="checkbox" id="store3" class="filter__item--input">
+
+									<label for="store3" class="filter__item--label">Мучное</label>
+								</div>
+
+								<div class="filter__item--wrapper">
+									<input type="checkbox" id="store4" class="filter__item--input">
+
+									<label for="store4" class="filter__item--label">Грибное</label>
+								</div>
+
+								<div class="filter__item--wrapper">
+									<input type="checkbox" id="store5" class="filter__item--input">
+
+									<label for="store5" class="filter__item--label">Напитки</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter__item">
+							<p class="filter__item--title">
+								Срок годности
+							</p>
+
+							<div class="filter__slider--inner filter__item--content">
+								<div class="filter__word--inner">
+									<p class="filter__word">2010</p>
+									<p class="filter__word">2021</p>
+								</div>
+
+								<div class="filter__slider filter__slider--date"></div>
+								
+								<div class="filter__range--inner">
+									<p class="filter__range--text">
+										От
+									</p>
+
+									<div class="range__value first__value">2010</div>
+
+									<p class="filter__range--text">
+										До
+									</p>
+
+									<div class="range__value second__value">2021</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="citywith__wrapper promo__wrapper">
+						<div class="near__item promostore__item promo__wrapper--item">
+							<div class="promo__block">
+								<div class="promostore__info--inner">
+									<img src="img/store1.png" alt="Картинка" class="promostore__info--img">
+
+									<div class="promostore__info--text--inner">
+										<p class="promostore__info--title">
+											Промокод
+										</p>
+
+										<p class="promostore__info--text">
+											500 бонусов на карту
+										</p>
+									</div>
+								</div>
+
+								<img src="img/dots.png" alt="Картинка" class="promostore__dots">
+							</div>
+
+							<div class="promo__tabs">
+								<a href="#" class="promo__tab" data-tab="review">
+									Оставить отзыв о промокоде
+								</a>
+
+								<a href="#" class="promo__tab" data-tab="view">
+									Смотреть отзывы о промокоде
+								</a>
+							</div>
+
+							<div class="promostore__wrapper promo__wrapper--store">
+								<div class="modal__promo--item--buttons">
+									<button class="button modal__promo--item--button work promostore__promo--button">
+										Работает
+									</button>
+
+									<button class="button modal__promo--item--button nowork promostore__promo--button">
+										Не работает
+									</button>
+								</div>
+
+								<div class="promo__button--inner">
+									<div class="promostore__date">
+										Действует с 5 мая по 5 июня
+									</div>
+
+									<button class="button promo__item--button modal__open promo__button">
+										<p class="promo__item--button--text">
+											Показать промокод
+										</p>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="promo__tab--inner promotab" data-tab="view">
+							<div class="modal__promo--review--item">
+								<div class="review__img--inner">
+									<img src="img/person1.png" alt="Аватарка" class="review__img">
+								</div>
+
+								<div class="review__wrapper">
+									<div class="review__name--inner">
+										<p class="review__name">
+											Анастасия
+										</p>
+									</div>
+
+									<p class="review__text review__text--quality">
+										Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка.
+									</p>
+								</div>
+
+								<div class="modal__promo--review--buttons">
+									<a href="#" class="review__dislike">
+										<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+									</a>
+
+									<a href="#" class="review__like">
+										<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="promo__tab--inner promotab" data-tab="review">
+							<div class="modal__promo--input--inner">
+								<input type="text" class="input review__feedback--input" placeholder="Имя">
+							</div>
+
+							<div class="modal__promo--review--box">
+								<textarea class="modal__promo--review--textarea" placeholder="Оставьте ваш отзыв к промокоду «500 бонусов на карту»"></textarea>
+
+								<div class="modal__promo--box--inner">
+									<div class="modal__promo--box--review--buttons">
+										Ваша оценка
+
+										<div class="modal__promo--review--buttons">
+											<a href="#" class="review__dislike">
+												<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+											</a>
+
+											<a href="#" class="review__like">
+												<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+											</a>
+										</div>
+									</div>
+
+									<div class="review__captcha--inner">
+										Капча
+									</div>
+
+									<button class="button modal__promo--review--button">
+										Поделиться мнением
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="city">
+		<div class="container">
+			<div class="city__inner flex100">
+				<div class="title__inner">
+					<img src="img/book.png" alt="Крупные города" class="title__icon">
+
+					<h2 class="title review__title">
+						Промокоды похожих магазинов
+					</h2>
+				</div>
+
+				<div class="near__content">
+					<div class="near__item promostore__item">
+						<div class="promostore__info--inner">
+							<img src="img/store1.png" alt="Картинка" class="promostore__info--img">
+
+							<div class="promostore__info--text--inner">
+								<p class="promostore__info--title">
+									Промокод
+								</p>
+
+								<p class="promostore__info--text">
+									500 бонусов на карту
+								</p>
+							</div>
+						</div>
+
+						<div class="promostore__date">
+							Действует с 5 мая по 5 июня
+						</div>
+
+						<button class="button promo__item--button modal__open promostore__button">
+							<p class="promo__item--button--text">
+								Показать промокод
+							</p>
+						</button>
+
+						<div class="promostore__wrapper">
+							<div class="modal__promo--item--buttons">
+								<button class="button modal__promo--item--button work promostore__promo--button">
+									Работает
+								</button>
+
+								<button class="button modal__promo--item--button nowork promostore__promo--button">
+									Не работает
+								</button>
+							</div>
+
+							<img src="img/dots.png" alt="Картинка" class="promostore__dots">
+						</div>
+					</div>
+
+					<div class="near__item promostore__item">
+						<div class="promostore__info--inner">
+							<img src="img/store1.png" alt="Картинка" class="promostore__info--img">
+
+							<div class="promostore__info--text--inner">
+								<p class="promostore__info--title">
+									Промокод
+								</p>
+
+								<p class="promostore__info--text">
+									500 бонусов на карту
+								</p>
+							</div>
+						</div>
+
+						<div class="promostore__date">
+							Действует с 5 мая по 5 июня
+						</div>
+
+						<button class="button promo__item--button modal__open promostore__button">
+							<p class="promo__item--button--text">
+								Показать промокод
+							</p>
+						</button>
+
+						<div class="promostore__wrapper">
+							<div class="modal__promo--item--buttons">
+								<button class="button modal__promo--item--button work promostore__promo--button">
+									Работает
+								</button>
+
+								<button class="button modal__promo--item--button nowork promostore__promo--button">
+									Не работает
+								</button>
+							</div>
+
+							<img src="img/dots.png" alt="Картинка" class="promostore__dots">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__content">
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Помощь
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								Инструкции и советы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Написать в поддержку
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Правовые документы
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Мы в социальных сетях
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								ВКонтакте
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Инстраграм
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Тик-Ток
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Правообладателям
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								О предъявлении претензий
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__logo--inner">
+						<a href="#" class="footer__logo">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</a>
+
+						<p class="logo__name">
+							Company name
+						</p>
+
+						<div class="footer__social--inner">
+							<a href="#" class="footer__social--link">
+								<img src="img/tiktok.png" alt="Тик ток" class="footer__social--icon">
+							</a>
+
+							<a href="#" class="footer__social--link">
+								<img src="img/vk.png" alt="Вк" class="footer__social--icon">
+							</a>
+
+							<a href="#" class="footer__social--link">
+								<img src="img/instagram.png" alt="Инстаграм" class="footer__social--icon">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<p class="footer__copy">
+					&copy; 2014-2021
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal__menu">
+		<img src="img/cross.png" alt="Закрыть" class="modal__menu--close">
+
+		<div class="modal__nav">
+			<a href="#" class="modal__nav--link">
+				Скидки
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Меню
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Купоны
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Магазины
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Журнал
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Список покупок
+			</a>
+		</div>
+
+		<a href="#" class="header__enter modal__enter">
+			<img src="img/enter.png" alt="Вход" class="header__enter--icon">
+
+			Вход/Регистрация
+		</a>
+	</div>
+
+	<div class="modal__promo">
+		<div class="modal__promo--inner">
+			<div class="modal__promo--content">
+				<div class="modal__promo--item">
+					<img src="img/cross.png" alt="Закрыть" class="modal__close">
+
+					<div class="modal__promo--item--wrapper">
+						<img src="img/store1.png" alt="Магазин" class="modal__promo--img">
+
+						<div class="modal__promo--item--text--inner">
+							<p class="modal__promo--item--text--title">
+								СКИДКА 20% ПО ПРОМОКОДУ
+							</p>
+
+							<p class="modal__promo--item--text--text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+							</p>
+						</div>
+					</div>
+
+					<div class="modal__promo--item--content">
+						<div class="modal__promo--item--tabs">
+							<div class="modal__promo--item--tab" data-tab="review">
+								Оставить отзыв о промокоде
+
+								<img src="img/arrow.png" alt="Стрелка" class="modal__promo--tab--icon">
+							</div>
+
+							<div class="modal__promo--item--tab" data-tab="view">
+								Смотреть отзыв о промокоде
+
+								<img src="img/arrow.png" alt="Стрелка" class="modal__promo--tab--icon">
+							</div>
+						</div>
+
+						<div class="modal__promo--promo">
+							<p class="modal__promo--value">
+								32143256423264123552
+							</p>
+
+							<div class="copy__promo">
+								<img src="img/copy2.png" alt="Скопировать" class="copy__promo--icon">
+							</div>
+						</div>
+
+						<div class="modal__promo--item--buttons">
+							<button class="button modal__promo--item--button work">
+								Работает
+							</button>
+
+							<button class="button modal__promo--item--button nowork">
+								Не работает
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal__promo--slide tab" data-tab="view">
+					<div class="modal__promo--review--item">
+						<div class="review__img--inner">
+							<img src="img/person1.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Анастасия
+								</p>
+							</div>
+
+							<p class="review__text review__text--quality">
+								Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка.
+							</p>
+						</div>
+
+						<div class="modal__promo--review--buttons">
+							<a href="#" class="review__dislike">
+								<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+							</a>
+
+							<a href="#" class="review__like">
+								<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+							</a>
+						</div>
+					</div>
+
+					<div class="modal__promo--review--item">
+						<div class="review__img--inner">
+							<img src="img/person2.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Евгений
+								</p>
+							</div>
+
+							<p class="review__text review__text--quality">
+								Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка.
+							</p>
+						</div>
+
+						<div class="modal__promo--review--buttons">
+							<a href="#" class="review__dislike">
+								<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+							</a>
+
+							<a href="#" class="review__like">
+								<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal__promo--slide tab" data-tab="review">
+					<div class="modal__promo--review--box">
+						<textarea class="modal__promo--review--textarea" placeholder="Оставьте ваш отзыв к промокоду «500 бонусов на карту»"></textarea>
+
+						<div class="modal__promo--box--inner">
+							<div class="modal__promo--box--review--buttons">
+								Ваша оценка
+
+								<div class="modal__promo--review--buttons">
+									<a href="#" class="review__dislike">
+										<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+									</a>
+
+									<a href="#" class="review__like">
+										<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+									</a>
+								</div>
+							</div>
+
+							<button class="button modal__promo--review--button">
+								Поделиться мнением
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.spincrement.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

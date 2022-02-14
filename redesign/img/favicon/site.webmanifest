@@ -1,0 +1,19 @@
+{
+    "name": "ExpCash",
+    "short_name": "ExpCash",
+    "icons": [
+        {
+            "src": "img/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/favicon/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#cf7373",
+    "background_color": "#cf7373",
+    "display": "standalone"
+}

@@ -1,0 +1,1439 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp for Projects</title>
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="fonts/font-face.css">
+    <!--Libs-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <!--Style sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Mediaqueries-->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<!--Pre header-->
+<section class="pre_header" id="pre_header">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-10 col-md-7">
+                <ul class="nav main_menu justify-content-between">
+                    <li><a href="#" class="fade320">О компании</a></li>
+                    <li><a href="#" class="fade320">Технические каталоги</a></li>
+                    <li><a href="#" class="fade320">Статьи</a></li>
+                    <li><a href="#" class="fade320">Новости</a></li>
+                    <li><a href="#" class="fade480">Видео</a></li>
+                    <li><a href="#" class="fade480">Подбор муфт</a></li>
+                    <li><a href="#" class="fade480">Прайс-лист</a></li>
+                    <li><a href="#" class="fade480">Оплата и доставка</a></li>
+                    <li><a href="#" class="fade480">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-5">
+                <div class="actions_link d-flex">
+                    <a href="#">Вход</a>
+                    <a href="#">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end of pre header-->
+<!--Header-->
+<header>
+    <div class="container">
+        <div class="row align-items-center header__flexx">
+            <div class="col-lg-2 header__logo">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-8 coll col-md-6 info_row d-flex flex-wrap ml-auto">
+                
+                <div class="header__data">
+                    <a href="tel:+74956385766" class="phone"><i class="fa fa-phone"></i>+7 (495) 638-57-56</a>
+
+                    <p class="address">
+                        <i class="fa fa-map-marker-alt"></i><span>г. Москва, ул. Дорожная, д. 60, стр. 4</span>
+                    </p>
+
+                    <p class="email"><i class="fa fa-clock"></i>Режим работы: Пн – Пт, с 9:00 до 18:00</p>
+                    <a href="#" class="send_message"><i class="fa fa-envelope"></i>Отправить заявку</a>
+                </div>
+
+                <div class="col-sm-4 mt-3 p-0 d-flex">
+                    <a href="#" class="catalog_trigger"><img src="img/catalog.png" alt="">Каталог продукции</a>
+                    <a href="#" class="mufta_trigger"><img src="img/myfta.png" alt="">Подбор муфт</a>
+                </div>
+
+                <div class="col-sm-8 mt-3">
+                    <div class="input_box">
+                        <i class="fa fa-search"></i>
+                        <input type="search" class="search" placeholder="Поиск">
+                        <i class="fa fa-caret-down"></i>
+                        <div class="category">
+                            <input type="text" placeholder="Все категории">
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 coll right_box">
+                <div class="cart_box">
+                    <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    <div class="right_side">
+                        <p>Всего товаров:<span> 1 шт.</span></p>
+                        <p>На сумму:<span> 3 492 596,05  ₽</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 pl-0 pr-0 d-flex faworit_row">
+                    <p><a href="#"><i class="fa fa-heart"></i>Избранное</a><span class="count">0</span></p>
+                    <p><a href="#"><i class="fa fa-signal"></i>Сравнить</a><span class="count">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile__seacrh">
+            <a href="#" class="catalog_trigger2"><img src="img/catalog.png" alt="">Каталог продукции</a>
+            <a href="#" class="mufta_trigger2"><img src="img/myfta.png" alt="">Подбор муфт</a>
+
+            <div class="input_box">
+                <i class="fa fa-search"></i>
+                <input type="search" class="search" placeholder="Поиск">
+                <i class="fa fa-caret-down"></i>
+                <div class="category">
+                    <input type="text" placeholder="Все категории">
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+
+            <p><i class="fa fa-heart"></i><a href="#">Избранное</a><span class="count">0</span></p>
+            <p><i class="fa fa-signal"><a href="#"></i>Сравнить</a><span class="count">0</span></p>
+        </div>
+
+        <div class="mob__menu">
+
+
+
+
+            <div class="mob__top--menu">
+                <svg class="logo" width="119" height="81" viewBox="0 0 119 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.592 67.3377V77.129H27.2486V73.258H29.3738V77.129H32.0304V67.3377H29.3738V71.0569H27.2486V67.3377H24.592ZM15.3321 67.3377V77.129H17.8368C18.444 75.9146 19.203 74.017 19.5066 73.3339C19.8862 72.4231 20.1898 71.5882 20.4934 70.5256H20.5693C20.4934 71.8159 20.4175 72.9544 20.4175 74.9278V77.0531H22.8463V67.2618H20.3416L18.8235 70.981C18.5199 71.74 18.0645 72.8785 17.685 73.8653H17.6091C17.685 72.8785 17.8368 71.1328 17.8368 69.3871V67.2618H15.3321V67.3377ZM8.80456 70.981C8.80456 70.7533 8.80456 70.4497 8.95636 70.2979C9.03226 69.8425 9.41177 69.4629 9.86718 69.4629C10.7021 69.4629 11.0816 70.4497 11.0816 72.3472C11.0816 73.8653 10.778 75.2315 9.79127 75.2315C9.48766 75.2315 9.10816 75.0797 8.95636 74.4725C8.88046 74.2448 8.80456 73.9411 8.80456 73.6375V70.981ZM6.14801 81H8.80456V76.37H8.88046C9.18406 76.8254 9.71537 77.3567 10.5503 77.3567C12.2201 77.3567 13.814 75.7628 13.814 72.2713C13.814 69.5389 12.9032 67.2618 10.7021 67.2618C9.79128 67.2618 9.03226 67.7172 8.57686 68.5522H8.50095L8.34915 67.4136H5.99621C6.07211 68.3245 6.07211 69.3112 6.07211 70.5256V81H6.14801ZM0 63.6945V77.2049H2.65655V66.0474H6.37571V63.7703H0V63.6945Z" fill="#86B136"/>
+                <path d="M115.902 72.2714C115.902 73.1822 115.75 75.2315 114.535 75.2315C113.397 75.2315 113.093 73.1822 113.093 72.0437C113.093 71.5883 113.169 70.9051 113.321 70.3738C113.473 69.8425 113.928 69.3871 114.46 69.3871C115.598 69.3871 115.902 71.1329 115.902 72.2714ZM117.723 63.1632C117.268 63.315 115.978 63.5427 115.294 63.6945C113.549 63.9981 112.334 64.833 111.651 66.0475C110.816 67.4137 110.513 69.2353 110.513 71.3605C110.513 74.093 111.272 77.4327 114.535 77.4327C117.192 77.4327 118.482 75.0797 118.482 72.2714C118.482 69.0835 117.116 67.4896 115.219 67.4896C114.08 67.4896 113.169 68.1727 112.79 69.0835H112.714C112.79 68.4004 112.942 67.7932 113.245 67.3378C113.701 66.6547 114.308 66.1234 115.978 65.8957C116.585 65.8198 117.116 65.7439 117.572 65.5162L117.723 63.1632ZM106.262 74.093C106.262 74.2448 106.262 74.3966 106.186 74.5484C106.035 75.1556 105.503 75.3834 105.048 75.3834C104.668 75.3834 104.061 75.0038 104.061 74.0171C104.061 72.6509 105.275 72.3473 106.186 72.3473V74.093H106.262ZM109.071 77.1291C108.919 76.446 108.919 75.6869 108.919 74.852V71.2088C108.919 69.2353 108.463 67.186 105.351 67.186C103.985 67.186 102.771 67.6414 102.239 67.945L102.695 69.6908C103.302 69.3112 103.909 69.1594 104.744 69.1594C105.655 69.1594 106.186 69.6908 106.186 70.4498V70.6775C103.909 70.6775 101.632 71.7401 101.632 74.3207C101.632 76.0664 102.771 77.2809 104.289 77.2809C105.2 77.2809 105.959 76.9014 106.49 76.1424H106.566L106.718 77.1291H109.071ZM92.7518 67.3378V77.1291H95.4083V73.2581H97.5336V77.1291H100.19V67.3378H97.5336V71.057H95.4083V67.3378H92.7518ZM91.3097 74.7761C91.0061 74.852 90.4747 75.0038 90.0193 75.0038C88.3495 75.0038 87.1351 73.7135 87.1351 70.5256C87.1351 67.186 88.5013 65.8957 90.0193 65.8957C90.6265 65.8957 90.9301 66.0475 91.2337 66.1234L91.6892 63.9222C91.3856 63.7704 90.7783 63.5427 89.7916 63.5427C87.1351 63.5427 84.2508 65.5161 84.2508 70.6015C84.2508 74.3966 85.9207 77.2809 89.488 77.2809C90.3988 77.2809 91.1578 77.1291 91.6133 76.9773L91.3097 74.7761ZM79.3931 69.1594C80.304 69.1594 80.5317 70.8293 80.5317 72.1955C80.5317 73.6376 80.304 75.3074 79.469 75.3074C78.4823 75.3074 78.2546 73.9412 78.2546 72.1955C78.1787 70.9052 78.4064 69.1594 79.3931 69.1594ZM79.3931 67.186C77.4197 67.186 75.5222 68.7799 75.5222 72.2714C75.5222 75.4592 76.9643 77.2809 79.3172 77.2809C80.8353 77.2809 83.1123 76.2942 83.1123 72.1955C83.1882 69.1594 81.7461 67.186 79.3931 67.186ZM69.4501 67.3378V77.1291H72.1066V69.5389H74.9909V67.4137H69.4501V67.3378ZM62.9225 70.981C62.9225 70.7533 62.9226 70.4498 63.0744 70.298C63.1503 69.8425 63.5298 69.463 63.9852 69.463C64.8201 69.463 65.1996 70.4498 65.1996 72.3473C65.1996 73.8653 64.896 75.2315 63.9093 75.2315C63.6057 75.2315 63.2262 75.0797 63.0744 74.4725C62.9985 74.2448 62.9225 73.9412 62.9225 73.6376V70.981ZM60.266 81H62.9225V76.3701H62.9984C63.3021 76.8255 63.8334 77.3568 64.6683 77.3568C66.3381 77.3568 67.932 75.7628 67.932 72.2714C67.932 69.5389 67.0212 67.2619 64.8201 67.2619C63.9093 67.2619 63.1503 67.7173 62.6948 68.5522H62.6189L62.4671 67.4137H60.1142C60.1901 68.3245 60.1901 69.3112 60.1901 70.5256V81H60.266ZM53.9662 71.3605C53.9662 70.3738 54.3457 69.0835 55.1806 69.0835C56.0155 69.0835 56.3191 70.0702 56.3191 71.3605H53.9662ZM58.6721 73.1822C58.748 72.8786 58.748 72.4991 58.748 71.816C58.748 68.8558 57.5335 67.186 55.3324 67.186C53.0554 67.186 51.3096 69.1594 51.3096 72.4232C51.3096 75.4592 52.8277 77.205 55.5601 77.205C56.6227 77.205 57.6095 77.0532 58.2926 76.7496L57.9131 74.852C57.4577 75.0038 56.7745 75.1556 56.0155 75.1556C54.8011 75.1556 53.8903 74.6243 53.8903 73.1063H58.6721V73.1822ZM42.3533 67.3378V77.1291H45.0098V73.2581H47.1351V77.1291H49.7916V67.3378H47.1351V71.057H45.0098V67.3378H42.3533ZM34.3836 71.4365H38.1028C37.951 72.9545 37.4197 74.9279 35.2945 74.9279C34.6872 74.9279 34.1559 74.7761 33.7005 74.6243L33.2451 76.8255C33.7005 77.0532 34.6113 77.3568 35.674 77.3568C38.7859 77.3568 40.8353 74.6243 40.8353 70.5256C40.8353 67.4137 39.9244 63.5427 35.9776 63.5427C34.839 63.5427 34.0041 63.8463 33.3969 64.1499L34.0041 66.2752C34.4595 66.0475 34.9908 65.9716 35.5981 65.9716C37.4197 65.9716 38.1028 67.8691 38.1028 69.2353H34.3077V71.4365H34.3836Z" fill="#58595B"/>
+                <path d="M68.2358 48.0588C68.9189 47.9829 69.5261 48.4383 69.602 49.1214C69.6779 49.8045 69.2225 50.4117 68.5394 50.4876L21.101 56.4079C20.4179 56.4838 19.8107 56.0284 19.7348 55.3453C19.6589 54.6622 20.1143 54.055 20.7974 53.9791L68.2358 48.0588Z" fill="#A7A9AC"/>
+                <path d="M95.104 51.6262C95.7871 51.5503 96.3943 52.0057 96.5461 52.6888C96.622 53.3719 96.1666 53.9791 95.4835 54.1309L60.1135 59.1404C59.4303 59.2163 58.8231 58.7609 58.6713 58.0778C58.5954 57.3947 59.0508 56.7875 59.7339 56.6357L95.104 51.6262Z" fill="#A7A9AC"/>
+                <path d="M80.9107 14.5104C81.1384 13.9032 81.8974 13.5237 82.5046 13.8273C83.1118 14.055 83.4914 14.8141 83.1877 15.4213L69.5255 49.7286C69.2978 50.3359 68.5388 50.7154 67.9316 50.4118C67.3244 50.1841 66.9449 49.4251 67.2485 48.8179L80.9107 14.5104Z" fill="#00AEEF"/>
+                <path d="M80.9107 14.5104C81.1384 13.9032 81.8974 13.5237 82.5046 13.8273C83.1118 14.055 83.4914 14.8141 83.1877 15.4213L69.5255 49.7286C69.2978 50.3359 68.5388 50.7154 67.9316 50.4118C67.3244 50.1841 66.9449 49.4251 67.2485 48.8179L80.9107 14.5104Z" fill="#004F77"/>
+                <path d="M41.4426 12.537C41.8221 11.7779 42.8088 11.3985 43.6438 11.8539C44.4028 12.2334 44.7064 13.2201 44.3269 14.055L22.3914 55.9525C22.0119 56.7116 21.0252 57.0152 20.1903 56.6357C19.4312 56.2562 19.1276 55.2694 19.5071 54.4345L41.4426 12.537Z" fill="#00AEEF"/>
+                <path d="M41.4426 12.537C41.8221 11.7779 42.8088 11.3985 43.6438 11.8539C44.4028 12.2334 44.7064 13.2201 44.3269 14.055L22.3914 55.9525C22.0119 56.7116 21.0252 57.0152 20.1903 56.6357C19.4312 56.2562 19.1276 55.2694 19.5071 54.4345L41.4426 12.537Z" fill="#004F77"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8065 20.3805L22.2334 6.23246L67.0228 40.9346L68.8672 18.1717L100.366 28.7524L58.6585 0.942139L56.8065 20.3805Z" fill="url(#paint0_linear)"/>
+                <path d="M41.2904 13.8273C40.9868 12.9924 41.3663 12.0816 42.2012 11.7021C43.0361 11.3985 43.9469 11.778 44.3264 12.6129L61.4042 57.3947C61.7078 58.2297 61.3283 59.1405 60.4934 59.52C59.6585 59.8995 58.7477 59.4441 58.3682 58.6091L41.2904 13.8273Z" fill="#00AEEF"/>
+                <path d="M80.9105 15.4212C80.6828 14.7381 81.0623 14.055 81.6696 13.8273C82.3527 13.5996 83.0358 13.9791 83.2635 14.5863L96.3944 52.3852C96.6221 53.0683 96.2426 53.7514 95.6354 53.9791C94.9523 54.2068 94.2692 53.8273 94.0415 53.2201L80.9105 15.4212Z" fill="#00AEEF"/>
+                <defs>
+                <linearGradient id="paint0_linear" x1="52.55" y1="29.7194" x2="53.7331" y2="7.2678" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7CA92D"/>
+                <stop offset="1" stop-color="#B4CC04"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+
+                <a href="tel:+74956385766" class="phone"><i class="fa fa-phone"></i>+7 (495) 638-57-56</a>
+            </div>
+
+            <div class="mob__bottom--menu">
+                <i class="fas fa-bars menu"></i>
+
+                <div class="catalog__title">
+                    Меню
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-shopping-cart mobile__menu--icon"></i>
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-heart mobile__menu--icon"></i>
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-signal mobile__menu--icon"></i>
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+
+            <div class="mobile__menu--search--input--inner">
+                <input type="text" placeholder="Поиск.." class="mobile__menu--search--input">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu__click menu__transform">
+        <div class="close__menu">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3.92871" y="5" width="22" height="2" transform="rotate(45 3.92871 5)" fill="#7CA92D"/>
+            <rect x="2.51465" y="20.071" width="22" height="2" transform="rotate(-45 2.51465 20.071)" fill="#7CA92D"/>
+            </svg>
+            Меню
+        </div>
+
+        <div class="menu__click--inner">
+            <a href="#" class="menu__click--item catalog__item">
+                Каталог продукции
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.999856L7 7.25532L1 13" stroke="#58595B" stroke-width="2"/>
+                </svg>
+            </a>
+            <a href="#" class="menu__click--item">
+                О компании
+            </a>
+            <a href="#" class="menu__click--item">
+                Подбор муфт
+            </a>
+        </div>
+
+
+        <div class="catalog__menu menu__transform">
+            
+            <div class="close__menu--catalog">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0.999856L2 7.25532L8 13" stroke="#58595B" stroke-width="2"/>
+                </svg>
+
+                Каталог продукции
+            </div>
+
+            <div class="accordion catalog__acc" id="accordion">
+                <div class="card">
+                    <div class="" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-angle-down"></i>Автоматические выключатели
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <i class="fa fa-angle-down"></i>Устройства дифференциальной защиты
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="true"
+                                    aria-controls="collapseThree">
+                                <i class="fa fa-angle-down"></i>Силовое оборудование
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour">
+                                <i class="fa fa-angle-down"></i>Силовые разъемы
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_link">
+                                <i class="fa"></i>Стабилизаторы напряжения
+                            </button>
+                        </h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_link">
+                                <i class="fa"></i>Электроустановочные изделия
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_link" href="#">
+                                <i class="fa"></i>Удлиннители
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <a class="accordion_link collapsed" href="">
+                                <i class="fa"></i>Инструменты
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+<!--End of header-->
+
+<!--Content-->
+<section class="content_section" id="content_section">
+    <div class="container">
+        <div class="row fised__top">
+            <div class="col-lg-8 ml-auto mr-auto">
+                <ul class="nav bread_crumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li>></li>
+                    <li><a class="active" href="#">Корзина</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 left_column">
+                                <div class="left_menu">
+                                    <div class="menu_header">Разделы каталога</div>
+                                    <ul class="side_menu">
+                                        <li><a href="#" class="cabel__list">Кабель, провод<i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Электротехническая продукция
+
+                                                <i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Кабеленесущие системы<i
+                                                    class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Светотехническая продукция <i
+                                                    class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Электрощитовое оборудование <i
+                                                    class="fa fa-angle-right"></i></a></li>
+
+
+                                        <div class="menu__header--hover">
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Автоматические выключатели
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-29 4,5 кА
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-60 6 кА
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-100 10кА
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-125 15кА OptiDin
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Приборы контроля, учета и измерения
+                                                </div>
+
+                                                <div class="menu__item--text">Амперметры, Вольтметры</div>
+                                                <div class="menu__item--text">Трансформаторы тока</div>
+                                                <div class="menu__item--text">Счетчики электроэнергии</div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Силовые разъемы
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    Вилки переносные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Вилки стационарные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки переносные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки стационарные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки скрытой установки
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки панельные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Силовые разъемы из каучука
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Силовое оборудование
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    Автоматические выключатели ВА
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Выключатели-разъединители ВР32
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Выключатели-разъединители ПВР
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Предохранители ППН
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Разъединители РЕ-19
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Рубильники РПС, РПБ, РБ
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Устройства дифференциальной защиты
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    АВДТ
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    АД-12 и АД-14
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    УЗО ВД1-63
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Электроустановочные изделия
+                                                </div>
+
+                                                <div class="menu__item--title">
+                                                    Стабилизаторы напряжения
+                                                </div>
+                                                <div class="menu__item--title">
+                                                    Удлинители
+                                                </div>
+                                                <div class="menu__item--title">
+                                                    Инструменты
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </ul>
+                                    <img src="img/left_img1.png" alt="" class="left_banners">
+                                    <img src="img/left_img2.png" alt="" class="left_banners">
+                                </div>
+                            </div>
+
+
+            <div class="col-lg-8 content_center cart__max">
+                                        
+                                        <h1 class="title">Корзина</h1>
+
+                                        <div class="register__inner">
+                                            <div class="info_tabs register__tabs">
+                                                <ul class="nav nav-tabs">
+                                                    <li><a data-toggle="tab" href="#" class="views reg__tab cart__inner--link nav-link active"
+                                                           role="tab" aria-controls="info" aria-selected="true">Содержимое корзины</a></li>
+                                                    <li><a data-toggle="tab" href="#" class="views reg__tab cart__design--link nav-link"
+                                                           role="tab" aria-controls="info" aria-selected="true">Оформление заказа</a>
+                                                    </li>
+                                                    <li><a data-toggle="tab" href="#" class="views reg__tab cart__accept--link nav-link"
+                                                           role="tab" aria-controls="info" aria-selected="true">Подтверждение заказа</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-content cart__face--tab cart__inner">
+                                                
+                                                <div class="oficce__box">
+                                                    <div class="cart__box">
+                                                        <div class="cart__box--column--views">
+                                                            <div class="empty">
+                                                                
+                                                            </div>
+                                                            <div class="cart__box--view cart__box--name">
+                                                                Наименование
+                                                            </div>
+                                                            <div class="cart__box--view cart__box--article">
+                                                                Артикул
+                                                            </div>
+                                                            <div class="cart__box--view cart__box--price">
+                                                                Цена
+                                                            </div>
+                                                            <div class="cart__box--view cart__box--much">
+                                                                Кол-во
+                                                            </div>
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                Ед.
+                                                            </div>
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                Сумма
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__box--column--card">
+                                                            <div class="cart__box--card--img--inner">
+                                                                <img src="img/little_image.png" alt="Костыль" class="cart__box--card--img">
+                                                            </div>
+
+                                                            <div class="cart__box--card--name">
+                                                                Авт. выкл. ВА47-29 1Р 1А 4,5кА х-ка В ИЭК
+                                                            </div>
+
+                                                            <div class="cart__box--card--article">
+                                                                MVA20-1-001-B
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--price">
+                                                                169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--much">
+                                                                <div class="table_prod" id="cart_prod">
+                                                                        
+                                                                    <div class="tab-content">
+                                                                        <div class="table_container tab-pane fade show active carttt" id="table">
+                                                                            <div class="row list_view no-gutters" id="cartt">
+                                                                                <div class="col">
+                                                                                    <div class="actions">
+                                                                                        <div class="quantity">
+                                                                                            <input type="number" min="1" max="10" step="1" value="1">
+                                                                                            <div class="quantity-nav">
+                                                                                                <div class="quantity-button quantity-down">-</div>
+                                                                                                <div class="quantity-button quantity-up">+</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                шт.
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                3 857 169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__delete">
+                                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.3125 0.375C16.7695 0.375 17.1562 0.550781 17.5078 0.867188C17.8242 1.21875 18 1.60547 18 2.0625V14.4375C18 14.9297 17.8242 15.3164 17.5078 15.6328C17.1562 15.9844 16.7695 16.125 16.3125 16.125H1.6875C1.19531 16.125 0.808594 15.9844 0.492188 15.6328C0.140625 15.3164 0 14.9297 0 14.4375V2.0625C0 1.60547 0.140625 1.21875 0.492188 0.867188C0.808594 0.550781 1.19531 0.375 1.6875 0.375H16.3125ZM13.3594 10.5703L11.0039 8.25L13.3594 5.89453C13.4297 5.82422 13.5 5.75391 13.5 5.61328C13.5 5.50781 13.4297 5.40234 13.3594 5.29688L11.9531 3.89062C11.8477 3.82031 11.7422 3.75 11.6367 3.75C11.4961 3.75 11.4258 3.82031 11.3555 3.89062L9 6.24609L6.64453 3.89062C6.57422 3.82031 6.46875 3.75 6.36328 3.75C6.22266 3.75 6.11719 3.82031 6.04688 3.89062L4.64062 5.29688C4.53516 5.40234 4.5 5.50781 4.5 5.61328C4.5 5.75391 4.53516 5.82422 4.64062 5.89453L6.99609 8.25L4.64062 10.6055C4.53516 10.6758 4.5 10.7812 4.5 10.8867C4.5 11.0273 4.53516 11.1328 4.64062 11.2031L6.04688 12.6094C6.11719 12.7148 6.22266 12.75 6.36328 12.75C6.46875 12.75 6.57422 12.7148 6.67969 12.6094L9 10.2539L11.3555 12.6094C11.4258 12.7148 11.4961 12.75 11.6367 12.75C11.7422 12.75 11.8477 12.7148 11.9531 12.6094L13.3594 11.2031C13.4297 11.1328 13.5 11.0273 13.5 10.8867C13.5 10.7812 13.4297 10.6758 13.3594 10.5703Z" fill="#EB5757"/>
+                                                                </svg>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__box--column--card">
+                                                            <div class="cart__box--card--img--inner">
+                                                                <img src="img/little_image.png" alt="Костыль" class="cart__box--card--img">
+                                                            </div>
+
+                                                            <div class="cart__box--card--name">
+                                                                Авт. выкл. ВА47-29 1Р 1А 4,5кА х-ка В ИЭК
+                                                            </div>
+
+                                                            <div class="cart__box--card--article">
+                                                                MVA20-1-001-B
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--price">
+                                                                169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--much">
+                                                                <div class="table_prod" id="cart_prod">
+                                                                        
+                                                                    <div class="tab-content">
+                                                                        <div class="table_container tab-pane fade show active carttt" id="table">
+                                                                            <div class="row list_view no-gutters" id="cartt">
+                                                                                <div class="col">
+                                                                                    <div class="actions">
+                                                                                        <div class="quantity">
+                                                                                            <input type="number" min="1" max="10" step="1" value="1">
+                                                                                            <div class="quantity-nav">
+                                                                                                <div class="quantity-button quantity-down">-</div>
+                                                                                                <div class="quantity-button quantity-up">+</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                шт.
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                3 857 169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__delete">
+                                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.3125 0.375C16.7695 0.375 17.1562 0.550781 17.5078 0.867188C17.8242 1.21875 18 1.60547 18 2.0625V14.4375C18 14.9297 17.8242 15.3164 17.5078 15.6328C17.1562 15.9844 16.7695 16.125 16.3125 16.125H1.6875C1.19531 16.125 0.808594 15.9844 0.492188 15.6328C0.140625 15.3164 0 14.9297 0 14.4375V2.0625C0 1.60547 0.140625 1.21875 0.492188 0.867188C0.808594 0.550781 1.19531 0.375 1.6875 0.375H16.3125ZM13.3594 10.5703L11.0039 8.25L13.3594 5.89453C13.4297 5.82422 13.5 5.75391 13.5 5.61328C13.5 5.50781 13.4297 5.40234 13.3594 5.29688L11.9531 3.89062C11.8477 3.82031 11.7422 3.75 11.6367 3.75C11.4961 3.75 11.4258 3.82031 11.3555 3.89062L9 6.24609L6.64453 3.89062C6.57422 3.82031 6.46875 3.75 6.36328 3.75C6.22266 3.75 6.11719 3.82031 6.04688 3.89062L4.64062 5.29688C4.53516 5.40234 4.5 5.50781 4.5 5.61328C4.5 5.75391 4.53516 5.82422 4.64062 5.89453L6.99609 8.25L4.64062 10.6055C4.53516 10.6758 4.5 10.7812 4.5 10.8867C4.5 11.0273 4.53516 11.1328 4.64062 11.2031L6.04688 12.6094C6.11719 12.7148 6.22266 12.75 6.36328 12.75C6.46875 12.75 6.57422 12.7148 6.67969 12.6094L9 10.2539L11.3555 12.6094C11.4258 12.7148 11.4961 12.75 11.6367 12.75C11.7422 12.75 11.8477 12.7148 11.9531 12.6094L13.3594 11.2031C13.4297 11.1328 13.5 11.0273 13.5 10.8867C13.5 10.7812 13.4297 10.6758 13.3594 10.5703Z" fill="#EB5757"/>
+                                                                </svg>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__box--column--card">
+                                                            <div class="cart__box--card--img--inner">
+                                                                <img src="img/little_image.png" alt="Костыль" class="cart__box--card--img">
+                                                            </div>
+
+                                                            <div class="cart__box--card--name">
+                                                                Авт. выкл. ВА47-29 1Р 1А 4,5кА х-ка В ИЭК
+                                                            </div>
+
+                                                            <div class="cart__box--card--article">
+                                                                MVA20-1-001-B
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--price">
+                                                                169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--much">
+                                                                <div class="table_prod" id="cart_prod">
+                                                                        
+                                                                    <div class="tab-content">
+                                                                        <div class="table_container tab-pane fade show active carttt" id="table">
+                                                                            <div class="row list_view no-gutters" id="cartt">
+                                                                                <div class="col">
+                                                                                    <div class="actions">
+                                                                                        <div class="quantity">
+                                                                                            <input type="number" min="1" max="10" step="1" value="1">
+                                                                                            <div class="quantity-nav">
+                                                                                                <div class="quantity-button quantity-down">-</div>
+                                                                                                <div class="quantity-button quantity-up">+</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                шт.
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                3 857 169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__delete">
+                                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.3125 0.375C16.7695 0.375 17.1562 0.550781 17.5078 0.867188C17.8242 1.21875 18 1.60547 18 2.0625V14.4375C18 14.9297 17.8242 15.3164 17.5078 15.6328C17.1562 15.9844 16.7695 16.125 16.3125 16.125H1.6875C1.19531 16.125 0.808594 15.9844 0.492188 15.6328C0.140625 15.3164 0 14.9297 0 14.4375V2.0625C0 1.60547 0.140625 1.21875 0.492188 0.867188C0.808594 0.550781 1.19531 0.375 1.6875 0.375H16.3125ZM13.3594 10.5703L11.0039 8.25L13.3594 5.89453C13.4297 5.82422 13.5 5.75391 13.5 5.61328C13.5 5.50781 13.4297 5.40234 13.3594 5.29688L11.9531 3.89062C11.8477 3.82031 11.7422 3.75 11.6367 3.75C11.4961 3.75 11.4258 3.82031 11.3555 3.89062L9 6.24609L6.64453 3.89062C6.57422 3.82031 6.46875 3.75 6.36328 3.75C6.22266 3.75 6.11719 3.82031 6.04688 3.89062L4.64062 5.29688C4.53516 5.40234 4.5 5.50781 4.5 5.61328C4.5 5.75391 4.53516 5.82422 4.64062 5.89453L6.99609 8.25L4.64062 10.6055C4.53516 10.6758 4.5 10.7812 4.5 10.8867C4.5 11.0273 4.53516 11.1328 4.64062 11.2031L6.04688 12.6094C6.11719 12.7148 6.22266 12.75 6.36328 12.75C6.46875 12.75 6.57422 12.7148 6.67969 12.6094L9 10.2539L11.3555 12.6094C11.4258 12.7148 11.4961 12.75 11.6367 12.75C11.7422 12.75 11.8477 12.7148 11.9531 12.6094L13.3594 11.2031C13.4297 11.1328 13.5 11.0273 13.5 10.8867C13.5 10.7812 13.4297 10.6758 13.3594 10.5703Z" fill="#EB5757"/>
+                                                                </svg>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__box--column--card">
+                                                            <div class="cart__box--card--img--inner">
+                                                                <img src="img/little_image.png" alt="Костыль" class="cart__box--card--img">
+                                                            </div>
+
+                                                            <div class="cart__box--card--name">
+                                                                Авт. выкл. ВА47-29 1Р 1А 4,5кА х-ка В ИЭК
+                                                            </div>
+
+                                                            <div class="cart__box--card--article">
+                                                                MVA20-1-001-B
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--price">
+                                                                169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--much">
+                                                                <div class="table_prod" id="cart_prod">
+                                                                        
+                                                                    <div class="tab-content">
+                                                                        <div class="table_container tab-pane fade show active carttt" id="table">
+                                                                            <div class="row list_view no-gutters" id="cartt">
+                                                                                <div class="col">
+                                                                                    <div class="actions">
+                                                                                        <div class="quantity">
+                                                                                            <input type="number" min="1" max="10" step="1" value="1">
+                                                                                            <div class="quantity-nav">
+                                                                                                <div class="quantity-button quantity-down">-</div>
+                                                                                                <div class="quantity-button quantity-up">+</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                шт.
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                3 857 169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__delete">
+                                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.3125 0.375C16.7695 0.375 17.1562 0.550781 17.5078 0.867188C17.8242 1.21875 18 1.60547 18 2.0625V14.4375C18 14.9297 17.8242 15.3164 17.5078 15.6328C17.1562 15.9844 16.7695 16.125 16.3125 16.125H1.6875C1.19531 16.125 0.808594 15.9844 0.492188 15.6328C0.140625 15.3164 0 14.9297 0 14.4375V2.0625C0 1.60547 0.140625 1.21875 0.492188 0.867188C0.808594 0.550781 1.19531 0.375 1.6875 0.375H16.3125ZM13.3594 10.5703L11.0039 8.25L13.3594 5.89453C13.4297 5.82422 13.5 5.75391 13.5 5.61328C13.5 5.50781 13.4297 5.40234 13.3594 5.29688L11.9531 3.89062C11.8477 3.82031 11.7422 3.75 11.6367 3.75C11.4961 3.75 11.4258 3.82031 11.3555 3.89062L9 6.24609L6.64453 3.89062C6.57422 3.82031 6.46875 3.75 6.36328 3.75C6.22266 3.75 6.11719 3.82031 6.04688 3.89062L4.64062 5.29688C4.53516 5.40234 4.5 5.50781 4.5 5.61328C4.5 5.75391 4.53516 5.82422 4.64062 5.89453L6.99609 8.25L4.64062 10.6055C4.53516 10.6758 4.5 10.7812 4.5 10.8867C4.5 11.0273 4.53516 11.1328 4.64062 11.2031L6.04688 12.6094C6.11719 12.7148 6.22266 12.75 6.36328 12.75C6.46875 12.75 6.57422 12.7148 6.67969 12.6094L9 10.2539L11.3555 12.6094C11.4258 12.7148 11.4961 12.75 11.6367 12.75C11.7422 12.75 11.8477 12.7148 11.9531 12.6094L13.3594 11.2031C13.4297 11.1328 13.5 11.0273 13.5 10.8867C13.5 10.7812 13.4297 10.6758 13.3594 10.5703Z" fill="#EB5757"/>
+                                                                </svg>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__box--column--card">
+                                                            <div class="cart__box--card--img--inner">
+                                                                <img src="img/little_image.png" alt="Костыль" class="cart__box--card--img">
+                                                            </div>
+
+                                                            <div class="cart__box--card--name">
+                                                                Авт. выкл. ВА47-29 1Р 1А 4,5кА х-ка В ИЭК
+                                                            </div>
+
+                                                            <div class="cart__box--card--article">
+                                                                MVA20-1-001-B
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--price">
+                                                                169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--much">
+                                                                <div class="table_prod" id="cart_prod">
+                                                                        
+                                                                    <div class="tab-content">
+                                                                        <div class="table_container tab-pane fade show active carttt" id="table">
+                                                                            <div class="row list_view no-gutters" id="cartt">
+                                                                                <div class="col">
+                                                                                    <div class="actions">
+                                                                                        <div class="quantity">
+                                                                                            <input type="number" min="1" max="10" step="1" value="1">
+                                                                                            <div class="quantity-nav">
+                                                                                                <div class="quantity-button quantity-down">-</div>
+                                                                                                <div class="quantity-button quantity-up">+</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                шт.
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                3 857 169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__delete">
+                                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.3125 0.375C16.7695 0.375 17.1562 0.550781 17.5078 0.867188C17.8242 1.21875 18 1.60547 18 2.0625V14.4375C18 14.9297 17.8242 15.3164 17.5078 15.6328C17.1562 15.9844 16.7695 16.125 16.3125 16.125H1.6875C1.19531 16.125 0.808594 15.9844 0.492188 15.6328C0.140625 15.3164 0 14.9297 0 14.4375V2.0625C0 1.60547 0.140625 1.21875 0.492188 0.867188C0.808594 0.550781 1.19531 0.375 1.6875 0.375H16.3125ZM13.3594 10.5703L11.0039 8.25L13.3594 5.89453C13.4297 5.82422 13.5 5.75391 13.5 5.61328C13.5 5.50781 13.4297 5.40234 13.3594 5.29688L11.9531 3.89062C11.8477 3.82031 11.7422 3.75 11.6367 3.75C11.4961 3.75 11.4258 3.82031 11.3555 3.89062L9 6.24609L6.64453 3.89062C6.57422 3.82031 6.46875 3.75 6.36328 3.75C6.22266 3.75 6.11719 3.82031 6.04688 3.89062L4.64062 5.29688C4.53516 5.40234 4.5 5.50781 4.5 5.61328C4.5 5.75391 4.53516 5.82422 4.64062 5.89453L6.99609 8.25L4.64062 10.6055C4.53516 10.6758 4.5 10.7812 4.5 10.8867C4.5 11.0273 4.53516 11.1328 4.64062 11.2031L6.04688 12.6094C6.11719 12.7148 6.22266 12.75 6.36328 12.75C6.46875 12.75 6.57422 12.7148 6.67969 12.6094L9 10.2539L11.3555 12.6094C11.4258 12.7148 11.4961 12.75 11.6367 12.75C11.7422 12.75 11.8477 12.7148 11.9531 12.6094L13.3594 11.2031C13.4297 11.1328 13.5 11.0273 13.5 10.8867C13.5 10.7812 13.4297 10.6758 13.3594 10.5703Z" fill="#EB5757"/>
+                                                                </svg>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__box--column--card">
+                                                            <div class="cart__box--card--img--inner">
+                                                                <img src="img/little_image.png" alt="Костыль" class="cart__box--card--img">
+                                                            </div>
+
+                                                            <div class="cart__box--card--name">
+                                                                Авт. выкл. ВА47-29 1Р 1А 4,5кА х-ка В ИЭК
+                                                            </div>
+
+                                                            <div class="cart__box--card--article">
+                                                                MVA20-1-001-B
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--price">
+                                                                169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--much">
+                                                                <div class="table_prod" id="cart_prod">
+                                                                        
+                                                                    <div class="tab-content">
+                                                                        <div class="table_container tab-pane fade show active carttt" id="table">
+                                                                            <div class="row list_view no-gutters" id="cartt">
+                                                                                <div class="col">
+                                                                                    <div class="actions">
+                                                                                        <div class="quantity">
+                                                                                            <input type="number" min="1" max="10" step="1" value="1">
+                                                                                            <div class="quantity-nav">
+                                                                                                <div class="quantity-button quantity-down">-</div>
+                                                                                                <div class="quantity-button quantity-up">+</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--unit">
+                                                                шт.
+                                                            </div>
+
+                                                            <div class="cart__box--view cart__box--prices">
+                                                                3 857 169.01 ₽
+                                                            </div>
+
+                                                            <div class="cart__delete">
+                                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.3125 0.375C16.7695 0.375 17.1562 0.550781 17.5078 0.867188C17.8242 1.21875 18 1.60547 18 2.0625V14.4375C18 14.9297 17.8242 15.3164 17.5078 15.6328C17.1562 15.9844 16.7695 16.125 16.3125 16.125H1.6875C1.19531 16.125 0.808594 15.9844 0.492188 15.6328C0.140625 15.3164 0 14.9297 0 14.4375V2.0625C0 1.60547 0.140625 1.21875 0.492188 0.867188C0.808594 0.550781 1.19531 0.375 1.6875 0.375H16.3125ZM13.3594 10.5703L11.0039 8.25L13.3594 5.89453C13.4297 5.82422 13.5 5.75391 13.5 5.61328C13.5 5.50781 13.4297 5.40234 13.3594 5.29688L11.9531 3.89062C11.8477 3.82031 11.7422 3.75 11.6367 3.75C11.4961 3.75 11.4258 3.82031 11.3555 3.89062L9 6.24609L6.64453 3.89062C6.57422 3.82031 6.46875 3.75 6.36328 3.75C6.22266 3.75 6.11719 3.82031 6.04688 3.89062L4.64062 5.29688C4.53516 5.40234 4.5 5.50781 4.5 5.61328C4.5 5.75391 4.53516 5.82422 4.64062 5.89453L6.99609 8.25L4.64062 10.6055C4.53516 10.6758 4.5 10.7812 4.5 10.8867C4.5 11.0273 4.53516 11.1328 4.64062 11.2031L6.04688 12.6094C6.11719 12.7148 6.22266 12.75 6.36328 12.75C6.46875 12.75 6.57422 12.7148 6.67969 12.6094L9 10.2539L11.3555 12.6094C11.4258 12.7148 11.4961 12.75 11.6367 12.75C11.7422 12.75 11.8477 12.7148 11.9531 12.6094L13.3594 11.2031C13.4297 11.1328 13.5 11.0273 13.5 10.8867C13.5 10.7812 13.4297 10.6758 13.3594 10.5703Z" fill="#EB5757"/>
+                                                                </svg>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__total">
+                                                            <div class="cart__weight">
+                                                                Общий вес: <span class="bold">0.864кг</span>
+                                                            </div>
+
+                                                            <div class="cart__price--total">
+                                                                Итого: <span class="bold">30 857 169.01 ₽</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cart__btns">
+                                                            <a href="#" class="cart__clear">Очистить корзину</a>
+
+                                                            <div class="cart__buttons">
+                                                                <button class="btn_bordered cart__continue">
+                                                                    Продолжить покупки
+                                                                </button>
+
+                                                                <button class="autorization__button oform__button">
+                                                                    Оформить заказ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="register__inner cart__inner--oform">
+                                                    <div class="info_tabs register__tabs">
+                                                        <ul class="nav nav-tabs">
+                                                            <li><a data-toggle="tab" href="#" class="views reg__tab fizface nav-link active"
+                                                                   role="tab" aria-controls="info" aria-selected="true">Физическое лицо</a></li>
+                                                            <li><a data-toggle="tab" href="#" class="views reg__tab yurface nav-link"
+                                                                   role="tab" aria-controls="info" aria-selected="true">Юридическое лицо</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="tab-content reg__face--tab fiz">
+                                                        <div class="info tab-pane fade show active">
+                                                            <form action="#" class="register__form">
+                                                                <div class="register__form--box">
+                                                                    <input type="text" class="email enter__password" placeholder="Фио *">
+                                                                    <input type="email" class="email enter__password" placeholder="Email *">
+                                                                    <input type="password" class="email enter__password" placeholder="Пароль *">
+                                                                    <input type="text" class="email enter__password" placeholder="Введите символы с картинки *">
+                                                                </div>
+
+                                                                <div class="register__form--box">
+                                                                    <input type="phone" class="email enter__password" placeholder="Телефон * : +7 (___) ___-__-__">
+                                                                    <input type="text" class="email enter__password" placeholder="Адрес для доставки">
+                                                                    <input type="password" class="email enter__password" placeholder="Подтвердить пароль">
+
+                                                                    <img src="img/captcha.png" alt="Капча" class="captcha">
+                                                                </div>
+
+
+                                                            </form>
+
+                                                            <input type="checkbox" id="accept">
+                                                            <label for="accept" class="accept__label enter__memorizeme">Даю согласие на обработку персональных данных согласно политики конфиденциальности сайта</label>
+
+                                                            <div class="register__button--inner">
+                                                                <button class="register__button autorization__button">
+                                                                    Отправить заявку
+                                                                </button>
+
+                                                                <div class="register__text">
+                                                                    Внимание! Поля, помеченные звездочкой *, обязательны для заполнения.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-content reg__face--tab yur">
+                                                        
+                                                        <div class="yur__face--inner">
+                                                            <div class="yur__face--box">
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email enter__password" placeholder="Фио *">
+
+                                                                    <input type="phone" class="email enter__password" placeholder="Телефон * : +7 (___) ___-__-__">
+                                                                </div>
+                                                                <div class="yur__face--column">
+                                                                    <input type="email" class="email enter__password" placeholder="Email *">
+
+                                                                    <input type="text" class="email enter__password" placeholder="Адрес для доставки">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="yur__face--box">
+                                                                <div class="yur__face--title">
+                                                                    Реквизиты компании
+                                                                </div>
+
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email enter__password" placeholder="Название организации *">
+
+                                                                    <input type="text" class="email enter__password" placeholder="ИНН *">
+                                                                </div>
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email enter__password" placeholder="КПП *">
+
+                                                                    <input type="text" class="email enter__password" placeholder="Юридический адрес *">
+                                                                </div>
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email enter__password" placeholder="Фактический адрес">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="yur__face--box">
+                                                                <div class="yur__face--title">
+                                                                    Банковские реквизиты
+                                                                </div>
+
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email enter__password" placeholder="БИК *">
+
+                                                                    <input type="text" class="email enter__password" placeholder="Рассчетный счет *">
+                                                                </div>
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email full__input enter__password" placeholder="Прочие реквизиты и комментарии">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="yur__face--box">
+                                                                <div class="yur__face--column">
+                                                                    <input type="password" class="email enter__password" placeholder="Пароль *">
+
+                                                                    <input type="password" class="email enter__password" placeholder="Подтвердить пароль">
+                                                                </div>
+                                                                <div class="yur__face--column">
+                                                                    <input type="text" class="email enter__password" placeholder="Введите символы с картинки *">
+                                                                    
+                                                                    <div class="captcha__inner">
+                                                                        <img src="img/captcha.png" alt="Капча" class="captcha">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                        <input type="checkbox" id="accept2">
+                                                        <label for="accept2" class="accept__label enter__memorizeme">Даю согласие на обработку персональных данных согласно политики конфиденциальности сайта</label>
+
+                                                        <div class="register__button--inner">
+                                                            <button class="register__button autorization__button">
+                                                                Отправить заявку
+                                                            </button>
+
+                                                            <div class="register__text">
+                                                                Внимание! Поля, помеченные звездочкой *, обязательны для заполнения.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tab-content cart__face--tab cart__design">
+                                                
+                                                <div class="oficce__box">
+                                                    <div class="cart__delivery">
+                                                        <div class="cart__inner--title">
+                                                            Доставка
+                                                        </div>
+
+                                                        <div class="cart__inner--checkboxes">
+                                                            <input type="radio" class="delivery__input" name="delivery" id="delivery1">
+
+                                                            <label for="delivery1" class="delivery__label">
+                                                                Доставка по адресу
+                                                            </label>
+
+                                                            <input type="radio" class="delivery__input" name="delivery" id="delivery2">
+
+                                                            <label for="delivery2" class="delivery__label">
+                                                                Самовывоз
+                                                            </label>
+                                                        </div>
+
+                                                        <input type="text" class="email full__input enter__password" placeholder="Адрес для доставки">
+
+                                                        <div class="cart__inner--title">
+                                                            Способ доставки
+                                                        </div>
+
+                                                        <div class="cart__inner--checkboxes">
+                                                            <input type="radio" class="delivery__input" name="var" id="var1">
+
+                                                            <label for="var1" class="delivery__label">
+                                                                Москва и МО
+                                                            </label>
+
+                                                            <input type="radio" class="delivery__input" name="var" id="var2">
+
+                                                            <label for="var2" class="delivery__label delivery__js">
+                                                                Доставка в регионы
+                                                            </label>
+                                                        </div>
+                                                        
+                                                        <div class="option__payment">
+                                                            <div class="green__title">
+                                                                Стоимость заказа свыше 80 тыс. руб.
+                                                            </div>
+
+                                                            <p class="cart__text">Мы доставим к Вам товар бесплатно.</p>
+
+                                                            <div class="green__title">Стоимость заказа до 80 тыс. руб.</div>
+
+                                                            <div class="cart__text">
+                                                                Стоимость доставки зависит от веса товара, его объема и расстояния до места назначения.
+                                                            </div>
+
+                                                            <div class="info">
+                                                                <ul class="list">
+                                                                    <li>850 рублей для мелкогабаритных товаров до 15 килограмм</li>
+                                                                    <li>1200 рублей для мелкогабаритных товаров до 50 килограмм</li>
+                                                                    <li>2000 рублей для крупногабаритных товаров до 1000 килограмм</li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="cart__text">
+                                                                Индивидуально рассчитывается стоимость доставки при следующих условиях:
+                                                            </div>
+
+                                                            <div class="info">
+                                                                <ul class="list">
+                                                                    <li>для крупногабаритных товаров свыше 1000 килограмм</li>
+                                                                    <li>по Московской области</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="region__delivery">
+                                                            <div class="cart__text">
+                                                                В остальные регионы РФ мы отправляем товар, пользуясь услугами компании-перевозчика «Деловые линии».
+                                                            </div>
+
+                                                            <img src="img/cart1.png" alt="Партнер" class="region__delivery--img">
+                                                        </div>
+
+                                                        <div class="cart__inner--title">
+                                                            Оплата
+                                                        </div>
+
+                                                        <div class="cart__inner--checkboxes">
+                                                            <input type="radio" class="delivery__input" name="delivery" id="payment">
+
+                                                            <label for="payment" class="delivery__label">
+                                                                Наличными
+                                                            </label>
+
+                                                            <input type="radio" class="delivery__input" name="delivery" id="payment2">
+
+                                                            <label for="payment2" class="delivery__label">
+                                                                Безналичная оплата
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="partners__payment">
+                                                            <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="120" height="77" rx="3" fill="#EE2A23"/>
+                                                            <path d="M20.9789 21.6563C23.3909 21.6563 24.1487 23.3005 24.7846 24.9423C25.0517 25.6394 31.3196 41.9535 31.5081 42.4432C31.5582 42.5798 31.5243 42.804 31.3033 42.8852C31.081 42.9651 27.8243 44.1687 27.644 44.2331C27.4637 44.2989 27.2617 44.2035 27.1966 44.0321C27.1288 43.8633 25.7771 40.3067 25.6252 39.9098H16.3352C16.1888 40.3067 14.8208 43.871 14.7598 44.0321C14.6974 44.1958 14.5036 44.3066 14.311 44.2331C14.1185 44.161 10.8497 42.9574 10.6544 42.8852C10.4673 42.8156 10.3819 42.6133 10.447 42.4432C10.6775 41.8324 16.8505 25.7799 17.165 24.9423C17.7778 23.325 18.5615 21.6563 20.9789 21.6563ZM9.95076 50.8477C9.75553 50.8477 9.59961 51.0023 9.59961 51.1905V55.0036C9.59961 55.1917 9.75553 55.3438 9.95076 55.3438H31.9975C32.1968 55.3438 32.3527 55.1917 32.3527 55.0036V51.1905C32.3527 51.0023 32.1968 50.8477 31.9975 50.8477H9.95076ZM20.9572 26.9835L17.8171 35.9459H24.1487L20.9979 26.9835H20.9572ZM68.0754 41.6791C67.6131 41.8273 67.3081 41.8633 66.9447 41.8633C66.1936 41.8633 65.7774 41.5811 65.7774 40.8492C65.7774 40.0863 66.3061 39.8312 67.3447 39.8312C67.5982 39.8312 67.8477 39.866 67.9643 39.9046V40.451C67.9643 41.0399 67.9982 41.4265 68.0754 41.6791ZM70.745 42.5528C70.1905 41.7525 70.0454 41.2809 70.0454 40.2719V38.2229C70.0454 37.1199 69.9099 36.7217 69.6034 36.3196C69.1764 35.7501 68.4646 35.5026 67.1562 35.5026C66.2302 35.5026 65.3313 35.598 64.4609 35.8093L64.7754 37.2655C65.3638 37.1869 65.9807 37.1199 66.4159 37.1199C67.8056 37.1199 67.9643 37.3106 67.9643 38.3016V38.6714C67.6552 38.5928 67.3081 38.5361 66.9054 38.5361C64.8134 38.5361 63.7084 39.509 63.7084 41.1198C63.7084 42.6301 64.8893 43.4535 66.3278 43.4535C66.8647 43.4535 67.426 43.3594 67.8707 43.1868C68.1392 43.0759 68.2558 43.0102 68.6029 42.7963C68.8117 43.085 69.2306 43.3801 69.4014 43.4355L70.745 42.5528ZM91.4387 41.6791C90.9736 41.8273 90.674 41.8633 90.3079 41.8633C89.5541 41.8633 89.1325 41.5811 89.1325 40.8492C89.1325 40.0863 89.668 39.8312 90.7093 39.8312C90.9628 39.8312 91.2136 39.866 91.3275 39.9046V40.451C91.3275 41.0399 91.36 41.4265 91.4387 41.6791ZM94.111 42.5528C93.5524 41.7525 93.41 41.2809 93.41 40.2719V38.2229C93.41 37.1199 93.2717 36.7217 92.9626 36.3196C92.5409 35.7501 91.8278 35.5026 90.5154 35.5026C89.5907 35.5026 88.6864 35.598 87.816 35.8093L88.1264 37.2655C88.7162 37.1869 89.3345 37.1199 89.7819 37.1199C91.1634 37.1199 91.3275 37.3106 91.3275 38.3016V38.6714C91.0184 38.5928 90.674 38.5361 90.2632 38.5361C88.1685 38.5361 87.0594 39.509 87.0594 41.1198C87.0594 42.6301 88.243 43.4535 89.6883 43.4535C90.232 43.4535 90.7879 43.3594 91.2285 43.1868C91.501 43.0759 91.6136 43.0102 91.9607 42.7963C92.1722 43.085 92.5911 43.3801 92.7633 43.4355L94.111 42.5528ZM110.4 43.2821C110.4 43.2821 109.253 40.9587 108.972 40.4304C108.656 39.835 108.363 39.424 107.718 39.2758V39.2423C108.15 39.1636 108.495 38.9149 108.872 38.1546C109.228 37.4137 109.334 37.2539 109.544 37.0773C109.75 36.9021 110.032 36.9652 110.032 36.9652L110.138 35.5954C109.838 35.5568 109.506 35.5555 109.163 35.5735C108.594 35.6057 108.299 35.7617 108.019 36.0297C107.799 36.2346 107.65 36.5413 107.466 36.8931C107.27 37.2771 107.116 37.5864 106.912 37.9768C106.71 38.3776 106.616 38.558 106.072 38.558H105.718V32.4898H103.623V43.2821H105.718V40.1791L106.004 40.1739C106.605 40.1739 106.71 40.317 107.028 40.9188C107.399 41.6365 108.111 43.2821 108.111 43.2821H110.4ZM51.3896 43.2821H53.807L50.1504 32.6702C49.7653 32.5478 49.2894 32.4718 48.781 32.4718C48.2265 32.4718 48.0285 32.5413 47.5947 32.6702L43.7252 43.2821H46.045C46.045 43.2821 46.3582 42.3517 46.727 41.1984H50.7347C51.0926 42.3504 51.3896 43.2821 51.3896 43.2821ZM47.3154 39.4188C47.3154 39.4188 47.9851 37.2887 48.0895 36.9575C48.3553 36.0993 48.7593 34.7359 48.7593 34.7359H48.8257C48.8257 34.7359 49.1999 36.1482 49.444 36.942C49.5362 37.2578 50.1761 39.4188 50.1761 39.4188H47.3154ZM74.3135 38.2049C73.5746 38.2049 72.974 38.7783 72.974 39.4807C72.974 40.1881 73.5746 40.7577 74.3135 40.7577C75.0538 40.7577 75.6517 40.1881 75.6517 39.4807C75.6517 38.7783 75.0538 38.2049 74.3135 38.2049ZM56.6772 32.4898H54.5771V43.2808H56.6772V32.4898ZM98.4021 37.2178C99.5627 37.241 99.7064 37.4691 99.7064 38.3943V43.2821H101.788V38.2229C101.788 37.1199 101.652 36.7217 101.343 36.3196C100.916 35.7501 100.077 35.5026 98.657 35.5026C97.2524 35.5026 96.3575 35.6444 95.2065 35.9704V43.2821H97.3093V37.3106C97.8611 37.2346 97.9587 37.2178 98.4021 37.2178ZM61.8713 32.2978C60.5589 32.2978 59.8444 32.5452 59.4241 33.1135C59.1149 33.5168 58.978 33.9241 58.978 35.0297V35.9704H57.9354V37.5838H58.978V43.2821H61.0605L61.0551 37.5838H63.1308V35.9704H61.0551L61.0605 35.1057C61.0605 34.1161 61.2191 33.9241 62.6102 33.9241C62.7607 33.9241 62.9302 33.9318 63.1105 33.9447L63.4386 32.3944C62.9248 32.33 62.3987 32.2978 61.8713 32.2978ZM78.5802 32.3983C79.2947 32.3584 80.8919 32.3017 81.8938 32.3017C82.0768 32.3017 82.2667 32.303 82.4565 32.312C84.4265 32.312 85.5558 33.6754 85.5558 35.2758C85.5558 36.3647 85.0311 37.0877 83.8014 37.5181C85.2481 37.8222 86.006 38.8956 86.006 40.2087C86.006 41.1726 85.7199 41.9381 85.1952 42.46C84.5146 43.0966 83.4842 43.4535 82.1121 43.4535C80.8919 43.4535 79.3598 43.4174 78.5802 43.3736V32.3983ZM81.8938 34.1663C81.5467 34.1663 81.1169 34.1728 80.6912 34.1869V36.7784H81.8952C82.3724 36.7784 82.7561 36.6521 83.0178 36.4085C83.2672 36.1792 83.3974 35.8544 83.3974 35.4691C83.3974 34.6405 82.9256 34.1715 82.0484 34.1663H81.8938ZM81.9372 41.5927H82.028C83.1222 41.5927 83.7919 41.0399 83.8001 39.9265C83.7892 39.527 83.6279 39.1585 83.3391 38.8917C83.0232 38.5902 82.5758 38.433 82.0511 38.433H80.6912V41.5811C81.0749 41.5889 81.4979 41.5901 81.9372 41.5927Z" fill="white"/>
+                                                            </svg>
+
+                                                            <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="120" height="77" rx="3" fill="#299D37"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M91.5666 55.4868H93.7598C93.3665 55.7072 92.8401 56.1252 92.1793 56.74L89.9865 58.9862L91.1893 60.7123C92.4472 62.5093 93.5476 63.8807 94.4909 64.8265H91.3544C90.9615 63.9119 90.4502 62.9822 89.8214 62.0364L88.4064 59.9084L89.6332 58.3478C90.7332 56.9135 91.3779 55.9597 91.5666 55.4868ZM88.2414 56.5272V63.7625L88.3357 64.3063C88.3984 64.4009 88.5404 64.4798 88.7597 64.5427V64.8265H85.7175V64.5427L86.142 64.3063C86.2047 64.2117 86.2363 64.0306 86.2363 63.7625V56.5272L86.142 56.007C86.0792 55.8968 85.9373 55.8259 85.7175 55.7942V55.4868H88.7597V55.7942C88.5399 55.8254 88.3979 55.8968 88.3357 56.007L88.2414 56.5272ZM83.7134 56.5272V63.7625L83.8077 64.3063L84.2322 64.5427V64.8265H81.1664V64.5427C81.3862 64.4798 81.5437 64.4009 81.638 64.3063L81.7083 63.7625V60.0029H78.1236V63.7625L78.218 64.3063C78.2812 64.4009 78.4222 64.4798 78.642 64.5427V64.8265H75.5526V64.5427C75.8045 64.4798 75.9611 64.4009 76.0243 64.3063L76.1186 63.7625V56.5272L76.0243 56.007C75.9611 55.8968 75.8045 55.8259 75.5526 55.7942V55.4868H78.642V55.7942C78.4217 55.8254 78.2807 55.8968 78.218 56.007L78.1236 56.5272V59.3882H81.7083V56.5272L81.638 56.007C81.5437 55.8968 81.3862 55.8259 81.1664 55.7942V55.4868H84.2322V55.7942C84.0119 55.8254 83.8704 55.8968 83.8077 56.007L83.7134 56.5272ZM68.8795 55.7942V55.4868H71.5675C71.5986 55.9124 71.7095 56.3697 71.8977 56.8582L73.8786 62.4383C74.2088 63.4158 74.531 64.2117 74.8456 64.8265H72.4872L71.4736 61.4689H68.4781L67.8413 63.6915L67.6527 64.8265H65.9547L68.9729 57.8276C69.2719 57.0871 69.4209 56.5825 69.4209 56.3144C69.4219 56.015 69.2408 55.8415 68.8795 55.7942ZM69.9879 57.0474L68.7144 60.8069H71.2614L69.9879 57.0474ZM65.224 57.5202H64.7047L64.5868 57.1183C64.4609 56.661 64.2722 56.3617 64.0208 56.2198L62.7237 56.0543H61.4743C61.1908 56.0543 61.0026 56.1016 60.9083 56.1961C60.83 56.2751 60.7904 56.4165 60.7904 56.6217V58.8444H61.3092C62.8186 58.8444 63.8642 58.9943 64.4458 59.2936C65.2792 59.7036 65.6957 60.5075 65.6957 61.7054C65.6957 62.872 65.3655 63.7071 64.7047 64.2117C64.1232 64.6217 63.2195 64.8265 61.9927 64.8265H58.267V64.5427L58.7146 64.3063L58.7853 63.7625V56.5272L58.7146 56.007C58.6519 55.8968 58.5028 55.8259 58.267 55.7942V55.4868H65.224V57.5202ZM60.7904 59.4355V63.4314C60.7904 63.7468 60.8456 63.9516 60.9555 64.0462C61.0819 64.1724 61.3017 64.2353 61.6158 64.2353H61.8988C62.4969 64.2353 62.9365 64.0301 63.2199 63.6206C63.4713 63.2423 63.5973 62.6355 63.5973 61.7999C63.5973 60.9804 63.4633 60.3973 63.1959 60.0502C62.9129 59.6402 62.386 59.4355 61.6158 59.4355H60.7904ZM57.4416 58.1587C57.4416 59.2463 57.1114 60.0266 56.4506 60.4995C55.8846 60.9095 55.0045 61.1142 53.8093 61.1142H52.8659V63.7625L52.9603 64.3063C53.0074 64.4009 53.1565 64.4798 53.4079 64.5427V64.8265H50.342V64.5427L50.7665 64.3063L50.8609 63.7625V56.5272L50.7665 56.007C50.7038 55.8968 50.5618 55.8259 50.342 55.7942V55.4868H54.2097C55.2629 55.4868 56.0332 55.6443 56.5209 55.9597C57.135 56.3697 57.4416 57.1027 57.4416 58.1587ZM53.0079 56.1489C52.9136 56.2117 52.8664 56.3536 52.8664 56.5745V60.5231H53.8097C54.3913 60.5231 54.8002 60.3023 55.0361 59.8611C55.2408 59.4672 55.3426 58.868 55.3426 58.0641C55.3426 56.7244 54.7842 56.0543 53.6682 56.0543H53.4324L53.0079 56.1489ZM48.928 57.5202H48.4327L48.3148 57.1183C48.1578 56.661 47.9611 56.3617 47.7252 56.2198L46.4517 56.0543H45.4141L45.0367 56.1489L44.9424 56.5035V59.3882H46.1687C47.0177 59.3882 47.5757 59.2936 47.8432 59.1044V60.2867C47.5762 60.0975 47.0177 60.0029 46.1687 60.0029H44.9424V63.5024C44.9424 63.7861 45.0367 63.9833 45.2254 64.0935L46.4046 64.2353H46.664L47.9375 64.0462C48.1578 63.9043 48.3309 63.5577 48.4563 63.0058L48.5507 62.6511H49.1402V64.8265H42.419V64.5427C42.6548 64.4798 42.8043 64.4009 42.8671 64.3063L42.9614 63.7625V56.5272L42.8671 56.007C42.8043 55.8968 42.6548 55.8259 42.419 55.7942V55.4868H48.928V57.5202ZM40.8861 57.5202H40.3908L40.2729 57.1183C40.1314 56.661 39.9347 56.3617 39.6833 56.2198L38.4334 56.0543H37.1363C36.8689 56.0543 36.6802 56.1016 36.5703 56.1961C36.5232 56.2751 36.4996 56.4165 36.4996 56.6217V58.8444H37.0184C38.5122 58.8444 39.5574 58.9943 40.155 59.2936C40.9724 59.7036 41.3813 60.5075 41.3813 61.7054C41.3813 62.872 41.0512 63.7071 40.3908 64.2117C39.8248 64.6217 38.9206 64.8265 37.6788 64.8265H33.929V64.5427C34.1809 64.4798 34.3379 64.4009 34.4007 64.3063L34.495 63.7625V56.5272L34.4007 56.007C34.3379 55.8968 34.1809 55.8259 33.929 55.7942V55.4868H40.8861V57.5202ZM31.4999 56.2434C31.2169 56.0387 30.7769 55.9361 30.1793 55.9361C29.2359 55.9361 28.5676 56.2827 28.1747 56.9764C27.8445 57.5756 27.6794 58.5526 27.6794 59.9084C27.6794 61.2641 27.8601 62.2648 28.2218 62.9112C28.6619 63.7152 29.4166 64.1171 30.4858 64.1171C31.2721 64.1171 32.0504 63.928 32.8206 63.5496L33.1036 64.1408C32.2074 64.6922 31.1542 64.9683 29.9434 64.9683C26.9875 64.9683 25.5098 63.3997 25.5098 60.263C25.5098 56.9689 27.0427 55.3213 30.1085 55.3213C31.2877 55.3213 32.1919 55.4632 32.8206 55.7469V57.6858H32.231L32.0659 57.1183C31.94 56.7244 31.7513 56.4326 31.4999 56.2434ZM36.4996 59.4355V63.4314C36.4996 63.7468 36.5468 63.9516 36.6411 64.0462C36.767 64.1724 36.9948 64.2353 37.325 64.2353H37.5844C38.7164 64.2353 39.2824 63.4234 39.2824 61.7999C39.2824 60.9804 39.1489 60.3973 38.8815 60.0502C38.5829 59.6402 38.0481 59.4355 37.2778 59.4355H36.4996Z" fill="white"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M70.9097 14.2849L72.4523 15.6989L52.9715 26.9229L43.5396 21.4435L44.4211 19.6759L52.9715 24.5809L70.9097 14.2849ZM66.9871 12.0312L69.0586 13.0918L52.9715 22.3715L45.4789 18.0851L46.757 16.5385L52.9715 20.1178L66.9871 12.0312ZM73.8186 17.1572L74.9645 18.7038L52.9715 31.386L42.3496 25.2879L42.8344 23.3436L52.9715 29.1766L73.8186 17.1572Z" fill="white"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M76.9919 22.8579C77.638 24.6847 77.9615 26.5989 77.9615 28.6025C77.9615 30.606 77.638 32.5503 76.9919 34.4354L76.5511 35.6294C75.6405 37.7796 74.3624 39.6948 72.7167 41.3739C71.0418 43.0231 69.1325 44.2904 66.987 45.1742C64.7251 46.1464 62.3892 46.6324 59.9792 46.6324C57.5402 46.6324 55.2042 46.1455 52.9714 45.1742C50.8849 44.2904 48.9898 43.0231 47.2858 41.3739C45.611 39.6948 44.3329 37.7796 43.4514 35.6294C42.5108 33.3598 42.041 31.0178 42.041 28.6025V27.4093L52.9714 33.64L76.0222 20.3833L76.9919 22.8579Z" fill="white"/>
+                                                            </svg>
+                                                            
+                                                            <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="120" height="77" rx="3" fill="#0F3560"/>
+                                                            <path d="M70.4707 57.4243H49.4727V19.5889H70.4707V57.4243Z" fill="#FF5F00"/>
+                                                            <path d="M50.8187 38.5034C50.8187 30.8283 54.4029 23.9916 59.9844 19.5857C55.9028 16.3639 50.7515 14.4409 45.1532 14.4409C31.8997 14.4409 21.1562 25.2139 21.1562 38.5034C21.1562 51.7929 31.8997 62.5659 45.1532 62.5659C50.7515 62.5659 55.9028 60.6429 59.9844 57.4211C54.4029 53.0153 50.8187 46.1785 50.8187 38.5034Z" fill="#EB001B"/>
+                                                            <path d="M98.7906 38.5034C98.7906 51.7929 88.0471 62.5659 74.7937 62.5659C69.1953 62.5659 64.0441 60.6429 59.9609 57.4211C65.544 53.0153 69.1282 46.1785 69.1282 38.5034C69.1282 30.8283 65.544 23.9916 59.9609 19.5857C64.0441 16.3639 69.1953 14.4409 74.7937 14.4409C88.0471 14.4409 98.7906 25.2139 98.7906 38.5034Z" fill="#F79E1B"/>
+                                                            <path d="M39.2148 38.6557C39.2148 37.6046 39.9018 36.7412 41.0243 36.7412C42.0969 36.7412 42.821 37.5674 42.821 38.6557C42.821 39.7439 42.0969 40.5702 41.0243 40.5702C39.9018 40.5702 39.2148 39.7067 39.2148 38.6557ZM44.0436 38.6557V35.6658H42.7468V36.3918C42.3354 35.8534 41.7113 35.5154 40.863 35.5154C39.1905 35.5154 37.8794 36.8299 37.8794 38.6557C37.8794 40.4828 39.1905 41.7959 40.863 41.7959C41.7113 41.7959 42.3354 41.458 42.7468 40.9196V41.6455H44.0436V38.6557ZM87.8671 38.6557C87.8671 37.6046 88.5541 36.7412 89.6767 36.7412C90.7507 36.7412 91.4734 37.5674 91.4734 38.6557C91.4734 39.7439 90.7507 40.5702 89.6767 40.5702C88.5541 40.5702 87.8671 39.7067 87.8671 38.6557ZM92.6973 38.6557V33.2644H91.3991V36.3918C90.9878 35.8534 90.3636 35.5154 89.5153 35.5154C87.8428 35.5154 86.5317 36.8299 86.5317 38.6557C86.5317 40.4828 87.8428 41.7959 89.5153 41.7959C90.3636 41.7959 90.9878 41.458 91.3991 40.9196V41.6455H92.6973V38.6557ZM60.1411 36.6796C60.9766 36.6796 61.5136 37.2051 61.6507 38.1301H58.5557C58.6943 37.2667 59.217 36.6796 60.1411 36.6796ZM60.1668 35.5154C58.4186 35.5154 57.1961 36.7913 57.1961 38.6557C57.1961 40.5573 58.4686 41.7959 60.2539 41.7959C61.1522 41.7959 61.9749 41.5711 62.699 40.9582L62.0634 39.9945C61.5636 40.394 60.9266 40.6203 60.3282 40.6203C59.4926 40.6203 58.7314 40.2322 58.5443 39.1554H62.9732C62.9861 38.9936 62.9989 38.8304 62.9989 38.6557C62.9861 36.7913 61.8378 35.5154 60.1668 35.5154ZM75.8258 38.6557C75.8258 37.6046 76.5128 36.7412 77.6353 36.7412C78.7079 36.7412 79.432 37.5674 79.432 38.6557C79.432 39.7439 78.7079 40.5702 77.6353 40.5702C76.5128 40.5702 75.8258 39.7067 75.8258 38.6557ZM80.6546 38.6557V35.6658H79.3578V36.3918C78.945 35.8534 78.3223 35.5154 77.4739 35.5154C75.8015 35.5154 74.4904 36.8299 74.4904 38.6557C74.4904 40.4828 75.8015 41.7959 77.4739 41.7959C78.3223 41.7959 78.945 41.458 79.3578 40.9196V41.6455H80.6546V38.6557ZM68.5019 38.6557C68.5019 40.4699 69.7616 41.7959 71.6839 41.7959C72.5823 41.7959 73.1807 41.5954 73.8291 41.0828L73.2064 40.0317C72.7194 40.3826 72.2081 40.5702 71.6454 40.5702C70.6099 40.5573 69.8487 39.8069 69.8487 38.6557C69.8487 37.5044 70.6099 36.754 71.6454 36.7412C72.2081 36.7412 72.7194 36.9287 73.2064 37.2796L73.8291 36.2285C73.1807 35.7159 72.5823 35.5154 71.6839 35.5154C69.7616 35.5154 68.5019 36.8414 68.5019 38.6557ZM85.222 35.5154C84.4736 35.5154 83.9866 35.8662 83.6496 36.3918V35.6658H82.3642V41.6455H83.6624V38.2934C83.6624 37.3039 84.0866 36.754 84.935 36.754C85.1978 36.754 85.472 36.7913 85.7462 36.9044L86.1461 35.6787C85.859 35.5655 85.4848 35.5154 85.222 35.5154ZM50.4577 36.1412C49.8336 35.7288 48.9738 35.5154 48.0255 35.5154C46.5144 35.5154 45.5418 36.2414 45.5418 37.4299C45.5418 38.4051 46.2659 39.0065 47.5999 39.1941L48.2126 39.2814C48.9238 39.3816 49.2595 39.5692 49.2595 39.9072C49.2595 40.3697 48.7853 40.6332 47.8998 40.6332C47.0014 40.6332 46.353 40.3453 45.916 40.0074L45.3047 41.0198C46.016 41.5453 46.9143 41.7959 47.8869 41.7959C49.6094 41.7959 50.6077 40.9826 50.6077 39.8442C50.6077 38.7931 49.8222 38.2433 48.5239 38.0557L47.9126 37.9669C47.3514 37.8924 46.9015 37.7807 46.9015 37.3798C46.9015 36.9416 47.3256 36.6796 48.0369 36.6796C48.7981 36.6796 49.5351 36.9674 49.8964 37.1922L50.4577 36.1412ZM67.1908 35.5154C66.4424 35.5154 65.9553 35.8662 65.6197 36.3918V35.6658H64.3343V41.6455H65.6311V38.2934C65.6311 37.3039 66.0553 36.754 66.9037 36.754C67.1665 36.754 67.4407 36.7913 67.7149 36.9044L68.1148 35.6787C67.8277 35.5655 67.4535 35.5154 67.1908 35.5154ZM56.1235 35.6658H54.0026V33.8515H52.6915V35.6658H51.4818V36.8543H52.6915V39.5821C52.6915 40.9697 53.2285 41.7959 54.7624 41.7959C55.3251 41.7959 55.9735 41.6212 56.3848 41.3334L56.0107 40.2193C55.6236 40.4441 55.1994 40.5573 54.8624 40.5573C54.2139 40.5573 54.0026 40.1563 54.0026 39.5563V36.8543H56.1235V35.6658ZM36.7325 41.6455V37.8924C36.7325 36.4791 35.8342 35.5283 34.386 35.5154C33.6247 35.5025 32.8392 35.7402 32.2893 36.5793C31.878 35.9164 31.2296 35.5154 30.3184 35.5154C29.6814 35.5154 29.0587 35.703 28.5717 36.4032V35.6658H27.2734V41.6455H28.5831V38.3306C28.5831 37.2924 29.1573 36.7412 30.0442 36.7412C30.9054 36.7412 31.341 37.3039 31.341 38.3177V41.6455H32.6521V38.3306C32.6521 37.2924 33.2505 36.7412 34.1118 36.7412C34.9972 36.7412 35.4214 37.3039 35.4214 38.3177V41.6455H36.7325Z" fill="white"/>
+                                                            </svg>
+
+                                                            <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="120" height="77" rx="3" fill="#00579F"/>
+                                                            <path d="M53.921 51.8198H46.5332L51.1541 25.2656H58.5415L53.921 51.8198Z" fill="white"/>
+                                                            <path d="M80.7025 25.9152C79.2453 25.3779 76.9341 24.7847 74.0762 24.7847C66.7805 24.7847 61.6429 28.4004 61.6114 33.5697C61.5508 37.3837 65.2897 39.502 68.0862 40.7737C70.9444 42.0732 71.916 42.9214 71.916 44.0797C71.887 45.8586 69.6064 46.6786 67.4794 46.6786C64.5298 46.6786 62.9494 46.2558 60.5477 45.2661L59.5748 44.8418L58.541 50.8027C60.2737 51.5363 63.4661 52.1874 66.7805 52.2159C74.5323 52.2159 79.579 48.6562 79.6388 43.1474C79.6683 40.1245 77.694 37.8083 73.4375 35.9156C70.8535 34.7006 69.2711 33.8814 69.2711 32.6382C69.3014 31.5081 70.6095 30.3505 73.5264 30.3505C75.9281 30.2938 77.6928 30.8304 79.0296 31.3673L79.6978 31.6492L80.7025 25.9152Z" fill="white"/>
+                                                            <path d="M90.52 42.4126C91.1285 40.8871 93.4696 34.983 93.4696 34.983C93.4389 35.0396 94.0768 33.4293 94.4416 32.4407L94.9579 34.7288C94.9579 34.7288 96.3569 41.085 96.6607 42.4126C95.5061 42.4126 91.9793 42.4126 90.52 42.4126ZM99.6394 25.2656H93.9249C92.1627 25.2656 90.8238 25.7455 90.0635 27.4688L79.0898 51.8194H86.8417C86.8417 51.8194 88.1179 48.542 88.3922 47.8361C89.2426 47.8361 96.7836 47.8361 97.8776 47.8361C98.0897 48.7684 98.7591 51.8194 98.7591 51.8194H105.6L99.6394 25.2656Z" fill="white"/>
+                                                            <path d="M40.361 25.2656L33.1259 43.373L32.3353 39.7006C30.9976 35.4632 26.8026 30.8593 22.1211 28.5701L28.7482 51.7916H36.5606L48.173 25.2656H40.361Z" fill="white"/>
+                                                            <path d="M26.4083 25.2656H14.522L14.4004 25.8022C23.6725 28.0057 29.8132 33.3174 32.3361 39.7018L29.7522 27.4977C29.3268 25.8018 28.0194 25.3216 26.4083 25.2656Z" fill="#FAA61A"/>
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="cart__text curer__text">
+                                                            Оплата в любом отделении банка по квитанции, в офисе продаж или наличными курьеру
+                                                        </div>
+
+                                                        <div class="cart__text">После оформления заказа при любом из вышеперечисленных способов оплаты на Вашу электронную почту, после проверки менеджером, будет выслан счет и заполненная квитанция для оплаты через отделение банка или ссылка для оплаты картой онлайн.</div>
+
+
+                                                        <button class="autorization__button podt">
+                                                            Подтвердить заказ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="tab-content cart__face--tab cart__accept">
+                                                
+                                                <div class="oficce__box">
+                                                    <div class="cart__delivery">
+                                                        <div class="cart__inner--title">
+                                                            Ваш заказ <span class="green">№2318</span> принят к обработке
+                                                        </div>
+
+                                                        <div class="cart__text">
+                                                            В ближайшие 30 минут с Вами свяжется менеджер для уточнения заказа. На указанный вами email отправлена копия заказа.
+                                                        </div>
+
+                                                        <button class="btn_bordered">
+                                                            Вернуться в каталог
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="index__inner--bottom">
+                                            <div class="index__box">
+                                                <div class="index__sale--box">
+                                                    <h2 class="title">Будьте в курсе наших скидок и акций!</h2>
+
+                                                    <div class="input__inner">
+                                                        <input type="email" class="email__input index__email enter__email" placeholder="E-mail">
+
+                                                        <button class="autorization__button subsribee return__button">
+                                                            Подписаться
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="index__check">
+                                                        <input type="checkbox" id="bottom__succes">
+
+                                                        <label for="bottom__succes" class="label__bottom--succes">
+                                                            Даю согласие на обработку персональных данных согласно политики конфиденциальности сайта
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="index__news--box">
+                                                    <h2 class="title">Новости</h2>
+
+                                                    <div class="index__news--blocks">
+                                                        <div class="index__news--block">
+                                                            <div class="index__news--block--date">
+                                                                23.03.2017
+                                                            </div>
+
+                                                            <div class="index__news--block--text">
+                                                                Концевые выключатели — новинка в ассортименте продукции IEK
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="index__news--block">
+                                                            <div class="index__news--block--date">
+                                                                23.03.2017
+                                                            </div>
+
+                                                            <div class="index__news--block--text">
+                                                                Концевые выключатели — новинка в ассортименте продукции IEK
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="index__news--block">
+                                                            <div class="index__news--block--date">
+                                                                23.03.2017
+                                                            </div>
+
+                                                            <div class="index__news--block--text">
+                                                                Ассортимент «ГринЭнергоСнаб» пополнила новинка — автоматические выключатели...
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="index__news--block">
+                                                            <div class="index__news--block--date">
+                                                                23.03.2017
+                                                            </div>
+
+                                                            <div class="index__news--block--text">
+                                                                Ассортимент «ГринЭнергоСнаб» пополнила новинка — автоматические выключатели...
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="index__news--block">
+                                                            <div class="index__news--block--date">
+                                                                23.03.2017
+                                                            </div>
+
+                                                            <div class="index__news--block--text">
+                                                                Новые соединители и наконечники IEK
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="index__news--block">
+                                                            <div class="index__news--block--date">
+                                                                23.03.2017
+                                                            </div>
+
+                                                            <div class="index__news--block--text">
+                                                                Концевые выключатели — новинка в ассортименте продукции IEK
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <button class="btn_bordered">
+                                                        Все новости
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="index__box index__box--img">
+                                                <img src="img/left_img1.png" alt="Баннер">
+                                                <img src="img/left_img2.png" alt="Баннер">
+                                            </div>
+                                        </div>
+                                        
+                                            
+                                    </div>
+
+
+            <!--end of content center-->
+            <div class="col-lg-2 right_column">
+                <div class="subscribe_box">
+                    <p class="subscribe_title">Будьте в курсе наших скидок и акций!</p>
+                    <input type="email" class="email__input" placeholder="E-mail">
+                    <div class="check d-flex">
+                        <label class="container_label">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>Даю согласие на обработку персональных данных согласно политики конфиденциальности сайта</p>
+                    </div>
+                    <button class="subscribe">Подписаться</button>
+                </div>
+                <div class="news_box">
+                    <p class="news_title">Новости</p>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <a href="#" class="btn_bordered">Все новости</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--end of content-->
+
+<!--Footer-->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3 class="footer_title">Контакты</h3>
+                <div class="footer_info">
+                    <a href="#"><i class="fa fa-map-marker-alt"></i>г. Москва, ул. Дорожная, д. 60, стр. 4</a>
+                    <a href="#"><i class="fa fa-envelope"></i>zakaz@grinenergosnab.ru</a>
+                    <a href="#"><i class="fa fa-phone"></i>+7 (495) 638-57-56</a>
+                    <a href="#" class="link">Схема проезда</a>
+                </div>
+            </div>
+            <div class="col-lg-2 ml-auto mobile__fade">
+                <h3 class="footer_title">Продукция</h3>
+                <ul class="small_menu">
+                    <li><a href="#">Кабель, провод</a></li>
+                    <li><a href="#">Электротехническая продукция</a></li>
+                    <li><a href="#">Кабеленесеущие системы</a></li>
+                    <li><a href="#">Светотехническая продукция</a></li>
+                    <li><a href="#">Электрощитовое оборудование</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 mobile__fade">
+                <h3 class="footer_title">О компании</h3>
+                <ul class="big_menu">
+                    <li><a href="#">Технические каталоги</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Видео</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 mobile__fade">
+                <h3 class="footer_title">Подбор муфт</h3>
+                <ul class="big_menu">
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="after_footer">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6"><p class="copyright">©«ГринЭнергоСнаб», 2009-2019 — электротехническая продукция.
+                    Все права защищены</p></div>
+                <div class="col-lg-1 col-md-12 ml-auto"><a href="#" class="map_site">Карта сайта</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end of footer-->
+
+
+<!--Scripts libs-->
+<script src="js/libs.min.js"></script>
+<!--Custom Scripts-->
+<script src="js/scripts.js"></script>
+<!--Awesome-->
+<script src="https://kit.fontawesome.com/684bd2fe9e.js"></script>
+</body>
+</html>

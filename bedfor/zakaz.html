@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Заголовок -->
+	<title>Bedfor</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/fontawesome/all.min.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__nav--inner">
+					<a href="#">О нас</a>
+					<a href="#">Галлерея</a>
+					<a href="#">Отзывы</a>
+					<a href="#">Статьи</a>
+					<i class="fas fa-bars mobile__menu--icon"></i>
+				</div>
+
+				<div class="header__cart--inner">
+					<div class="header__nav--inner--black">
+						<a href="#">
+							Контакты
+						</a>
+
+						<a href="#">
+							Доставка
+						</a>
+					</div>
+
+					<div class="header__cart--box">
+						<i class="fas fa-shopping-cart header__cart--icon"></i>
+						<div class="header__cart--text">
+							Корзина
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="logo">
+		<div class="container">
+			<div class="logo__inner">
+				<div class="logo__box">
+					<a href="/" class="logo__img--inner logo__resp">
+						<img src="img/logo.png" alt="логотип" class="logo__img">
+					</a>
+
+					<div class="logo__text">
+						товары для вашего любимого питомца
+					</div>
+				</div>
+
+				<div class="logo__pats--inner">
+					<div class="logo__pats--item">
+						<div class="logo__pats--item--img--box dog__img--box">
+							<img src="img/dog.png" alt="собака" class="logo__pats--item--img">
+						</div>
+
+						<div class="logo__pats--item--text">
+							для собак
+						</div>
+					</div>
+
+					<div class="logo__pats--item">
+						<div class="logo__pats--item--img--box cat__img--box">
+							<img src="img/cat.png" alt="кошка" class="logo__pats--item--img">
+						</div>
+
+						<div class="logo__pats--item--text">
+							для кошек
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<div class="breadcrops">
+		<div class="container">
+			<div class="breadcrops__inner">
+				<a href="#" class="breadcrops__item">Главная</a>
+				<i class="fas fa-chevron-right breadcrops__item--icon"></i>
+				<a href="#" class="breadcrops__item">Миски</a>
+				<i class="fas fa-chevron-right breadcrops__item--icon"></i>
+				<a href="#" class="breadcrops__item">Корзина</a>
+				<i class="fas fa-chevron-right breadcrops__item--icon"></i>
+				<a href="#" class="breadcrops__item breadcrops__active">Оформить заказ</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section class="zakaz">
+		<div class="container">
+			<div class="zakaz__inner">
+				<div class="zakaz__item--data">
+					<div class="zakaz__data--input--inner">
+						<div class="zakaz__data--title">
+							Ваш телефон:
+						</div>
+
+						<input type="text" class="input zakaz__input--phone">
+
+						<div class="zakaz__error">
+							поле не заполнено
+						</div>
+					</div>
+
+					<div class="zakaz__data--input--inner">
+						<div class="zakaz__data--title">
+							Населенный пункт:
+						</div>
+
+						<input type="text" class="input zakaz__input--address">
+
+						<div class="zakaz__error">
+							поле не заполнено
+						</div>
+					</div>
+
+					<input type="radio" class="radio" name="delivery" id="samo">
+
+					<label for="samo" class="zakaz__label">
+						<span class="zakaz__label--title">
+							Самовывоз
+						</span>
+
+						<span class="zakaz__label--text">
+							Московская область, г. Балашиха,
+							Объездное шоссе, владение 8, строение 3
+						</span>
+					</label>
+
+					<input type="radio" class="radio" name="delivery" id="kur">
+
+					<label for="kur" class="zakaz__label">
+						<span class="zakaz__label--title">
+							Курьером
+						</span>
+
+						<span class="zakaz__label--text">
+							доставка куртером по Москве (не более 25 км от МКАД).
+						</span>
+					</label>
+
+					<div class="zakaz__data--input--inner">
+						<div class="zakaz__data--title">
+							Комментарий к заказу:
+						</div>
+
+						<textarea class="input zakaz__input--area"></textarea>
+					</div>
+
+
+					<div class="zakaz__data--input--inner">
+						<div class="zakaz__data--title">
+							Ваше ФИО:
+						</div>
+
+						<input type="text" class="input zakaz__input--name">
+
+						<div class="zakaz__error">
+							поле не заполнено
+						</div>
+					</div>
+
+					<div class="zakaz__data--input--inner">
+						<div class="zakaz__data--title">
+							Ваш email:
+						</div>
+
+						<input type="text" class="input zakaz__input--email">
+
+						<div class="zakaz__error">
+							поле не заполнено
+						</div>
+					</div>
+
+					
+					<div class="zakaz__title">
+						Способ оплаты:
+					</div>
+
+					<input type="radio" class="radio" name="pay" id="card">
+
+					<label for="card" class="zakaz__label">
+						<span class="zakaz__label--title">
+							С банковской карты
+						</span>
+
+						<span class="zakaz__label--text">
+							Visa, Mastercart, Maestro
+						</span>
+					</label>
+
+					<input type="radio" class="radio" name="pay" id="nal">
+
+					<label for="nal" class="zakaz__label">
+						<span class="zakaz__label--title">
+							Наличными
+						</span>
+					</label>
+
+					<input type="radio" class="radio" name="pay" id="alfa">
+
+					<label for="alfa" class="zakaz__label">
+						<span class="zakaz__label--title">
+							Через Альфа-Клик
+						</span>
+					</label>
+					<input type="radio" class="radio" name="pay" id="yandex">
+
+					<label for="yandex" class="zakaz__label">
+						<span class="zakaz__label--title">
+							Через Яндекс деньги
+						</span>
+					</label>
+
+
+					<button class="button zakaz__confirm--button">
+						Подтвердить заказ
+					</button>
+
+
+
+				</div>
+
+				<div class="zakaz__item--tovar">
+					
+					<div class="zakaz__tovar--item">
+						<div class="zakaz__tovar--img--inner">
+							<img src="img/carousel-item.png" alt="заказ" class="zakaz__tovar--img">
+						</div>
+
+						<div class="zakaz__tovar--text--inner">
+							<div class="zakaz__tovar--title">
+								Подставка с мисками ASIA FUSION M
+							</div>
+
+							<div class="zakaz__tovar--point">
+								размер: средний 
+							</div>
+							<div class="zakaz__tovar--point">
+								цвет: натуральный
+							</div>
+
+							<div class="zakaz__tovar--price">
+								9980 рублей
+							</div>
+						</div>
+					</div>
+
+					<div class="zakaz__tovar--item">
+						<div class="zakaz__tovar--img--inner">
+							<img src="img/carousel-item.png" alt="заказ" class="zakaz__tovar--img">
+						</div>
+
+						<div class="zakaz__tovar--text--inner">
+							<div class="zakaz__tovar--title">
+								Подставка с мисками ASIA FUSION M
+							</div>
+
+							<div class="zakaz__tovar--point">
+								размер: средний 
+							</div>
+							<div class="zakaz__tovar--point">
+								цвет: натуральный
+							</div>
+
+							<div class="zakaz__tovar--price">
+								9980 рублей
+							</div>
+						</div>
+					</div>
+
+					<div class="zakaz__tovar--fullprice--inner">
+						<div class="zakaz__tovar--fullprice--point">
+							сумма по товарам: 9980 руб
+						</div>
+
+						<div class="zakaz__tovar--fullprice--point">
+							сумма по доставке: 0 руб
+						</div>
+					</div>
+
+
+					<div class="zakaz__tovar--totalsum">
+						Итого: 39 920‬ руб
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	
+	<section class="supfooter">
+		<div class="container">
+			<div class="supfooter__inner">
+				<a href="#">О нас</a>
+				<a href="#">Галлерея</a>
+				<a href="#">Отзывы</a>
+				<a href="#">Статьи</a>
+				<a href="#">Доставка</a>
+				<a href="#">Контакты</a>
+				<a href="#">Корзина</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__logo--inner logo__resp">
+					<a href="/">
+						<img src="img/footer-logo.png" alt="логотип" class="footer__logo--img">
+					</a>
+				</div>
+
+				<div class="footer__social--inner">
+					<a href="#" class="footer__social--item">
+						<span class="footer__social--box inst__bg">
+							<i class="fab fa-instagram social__icon"></i>
+						</span>
+
+						<span class="footer__social--text inst">
+							instagram
+						</span>
+					</a>
+					
+					<a href="#" class="footer__social--item">
+						<span class="footer__social--box vk__bg">
+							<i class="fab fa-vk social__icon"></i>
+						</span>
+
+						<span class="footer__social--text vk">
+							вконтакте
+						</span>
+					</a>
+
+					<a href="#" class="footer__social--item">
+						<span class="footer__social--box fb__bg">
+							<i class="fab fa-facebook-f social__icon"></i>
+						</span>
+
+						<span class="footer__social--text fb">
+							facebook
+						</span>
+					</a>
+
+					<a href="#" class="footer__social--item">
+						<span class="footer__social--box pint__bg">
+							<i class="fab fa-pinterest-p social__icon"></i>
+						</span>
+
+						<span class="footer__social--text pint">
+							pinterest
+						</span>
+					</a>
+				</div>
+
+				<div class="footer__phone--inner">
+					<a href="tel:+79857802660" class="footer__phone--item">
+						+7 (985) 780-26-60
+					</a>
+
+					<a href="tel:+79296425456" class="footer__phone--item">
+						+7 (929) 642-54-56
+					</a>
+
+					<div class="footer__phone--copy">
+						&copy 2018-2019 «BEDFOR» Все права защищены
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+
+
+	<!-- Модальные окна и меню -->
+
+	<div class="mobile__menu">
+		<i class="fas fa-times mobile__menu--cross"></i>
+
+		<div class="mobile__menu--inner">
+			<a href="#">О нас</a>
+			<a href="#">Галлерея</a>
+			<a href="#">Отзывы</a>
+			<a href="#">Статьи</a>
+			<a href="#">Контакты</a>
+			<a href="#">Доставка</a>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,908 @@
+/*============== Ширина ==============*/
+@media(max-width: 1800px){
+	.main__chat--content{
+		position: absolute;
+		z-index: 10;
+	}
+}
+
+
+@media(max-width: 1745px){
+	.main__games--content{
+		width: 100%;
+		max-width: 169px;
+	}
+
+	.main__like--games--carousel{
+		max-width: 750px;
+	}
+}
+
+@media(max-width: 1670px){
+	.add__like--inner{
+		width: 80%;
+	}
+}
+
+@media(max-width: 1400px){
+	.main{
+		margin-right: 0;
+	}
+
+	.add__like--inner{
+		width: 90%;
+	}
+
+	.expbattler__team{
+		order: 3;
+		margin-top: 2rem;
+	}
+
+	.expbattler__inner{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.expbattler__wheel--center{
+		margin: 0 2rem;
+	}
+}
+
+@media(max-width: 1300px){
+	.container{
+		width: 1150px;
+	}
+
+	.add__like--inner{
+		width: 100%;
+	}
+
+	.header__bottom--content{
+		padding: 2.5rem;
+	}
+
+	.header__top--choose--color, .header__top--language--inner{
+		margin-right: 1.5rem;
+	}
+
+	.header__bottom--links{
+		width: 100%;
+		order: 3;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.header__bottom--link{
+		margin-top: 2rem;
+	}
+
+	.header__bottom--content{
+		flex-wrap: wrap;
+	}
+
+	.payment{
+		display: none;
+	}
+
+	.balance__inner{
+		margin-right: 0;
+	}
+
+	.mobile__payment{
+		display: inline-block;
+	}
+
+	.header__top--description{
+		display: none;
+	}
+}
+
+@media(max-width: 1200px){
+	.container{
+		width: 950px;
+	}
+
+	.add__like--item--box{
+		width: 50%;
+	}
+
+	.add__like--item--box:nth-child(3){
+		margin-top: 4rem;
+	}
+
+	.choose__color-item{
+		width: 33.3%;
+	}
+
+	.main{
+		max-width: 83%;
+	}
+
+	.main__last--wins--inner{
+		padding: 2rem;
+	}
+}
+
+@media(max-width: 1100px){
+	.faq__content, .agree__content{
+		min-width: 550px;
+		max-width: 600px;
+		padding: 2rem;
+	}
+}
+
+@media(max-width: 998px){
+	.container{
+		width: 728px;
+	}
+
+	.header__top--left--inner, .header__top--profile--inner,
+	.header__bottom--content{
+		display: none;
+	}
+
+	.content{
+		flex-direction: column;
+	}
+
+	.main{
+		padding: 0;
+		max-width: 100%;
+	}
+
+	.main__games--content{
+		display: none;
+	}
+
+	.content{
+		padding: 4.5rem 3rem 7rem 3rem;
+	}
+
+	.game__box--mobile{
+		width: 48%;
+	}
+
+	.game__box--inner, .game__box--inner--mobile{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.footer__inner{
+		flex-wrap: wrap;
+	}
+
+	.footer__logo{
+		width: 100%;
+		justify-content: center;
+	}
+
+	.footer__inner--link{
+		order: 3;
+		margin-top: 2rem;
+	}
+
+	.main__title--inner--mob{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.content{
+		padding-top: 1rem;
+	}
+
+	.chat__content{
+		top: 100px;
+	}
+
+	.add__like--item--box{
+		width: 100%;
+	}
+
+	.add__like--item--box:nth-child(2){
+		margin-top: 4rem;
+	}
+
+	.site__logo{
+		order: 2;
+	}
+
+	.noregister__button{
+		padding: 1rem 2rem;	
+		min-width: 100px;
+	}
+
+	.balance__inner{
+		margin-top: 3rem;
+	}
+
+	.header__bottom--link{
+		margin: 1.5rem 0 0 0;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.header__bottom--page{
+		margin-top: 2.5rem;
+	}
+
+	.header__top--choose--color{
+		margin-right: 0;
+		padding: .5rem 1rem;
+	}
+
+	.header__top--language--inner{
+		margin-right: 0;
+		padding: .2rem .5rem;
+	}
+
+	.chat__close--inner, .menu__mobile--icon, .site__logo,
+	.button, .game__box--mobile, .game__inner--mask, .main__arrow,
+	.footer__inner--link, .main__like--games--item,
+	.header__bottom--link, .header__top--language--flag,
+	.header__top--choose--color, .choise__color--circle,
+	.modalw__label, .faq__inner--box, .chat__scroll--bottom,
+	.expbattler__button--forecast .expbattle__button--drag.active__button--bet{
+		cursor: default;
+	}
+
+	.menu__mobile--tools{
+		display: flex;
+	}
+
+	.header__top--inner{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: var(--sectiondarkB);
+		z-index: 3;
+	}
+	.games__mobile{
+		display: flex;
+		height: auto;
+	}
+
+	.game__box--mobile:nth-child(2){
+		margin-top: 0;
+	}
+
+	.history__content{
+		min-width: 550px;
+		max-width: 550px;
+	}
+
+	.history__content{
+		padding: 2rem;
+	}
+
+	.header{
+		margin-bottom: 100px;
+	}
+}
+
+@media(max-width: 870px){
+	.menu__mobile--bottom--inner{
+		flex-direction: column;
+	}
+
+	.header__top--choose--color{
+		margin-top: 2rem;
+	}
+}
+
+@media(max-width: 768px){
+	.container{
+		width: 445px;
+	}
+
+	.modal__title{
+		font-size: 2.5rem;
+	}
+
+	.modal__content{
+		padding: 1.5rem;
+	}
+
+	.modal__cross{
+		top: 20px;
+		right: 20px;
+		font-size: 3rem;
+	}
+
+	.choose__color-item{
+		width: 50%;
+	}
+
+	.main__last--wins--title, .main__last--wins--inner{
+		display: none;
+	}
+
+	.noregister__buttons{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2rem;
+	}
+
+	.noregister__button{
+		width: 100%;
+	}
+
+	.enter__button{
+		margin: 0 0 2rem 0;
+	}
+
+	.menu__mobile--top--inner{
+		flex-direction: column;
+	}
+
+	.notify{
+		width: 300px;
+	}
+
+	.notify__content{
+		padding: 1rem 2rem;
+	}
+
+	.notify__progress{
+		height: 3px;
+	}
+
+	.notify__icon--inner{
+		width: 35px;
+		height: 35px;
+		font-size: 1.6rem;
+	}
+
+	.notify__text--inner{
+		max-width: 210px;
+	}
+
+	.notify__title{
+		padding-right: 2rem;
+	}
+
+	.modalw__inner{
+		max-width: 380px;
+	}
+
+	.button__vk{
+		width: 100%;
+	}
+
+	.modalw__button{
+		max-width: 100%;
+	}
+
+	.modalw__label{
+		max-width: 180px;
+		margin-left: 3.5rem;
+	}
+
+	.subbutton__links{
+		flex-direction: column;
+	}
+
+	.subbutton__link{
+		margin-top: 1rem;
+	}
+
+	.expbattler__inner{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.expbattler__team.expbattler__blue--team{
+		margin-right: 0;
+		border-radius: 0;
+		border: 1px solid #517ff1;
+		max-width: 100%;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.expbattler__team.expbattler__red--team{
+		margin-left: 0;
+		border-radius: 0;
+		border: 1px solid crimson;
+		max-width: 100%;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.expbattler__forecast--inner .expbattler__scroll--forecast{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+
+	.expbattler__team .expbattler__forecast--inner{
+		overflow-y: scroll;
+	}
+
+	.expbattler__forecast{
+		max-width: 300px;
+		width: 100%;
+	}
+
+	.expbattler__inner .expbattler__wheel--center{
+		border-radius: 0;
+		border-left: 0;
+		border-right: 0;
+		margin: 0;
+	}
+
+	.expbattler__forecast--money--inner{
+		order: 2;
+	}
+
+	.dot__icon{
+		margin-right: .5rem;
+	}
+
+	.forecast__nick--inner{
+		display: flex;
+		align-items: center;
+	}
+
+	.nick{
+		order: 2;
+	}
+}
+
+@media(max-width: 610px){
+	.history__content{
+		min-width: 250px;
+		max-width: 300px;
+	}
+
+	.history__content{
+		padding: 2rem 1rem;
+	}
+
+	.histori__games--mobile{
+		display: block;
+		padding: 1rem;
+		background: var(--blueC);
+		width: 100%;
+		text-align: center;
+	}
+
+	.history__games--result--item{
+		flex-direction: column;
+		border: 1px solid var(--blueC);
+		margin-top: 4rem;
+		padding: 0;
+	}
+
+	.history__games--result--item:nth-child(2){
+		margin-top: 1rem;
+	}
+
+	.history__games--result--views{
+		display: none;
+	}
+
+	.history__games--result--item--text{
+		width: 100%;
+	}
+
+	.history__games--result--inner{
+		height: 330px;
+	}
+
+	.faq__content, .agree__content{
+		min-width: 80vw;
+		max-width: 90vw;
+		padding: 1rem;
+	}
+
+	.agree__warning--title, .agree__inner--box--title{
+		font-size: 1.3rem;
+	}
+
+	.agree__inner--box--text{
+		padding: 0;
+		font-size: 1.4rem;
+	}
+
+	.faq__inner--box{
+		padding: 1.5rem;
+	}
+
+	.faq__inner--title{
+		padding: 0px 1.5rem;
+		font-size: 1.6rem;
+	}
+
+	.faq__inner--arrow{
+		position: absolute;
+		top: 13px;
+		right: 10px;
+		transition: .1s linear;
+	}
+
+	.faq__inner--answer{
+		padding: 0;
+		font-size: 1.4rem;
+	}
+
+	/* Колесо expbattler */ 
+
+	.expbattler__forecast--button--inner .expbattler__forecast--button{
+		max-width: 47%;
+		width: 100%;
+		margin-right: 10px;
+	}
+
+	.expbattler__forecast--button--inner .expbattler__forecast--button:nth-child(even){
+		margin-right: 0;
+	}
+
+	.circle__battle{
+		width: 250px;
+	}
+
+	.expbattler__wheel--center .expbattler__button--forecast{
+		max-width: 250px;
+	}
+
+	.expbattler__button--forecast .expbattle__button--drag{
+		font-size: 1.3rem;
+		max-width: 150px;
+		padding: 1.2rem;
+	}
+
+	.expbattle__button--drag .bet__icon{
+		font-size: var(--bigF);
+	}
+}
+
+@media(max-width: 480px){
+	.container{
+		width: 290px;
+	}
+
+	.mobile__menu--inner{
+		max-width: 100%;
+		height: 100vh;
+		position: fixed;
+		overflow-y: auto;
+	}
+
+	.noregister__button{
+		width: auto;
+	}
+
+	.noregister__buttons{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.enter__button{
+		margin: 0 2rem 0 0;
+	}
+
+	.main__like--games--item{
+		width: 240px;
+		height: 170px;
+	}
+
+	.modal__text {
+		font-size: 1.5rem;
+	}
+
+	.modal__content{
+		justify-content: space-around;
+	}
+
+	.choose__color-item{
+		width: 100%;
+	}
+
+	.modal {
+		padding: 1rem;
+	}
+
+	.modal__content {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.content{
+		padding: 0;
+	}
+
+	.footer__inner--link{
+		width: 100%;
+		justify-content: center;
+		display: flex;
+	}
+
+	.footer__inner{
+		padding: 2rem;
+	}
+
+	.main__like--games--inner{
+		padding: 2rem 1rem;
+	}
+
+	.main__title--inner--mob{
+		padding: 1rem;
+	}
+
+	.main__button--edit{
+		margin-top: 8.5rem;
+	}
+
+	.main__arrow{
+		top: 126%;
+	}
+
+	.main__arrow--prev{
+		left: 75px;
+	}
+
+	.main__arrow--next{
+		right: 75px;
+	}
+
+	.main__subtitle{
+		font-size: var(--playF);
+	}
+
+	.footer__logo{
+		display: flex;
+	}
+
+	.games, .main__like--games--inner{
+		border-radius: 0;
+	}
+
+	.chat__content{
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		border-radius: 0;
+	}
+
+	.chat{
+		max-width: 100%;
+		border-radius: 0;
+	}
+
+	.chat__send--inner{
+		border-radius: 0;
+	}
+
+	.chat__message{
+		justify-content: center;
+	}
+
+	.chat__send--input{
+		width: 100%;
+		margin-right: 1.5rem;
+	}
+
+	.chat__img--user--box{
+		width: 13%;
+		margin-right: 1rem;
+	}
+
+	.chat__inner--text--inner{
+		max-width: 87%;
+		width: 87%;
+		margin-right: 0;
+	}
+
+	.chat__close--inner{
+		left: 6px;
+		position: fixed;
+	}
+
+	.chat__button--on{
+		left: -107px;
+	}
+
+	.chat__close--inner{
+		opacity: .2;
+	}
+
+	.chat__close--inner:hover{
+		opacity: 1;
+	}
+
+	.chat__online--inner{
+		font-size: 1.2rem;
+	}
+	
+	.chat__button--on{
+		right: 5px;
+		left: auto;
+	}
+
+	.footer{
+		margin-top: 4.5rem;
+	}
+
+	.site__logo{
+		display: block;
+	}
+
+	.footer__logo{
+		display: flex;
+	}
+
+	.chat__close--inner{
+		display: none;
+	}
+
+	.chat__mobile--cross{
+		display: flex;
+	}
+
+	.notify{
+		width: 250px;
+	}
+
+	.notify__content{
+		padding: 1rem;
+	}
+
+	.notify__icon--inner{
+		width: 30px;
+		height: 30px;
+		font-size: 1.4rem;
+	}
+
+	.notify__text--inner{
+		max-width: 190px;
+	}
+
+	.notify__title{
+		padding-right: 2rem;
+	}
+
+	.modalw__inner{
+		max-width: 280px;
+	}
+
+	.modalw__content{
+		padding: 1.5rem;
+	}
+
+	.faq__content, .agree__content{
+		padding: 1rem .7rem;
+	}
+
+	.modalw__button{
+		max-width: 100%;
+		padding: 1rem 2rem;
+	}
+
+	.modalw__title{
+		font-size: 2.5rem;
+	}
+
+	.subbutton__links{
+		flex-direction: column;
+	}
+
+	.subbutton__link{
+		margin: 1rem 0 0 0;
+	}
+
+	.button__vk{
+		font-size: var(--playF);
+	}
+
+	.fa-vk{
+		top: 0px;
+	}
+
+	.modalw__button{
+		font-size: 1.6rem;
+	}
+
+	.menu__mobile--chat{
+		display: flex;
+	}
+
+	.main__chat--content{
+		max-width: 100%;
+	}
+
+	.chat__inner{
+		height: calc(100% - 8rem);
+	}
+
+	.chat__content{
+		max-width: 100%;
+	}
+
+	.agree__content{
+		padding: 1rem;
+	}
+}
+
+/*============== Высота ==============*/
+
+@media(max-height: 830px){
+	.add__like--inner{
+		max-height: 400px;
+	}
+}
+
+@media(max-height: 725px){
+	.modal{
+		padding: 1rem;
+	}
+
+	.modal__content{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+@media(max-height: 630px){
+	.modal__content{
+		padding: 1.5rem;
+	}
+	.choose__color--box{
+		margin-top: 3rem;
+	}
+
+	.modal__cross{
+		top: 20px;
+		right: 20px;
+		font-size: 3rem;
+	}
+
+	.chat__close--inner{
+		top: 130px;
+	}
+
+	.chat__content{
+		top: 0px;
+	}
+}
+
+@media(max-height: 600px){
+	.add__like--inner{
+		max-height: 200px;
+	}
+}
+
+@media(max-height: 560px){
+
+	.modal__text{
+		font-size: var(--nickF);
+	}
+
+	.modal__title{
+		font-size: var(--gamesF);
+	}
+
+	.modal__cross{
+		font-size: 2.5rem;
+	}
+
+	.choose__color-item{
+		min-height: 120px;
+	}
+	.choose__color--box{
+		margin-top: 1rem;
+		max-height: 120px;
+	}
+}
+
+@media(max-height: 290px){
+	.chat__scroll--bottom{
+		display: none;
+	}
+}

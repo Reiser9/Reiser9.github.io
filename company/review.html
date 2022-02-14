@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Список покупок</title>
+
+	<!-- Fonts -->
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<!-- Favicon -->
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__city--inner">
+					<img src="img/map.png" alt="Город" class="city__icon">
+
+					<p class="city__name">
+						Москва
+					</p>
+				</div>
+
+				<div class="header__content">
+					<div class="header__wrapper">
+						<a href="/" class="logo__inner">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</a>
+
+						<div class="header__search--inner">
+							<input type="text" class="input header__search--input" placeholder="Поиск">
+
+							<img src="img/search.png" alt="Поиск" class="header__search--icon">
+						</div>
+
+						<div class="header__nav">
+							<div class="header__menu">
+								<img src="img/menu.png" alt="Меню" class="menu">
+							</div>
+
+							<a href="#" class="header__nav--link">
+								Скидки
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Меню
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Купоны
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Магазины
+							</a>
+
+							<a href="#" class="header__nav--link">
+								Журнал
+							</a>
+						</div>
+
+						<img src="img/burger.svg" alt="Меню" class="burger">
+					</div>
+
+					<a href="#" class="header__enter">
+						<img src="img/enter.png" alt="Вход" class="header__enter--icon">
+
+						Вход/Регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="citylist">
+		<div class="container">
+			<div class="citylist__inner flex100">
+				<a href="#" class="link__arrow prev__link">
+					<img src="img/prev.png" alt="Стрелка" class="read__img">
+
+					Назад
+				</a>
+
+				<div class="title__inner contact__title--inner">
+					<img src="img/store.png" alt="Город с магазинами" class="title__icon">
+
+					<h2 class="title review__title">
+						Отзывы о «Пятерочка»
+					</h2>
+				</div>
+
+				<div class="reviewstore__content">
+					<div class="network__wrapper--item reviewstore__item">
+						<img src="img/store1.png" alt="Магазин" class="network__wrapper--img">
+
+						<div class="network__wrapper--item--block">
+							<div class="network__review--value--inner">
+								<p class="network__review--value">
+									5.0
+								</p>
+
+								<img src="img/like-green.png" alt="Лайк" class="network__review--icon">
+							</div>
+
+							<div class="reviewstore__item--wrapper">
+								<div class="reviewstore__item--title">
+									Смотреть
+								</div>
+
+								<a href="#" class="reviewstore__item--link">
+									Положительные
+								</a>
+
+								<a href="#" class="reviewstore__item--link">
+									Отрицательные
+								</a>
+							</div>
+
+							<div class="reviewstore__item--wrapper">
+								<div class="reviewstore__item--title">
+									Рейтинг
+								</div>
+
+								<a href="#" class="reviewstore__item--link">
+									Низкий
+								</a>
+
+								<a href="#" class="reviewstore__item--link">
+									Высокий
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviewstore__block">
+						<div class="review__item reviewstore__block--item">
+							<div class="review__img--inner">
+								<img src="img/person1.png" alt="Аватарка" class="review__img">
+							</div>
+
+							<div class="review__wrapper">
+								<div class="review__name--inner">
+									<p class="review__name">
+										Ольга
+									</p>
+
+									<div class="network__review--value--inner">
+										<p class="network__review--value">
+											5.0
+										</p>
+
+										<img src="img/like-green.png" alt="Лайк" class="network__review--icon">
+									</div>
+								</div>
+
+								<p class="review__text">
+									Добрый день, уважаемые читатели ! Очень радуют нас конфеты, которые производит "Дом сладостей" из Калининграда...
+								</p>
+
+								<div class="reviewstore__quality">
+									<p class="review__quality green">
+										Качество обслуживания: <span class="review__quality--wrapper">
+											5.0 <img src="img/like-green.png" alt="Лайк" class="review__quality--icon">
+										</span>
+									</p>
+
+									<p class="review__quality red">
+										Чистота магазина: <span class="review__quality--wrapper">
+											2.0 <img src="img/dislike.png" alt="Дизлайк" class="review__quality--icon">
+										</span>
+									</p>
+
+									<p class="review__quality green">
+										Цена - качество: <span class="review__quality--wrapper">
+											5.0 <img src="img/like-green.png" alt="Лайк" class="review__quality--icon">
+										</span>
+									</p>
+								</div>
+							</div>
+
+							<div class="review__read--inner">
+								<div class="review__logo--inner">
+									<a href="#" class="review__dislike">
+										<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+									</a>
+
+									<a href="#" class="review__like">
+										<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+									</a>
+								</div>
+
+								<a href="#" class="link__arrow review__read">
+									Ответить на отзыв
+
+									<img src="img/next.png" alt="Стрелка" class="read__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="review__item reviewstore__block--item reviewstore__reply">
+							<div class="review__img--inner">
+								<img src="img/person1.png" alt="Аватарка" class="review__img">
+							</div>
+
+							<div class="review__wrapper">
+								<div class="review__name--inner review__reply--content">
+									<p class="review__reply--text">
+										ответ на отзыв Ольги
+									</p>
+
+									<p class="review__name">
+										Анастасия
+									</p>
+								</div>
+
+								<p class="review__text">
+									Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка.
+								</p>
+							</div>
+
+							<div class="review__read--inner">
+								<div class="review__logo--inner">
+									<a href="#" class="review__dislike">
+										<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+									</a>
+
+									<a href="#" class="review__like">
+										<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+									</a>
+								</div>
+
+								<a href="#" class="link__arrow review__read">
+									Ответить на отзыв
+
+									<img src="img/next.png" alt="Стрелка" class="read__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="review__feedback reviewstore__feedback">
+							<div class="review__feedback--block">
+								<input type="text" class="input review__feedback--input" placeholder="Имя">
+								
+								<div class="review__feedback--content">
+									<textarea class="input review__feedback--textarea" placeholder="Напишите отзыв о сети"></textarea>
+
+									<div class="review__feedback--quality">
+										<div class="review__feedback--quality--item">
+											<p class="review__feedback--quality--title">
+												Качество обслуживания:
+											</p>
+
+											<div class="review__feedback--item">
+												<div class="review__feedback--like--inner red">
+													2.0
+
+													<img src="img/dislike.png" alt="Дизайк" class="review__feedback--like--img">
+												</div>
+
+												<div class="review__quality--slider"></div>
+
+												<div class="review__feedback--like--inner green">
+													5.0
+
+													<img src="img/like-green.png" alt="Лайк" class="review__feedback--like--img">
+												</div>
+											</div>
+										</div>
+
+										<div class="review__feedback--quality--item">
+											<p class="review__feedback--quality--title">
+												Чистота магазина:
+											</p>
+
+											<div class="review__feedback--item">
+												<div class="review__feedback--like--inner red">
+													2.0
+
+													<img src="img/dislike.png" alt="Дизайк" class="review__feedback--like--img">
+												</div>
+
+												<div class="review__quality--slider"></div>
+
+												<div class="review__feedback--like--inner green">
+													5.0
+
+													<img src="img/like-green.png" alt="Лайк" class="review__feedback--like--img">
+												</div>
+											</div>
+										</div>
+
+										<div class="review__feedback--quality--item">
+											<p class="review__feedback--quality--title">
+												Цена-качество:
+											</p>
+
+											<div class="review__feedback--item">
+												<div class="review__feedback--like--inner red">
+													2.0
+
+													<img src="img/dislike.png" alt="Дизайк" class="review__feedback--like--img">
+												</div>
+
+												<div class="review__quality--slider"></div>
+
+												<div class="review__feedback--like--inner green">
+													5.0
+
+													<img src="img/like-green.png" alt="Лайк" class="review__feedback--like--img">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="review__feedback--wrapper">
+								<div class="modal__promo--box--review--buttons white">
+									Ваша оценка
+
+									<div class="modal__promo--review--buttons">
+										<a href="#" class="review__dislike">
+											<img src="img/dislike2.png" alt="Дизлайк" class="review__like--icon">
+										</a>
+
+										<a href="#" class="review__like">
+											<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+										</a>
+									</div>
+								</div>
+
+								<div class="review__check--inner">
+									Капча
+								</div>
+
+								<div class="review__check--inner">
+									<input type="checkbox" class="review__check" id="review">
+
+									<label for="review" class="review__check--label">
+										Оставить отзыв о сети «Пятерочка»
+									</label>
+								</div>
+
+								<button class="button review__button review__feedback--button">
+									Поделиться мнением
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="review">
+		<div class="container">
+			<div class="review__inner flex100">
+				<div class="title__inner">
+					<img src="img/like.png" alt="Отзывы" class="title__icon">
+
+					<h2 class="title review__title">
+						Отзывы о других сетях
+					</h2>
+				</div>
+
+				<div class="review__content">
+					<div class="review__item">
+						<div class="review__img--inner">
+							<img src="img/person1.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Ольга
+								</p>
+
+								<a href="#" class="review__like">
+									<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+								</a>
+							</div>
+
+							<p class="review__text">
+								Добрый день, уважаемые читатели ! Очень радуют нас конфеты, которые производит "Дом сладостей" из Калининграда...
+							</p>
+						</div>
+
+						<div class="review__read--inner">
+							<a href="#" class="review__logo--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="review__logo">
+							</a>
+
+							<a href="#" class="link__arrow review__read">
+								Читать отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+						</div>
+					</div>
+
+					<div class="review__item">
+						<div class="review__img--inner">
+							<img src="img/person1.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Анастасия
+								</p>
+
+								<a href="#" class="review__like">
+									<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+								</a>
+							</div>
+
+							<p class="review__text">
+								Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка. 
+							</p>
+						</div>
+
+						<div class="review__read--inner">
+							<a href="#" class="review__logo--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="review__logo">
+							</a>
+
+							<a href="#" class="link__arrow review__read">
+								Читать отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+						</div>
+					</div>
+
+					<div class="review__item">
+						<div class="review__img--inner">
+							<img src="img/person2.png" alt="Аватарка" class="review__img">
+						</div>
+
+						<div class="review__wrapper">
+							<div class="review__name--inner">
+								<p class="review__name">
+									Евгений
+								</p>
+
+								<a href="#" class="review__like">
+									<img src="img/like-green.png" alt="Лайк" class="review__like--icon">
+								</a>
+							</div>
+
+							<p class="review__text">
+								Добрый день дорогие читатели сайта. Хочу поделиться отзывам о десерте, который я приобрела в магазине Пятерочка. 
+							</p>
+						</div>
+
+						<div class="review__read--inner">
+							<a href="#" class="review__logo--inner link__hover">
+								<img src="img/store1.png" alt="Магазин" class="review__logo">
+							</a>
+
+							<a href="#" class="link__arrow review__read">
+								Читать отзыв
+
+								<img src="img/next.png" alt="Стрелка" class="read__img">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<button class="button review__button">
+					Поделиться мнением
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__content">
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Помощь
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								Инструкции и советы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Написать в поддержку
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Правовые документы
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Мы в социальных сетях
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								ВКонтакте
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Инстраграм
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Тик-Ток
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">
+							Правообладателям
+						</p>
+
+						<div class="footer__item--nav">
+							<a href="#" class="footer__nav--link">
+								О предъявлении претензий
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__logo--inner">
+						<a href="#" class="footer__logo">
+							<img src="img/logo.png" alt="Логотип" class="logo">
+						</a>
+
+						<p class="logo__name">
+							Company name
+						</p>
+
+						<div class="footer__social--inner">
+							<a href="#" class="footer__social--link">
+								<img src="img/tiktok.png" alt="Тик ток" class="footer__social--icon">
+							</a>
+
+							<a href="#" class="footer__social--link">
+								<img src="img/vk.png" alt="Вк" class="footer__social--icon">
+							</a>
+
+							<a href="#" class="footer__social--link">
+								<img src="img/instagram.png" alt="Инстаграм" class="footer__social--icon">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<p class="footer__copy">
+					&copy; 2014-2021
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal__menu">
+		<img src="img/cross.png" alt="Закрыть" class="modal__menu--close">
+
+		<div class="modal__nav">
+			<a href="#" class="modal__nav--link">
+				Скидки
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Меню
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Купоны
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Магазины
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Журнал
+			</a>
+
+			<a href="#" class="modal__nav--link">
+				Список покупок
+			</a>
+		</div>
+
+		<a href="#" class="header__enter modal__enter">
+			<img src="img/enter.png" alt="Вход" class="header__enter--icon">
+
+			Вход/Регистрация
+		</a>
+	</div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.spincrement.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

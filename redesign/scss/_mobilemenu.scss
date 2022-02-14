@@ -1,0 +1,65 @@
+.mobile__menu--inner{
+	display: block;
+	width: 100%;
+	max-width: 50%;
+	height: 100vh;
+	overflow-y: auto;
+	background: var(--blueC);
+	position: absolute;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	background: var(--menuB);
+	padding: 1.65rem 3rem 2.65rem;
+	transform: translateX(-110%);
+	box-shadow: 4px 4px 20px var(--menuB);
+	transition: .3s linear;
+}
+
+.mobile__menu--content{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.menu__mobile--top--inner{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.noregister__buttons{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mobile__on{
+	transform: translateX(0);
+}
+
+.menu__mobile--bottom--inner{
+	width: 100%;
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__mobile--tools{
+	display: none;
+	align-items: center;
+}
+
+.menu__mobile--chat{
+	display: none;
+	color: var(--blueC);
+	font-size: 2.9rem;
+	margin-left: 4rem;
+	transition: .2s linear;
+}
+
+.menu__mobile--chat:hover{
+	opacity: .6;
+}

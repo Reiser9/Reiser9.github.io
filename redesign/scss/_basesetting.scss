@@ -1,0 +1,108 @@
+html{
+	font-size: 10px;
+
+	/* Text color */ 
+
+	--whiteC: #fff;
+	--blackC: #000;
+	--blueC: #517ff1;
+	--bluedarkC: #2D67F7;
+	--lightgreyC: #5e697e;
+	--greyC: #606266;
+	--yellowC: #a19c5e;
+	--greenC: #5bb671;
+	--scrollC: #1d2129;
+	--nickiconC: #2d3340;
+	--textC: #4e5768;
+	--notifyInfo: #007de9;
+	--notifySucces: #32ba7c;
+	--notifyError: #eb504f;
+	--notifyWarn: #dfcf00;
+
+	/* Background color */ 
+
+	--sectionB: #22262f;
+	--section2B: #191C24;
+	--sectiondarkB: #20242d;
+	--sectiondark2B: #101215;
+	--borderB: #2f3642;
+	--sendB: #2f3441;
+	--nickB: #252933;
+	--linkB: #272c36;
+	--menuB: #101317;
+
+	/* Font size */
+
+	--smallF: 1.2rem;
+	--nickF: 1.4rem;
+	--mediumF: 1.5rem;
+	--bigF: 1.6rem;
+	--playF: 1.8rem;
+	--gamesF: 2rem;
+	--titleF: 2.2rem;
+
+	/* Font family */
+
+	--lightF: MontserratLight;
+	--regularF: MontserratRegular;
+	--mediumF: MontserratMedium;
+	--semiboldF: MontserratSemibold;
+	--boldF: MontserratBold;
+
+	/* Other */
+
+	--borderO: 1rem;
+	--bordersmallO: .6rem;
+}
+
+body{
+	overflow: hidden;
+	font-family: var(--regularF);
+	background: url("../img/home-bg.jpg");
+	font-size: 1.4rem;
+	color: var(--whiteC);
+}
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: var(--whiteC);
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h5, p{
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	appearance: none;
+}
+
+/* ================= Scroll ================= */
+
+::-webkit-scrollbar{
+	width: 2px;
+}
+
+::-webkit-scrollbar-track{
+	background: var(--scrollC);
+}
+
+::-webkit-scrollbar-thumb{
+	background: var(--sendB);
+	border-radius: 1rem;
+}

@@ -1,0 +1,134 @@
+.choose__color--box{
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.choose__color-item{
+	width: 25%;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.choise__color--circle{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+	position: relative;
+}
+
+.choise__color--check{
+	width: 30px;
+	height: 30px;
+	color: var(--blackC);
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: var(--whiteC);
+	border-radius: 50%;
+}
+
+.choose__color--active .choise__color--check{
+	display: flex;
+}
+
+/*============= Цветовая гамма цвета =============*/ 
+
+.green__circle{
+	background: #45a345;
+	color: #45a345;
+}
+
+.red__circle{
+	background: red;
+	color: red;
+}
+
+.blue__circle{
+	background: #517ff1;
+	color: #517ff1;
+}
+
+.orange__circle{
+	background: orange;
+	color: orange;
+}
+
+.purple__circle{
+	background: purple;
+	color: purple;
+}
+
+.grey__circle{
+	background: grey;
+	color: grey;
+}
+
+.lightblue__circle{
+	background: #2ebaee;
+	color: #2ebaee;
+}
+
+.pink__circle{
+	background: #e232ba;
+	color: #e232ba;
+}
+
+.darkorange__circle{
+	background: #18c881;
+	color: #18c881;
+}
+
+.lightgrey__color{
+	background: #5b879c;
+	color: #5b879c;
+}
+
+.green__circle:hover{
+	background: darken(#45a345, 15);
+}
+
+.red__circle:hover{
+	background: darken(red, 15);
+}
+
+.blue__circle:hover{
+	background: var(--bluedarkC);
+}
+
+.orange__circle:hover{
+	background: darken(orange, 15);
+}
+
+.purple__circle:hover{
+	background: darken(purple, 6);
+}
+
+.grey__circle:hover{
+	background: darken(grey, 15);
+}
+
+.lightblue__circle:hover{
+	background: darken(#2ebaee, 15);
+}
+
+.pink__circle:hover{
+	background: darken(#e232ba, 15);
+}
+
+.darkorange__circle:hover{
+	background: darken(#18c881, 10);
+}
+
+.lightgrey__color:hover{
+	background: darken(#5b879c, 10);
+}

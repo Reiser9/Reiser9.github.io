@@ -1,0 +1,608 @@
+:root{
+	font-size: 10px;
+}
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 1.8rem;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.button{
+	border: none;
+	cursor: pointer;
+	transition: .2s linear;
+	outline: none;
+	background: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.blue{
+	color: #1E3DAB;
+	font-weight: 600;
+}
+
+.green{
+	color: #34DA8A;
+	font-weight: 600;
+}
+
+// Шапка
+
+.header{
+	padding: 3rem 0 25rem 0;
+	position: relative;
+}
+
+.header__bg{
+	width: 1064px;
+	height: auto;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+}
+
+.header__bg--img{
+	width: 100%;
+	height: auto;
+}
+
+.header__nav--inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__nav--conteiner{
+	display: flex;
+	align-items: center;
+}
+
+.header__logo--inner{
+	margin-right: 6.5rem;
+}
+
+.header__nav{
+	display: flex;
+	align-items: center;
+}
+
+.header__link{
+	margin-right: 3rem;
+	transition: .2s linear;
+}
+
+.header__link:hover{
+	color: #34DA8A;
+}
+
+.header__link:last-child{
+	margin-right: 0;
+}
+
+.header__call--inner{
+	display: flex;
+	align-items: center;
+}
+
+
+.header__number--link{
+	font-weight: 600;
+	color: #fff;
+	margin-right: 3rem;
+}
+
+.header__call--button{
+	padding: 1.1rem 3rem;
+	background: #34DA8A;
+	border-radius: 50px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+.header__call--button:hover{
+	background: darken(#34DA8A, 7);
+}
+
+.header__text--inner{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 16rem;
+}
+
+.header__title{
+	font-weight: 800;
+	width: 100%;
+	max-width: 600px;
+	font-size: 3.5rem;
+}
+
+.header__button{
+	margin-top: 5rem;
+	padding: 2rem 3rem;
+	color: #fff;
+	font-weight: 600;
+	background: #3894FF;
+	border-radius: 10px;
+	font-size: 1.8rem;
+	border: 1px solid #3894FF;
+}
+
+.header__button:hover{
+	background: #fff;
+	color: #3894FF;
+}
+
+// 2 Блок
+
+.points{
+	position: relative;
+	width: 100%;
+	padding: 25rem 0;
+}
+
+.points__bg{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+.points__bg{
+	width: 800px;
+	height: auto;
+}
+
+.points__bg--img{
+	width: 100%;
+	height: auto;
+}
+
+.points__inner{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+}
+
+.points__item{
+	font-size: 3.5rem;
+	margin-top: 3rem;
+	position: relative;
+	padding-left: 30px;
+}
+
+.points__item:before{
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0px;
+	background: #3894FF;
+}
+
+.point__button{
+	margin-top: 4rem;
+	font-size: 1.8rem;
+	padding: 2rem 3rem;
+	border-radius: 10px;
+	background: #3894FF;
+	font-weight: 600;
+	color: #fff;
+	border: 1px solid #3894FF;
+}
+
+.point__button:hover{
+	background: #fff;
+	color: #3894FF;
+}
+
+.right__content{
+	display: flex;
+	justify-content: flex-end;
+}
+
+// Популярные товары
+
+.popular{
+	padding: 5rem 0;
+}
+
+.popular__inner{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.popular__item{
+	padding: 2rem 2.7rem;
+	width: 100%;
+	max-width: 350px;
+	border: 1px solid #EDEDED;
+	box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.1);
+	margin: 3rem 5rem 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 10px;
+}
+
+.popular__item:last-child{
+	margin-right: 0;
+}
+
+.popular__item--img--inner{
+	height: 180px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popular__item--img{
+	height: 100%;
+	width: auto;
+}
+
+.popular__inner--title{
+	font-size: 1.5rem;
+	margin-top: 4rem;
+	min-height: 70px;
+}
+
+.popular__inner--price--inner{
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.popular__item--price--text{
+	color: #828282;
+}
+
+.popular__item--button{
+	padding: 1.6rem 4rem;
+	font-size: 2.5rem;
+	color: #3894FF;
+	border: 1px solid #3894FF;
+	font-weight: 600;
+	margin: 4rem auto 0 auto;
+}
+
+.popular__item--button:hover{
+	background: #3894FF;
+	color: #fff;
+}
+
+.popular__all--button--inner{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.popular__all--button{
+	font-size: 2.5rem;
+	color: #fff;
+	border: 1px solid #3894FF;
+	background: #3894FF;
+	margin-top: 6rem;
+	padding: 1.7rem 3.5rem;
+	font-weight: 600;
+	transition: .2s linear;
+}
+
+.popular__all--button:hover{
+	color: #3894FF;
+	background: #fff;
+}
+
+// О нас
+
+.about{
+	background: #F3F9FE;
+	padding: 4rem 0;
+}
+
+.about__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about__title{
+	font-size: 3.6rem;
+	font-weight: 800;
+}
+
+.about__text{
+	width: 100%;
+	margin-top: 6rem;
+	font-size: 3rem;
+}
+
+// Подвал
+
+.footer{
+	background: #6094BF;
+	padding: 2rem 0;
+}
+
+.footer__inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__link{
+	font-size: 3.5rem;
+	color: #fff;
+}
+
+.footer__copy{
+	color: #c6c6c6;
+	font-size: 2rem;
+}
+
+// Модальное окно
+
+.scroll{
+	overflow: hidden;
+}
+
+.modal{
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(196, 196, 196, 0.5);
+}
+
+.modal.off{
+	display: none;
+}
+
+.modal__inner{
+	padding: 2.5rem 3.5rem;
+	background: #fff;
+	width: 100%;
+	max-width: 570px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.modal__title{
+	font-weight: 800;
+	font-size: 3.6rem;
+	text-align: center;
+}
+
+.modal__input{
+	width: 100%;
+	margin-top: 3rem;
+	padding: 1rem 1.5rem;
+	border: 1px solid #C0C0C0;
+	border-radius: 100px;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.modal__button{
+	margin-top: 3rem;
+	border-radius: 100px;
+	background: #3894FF;
+	padding: 1.2rem 3rem;
+	font-weight: 600;
+	color: #fff;
+	border: 1px solid #3894FF;
+}
+
+.modal__button:hover{
+	background: #fff;
+	color: #3894F3;
+}
+
+.modal__cross{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+// Шапка каталога
+
+.header__catalog{
+	padding: 3rem 0;
+}
+
+.header__catalog--inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__catalog--number{
+	color: #000;
+}
+
+// Каталог
+
+.catalog{
+	padding: 6rem 0;
+}
+
+.catalog__inner{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.catalog__title{
+	font-weight: 800;
+	font-size: 3.5rem;
+}
+
+.catalog__tovar--inner{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 4rem;
+}
+
+.catalog__item{
+	padding: 2rem 2.7rem;
+	width: 100%;
+	max-width: 350px;
+	border: 1px solid #EDEDED;
+	box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.1);
+	margin: 3rem 5rem 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 10px;
+}
+
+// Адаптив
+
+@media(max-width: 1650px){
+	.container{
+		max-width: 1100px;
+	}
+
+	.header__bg{
+		width: 840px;
+	}
+
+	.header__title{
+		font-size: 3rem;
+		max-width: 415px;
+	}
+
+	.header__text--inner{
+		margin-top: 10rem;
+	}
+
+	.header__button{
+		margin-top: 3rem;
+		padding: 1.5rem 2rem;
+	}
+
+	.header__link{
+		margin-right: 2rem;
+	}
+
+	.header__logo--inner{
+		margin-right: 3rem;
+	}
+
+	// 2 Экран
+
+	.points__bg{
+		width: 650px;
+	}
+
+	.points{
+		padding: 5rem 0 15rem 0;
+	}
+
+	.points__item{
+		margin-top: 2rem;
+		font-size: 2.5rem;
+	}
+
+	.points__inner{
+		width: 43%;
+	}
+
+	.point__button{
+		margin-top: 3rem;
+		padding: 1.5rem 2rem;
+	}
+
+	// Популярные
+
+	.popular__inner{
+		justify-content: center;
+	}
+
+	.popular__item--img--inner{
+		height: 135px;
+	}
+
+	.popular__item:nth-child(even){
+		margin-right: 0;
+	}
+
+	//  О нас
+
+	.about__text{
+		margin-top: 3rem;
+		font-size: 2.5rem;
+	}
+
+	// Подвал
+
+	.footer__link{
+		font-size: 2.5rem;
+	}
+
+	.footer__copy{
+		color: #c6c6c6;
+		font-size: 2rem;
+	}
+
+	// Каталог
+
+	.catalog__item{
+		max-width: 315px;
+	}
+
+	.catalog__item:nth-child(3n){
+		margin-right: 0;
+	}
+
+	.catalog__item{
+		margin-right: 7.5rem;
+	}
+}

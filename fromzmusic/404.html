@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp for Projects</title>
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="fonts/font-face.css">
+    <!--Libs-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <!--Style sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Mediaqueries-->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<!--Pre header-->
+<section class="pre_header" id="pre_header">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-10 col-md-7">
+                <ul class="nav main_menu justify-content-between">
+                    <li><a href="#" class="fade320">О компании</a></li>
+                    <li><a href="#" class="fade320">Технические каталоги</a></li>
+                    <li><a href="#" class="fade320">Статьи</a></li>
+                    <li><a href="#" class="fade320">Новости</a></li>
+                    <li><a href="#" class="fade480">Видео</a></li>
+                    <li><a href="#" class="fade480">Подбор муфт</a></li>
+                    <li><a href="#" class="fade480">Прайс-лист</a></li>
+                    <li><a href="#" class="fade480">Оплата и доставка</a></li>
+                    <li><a href="#" class="fade480">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-5">
+                <div class="actions_link d-flex">
+                    <a href="#">Вход</a>
+                    <a href="#">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end of pre header-->
+<!--Header-->
+<header>
+    <div class="container">
+        <div class="row align-items-center header__flexx">
+            <div class="col-lg-2 header__logo">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-8 coll col-md-6 info_row d-flex flex-wrap ml-auto">
+                
+                <div class="header__data">
+                    <a href="tel:+74956385766" class="phone"><i class="fa fa-phone"></i>+7 (495) 638-57-56</a>
+
+                    <p class="address">
+                        <i class="fa fa-map-marker-alt"></i><span>г. Москва, ул. Дорожная, д. 60, стр. 4</span>
+                    </p>
+
+                    <p class="email"><i class="fa fa-clock"></i>Режим работы: Пн – Пт, с 9:00 до 18:00</p>
+                    <a href="#" class="send_message"><i class="fa fa-envelope"></i>Отправить заявку</a>
+                </div>
+
+                <div class="col-sm-4 mt-3 p-0 d-flex">
+                    <a href="#" class="catalog_trigger"><img src="img/catalog.png" alt="">Каталог продукции</a>
+                    <a href="#" class="mufta_trigger"><img src="img/myfta.png" alt="">Подбор муфт</a>
+                </div>
+
+                <div class="col-sm-8 mt-3">
+                    <div class="input_box">
+                        <i class="fa fa-search"></i>
+                        <input type="search" class="search" placeholder="Поиск">
+                        <i class="fa fa-caret-down"></i>
+                        <div class="category">
+                            <input type="text" placeholder="Все категории">
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 coll right_box">
+                <div class="cart_box">
+                    <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    <div class="right_side">
+                        <p>Всего товаров:<span> 1 шт.</span></p>
+                        <p>На сумму:<span> 3 492 596,05  ₽</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 pl-0 pr-0 d-flex faworit_row">
+                    <p><a href="#"><i class="fa fa-heart"></i>Избранное</a><span class="count">0</span></p>
+                    <p><a href="#"><i class="fa fa-signal"></i>Сравнить</a><span class="count">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile__seacrh">
+            <a href="#" class="catalog_trigger2"><img src="img/catalog.png" alt="">Каталог продукции</a>
+            <a href="#" class="mufta_trigger2"><img src="img/myfta.png" alt="">Подбор муфт</a>
+
+            <div class="input_box">
+                <i class="fa fa-search"></i>
+                <input type="search" class="search" placeholder="Поиск">
+                <i class="fa fa-caret-down"></i>
+                <div class="category">
+                    <input type="text" placeholder="Все категории">
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+
+            <p><i class="fa fa-heart"></i><a href="#">Избранное</a><span class="count">0</span></p>
+            <p><i class="fa fa-signal"><a href="#"></i>Сравнить</a><span class="count">0</span></p>
+        </div>
+
+        <div class="mob__menu">
+
+
+
+
+            <div class="mob__top--menu">
+                <svg class="logo" width="119" height="81" viewBox="0 0 119 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.592 67.3377V77.129H27.2486V73.258H29.3738V77.129H32.0304V67.3377H29.3738V71.0569H27.2486V67.3377H24.592ZM15.3321 67.3377V77.129H17.8368C18.444 75.9146 19.203 74.017 19.5066 73.3339C19.8862 72.4231 20.1898 71.5882 20.4934 70.5256H20.5693C20.4934 71.8159 20.4175 72.9544 20.4175 74.9278V77.0531H22.8463V67.2618H20.3416L18.8235 70.981C18.5199 71.74 18.0645 72.8785 17.685 73.8653H17.6091C17.685 72.8785 17.8368 71.1328 17.8368 69.3871V67.2618H15.3321V67.3377ZM8.80456 70.981C8.80456 70.7533 8.80456 70.4497 8.95636 70.2979C9.03226 69.8425 9.41177 69.4629 9.86718 69.4629C10.7021 69.4629 11.0816 70.4497 11.0816 72.3472C11.0816 73.8653 10.778 75.2315 9.79127 75.2315C9.48766 75.2315 9.10816 75.0797 8.95636 74.4725C8.88046 74.2448 8.80456 73.9411 8.80456 73.6375V70.981ZM6.14801 81H8.80456V76.37H8.88046C9.18406 76.8254 9.71537 77.3567 10.5503 77.3567C12.2201 77.3567 13.814 75.7628 13.814 72.2713C13.814 69.5389 12.9032 67.2618 10.7021 67.2618C9.79128 67.2618 9.03226 67.7172 8.57686 68.5522H8.50095L8.34915 67.4136H5.99621C6.07211 68.3245 6.07211 69.3112 6.07211 70.5256V81H6.14801ZM0 63.6945V77.2049H2.65655V66.0474H6.37571V63.7703H0V63.6945Z" fill="#86B136"/>
+                <path d="M115.902 72.2714C115.902 73.1822 115.75 75.2315 114.535 75.2315C113.397 75.2315 113.093 73.1822 113.093 72.0437C113.093 71.5883 113.169 70.9051 113.321 70.3738C113.473 69.8425 113.928 69.3871 114.46 69.3871C115.598 69.3871 115.902 71.1329 115.902 72.2714ZM117.723 63.1632C117.268 63.315 115.978 63.5427 115.294 63.6945C113.549 63.9981 112.334 64.833 111.651 66.0475C110.816 67.4137 110.513 69.2353 110.513 71.3605C110.513 74.093 111.272 77.4327 114.535 77.4327C117.192 77.4327 118.482 75.0797 118.482 72.2714C118.482 69.0835 117.116 67.4896 115.219 67.4896C114.08 67.4896 113.169 68.1727 112.79 69.0835H112.714C112.79 68.4004 112.942 67.7932 113.245 67.3378C113.701 66.6547 114.308 66.1234 115.978 65.8957C116.585 65.8198 117.116 65.7439 117.572 65.5162L117.723 63.1632ZM106.262 74.093C106.262 74.2448 106.262 74.3966 106.186 74.5484C106.035 75.1556 105.503 75.3834 105.048 75.3834C104.668 75.3834 104.061 75.0038 104.061 74.0171C104.061 72.6509 105.275 72.3473 106.186 72.3473V74.093H106.262ZM109.071 77.1291C108.919 76.446 108.919 75.6869 108.919 74.852V71.2088C108.919 69.2353 108.463 67.186 105.351 67.186C103.985 67.186 102.771 67.6414 102.239 67.945L102.695 69.6908C103.302 69.3112 103.909 69.1594 104.744 69.1594C105.655 69.1594 106.186 69.6908 106.186 70.4498V70.6775C103.909 70.6775 101.632 71.7401 101.632 74.3207C101.632 76.0664 102.771 77.2809 104.289 77.2809C105.2 77.2809 105.959 76.9014 106.49 76.1424H106.566L106.718 77.1291H109.071ZM92.7518 67.3378V77.1291H95.4083V73.2581H97.5336V77.1291H100.19V67.3378H97.5336V71.057H95.4083V67.3378H92.7518ZM91.3097 74.7761C91.0061 74.852 90.4747 75.0038 90.0193 75.0038C88.3495 75.0038 87.1351 73.7135 87.1351 70.5256C87.1351 67.186 88.5013 65.8957 90.0193 65.8957C90.6265 65.8957 90.9301 66.0475 91.2337 66.1234L91.6892 63.9222C91.3856 63.7704 90.7783 63.5427 89.7916 63.5427C87.1351 63.5427 84.2508 65.5161 84.2508 70.6015C84.2508 74.3966 85.9207 77.2809 89.488 77.2809C90.3988 77.2809 91.1578 77.1291 91.6133 76.9773L91.3097 74.7761ZM79.3931 69.1594C80.304 69.1594 80.5317 70.8293 80.5317 72.1955C80.5317 73.6376 80.304 75.3074 79.469 75.3074C78.4823 75.3074 78.2546 73.9412 78.2546 72.1955C78.1787 70.9052 78.4064 69.1594 79.3931 69.1594ZM79.3931 67.186C77.4197 67.186 75.5222 68.7799 75.5222 72.2714C75.5222 75.4592 76.9643 77.2809 79.3172 77.2809C80.8353 77.2809 83.1123 76.2942 83.1123 72.1955C83.1882 69.1594 81.7461 67.186 79.3931 67.186ZM69.4501 67.3378V77.1291H72.1066V69.5389H74.9909V67.4137H69.4501V67.3378ZM62.9225 70.981C62.9225 70.7533 62.9226 70.4498 63.0744 70.298C63.1503 69.8425 63.5298 69.463 63.9852 69.463C64.8201 69.463 65.1996 70.4498 65.1996 72.3473C65.1996 73.8653 64.896 75.2315 63.9093 75.2315C63.6057 75.2315 63.2262 75.0797 63.0744 74.4725C62.9985 74.2448 62.9225 73.9412 62.9225 73.6376V70.981ZM60.266 81H62.9225V76.3701H62.9984C63.3021 76.8255 63.8334 77.3568 64.6683 77.3568C66.3381 77.3568 67.932 75.7628 67.932 72.2714C67.932 69.5389 67.0212 67.2619 64.8201 67.2619C63.9093 67.2619 63.1503 67.7173 62.6948 68.5522H62.6189L62.4671 67.4137H60.1142C60.1901 68.3245 60.1901 69.3112 60.1901 70.5256V81H60.266ZM53.9662 71.3605C53.9662 70.3738 54.3457 69.0835 55.1806 69.0835C56.0155 69.0835 56.3191 70.0702 56.3191 71.3605H53.9662ZM58.6721 73.1822C58.748 72.8786 58.748 72.4991 58.748 71.816C58.748 68.8558 57.5335 67.186 55.3324 67.186C53.0554 67.186 51.3096 69.1594 51.3096 72.4232C51.3096 75.4592 52.8277 77.205 55.5601 77.205C56.6227 77.205 57.6095 77.0532 58.2926 76.7496L57.9131 74.852C57.4577 75.0038 56.7745 75.1556 56.0155 75.1556C54.8011 75.1556 53.8903 74.6243 53.8903 73.1063H58.6721V73.1822ZM42.3533 67.3378V77.1291H45.0098V73.2581H47.1351V77.1291H49.7916V67.3378H47.1351V71.057H45.0098V67.3378H42.3533ZM34.3836 71.4365H38.1028C37.951 72.9545 37.4197 74.9279 35.2945 74.9279C34.6872 74.9279 34.1559 74.7761 33.7005 74.6243L33.2451 76.8255C33.7005 77.0532 34.6113 77.3568 35.674 77.3568C38.7859 77.3568 40.8353 74.6243 40.8353 70.5256C40.8353 67.4137 39.9244 63.5427 35.9776 63.5427C34.839 63.5427 34.0041 63.8463 33.3969 64.1499L34.0041 66.2752C34.4595 66.0475 34.9908 65.9716 35.5981 65.9716C37.4197 65.9716 38.1028 67.8691 38.1028 69.2353H34.3077V71.4365H34.3836Z" fill="#58595B"/>
+                <path d="M68.2358 48.0588C68.9189 47.9829 69.5261 48.4383 69.602 49.1214C69.6779 49.8045 69.2225 50.4117 68.5394 50.4876L21.101 56.4079C20.4179 56.4838 19.8107 56.0284 19.7348 55.3453C19.6589 54.6622 20.1143 54.055 20.7974 53.9791L68.2358 48.0588Z" fill="#A7A9AC"/>
+                <path d="M95.104 51.6262C95.7871 51.5503 96.3943 52.0057 96.5461 52.6888C96.622 53.3719 96.1666 53.9791 95.4835 54.1309L60.1135 59.1404C59.4303 59.2163 58.8231 58.7609 58.6713 58.0778C58.5954 57.3947 59.0508 56.7875 59.7339 56.6357L95.104 51.6262Z" fill="#A7A9AC"/>
+                <path d="M80.9107 14.5104C81.1384 13.9032 81.8974 13.5237 82.5046 13.8273C83.1118 14.055 83.4914 14.8141 83.1877 15.4213L69.5255 49.7286C69.2978 50.3359 68.5388 50.7154 67.9316 50.4118C67.3244 50.1841 66.9449 49.4251 67.2485 48.8179L80.9107 14.5104Z" fill="#00AEEF"/>
+                <path d="M80.9107 14.5104C81.1384 13.9032 81.8974 13.5237 82.5046 13.8273C83.1118 14.055 83.4914 14.8141 83.1877 15.4213L69.5255 49.7286C69.2978 50.3359 68.5388 50.7154 67.9316 50.4118C67.3244 50.1841 66.9449 49.4251 67.2485 48.8179L80.9107 14.5104Z" fill="#004F77"/>
+                <path d="M41.4426 12.537C41.8221 11.7779 42.8088 11.3985 43.6438 11.8539C44.4028 12.2334 44.7064 13.2201 44.3269 14.055L22.3914 55.9525C22.0119 56.7116 21.0252 57.0152 20.1903 56.6357C19.4312 56.2562 19.1276 55.2694 19.5071 54.4345L41.4426 12.537Z" fill="#00AEEF"/>
+                <path d="M41.4426 12.537C41.8221 11.7779 42.8088 11.3985 43.6438 11.8539C44.4028 12.2334 44.7064 13.2201 44.3269 14.055L22.3914 55.9525C22.0119 56.7116 21.0252 57.0152 20.1903 56.6357C19.4312 56.2562 19.1276 55.2694 19.5071 54.4345L41.4426 12.537Z" fill="#004F77"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8065 20.3805L22.2334 6.23246L67.0228 40.9346L68.8672 18.1717L100.366 28.7524L58.6585 0.942139L56.8065 20.3805Z" fill="url(#paint0_linear)"/>
+                <path d="M41.2904 13.8273C40.9868 12.9924 41.3663 12.0816 42.2012 11.7021C43.0361 11.3985 43.9469 11.778 44.3264 12.6129L61.4042 57.3947C61.7078 58.2297 61.3283 59.1405 60.4934 59.52C59.6585 59.8995 58.7477 59.4441 58.3682 58.6091L41.2904 13.8273Z" fill="#00AEEF"/>
+                <path d="M80.9105 15.4212C80.6828 14.7381 81.0623 14.055 81.6696 13.8273C82.3527 13.5996 83.0358 13.9791 83.2635 14.5863L96.3944 52.3852C96.6221 53.0683 96.2426 53.7514 95.6354 53.9791C94.9523 54.2068 94.2692 53.8273 94.0415 53.2201L80.9105 15.4212Z" fill="#00AEEF"/>
+                <defs>
+                <linearGradient id="paint0_linear" x1="52.55" y1="29.7194" x2="53.7331" y2="7.2678" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7CA92D"/>
+                <stop offset="1" stop-color="#B4CC04"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
+
+                <a href="tel:+74956385766" class="phone"><i class="fa fa-phone"></i>+7 (495) 638-57-56</a>
+            </div>
+
+            <div class="mob__bottom--menu">
+                <i class="fas fa-bars menu"></i>
+
+                <div class="catalog__title">
+                    Меню
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-shopping-cart mobile__menu--icon"></i>
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-heart mobile__menu--icon"></i>
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-signal mobile__menu--icon"></i>
+                </div>
+
+                <div class="search__mob">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+
+            <div class="mobile__menu--search--input--inner">
+                <input type="text" placeholder="Поиск.." class="mobile__menu--search--input">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu__click menu__transform">
+        <div class="close__menu">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3.92871" y="5" width="22" height="2" transform="rotate(45 3.92871 5)" fill="#7CA92D"/>
+            <rect x="2.51465" y="20.071" width="22" height="2" transform="rotate(-45 2.51465 20.071)" fill="#7CA92D"/>
+            </svg>
+            Меню
+        </div>
+
+        <div class="menu__click--inner">
+            <a href="#" class="menu__click--item catalog__item">
+                Каталог продукции
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.999856L7 7.25532L1 13" stroke="#58595B" stroke-width="2"/>
+                </svg>
+            </a>
+            <a href="#" class="menu__click--item">
+                О компании
+            </a>
+            <a href="#" class="menu__click--item">
+                Подбор муфт
+            </a>
+        </div>
+
+
+        <div class="catalog__menu menu__transform">
+            
+            <div class="close__menu--catalog">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0.999856L2 7.25532L8 13" stroke="#58595B" stroke-width="2"/>
+                </svg>
+
+                Каталог продукции
+            </div>
+
+            <div class="accordion catalog__acc" id="accordion">
+                <div class="card">
+                    <div class="" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-angle-down"></i>Автоматические выключатели
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <i class="fa fa-angle-down"></i>Устройства дифференциальной защиты
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="true"
+                                    aria-controls="collapseThree">
+                                <i class="fa fa-angle-down"></i>Силовое оборудование
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_trigger collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour">
+                                <i class="fa fa-angle-down"></i>Силовые разъемы
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                         data-parent="#accordion">
+                        <div class="">
+                            <ul class="menu_accordion">
+                                <li><a href="#">ВА 47-29 4,5 кА</a></li>
+                                <li><a href="#">ВА 47-60 6 кА</a></li>
+                                <li><a href="#">ВА 47-100 10кА</a></li>
+                                <li><a href="#">ВА 47-125 15кА</a></li>
+                                <li><a href="#">OptiDin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_link">
+                                <i class="fa"></i>Стабилизаторы напряжения
+                            </button>
+                        </h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_link">
+                                <i class="fa"></i>Электроустановочные изделия
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="accordion_link" href="#">
+                                <i class="fa"></i>Удлиннители
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="" id="headingThree">
+                        <h2 class="mb-0">
+                            <a class="accordion_link collapsed" href="">
+                                <i class="fa"></i>Инструменты
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+<!--End of header-->
+
+<!--Content-->
+<section class="content_section" id="content_section">
+    <div class="container">
+        <div class="row fised__top">
+            <div class="col-lg-8 ml-auto mr-auto">
+                <ul class="nav bread_crumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li>></li>
+                    <li><a class="active" href="#">Страница не найдена</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 left_column">
+                                <div class="left_menu">
+                                    <div class="menu_header">Разделы каталога</div>
+                                    <ul class="side_menu">
+                                        <li><a href="#" class="cabel__list">Кабель, провод<i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Электротехническая продукция
+
+                                                <i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Кабеленесущие системы<i
+                                                    class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Светотехническая продукция <i
+                                                    class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="#" class="cabel__list">Электрощитовое оборудование <i
+                                                    class="fa fa-angle-right"></i></a></li>
+
+
+                                        <div class="menu__header--hover">
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Автоматические выключатели
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-29 4,5 кА
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-60 6 кА
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-100 10кА
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    ВА 47-125 15кА OptiDin
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Приборы контроля, учета и измерения
+                                                </div>
+
+                                                <div class="menu__item--text">Амперметры, Вольтметры</div>
+                                                <div class="menu__item--text">Трансформаторы тока</div>
+                                                <div class="menu__item--text">Счетчики электроэнергии</div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Силовые разъемы
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    Вилки переносные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Вилки стационарные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки переносные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки стационарные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки скрытой установки
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Розетки панельные
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Силовые разъемы из каучука
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Силовое оборудование
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    Автоматические выключатели ВА
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Выключатели-разъединители ВР32
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Выключатели-разъединители ПВР
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Предохранители ППН
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Разъединители РЕ-19
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    Рубильники РПС, РПБ, РБ
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Устройства дифференциальной защиты
+                                                </div>
+
+                                                <div class="menu__item--text">
+                                                    АВДТ
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    АД-12 и АД-14
+                                                </div>
+                                                <div class="menu__item--text">
+                                                    УЗО ВД1-63
+                                                </div>
+                                            </div>
+
+                                            <div class="menu__header--hover--item">
+                                                <div class="menu__item--title">
+                                                    Электроустановочные изделия
+                                                </div>
+
+                                                <div class="menu__item--title">
+                                                    Стабилизаторы напряжения
+                                                </div>
+                                                <div class="menu__item--title">
+                                                    Удлинители
+                                                </div>
+                                                <div class="menu__item--title">
+                                                    Инструменты
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </ul>
+                                    <img src="img/left_img1.png" alt="" class="left_banners">
+                                    <img src="img/left_img2.png" alt="" class="left_banners">
+                                </div>
+                            </div>
+
+            <!-- Правый сайд бар -->
+
+            <div class="col-lg-8 content_center notfound__max">
+                <!--<h1 class="title">Название раздела</h1>-->
+                <!--end of slider-->
+                <div class="nothing_found">
+                    <img src="img/404.png" alt="">
+                    <p class="title_404">Страница не найдена</p>
+                    <p class="text_404">Такой страницы не существует, или она была удалена.</p>
+                    <a href="#" class="btn_bordered">Вернуться на главную</a>
+                </div>
+            </div>
+
+
+            
+
+
+            <!--end of content center-->
+            <div class="col-lg-2 right_column">
+                <div class="subscribe_box">
+                    <p class="subscribe_title">Будьте в курсе наших скидок и акций!</p>
+                    <input type="email" class="email__input" placeholder="E-mail">
+                    <div class="check d-flex">
+                        <label class="container_label">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>Даю согласие на обработку персональных данных согласно политики конфиденциальности сайта</p>
+                    </div>
+                    <button class="subscribe">Подписаться</button>
+                </div>
+                <div class="news_box">
+                    <p class="news_title">Новости</p>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <div class="news">
+                        <p class="date">23.03.2017</p>
+                        <a href="#" class="short_text">Концевые выключатели — новинка в ассортименте продукции IEK</a>
+                    </div>
+                    <a href="#" class="btn_bordered">Все новости</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--end of content-->
+
+<!--Footer-->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3 class="footer_title">Контакты</h3>
+                <div class="footer_info">
+                    <a href="#"><i class="fa fa-map-marker-alt"></i>г. Москва, ул. Дорожная, д. 60, стр. 4</a>
+                    <a href="#"><i class="fa fa-envelope"></i>zakaz@grinenergosnab.ru</a>
+                    <a href="#"><i class="fa fa-phone"></i>+7 (495) 638-57-56</a>
+                    <a href="#" class="link">Схема проезда</a>
+                </div>
+            </div>
+            <div class="col-lg-2 ml-auto mobile__fade">
+                <h3 class="footer_title">Продукция</h3>
+                <ul class="small_menu">
+                    <li><a href="#">Кабель, провод</a></li>
+                    <li><a href="#">Электротехническая продукция</a></li>
+                    <li><a href="#">Кабеленесеущие системы</a></li>
+                    <li><a href="#">Светотехническая продукция</a></li>
+                    <li><a href="#">Электрощитовое оборудование</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 mobile__fade">
+                <h3 class="footer_title">О компании</h3>
+                <ul class="big_menu">
+                    <li><a href="#">Технические каталоги</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Видео</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 mobile__fade">
+                <h3 class="footer_title">Подбор муфт</h3>
+                <ul class="big_menu">
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="after_footer">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6"><p class="copyright">©«ГринЭнергоСнаб», 2009-2019 — электротехническая продукция.
+                    Все права защищены</p></div>
+                <div class="col-lg-1 col-md-12 ml-auto"><a href="#" class="map_site">Карта сайта</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end of footer-->
+
+
+<!--Scripts libs-->
+<script src="js/libs.min.js"></script>
+<!--Custom Scripts-->
+<script src="js/scripts.js"></script>
+<!--Awesome-->
+<script src="https://kit.fontawesome.com/684bd2fe9e.js"></script>
+</body>
+</html>

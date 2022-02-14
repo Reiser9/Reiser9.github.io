@@ -1,0 +1,365 @@
+.content{
+	width: 100%;
+	padding: 4.5rem 0 7rem 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.main{
+	padding: 0 5rem;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 347px;
+	transition: .3s ease-in-out;
+}
+
+.main.full{
+	margin-right: 0;
+}
+
+.main__title--inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0px 2rem;
+}
+
+.main__title--inner--mob{
+	display: none;
+	width: 100%;
+}
+
+/*=== Main верхний текст ===*/ 
+
+.main__title{
+	margin-top: 2rem;
+}
+
+.main__subtitle{
+	margin-top: 3.5rem;
+	font-size: var(--titleF);
+	max-width: 620px;
+	line-height: 1.3;
+	text-align: center;
+}
+
+.main__play--button .main__play{
+    position: relative;
+    overflow: hidden;
+}
+
+.main__play{
+	margin-top: 5rem;
+	border-radius: var(--borderO);
+	border: 2px solid var(--blueC);
+	background: transparent;
+	padding: .8rem 4rem;
+	font-family: var(--semiboldF);
+	transition: .3s linear;
+}
+
+.main__play--button .main__play:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--blueC);
+    height: 150px;
+    width: 270px;
+    border-radius: 50%;
+}
+
+.main__play--button .main__play:hover{
+    border: 2px solid transparent;
+}
+
+.main__play--button .main__play:nth-child(1):before{
+    top: 100%;
+    left: 100%;
+    transition: all .5s;
+}
+
+.main__play--button .main__play:nth-child(1):hover:before{
+    top: -40px;
+    left: -40px;
+}
+
+/*=== Контейнер любимых игр ===*/
+
+.main__like--games--inner{
+	margin: 4.5rem 0 0 0;
+	padding: 2.5rem;
+	background: var(--sectiondarkB);
+	width: 100%;
+	position: relative;
+}
+
+.main__like--games--title{
+	font-size: var(--gamesF);
+	text-align: center;
+}
+
+/*=== Слайдер любимых игр ===*/ 
+
+.main__like--games--slider{
+	margin-top: 3rem;
+	width: 100%;
+	position: relative;
+}
+
+.main__like--games--carousel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0 3.5rem;
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+/* Элемент слайдера */ 
+
+.main__like--games--item{
+	width: 300px;
+	height: 200px;
+	border-radius: var(--borderO);
+	border: 3px dashed var(--borderB);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin: 0 1rem;
+	transition: .2s linear;
+	position: relative;
+}
+
+.main__like--games--item:hover{
+	border: 3px dashed var(--blueC);
+}
+
+.main__like--games--item:hover .main__like--add--game{
+	background: var(--blueC);
+}
+
+/*=== Стилизация маски игр ===*/ 
+
+.game__inner--mask{
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	background: var(--sectiondarkB);
+	border-radius: var(--borderO);
+	padding: 2.5rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	border: 3px solid var(--sectionB);
+	transition: .2s linear;
+}
+
+.game__inner--mask:hover{
+	border: 3px solid var(--blueC);
+}
+
+.main__like--add--game{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: var(--borderB);
+	color: var(--sectiondarkB);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: .2s linear;
+}
+
+.icon__add{
+	font-size: 3rem;
+}
+
+/* Стрелки слайдера */ 
+
+.main__arrow{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: var(--sectiondarkB);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	box-shadow: 0 0 10px var(--blueC);
+	transition: .2s linear;
+}
+
+.main__arrow:hover{
+	background: var(--blueC);
+}
+
+.main__arrow--next{
+	right: -15px;
+}
+
+.main__arrow--prev{
+	left: -15px;
+}
+
+/* Кнопка редактировать под слайдером */
+
+.main__edit--game{
+	display: flex;
+	justify-content: center;
+}
+
+.main__button--edit{
+	padding: 1.2rem 2rem;
+	min-width: 200px;
+	border: 2px solid var(--blueC);
+	margin-top: 2.5rem;
+	position: relative;
+	z-index: 2;
+}
+
+.main__button--edit:after{
+	content: "";
+	display: block;
+	width: calc(100% + 2px);
+	height: 0;
+	background: var(--blueC);
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	z-index: -1;
+	transition: .2s linear;
+}
+
+.main__button--edit:hover:after{
+	height: calc(100% + 2px);
+}
+
+/*=== Заголовок последних выйгрышей ===*/ 
+
+.main__last--wins--title--box{
+	font-size: var(--titleF);
+	margin-top: 7rem;
+	padding-bottom: .5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.main__last--wins--title{
+	border-bottom: 2px dashed var(--whiteC);
+}
+
+/*=== Контейнер последних выйгрышей ===*/ 
+
+.main__last--wins--inner{
+	padding: 2rem 7.5rem;
+	margin-top: 2rem;
+	background: var(--sectiondarkB);
+	width: 100%;
+	word-break: break-word;
+	text-align: center;
+}
+
+.main__last--wins--box{
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 350px;
+}
+
+.main__last--wins--views, .main__last--wins--item{
+	width: 100%;
+	background: var(--nickB);
+	padding: 1.5rem 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.main__last--wins--item{
+	background: var(--sectionB);
+	padding: 2.5rem 2rem;
+	border-bottom: 3px solid var(--sendB);
+}
+
+.main__last--wins--item:last-child{
+	border-bottom: none;
+}
+
+.main__last--wins--view, .main__last--wins--value{
+	padding: 0px .5rem;
+}
+
+/* Ширина полей в последних выигрышах */ 
+
+.game__view{
+	width: 15%;
+}
+
+.user__view{
+	width: 20%;
+}
+
+.time__view{
+	width: 10%;
+}
+
+.forecast__view{
+	width: 20%;
+}
+
+.coef__view{
+	width: 15%;
+}
+
+.wins__view{
+	width: 20%;
+}
+
+
+/* NEW */
+
+.main__content{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.main__games--content, .main__chat--content{
+	overflow: hidden;
+	width: 100%;
+	max-width: 280px;
+	flex-shrink: 0;
+	transition: .3s linear;
+}
+
+.main__chat--content{
+	max-width: 340px;
+	height: 100vh;
+	right: 0;
+	top: 0;
+}
+
+.main__content--content{
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: .2s linear;
+}
+
+.games__fade{
+	max-width: 169px;
+}

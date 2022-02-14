@@ -1,0 +1,176 @@
+:root{
+	font-size: 10px;
+}
+
+@font-face{
+	font-family: gtestit;
+	src: url("../fonts/GTEestiProDisplay-Thin.ttf");
+}
+
+@font-face{
+	font-family: gtestil;
+	src: url("../fonts/GTEestiProDisplay-Light.ttf");
+}
+
+@font-face{
+	font-family: gtestim;
+	src: url("../fonts/GTEestiProDisplay-Medium.ttf");
+}
+
+@font-face{
+	font-family: gtestir;
+	src: url("../fonts/GTEestiProDisplay-Regular.ttf");
+}
+
+@font-face{
+	font-family: gtestib;
+	src: url("../fonts/GTEestiProDisplay-Bold.ttf");
+}
+
+body{
+	font-family: gtestim;
+	font-size: 2.2rem;
+	margin: 0;
+}
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
+.red{
+	color: #F10E0E;
+}
+
+.green{
+	color: #22D80C;
+}
+
+.scrollprogress{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 0%;
+	background: #005BFF;
+}
+
+.bold{
+	font-family: gtestib; 
+}
+
+.task__point{
+	margin-top: .5rem;
+	font-family: gtestir;
+}
+
+.task__inner{
+	border-bottom: 1px solid #005BFF;
+	padding: 3rem 3rem 3rem 17rem;
+	position: relative;
+}
+
+.task__number{
+	padding: 1.5rem 2rem;
+	background: #005BFF;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.task__table--inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #005BFF;
+}
+
+.task__table--item{
+	width: 100%;
+	display: flex;
+	border-top: 1px solid #005BFF;
+}
+
+.task__table--item:first-child{
+	border-top: none;
+}
+
+.task__table--name{
+	width: 15%;
+	text-align: center;
+	padding: 1.5rem;
+	border-right: 1px solid #005BFF;
+}
+
+.task__table--value{
+	width: 85%;
+	padding: 1.5rem;
+}
+
+.task__table--full{
+	width: 100%;
+	padding: 1.5rem;
+	border: 1px solid #005BFF;
+	border-bottom: 0;
+}
+
+.task__table--full:last-child{
+	border-bottom: 1px solid #005BFF;
+}
+
+.task__scroll--button{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	font-size: 2rem;
+	color: #005BFF;
+	background: none;
+	border: 1px solid #005BFF;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .2s linear;
+	margin: .5rem 1rem .5rem 0;
+}
+
+.task__scroll--button:hover{
+	background: #005BFF;
+	color: #fff;
+}
+
+.task__scroll--button:last-child{
+	margin-right: 0;
+}
+
+.task__table--conteiner{
+	width: 100%;
+	display: flex;
+}
+
+.task__table--part{
+	width: 50%;
+	text-align: center;
+	padding: 1.5rem;
+	border-bottom: 1px solid #005BFF;
+}
+
+.task__table--part:first-child{
+	border-right: 1px solid #005BFF;
+}
+
+.task__table--full--border{
+	width: 100%;
+	text-align: center;
+	padding: 1.5rem;
+	border-bottom: 1px solid #005BFF;
+}

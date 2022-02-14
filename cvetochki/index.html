@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Заголовок -->
+	<title>Cvetochki</title>
+
+	<!-- Стили -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="css/fontawesome/all.min.css">
+	<link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+<body>
+	
+	
+	<header class="main">
+		<div class="container">
+			<div class="main__inner">
+			<div class="main__bar">
+					<div class="main__bar--logo">
+						<a href="#">
+							<img src="img/logo.png" alt="Логотип" class="main__bar--logo--img">
+						</a>
+					</div>
+
+					<div class="main__bar--search">
+						<input type="text" class="input main__bar--search--input">
+						<i class="pe-7s-search main__bar--search--icon"></i>
+					</div>
+
+					<div class="main__bar--views">
+						<a href="#" class="main__bar--views--items">
+							Акции дня
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Популярные букеты
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Европейские букеты
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Цветы в коробке
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Цветы в корзине
+						</a>
+						<a href="#" class="main__bar--views--items main__bar--views--items--active">
+							Моно букеты
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Цветы для мамы
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Букеты из роз
+						</a>
+						<a href="#" class="main__bar--views--items">
+							VIP букеты
+						</a>
+						<a href="#" class="main__bar--views--items">
+							Свадебная флористика
+						</a>
+						<a href="#" class="main__bar--views--items main__bar--progress">
+							Поводы
+						</a>
+						
+						<div class="main__bar--progress--inner">
+							<a href="#" class="main__bar--progress--point">
+								Бизнес-букет
+							</a>
+							<a href="#" class="main__bar--progress--point">
+								День рождения 
+							</a>
+							<a href="#" class="main__bar--progress--point">
+								Поздравляю
+							</a>
+							<a href="#" class="main__bar--progress--point">
+								Прости
+							</a>
+							<a href="#" class="main__bar--progress--point">
+								Спасибо
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="main__content">
+					<div class="main__content--nav">
+						<div class="main__content--nav--box">
+							<div>Главная</div>
+							<div>Контакты</div>
+						</div>
+
+						<div class="main__content--nav--cart">
+							<div class="main__content--nav--cart--phone">
+								<a href="tel:+375296966596" class="main__content--nav--cart--phone--link">
+									+375 (29) 6966596
+								</a>
+
+								<div class="main__content--nav--cart--phone--time">
+									Время работы: с 7 до 24
+								</div>
+							</div>
+
+							<div class="main__content--nav--cart--inner">
+
+								<!-- Модальное окно Корзины -->
+								<div class="modal__cart">
+									<div class="modal__cart--text--inner">
+										<div class="modal__cart--name">
+											Корзина
+										</div>
+
+										<div class="modal__cart--clear cart__clear">
+											Очистить
+										</div>
+									</div>
+
+									
+									<div class="modal__cart--items--inner">
+										
+
+
+										
+									</div>
+
+									<input type="text" placeholder="Ваш телефон*" class="input modal__cart--phone--input">
+
+									<div class="modal__cart--total--inner">
+										<div class="modal__cart--total--text">
+											Итог:
+										</div>
+
+										<div class="modal__cart--total--value">
+											0Р
+										</div>
+									</div>
+
+									<button class="button modal__cart--zakaz--button">
+										Заказать
+									</button>
+
+
+								</div>
+
+
+								<!-- Модальное окно Избранных товаров -->
+								<div class="modal__fav">
+									<div class="modal__cart--text--inner">
+										<div class="modal__cart--name">
+											Избранное
+										</div>
+
+										<div class="modal__cart--clear fav__clear">
+											Очистить
+										</div>
+									</div>
+
+
+									<div class="modal__fav--inner">
+										
+
+
+									</div>
+
+
+								</div>
+
+
+
+								<div class="main__content--nav--favorite--icon--inner carts__icon">
+									<img src="img/favorite.png" alt="Избранные" class="main__content--nav--favorite--icon">
+
+									<div class="favorite__val">0</div>
+								</div>
+
+								<div class="main__content--nav--cart--icon--inner carts__icon">
+									<img src="img/cart.png" alt="Корзина" class="main__content--nav--cart--icon">
+
+									<div class="cart__val">0</div>
+								</div>
+
+								<i class="fas fa-bars main__content--mobile--menu--icon"></i>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="main__content--mobile--search--inner">
+						<div class="main__content--mobile--logo--inner">
+							<a href="/">
+								<img src="img/logo.png" alt="логотип" class="main__content--mobile--logo">
+							</a>
+						</div>
+
+
+						<div class="main__bar--search">
+							<input type="text" class="input main__bar--search--input">
+							<i class="pe-7s-search main__bar--search--icon"></i>
+						</div>
+
+
+						<div class="main__content--nav--cart--inner">
+							<div class="main__content--nav--favorite--icon--inner mobile__cart">
+								<img src="img/favorite.png" alt="Избранные" class="main__content--nav--favorite--icon">
+
+								<div class="favorite__val">0</div>
+							</div>
+
+							<div class="main__content--nav--cart--icon--inner mobile__cart">
+								<img src="img/cart.png" alt="Корзина" class="main__content--nav--cart--icon">
+
+								<div class="cart__val">0</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="main__carousel">
+						<div class="main__carousel-2">
+							
+						</div>
+
+						<!-- Начало элементов карусели -->
+
+						<div class="main__carousel--item main__carousel--item-0 carousel__0">
+							<img src="img/item-2.png" alt="цветы" data-view="Тест0" data-price="0" data-name="Тест0" class="main__carousel--item--img">
+						</div>
+
+						<div class="main__carousel--item main__carousel--item-1 carousel__1">
+							<img src="img/item-4.png" alt="цветы" data-view="Акции февраля" data-price="250" data-name="Розы в горшочке" class="main__carousel--item--img">
+						</div>
+
+						<div class="main__carousel--item main__carousel--item-2 carousel__2">
+							<img src="img/item-3.png" alt="цветы" data-view="Цветы для мамы" data-price="400" data-name="Тюльпаны" class="main__carousel--item--img">
+						</div>
+
+						<div class="main__carousel--item main__carousel--item-3 carousel__3">
+							<img src="img/item-2.png" alt="цветы" data-view="Доставка в течении 1 часа" data-price="550" data-name="Орхидеи" class="main__carousel--item--img">
+						</div>
+
+						<div class="main__carousel--item main__carousel--item-4 carousel__4">
+							<img src="img/item-1.png" alt="цветы" data-view="Розы" data-price="150" data-name="Букет ромашек" class="main__carousel--item--img">
+						</div>
+
+						<div class="main__carousel--item main__carousel--item-5 carousel__5">
+							<img src="img/item-2.png" alt="цветы" data-view="Тест5" data-price="5" data-name="Тест5" class="main__carousel--item--img">
+						</div>
+
+						<!-- Главный элемент -->
+
+						<div class="main__carousel--item--main carousel__main">
+							<img src="img/item-1.png" alt="цветы" class="main__carousel--item--img">
+						</div>
+
+						<!-- Конец элементов карусели -->
+						
+						<!-- Текст под букетом -->
+						<div class="main__carousel--item--text--inner">
+							<div class="main__carousel--text--view">
+								Подарки на день рождения
+							</div>
+
+							<div class="main__carousel--text--name">
+								Розы в горшочке
+							</div>
+
+							<div class="main__carousel--text--box">
+								<div class="main__carousel--text--price">
+									200Р
+								</div>
+
+								<button class="button main__carousel--text--buy--button">
+									Купить
+								</button>
+							</div>
+						</div>
+
+						<button class="button main__carousel--arrow main__carousel--arrow--left">
+							<i class="fas fa-chevron-left main__carousel--arrow--icon"></i>
+						</button>
+
+						<button class="button main__carousel--arrow main__carousel--arrow--right">
+							<i class="fas fa-chevron-right main__carousel--arrow--icon"></i>
+						</button>
+
+						<div class="white"></div>
+						<div class="white-2"></div>
+					</div>
+
+
+					<!-- Карусель мобильная -->
+
+					<div class="main__mobile--carousel">
+
+						<div class="circle__carousel"></div>
+						<div class="circle__carousel-2"></div>
+						
+
+						<div class="main__mobile--carousel--inner carousel__inner owl-carousel">
+							<div class="main__mobile--item">
+								<div class="main__mobile--item--img--inner">
+									<img src="img/item-1.png" alt="цветы" class="main__mobile--item--img">
+								</div>
+
+								<div class="main__carousel--item--text--inner">
+									<div class="main__carousel--text--view">
+										Подарки на день рождения
+									</div>
+
+									<div class="main__carousel--text--name">
+										Розы в горшочке
+									</div>
+
+									<div class="main__carousel--text--box">
+										<div class="main__carousel--text--price">
+											200Р
+										</div>
+
+										<button class="button main__carousel--text--buy--button">
+											Купить
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="main__mobile--item">
+								<div class="main__mobile--item--img--inner">
+									<img src="img/item-3.png" alt="цветы" class="main__mobile--item--img">
+								</div>
+
+								<div class="main__carousel--item--text--inner">
+									<div class="main__carousel--text--view">
+										Подарки на день рождения
+									</div>
+
+									<div class="main__carousel--text--name">
+										Розы в горшочке
+									</div>
+
+									<div class="main__carousel--text--box">
+										<div class="main__carousel--text--price">
+											200Р
+										</div>
+
+										<button class="button main__carousel--text--buy--button">
+											Купить
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="main__mobile--item">
+								<div class="main__mobile--item--img--inner">
+									<img src="img/item-2.png" alt="цветы" class="main__mobile--item--img">
+								</div>
+
+								<div class="main__carousel--item--text--inner">
+									<div class="main__carousel--text--view">
+										Подарки на день рождения
+									</div>
+
+									<div class="main__carousel--text--name">
+										Розы в горшочке
+									</div>
+
+									<div class="main__carousel--text--box">
+										<div class="main__carousel--text--price">
+											200Р
+										</div>
+
+										<button class="button main__carousel--text--buy--button">
+											Купить
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button class="button main__carousel--arrow main__carousel--arrow--left">
+							<i class="fas fa-chevron-left main__carousel--arrow--icon"></i>
+						</button>
+
+						<button class="button main__carousel--arrow main__carousel--arrow--right">
+							<i class="fas fa-chevron-right main__carousel--arrow--icon"></i>
+						</button>
+					</div>
+
+
+
+
+					<!-- Текст доставки -->
+
+					<div class="main__content--title--inner">
+						<div class="main__content--title--price">
+							от 49Р
+						</div>
+
+						<div class="main__content--title--title">
+							Цветы с Доставкой<br>
+							в Минске
+						</div>
+
+						<div class="main__content--title--text">
+							Второй букет в подарок<br>
+							Доставка 0 руб
+						</div>
+
+						<div class="main__content--title--button">
+							Заказать
+							<i class="fas fa-long-arrow-alt-right main__content--title--icon"></i>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="popular">
+		<div class="popular__list-1 popular__list--inner">
+			<img src="img/list1.png" alt="лист" class="popular__img--list rellax" data-rellax-speed="1">
+		</div>
+		<div class="popular__list-2 popular__list--inner">
+			<img src="img/list2.png" alt="лист" class="popular__img--list rellax" data-rellax-speed="4">
+		</div>
+		<div class="popular__list-3 popular__list--inner">
+			<img src="img/list3.png" alt="лист" class="popular__img--list rellax" data-rellax-speed="2">
+		</div>
+		<div class="popular__list-4 popular__list--inner">
+			<img src="img/list4.png" alt="лист" class="popular__img--list rellax" data-rellax-speed="3">
+		</div>
+
+		<div class="container">
+			<div class="popular__inner">
+				<div class="popular__title">
+					Самые популярные
+				</div>
+
+				<div class="popular__card--inner">
+					<div class="categories__card">
+						<div class="categories__card--img--inner">
+							<img src="img/cat2.png" alt="цветы" class="categories__card--img">
+						</div>
+
+						<div class="categories__card--name--inner">
+							<div class="categories__card--name">
+								Букет розовых роз
+							</div>
+
+							<div class="categories__card--number">
+								(29 шт)
+							</div>
+
+							<div class="categories__price--inner">
+								<div class="categories__price--delete">
+									750 Р за шт
+								</div>
+
+								<div class="categories__price--text">
+									123Р
+								</div>
+
+								<div class="categories__price--sale">
+									-35%
+								</div>
+							</div>
+
+							<div class="categories__card--button--inner">
+								<button class="button popular__card--button--buy">
+									Купить
+								</button>
+
+								<button class="button popular__button popular__card--button--cart">
+									<img src="img/cart-card.png" alt="корзина" class="popular__card--cart--icon">
+								</button>
+
+								<button class="button popular__button popular__card--button--favorite">
+									<img src="img/favorite-card.png" alt="избранные" class="popular__card--cart--icon">
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="categories__card">
+						<div class="categories__card--img--inner">
+							<img src="img/cat2.png" alt="цветы" class="categories__card--img">
+						</div>
+
+						<div class="categories__card--name--inner">
+							<div class="categories__card--name">
+								Букет розовых роз
+							</div>
+
+							<div class="categories__card--number">
+								(29 шт)
+							</div>
+
+							<div class="categories__price--inner">
+								<div class="categories__price--delete">
+									222 Р за шт
+								</div>
+
+								<div class="categories__price--text">
+									555Р
+								</div>
+
+								<div class="categories__price--sale">
+									-35%
+								</div>
+							</div>
+
+							<div class="categories__card--button--inner">
+								<button class="button popular__card--button--buy">
+									Купить
+								</button>
+
+								<button class="button popular__button popular__card--button--cart">
+									<img src="img/cart-card.png" alt="корзина" class="popular__card--cart--icon">
+								</button>
+
+								<button class="button popular__button popular__card--button--favorite">
+									<img src="img/favorite-card.png" alt="избранные" class="popular__card--cart--icon">
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="categories__card">
+						<div class="categories__card--img--inner">
+							<img src="img/cat2.png" alt="цветы" class="categories__card--img">
+						</div>
+
+						<div class="categories__card--name--inner">
+							<div class="categories__card--name">
+								Букет розовых роз
+							</div>
+
+							<div class="categories__card--number">
+								(29 шт)
+							</div>
+
+							<div class="categories__price--inner">
+								<div class="categories__price--delete">
+									750 Р за шт
+								</div>
+
+								<div class="categories__price--text">
+									321Р
+								</div>
+
+								<div class="categories__price--sale">
+									-35%
+								</div>
+							</div>
+
+							<div class="categories__card--button--inner">
+								<button class="button popular__card--button--buy">
+									Купить
+								</button>
+
+								<button class="button popular__button popular__card--button--cart">
+									<img src="img/cart-card.png" alt="корзина" class="popular__card--cart--icon">
+								</button>
+
+								<button class="button popular__button popular__card--button--favorite">
+									<img src="img/favorite-card.png" alt="избранные" class="popular__card--cart--icon">
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="categories__card">
+						<div class="categories__card--img--inner">
+							<img src="img/cat2.png" alt="цветы" class="categories__card--img">
+						</div>
+
+						<div class="categories__card--name--inner">
+							<div class="categories__card--name">
+								Букет розовых роз
+							</div>
+
+							<div class="categories__card--number">
+								(29 шт)
+							</div>
+
+							<div class="categories__price--inner">
+								<div class="categories__price--delete">
+									
+								</div>
+
+								<div class="categories__price--text">
+									277Р
+								</div>
+
+								<div class="categories__price--sale">
+									
+								</div>
+							</div>
+
+							<div class="categories__card--button--inner">
+								<button class="button popular__card--button--buy">
+									Купить
+								</button>
+
+								<button class="button popular__button popular__card--button--cart">
+									<img src="img/cart-card.png" alt="корзина" class="popular__card--cart--icon">
+								</button>
+
+								<button class="button popular__button popular__card--button--favorite">
+									<img src="img/favorite-card.png" alt="избранные" class="popular__card--cart--icon">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="popular__show--all--inner">
+					<a href="#" class="popular__show--all">
+						Показать все
+						<i class="fas fa-chevron-down popular__show--all--icon"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="delivery">
+		<div class="container">
+			<div class="delivery__inner">
+				<div class="delivery__text--inner">
+					<div class="popular__list-5 popular__list--inner">
+						<img src="img/list5.png" alt="лист" data-rellax-speed="5" class="popular__img--list rellax">
+					</div>
+
+					<div class="delivery__text--title">
+						ЦВЕТЫ: ДОСТАВКА ЦВЕТОВ, БУКЕТОВ ПО МИНСКУ, БЕЛАРУСЬ
+					</div>
+
+					<div class="delivery__text--text">
+						Вы называете адрес – мы доставляем цветы по Минску. Казалось бы, чего проще? А что может быть сложнее этого? Чувства, любовь, отношения. Сразу они просты и понятны, потом сложны и многогранны, а бывает, что и не поняты. Чувства – многогранны… Может ли простая доставка цветов по Минску подчеркнуть эту многогранность? Показать ее? Cvety.site – просто доставка цветов по Минску, просто и без набившего оскомину гламура. Мы доставляем разные цветы: весенние, летние, яркие, бразильские. Мы доставляем их любимым девушкам, женам из командировок, мамам на дни рождения, на 8 Марта. Мы доставляем цветы, искренне улыбаемся, говорим добрые теплые слова и едем дальше. А что остается? Многогранность. Каждый лепесток, каждое соцветие, каждый безопасный шип розы сливается в единый многогранный танец чувств. Ваших чувств. Вашей любви. Вашей улыбки. Цветы – это целый мир, а Cvety.site – мир рождения новых чувств. Вручение букета – это не просто привезти и отдать. Это – сотворить целую гамму новых чувств, созвучных вашим, но в то же время, новых и влекущих. Цветов, как и букв в алфавите, определенное количество. Но, сродни разнообразию букв, цветы рождают разнообразие чувств. Доставка цветов по Минску одна: вовремя, корректная, вежливая. Чувства – всегда разные.
+					</div>
+				</div>
+
+				<div class="delivery__img--inner">
+					<img src="img/delivery-img.png" alt="Доставка" data-rellax-speed="5" class="delivery__img--img">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="container">
+			<div class="contact__inner">
+				<div class="contact__logo">
+					<img src="img/logo.png" alt="логотип" class="contact__logo--img">
+				</div>
+
+				<div class="contact__consult--inner">
+					<input type="text" placeholder="Телефон" class="input contact__phone--input">
+
+					<button class="button contact__consult--button">
+						Заказать консультацию
+					</button>
+				</div>
+
+				<div class="contact__search--inner">
+					<input type="text" placeholder="Цветы с доставкой" class="input contact__search">
+
+					<i class="pe-7s-search contact__search--icon"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__link--inner">
+					<div class="footer__link--item footer__link--item--main">
+						<div class="footer__item--title">
+							Главная
+						</div>
+
+						<div class="footer__item--link--inner">
+							<a href="#">Акции дня</a>
+							<a href="#">Популярные букеты</a>
+							<a href="#">Европейские букеты</a>
+							<a href="#">Цветы в коробке</a>
+							<a href="#">Цветы в корзине</a>
+							<a href="#">Моно букеты</a>
+							<a href="#">Цветы для мамы</a>
+							<a href="#">Букеты из роз</a>
+							<a href="#">VIP букеты</a>
+							<a href="#">Свадебная флористика</a>
+							<a href="#">Поводы</a>
+						</div>
+					</div>
+
+					<div class="footer__link--item">
+						<div class="footer__item--title">
+							Контакты
+						</div>
+
+						<div class="footer__item--text">
+							<a class="footer__item--mobile" href="tel:+375296966596">
+								+375(29)6966596
+							</a>
+							Интернет-Магазин зарегистрирован в торговом реестре Республики Беларусь Администрацией фрунзенского р-на г. Минска Регистрационный номер в Торговом реестре Республики Беларусь: 371000.
+						</div>
+					</div>
+
+					<div class="footer__link--item">
+						<div class="footer__item--title">
+							Оплата
+						</div>
+
+						<div class="footer__item--point">
+							Apple pay
+						</div>
+
+						<div class="footer__item--point">
+							Яндекс деньги
+						</div>
+
+						<div class="footer__item--point">
+							visa
+						</div>
+						<div class="footer__item--point">
+							master card
+						</div>
+
+						<div class="footer__item--point">
+							webmoney
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__social--link">
+					<a href="#"><i class="fab fa-instagram social__icon inst"></i></a>
+					<a href="#"><i class="fab fa-vk social__icon vk"></i></a>
+					<a href="#"><i class="fab fa-whatsapp social__icon whatsapp"></i></a>
+					<a href="#"><i class="fab fa-odnoklassniki-square social__icon ok"></i></a>
+					<a href="#"><i class="fab fa-facebook social__icon facebook"></i></a>
+				</div>
+
+				<div class="footer__address">
+					<div class="footer__address--text">
+						&copy 2017 Беларусь. Минск.
+					</div>
+
+					<div class="footer__address--text">
+						Все права защищены
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="mobile__menu">
+		<i class="fas fa-times mobile__menu--cross"></i>
+
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Акции дня
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Популярные букеты
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Европейские букеты
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Цветы в коробке
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Цветы в корзине
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items main__bar--views--items--active">
+			Моно букеты
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Цветы для мамы
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Букеты из роз
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			VIP букеты
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items">
+			Свадебная флористика
+		</a>
+		<a href="#" class="main__bar--views--items mobile__menu--items main__bar--progress">
+			Поводы
+		</a>
+		
+		<div class="main__bar--progress--inner">
+			<a href="#" class="main__bar--progress--point">
+				Бизнес-букет
+			</a>
+			<a href="#" class="main__bar--progress--point">
+				День рождения 
+			</a>
+			<a href="#" class="main__bar--progress--point">
+				Поздравляю
+			</a>
+			<a href="#" class="main__bar--progress--point">
+				Прости
+			</a>
+			<a href="#" class="main__bar--progress--point">
+				Спасибо
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="grey">
+		
+	</div>
+
+	<div class="grey__cart">
+		
+	</div>
+
+	<div class="grey__fav">
+		
+	</div>
+
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="owl/owl.carousel.min.js"></script>
+	<script src="js/rellax.min.js"></script>
+</body>
+</html>

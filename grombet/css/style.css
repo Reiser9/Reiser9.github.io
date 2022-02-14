@@ -1,0 +1,504 @@
+
+/* START TOOLTIP STYLES */
+[data-tooltip] {
+    position: relative; /* opinion 1 */
+  }
+  
+  /* Applies to all tooltips */
+  [data-tooltip]::before,
+  [data-tooltip]::after {
+    text-transform: none; /* opinion 2 */
+    font-size: .7em; /* opinion 3 */
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+  }
+  [data-tooltip]::before {
+    content: '';
+    border: 5px solid transparent; /* opinion 4 */
+    z-index: 1001; /* absurdity 1 */
+  }
+  [data-tooltip]::after {
+    content: attr(data-tooltip); /* magic! */
+    
+    /* most of the rest of this is opinion */
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    
+    /* 
+      Let the content set the size of the tooltips 
+      but this will also keep them from being obnoxious
+      */
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: .3ch;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: #ff524d;
+    color: #fff;
+    z-index: 1000; /* absurdity 2 */
+  }
+  
+  /* Make the tooltips respond to hover */
+  [data-tooltip]:hover::before,
+  [data-tooltip]:hover::after {
+    display: block;
+  }
+  
+  /* don't show empty tooltips */
+  [tooltip='']::before,
+  [tooltip='']::after {
+    display: none !important;
+  }
+  
+  /* FLOW: UP */
+  [data-tooltip]:not([data-flow])::before,
+  [data-tooltip][data-flow^="up"]::before {
+    bottom: 25px;
+    border-bottom-width: 0;
+    border-top-color: #ff524d;
+  }
+  [data-tooltip]:not([data-flow])::after,
+  [data-tooltip][data-flow^="up"]::after {
+    bottom: calc(100% + 15px);
+  }
+  [data-tooltip]:not([data-flow])::before,
+  [data-tooltip]:not([data-flow])::after,
+  [data-tooltip][data-flow^="up"]::before,
+  [data-tooltip][data-flow^="up"]::after {
+    left: 50%;
+    transform: translate(-50%, -.5em);
+  }
+  
+  /* FLOW: DOWN */
+  [data-tooltip][data-flow^="down"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: #333;
+  }
+  [data-tooltip][data-flow^="down"]::after {
+    top: calc(100% + 5px);
+  }
+  [data-tooltip][data-flow^="down"]::before,
+  [data-tooltip][data-flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+  }
+  
+  /* FLOW: LEFT */
+  [data-tooltip][data-flow^="left"]::before {
+    top: 50%;
+    border-right-width: 0;
+    border-left-color: #333;
+    left: calc(0em - 5px);
+    transform: translate(-.5em, -50%);
+  }
+  [data-tooltip][data-flow^="left"]::after {
+    top: 50%;
+    right: calc(100% + 5px);
+    transform: translate(-.5em, -50%);
+  }
+  
+  /* FLOW: RIGHT */
+  [data-tooltip][data-flow^="right"]::before {
+    top: 50%;
+    border-left-width: 0;
+    border-right-color: #ff524d;
+    right: calc(0em - 15px);
+    transform: translate(.5em, -50%);
+  }
+  [data-tooltip][data-flow^="right"]::after {
+    top: 50%;
+    left: calc(100% + 15px);
+    transform: translate(.5em, -50%);
+  }
+  
+  /* KEYFRAMES */
+  @keyframes tooltips-vert {
+    to {
+      opacity: .9;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @keyframes tooltips-horz {
+    to {
+      opacity: .9;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  /* FX All The Things */ 
+  [data-tooltip]:not([data-flow]):hover::before,
+  [data-tooltip]:not([data-flow]):hover::after,
+  [data-tooltip][data-flow^="up"]:hover::before,
+  [data-tooltip][data-flow^="up"]:hover::after,
+  [data-tooltip][data-flow^="down"]:hover::before,
+  [data-tooltip][data-flow^="down"]:hover::after {
+    animation: tooltips-vert 300ms ease-out forwards;
+  }
+  
+  [data-tooltip][data-flow^="left"]:hover::before,
+  [data-tooltip][data-flow^="left"]:hover::after,
+  [data-tooltip][data-flow^="right"]:hover::before,
+  [data-tooltip][data-flow^="right"]:hover::after {
+    animation: tooltips-horz 300ms ease-out forwards;
+  }
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: #303543;
+    overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.header1 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.breadcrumbs {
+    background-color: #ff524d;
+}
+.breadcrumbs .breadcrumbs-container {
+    display: flex;
+    justify-content: center;
+}
+.breadcrumbs .breadcrumbs-container a,
+.breadcrumbs .breadcrumbs-container span {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 2.8px;
+    margin: 13px 10px;
+}
+.breadcrumbs .breadcrumbs-container a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs .breadcrumbs-container a::after {
+    content: "/";
+    position: absolute;
+    right: -13px;
+    bottom: 0;
+}
+.main {
+    padding-top: 23px;
+    background-color: #303543;
+}
+.main .title {
+    box-shadow: 0 0 43px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #323845;
+    margin-bottom: 49px;
+}
+.main .title-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 16px 40px;
+}
+.main .title-container div {
+    color: #ffffff;
+    font-size: 30px;
+}
+.main .title-name {
+    letter-spacing: 2.8px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 64px 10px 86px;    
+    border-right: 2px solid #fff;
+    width: 25%;
+}
+.main .title-description {
+    padding: 10px 44px 10px 0;
+    font-weight: 500;
+    letter-spacing: 3.8px;
+}
+.main .title-name::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;    
+    width: 42px;
+    height: 42px;
+    background: url("../img/football.png") no-repeat;
+}
+.game .game-content {
+    max-width: 1120px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #353a49;
+    margin-bottom: 53px;
+    padding: 25px 10px;
+}
+.game .game-info {
+    text-align: center;
+    padding-top: 16px;
+}
+.game .game-info .teams {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2.22px;
+}
+.game .game-info .vs {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.game .game-info .game-date {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 2.6px;
+    margin-bottom: 14px;
+}
+.game .game-info .game-start {
+    border-radius: 10px;
+    background-color: #2f3541;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.game .game-content .game-info .game-start-time {
+    display: flex; 
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.game .game-info .game-start-time div {
+    padding: 7px;
+} 
+.game .game-info .game-start-time .start-time {
+    border-radius: 4px;
+    background-color: #ff524d;
+    font-weight: 900;
+}
+.game .game-info .game-start-time .colon {
+    margin: 0;
+    margin-left: -7px;
+}
+.game .game-content .game-info .game-start-title {
+    margin-top: 10px;
+    display: flex; 
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.72px;
+    margin-left: 30px;
+    margin-right: 14px;
+}
+.game .game-content .game-info .start-time-title-hours {
+    margin-left: 20px;
+}
+.game .team-1 {
+    margin-right: 10%;
+    text-align: center;
+    padding: 30px 0;
+}
+.game .team-2 {
+    margin-left: 10%;
+    text-align: center;
+    padding: 30px 0;
+}
+.game .team-1-name,
+.game .team-2-name {
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1.12px;
+}
+
+span.soon-group.soon-group-sub{
+    display: table-cell!important;
+}
+.promo .promo-content {
+    box-shadow: 0 0 43px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 0 0;
+    background-color: #323845;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1.22px;
+    padding: 20px 0;
+}
+.promo .promo-content > div {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 28%;
+}
+.promo .promo-content > div > div:nth-child(1) {
+    padding-left: 20px; 
+}
+.promo .promo-content > div > div:nth-child(2) {
+    padding: 0 20px;
+}
+.promo .promo-content > div > div:nth-child(3) {
+    padding-right: 0px;
+}
+.promo .promo-content .tourney {
+    border-right: 2px solid #ff524d;
+    width: 41%;
+    padding: 18px 0;
+}
+.promo .promo-content .coef {
+    border-right: 2px solid #ff524d;
+    padding: 18px 0;
+    justify-content: center;
+    width: 27%;
+}
+.promo .promo-content .price {
+    width: 32%;
+}
+.promo .promo-content .price > div:nth-child(1) {
+    margin-left: -10%;
+}
+.promo .promo-content .price > div:nth-child(2) {
+    padding-right: 20%;
+}
+.prediction-buy .prediction-buy-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px 96px 11px 48px;
+}
+.prediction-buy .prediction-buy-content div {
+    color: #ff524d;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+}
+.prediction-buy .prediction-buy-content .prediction-btn {
+    display: block;
+    border-radius: 7px;
+    border: 1px solid #cccccc;
+    background-color: #ff524d;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.35px;
+    padding: 8px 100px;
+    transition: .3s linear all;
+}
+.prediction-buy .prediction-buy-content .prediction-btn:hover {
+    color: #fff;
+    background-color: #e32336;
+}
+.prediction-title .prediction-title-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5c647c;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+.prediction-title .prediction-title-content > div {
+    width: 49%;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1.68px;
+    color: #ffffff;
+    text-align: center;
+}
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-container .tooltip {
+    background: url('../img/tooltip-ico.png') no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: -20px;
+    top: -9px;
+    cursor: pointer;
+}
+.tabs-titles {
+    position: relative;
+    z-index: 5;
+}
+.tabs-titles .container {
+    background-color: #323845;    
+    display: flex;
+    justify-content: space-between;
+}
+.tabs-titles .tab-title {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;    
+    cursor: pointer;
+    padding: 15px 0 20px;    
+    border-bottom: 5px solid transparent;
+}
+.tabs-titles .tab-title span {
+    position: relative;
+    padding-left: 60px;
+    height: 39px;
+    display: inline-block;
+    line-height: 48px; 
+}
+.tabs-titles .tab-title span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 39px;
+    height: 43px;
+}
+.tabs-titles .tab-title.description {
+    margin-right: 5px;
+}
+.tabs-titles .tab-title.description span:before {
+    background: url('../img/ico_description.png') no-repeat;
+}
+.tabs-titles .tab-title.popular-bookmakers span:before {
+    background: url('../img/ico_popular-bookmakers.png') no-repeat;
+}
+.tabs-titles .tab-title.active,
+.tabs-titles .tab-title:hover {
+    border-bottom: 5px solid #ff524d;
+}
+.tabs-content .tab-content {
+    display: none;
+}
+.tabs-content .tab-content.active {
+    display: block;
+}
+.tabs-content .scroll-table {
+    display: none;
+}

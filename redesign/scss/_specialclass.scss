@@ -1,0 +1,98 @@
+.container{
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.button{
+	outline: none;
+	border: none;
+	color: var(--whiteC);
+	background: transparent;
+	display: inline-block;
+	cursor: pointer;
+	transition: .2s linear;
+}
+
+.input{
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.input:focus::placeholder{
+	opacity: 0;
+}
+
+.input::placeholder{
+	color: var(--whiteC);
+}
+
+.blue{
+	color: var(--blueC);
+	transition: .2s linear;
+}
+
+.green{
+	color: var(--greenC);
+}
+
+.icon{
+	margin-right: .4rem;
+}
+
+.arrow{
+	transition: .4s linear;
+	width: 20px;
+	fill: var(--lightgreyC);
+}
+
+.expcash{
+	font-family: var(--boldF);
+	padding-bottom: .1rem;
+	border-bottom: 1px dashed var(--whiteC);
+}
+
+.site__logo{
+	font-size: var(--gamesF);
+	font-family: var(--boldF);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	transition: .2s linear;
+}
+
+.site__logo:hover{
+	opacity: .5;
+}
+
+/* Active class */
+
+.header__top--language--flag.active__flag{
+	background: var(--section2B);
+}
+
+.choose__color--active{
+	border: 5px solid var(--whiteC);
+}
+
+.win{
+	color: green;
+}
+
+.lose{
+	color: red;
+}
+
+/* Классы команд */
+
+.red__team{
+	color: crimson;
+}
+
+.blue__team{
+	color: #517ff1;
+}
+
+/* Классы мини-игр */
+/* К классу game__inner--mask прописываем
+   класс игры и задаем нужный фон */ 

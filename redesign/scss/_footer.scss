@@ -1,0 +1,18 @@
+.footer{
+	margin-top: 10rem;
+	width: 100%;
+	background: var(--sectiondarkB);
+}
+
+.footer__inner{
+	padding: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*=== Футерные ссылки ===*/
+
+.footer__inner--link{
+	color: var(--lightgreyC);
+}
