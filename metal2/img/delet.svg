@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.071" height="17.071" viewBox="0 0 17.071 17.071">
+  <g id="Cancel_Copy" data-name="Cancel Copy" transform="translate(0 2.071)">
+    <rect id="Cancel_Simple_background" data-name="Cancel/Simple background" width="15" height="15" fill="none"/>
+    <path id="Cancel" d="M4,10V6H0V4H4V0H6V4h4V6H6v4Z" transform="translate(10 12.071) rotate(-135)" fill="#e9e9e9" opacity="0.438"/>
+  </g>
+</svg>
