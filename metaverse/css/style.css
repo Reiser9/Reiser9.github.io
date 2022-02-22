@@ -119,11 +119,12 @@ input::-webkit-inner-spin-button{
 }
 
 .text{
-	color: #fff;
+	color: #ddd;
 	text-align: center;
 	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	line-height: 165.19%;
 }
 
 .gradient{
@@ -371,11 +372,12 @@ input::-webkit-inner-spin-button{
 }
 
 .eco__item--text{
-	color: #fff;
+	color: #ddd;
 	margin-top: 2rem;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	line-height: 165.19%;
 }
 
 /* Roadmap */
@@ -475,7 +477,8 @@ input::-webkit-inner-spin-button{
 }
 
 .road__item--text{
-	color: #fff;
+	color: #ddd;
+	line-height: 165.19%;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
