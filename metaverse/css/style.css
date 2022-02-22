@@ -623,7 +623,7 @@ input::-webkit-inner-spin-button{
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .how__item--number--inner{
@@ -651,6 +651,7 @@ input::-webkit-inner-spin-button{
 
 .how__item--text{
 	margin-top: 3rem;
+	text-align: left;
 }
 
 .how__item--img{
