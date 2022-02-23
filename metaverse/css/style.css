@@ -417,6 +417,10 @@ input::-webkit-inner-spin-button{
 	position: relative;
 }
 
+.road__item--wrapper.current__phase{
+	padding: 6px;
+}
+
 .road__item--wrapper:before{
 	content: "";
 	display: block;
@@ -451,19 +455,24 @@ input::-webkit-inner-spin-button{
 	display: none;
 }
 
-.road__item.active .current{
+.road__item--wrapper.current__phase .current{
 	display: inline-block;
 }
 
-.road__item.active .road__item--phase{
+.road__item--wrapper.current__phase .road__item--phase{
 	background: linear-gradient(90.08deg, #3A0FBF -81.03%, #4A0FBF -51.37%, #5E0FBF -16.57%, rgba(120, 15, 191, 0.35) 31.2%, rgba(137, 15, 191, 0.49) 61.21%, rgba(166, 15, 191, 0) 114.09%);
 	padding: 0.4rem 2rem;
 	border-radius: 50px;
 }
 
+.road__item--phase{
+	display: flex;
+	align-items: center;
+}
+
 .road__item{
 	width: 100%;
-	padding: 3rem 2.5rem 6rem 2.5rem;
+	padding: 3rem 2.5rem 6rem 13rem;
 	background: #070A23;
 	border-radius: 12px;
 	display: flex;
@@ -471,26 +480,46 @@ input::-webkit-inner-spin-button{
 	justify-content: space-between;
 }
 
-.road__item--text, .road__item--text--inner{
+.road__item--point--inner{
 	width: 100%;
 	max-width: 325px;
 }
 
-.road__item--text{
-	color: #ddd;
-	line-height: 165.19%;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-}
-
-.road__item--text--inner{
+.road__item--point--inner{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
 
+.road__item--point{
+	width: 100%;
+	padding-left: 2rem;
+	position: relative;
+	color: #fff;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	color: #ddd;
+	margin-top: 1rem;
+}
+
+.road__item--point:first-child{
+	margin-top: 0;
+}
+
+.road__item--point:before{
+	content: "";
+	display: block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: #E868F7;
+	position: absolute;
+	top: 4px;
+	left: 0;
+}
+
 .road__item--phase{
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	color: #e868f7;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -1088,7 +1117,7 @@ input::-webkit-inner-spin-button{
 		padding: 2rem;
 	}
 
-	.road__item--title, .road__item--text{
+	.road__item--title, .road__item--point--inner{
 		margin-top: 1rem;
 	}
 
