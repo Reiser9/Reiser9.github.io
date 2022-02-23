@@ -76,8 +76,6 @@ input::-webkit-inner-spin-button{
 	background: linear-gradient(to right, #4A0FBF, #5E0FBF, #780FBF, #890FBF, #A60FBF);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	display: flex;
-	align-items: center;
 }
 
 .logo__icon{
