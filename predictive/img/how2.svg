@@ -1,0 +1,62 @@
+<svg id="server" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="235" height="235" viewBox="0 0 235 235">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_8" data-name="Clip 8" d="M0,160.372H107.973V0H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <circle id="Oval" cx="98.446" cy="98.446" r="98.446" transform="translate(19.054 19.054)" fill="rgba(216,216,216,0.13)"/>
+  <g id="Group_50" data-name="Group 50" transform="translate(69.071 38.108)">
+    <path id="Stroke_1" data-name="Stroke 1" d="M98.947,33.345H7.438A7.447,7.447,0,0,1,0,25.89V7.455A7.447,7.447,0,0,1,7.438,0h91.51a7.447,7.447,0,0,1,7.438,7.455V25.89A7.447,7.447,0,0,1,98.947,33.345Z" transform="translate(0.794 82.568)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Stroke_3" data-name="Stroke 3" d="M9.527,4.764A4.764,4.764,0,1,1,4.764,0,4.763,4.763,0,0,1,9.527,4.764Z" transform="translate(8.733 94.476)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Stroke_5" data-name="Stroke 5" d="M0,.794H43.666" transform="translate(18.26 98.446)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Clip_8-2" data-name="Clip 8" d="M0,160.372H107.973V0H0Z" fill="none"/>
+    <g id="Group_50-2" data-name="Group 50" clip-path="url(#clip-path)">
+      <path id="Stroke_7" data-name="Stroke 7" d="M0,4.764H4.764V0H0Z" transform="translate(68.277 88.919)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_9" data-name="Stroke 9" d="M0,4.764H4.764V0H0Z" transform="translate(77.01 88.919)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_10" data-name="Stroke 10" d="M0,4.764H4.764V0H0Z" transform="translate(85.743 88.919)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_11" data-name="Stroke 11" d="M0,4.764H4.764V0H0Z" transform="translate(94.476 88.919)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_12" data-name="Stroke 12" d="M0,4.764H4.764V0H0Z" transform="translate(68.277 96.858)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_13" data-name="Stroke 13" d="M0,4.764H4.764V0H0Z" transform="translate(77.01 96.858)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_14" data-name="Stroke 14" d="M0,4.764H4.764V0H0Z" transform="translate(85.743 96.858)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_15" data-name="Stroke 15" d="M0,4.764H4.764V0H0Z" transform="translate(94.476 96.858)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_16" data-name="Stroke 16" d="M0,4.764H4.764V0H0Z" transform="translate(68.277 104.003)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_17" data-name="Stroke 17" d="M0,4.764H4.764V0H0Z" transform="translate(77.01 104.003)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_18" data-name="Stroke 18" d="M0,4.764H4.764V0H0Z" transform="translate(85.743 104.003)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_19" data-name="Stroke 19" d="M0,4.764H4.764V0H0Z" transform="translate(94.476 104.003)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_20" data-name="Stroke 20" d="M98.947,33.345H7.438A7.446,7.446,0,0,1,0,25.889V7.454A7.446,7.446,0,0,1,7.438,0h91.51a7.446,7.446,0,0,1,7.438,7.454V25.889A7.446,7.446,0,0,1,98.947,33.345Z" transform="translate(0.794 126.233)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_21" data-name="Stroke 21" d="M9.527,4.763A4.764,4.764,0,1,1,4.764,0,4.763,4.763,0,0,1,9.527,4.763Z" transform="translate(8.733 138.142)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_22" data-name="Stroke 22" d="M0,.794H43.666" transform="translate(18.26 142.111)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_23" data-name="Stroke 23" d="M0,4.764H4.764V0H0Z" transform="translate(68.277 133.378)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_24" data-name="Stroke 24" d="M0,4.764H4.764V0H0Z" transform="translate(77.01 133.378)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_25" data-name="Stroke 25" d="M0,4.764H4.764V0H0Z" transform="translate(85.743 133.378)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_26" data-name="Stroke 26" d="M0,4.764H4.764V0H0Z" transform="translate(94.476 133.378)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_27" data-name="Stroke 27" d="M0,4.764H4.764V0H0Z" transform="translate(68.277 140.524)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_28" data-name="Stroke 28" d="M0,4.764H4.764V0H0Z" transform="translate(77.01 140.524)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_29" data-name="Stroke 29" d="M0,4.764H4.764V0H0Z" transform="translate(85.743 140.524)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_30" data-name="Stroke 30" d="M0,4.764H4.764V0H0Z" transform="translate(94.476 140.524)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_31" data-name="Stroke 31" d="M0,4.764H4.764V0H0Z" transform="translate(68.277 147.669)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_32" data-name="Stroke 32" d="M0,4.764H4.764V0H0Z" transform="translate(77.01 147.669)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_33" data-name="Stroke 33" d="M0,4.764H4.764V0H0Z" transform="translate(85.743 147.669)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_34" data-name="Stroke 34" d="M0,4.764H4.764V0H0Z" transform="translate(94.476 147.669)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_35" data-name="Stroke 35" d="M.794,0V10.321" transform="translate(15.084 115.912)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_36" data-name="Stroke 36" d="M.794,0V10.321" transform="translate(26.199 115.912)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_37" data-name="Stroke 37" d="M.216,0A2.515,2.515,0,0,1,1.44.585a32.937,32.937,0,0,0,.644,4.778c.126.638.231,1.2.3,1.782a6.286,6.286,0,0,1-2.2-3.114A10.319,10.319,0,0,1,.216,0Z" transform="translate(34.932 26.993)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_38" data-name="Stroke 38" d="M.29,5.347A33.249,33.249,0,0,0,.916.6,2.348,2.348,0,0,1,2.168,0a10.206,10.206,0,0,1,.039,3.959A6.175,6.175,0,0,1,0,7.145C.065,6.557.167,5.992.29,5.347Z" transform="translate(65.101 26.993)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_39" data-name="Stroke 39" d="M29.917,36.839a9.673,9.673,0,0,0,3.095-8.568,9.126,9.126,0,0,0,4.876-5.936c.342-2.245.58-6.131-1.645-6.923A3.419,3.419,0,0,0,34,15.4c0-1.076-.032-2.29-.1-3.679C33.476,2.884,24.652.189,19.987,0H18C13.39.189,4.565,2.884,4.134,11.721c-.066,1.382-.095,2.592-.1,3.669a3.36,3.36,0,0,0-2.18.021c-2.214.795-1.982,4.678-1.635,6.982a9.15,9.15,0,0,0,4.81,5.872,9.675,9.675,0,0,0,3.087,8.574c.193.271,3.1,3.6,3.278,3.862,1.325,1.932,2.579,3.758,5.687,3.758H20.95c3.11,0,4.359-1.826,5.689-3.758C26.815,40.444,29.724,37.11,29.917,36.839Z" transform="translate(31.757 8.733)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_40" data-name="Stroke 40" d="M0,0S4.193,9.527,14.69,9.527,29.375,0,29.375,0" transform="translate(36.52 51.605)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_41" data-name="Stroke 41" d="M9.527,0H4.1A4.1,4.1,0,0,0,0,4.1V9.527" transform="translate(19.054 4.764)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_42" data-name="Stroke 42" d="M9.527,9.527V4.1A4.1,4.1,0,0,0,5.43,0H0" transform="translate(73.834 4.764)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_43" data-name="Stroke 43" d="M0,0V5.43a4.1,4.1,0,0,0,4.1,4.1H9.527" transform="translate(19.054 59.544)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_44" data-name="Stroke 44" d="M0,9.527H5.43a4.1,4.1,0,0,0,4.1-4.1V0" transform="translate(73.834 59.544)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_45" data-name="Stroke 45" d="M14.291,14.291V8.727A8.727,8.727,0,0,0,5.564,0H0" transform="translate(73.041 0.794)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_46" data-name="Stroke 46" d="M0,14.291H5.562a8.727,8.727,0,0,0,8.728-8.727V0" transform="translate(73.041 58.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_47" data-name="Stroke 47" d="M14.291,0H8.727A8.726,8.726,0,0,0,0,8.726v5.565" transform="translate(15.084 0.794)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_48" data-name="Stroke 48" d="M0,0V5.562a8.727,8.727,0,0,0,8.726,8.728h5.565" transform="translate(15.084 58.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_49" data-name="Stroke 49" d="M58.75,15.084c-.432-.251-7.847-6.652-8.276-6.91a16.578,16.578,0,0,0-5.3-2.2,13.075,13.075,0,0,1-5.156-2.985V0h0c-.191.279-3.077,3.7-3.25,3.968-1.32,1.985-2.558,3.862-5.642,3.862H27.291c-3.083,0-4.328-1.878-5.642-3.862C21.473,3.7,18.589.279,18.4,0h0V2.985a12.856,12.856,0,0,1-5.156,2.986,16.564,16.564,0,0,0-5.3,2.2C7.515,8.426.432,14.835,0,15.084" transform="translate(21.436 46.047)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="Oval_Copy_5" data-name="Oval Copy 5" fill="none" stroke="#4c8cff" stroke-miterlimit="10" stroke-width="1">
+    <circle cx="117.5" cy="117.5" r="117.5" stroke="none"/>
+    <circle cx="117.5" cy="117.5" r="117" fill="none"/>
+  </g>
+</svg>
