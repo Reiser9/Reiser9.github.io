@@ -756,4 +756,9 @@ input::-webkit-inner-spin-button{
 	.modal__text{
 		margin-top: 1rem;
 	}
+
+	.container{
+		width: 100%;
+		max-width: 90%;
+	}
 }
