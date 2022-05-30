@@ -39,6 +39,17 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: pointTop - 70}, 500);
 	});
 
+    $(".modal__fade").on("click", function(e){
+        e.preventDefault();
+        $("body").addClass("scroll2");
+        $(".modal").addClass("active");
+    });
+
+    $(".modal__cross").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal").removeClass("active");
+    });
+
 	$(".result__carousel").owlCarousel({
         items: 1,
         nav: true,
