@@ -50,6 +50,15 @@ $(document).ready(function(){
         $(".modal").removeClass("active");
     });
 
+    $(".footer__item--link").on("click", function(e){
+        e.preventDefault();
+        let tab = $(this).attr("data-tab");
+        $(".tenders__tab").removeClass("active");
+        $(".tenders__tab[data-tab="+tab+"]").addClass("active");
+        $(".tenders__content").removeClass("active");
+        $(".tenders__content[data-tab="+tab+"]").addClass("active");
+    });
+
 	$(".result__carousel").owlCarousel({
         items: 1,
         nav: true,
