@@ -33,19 +33,19 @@
 				</a>
 
 				<nav class="header__nav">
-					<a href="#" class="header__nav--link">
+					<a href="#" class="header__nav--link go" data-point="price">
 						Курсы
 					</a>
 
-					<a href="#" class="header__nav--link">
+					<a href="#" class="header__nav--link go" data-point="teachers">
 						Преподаватели
 					</a>
 
-					<a href="#" class="header__nav--link">
+					<a href="#" class="header__nav--link go" data-point="about">
 						О нас
 					</a>
 
-					<a href="#" class="header__nav--link">
+					<a href="#" class="header__nav--link go" data-point="reviews">
 						Отзывы
 					</a>
 
@@ -54,7 +54,7 @@
 					</a>
 				</nav>
 
-				<button class="button header__button">
+				<button class="button header__button go" data-point="price">
 					Выбрать курс
 				</button>
 
@@ -67,6 +67,10 @@
 						8 (800)-00-00-00
 					</a>
 				</div>
+
+				<a href="tel:8800000000" class="mobile__header--phone">
+					8 (800)-00-00-00
+				</a>
 
 				<img src="img/menu.svg" alt="Меню" class="menu active">
 				<img src="img/cross.svg" alt="Меню" class="cross">
@@ -170,7 +174,7 @@
 					</div>
 				</div>
 
-				<div class="result__box w100">
+				<div class="result__box w100" id="reviews">
 					<div class="result__wrapper">
 						<p class="result__title title__underline center__text">
 							<span class="orange">Чем выгодно</span> обучение?
@@ -356,30 +360,40 @@
 
 				<div class="stages__content w100">
 					<div class="stages__item">
+						01
+
 						<img src="img/stage1.svg" alt="Картинка" class="stages__icon">
 
 						Просмотр видеоурока
 					</div>
 
 					<div class="stages__item">
+						02
+
 						<img src="img/stage2.svg" alt="Картинка" class="stages__icon">
 
 						Подготовка индивидуального задания
 					</div>
 
 					<div class="stages__item">
+						03
+
 						<img src="img/stage3.svg" alt="Картинка" class="stages__icon">
 
 						Разбор индивидуального задания с куратором
 					</div>
 
 					<div class="stages__item">
+						04
+
 						<img src="img/stage4.svg" alt="Картинка" class="stages__icon">
 
 						Переход на следующий этап
 					</div>
 
 					<div class="stages__item">
+						05
+
 						<img src="img/stage5.svg" alt="Картинка" class="stages__icon">
 
 						Прохождение итогового экзамена, получение документа о профподготовке 
@@ -511,7 +525,7 @@
 		</div>
 	</section>
 
-	<section class="teachers">
+	<section class="teachers" id="teachers">
 		<div class="container">
 			<div class="teachers__inner w100">
 				<p class="result__title title__underline center__text title__white">
@@ -571,7 +585,7 @@
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="about__inner w100">
 				<h2 class="result__title title__underline">
@@ -628,7 +642,7 @@
 									<img src="img/level1.svg" alt="Картинка" class="level__item--icon">
 								</div>
 
-								<button class="button level__button">
+								<button class="button level__button go" data-point="price">
 									Выбрать программу
 
 									<img src="img/arrow-right-white.svg" alt="Стрелка" class="level__button--icon">
@@ -642,7 +656,7 @@
 									<img src="img/level2.svg" alt="Картинка" class="level__item--icon">
 								</div>
 
-								<button class="button level__button">
+								<button class="button level__button go" data-point="price">
 									Выбрать программу
 
 									<img src="img/arrow-right-white.svg" alt="Стрелка" class="level__button--icon">
@@ -660,9 +674,9 @@
 									Пройдите бесплатный тест и узнайте уровень своих компетенций
 								</p>
 
-								<button class="button level__button level__dont--button">
+								<a href="https://test.a-u-z.ru/" target="_Blanc" class="level__button level__dont--button">
 									Пройти тест
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -693,7 +707,7 @@
 		</div>
 	</section>
 
-	<section class="tenders">
+	<section class="tenders" id="price">
 		<div class="container">
 			<div class="tenders__inner w100">
 				<div class="tenders__tabs w100">
@@ -1212,19 +1226,19 @@
 		<div class="container">
 			<div class="modal__menu--content">
 				<nav class="modal__menu--nav">
-					<a href="#" class="modal__menu--link">
+					<a href="#" class="modal__menu--link go" data-point="price">
 						Курсы
 					</a>
 
-					<a href="#" class="modal__menu--link">
+					<a href="#" class="modal__menu--link go" data-point="teachers">
 						Преподаватели
 					</a>
 
-					<a href="#" class="modal__menu--link">
+					<a href="#" class="modal__menu--link go" data-point="about">
 						О нас
 					</a>
 
-					<a href="#" class="modal__menu--link">
+					<a href="#" class="modal__menu--link go" data-point="reviews">
 						Отзывы
 					</a>
 
@@ -1233,7 +1247,7 @@
 					</a>
 				</nav>
 
-				<a href="#" class="choose__course">
+				<a href="#" class="choose__course go" data-point="price">
 					Выбрать курс
 				</a>
 

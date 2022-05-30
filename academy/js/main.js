@@ -2,7 +2,6 @@ $(document).ready(function(){
 
     const close = () => {
         $("body").removeClass("scroll");
-        $(".header").removeClass("fixed");
         $(".modal__menu").removeClass("active");
         $(".cross").removeClass("active");
         $(".menu").addClass("active");
@@ -10,7 +9,6 @@ $(document).ready(function(){
 
     $(".menu").on("click", function(){
         $("body").addClass("scroll");
-        $(".header").addClass("fixed");
         $(".modal__menu").addClass("active");
         $(this).removeClass("active");
         $(".cross").addClass("active");
@@ -32,6 +30,14 @@ $(document).ready(function(){
         $(".tenders__content").removeClass("active");
         $(".tenders__content[data-tab="+$(this).attr("data-tab")+"]").addClass("active");
     });
+
+    $(".go").on('click', function(e){
+		e.preventDefault();
+		close();
+		let point = $(this).attr("data-point");
+		let pointTop = $("#"+point).offset().top;
+		$('body,html').animate({scrollTop: pointTop - 70}, 500);
+	});
 
 	$(".result__carousel").owlCarousel({
         items: 1,
