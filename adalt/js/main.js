@@ -17,17 +17,9 @@ $(document).ready(function(){
     });
 
     var flag = false;
-    $(".comment__toggle").on("click", function(){
-        $(".comment__inner").slideToggle(200);
-
-        if(flag){
-            $(".comment__toggle").text("Показать комментарии");
-            flag = false;
-        }
-        else{
-            $(".comment__toggle").text("Скрыть комментарии");
-            flag = true;
-        }
+    $(".comments__title").on("click", function(){
+        $(".comments__wrapper").toggleClass("active");
+        $(".comment__show").toggleClass("active");
     });
 
     $(".card__carousel--big").slick({

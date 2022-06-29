@@ -784,12 +784,53 @@ path{
 	color: #F05555;
 }
 
+.comments__title{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	width: auto;
+	transition: .2s linear;
+}
+
+.comments__title:hover{
+	opacity: 0.6;
+}
+
+.comments__wrapper{
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.comments__wrapper.active{
+	display: flex;
+}
+
+.comment__show{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	border: 1px solid #007cee;
+	margin-left: 1rem;
+	transform: rotate(90deg);
+	transition: .2s linear;
+}
+
+.comment__show.active{
+	transform: rotate(-90deg);
+}
+
 .comment__inner{
 	width: 100%;
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 2rem;
-	display: none;
 }
 
 .comment__item{
