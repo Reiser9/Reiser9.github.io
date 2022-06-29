@@ -16,6 +16,20 @@ $(document).ready(function(){
         $(".menu").addClass("active");
     });
 
+    var flag = false;
+    $(".comment__toggle").on("click", function(){
+        $(".comment__inner").slideToggle(200);
+
+        if(flag){
+            $(".comment__toggle").text("Показать комментарии");
+            flag = false;
+        }
+        else{
+            $(".comment__toggle").text("Скрыть комментарии");
+            flag = true;
+        }
+    });
+
     $(".card__carousel--big").slick({
         dots: false,
         infinite: true,

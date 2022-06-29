@@ -784,12 +784,24 @@ path{
 	color: #F05555;
 }
 
+.comment__inner{
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 2rem;
+	display: none;
+}
+
 .comment__item{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 2rem;
+}
+
+.comment__item:first-child{
+	margin-top: 0;
 }
 
 .comment__item--name{
@@ -818,7 +830,7 @@ path{
 	padding: 1.5rem 2rem;
 }
 
-.comment__send{
+.comment__send, .comment__toggle{
 	margin-top: 1rem;
 	padding: 1.3rem 2.4rem;
 	background: #007cee;
@@ -827,7 +839,7 @@ path{
 	border: 1px solid #007cee;
 }
 
-.comment__send:hover{
+.comment__send:hover, .comment__toggle:hover{
 	background: #fff;
 	color: #007cee;
 }
