@@ -9,6 +9,29 @@ $(document).ready(function(){
         $(".modal[data-modal="+$(this).attr('data-modal')+"]").addClass("active");
     });
 
+    $(".menu__inner").on("click", function(e){
+        e.stopPropagation();
+    });
+
+    $(".modal__location").on("click", function(e){
+        e.stopPropagation();
+    });
+
+    $(".menu").on("click", function(){
+        $("body").removeClass("scroll");
+        $(".menu").removeClass("active");
+    });
+
+    $(".card__carousel--item").on("click", function(){
+        let src = $(this).attr("src");
+        $(".modal__img").attr("src", src);
+        $(".modal[data-modal='img']").addClass("active");
+    });
+
+    $(".modal").on("click", function(){
+        $(".modal").removeClass("active");
+    });
+
     $(".modal__location--close").on("click", function(){
         $(".modal[data-modal="+$(this).attr('data-modal')+"]").removeClass("active");
     });

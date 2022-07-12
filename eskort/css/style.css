@@ -1043,6 +1043,14 @@ input::-webkit-inner-spin-button{
 	width: 50%;
 }
 
+.modal__img{
+	margin-top: 1.5rem;
+}
+
+.card__carousel--item{
+	cursor: pointer;
+}
+
 .card__carousel, .card__carousel--big{
 	width: 100%;
 }
