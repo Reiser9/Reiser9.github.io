@@ -16,6 +16,12 @@ $(document).ready(function(){
         $(".menu").addClass("active");
     });
 
+    var flag = false;
+    $(".comments__title").on("click", function(){
+        $(".comments__wrapper").toggleClass("active");
+        $(".comment__show").toggleClass("active");
+    });
+
     $(".card__carousel--big").slick({
         dots: false,
         infinite: true,
