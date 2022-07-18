@@ -1,0 +1,115 @@
+:root{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #F1F1F1;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a, button, input{
+    transition: .2s linear;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    font-weight: normal;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1360px;
+}
+
+.img{
+    width: 100%;
+}
+
+/* Шапка */
+.header{
+    padding: 2.5rem 0;
+}
+
+.header__inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 159px;
+    display: flex;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--link{
+    margin-right: 2.1rem;
+}
+
+.header__nav--link:last-child{
+    margin-right: 0;
+}
+
+.header__phone--inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__phone{
+    font-weight: 700;
+}
+
+.header__phone--text{
+    margin-top: 0.2rem;
+    text-align: right;
+}
+
+/* Адаптив */
+@media(max-width: 1400px){
+    .container{
+        max-width: 1180px;
+    }
+}
+@media(max-width: 1200px){
+    .container{
+        max-width: 978px;
+    }
+}
+@media(max-width: 998px){
+    .container{
+        max-width: 748px;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        max-width: 460px;
+    }
+}
+@media(max-width: 480px){
+    .container{
+        max-width: 300px;
+    }
+}
