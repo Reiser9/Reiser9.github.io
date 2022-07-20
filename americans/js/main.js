@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+    const close = () => {
+		$("body").removeClass("scroll");
+		$(".modal__menu").removeClass("active");
+	}
+
+	$(".menu").on("click", function(){
+		$("body").addClass("scroll");
+		$(".modal__menu").addClass("active");
+	});
+
+	$(".modal__menu--close").on("click", function(){
+		close();
+	});
+
+	$(window).resize(function(){
+		if($(window).width() > 998){
+			close();
+		}
+	});
+
 	$(".faq__item--open").on("click", function(){
         $(this).toggleClass("active");
 
@@ -15,15 +35,36 @@ $(document).ready(function(){
 
     $(".go").on("click", function(e){
         e.preventDefault();
+        close();
 
         let point = $(this).attr("data-point");
         let pointTop = $("#"+point).offset().top;
         $('body,html').animate({scrollTop: pointTop}, 500);
     });
 
+    const rotate = () => {
+		let scroll = $(".road__content").offset().top;
+        let sc = $(window).scrollTop();
+        let heightBlock = $(".road__content").height();
+
+		if(sc - scroll > -320 && sc - scroll <= heightBlock - 320){
+			if($(window).width() <= 768){
+				$(".road__heart").css("transform", "translateX(0) translateY("+(sc - scroll + 300)+"px)");
+			}
+			else{
+				$(".road__heart").css("transform", "translateX(-50%) translateY("+(sc - scroll + 300)+"px)");
+			}
+		}
+	}
+
+	rotate();
+	$(document).scroll(function(){
+		rotate();
+	});
+
     $(".nft__carousel").slick({
         infinite: true,
-        slidesToShow: 7,
+        slidesToShow: 9,
         arrows: false,
         dots: false,
         centerMode: true,
@@ -53,7 +94,7 @@ $(document).ready(function(){
 		    {
 		        breakpoint: 1200,
 		        settings: {
-			        slidesToShow: 7
+			        slidesToShow: 9
 		        }
 		    }
 		]
