@@ -643,15 +643,15 @@ input::-webkit-inner-spin-button{
 }
 
 .our__stats{
-	width: 488px;
+	width: 658px;
 	height: 387px;
-	background: url("../img/token-stats-inner.svg") center no-repeat;
+	background: url("../img/token-stats-inner-big.svg") center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	padding: 5rem 5rem 5rem 5rem;
+	padding: 5rem 4rem 5rem 8rem;
 }
 
 .our__stats--item{
@@ -660,6 +660,7 @@ input::-webkit-inner-spin-button{
 	font-size: 2.2rem;
 	font-weight: 900;
 	color: #fff;
+	text-transform: uppercase;
 }
 
 .our__stats--item:before{
@@ -1392,6 +1393,12 @@ path, .arrow{
 	.road__item--box:before{
 		width: 61%;
 	}
+
+	.our__stats{
+		width: 585px;
+		height: 345px;
+		padding: 5rem;
+	}
 }
 @media(max-width: 998px){
 	.container{
@@ -1641,6 +1648,15 @@ path, .arrow{
 	.road__content{
 		margin-top: 3rem;
 	}
+
+	.our__stats{
+		height: 271px;
+		padding: 3rem;
+	}
+
+	.our__stats--item{
+		font-size: 2rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1688,6 +1704,12 @@ path, .arrow{
 	.our__stats{
 		padding: 3rem 2rem;
 		height: 239px;
+	}
+
+	.our__stats{
+		background: url("../img/token-stats-inner.svg") center no-repeat;
+		background-size: cover;
+		height: 230px;
 	}
 
 	.our__stats--item{
