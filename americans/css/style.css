@@ -842,6 +842,17 @@ path, .arrow{
 /* Roadmap */
 .road{
 	background: #282832;
+	position: relative;
+}
+
+.road__man{
+	position: absolute;
+	pointer-events: none;
+}
+
+.road__man1{
+	top: 120px;
+	right: 0;
 }
 
 .road__inner{
