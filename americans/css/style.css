@@ -1859,4 +1859,8 @@ path, .arrow{
 	.our__item--title--text{
 		font-size: 2.1rem;
 	}
+	
+	.our__team--img1{
+		right: 20px;
+	}
 }
