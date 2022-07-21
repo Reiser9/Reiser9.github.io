@@ -12,14 +12,19 @@ body{
     background: #F1F1F1;
 }
 
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
 ul, li{
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
 
 a, button, input{
     transition: .2s linear;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
 }
 
 a{
@@ -32,14 +37,83 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: normal;
 }
 
-.container{
+.button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.input::placeholder, .input{
+    color: #000;
+}
+
+.container, .container2{
     margin: 0 auto;
     width: 100%;
+    max-width: 1300px;
+}
+
+.container2{
     max-width: 1360px;
 }
 
 .img{
     width: 100%;
+}
+
+.title, .title2{
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+
+.title2{
+    font-size: 4.8rem;
+}
+
+.underline{
+    width: 100%;
+    padding-bottom: 1.7rem;
+    border-bottom: 1px solid #000;
+}
+
+.default__padding{
+    padding: 6.4rem 0;
+}
+
+.pretitle{
+    font-weight: 700;
+}
+
+.text, .pretitle, .list, .href{
+    margin-top: 1.5rem;
+}
+
+.href{
+    text-decoration: underline;
+}
+
+.pretitle:first-child, .text:first-child, .list:first-child,
+.list li:first-child, .href:first-child{
+    margin-top: 0;
+}
+
+.list{
+    padding-left: 2rem;
+}
+
+.list li{
+    margin-top: 0.3rem;
+}
+
+.m0{
+    margin-top: 0;
 }
 
 /* Шапка */
@@ -85,6 +159,182 @@ h1, h2, h3, h4, h5, h6, p{
 .header__phone--text{
     margin-top: 0.2rem;
     text-align: right;
+}
+
+/* Главный блок заголовок */
+.main__title{
+    padding: 6.5rem 0;
+}
+
+.main__title--inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main__text{
+    margin-top: 1.5rem;
+    font-size: 2.4rem;
+}
+
+.main{
+    height: 649px;
+    background: url("../img/main-bg.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main__inner{
+    width: 100%;
+    max-width: 610px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main__inner--content{
+    background: rgba(227, 227, 227, 0.9);
+    padding: 7rem 8rem;
+    width: 100%;
+}
+
+.main__inner--title{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.main__inner--input--inner{
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.main__inner--input{
+    width: 100%;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid #000;
+}
+
+.main__inner--input.password{
+    padding-right: 3rem;
+}
+
+.password__check{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    cursor: pointer;
+}
+
+.main__inner--box{
+    width: 100%;
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__inner--forgot{
+    text-decoration: underline;
+    color: #1C40C2;
+}
+
+.main__inner--label{
+    cursor: pointer;
+}
+
+.main__enter{
+    width: 100%;
+    padding: 3.3rem;
+    background: #213A80;
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+.main__enter:hover{
+    opacity: 0.7;
+}
+
+/* Информация */
+.info__inner, .network__inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info__content{
+    width: 100%;
+    margin-top: 2.6rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info__tabs{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.info__tab--content{
+    width: 100%;
+
+}
+
+.info__tab{
+    color: #727272;
+    margin-top: 2rem;
+}
+
+.info__tab:first-child{
+    margin-top: 0;
+}
+
+.info__tab:hover, .info__tab.active{
+    color: #000;
+}
+
+.info__tab.active{
+    text-decoration: underline;
+}
+
+.info__tab--item{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info__tab--item.active{
+    display: flex;
+}
+
+/* Сеть АЗС */
+.network__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.network__title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+.network__map{
+    width: 100%;
+    height: 450px;
+    margin-top: 4rem;
+    border: none;
 }
 
 /* Адаптив */
