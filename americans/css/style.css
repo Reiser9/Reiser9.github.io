@@ -172,8 +172,8 @@ input::-webkit-inner-spin-button{
 
 /* Main */
 .main{
-	padding: 18rem 0 9rem 0;
-	background: url("../img/main-bg.jpg") center no-repeat;
+	padding: 46rem 0 3rem 0;
+	background: url("../img/main-bg.png") center no-repeat;
 	background-size: cover;
 }
 
@@ -631,6 +631,10 @@ input::-webkit-inner-spin-button{
 	position: relative;
 }
 
+.our__item--title--inner{
+	padding-right: 2rem;
+}
+
 .our__item--title--inner, .our__item--point--inner{
 	display: flex;
 	flex-direction: column;
@@ -672,12 +676,9 @@ input::-webkit-inner-spin-button{
 	pointer-events: none;
 }
 
-.our__team--img1{
-	right: 40px;
-}
-
-.our__team--img2{
-	right: 250px;
+.our__team--img1, .our__team--img2{
+	right: 50%;
+	transform: translateX(50%);
 }
 
 /* Afisha */
@@ -1375,7 +1376,7 @@ path, .arrow{
 	}
 
 	.main{
-		padding: 6rem 0;
+		padding: 26rem 0 2rem 0;
 	}
 
 	.main__title{
@@ -1661,13 +1662,25 @@ path, .arrow{
 		justify-content: space-between;
 	}
 
+	.main__partners2{
+		margin-top: 1rem;
+	}
+
 	.our__item{
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
+	.main__partner{
+		margin: 0;
+	}
+
 	.our__item--point--inner, .our__item--title--inner{
 		width: 100%;
+	}
+
+	.our__item--title--inner{
+		padding: 0;
 	}
 
 	.our__item--point--inner{
@@ -1680,6 +1693,11 @@ path, .arrow{
 
 	.our{
 		padding-top: 4rem;
+	}
+
+	.our__team--img1{
+		right: 40px;
+		transform: translateX(0);
 	}
 }
 @media(max-width: 480px){
@@ -1803,7 +1821,7 @@ path, .arrow{
 	}
 
 	.main{
-		padding: 3rem 0;
+		padding: 23rem 0 2rem 0;
 	}
 
 	.join{
@@ -1859,8 +1877,17 @@ path, .arrow{
 	.our__item--title--text{
 		font-size: 2.1rem;
 	}
-	
+
 	.our__team--img1{
 		right: 20px;
+	}
+
+	.token__content--button{
+		font-size: 1.8rem;
+	}
+
+	.soldout{
+		font-size: 1.4rem;
+		width: 50%;
 	}
 }
