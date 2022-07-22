@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+	$(".our__stats--point--text--show").on("click", function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$(".our__stats--point--text--wrapper").removeClass("active");
+			$(this).children(".our__see").text("See more");
+		}
+		else{
+			$(this).addClass("active");
+			$(".our__stats--point--text--wrapper").addClass("active");
+			$(this).children(".our__see").text("See less");
+		}
+	});
+
     const close = () => {
 		$("body").removeClass("scroll");
 		$(".modal__menu").removeClass("active");

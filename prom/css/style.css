@@ -389,10 +389,13 @@ h1, h2, h3, h4, h5, h6, p{
 
 .card__inner{
     width: 100%;
-    margin-top: 3.5rem;
     display: flex;
     padding-bottom: 1rem;
     overflow-x: auto;
+}
+
+.network__card--inner{
+    margin-top: 3.5rem;
 }
 
 .card{
