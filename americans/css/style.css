@@ -1762,6 +1762,7 @@ path, .arrow{
 
 	.main__partner{
 		margin: 0.5rem;
+		max-width: 80px;
 	}
 
 	.main__partners, .main__partners2{
@@ -1980,5 +1981,9 @@ path, .arrow{
 
 	.our__stats--point--wrapper .our__stats--pretitle{
 		margin-left: 0;
+	}
+
+	.main__partner{
+		max-width: 50px;
 	}
 }
