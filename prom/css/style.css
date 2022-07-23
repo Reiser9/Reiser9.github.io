@@ -314,6 +314,10 @@ h1, h2, h3, h4, h5, h6, p{
     opacity: 0.7;
 }
 
+.main__enter.mobile{
+    display: none;
+}
+
 /* Информация */
 .info__inner, .network__inner{
     width: 100%;
@@ -990,10 +994,27 @@ h1, h2, h3, h4, h5, h6, p{
 
     .main__inner--content{
         padding: 3rem 2rem;
+        background: rgba(249, 249, 249, 0.6);
+        backdrop-filter: blur(10px);
+        border-radius: 17px;
+        padding: 4.8rem 2.2rem 7.3rem 2.2rem;
+    }
+
+    .main__inner--title{
+        font-size: 1.6rem;
+        text-transform: uppercase;
     }
 
     .main__enter{
-        padding: 1.5rem;
+        display: none;
+    }
+
+    .main__enter.mobile{
+        display: block;
+        margin-top: 3rem;
+        padding: 1.1rem 2rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
     }
 
     .news__card--inner{
@@ -1027,5 +1048,13 @@ h1, h2, h3, h4, h5, h6, p{
 
     .mobile__tab--content.active{
         display: block;
+    }
+
+    .main__inner--input--inner{
+        margin-top: 2.5rem;
+    }
+
+    .main__inner--input{
+        font-size: 1.4rem;
     }
 }
