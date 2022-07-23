@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    $(".mobile__tab").on("click", function(){
+        $(this).children(".contact__item--icon").toggleClass("active");
+        $(this).siblings(".mobile__tab--content").toggleClass("active");
+    });
+
 	$(".password__check").on("click", function(){
         if($(this).hasClass("active")){
             $(this).siblings("input").attr("type", "password");
