@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+    $(".modal__open").on("click", function(e){
+        e.preventDefault();
+
+        $("body").addClass("scroll2");
+        $(".modal").addClass("active");
+    });
+
+    $(".modal").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal").removeClass("active");
+    });
+
+    $(".modal__content").on("click", function(e){
+        e.stopPropagation();
+    });
+
     $(".mobile__tab").on("click", function(){
         $(this).children(".contact__item--icon").toggleClass("active");
         $(this).siblings(".mobile__tab--content").toggleClass("active");
@@ -20,7 +36,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         $(this).siblings(".tab").removeClass("active");
-        $(this).parent(".info__tabs").siblings(".info__tab--content").children(".tab__content").removeClass("active");
+        $(this).parent(".tabs").siblings(".tab__tab").children(".tab__content").removeClass("active");
 
         let tab = $(this).attr("data-tab");
 

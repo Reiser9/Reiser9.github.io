@@ -12,7 +12,7 @@ body{
     background: #F1F1F1;
 }
 
-.scroll{
+.scroll, .scroll2{
     overflow: hidden;
 }
 
@@ -97,12 +97,30 @@ h1, h2, h3, h4, h5, h6, p{
     padding: 6.4rem 0;
 }
 
+.subtitle{
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.subtitle:first-child{
+    margin-top: 0;
+}
+
 .pretitle{
+    width: 100%;
     font-weight: 700;
 }
 
 .text, .pretitle, .list, .href{
+    width: 100%;
     margin-top: 1.5rem;
+}
+
+.text a{
+    text-decoration: underline;
+    color: #2211E5;
 }
 
 .href{
@@ -114,12 +132,17 @@ h1, h2, h3, h4, h5, h6, p{
     margin-top: 0;
 }
 
+.red{
+    color: #e00808;
+}
+
 .list{
     padding-left: 2rem;
 }
 
 .list li{
     margin-top: 0.3rem;
+    width: 100%;
 }
 
 .m0{
@@ -128,6 +151,29 @@ h1, h2, h3, h4, h5, h6, p{
 
 .w100{
     width: 100%;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.img__inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.img__img{
+    max-width: 100%;
+}
+
+.register__link{
+    padding: 1rem 1.8rem;
+    margin-top: 3rem;
+    color: #fff;
+    background: #213A80;
 }
 
 /* Шапка */
@@ -269,6 +315,7 @@ h1, h2, h3, h4, h5, h6, p{
 .main__inner--input--inner{
     position: relative;
     margin-top: 3.5rem;
+    width: 100%;
 }
 
 .main__inner--input{
@@ -368,15 +415,22 @@ h1, h2, h3, h4, h5, h6, p{
     text-decoration: underline;
 }
 
-.info__tab--item{
+.tab__content{
     width: 100%;
     display: none;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.info__tab--item.active{
+.tab__content.active{
     display: flex;
+}
+
+.sale__inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Сеть АЗС */
@@ -408,16 +462,19 @@ h1, h2, h3, h4, h5, h6, p{
     overflow-x: auto;
 }
 
-.card__inner::-webkit-scrollbar{
+.card__inner::-webkit-scrollbar, .gas__tabs::-webkit-scrollbar,
+.docs__block::-webkit-scrollbar{
     width: 100%;
     height: 5px;
 }
 
-.card__inner::-webkit-scrollbar-thumb{
+.card__inner::-webkit-scrollbar-thumb, .gas__tabs::-webkit-scrollbar-thumb, 
+.docs__block::-webkit-scrollbar-thumb{
     background: #b7b7b7;
 }
 
-.card__inner::-webkit-scrollbar-track{
+.card__inner::-webkit-scrollbar-track, .gas__tabs::-webkit-scrollbar-track,
+.docs__block::-webkit-scrollbar-track{
     background: #e2e2e2;
 }
 
@@ -470,6 +527,10 @@ h1, h2, h3, h4, h5, h6, p{
 .card__title{
     font-size: 2.4rem;
     font-weight: 700;
+}
+
+.sale__inner{
+    margin: 2rem 0rem 0rem 0rem;
 }
 
 /* Новости */
@@ -540,6 +601,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .contact__item--icon{
     display: none;
+    flex-shrink: 0;
 }
 
 .contact__item--wrapper{
@@ -802,6 +864,338 @@ h1, h2, h3, h4, h5, h6, p{
     padding-right: 2rem;
 }
 
+.bold{
+    font-weight: 700;
+}
+
+/* Автономное газоснабжение */
+.gas{
+    padding: 4rem 0;
+}
+
+.gas__inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gas__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.data__block--inner{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.data__block{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid #000;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.data__block:first-child{
+    margin-top: 0;
+}
+
+.data__block--title{
+    width: 40%;
+    padding-right: 3rem;
+}
+
+.data__block--text--inner{
+    width: 60%;
+}
+
+.gas__tabs{
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    margin-top: 2.3rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+}
+
+.gas__tab{
+    margin-right: 2.2rem;
+    padding: 1.6rem 0;
+    color: #727272;
+    transition: .2s linear;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.gas__tab:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #213A80;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.gas__tab:after{
+    content: "";
+    display: block;
+    width: calc(100% + 22px);
+    height: 4px;
+    background: #d9d9d9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gas__tab:last-child:after{
+    width: 100%;
+}
+
+.gas__tab.active:before, .gas__tab:hover:before{
+    opacity: 1;
+}
+
+.gas__tab.active, .gas__tab:hover{
+    color: #000;
+}
+
+.gas__tab:last-child{
+    margin-right: 0;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+.m3{
+    margin-top: 3rem;
+}
+
+.docs__block{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.docs__img{
+    max-width: 231px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.docs__img:last-child{
+    margin-right: 0;
+}
+
+.docs__block:first-child{
+    margin-top: 0;
+}
+
+.gbo__tabs .gas__tab:after{
+    display: none;
+}
+
+.gbo__tabs .gas__tab{
+    color: #000;
+    padding: 0.9rem;
+}
+
+.aic{
+    align-items: center;
+}
+
+.car__tabs{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.car__tab{
+    margin-right: 4rem;
+    color: #878787;
+    transition: .2s linear;
+}
+
+.car__tab:hover{
+    color: #000;
+}
+
+.car__tab.active{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.car__tab:last-child{
+    margin-right: 0;
+}
+
+.car__wrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.car__title{
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.car__price--item{
+    width: 100%;
+    margin-right: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    margin-top: 2rem;
+}
+
+.car__content{
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+.car__content:before{
+    content: "";
+    display: block;
+    width: 330px;
+    height: 100%;
+    background: #E4E4E4;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.car__price--item.big{
+    max-width: 240px;
+    margin-top: 0;
+}
+
+.car__price--item:last-child{
+    margin-right: 0;
+}
+
+.car__price--title{
+    font-size: 2.4rem;
+}
+
+.car__price--value{
+    margin-top: 1.1rem;
+}
+
+.car__price--title.big, .car__price--value.big{
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.car__price--value.big{
+    margin-top: 1.7rem;
+}
+
+.car__price--button{
+    background: #213A80;
+    margin-top: 5rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+/* Модальное окно */
+.modal__open{
+    cursor: pointer;
+}
+
+.modal{
+    background: rgba(0, 0, 0, 0.82);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 100;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    pointer-events: none;
+}
+
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__inner{
+    max-width: 408px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 3.5rem);
+    margin: 1.75rem auto;
+    justify-content: center;
+}
+
+.modal.active .modal__content{
+    transform: scale(1);
+}
+
+.modal__content{
+    width: 100%;
+    padding: 3.8rem 3rem 6.4rem 3rem;
+    background: #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: .3s ease-in-out;
+}
+
+.modal__agree{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.modal__send{
+    width: 100%;
+    margin-top: 4rem;
+    border: 1px solid #000;
+    color: #000;
+    padding: 1rem 2rem;
+}
+
+.modal__send:hover{
+    background: #000;
+    color: #fff;
+}
+
 /* Адаптив */
 @media(max-width: 1400px){
     .container{
@@ -838,6 +1232,10 @@ h1, h2, h3, h4, h5, h6, p{
 
     .main__title{
         padding: 3rem 0;
+    }
+
+    .car__img{
+        width: 650px;
     }
 }
 @media(max-width: 998px){
@@ -884,6 +1282,22 @@ h1, h2, h3, h4, h5, h6, p{
 
     .new__item--text{
         margin-top: 2.5rem;
+    }
+
+    .subtitle{
+        font-size: 2.2rem;
+    }
+
+    .car__img{
+        width: 500px;
+    }
+
+    .car__price--item{
+        margin-right: 8rem;
+    }
+
+    .car__content:before{
+        width: 300px;
     }
 }
 @media(max-width: 768px){
@@ -934,7 +1348,8 @@ h1, h2, h3, h4, h5, h6, p{
         padding-bottom: 1rem;
     }
 
-    .info__tabs::-webkit-scrollbar, .card__inner::-webkit-scrollbar{
+    .info__tabs::-webkit-scrollbar, .card__inner::-webkit-scrollbar, .gas__tabs::-webkit-scrollbar,
+    .docs__block::-webkit-scrollbar{
         height: 0;
         width: 0;
     }
@@ -943,7 +1358,7 @@ h1, h2, h3, h4, h5, h6, p{
         padding-bottom: 0;
     }
 
-    .info__tab{
+    .info__tab, .gas__tab{
         width: auto;
         flex-shrink: 0;
         margin: 0 0.9rem 0 0;
@@ -952,7 +1367,7 @@ h1, h2, h3, h4, h5, h6, p{
         color: #727272;
     }
 
-    .info__tab.active{
+    .info__tab.active, .gas__tab.active{
         text-decoration: none;
         border: 1px solid #213A80;
         background: #213A80;
@@ -971,7 +1386,7 @@ h1, h2, h3, h4, h5, h6, p{
         width: 275px;
     }
 
-    .text{
+    .text, .list li{
         font-size: 1.4rem;
     }
 
@@ -1079,6 +1494,94 @@ h1, h2, h3, h4, h5, h6, p{
     .single__title{
         margin-top: 3rem;
     }
+
+    .subtitle{
+        font-size: 2rem;
+    }
+
+    .gas__content{
+        margin-top: 2.5rem;
+    }
+
+    .gas__tab:before, .gas__tab:after{
+        display: none;
+    }
+
+    .data__block{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0rem;
+    }
+
+    .data__block--title, .data__block--text--inner{
+        padding: 0;
+        width: 100%;
+    }
+
+    .data__block--title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .data__block--text--inner{
+        margin-top: 2rem;
+    }
+
+    .sale__inner{
+        margin: 0 0 2.5rem 0;
+    }
+
+    .car__content:before{
+        display: none;
+    }
+
+    .car__wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+
+    .car__price--item, .car__price--item.big{
+        max-width: 100%;
+        margin: 2rem 0rem 0rem 0rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .car__price--item:first-child{
+        margin: 0;
+    }
+
+    .car__price--title, .car__price--title.big, .car__price--value.big{
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    .car__price--value.big, .car__price--value{
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .car__price--value{
+        margin-top: 0;
+    }
+
+    .car__price--button{
+        margin-top: 3rem;
+    }
+
+    .car__title{
+        font-size: 2.4rem;
+    }
+
+    .car__img{
+        max-width: 100%;
+    }
+
+    .car__content{
+        padding-bottom: 3rem;
+    }
 }
 @media(max-width: 480px){
     .container, .container2{
@@ -1182,6 +1685,10 @@ h1, h2, h3, h4, h5, h6, p{
         flex-shrink: 0;
     }
 
+    .subtitle{
+        font-size: 1.8rem;
+    }
+
     .contact__item--icon{
         display: block;
         transition: .2s linear;
@@ -1232,5 +1739,38 @@ h1, h2, h3, h4, h5, h6, p{
 
     .single__content, .single2__content{
         margin-top: 3rem;
+    }
+
+    .gas{
+        padding: 2.5rem 0;
+    }
+
+    .contact__item--icon{
+        margin-left: 1rem;
+    }
+
+    .data__block--inner{
+        margin-top: 3rem;
+    }
+
+    .modal__inner{
+        max-width: 90%;
+    }
+
+    .modal__content{
+        padding: 3rem 2rem 5rem 2rem;
+    }
+
+    .modal__send{
+        margin-top: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .car__price--button{
+        width: 100%;
+    }
+
+    .gas__tabs{
+        margin-top: 1rem;
     }
 }
