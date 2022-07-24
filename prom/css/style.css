@@ -1652,7 +1652,7 @@ h1, h2, h3, h4, h5, h6, p{
 
     .main__inner--content{
         background: rgba(249, 249, 249, 0.6);
-        filter: blur(10px);
+        backdrop-filter: blur(10px);
         border-radius: 17px;
         padding: 4.8rem 2.2rem 7.3rem 2.2rem;
     }
