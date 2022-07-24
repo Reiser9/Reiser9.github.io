@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .card{
     margin-right: 1.1rem;
-    padding: 3.5rem 2.5rem;
+    padding: 2rem 2.1rem;
     background: #E9E9E9;
     display: flex;
     flex-direction: column;
@@ -434,13 +434,33 @@ h1, h2, h3, h4, h5, h6, p{
     transition: .2s linear;
 }
 
+.card__arrow path{
+    transition: .2s linear;
+    fill: #000
+}
+
 .card.active, .card:hover{
     background: #213A80;
     color: #fff;
 }
 
+.card:hover .card__arrow path{
+    fill: #fff;
+}
+
 .card:last-child{
     margin-right: 0;
+}
+
+.card.sb{
+    justify-content: space-between;
+}
+
+.card__box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card__title{
