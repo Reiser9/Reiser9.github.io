@@ -264,7 +264,7 @@ input::-webkit-inner-spin-button{
 	margin-top: 5rem;
 	display: grid;
 	grid-gap: 60px 24px;
-	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 }
 
 .main__item{
@@ -288,7 +288,7 @@ input::-webkit-inner-spin-button{
 
 .main__img{
 	width: 100%;
-	min-height: 700px;
+	min-height: 550px;
 	object-fit: cover;
 	border-radius: 10px;
 }
@@ -989,16 +989,8 @@ input::-webkit-inner-spin-button{
 		font-size: 1.8rem;
 	}
 
-	.main__content{
-		grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-	}
-
 	.main__item--name{
 		font-size: 3rem;
-	}
-
-	.main__img{
-		min-height: 550px;
 	}
 }
 @media(max-width: 1200px){
