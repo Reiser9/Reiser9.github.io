@@ -1121,18 +1121,24 @@ path, .arrow{
 .need__content{
 	width: 100%;
 	margin-top: 7rem;
-	display: grid;
-	grid-gap: 17px;
-	grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .need__item{
+	width: 380px;
 	padding: 2rem 3rem;
 	background: #292932;
 	border-radius: 10px;
 	justify-content: space-between;
 	border: 2px solid transparent;
 	transition: .2s linear;
+	margin-right: 1.7rem;
+}
+
+.need__item:last-child{
+	margin-right: 0;
 }
 
 .need__item:hover{
@@ -1197,7 +1203,7 @@ path, .arrow{
 .need__item--button{
 	text-transform: uppercase;
 	margin-top: 3rem;
-	padding: 1.4rem 3.2rem;
+	padding: 1.4rem 4.2rem;
 	font-weight: 700;
 	font-size: 1.6rem;
 	font-family: 'Poppins', sans-serif;
@@ -1728,6 +1734,10 @@ path, .arrow{
 		padding: 1.4rem 2.5rem;
 		margin-top: 3rem;
 	}
+
+	.need__item{
+		width: 48%;
+	}
 }
 @media(max-width: 768px){
 	.container{
@@ -1940,6 +1950,15 @@ path, .arrow{
 	.notfound__button{
 		font-size: 1.8rem;
 	}
+
+	.need__item{
+		width: 100%;
+		margin: 2rem 0rem 0rem 0;
+	}
+
+	.need__item:first-child{
+		margin-top: 0;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -2051,10 +2070,6 @@ path, .arrow{
 
 	.modal__menu{
 		width: 100%;
-	}
-
-	.need__content{
-		grid-template-columns: 1fr;
 	}
 
 	.main__partner{
