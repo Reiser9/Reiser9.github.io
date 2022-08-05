@@ -482,8 +482,8 @@ input::-webkit-inner-spin-button{
 .modal__menu{
 	width: 100%;
 	position: fixed;
-	height: calc(100vh - 118px);
-	top: 118px;
+	height: calc(100vh - 119px);
+	top: 119px;
 	left: 0;
 	z-index: 51;
 	background: rgba(0, 0, 0, 0.6);
@@ -499,8 +499,8 @@ input::-webkit-inner-spin-button{
 }
 
 .modal__menu--content{
-	background: #000;
-	padding: 3.9rem 2rem;
+	background: #1C1E27;
+	padding: 3.9rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -511,8 +511,13 @@ input::-webkit-inner-spin-button{
 	flex-direction: column;
 	align-items: flex-start;
 	width: 100%;
-	padding-bottom: 1.5rem;
-	border-bottom: 1px solid #fff;
+}
+
+.modal__menu--wrap{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .modal__menu--link:last-child{
@@ -563,6 +568,10 @@ input::-webkit-inner-spin-button{
 
 .modal__menu--podlink:first-child{
 	margin-top: 0;
+}
+
+.modal__menu--podlink:hover{
+	color: #fff;
 }
 
 /* Карточка */
@@ -967,7 +976,7 @@ input::-webkit-inner-spin-button{
 .card__main--img--inner{
 	padding: 0rem 4.5rem 4.5rem 0;
 	width: 100%;
-	height: 577px;
+	height: 100%;
 	max-width: 569px;
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
@@ -1224,7 +1233,6 @@ input::-webkit-inner-spin-button{
 	}
 
 	.card__main--img--inner{
-		height: 450px;
 		max-width: 400px;
 	}
 
@@ -1621,6 +1629,11 @@ input::-webkit-inner-spin-button{
 		top: 85px;
 		height: calc(100vh - 85px);
 	}
+
+	.modal__menu--link{
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid #fff;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1636,7 +1649,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.modal__menu--content{
-		padding: 2rem;
+		padding: 2rem 0;
 	}
 
 	.footer__inner{
@@ -1777,5 +1790,9 @@ input::-webkit-inner-spin-button{
 	.modal__menu{
 		top: 66px;
 		height: calc(100vh - 66px);
+	}
+
+	.main__photo{
+		margin-right: 1rem;
 	}
 }

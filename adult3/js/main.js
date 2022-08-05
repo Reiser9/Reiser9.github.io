@@ -46,4 +46,31 @@ $(document).ready(function(){
         }
     });
 
+    $(".card__main--img--inner").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.main__photo--inner'
+    });
+
+    $(".main__photo--inner").slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.card__main--img--inner',
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
 });
