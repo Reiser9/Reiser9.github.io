@@ -46,6 +46,20 @@ $(document).ready(function(){
         }
     });
 
+    $(".card__main--img").on("click", function(){
+        $("body").addClass("scroll2");
+        $(".modal__carousel").addClass("active");
+    });
+
+    $(".modal__carousel").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal__carousel").removeClass("active");
+    });
+
+    $(".modal__carousel--inner").on("click", function(e){
+        e.stopPropagation();
+    });
+
     $(".card__main--img--inner").slick({
         dots: false,
         infinite: true,
@@ -71,6 +85,14 @@ $(document).ready(function(){
                 }
             }
         ]
+    });
+
+    $(".modal__carousel--content").slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
 });
