@@ -327,6 +327,8 @@ input::-webkit-inner-spin-button{
 
 .main__item--likes--icon{
 	margin-bottom: 0.8rem;
+	width: 25px;
+	height: 25px;
 }
 
 .main__item--name--inner{
@@ -377,17 +379,23 @@ input::-webkit-inner-spin-button{
 
 .main__item--box{
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .main__item--favorite{
 	display: flex;
 	margin-left: 1rem;
 	width: 25px;
+	align-items: baseline;
 }
 
 .main__item--favorite--icon{
 	width: 100%;
+}
+
+.main__item--likes,
+.main__item--favorite{
+    height: 50px;
 }
 
 /* Текстовый блок */
@@ -1106,6 +1114,8 @@ input::-webkit-inner-spin-button{
 
 .card__main--likes--icon{
 	margin-bottom: 0.7rem;
+	width: 25px;
+	height: 25px;
 }
 
 .card__main--links{
