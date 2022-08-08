@@ -588,6 +588,8 @@ input::-webkit-inner-spin-button{
 	align-items: flex-start;
 	margin-top: 1.5rem;
 	display: none;
+	overflow-y: auto;
+	height: 220px;
 }
 
 .modal__menu--podlinks.active{
