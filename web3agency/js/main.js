@@ -16,8 +16,14 @@ $(window).on("load", function(){
         }
     }, 3000);
 
+    const close = () => {
+		$("body").removeClass("scroll");
+		$(".modal__menu").removeClass("active");
+	}
+
     $(".go").on("click", function(e){
         e.preventDefault();
+        close();
 
         let point = $(this).attr("data-point");
         let pointTop = $("#"+point).offset().top;
@@ -34,5 +40,20 @@ $(window).on("load", function(){
             $(".projects__content--tab[data-tab="+tab+"]").addClass("active");
         }
     });
+
+	$(".menu").on("click", function(){
+		$("body").addClass("scroll");
+		$(".modal__menu").addClass("active");
+	});
+
+	$(".modal__menu--close").on("click", function(){
+		close();
+	});
+
+	$(window).resize(function(){
+		if($(window).width() > 768){
+			close();
+		}
+	});
 
 });

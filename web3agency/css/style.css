@@ -35,6 +35,10 @@ body{
 	background: #090909;
 }
 
+.scroll{
+	overflow: hidden;
+}
+
 *,
 *:after,
 *:before{
@@ -141,6 +145,11 @@ input::-webkit-inner-spin-button{
 
 .header__nav--link:last-child{
 	margin-right: 0;
+}
+
+.menu{
+	display: none;
+	cursor: pointer;
 }
 
 /* Main */
@@ -491,7 +500,7 @@ input::-webkit-inner-spin-button{
 
 .projects__item{
 	display: flex;
-	height: 400px;
+	height: 424px;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -867,6 +876,10 @@ input::-webkit-inner-spin-button{
 	letter-spacing: 0.01em;
 }
 
+.footer__social--link:hover{
+	color: #77FA56;
+}
+
 .footer__social--link:first-child{
 	margin-top: 0;
 }
@@ -895,7 +908,63 @@ input::-webkit-inner-spin-button{
 	text-transform: uppercase;
 }
 
+/* Mobile menu */
+.modal__menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: #14121D;
+	width: 50%;
+	height: 100vh;
+	padding: 5rem 2rem 3rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transition: .3s ease-in-out;
+	transform: translateX(-110%);
+	opacity: 0;
+}
+
+.modal__menu.active{
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+.modal__menu--close{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	width: 35px;
+}
+
+.modal__menu--nav{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.modal__menu--nav .header__nav--link{
+	margin-top: 1.5rem;
+}
+
+.modal__menu--nav .header__nav--link:first-child{
+	margin-top: 0;
+}
+
 /* Адаптив */
+@media(max-width: 1450px){
+	.main{
+		padding: 14rem 0rem 19rem;
+	}
+
+	.main__circle{
+		left: 56.7%;
+		top: 34%;
+	}
+}
 @media(max-width: 1220px){
 	.container{
 		max-width: 1180px;
@@ -1019,19 +1088,12 @@ input::-webkit-inner-spin-button{
 		max-width: 460px;
 	}
 
-	.header__name{
+	.header__name, .header__nav{
 		display: none;
 	}
 
-	.header__inner{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.header__nav{
-		margin-top: 2rem;
-		width: 100%;
-		justify-content: space-between;
+	.menu{
+		display: block;
 	}
 
 	.main{
@@ -1115,6 +1177,10 @@ input::-webkit-inner-spin-button{
 	.main__runner--content{
 		animation: runner 5s linear infinite;
 	}
+
+	.modal__menu{
+		width: 75%;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1161,7 +1227,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.main{
-		padding: 13rem 0rem 17rem 0;
+		padding: 9rem 0rem 17rem 0;
 	}
 
 	.projects{
@@ -1271,5 +1337,9 @@ input::-webkit-inner-spin-button{
 
 	.projects__title--icon{
 		display: none;
+	}
+
+	.modal__menu{
+		width: 100%;
 	}
 }
