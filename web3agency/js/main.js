@@ -30,16 +30,16 @@ $(window).on("load", function(){
         $('body,html').animate({scrollTop: pointTop}, 500);
     });
 
-    $(".projects__tab").on("click", function(){
-        if(!$(this).hasClass("active")){
-            $(".projects__tab").removeClass("active");
-            $(this).addClass("active");
+    // $(".projects__tab").on("click", function(){
+    //     if(!$(this).hasClass("active")){
+    //         $(".projects__tab").removeClass("active");
+    //         $(this).addClass("active");
 
-            let tab = $(this).attr("data-tab");
-            $(".projects__content--tab").removeClass("active");
-            $(".projects__content--tab[data-tab="+tab+"]").addClass("active");
-        }
-    });
+    //         let tab = $(this).attr("data-tab");
+    //         $(".projects__content--tab").removeClass("active");
+    //         $(".projects__content--tab[data-tab="+tab+"]").addClass("active");
+    //     }
+    // });
 
 	$(".menu").on("click", function(){
 		$("body").addClass("scroll");
