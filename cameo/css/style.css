@@ -42,7 +42,7 @@ body{
 	font-family: 'ProximaNova', sans-serif;
 }
 
-.scroll{
+.scroll, .scroll2{
 	overflow: hidden;
 }
 
@@ -435,7 +435,7 @@ input::-webkit-inner-spin-button{
 	padding: 12rem 0;
 }
 
-.content__inner, .content__block{
+.content__inner, .content__block, .category__block{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -446,7 +446,11 @@ input::-webkit-inner-spin-button{
 	margin-top: 12rem;
 }
 
-.content__block:first-child{
+.category__block{
+	margin-top: 8rem;
+}
+
+.content__block:first-child, .category__block:first-child{
 	margin-top: 0;
 }
 
@@ -1234,6 +1238,187 @@ input::-webkit-inner-spin-button{
 	margin-top: 0.5rem;
 }
 
+/* Категория */
+.category{
+	padding: 11.5rem 0rem 12rem 0;
+}
+
+.category__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.bread__content{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bread__inner{
+	display: flex;
+	align-items: center;
+}
+
+.bread__link{
+	color: #fff;
+	text-decoration: underline;
+	font-size: 1.4rem;
+	margin-right: 1.5rem;
+	line-height: 150%;
+}
+
+.bread__icon{
+	margin-right: 1.5rem;
+}
+
+.bread__current{
+	font-size: 1.4rem;
+	color: #ABABB3;
+	line-height: 150%;
+}
+
+.category__buttons{
+	display: flex;
+	align-items: center;
+}
+
+.filters__hidden{
+	margin-right: 3rem;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 1.6rem 2.1rem;
+	color: #fff;
+}
+
+.filters__hidden:hover{
+	color: #101010;
+	background: #fff;
+}
+
+.filters__clear{
+	color: #fff;
+}
+
+.category__content{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 2.5rem;
+}
+
+.category__filters{
+	width: 200px;
+	flex-shrink: 0;
+	margin-right: 4rem;
+}
+
+.category__box{
+	width: calc(100% - 240px);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.filter__item{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-bottom: 4rem;
+	margin-top: 4rem;
+	border-bottom: 1px solid #252525;
+}
+
+.filter__item:nth-child(2){
+	margin-top: 0;
+}
+
+.filter__item:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.filter__item--title{
+	font-size: 1.8rem;
+	color: #787878;
+}
+
+.filter__box{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 2rem;
+}
+
+.checkbox{
+	display: none;
+}
+
+.checkbox:checked + .filter__check--label:after{
+	opacity: 1;
+}
+
+.filter__check--label{
+	position: relative;
+	padding-left: 3.5rem;
+	font-size: 1.8rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.filter__check--label:before, .filter__check--label:after{
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	position: absolute;
+	top: -1.5px;
+	left: 0;
+}
+
+.filter__check--label:after{
+	opacity: 0;
+	transition: .2s linear;
+	background: url("../img/check.svg") center no-repeat;
+	background-size: cover;
+}
+
+.filter__check{
+	margin-top: 1.5rem;
+}
+
+.filter__check:first-child{
+	margin-top: 0;
+}
+
+.content__block--wrap{
+	width: 100%;
+	margin-top: 3rem;
+}
+
+.filter__mobile{
+	width: 100%;
+	display: none;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.filter__title{
+	color: #fff;
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+
+.filter__cross{
+	cursor: pointer;
+}
+
 /* Адаптив */
 @media(max-width: 1420px){
 	.container{
@@ -1288,6 +1473,16 @@ input::-webkit-inner-spin-button{
 
 	.about{
 		padding: 12rem 0;
+	}
+
+	.card__img--wrapper{
+		width: 400px;
+		margin-right: 3rem;
+	}
+	
+	.card__point{
+		margin-right: 2rem;
+		padding: 1rem 2rem 1rem 0;
 	}
 }
 @media(max-width: 998px){
@@ -1373,6 +1568,68 @@ input::-webkit-inner-spin-button{
 
 	.blocks__title{
 		font-size: 3.5rem;
+	}
+
+	.card__img--wrapper{
+		padding: 1.5rem;
+		width: 350px;
+	}
+
+	.card__name{
+		margin-top: 2rem;
+		font-size: 2.5rem;
+	}
+
+	.card__button{
+		margin-top: 2rem;
+		font-size: 1.8rem;
+		padding: 1.2rem 2rem;
+	}
+
+	.card__content--title{
+		font-size: 2.8rem;
+	}
+
+	.card__content--subtitle{
+		font-size: 2.1rem;
+		margin-top: 2rem;
+	}
+
+	.card__points{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.card__point{
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px solid #363636;
+	}
+
+	.card__points{
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.card__work--item:before{
+		display: none;
+	}
+
+	.card__work{
+		flex-wrap: wrap;
+	}
+
+	.card__work--item{
+		width: 100%;
+		margin-top: 2.5rem;
+	}
+
+	.card__work--item:first-child{
+		margin-top: 0;
+	}
+
+	.card{
+		padding: 12rem 0;
 	}
 }
 @media(max-width: 768px){
@@ -1512,6 +1769,73 @@ input::-webkit-inner-spin-button{
 	.block__text--title, .block__text--text{
 		text-align: center;
 	}
+
+	.card__inner{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card__img--wrapper{
+		position: relative;
+		top: 0;
+		margin: 0rem 0rem 3rem 0;
+	}
+
+	.card{
+		padding: 12rem 0 7rem 0;
+	}
+
+	.category__filters{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		overflow-y: auto;
+		top: 0;
+		left: 0;
+		z-index: 101;
+		background: #101010;
+		padding: 3.5rem;
+		opacity: 0;
+		transform: translateX(-110%);
+		transition: .3s ease-in-out;
+	}
+
+	.category__filters.active{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+
+	.category__box{
+		width: 100%;
+	}
+
+	.filters__clear{
+		display: none;
+	}
+
+	.filters__hidden{
+		margin-right: 0;
+	}
+
+	.category{
+		padding: 10rem 0rem 6rem 0;
+	}
+
+	.category__block{
+		margin-top: 4rem;
+	}
+
+	.content__block--wrap{
+		margin-top: 1.5rem;
+	}
+
+	.filter__mobile{
+		display: flex;
+	}
+
+	.filter__item:nth-child(2), .filter__item{
+		margin-top: 2.5rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1650,5 +1974,25 @@ input::-webkit-inner-spin-button{
 
 	.content, .blocks{
 		padding: 4rem 0;
+	}
+
+	.card__img--wrapper{
+		width: 100%;
+	}
+
+	.card__work{
+		margin-top: 3rem;
+	}
+
+	.card__content--wrapper{
+		margin-top: 4rem;
+	}
+
+	.card{
+		padding: 9.5rem 0rem 5rem 0;
+	}
+
+	.category__filters{
+		padding: 2rem;
 	}
 }

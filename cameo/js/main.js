@@ -34,6 +34,54 @@ $(document).ready(function(){
 		}
 	});
 
+    $(".filters__hidden").on("click", function(){
+        $(".category__filters").addClass("active");
+    });
+
+    $(".filter__cross").on("click", function(){
+        $(".category__filters").removeClass("active");
+    });
+
+    $(".content__block--wrap").each(function () {
+        var slider = $(this);
+    
+        slider.slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            centerMode: true,
+            speed: 200,
+            centerPadding: '0px',
+            prevArrow: slider.parent().find('.prev'),
+            nextArrow: slider.parent().find('.next'),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 998,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+            ]
+        });
+    });
+
     $(".content__block--content").each(function () {
         var slider = $(this);
     
