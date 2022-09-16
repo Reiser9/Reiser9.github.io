@@ -77,13 +77,14 @@ input::-webkit-inner-spin-button{
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding: 0.5rem 0;
 }
 
 .header__inner{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .header__logo{
@@ -97,10 +98,15 @@ input::-webkit-inner-spin-button{
 	width: 100%;
 }
 
+.header__nav{
+	display: flex;
+	align-items: center;
+}
+
 .header__link{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
-	color: #989696;
+	color: #000032;
 	margin-right: 2.5rem;
 }
 
@@ -144,18 +150,15 @@ input::-webkit-inner-spin-button{
 .techno__content{
 	width: 100%;
 	margin-top: 4rem;
-	display: flex;
-	justify-content: space-between;
 }
 
 .techno__item{
-	width: 100%;
-	max-width: 375px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	background: #363636;
 	border-radius: 15px;
+	margin: 0rem 2rem;
 }
 
 .techno__item--img{
@@ -308,7 +311,7 @@ input::-webkit-inner-spin-button{
 
 .contact__map{
 	width: 550px;
-	height: 500px;
+	height: 400px;
 }
 
 .contact__map--map{
@@ -390,7 +393,10 @@ input::-webkit-inner-spin-button{
 
 	.contact__map{
 		width: 400px;
-		height: 400px;
+	}
+
+	.techno__item{
+		margin: 0rem 1rem;
 	}
 }
 @media(max-width: 1200px){
@@ -413,10 +419,6 @@ input::-webkit-inner-spin-button{
 		height: 350px;
 	}
 
-	.techno__item{
-		max-width: 300px;
-	}
-
 	.techno__item--title{
 		font-size: 2.1rem;
 	}
@@ -428,10 +430,6 @@ input::-webkit-inner-spin-button{
 @media(max-width: 998px){
 	.container{
 		max-width: 748px;
-	}
-
-	.techno__item{
-		max-width: 230px;
 	}
 
 	.techno__item--title{
@@ -447,7 +445,7 @@ input::-webkit-inner-spin-button{
 		max-width: 460px;
 	}
 
-	.techno__content, .contact__links{
+	.contact__links{
 		flex-wrap: wrap;
 	}
 
@@ -461,15 +459,6 @@ input::-webkit-inner-spin-button{
 
 	.contact__link{
 		margin: 1rem 0rem;
-	}
-
-	.techno__item{
-		width: 48%;
-		margin-top: 2rem;
-	}
-
-	.techno__item:first-child, .techno__item:nth-child(2){
-		margin-top: 0;
 	}
 
 	.techno__content{
@@ -499,15 +488,6 @@ input::-webkit-inner-spin-button{
 @media(max-width: 480px){
 	.container{
 		max-width: 300px;
-	}
-
-	.techno__item:nth-child(2){
-		margin-top: 2rem;
-	}
-
-	.techno__item{
-		width: 100%;
-		max-width: 100%;
 	}
 
 	.techno{

@@ -20,4 +20,31 @@ $(document).ready(function(){
 		}
 	});
 
+    $(".techno__content").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1550,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 998,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 });
