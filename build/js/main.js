@@ -47,4 +47,41 @@ $(document).ready(function(){
         ]
     });
 
+    $(".card__slider--big").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        asNavFor: '.card__slider--small'
+    });
+
+    $(".card__slider--small").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        asNavFor: '.card__slider--big',
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 998,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
 });
