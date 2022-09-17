@@ -530,6 +530,434 @@ input::-webkit-inner-spin-button{
 	background: #000;
 }
 
+/* Цены */
+.price{
+	padding: 5rem 0;
+}
+
+.price__inner{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.price__item{
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem;
+	background: #181818;
+	border-radius: 15px;
+}
+
+.price__item--price{
+	text-align: center;
+	color: #fff;
+	font-weight: 900;
+	font-size: 6rem;
+}
+
+.price__item--text{
+	color: #fff;
+	margin-top: 1.5rem;
+	font-size: 2.1rem;
+	font-weight: 500;
+	width: 100%;
+}
+
+.price__item--button{
+	margin-top: 3rem;
+	color: #000;
+	background: #fff;
+	padding: .8rem 1.5rem;
+	border-radius: 50px;
+	font-size: 2.3rem;
+	font-weight: 900;
+}
+
+/* Галерея */
+.gallery{
+	padding: 5rem 0;
+	background: #181818;
+}
+
+.gallery__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gallery__title{
+	color: #fff;
+	font-weight: 300;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.gallery__content{
+	width: 100%;
+	max-width: 80%;
+	margin-top: 3rem;
+}
+
+.gallery__item{
+	display: flex;
+	margin: 0rem 3rem;
+}
+
+.gallery__item--img{
+	width: 100%;
+}
+
+.gallery__arrow{
+	cursor: pointer;
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.gallery__arrow.prev{
+	left: -95px;
+}
+
+.gallery__arrow.next{
+	right: -95px;
+}
+
+.black, .white{
+	height: 110px;
+	background: linear-gradient(177deg, #fff 50%, #181818 50%);
+}
+
+.white{
+	background: linear-gradient(177deg, #181818 50%, #fff 50%);
+}
+
+/* Новости */
+.news{
+	padding: 4rem 0;
+	background: #181818;
+}
+
+.news__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.news__content{
+	width: 100%;
+	margin-top: 3rem;
+	max-width: 60%;
+}
+
+.news__item{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0rem 1rem;
+}
+
+.news__item--title{
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #fff;
+}
+
+.news__item--date{
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-top: 0.5rem;
+}
+
+.news__item--text{
+	color: #fff;
+	font-weight: 300;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+/* Отзывы */
+.review{
+	background: #fff;
+	padding: 4rem 0;
+}
+
+.review__inner{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.review__item{
+	width: 48%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.review__profile--inner{
+	width: 100%;
+	max-width: 170px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 0;
+	margin-right: 3rem;
+}
+
+.review__text--inner{
+	width: 100%;
+	padding: 2rem;
+	box-shadow: 0 0 10px #000;
+	font-size: 1.8rem;
+	font-weight: 300;
+	border-radius: 10px;
+}
+
+/* Главный блок */
+.main{
+	padding: 4rem 0;
+	min-height: 950px;
+	background: url("../img/bg.png") center no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.main__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main__title{
+	font-weight: 600;
+	font-size: 6.5rem;
+	color: #1d1d1d;
+}
+
+.main__subtitle{
+	font-size: 2.3rem;
+	color: #1d1d1d;
+	margin-top: 1.5rem;
+}
+
+.main__button{
+	text-transform: uppercase;
+	margin-top: 1.5rem;
+	border: 1px solid #1d1d1d;
+	color: #1d1d1d;
+	padding: 1.3rem 2.7rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.main__button:hover{
+	color: #fff;
+	background: #1d1d1d;
+}
+
+/* Команда */
+.team{
+	padding: 4rem 0;
+}
+
+.team__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team__title{
+	color: #1d1d1d;
+}
+
+.team__subtitle{
+	font-weight: 300;
+	color: #898888;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.team__content{
+	width: 100%;
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 30px;
+}
+
+.team__item{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team__img--inner{
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.team__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team__item--name{
+	font-size: 2.1rem;
+	font-weight: 500;
+	color: #464646;
+	margin-top: .5rem;
+}
+
+.team__item--role{
+	font-weight: 300;
+	color: #181818;
+	margin-top: .5rem;
+}
+
+.team__item--social{
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.team__item--social--link{
+	margin-right: 1rem;
+}
+
+.team__item--social--link:last-child{
+	margin-right: 0;
+}
+
+/* Наш путь */
+.road{
+	position: relative;
+	background: #1d1d1d;
+	padding: 4rem 0;
+}
+
+.road:before{
+	content: "";
+	display: block;
+	width: 4px;
+	height: calc(100% + 30px);
+	background: #fff;
+	position: absolute;
+	left: calc(50% - 2px);
+	top: 0;
+	transform: translateX(-50%);
+}
+
+.road__inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.road__item{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 2.5rem;
+}
+
+.road__item:nth-child(even){
+	justify-content: flex-end;
+}
+
+.road__item:nth-child(even) .road__content{
+	padding: 0rem 0rem 0rem 4rem;
+}
+
+.road__content{
+	width: 100%;
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	padding: 0rem 4rem 0rem 0rem;
+}
+
+.road__content:before, .road__content:after{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 15px;
+	right: 0;
+	transform: translateX(calc(50% - 2px));
+}
+
+.road__content:after{
+	width: 14px;
+	height: 14px;
+	background: #1d1d1d;
+	top: 18px;
+	right: 2px;
+	transform: translateX(50%);
+}
+
+.road__item:nth-child(even) .road__content:before, .road__item:nth-child(even) .road__content:after{
+	right: auto;
+	left: 0;
+	transform: translateX(calc(-50% - 2px));
+}
+
+.road__item:nth-child(even) .road__content:after{
+	left: -2px;
+	transform: translateX(-50%);
+}
+
+.road__content.big:before{
+	width: 40px;
+	height: 40px;
+}
+
+.road__content.big:after{
+	width: 34px;
+	height: 34px;
+}
+
+.road__item:first-child{
+	margin-top: 0;
+}
+
+.road__content--title{
+	font-size: 3.5rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+.road__content--text{
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	font-weight: 300;
+	color: #fff;
+}
+
 /* Адаптив */
 @media(max-width: 1550px){
 	.container{
@@ -551,6 +979,10 @@ input::-webkit-inner-spin-button{
 	.card__img--inner{
 		max-width: 640px;
 		margin-right: 3rem;
+	}
+
+	.price__item{
+		max-width: 350px;
 	}
 }
 @media(max-width: 1200px){
@@ -589,6 +1021,31 @@ input::-webkit-inner-spin-button{
 	.card__img--inner{
 		margin: 0rem 0rem 3rem 0;
 	}
+
+	.price__item{
+		max-width: 300px;
+		padding: 2.5rem;
+	}
+
+	.price__item--price{
+		font-size: 4rem;
+	}
+
+	.price__item--text{
+		font-size: 1.8rem;
+	}
+
+	.main{
+		min-height: 750px;
+	}
+
+	.main__title{
+		font-size: 4.5rem;
+	}
+
+	.main__subtitle{
+		font-size: 2.1rem;
+	}
 }
 @media(max-width: 998px){
 	.container{
@@ -606,6 +1063,48 @@ input::-webkit-inner-spin-button{
 	.card{
 		padding: 7rem 0;
 	}
+
+	.price__item{
+		max-width: 350px;
+		margin-top: 2rem;
+	}
+
+	.price__item:first-child, .price__item:nth-child(2){
+		margin-top: 0;
+	}
+
+	.gallery__arrow.prev{
+		left: -75px;
+	}
+
+	.gallery__arrow.next{
+		right: -75px;
+	}
+
+	.main{
+		min-height: 650px;
+	}
+
+	.main__title{
+		font-size: 4rem;
+	}
+
+	.road__content--title{
+		font-size: 2.5rem;
+	}
+
+	.review__item{
+		width: 100%;
+		margin-top: 2.5rem;
+	}
+
+	.review__item:first-child{
+		margin-top: 0;
+	}
+
+	.news__content{
+		max-width: 80%;
+	}
 }
 @media(max-width: 768px){
 	.container{
@@ -621,7 +1120,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.contact__link{
-		width: 48%;
+		width: 100%;
 	}
 
 	.contact__link{
@@ -667,6 +1166,69 @@ input::-webkit-inner-spin-button{
 	.card__subtext{
 		font-size: 1.6rem;
 	}
+
+	.price__item{
+		max-width: 100%;
+	}
+
+	.price__item:nth-child(2){
+		margin-top: 2rem;
+	}
+
+	.gallery__content, .news__content{
+		max-width: 100%;
+		margin: 3rem 0 4rem 0;
+	}
+
+	.gallery__item{
+		margin: 0rem 1rem;
+	}
+
+	.gallery__arrow{
+		transform: translateY(0);
+		top: calc(100% + 15px);
+	}
+
+	.gallery__arrow.prev{
+		left: 0;
+	}
+
+	.gallery__arrow.next{
+		right: 0;
+	}
+
+	.main__title{
+		font-size: 3rem;
+	}
+
+	.main__subtitle{
+		font-size: 1.8rem;
+	}
+
+	.main{
+		min-height: 500px;
+	}
+
+	.road__content{
+		max-width: 100%;
+	}
+
+	.road:before, .road__content:before, .road__content:after{
+		display: none;
+	}
+
+	.road__item:nth-child(even) .road__content, .road__content{
+		padding: 0;
+	}
+
+	.road__item{
+		margin-top: 4rem;
+	}
+
+	.review__text--inner{
+		padding: 1.5rem;
+		font-size: 1.6rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -675,10 +1237,6 @@ input::-webkit-inner-spin-button{
 
 	.techno{
 		padding: 3rem 0;
-	}
-
-	.contact__link{
-		width: 100%;
 	}
 
 	.contact__map{
@@ -707,5 +1265,42 @@ input::-webkit-inner-spin-button{
 
 	.card__text--block{
 		margin-top: 3rem;
+	}
+
+	.gallery__title{
+		font-size: 2.5rem;
+	}
+
+	.main__title{
+		font-size: 2.5rem;
+	}
+
+	.main__subtitle{
+		font-size: 1.6rem;
+	}
+
+	.gallery{
+		padding: 3rem 0;
+	}
+
+	.review__item{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.review__profile--inner{
+		margin: 0rem 0rem 2rem 0;
+	}
+
+	.review, .news{
+		padding: 2rem 0;
+	}
+
+	.news__item--title{
+		font-size: 2.1rem;
+	}
+
+	.news__item--text{
+		font-size: 1.4rem;
 	}
 }

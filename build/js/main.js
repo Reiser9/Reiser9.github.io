@@ -84,4 +84,38 @@ $(document).ready(function(){
         ]
     });
 
+    $(".gallery__content").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '150px',
+        prevArrow: '<img src="img/prev.png" class="gallery__arrow prev" />',
+        nextArrow: '<img src="img/next.png" class="gallery__arrow next" />',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    centerPadding: '70px',
+                }
+            },
+            {
+                breakpoint: 998,
+                settings: {
+                    centerPadding: '0px',
+                }
+            },
+        ]
+    });
+
+    $(".news__content").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '0px',
+        prevArrow: '<img src="img/prev.png" class="gallery__arrow prev" />',
+        nextArrow: '<img src="img/next.png" class="gallery__arrow next" />'
+    });
+
 });
