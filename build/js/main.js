@@ -108,14 +108,58 @@ $(document).ready(function(){
         ]
     });
 
+    $(".main__slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
+
     $(".news__content").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
+        arrows: false,
         centerMode: true,
-        centerPadding: '0px',
-        prevArrow: '<img src="img/prev.png" class="gallery__arrow prev" />',
-        nextArrow: '<img src="img/next.png" class="gallery__arrow next" />'
+        centerPadding: '180px',
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 998,
+                settings: {
+                    centerPadding: '50px',
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerPadding: '0px',
+                }
+            }
+        ]
+    });
+
+    $(".team__content").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+        ]
     });
 
 });
