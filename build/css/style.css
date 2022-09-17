@@ -334,6 +334,7 @@ input::-webkit-inner-spin-button{
 	opacity: 0;
 	transform: translateX(-110%);
 	transition: .3s ease-in-out;
+	z-index: 100;
 }
 
 .modal__menu.active{
