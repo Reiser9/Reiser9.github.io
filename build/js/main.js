@@ -5,6 +5,20 @@ $(document).ready(function(){
         $(".modal__menu").removeClass("active");
     }
 
+    const scrollCheck = () => {
+        if($(window).scrollTop() > 20){
+			$(".header").addClass("active");
+		}
+        else{
+            $(".header").removeClass("active");
+        }
+    }
+
+    $(window).on("scroll", function(){
+		scrollCheck();
+	});
+    scrollCheck();
+
 	$(".menu").on("click", function(){
         $("body").addClass("scroll");
         $(".modal__menu").addClass("active");

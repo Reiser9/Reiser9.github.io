@@ -79,7 +79,15 @@ input::-webkit-inner-spin-button{
 	left: 0;
 	padding: 0.5rem 0;
 	z-index: 5;
-	background: rgba(255, 255, 255, .5);
+	transition: .2s linear;
+}
+
+.header.active a{
+	color: #fff;
+}
+
+.header.active{
+	background: #1d1d1d;
 }
 
 .header__inner{
@@ -258,7 +266,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 
 .contact__links.mobile{
@@ -266,7 +274,7 @@ input::-webkit-inner-spin-button{
 }
 
 .contact__link{
-	margin: 0rem 1.5rem;
+	margin-top: 1.5rem;
 	display: flex;
 	align-items: center;
 	margin-top: 1rem;
@@ -1332,14 +1340,6 @@ input::-webkit-inner-spin-button{
 
 	.review__profile--inner{
 		margin: 0rem 0rem 2rem 0;
-	}
-
-	.contact__links.pk{
-		display: none;
-	}
-
-	.contact__links.mobile{
-		display: flex;
 	}
 }
 @media(max-width: 480px){
