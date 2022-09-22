@@ -4,6 +4,10 @@ $(document).ready(function(){
         $("body").removeClass("scroll");
         $(".modal__menu").removeClass("active");
     }
+    const open = () => {
+        $("body").addClass("scroll2");
+        $(".modal__city").addClass("active");
+    }
 
     $(".modal__menu--link").on("click", function(e){
         e.preventDefault();
@@ -28,8 +32,16 @@ $(document).ready(function(){
 
     $(".city__button").on("click", function(e){
         e.preventDefault();
-        $("body").addClass("scroll2");
-        $(".modal__city").addClass("active");
+        open();
+    });
+
+    $(".modal__city").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal__city").removeClass("active");
+    });
+
+    $(".modal__city--content").on("click", function(e){
+        e.stopPropagation();
     });
 
     $(".modal__city--cross").on("click", function(){
