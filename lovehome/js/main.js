@@ -49,6 +49,21 @@ $(document).ready(function(){
         $(".modal__city").removeClass("active");
     });
 
+    $(".search__fade").on("click", function(e){
+        e.preventDefault();
+        $("body").addClass("scroll3");
+        $(".search").addClass("active");
+    });
+
+    $(".search").on("click", function(){
+        $("body").removeClass("scroll3");
+        $(this).removeClass("active");
+    });
+
+    $(".search__content").on("click", function(e){
+        e.stopPropagation();
+    });
+
 	$(".card__content--carousel--small").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
