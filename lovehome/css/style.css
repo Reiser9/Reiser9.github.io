@@ -5,25 +5,25 @@
 @font-face{
     font-family: 'Gilroy';
     font-weight: 400;
-    src: url('./assets/fonts/gilroyRegular.ttf');
+    src: url('../fonts/gilroyRegular.ttf');
 }
 
 @font-face{
     font-family: 'Gilroy';
     font-weight: 500;
-    src: url('./assets/fonts/gilroyMedium.ttf');
+    src: url('../fonts/gilroyMedium.ttf');
 }
 
 @font-face{
     font-family: 'Gilroy';
     font-weight: 600;
-    src: url('./assets/fonts/gilroySemibold.ttf');
+    src: url('../fonts/gilroySemibold.ttf');
 }
 
 @font-face{
     font-family: 'Gilroy';
     font-weight: 700;
-    src: url('./assets/fonts/gilroyBold.ttf');
+    src: url('../fonts/gilroyBold.ttf');
 }
 
 body{
@@ -35,7 +35,7 @@ body{
 	background: #0C0F2F;
 }
 
-.scroll{
+.scroll, .scroll2{
 	overflow: hidden;
 }
 
@@ -192,6 +192,8 @@ input::-webkit-inner-spin-button{
 	opacity: 0;
 	pointer-events: none;
 	transition: .2s linear;
+	overflow-y: auto;
+	max-height: 250px;
 }
 
 .header__nav--link:first-child .header__nav--drop{
@@ -1565,6 +1567,8 @@ input::-webkit-inner-spin-button{
 	align-items: flex-start;
 	padding-left: 1rem;
 	margin-top: 1rem;
+	overflow-y: auto;
+	max-height: 250px;
 }
 
 .modal__menu--drop.active{
@@ -1593,6 +1597,90 @@ input::-webkit-inner-spin-button{
 }
 
 .modal__menu--drop--link:first-child{
+	margin-top: 0;
+}
+
+/* Modal citys */
+.modal__city{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background: rgba(0, 0, 0, .5);
+    overflow-x: hidden;
+    overflow-y: auto;
+	display: block;
+	opacity: 0;
+	transition: .2s linear;
+	pointer-events: none;
+}
+
+.modal__city.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal__city--inner{
+	width: 100%;
+    display: flex;
+    align-items: center;
+	max-width: 500px;
+    min-height: calc(100% - 3.5rem);
+    margin: 1.75rem auto;
+    justify-content: center;
+}
+
+.modal__city--content{
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border: 1px solid #fff;
+	background: #1d1d1d;
+	border-radius: 10px;
+}
+
+.modal__city--wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.modal__city--title{
+	color: #fff;
+	font-size: 2.1rem;
+	font-weight: 700;
+}
+
+.modal__city--cross{
+	cursor: pointer;
+}
+
+.modal__city--box{
+	width: 100%;
+	margin-top: 3rem;
+	overflow-y: auto;
+	max-height: 350px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.modal__city--link{
+	width: 50%;
+	padding: 0 0.5rem;
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+.modal__city--link:hover{
+	color: #D9A319;
+}
+
+.modal__city--link:first-child, .modal__city--link:nth-child(2){
 	margin-top: 0;
 }
 
@@ -2019,6 +2107,10 @@ input::-webkit-inner-spin-button{
 	.cars__salon--point:nth-child(3){
 		margin-top: 0.8rem;
 	}
+
+	.modal__city--inner{
+		max-width: 90%;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -2184,5 +2276,15 @@ input::-webkit-inner-spin-button{
 
 	.modal__menu--location{
 		display: flex;
+	}
+}
+@media(max-width: 400px){
+	.modal__city--link{
+		width: 100%;
+		padding: 0;
+	}
+
+	.modal__city--link:nth-child(2){
+		margin-top: 0.5rem;
 	}
 }

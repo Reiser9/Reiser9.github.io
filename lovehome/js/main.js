@@ -26,6 +26,17 @@ $(document).ready(function(){
         $(".modal__menu").addClass("active");
     });
 
+    $(".city__button").on("click", function(e){
+        e.preventDefault();
+        $("body").addClass("scroll2");
+        $(".modal__city").addClass("active");
+    });
+
+    $(".modal__city--cross").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal__city").removeClass("active");
+    });
+
 	$(".card__content--carousel--small").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
