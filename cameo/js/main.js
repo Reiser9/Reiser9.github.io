@@ -86,7 +86,7 @@ $(document).ready(function(){
         var slider = $(this);
     
         slider.slick({
-            slidesToShow: 6,
+            slidesToShow: 7,
             slidesToScroll: 1,
             centerMode: true,
             speed: 200,
