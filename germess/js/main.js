@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
     $(".modal__fade").on("click", function(){
+        let modal = $(this).attr("data-modal");
         $("body").addClass("scroll");
-        $(".modal").addClass("active");
+        $(".modal[data-modal="+modal+"]").addClass("active");
     });
 
 	$(".modal__cross").on("click", function(){
@@ -28,7 +29,8 @@ $(document).ready(function(){
         centerMode: true,
         dots: true,
         centerPadding: '500px',
-        arrows: false,
+        prevArrow: '<img class="face__arrow prev" src="img/prev.svg" alt="Назад" />',
+        nextArrow: '<img class="face__arrow next" src="img/next.svg" alt="Вперед" />',
         responsive: [
             {
                 breakpoint: 1600,

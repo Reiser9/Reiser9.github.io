@@ -87,13 +87,13 @@
 					</p>
 
 					<div class="main__buttons">
-						<button class="button fill__button main__button">
+						<button class="button fill__button main__button modal__fade" data-modal="join">
 							Вступить
 
 							<span class="button__part"></span>
 						</button>
 
-						<button class="button outline__button main__button modal__fade">
+						<button class="button outline__button main__button modal__fade" data-modal="question">
 							Спросить
 
 							<span class="button__part"></span>
@@ -400,7 +400,7 @@
 				</div>
 
 				<div class="for__text--inner">
-					<div class="for__item active">
+					<div class="for__item">
 						<p class="for__item--title">
 							01 ИЗУЧАЕМ МНЕНИЕ ЭКСПЕРТОВ
 						</p>
@@ -841,7 +841,7 @@
 		</div>
 	</footer>
 
-	<div class="modal">
+	<div class="modal" data-modal="join">
 		<div class="modal__inner">
 			<div class="modal__content">
 				<img src="img/cross.svg" alt="cross" class="modal__cross">
@@ -879,6 +879,44 @@
 
 					<button class="button fill__button modal__form--button">
 						Оставить заявку
+
+						<span class="button__part"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" data-modal="question">
+		<div class="modal__inner">
+			<div class="modal__content">
+				<img src="img/cross.svg" alt="cross" class="modal__cross">
+
+				<div class="section__title modal__title">
+					Заполните данные
+				</div>
+
+				<div class="modal__form">
+					<div class="modal__input--inner">
+						<input type="text" class="input modal__input" placeholder="ФИО:">
+					</div>
+
+					<div class="modal__input--inner">
+						<input type="text" class="input modal__input" placeholder="Email:">
+					</div>
+
+					<div class="modal__input--inner">
+						<input type="text" class="input modal__input" placeholder="Ваш вопрос">
+					</div>
+				</div>
+
+				<div class="modal__form--submit">
+					<p class="modal__form--agree">
+						Нажимая на кнопку “Оставить заявку”  вы даёте своё согласие на обработку персональных данных 
+					</p>
+
+					<button class="button fill__button modal__form--button">
+						Спросить
 
 						<span class="button__part"></span>
 					</button>
