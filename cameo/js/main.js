@@ -128,4 +128,50 @@ $(document).ready(function(){
         });
     });
 
+    $(".content__block--card").each(function () {
+        var slider = $(this);
+    
+        slider.slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            centerMode: true,
+            speed: 200,
+            centerPadding: '0px',
+            prevArrow: slider.parent().find('.prev'),
+            nextArrow: slider.parent().find('.next'),
+            responsive: [
+                {
+                    breakpoint: 1420,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 998,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+            ]
+        });
+    });
+
 });
