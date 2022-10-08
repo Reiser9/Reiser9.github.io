@@ -50,4 +50,44 @@ $(document).ready(function(){
         $(".modal__city").removeClass("active");
     });
 
+    $(".reviews__fade").on("click", function(e){
+        e.preventDefault();
+        $(this).siblings(".reviews__item--content").toggleClass("active");
+    });
+
+    $(".link__go").on("click", function(e){
+        e.preventDefault();
+        let point = $(this).attr("data-point");
+        let pointTop = $("#"+point).offset().top;
+        $('body,html').animate({scrollTop: pointTop}, 500);
+    });
+
+    $(".header__nav--link--inner .header__nav--link").on("click", function(e){
+        e.preventDefault();
+        $(this).siblings(".header__nav--drop").toggleClass("active");
+    });
+
+    // Слайдеры
+    $(".salon__carousel").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false
+    });
+
+    $(".card__img--inner").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: ".card__img--items"
+    });
+
+    $(".card__img--items").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: ".card__img--inner",
+        focusOnSelect: true
+    });
+
 });

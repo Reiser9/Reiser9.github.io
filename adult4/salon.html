@@ -12,16 +12,9 @@
         <!-- Title -->
         <title>Adult</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
-
         <!-- Style -->
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/slick.css">
 
         <!-- Favicon -->
     </head>
@@ -78,7 +71,11 @@
                     <div class="salon__card--content">
                         <div class="salon__box">
                             <div class="salon__img--wrapper">
-                                <img src="img/salon2.png" alt="salon" class="salon__img">
+                                <div class="salon__carousel">
+                                    <img src="img/salon2.png" alt="salon" class="salon__img">
+                                    <img src="img/salon2.png" alt="salon" class="salon__img">
+                                    <img src="img/salon2.png" alt="salon" class="salon__img">
+                                </div>
 
                                 <img src="img/verify.svg" alt="verify" class="salon__verify">
                             </div>
@@ -104,28 +101,22 @@
                                     <a href="#" class="salon__item--social--link">
                                         <img src="img/warn.svg" alt="viber" class="salon__item--social--ico">
                                     </a>
-    
-                                    <a href="#" class="card__like">
-                                        <img src="img/like.svg" alt="like" class="card__like--icon">
-    
-                                        0
-                                    </a>
                                 </div>
 
                                 <p class="salon__metro">
-                                    Метро: ул. Кировская 54 корпус 1 / <a href="#">смотреть на карте</a>
+                                    Метро: ул. Кировская 54 корпус 1 / <a href="#" class="link__go" data-point="map">смотреть на карте</a>
                                 </p>
 
                                 <div class="salon__buttons">
-                                    <button class="button salon__button">
+                                    <button class="button salon__button link__go" data-point="models">
                                         Массажистки(3)
                                     </button>
 
-                                    <button class="button salon__button">
+                                    <button class="button salon__button link__go" data-point="reviews">
                                         Отзывы(1)
                                     </button>
 
-                                    <button class="button salon__button">
+                                    <button class="button salon__button link__go" data-point="programs">
                                         Программы(5)
                                     </button>
                                 </div>
@@ -296,7 +287,7 @@
                                     </p>
                                 </div>
     
-                                <div class="card__text--block">
+                                <div class="card__text--block" id="map">
                                     <h2 class="card__text--block--title">
                                         Салон на карте
                                     </h2>
@@ -306,7 +297,7 @@
                             </div>
                         </div>
 
-                        <div class="salon__block">
+                        <div class="salon__block" id="programs">
                             <h2 class="card__text--block--title w100">
                                 Программы
                             </h2>
@@ -358,7 +349,7 @@
                             </div>
                         </div>
 
-                        <div class="salon__block">
+                        <div class="salon__block" id="models">
                             <h2 class="main__subtitle w100">
                                 Наши массажистки
                             </h2>
@@ -1042,7 +1033,7 @@
                             </button>
                         </div>
 
-                        <div class="salon__block salon__reviews">
+                        <div class="salon__block salon__reviews" id="reviews">
                             <h2 class="card__text--block--title w100">
                                 Отзывы о салоне
                             </h2>
@@ -1313,6 +1304,7 @@
         </div>
 
         <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
