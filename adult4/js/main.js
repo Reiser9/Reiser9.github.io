@@ -72,7 +72,36 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        arrows: false
+        arrows: false,
+        asNavFor: ".salon__img--smalls"
+    });
+
+    $(".salon__img--smalls").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: ".salon__carousel",
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 998,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 
     $(".card__img--inner").slick({
