@@ -10,6 +10,10 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+.scroll, .scroll2{
+	overflow: hidden;
+}
+
 *,
 *:after,
 *:before{
@@ -129,7 +133,7 @@ input::-webkit-inner-spin-button{
 	font-weight: 300;
 }
 
-.header__button{
+.header__button, .modal__menu--button{
 	padding: 1rem 3rem;
 	border-radius: 5px;
 	border: 1px solid #9AD3F9;
@@ -138,7 +142,7 @@ input::-webkit-inner-spin-button{
 	color: #9AD3F9;
 }
 
-.header__button:hover{
+.header__button:hover, .modal__menu--button:hover{
 	color: #fff;
 	background: #9AD3F9;
 }
@@ -245,7 +249,7 @@ input::-webkit-inner-spin-button{
 }
 
 .footer__wrapper{
-	max-width: 255px;
+	max-width: 285px;
 }
 
 .footer__wrapper--title{
@@ -478,17 +482,14 @@ input::-webkit-inner-spin-button{
 	height: 2px;
 	background: #9AD3F9;
 	flex-grow: 1;
+	margin: 0rem 2rem;
 }
 
 .hr__img{
-	flex-shrink: 0;
-	margin-left: 2rem;
 	width: 183px;
 }
 
 .hr__button{
-	flex-shrink: 0;
-	margin-right: 2rem;
 	padding: 1.5rem 3rem;
 }
 
@@ -498,7 +499,7 @@ input::-webkit-inner-spin-button{
 
 /* Uslugi */
 .uslugi{
-	padding: 6rem 0;
+	padding: 9rem 0;
 }
 
 .uslugi__content{
@@ -538,6 +539,7 @@ input::-webkit-inner-spin-button{
 
 .uslugi__item--title{
 	font-size: 1.8rem;
+	text-transform: uppercase;
 }
 
 .uslugi__item--text{
@@ -642,7 +644,7 @@ input::-webkit-inner-spin-button{
 
 /* Adv */
 .adv{
-	padding: 6rem 0;
+	padding: 9rem 0;
 }
 
 .adv__inner{
@@ -854,6 +856,13 @@ input::-webkit-inner-spin-button{
 	font-size: 5.5rem;
 	font-weight: 300;
 	max-width: 650px;
+	position: relative;
+}
+
+.sale__arrow{
+	position: absolute;
+	bottom: 0;
+	left: 95%;
 }
 
 .bold{
@@ -920,6 +929,69 @@ input::-webkit-inner-spin-button{
 
 .menu{
 	display: none;
+}
+
+/* Modal menu */
+.modal__menu{
+	background: #F6FDFF;
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	padding: 2.5rem 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: .3s ease-in-out;
+	transform: translateX(-110%);
+	opacity: 0;
+}
+
+.modal__menu.active{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.modal__menu--logo{
+	width: 120px;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #9AD3F9;
+}
+
+.modal__menu--nav{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.modal__menu--nav--link{
+	margin-top: 1.5rem;
+}
+
+.modal__menu--nav--link:first-child{
+	margin-top: 0;
+}
+
+.modal__menu--button{
+	padding: .7rem 2rem;
+	margin-top: 3rem;
+}
+
+.modal__menu--social{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.modal__cross{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 3rem;
 }
 
 /* Responsive */
@@ -997,6 +1069,11 @@ input::-webkit-inner-spin-button{
 	.about__slider--inner{
 		max-width: 600px;
 	}
+
+	.sale__arrow{
+		left: 90%;
+		width: 150px;
+	}
 }
 @media(max-width: 998px){
 	.container{
@@ -1071,10 +1148,6 @@ input::-webkit-inner-spin-button{
 		flex-wrap: wrap;
 	}
 
-	.header__bottom{
-		padding-top: 1rem;
-	}
-
 	.header__point{
 		width: 50%;
 		order: 3;
@@ -1087,23 +1160,22 @@ input::-webkit-inner-spin-button{
 		margin: 0rem 2rem;
 	}
 
-	.header__nav{
-		width: 100%;
-		order: 2;
-	}
-
-	.header__nav{
-		justify-content: center;
-		margin-top: 1rem;
-	}
-
 	.header__nav li{
-		padding: 2rem 3rem;
+		padding: 2.5rem 1rem;
 	}
 
-	.main__inner, .owner__content{
+	.main__inner{
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.header__text{
+		font-size: 1.4rem;
+		max-width: 175px;
+	}
+
+	.header__button{
+		padding: 1rem 2rem;
 	}
 
 	.main__text--inner, .owner__text--inner{
@@ -1121,6 +1193,29 @@ input::-webkit-inner-spin-button{
 
 	.owner__img{
 		margin: 0;
+	}
+
+	.sale__arrow{
+		bottom: auto;
+		top: 105%;
+		left: 60%;
+	}
+
+	.about__text, .about__button{
+		margin-top: 4rem;
+	}
+
+	.owner__img{
+		width: 350px;
+	}
+
+	.owner__suptitle{
+		font-size: 2.8rem;
+	}
+
+	.owner__title{
+		margin-top: 2rem;
+		font-size: 3.4rem;
 	}
 }
 @media(max-width: 768px){
@@ -1148,7 +1243,7 @@ input::-webkit-inner-spin-button{
 
 	.sale__inner{
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: flex-end;
 	}
 
 	.sale__buttons{
@@ -1178,8 +1273,8 @@ input::-webkit-inner-spin-button{
 		margin-top: 0;
 	}
 
-	.special, .adv, .review, .gallery, .owner{
-		padding: 4rem 0;
+	.special, .adv, .review, .gallery, .owner, .uslugi{
+		padding: 5rem 0;
 	}
 
 	.review__content{
@@ -1260,16 +1355,43 @@ input::-webkit-inner-spin-button{
 		margin: 0rem 0rem 2rem 0;
 	}
 
-	.about__text, .about__button{
-		margin-top: 4rem;
-	}
-
 	.gallery__content{
 		margin-top: 3rem;
 	}
 
-	.owner__suptitle{
-		font-size: 2.8rem;
+	.sale__arrow{
+		top: 196%;
+		left: 0;
+		width: 120px;
+	}
+
+	.adv__logo{
+		display: none;
+	}
+
+	.hr__button{
+		margin: 0rem 0rem 4rem 0;
+	}
+
+	.gallery .hr__line, .gallery .hr__img{
+		display: none;
+	}
+
+	.gallery .hr__button{
+		margin: 0;
+	}
+
+	.owner__content{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.owner__img{
+		width: 100%;
+	}
+
+	.header__bottom{
+		padding-top: 1rem;
 	}
 }
 @media(max-width: 480px){
@@ -1345,7 +1467,6 @@ input::-webkit-inner-spin-button{
 
 	.header__text{
 		margin-top: 1rem;
-		font-size: 1.4rem;
 	}
 
 	.main__title{
@@ -1389,8 +1510,16 @@ input::-webkit-inner-spin-button{
 		font-size: 2.1rem;
 	}
 
-	.owner__title{
-		margin-top: 2rem;
-		font-size: 3.4rem;
+	.sale__arrow{
+		left: auto;
+		right: -35px;
+		transform: rotate(90deg);
+		top: 25px;
+		width: 90px;
+	}
+
+	.sale__title{
+		width: 100%;
+		padding-right: 3rem;
 	}
 }
