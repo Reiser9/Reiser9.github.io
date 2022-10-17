@@ -41,9 +41,30 @@ $(document).ready(function(){
 
     $(".header__nav--link--inner .header__nav--link").on("click", function(e){
         e.preventDefault();
+        if(!$(this).hasClass("active")){
+            $(".header__nav--drop").removeClass("active");
+            $(".header__nav--link").removeClass("active");
+        }
+        
         $(this).siblings(".header__nav--drop").toggleClass("active");
         $(this).toggleClass("active");
     });
+
+    // Кнопка наверх
+    const ofset = () => {
+        if($(window).scrollTop() > 100){
+            $(".up__button").addClass("active");
+        }
+        else{
+            $(".up__button").removeClass("active");
+        }
+    }
+
+    $(window).scroll(function(){
+        ofset();
+    });
+
+    ofset();
 
     // Показать форму отзыва
     $(".review__leave").on("click", function(){
