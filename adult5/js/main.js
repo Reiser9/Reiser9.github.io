@@ -33,7 +33,7 @@ $(document).ready(function(){
     });
 
     $(window).resize(function(){
-        if($(window).width() > 1200){
+        if($(window).width() > 998){
 			$(".search__mob").removeClass("active");
             close();
 		}
