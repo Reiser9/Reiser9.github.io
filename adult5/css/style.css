@@ -117,7 +117,6 @@ input::-webkit-inner-spin-button{
 
 .footer__logo--text{
 	color: #828282;
-	margin-left: 2rem;
 }
 
 .header__nav{
@@ -1580,7 +1579,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 3rem;
+	margin-top: 4rem;
 	flex-wrap: wrap;
 }
 
@@ -1651,6 +1650,12 @@ input::-webkit-inner-spin-button{
 
 .card__reviews--input--inner:first-child{
 	margin-top: 0;
+}
+
+.footer__adult--img{
+	min-width: 242px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* Адаптив */
@@ -1944,6 +1949,10 @@ input::-webkit-inner-spin-button{
 	.main__block--item{
 		padding: 1rem 1rem 3.5rem 1rem;
 	}
+
+	.footer__auth{
+		font-size: 1.5rem;
+	}
 }
 @media(max-width: 768px){
 	.container{
@@ -1963,7 +1972,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.salon__price--tags{
-		min-height: 200px;
+		min-height: 150px;
 	}
 
 	.footer__inner{
@@ -1976,7 +1985,7 @@ input::-webkit-inner-spin-button{
 		text-align: center;
 	}
 
-	.footer__auth, .footer__adult{
+	.footer__auth{
 		margin-top: 1.5rem;
 	}
 
@@ -2085,12 +2094,9 @@ input::-webkit-inner-spin-button{
 		width: 33%;
 	}
 
-	.salon__programm--name, .salon__programm--time, .salon__programm--price{
-		width: 100%;
-	}
-
-	.salon__programm--time, .salon__programm--price{
-		margin-top: .5rem;
+	.footer__adult--img{
+		justify-content: center;
+		margin-top: 1.5rem;
 	}
 }
 @media(max-width: 480px){
@@ -2237,6 +2243,35 @@ input::-webkit-inner-spin-button{
 	.card__like--icon{
 		width: 23px;
 	}
+
+	.card__text--box{
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.card__text--info--item{
+		width: 48%;
+		font-size: 1.5rem;
+	}
+
+	.card__text--info--item:nth-child(2){
+		margin-top: 0;
+	}
+
+	.value .salon__programm--name, .value .salon__programm--time, .value .salon__programm--price{
+		font-size: 1.6rem;
+	}
+
+	.salon__programm--time{
+		text-align: center;
+	}
+
+	.salon__programm--price{
+		text-align: right;
+	}
 }
 @media(max-width: 390px){
 	.main__block--item--img--wrapper{
@@ -2245,6 +2280,10 @@ input::-webkit-inner-spin-button{
 
 	.main__block--item--fav--button{
 		padding: 0.6rem;
+	}
+
+	.card__text--info--item, .value .salon__programm--name, .value .salon__programm--time, .value .salon__programm--price{
+		font-size: 1.4rem;
 	}
 }
 @media(max-width: 345px){
@@ -2256,5 +2295,17 @@ input::-webkit-inner-spin-button{
 	.main__block--item--content{
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.card__text--info--item{
+		width: 100%;
+		font-size: 1.6rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.card__text--info--item:nth-child(2){
+		margin-top: 1rem;
 	}
 }
