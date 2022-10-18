@@ -271,16 +271,21 @@ input::-webkit-inner-spin-button{
 }
 
 .breadcrumb__link{
-	color: #000;
+	color: rgb(85, 85, 85);
 	text-decoration: underline;
+}
+
+.breadcrumb__text, .breadcrumb__link{
+	font-size: 1.4rem;
 }
 
 .breadcrumb__icon{
 	margin: 0 .5rem;
+	width: 15px;
 }
 
 .main{
-	padding: 4rem 0;
+	padding: 3rem 0;
 }
 
 .main__inner{
@@ -945,7 +950,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: center;
 	font-size: 1.8rem;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 }
 
 .salon__uslugi--point:first-child{
@@ -1135,7 +1140,7 @@ input::-webkit-inner-spin-button{
 }
 
 .card__img--inner, .salon__img--inner{
-	width: 40%;
+	width: 31.3%;
 	display: flex;
 	align-items: flex-start;
 }
@@ -1154,7 +1159,7 @@ input::-webkit-inner-spin-button{
 }
 
 .card__text--inner{
-	width: 58.5%;
+	width: 67.5%;
 	border-radius: 15px;
 	background: #fff;
 	padding: 3rem 4rem;
@@ -1295,6 +1300,7 @@ input::-webkit-inner-spin-button{
 
 .card__text--contact--icon{
 	margin-right: 0.3rem;
+	max-width: 20px;
 }
 
 .card__text--contact--social{
@@ -1416,7 +1422,7 @@ input::-webkit-inner-spin-button{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	min-height: 120px;
+	gap: 1rem;
 	flex-wrap: wrap;
 	margin-top: 3rem;
 }
@@ -1676,8 +1682,12 @@ input::-webkit-inner-spin-button{
 		max-width: 304px;
 	}
 
-	.card__img--inner, .salon__img--inner, .card__text--inner{
-		width: 49%;
+	.card__text--inner{
+		width: 60.5%;
+	}
+
+	.card__img--inner, .salon__img--inner{
+		width: 37.5%;
 	}
 }
 @media(max-width: 1470px){
@@ -1971,10 +1981,6 @@ input::-webkit-inner-spin-button{
 		padding: 1rem 2rem;
 	}
 
-	.salon__price--tags{
-		min-height: 150px;
-	}
-
 	.footer__inner{
 		flex-direction: column;
 		align-items: center;
@@ -1987,10 +1993,6 @@ input::-webkit-inner-spin-button{
 
 	.footer__auth{
 		margin-top: 1.5rem;
-	}
-
-	.main{
-		padding: 3.5rem 0;
 	}
 
 	.main__block--item, .salon__item{
@@ -2106,6 +2108,14 @@ input::-webkit-inner-spin-button{
 
 	.notfound__title{
 		font-size: 3.5rem;
+	}
+
+	.main__block, .main__title{
+		margin-top: 1.5rem;
+	}
+
+	.main{
+		padding: 2.5rem 0;
 	}
 
 	.notfound__img--inner:before{
@@ -2272,10 +2282,14 @@ input::-webkit-inner-spin-button{
 	.salon__programm--price{
 		text-align: right;
 	}
+
+	.main__block--item--img--wrapper{
+		margin: 0rem 1.5rem 0rem 0;
+	}
 }
 @media(max-width: 390px){
 	.main__block--item--img--wrapper{
-		max-width: 130px;
+		max-width: 145px;
 	}
 
 	.main__block--item--fav--button{
@@ -2284,6 +2298,11 @@ input::-webkit-inner-spin-button{
 
 	.card__text--info--item, .value .salon__programm--name, .value .salon__programm--time, .value .salon__programm--price{
 		font-size: 1.4rem;
+	}
+}
+@media(max-width: 365px){
+	.main__block--item--img--wrapper{
+		max-width: 125px;
 	}
 }
 @media(max-width: 345px){
