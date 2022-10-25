@@ -529,6 +529,11 @@ input::-webkit-inner-spin-button{
 	background: #fff;
 }
 
+.main__block--button--fav.active:hover{
+	color: #fff;
+	background: none;
+}
+
 .main__block--like{
 	display: flex;
 	align-items: center;
@@ -1364,9 +1369,10 @@ input::-webkit-inner-spin-button{
 }
 
 .card__text--info--item{
-	margin-top: 1.5rem;
+	margin-top: 1rem;
 	font-size: 2rem;
-	color: #fff;
+	color: rgba(255, 255, 255, .9);
+	line-height: 185%;
 }
 
 .bold{
@@ -1773,12 +1779,17 @@ input::-webkit-inner-spin-button{
 	border-radius: 4px;
 }
 
+.salon__param--inner{
+	padding: 3rem;
+}
+
 .card__point{
-	margin-top: 1.5rem;
+	margin-top: 1rem;
 	display: flex;
 	align-items: center;
 	color: #fff;
 	font-size: 2rem;
+	line-height: 185%;
 }
 
 .card__point--icon{
@@ -1848,7 +1859,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
 
 .card__uslugi--item:first-child{
@@ -1867,7 +1878,7 @@ input::-webkit-inner-spin-button{
 
 .card__uslugi--name{
 	color: #EB5757;
-	margin-top: 0.5rem;
+	margin-top: 0.8rem;
 }
 
 .card__uslugi--name:first-child{
@@ -1961,6 +1972,32 @@ input::-webkit-inner-spin-button{
 	color: #fff;
 }
 
+.salon__for{
+	display: flex;
+	align-items: flex-start;
+}
+
+.salon__for--item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-right: 2rem;
+	margin-right: 2rem;
+	border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.salon__for--item:last-child{
+	border-right: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.salon__for--item--text{
+	color: #fff;
+	text-align: center;
+	margin-top: 1rem;
+}
+
 /* Адаптив */
 @media(max-width: 1740px){
 	.container{
@@ -2028,6 +2065,10 @@ input::-webkit-inner-spin-button{
 @media(max-width: 1200px){
 	.container{
 		max-width: 978px;
+	}
+
+	.salon__for{
+		display: none;
 	}
 
 	.header__city, .header__nav--link{
@@ -2152,6 +2193,10 @@ input::-webkit-inner-spin-button{
 		display: flex;
 	}
 
+	.main__block--item{
+		padding: 1.2rem .7rem;
+	}
+
 	.main__block--info--wrapper{
 		width: 100%;
 		margin-top: 1rem;
@@ -2250,15 +2295,6 @@ input::-webkit-inner-spin-button{
 
 	.main__block--content{
 		gap: 10px;
-	}
-
-	.main__block--buttons{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.main__block--like{
-		margin-top: .7rem;
 	}
 
 	.header__mobiles{
@@ -2447,6 +2483,19 @@ input::-webkit-inner-spin-button{
 	.salon__blocks{
 		margin-top: 3rem;
 	}
+
+	.main__block--buttons{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.main__block--like{
+		margin-top: 0.7rem;
+	}
+
+	.salon__name--value{
+		font-size: 2.5rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -2613,12 +2662,17 @@ input::-webkit-inner-spin-button{
 	}
 
 	.salon__buttons--inner{
-		flex-direction: column;
-		align-items: flex-start;
+		flex-wrap: wrap;
 	}
 
 	.salon__button--fav, .salon__button--warn{
-		margin: 0rem 0rem 1rem 0;
+		padding: 0.8rem 1.3rem;
+		font-size: 1.3rem;
+	}
+
+	.salon__button--like{
+		margin-top: 1rem;
+		width: 100%;
 	}
 
 	.card__uslugi--item{
@@ -2658,10 +2712,23 @@ input::-webkit-inner-spin-button{
 		align-items: center;
 		justify-content: space-between;
 	}
+
+	.salon__name--value{
+		font-size: 2.2rem;
+	}
 }
 @media(max-width: 440px){
 	.main__block--item{
 		width: 100%;
+	}
+
+	.main__block--buttons{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.main__block--like{
+		margin-top: 0;
 	}
 }
 @media(max-width: 390px){
