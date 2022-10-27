@@ -35,18 +35,54 @@ $(document).ready(function(){
     $(window).resize(function(){
         if($(window).width() > 998){
             close();
+            menuHov();
 		}
 	});
 
-    $(".header__nav--link--inner .header__nav--link").on("click", function(e){
+    const menuHov = () => {
+        $(".header .header__nav--link--inner").on("mouseenter", function(){
+            $(this).addClass("active");
+            $(this).children(".header__nav--link").addClass("active");
+        });
+    
+        $(".header .header__nav--link--inner").on("mouseleave", function(){
+            $(this).removeClass("active");
+            $(this).children(".header__nav--link").removeClass("active");
+        });
+    }
+
+    if($(window).width() > 998){
+        menuHov();
+    }
+
+    $(".modal .header__nav--link--inner .header__nav--link").on("click", function(e){
         e.preventDefault();
         if(!$(this).hasClass("active")){
-            $(".header__nav--drop").removeClass("active");
-            $(".header__nav--link").removeClass("active");
+            $(".modal .header__nav--link--inner .header__nav--drop").removeClass("active");
+            $(".modal .header__nav--link--inner .header__nav--link").removeClass("active");
         }
         
         $(this).siblings(".header__nav--drop").toggleClass("active");
         $(this).toggleClass("active");
+    });
+
+    $(".header .header__nav--link--inner").on("click", function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+            $(this).children(".header__nav--link").removeClass("active");
+        }
+        else{
+            $(this).addClass("active");
+            $(this).children(".header__nav--link").addClass("active");
+        }
+    });
+
+    $(".header__city").on("mouseenter", function(){
+        $(this).addClass("active");
+    });
+
+    $(".header__city").on("mouseleave", function(){
+        $(this).removeClass("active");
     });
 
     // Кнопка наверх
