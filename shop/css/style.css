@@ -301,6 +301,10 @@ a.header__top--link:hover{
 	opacity: 1;
 }
 
+.header__bottom--link:hover{
+	color: #eb3833;
+}
+
 .header__logo{
 	display: flex;
 	width: 160px;
@@ -578,6 +582,97 @@ a.mobile__menu--link:hover{
 	text-transform: uppercase;
 }
 
+/* Contacts */
+.contact{
+	padding: 4rem 0;
+}
+
+.contact__inner{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.contact__form, .contact__content{
+	width: 100%;
+	max-width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.contact__content{
+	max-width: 35%;
+}
+
+.contact__title{
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.contact__form--content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 2rem;
+}
+
+.contact__form--input, .contact__form--textarea{
+	width: 100%;
+	margin-top: 1rem;
+	padding: 0.8rem 1.5rem;
+	border: 1px solid #ccc;
+}
+
+.contact__form--textarea{
+	height: 120px;
+	resize: none;
+}
+
+.contact__form--input:first-child{
+	margin-top: 0;
+}
+
+.contact__form--send{
+	margin-top: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	background: #f3585f;
+	padding: 1rem 3rem;
+	font-size: 1.6rem;
+	font-family: "Oswald", sans-serif;
+}
+
+.contact__form--send:hover{
+	background: #ca444b;
+}
+
+.contact__form--link{
+	display: flex;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.contact__form--link:first-child{
+	margin-top: 0;
+}
+
+.contact__form--link--icon--inner{
+	background: #f3585f;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+.contact__form--link--icon{
+	max-width: 60%;
+}
+
 /* Responsive */
 @media(max-width: 1200px){
 	.container{
@@ -664,6 +759,19 @@ a.mobile__menu--link:hover{
 
 	.header__menu{
 		display: block;
+	}
+
+	.contact__inner{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.contact__form, .contact__content{
+		max-width: 100%;
+	}
+
+	.contact__content{
+		margin-top: 3rem;
 	}
 }
 @media(max-width: 480px){
