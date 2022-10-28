@@ -1871,8 +1871,22 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	max-height: 600px;
+	max-height: 780px;
 	overflow-y: auto;
+}
+
+.card__uslugi--box::-webkit-scrollbar{
+	width: 5px;
+}
+
+.card__uslugi--box::-webkit-scrollbar-track{
+	background: #000;
+	border-radius: 5px;
+}
+
+.card__uslugi--box::-webkit-scrollbar-thumb{
+	background: #EB5757;
+	border-radius: 5px;
 }
 
 .card__uslugi--item, .card__uslugi--wrap{
