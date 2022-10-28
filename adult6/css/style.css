@@ -111,10 +111,7 @@ input::-webkit-inner-spin-button{
 .header__logo, .footer__logo--inner{
 	width: 112px;
 	display: flex;
-}
-
-.footer__logo--inner{
-	margin-right: 2rem;
+	margin-right: 1.5rem;
 }
 
 .header__logo--text, .footer__logo--text{
