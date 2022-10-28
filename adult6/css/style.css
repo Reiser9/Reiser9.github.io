@@ -260,7 +260,7 @@ input::-webkit-inner-spin-button{
 	overflow-y: auto;
 }
 
-.header__drop--link{
+.header__drop--link, .header__drop--wrapp{
 	width: 33%;
 	padding-right: 1rem;
 	margin-top: 1.5rem;
@@ -268,8 +268,26 @@ input::-webkit-inner-spin-button{
 	color: #fff;
 }
 
-.header__drop--link:hover{
+.header__drop--wrapp{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.header__drop--link:hover, .header__drop--wrapp--link:hover{
 	color: #EB5757;
+}
+
+.header__drop--wrapp--title{
+	width: 100%;
+	font-weight: 600;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 0.5rem;
+}
+
+.header__drop--wrapp--link{
+	margin-top: 1rem;
+	color: #fff;
 }
 
 /* Главная */
