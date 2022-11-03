@@ -452,6 +452,11 @@ input::-webkit-inner-spin-button{
 	margin-top: 0.5rem;
 }
 
+.contact__item--text a{
+	font-size: inherit;
+	color: #0052cc;
+}
+
 /* Modal menu */
 .modal__menu{
 	position: fixed;
