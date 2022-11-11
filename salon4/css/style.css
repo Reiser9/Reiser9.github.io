@@ -200,6 +200,14 @@ input::-webkit-inner-spin-button{
 }
 
 .main__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main__box{
+	width: 100%;
 	display: flex;
 	align-items: flex-start;
 }
@@ -715,6 +723,10 @@ input::-webkit-inner-spin-button{
 	font-weight: 600;
 }
 
+a.card__info--value:hover{
+	opacity: 0.5;
+}
+
 .card__info--phone--value{
 	font-size: 1.8rem;
 	color: #000;
@@ -800,6 +812,10 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: center;
 	margin-right: 2rem;
+}
+
+.card__button:hover{
+	opacity: 0.5;
 }
 
 .card__button:last-child{
@@ -1354,6 +1370,140 @@ input::-webkit-inner-spin-button{
 	border: 1px solid #0A20E6;
 }
 
+.maintext__block{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 3rem;
+}
+
+.maintext__title{
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
+.maintext__text{
+	margin-top: 1rem;
+}
+
+.maintext__text:first-child{
+	margin-top: 0;
+}
+
+.search__mob{
+	display: none;
+}
+
+.search__mob.active{
+	display: block;
+}
+
+.search__mob--inner{
+	position: relative;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.search__mob--input{
+	width: 100%;
+	padding: 1rem 2rem;
+	border-radius: 6px;
+	border: 1px solid #0A20E6;
+}
+
+.search__mob--button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	border: 1px solid #0A20E6;
+}
+
+/* Модалка городов */
+.modal__city{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background: rgba(0, 0, 0, .5);
+    overflow-x: hidden;
+    overflow-y: auto;
+	display: block;
+	opacity: 0;
+	transition: .2s linear;
+	pointer-events: none;
+}
+
+.modal__city.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal__city--inner{
+	width: 100%;
+    display: flex;
+    align-items: center;
+	max-width: 900px;
+    min-height: calc(100% - 3.5rem);
+    margin: 1.75rem auto;
+    justify-content: center;
+}
+
+.modal__city--content{
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.modal__city--wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.modal__city--cross{
+	cursor: pointer;
+}
+
+.modal__city--box{
+	width: 100%;
+	margin-top: 3rem;
+	overflow-y: auto;
+	max-height: 350px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.modal__city--link{
+	width: 50%;
+	padding: 0 0.5rem;
+	color: #000;
+	margin-top: 0.5rem;
+}
+
+.modal__city--link:hover{
+	color: #D9A319;
+}
+
+.modal__city--link:first-child, .modal__city--link:nth-child(2){
+	margin-top: 0;
+}
+
 /* Адаптив */
 @media(max-width: 1740px){
 	.container{
@@ -1604,6 +1754,14 @@ input::-webkit-inner-spin-button{
 	.card__model--item{
 		width: 31.55%;
 	}
+
+	.main__content{
+		align-items: center;
+	}
+
+	.modal__city--inner{
+		max-width: 670px;
+	}
 }
 @media(max-width: 768px){
 	.container{
@@ -1700,6 +1858,23 @@ input::-webkit-inner-spin-button{
 	.card__program--time{
 		text-align: left;
 	}
+
+	.modal__city--inner{
+		max-width: 90%;
+	}
+
+	.modal__city--link:nth-child(2){
+		margin-top: 0.5rem;
+	}
+
+	.modal__city--inner{
+		max-width: 90%;
+	}
+}
+@media(max-width: 500px){
+	.modal__city--link{
+		width: 100%;
+	}
 }
 @media(max-width: 520px){
 	.mobile__menu--wrapper{
@@ -1760,6 +1935,11 @@ input::-webkit-inner-spin-button{
 
 	.card__button--text{
 		flex-grow: 1;
+		text-align: right;
+	}
+
+	.card__review--button{
+		width: 100%;
 	}
 
 	.card__review--name--inner, .card__review--get--title--inner, .card__review--input--box{
@@ -1802,6 +1982,15 @@ input::-webkit-inner-spin-button{
 
 	.card__program--time, .card__program--price{
 		font-size: 1.6rem;
+	}
+
+	.card__button--fav .card__button--icon, .card__button--like .card__button--like--value, 
+	.card__button--warn .card__button--icon, .card__button--share .card__button--icon{
+		border-right: none;
+	}
+
+	.modal__city--box{
+		margin-top: 1.5rem;
 	}
 }
 @media(max-width: 375px){

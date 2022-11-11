@@ -19,10 +19,39 @@ $(document).ready(function(){
         }
     });
 
+    const open = () => {
+        $("body").addClass("scroll2");
+        $(".modal__city").addClass("active");
+    }
+
+    $(".city__button").on("click", function(e){
+        e.preventDefault();
+        open();
+    });
+
+    $(".modal__city").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal__city").removeClass("active");
+    });
+
+    $(".modal__city--content").on("click", function(e){
+        e.stopPropagation();
+    });
+
+    $(".modal__city--cross").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".modal__city").removeClass("active");
+    });
+
     // Поиск
     $(".search__mobile").on("click", function(e){
         e.preventDefault();
         $(".mobile__menu--search--inner").toggleClass("active");
+    });
+
+    $(".search__wrapper").on("click", function(e){
+        e.preventDefault();
+        $(".search__mob").toggleClass("active");
     });
 
     // Меню
