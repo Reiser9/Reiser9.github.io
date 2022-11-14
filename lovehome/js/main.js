@@ -25,6 +25,13 @@ $(document).ready(function(){
 		}
 	});
 
+    // Кнопка наверх
+    $(".up__button").on("click", function(e){
+        e.preventDefault();
+
+        $('body,html').animate({scrollTop: 0}, 400);
+    });
+
     $(".menu").on("click", function(){
         $("body").addClass("scroll");
         $(".modal__menu").addClass("active");
