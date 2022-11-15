@@ -49,6 +49,7 @@ a, button, input, textarea, select{
 	transition: .2s linear;
 	font-size: 1.6rem;
 	font-family: 'Gilroy', sans-serif;
+	padding: 0;
 }
 
 a{
@@ -786,30 +787,31 @@ input::-webkit-inner-spin-button{
 	background: #9f7610;
 }
 
-.card__review--content{
+.card__comment--box{
+	margin-top: 3rem;
 	width: 100%;
-	margin-top: 4rem;
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.card__review--content{
+	width: 49%;
 	display: flex;
 	flex-wrap: wrap;
+	overflow-y: auto;
+	max-height: 430px;
+	gap: 20px;
 }
 
 .card__review--item{
-	width: 23.87%;
-	margin: 2.4rem 2.4rem 0 0;
+	width: 48.5%;
 	background: #E5E6F3;
 	border-radius: 20px;
 	padding: 2.5rem 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-}
-
-.card__review--item:first-child, .card__review--item:nth-child(2), .card__review--item:nth-child(3), .card__review--item:nth-child(4){
-	margin-top: 0;
-}
-
-.card__review--item:nth-child(4n){
-	margin-right: 0;
 }
 
 .card__review--name{
@@ -1824,8 +1826,8 @@ input::-webkit-inner-spin-button{
 
 /* 404 */
 .notfound{
-	padding: 3rem 0;
-	min-height: 100vh;
+	padding: 5rem 0;
+	min-height: calc(100vh - 188px - 188px);
 	display: flex;
 	align-items: center;
 }
@@ -1860,9 +1862,7 @@ input::-webkit-inner-spin-button{
 
 /* Отзыв */
 .card__review--block{
-	width: 100%;
-	max-width: 500px;
-	margin-top: 2rem;
+	width: 49%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -1960,10 +1960,6 @@ input::-webkit-inner-spin-button{
 		width: 30px;
 	}
 
-	.card__review--item{
-		width: 23.47%;
-	}
-
 	.card__content--img--content{
 		max-width: 490px;
 	}
@@ -1986,6 +1982,10 @@ input::-webkit-inner-spin-button{
 
 	.card__salon--name{
 		font-size: 2.8rem;
+	}
+
+	.card__review--item{
+		width: 48%;
 	}
 }
 @media(max-width: 1200px){
@@ -2035,22 +2035,6 @@ input::-webkit-inner-spin-button{
 		margin: 0rem 0rem 2rem 0;
 	}
 
-	.card__review--item:nth-child(3n){
-		margin-right: 0;
-	}
-
-	.card__review--item:nth-child(4n){
-		margin-right: 2.4rem;
-	}
-
-	.card__review--item:nth-child(4){
-		margin-top: 2.4rem;
-	}
-
-	.card__review--item{
-		width: 31.69%;
-	}
-
 	.card__content{
 		flex-direction: column;
 		align-items: center;
@@ -2076,6 +2060,14 @@ input::-webkit-inner-spin-button{
 
 	.card__salon--img--content{
 		margin: 0rem 0rem 2.5rem 0;
+	}
+
+	.card__review--item{
+		width: 100%;
+	}
+
+	.card__review--content{
+		padding-right: 1rem;
 	}
 }
 @media(max-width: 998px){
@@ -2133,16 +2125,7 @@ input::-webkit-inner-spin-button{
 		font-size: 3.1rem;
 	}
 
-	.card__review--content{
-		justify-content: space-between;
-	}
-
-	.card__review--item, .card__review--item:nth-child(4), .card__review--item:nth-child(4n), .card__review--item:nth-child(3){
-		width: 49%;
-		margin: 1.5rem 0rem 0rem 0rem;
-	}
-
-	.card__review--content, .card__button{
+	.card__button{
 		margin-top: 2rem;
 	}
 
@@ -2264,23 +2247,6 @@ input::-webkit-inner-spin-button{
 		height: 300px;
 	}
 
-	.card__review--content{
-		flex-wrap: nowrap;
-		overflow-y: auto;
-		padding-bottom: 1rem;
-	}
-
-	.card__review--item, .card__review--item, .card__review--item:nth-child(2), .card__review--item:nth-child(4),
-	.card__review--item:nth-child(4n), .card__review--item:nth-child(3){
-		width: 90%;
-		flex-shrink: 0;
-		margin: 0 1.5rem 0 0;
-	}
-
-	.card__review--item:last-child{
-		margin-right: 0;
-	}
-
 	.card__review--name{
 		font-size: 2.1rem;
 	}
@@ -2382,6 +2348,19 @@ input::-webkit-inner-spin-button{
 	.salon__uslugi{
 		padding: 2.5rem;
 	}
+
+	.card__comment--box{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.card__review--content, .card__review--block{
+		width: 100%;
+	}
+
+	.card__review--block{
+		margin-top: 2rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -2467,10 +2446,6 @@ input::-webkit-inner-spin-button{
 
 	.card__map{
 		height: 230px;
-	}
-	
-	.card__review--item{
-		padding: 1.5rem;
 	}
 
 	.card__review--name{
