@@ -13,41 +13,33 @@ $(document).ready(function(){
     });
 
     // Меню
-    const close = () => {
-        $("body").removeClass("scroll");
-        $(".modal__menu").removeClass("active");
-    }
-
-    const open = () => {
-        $("body").addClass("scroll2");
-        $(".modal__city").addClass("active");
-    }
-
-    $(".menu__button").on("click", function(){
-        $("body").addClass("scroll");
-        $(".modal__menu").addClass("active");
-    });
-
-    $(".modal__cross").on("click", function(){
-        close();
-    });
-
-    $(window).resize(function(){
-        if($(window).width() > 998){
-			$(".search__mob").removeClass("active");
-            close();
-		}
-	});
-
-    $(".header__nav--link--inner .header__nav--link").on("click", function(e){
-        e.preventDefault();
-        if(!$(this).hasClass("active")){
-            $(".header__nav--drop").removeClass("active");
-            $(".header__nav--link").removeClass("active");
+    $(".menu__button--inner").on("click", function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+            $(".header__menu--icon").addClass("active");
+            $(".header__cross--icon").removeClass("active");
+            $(".header__drop").removeClass("active");
         }
-        
-        $(this).siblings(".header__nav--drop").toggleClass("active");
-        $(this).toggleClass("active");
+        else{
+            $(this).addClass("active");
+            $(".header__menu--icon").removeClass("active");
+            $(".header__cross--icon").addClass("active");
+            $(".header__drop").addClass("active");
+        }
+    });
+
+    $(".header__drop--nav--link").on("click", function(e){
+        e.preventDefault();
+
+        if(!$(this).hasClass("active")){
+            $(".header__drop--nav--link").removeClass("active");
+            $(this).addClass("active");
+
+            let index = $(this).index();
+
+            $(".header__drop--content--item").removeClass("active");
+            $(".header__drop--content--item").eq(index).addClass("active");
+        }
     });
 
     // Кнопка наверх
