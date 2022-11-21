@@ -26,7 +26,22 @@ $(document).ready(function(){
 	});
 
     // Кнопка наверх
-    $(".up__button").on("click", function(e){
+    const ofset = () => {
+        if($(window).scrollTop() > 100){
+            $(".up__button").addClass("active");
+        }
+        else{
+            $(".up__button").removeClass("active");
+        }
+    }
+
+    $(window).scroll(function(){
+        ofset();
+    });
+
+    ofset();
+
+    $(".up").on("click", function(e){
         e.preventDefault();
 
         $('body,html').animate({scrollTop: 0}, 400);
