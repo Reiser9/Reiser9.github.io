@@ -13,7 +13,8 @@ $(document).ready(function(){
     });
 
     // Меню
-    $(".menu__button--inner").on("click", function(){
+    $(".menu__button--inner").on("click", function(e){
+        e.stopPropagation();
         if($(this).hasClass("active")){
             $(this).removeClass("active");
             $(".header__menu--icon").addClass("active");
@@ -28,6 +29,19 @@ $(document).ready(function(){
         }
     });
 
+    $(document).click(function(){
+        if($(".menu__button--inner").hasClass("active")){
+            $(".menu__button--inner").removeClass("active");
+            $(".header__menu--icon").addClass("active");
+            $(".header__cross--icon").removeClass("active");
+            $(".header__drop").removeClass("active");
+        }
+    });
+
+    $(".header__drop").on("click", function(e){
+        e.stopPropagation();
+    });
+
     $(".header__drop--nav--link").on("click", function(e){
         e.preventDefault();
 
@@ -39,6 +53,11 @@ $(document).ready(function(){
 
             $(".header__drop--content--item").removeClass("active");
             $(".header__drop--content--item").eq(index).addClass("active");
+        }
+        else{
+            $(this).removeClass("active");
+            let index = $(this).index();
+            $(".header__drop--content--item").eq(index).removeClass("active");
         }
     });
 
