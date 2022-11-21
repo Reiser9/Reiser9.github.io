@@ -539,7 +539,7 @@ input::-webkit-inner-spin-button{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .main__item--price--name{
@@ -829,7 +829,6 @@ input::-webkit-inner-spin-button{
 
 .card__content--info{
 	width: 100%;
-	max-width: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -1683,7 +1682,7 @@ input::-webkit-inner-spin-button{
 	align-items: center;
 	justify-content: center;
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: 700;
 	color: #2F80ED;
 	text-decoration: underline;
 }
@@ -2488,6 +2487,12 @@ input::-webkit-inner-spin-button{
 	.card__content--info .main__item--price--name, .card__content--info .main__item--price--text{
 		font-size: 1.2rem;
 
+	}
+}
+@media(max-width: 400px){
+	.main__item--img--inner{
+		width: 100%;
+		height: auto;
 	}
 }
 @media(max-width: 390px){
