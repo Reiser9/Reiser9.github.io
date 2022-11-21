@@ -134,6 +134,10 @@ input::-webkit-inner-spin-button{
 	display: flex;
 }
 
+.header__drop--content--item.mobile{
+	display: none;
+}
+
 .header__drop--nav--link{
 	width: 100%;
 	display: flex;
@@ -148,6 +152,10 @@ input::-webkit-inner-spin-button{
 
 .header__drop--nav--link.active .header__drop--nav--link--icon{
 	transform: rotate(-90deg);
+}
+
+.header__drop--nav--link.mobile{
+	display: none;
 }
 
 .header__drop--content--link{
@@ -2264,6 +2272,10 @@ input::-webkit-inner-spin-button{
 	.header__drop--content--link{
 		width: 100%;
 		font-size: 1.4rem;
+	}
+
+	.header__drop--nav--link.mobile, .header__drop--content--item.mobile{
+		display: flex;
 	}
 }
 @media(max-width: 480px){
