@@ -577,13 +577,12 @@ input::-webkit-inner-spin-button{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .main__item--price--name{
 	font-size: 1.2rem;
 	color: rgba(0, 0, 0, .5);
-	min-width: 39%;
+	min-width: 35%;
 }
 
 .card__content--info .main__item--price--name, .card__content--info .main__item--price--text{
@@ -606,7 +605,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: center;
 	font-size: 1.2rem;
-	min-width: 39%;
+	min-width: 35%;
 	border-right: 10px solid #fff;
 	padding: 0.3rem;
 }
@@ -620,7 +619,7 @@ input::-webkit-inner-spin-button{
 }
 
 .main__item--price--text:first-child, .main__item--price--name:first-child{
-	min-width: 22%;
+	min-width: 28%;
 }
 
 .main__item--price--title{
@@ -902,6 +901,7 @@ input::-webkit-inner-spin-button{
 	width: 49.1%;
 	padding: 0.25rem 0.5rem;
 	background: rgba(224, 224, 224, .5);
+	font-size: 1.4rem;
 }
 
 .card__param--item a{
