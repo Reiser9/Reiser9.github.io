@@ -88,6 +88,10 @@ $(document).ready(function(){
         $(".card__reviews--leave").removeClass("active");
     });
 
+    $(".header__city").on("click", function(){
+        $(this).toggleClass("active");
+    });
+
     // Слайдеры
 	$(".salon__item--img--slider").slick({
         slidesToShow: 1,
@@ -111,7 +115,7 @@ $(document).ready(function(){
     });
 
     $(".card__slider--small").slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         vertical: true,
