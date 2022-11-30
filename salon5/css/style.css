@@ -380,6 +380,7 @@ a.main__breadcrumb--link:hover{
 .main__content{
 	width: 100%;
 	margin-top: 2rem;
+	padding: 0;
 }
 
 .main__item{
@@ -735,9 +736,9 @@ a.paggin__active{
 
 .card__adv{
 	width: 100%;
-	flex-wrap: wrap;
+	display: flex;
 	justify-content: center;
-	gap: 25px;
+	row-gap: 25px;
 }
 
 .card__adv--item{
@@ -752,6 +753,7 @@ a.paggin__active{
 .card__wrapper{
 	width: 100%;
 	display: flex;
+	padding: 0;
 	align-items: flex-start;
 	gap: 20px;
 	justify-content: space-between;
@@ -1221,10 +1223,6 @@ a.paggin__active{
 	}
 }
 @media(max-width: 1200px){
-	.container{
-		max-width: 978px;
-	}
-
 	.salon__item--content{
 		flex-wrap: wrap;
 	}
@@ -1258,10 +1256,6 @@ a.paggin__active{
 	}
 }
 @media(max-width: 998px){
-	.container{
-		max-width: 748px;
-	}
-
 	.notfound{
 		gap: 20px;
 	}
@@ -1311,10 +1305,6 @@ a.paggin__active{
 	}
 }
 @media(max-width: 768px){
-	.container{
-		max-width: 460px;
-	}
-
 	.salon__item--info{
 		width: 100%;
 	}
@@ -1385,10 +1375,6 @@ a.paggin__active{
 	}
 }
 @media(max-width: 480px){
-	.container{
-		max-width: 90%;
-	}
-	
 	.notfound__title{
 		font-size: 3rem;
 	}
@@ -1460,5 +1446,10 @@ a.paggin__active{
 
 	.header__logo{
 		width: 120px;
+	}
+}
+@media(max-width: 575px){
+	.container{
+		max-width: 95%;
 	}
 }
