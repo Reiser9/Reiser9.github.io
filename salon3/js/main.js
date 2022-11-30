@@ -61,6 +61,22 @@ $(document).ready(function(){
         }
     });
 
+    $(".header__drop--nav--link--mobile").on("click", function(e){
+        e.preventDefault();
+        
+        if(!$(this).hasClass("active")){
+            $(".header__drop--nav--link--mobile").removeClass("active");
+            $(this).addClass("active");
+
+            $(".header__drop--content--item--mobile").removeClass("active");
+            $(this).next(".header__drop--content--item--mobile").addClass("active");
+        }
+        else{
+            $(this).removeClass("active");
+            $(this).next(".header__drop--content--item--mobile").removeClass("active");
+        }
+    });
+
     // Кнопка наверх
     const ofset = () => {
         if($(window).scrollTop() > 100){
