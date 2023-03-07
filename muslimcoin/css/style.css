@@ -240,7 +240,7 @@ input::-webkit-inner-spin-button{
 
 .main__token--text span{
 	font-weight: 700;
-	color: #EEA922;
+	color: #CD943E;
 }
 
 .main__token--event--inner{
@@ -302,7 +302,7 @@ input::-webkit-inner-spin-button{
 }
 
 .main__token--img--text--inner span{
-	color: #eea922;
+	color: #CD943E;
 }
 
 /* Pillars */
@@ -387,7 +387,7 @@ input::-webkit-inner-spin-button{
 }
 
 .pillars__point span{
-	color: #EEA922;
+	color: #CD943E;
 	font-weight: 700;
 }
 
@@ -491,7 +491,7 @@ input::-webkit-inner-spin-button{
 .aboutpoints__item--title{
 	font-size: 2.4rem;
 	font-weight: 800;
-	color: #EEA922;
+	color: #CD943E;
 }
 
 .aboutpoints__item--text{
@@ -739,7 +739,7 @@ input::-webkit-inner-spin-button{
 
 .donate__text span{
 	font-weight: 800;
-	background: #EEA922;
+	background: #CD943E;
 	border-radius: 5px;
 	padding: 2px 5px;
 }
@@ -814,7 +814,7 @@ input::-webkit-inner-spin-button{
 }
 
 .box__grid--item--text{
-	background: #EA8F2C;
+	background: #CD943E;
 	padding: 0.7rem 1.2rem;
 	border-radius: 5px;
 	color: #2B2823;
@@ -1326,7 +1326,7 @@ input::-webkit-inner-spin-button{
 }
 
 .faq__item--title span{
-	color: #EA8F2C;
+	color: #CD943E;
 }
 
 .faq__item--title--inner:hover{
