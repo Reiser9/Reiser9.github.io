@@ -28,11 +28,31 @@ $(document).ready(function(){
 
         if($(this).hasClass("active")){
             $(this).removeClass("active");
+            $(".steps__drop").removeClass("active");
         }
         else{
             $(".steps__item").removeClass("active");
             $(this).addClass("active");
+
+            $(".steps__drop").removeClass("active");
+            const index = $(this).index();
+            $(".steps__drop").eq(index).addClass("active");
         }
+    });
+
+    // Слайдеры
+    $(".mainblock__slider").slick({
+        arrows: false,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.mainblock__bg--slider'
+    });
+
+    $(".mainblock__bg--slider").slick({
+        arrows: false,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.mainblock__slider'
     });
 
 });

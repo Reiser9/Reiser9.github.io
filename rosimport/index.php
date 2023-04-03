@@ -2,9 +2,121 @@
 
 <main class="main w100">
     <section class="mainblock w100">
+        <div class="mainblock__bg--slider">
+            <div class="mainblock__bg--inner">
+                <img src="img/slider1.jpg" alt="img" class="mainblock__bg">
+            </div>
+
+            <div class="mainblock__bg--inner">
+                <img src="img/slider2.jpg" alt="img" class="mainblock__bg">
+            </div>
+
+            <div class="mainblock__bg--inner">
+                <img src="img/slider3.jpg" alt="img" class="mainblock__bg">
+            </div>
+
+            <div class="mainblock__bg--inner">
+                <img src="img/slider4.jpg" alt="img" class="mainblock__bg">
+            </div>
+
+            <div class="mainblock__bg--inner">
+                <img src="img/slider5.jpg" alt="img" class="mainblock__bg">
+            </div>
+        </div>
+
         <div class="container">
             <div class="mainblock__inner">
+                <div class="mainblock__slider">
+                    <div class="mainblock__item">
+                        <div class="mainblock__item--content">
+                            <p class="text semibold mainblock__item--suptext">
+                                ДОСТАВКА ГРУЗА ИЗ КИТАЯ В РОССИЮ
+                            </p>
 
+                            <h1 class="h1 main__title">Международная перевозка грузов</h1>
+
+                            <p class="text2 main__subtitle">
+                                Наши услуги заключаются в оптимизации транспортировки груза от поставщиков в Китае. Мы будем вести ваш груз «за ручку»
+                            </p>
+
+                            <button class="button main__button">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainblock__item">
+                        <div class="mainblock__item--content">
+                            <p class="text semibold mainblock__item--suptext">
+                                АВИА И ЭКСПРЕСС ДОСТАВКА
+                            </p>
+
+                            <h1 class="h1 main__title">Авиа грузоперевозки</h1>
+
+                            <p class="text2 main__subtitle">
+                                Авиа грузы из Китая в Россию. Обычная и экспресс доставка в кратчайшие сроки. Постоянные перевозки в течении 10 лет.
+                            </p>
+
+                            <button class="button main__button">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainblock__item">
+                        <div class="mainblock__item--content">
+                            <p class="text semibold mainblock__item--suptext">
+                                контейнеры из Китая
+                            </p>
+
+                            <h1 class="h1 main__title">ЖД перевозки</h1>
+
+                            <p class="text2 main__subtitle">
+                                Доступность ЖД транспорта в крупных городах позволяет уменьшить сроки доставки груза
+                            </p>
+
+                            <button class="button main__button">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainblock__item">
+                        <div class="mainblock__item--content">
+                            <p class="text semibold mainblock__item--suptext">
+                                МОРСКИЕ КОНТЕЙНЕРЫ
+                            </p>
+
+                            <h1 class="h1 main__title">Морские грузоперевозки</h1>
+
+                            <p class="text2 main__subtitle">
+                                Уменьшение расходов на доставке при выборе морского транспорта
+                            </p>
+
+                            <button class="button main__button">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainblock__item">
+                        <div class="mainblock__item--content">
+                            <p class="text semibold mainblock__item--suptext">
+                                АВТОТРАНСПОРТНАЯ ДОСТАВКА
+                            </p>
+
+                            <h1 class="h1 main__title">Авто грузоперевозки</h1>
+
+                            <p class="text2 main__subtitle">
+                                Оптимальное соотношение цены, сроков для близких и дальних расстояний, всегда востребованный для перевозок товаров любых типов из Китая
+                            </p>
+
+                            <button class="button main__button">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -126,7 +238,7 @@
                             1 Этап
                         </div>
 
-                        <p class="text semibold">Получение вашего груза в Китае</p>
+                        <p class="text semibold">Заявка и согласование условий</p>
                     </div>
 
                     <div class="steps__item">
@@ -155,12 +267,12 @@
                             3 Этап
                         </div>
 
-                        <p class="text semibold">Получение вашего груза в Китае</p>
+                        <p class="text semibold">Доставка в Россию и прохождение таможни</p>
                     </div>
 
                     <div class="steps__item">
                         <div class="steps__item--icon--inner">
-                            <svg class="steps__item--icon" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="steps__item--icon--stroke" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_162_798)">
                                 <path d="M1 2H2.93333C3.95882 2 4.94232 2.40738 5.66746 3.13252C6.3926 3.85765 6.79998 4.84115 6.79998 5.86665V25.1999C6.79998 26.2254 7.20735 27.2089 7.93249 27.934C8.65763 28.6592 9.64113 29.0666 10.6666 29.0666H39.6665" stroke="#00548F" stroke-width="2" stroke-linecap="square"/>
                                 <path d="M14.5336 36.8002C16.6691 36.8002 18.4003 35.069 18.4003 32.9335C18.4003 30.7981 16.6691 29.0669 14.5336 29.0669C12.3982 29.0669 10.667 30.7981 10.667 32.9335C10.667 35.069 12.3982 36.8002 14.5336 36.8002Z" stroke="#00548F" stroke-width="2" stroke-linecap="square"/>
@@ -180,7 +292,79 @@
                             4 Этап
                         </div>
 
-                        <p class="text semibold">Получение вашего груза в Китае</p>
+                        <p class="text semibold">Доставка “До двери”</p>
+                    </div>
+
+                    <div class="steps__drop">
+                        <div class="steps__drop--item">
+                            Заявка/запрос
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Расчет стоимости
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Согласование условий и пожеланий
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Подписание договора
+                        </div>
+                    </div>
+
+                    <div class="steps__drop">
+                        <div class="steps__drop--item">
+                            Отправка груза поставщиком к нам на склад в Китае
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Получение груза на нашем складе (Китай)
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Уведомление о получении
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Упаковка груза
+                        </div>
+                    </div>
+
+                    <div class="steps__drop">
+                        <div class="steps__drop--item">
+                            Подготовка экспортно-импортных документов
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Погрузка/опломбирование и отправка на затаможку
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Доставка
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Подача документов на таможню/растаможка
+                        </div>
+                    </div>
+
+                    <div class="steps__drop">
+                        <div class="steps__drop--item">
+                            Выгрузка на нашем складе/Перевешивание груза
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Информирование о готовности груза
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Выдача (отправка по РФ)
+                        </div>
+
+                        <div class="steps__drop--item">
+                            Оплата
+                        </div>
                     </div>
                 </div>
             </div>
