@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>ЦХМ</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top--inner">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" alt="logo" class="img">
+					</a>
+
+					<div class="header__wrap">
+						<div class="header__phone--inner">
+							<a href="tel:+74953238887" class="header__phone">
+								+7 (495) 323-88-87
+							</a>
+	
+							<button class="button header__call--button">
+								<img src="img/phone.svg" alt="phone" class="header__call--icon">
+	
+								Заказать обратный звонок
+							</button>
+						</div>
+
+						<div class="menu__wrap">
+							<img src="img/menu.svg" alt="menu" class="menu active">
+							<img src="img/close.svg" alt="cross" class="cross">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header__bottom--inner">
+					<ul class="header__menu">
+						<li><a href="#">Хоккейная школа</a></li>
+						<li><a href="#">Аренда</a></li>
+						<li><a href="#">Индивидуальные тренировки</a></li>
+						<li><a href="#">Тренеры</a></li>
+						<li>
+							<a href="#">О центре</a>
+							
+							<ul class="sub-menu">
+								<li><a href="#">О школе и нашем центре</a></li>
+								<li><a href="#">Строительство спортобъектов</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+								<li><a href="#">Управляющая компания</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Интернет магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<video autoplay muted loop class="main__video">
+			<source src="img/1.mp4" type="video/mp4">
+		</video>
+
+		<button class="button main__next--block">
+			<img src="img/mouse.svg" alt="mouse" class="img">
+		</button>
+
+		<div class="container">
+			<div class="main__inner">
+				<img src="img/grid.png" alt="grid" class="main__grid--bg">
+
+				<div class="main__symbol--inner">
+					<img src="img/lion.svg" alt="lion" class="img">
+				</div>
+
+				<h1 class="main__title">
+					Станьте частью команды!
+				</h1>
+
+				<p class="main__subtitle">
+					Оставьте свои данные, мы свяжемся с Вами и запишем на тренировку
+				</p>
+
+				<div class="main__form">
+					<div class="main__form--input--inner">
+						<input type="text" class="input default__input white" placeholder="Ваш телефон *">
+					</div>
+
+					<button class="button default__button main__form--button modal__button" data-modal="call">
+						Записаться
+					</button>
+				</div>
+
+				<div class="main__img--inner">
+					<img src="img/gamestart.svg" alt="img" class="img">
+				</div>
+
+				<p class="main__agree">
+					Заполняя и отправляя форму, Вы даете <a href="#">Согласие на обработку персональных данных</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="content">
+		<img src="img/lion-bg.svg" alt="lion" class="content__bg">
+
+		<div class="container">
+			<div class="content__inner">
+				<div class="welcome">
+					<img src="img/about-bg.png" alt="img" class="welcome__bg">
+
+					<div class="welcome__wrap">
+						<p class="welcome__wrap--text">
+							Львы ЦХМ приглашают в команду!
+						</p>
+
+						<div class="welcome__wrap--img">
+							<img src="img/lion.svg" alt="lion" class="img">
+						</div>
+
+						<p class="welcome__wrap--text">
+							Идет набор игроков 2014-2020 г.р.
+						</p>
+					</div>
+
+					<button class="button default__button welcome__button">
+						Подробнее...
+					</button>
+				</div>
+
+				<div class="default__padding points">
+					<h3 class="title">
+						Почему хоккей для ребенка - это ПОЛЕЗНО!
+					</h3>
+
+					<div class="points__content">
+						<div class="points__item">
+							<div class="points__item--icon">
+								<img src="img/point1.svg" alt="icon" class="img">
+							</div>
+
+							<p class="points__item--text">
+								Укрепляет здоровье и иммунитет, тренирует силу и выносливость
+							</p>
+
+							<button class="button points__item--button">
+								Узнать больше...
+							</button>
+						</div>
+
+						<div class="points__item">
+							<div class="points__item--icon">
+								<img src="img/point2.svg" alt="icon" class="img">
+							</div>
+
+							<p class="points__item--text">
+								Вырабатывает самостоятельность и дисциплину
+							</p>
+
+							<button class="button points__item--button">
+								Узнать больше...
+							</button>
+						</div>
+
+						<div class="points__item">
+							<div class="points__item--icon">
+								<img src="img/point3.svg" alt="icon" class="img">
+							</div>
+
+							<p class="points__item--text">
+								Учит коммуникациям, навыкам общения, взаимовыручки и поддержки
+							</p>
+
+							<button class="button points__item--button">
+								Узнать больше...
+							</button>
+						</div>
+
+						<div class="points__item">
+							<div class="points__item--icon">
+								<img src="img/point4.svg" alt="icon" class="img">
+							</div>
+
+							<p class="points__item--text">
+								Борется с ленью и агрессией, учит настоящей дружбе и закаляет характер
+							</p>
+
+							<button class="button points__item--button">
+								Узнать больше...
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="default__padding points">
+					<h3 class="title">
+						Арена ЦХМ
+					</h3>
+
+					<div class="arena__slider--inner">
+						<div class="arena__slider swiper">
+							<div class="arena__arrow arena__next">
+								<img src="img/next-arena.svg" alt="next" class="arena__arrow--icon">
+							</div>
+	
+							<div class="arena__arrow arena__prev">
+								<img src="img/prev-arena.svg" alt="prev" class="arena__arrow--icon">
+							</div>
+
+							<div class="swiper-wrapper">
+								<div class="arena__slider--item swiper-slide">
+									<img src="img/our.jpg" alt="our" class="arena__slider--item--img">
+								</div>
+
+								<div class="arena__slider--item swiper-slide">
+									<img src="img/our.jpg" alt="our" class="arena__slider--item--img">
+								</div>
+
+								<div class="arena__slider--item swiper-slide">
+									<img src="img/our.jpg" alt="our" class="arena__slider--item--img">
+								</div>
+
+								<div class="arena__slider--item swiper-slide">
+									<img src="img/our.jpg" alt="our" class="arena__slider--item--img">
+								</div>
+
+								<div class="arena__slider--item swiper-slide">
+									<img src="img/our.jpg" alt="our" class="arena__slider--item--img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="default__padding points">
+					<h3 class="title">
+						Вы будете гордиться своим ребенком!
+					</h3>
+
+					<div class="reviews__content">
+						<div class="reviews__slider--content">
+							<img src="img/prev-blue.svg" alt="prev" class="reviews__arrow reviews__prev">
+							<img src="img/next-blue.svg" alt="next" class="reviews__arrow reviews__next">
+							
+							<div class="reviews__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="reviews__item swiper-slide">
+										<div class="faq__coach--img--inner">
+											<img src="img/review.png" alt="review" class="faq__coach--img">
+										</div>
+		
+										<div class="reviews__item--content">
+											<div class="reviews__item--wrap">
+												<p class="reviews__item--name">
+													Наталья
+												</p>
+		
+												<p class="reviews__item--role">
+													сын Иван, 5 лет
+												</p>
+											</div>
+		
+											<p class="review__item--text">
+												Обожаю это место не только я, но и мой ребенок! На хоккей ходим с огромным удовольствием! Прекрасная парковка, есть место где можно отдохнуть, пока ждешь ребенка и даже перекусить. При входе красивый музей.
+											</p>
+										</div>
+									</div>
+
+									<div class="reviews__item swiper-slide">
+										<div class="faq__coach--img--inner">
+											<img src="img/review.png" alt="review" class="faq__coach--img">
+										</div>
+		
+										<div class="reviews__item--content">
+											<div class="reviews__item--wrap">
+												<p class="reviews__item--name">
+													Наталья
+												</p>
+		
+												<p class="reviews__item--role">
+													сын Иван, 5 лет
+												</p>
+											</div>
+		
+											<p class="review__item--text">
+												Обожаю это место не только я, но и мой ребенок! На хоккей ходим с огромным удовольствием! Прекрасная парковка, есть место где можно отдохнуть, пока ждешь ребенка и даже перекусить. При входе красивый музей.
+											</p>
+										</div>
+									</div>
+		
+									<div class="reviews__item swiper-slide">
+										<div class="faq__coach--img--inner">
+											<img src="img/review.png" alt="review" class="faq__coach--img">
+										</div>
+		
+										<div class="reviews__item--content">
+											<div class="reviews__item--wrap">
+												<p class="reviews__item--name">
+													Наталья
+												</p>
+		
+												<p class="reviews__item--role">
+													сын Иван, 5 лет
+												</p>
+											</div>
+		
+											<p class="review__item--text">
+												Обожаю это место не только я, но и мой ребенок! На хоккей ходим с огромным удовольствием! Прекрасная парковка, есть место где можно отдохнуть, пока ждешь ребенка и даже перекусить. При входе красивый музей.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button class="button points__item--button">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 22C8.4 22 8 21.6 8 21V18H4C2.9 18 2 17.1 2 16V4C2 2.9 2.9 2 4 2H20C21.1 2 22 2.9 22 4V16C22 17.1 21.1 18 20 18H13.9L10.2 21.7C10 21.9 9.8 22 9.5 22H9ZM10 16V19.1L13.1 16H20V4H4V16H10Z" fill="#006AB3"/>
+							</svg>
+
+							Отправить Ваш отзыв
+						</button>
+					</div>
+				</div>
+
+				<div class="default__padding points">
+					<h3 class="title">
+						Ответы на вопросы родителей
+					</h3>
+
+					<div class="faq__inner">
+						<div class="faq__content">
+							<div class="faq__items">
+								<div class="faq__item">
+									<div class="faq__item--question">
+										<p class="faq__item--question--text">
+											Со скольки лет можно отдавать ребенка в хоккейную школу?
+										</p>
+
+										<img src="img/faq-arrow.svg" alt="arrow" class="faq__item--icon">
+									</div>
+
+									<div class="faq__item--answer">
+										Набор детей в 4-5 лет в оздоровительные группы проводится круглогодично. Изначально в процессе подготовки упор делается на обучение катанию на коньках. Развитие ловкости и гибкости происходит во время занятий вне льда, есть тренер по акробатике, проводятся тренировки в бросковой зоне. На первоначальном этапе самое важное — сохранить у ребёнка желание заниматься хоккеем и посещать тренировки, научить ребёнка учиться
+									</div>
+								</div>
+
+								<div class="faq__item">
+									<div class="faq__item--question">
+										<p class="faq__item--question--text">
+											Как часто у вас проводится набор в детские группы?
+										</p>
+
+										<img src="img/faq-arrow.svg" alt="arrow" class="faq__item--icon">
+									</div>
+
+									<div class="faq__item--answer">
+										Набор детей в 4-5 лет в оздоровительные группы проводится круглогодично. Изначально в процессе подготовки упор делается на обучение катанию на коньках. Развитие ловкости и гибкости происходит во время занятий вне льда, есть тренер по акробатике, проводятся тренировки в бросковой зоне. На первоначальном этапе самое важное — сохранить у ребёнка желание заниматься хоккеем и посещать тренировки, научить ребёнка учиться
+									</div>
+								</div>
+
+								<div class="faq__item">
+									<div class="faq__item--question">
+										<p class="faq__item--question--text">
+											Сколько раз в неделю лучше посещать тренировки для детей 3-х лет?
+										</p>
+
+										<img src="img/faq-arrow.svg" alt="arrow" class="faq__item--icon">
+									</div>
+
+									<div class="faq__item--answer">
+										Набор детей в 4-5 лет в оздоровительные группы проводится круглогодично. Изначально в процессе подготовки упор делается на обучение катанию на коньках. Развитие ловкости и гибкости происходит во время занятий вне льда, есть тренер по акробатике, проводятся тренировки в бросковой зоне. На первоначальном этапе самое важное — сохранить у ребёнка желание заниматься хоккеем и посещать тренировки, научить ребёнка учиться
+									</div>
+								</div>
+
+								<div class="faq__item">
+									<div class="faq__item--question">
+										<p class="faq__item--question--text">
+											Как понять готов ли ребенок к групповым тренировкам или нет?
+										</p>
+
+										<img src="img/faq-arrow.svg" alt="arrow" class="faq__item--icon">
+									</div>
+
+									<div class="faq__item--answer">
+										Набор детей в 4-5 лет в оздоровительные группы проводится круглогодично. Изначально в процессе подготовки упор делается на обучение катанию на коньках. Развитие ловкости и гибкости происходит во время занятий вне льда, есть тренер по акробатике, проводятся тренировки в бросковой зоне. На первоначальном этапе самое важное — сохранить у ребёнка желание заниматься хоккеем и посещать тренировки, научить ребёнка учиться
+									</div>
+								</div>
+
+								<div class="faq__item">
+									<div class="faq__item--question">
+										<p class="faq__item--question--text">
+											Если во время тренировки ребенок начинает плакать, что делать?
+										</p>
+
+										<img src="img/faq-arrow.svg" alt="arrow" class="faq__item--icon">
+									</div>
+
+									<div class="faq__item--answer">
+										Набор детей в 4-5 лет в оздоровительные группы проводится круглогодично. Изначально в процессе подготовки упор делается на обучение катанию на коньках. Развитие ловкости и гибкости происходит во время занятий вне льда, есть тренер по акробатике, проводятся тренировки в бросковой зоне. На первоначальном этапе самое важное — сохранить у ребёнка желание заниматься хоккеем и посещать тренировки, научить ребёнка учиться
+									</div>
+								</div>
+							</div>
+
+							<div class="faq__buttons">
+								<button class="button faq__button faq__prev">
+									Назад
+								</button>
+
+								<button class="button faq__button active faq__next">
+									Далее
+								</button>
+							</div>
+						</div>
+
+						<div class="faq__wrap">
+							<div class="faq__coach--img--inner">
+								<img src="img/coach.png" alt="coach" class="faq__coach--img">
+							</div>
+
+							<p class="coach__name">
+								Олег Валерьевич Знарок
+							</p>
+
+							<p class="coach__role">
+								Главный тренер ЦХМ
+							</p>
+
+							<button class="button default__button coach__question--button">
+								Задать вопрос
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="default__padding points">
+					<h3 class="title">
+						Покупайте хоккейную форму и клубную атрибутику со скидкой!
+					</h3>
+
+					<div class="suite__inner">
+						<div class="suite__img--inner">
+							<img src="img/suite.png" alt="img" class="img">
+						</div>
+	
+						<p class="suite__text">
+							Для всех наших клиентов, купивших абонемент действует скидка 10% на хоккейную экипировку и другие товары в нашем интернет-магазине!
+						</p>
+	
+						<a href="/" class="suite__link">shop.hockey-chm.ru</a>
+					</div>
+				</div>
+
+				<div class="partners">
+					<h3 class="title">
+						При поддержке
+					</h3>
+
+					<div class="partners__content">
+						<a href="#" class="partners__link">
+							<img src="img/partner1.svg" alt="partner" class="partners__img">
+						</a>
+
+						<a href="#" class="partners__link">
+							<img src="img/partner2.png" alt="partner" class="partners__img">
+						</a>
+
+						<a href="#" class="partners__link">
+							<img src="img/partner3.png" alt="partner" class="partners__img">
+						</a>
+
+						<a href="#" class="partners__link">
+							<img src="img/partner4.png" alt="partner" class="partners__img">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="where">
+		<div class="container">
+			<div class="where__inner">
+				<h3 class="title">
+					Где мы находимся?
+				</h3>
+			</div>
+		</div>
+
+		<div class="where__map">
+			<iframe src="https://yandex.ru/map-widget/v1/?ll=37.355337%2C55.840849&mode=search&oid=129140847633&ol=biz&z=17.09" class="where__map--map"></iframe>
+		</div>
+	</section>
+
+	<section class="form">
+		<img src="img/question-bg.jpg" alt="bg" class="form__bg">
+
+		<div class="container">
+			<div class="form__inner">
+				<h3 class="title white">
+					Остались вопросы?
+				</h3>
+
+				<div class="form__text--inner">
+					<p class="form__text">
+						Звоните по телефону <a href="tel:74953238887">+7 (495) 323-88-87</a> или заполните форму и наш менеджер свяжется с Вами!
+					</p>
+				</div>
+
+				<div class="form__content">
+					<div class="form__content--input--inner">
+						<input type="text" class="input default__input white" placeholder="Ваше имя *">
+					</div>
+
+					<div class="form__content--input--inner">
+						<input type="text" class="input default__input white" placeholder="Ваш телефон *">
+					</div>
+
+					<button class="button default__button form__content--button">
+						Отправить
+					</button>
+				</div>
+
+				<p class="form__agree">
+					Заполняя и отправляя форму, Вы даете <a href="#">Согласие на обработку персональных данных</a>
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__left">
+					<a href="/" class="footer__logo">
+						<img src="img/logo-small.svg" alt="logo" class="img">
+					</a>
+
+					<p class="footer__copy">
+						&copy; 2023, Центр хоккейного мастерства
+					</p>
+
+					<div class="footer__social">
+						<a href="#" class="footer__social--link">
+							<img src="img/instagram.svg" alt="instagram" class="img">
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<img src="img/vk.svg" alt="vk" class="img">
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__right">
+					<a href="tel:74953238887" class="footer__phone">
+						+7 (495) 323-88-87
+					</a>
+
+					<p class="footer__text">
+						Ежедневно с 8 до 24
+					</p>
+
+					<p class="footer__text">
+						Москва, Митино, Айс Арена ЦХМ
+					</p>
+
+					<p class="footer__text">
+						Обратная связь: <a href="mailto:lions_chm@mail.ru">lions_chm@mail.ru</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal__menu">
+		<div class="container">
+			<div class="modal__menu--inner">
+				<ul class="modal__menu--nav">
+					<li><a href="#">Хоккейная школа</a></li>
+					<li><a href="#">Аренда</a></li>
+					<li><a href="#">Индивидуальные тренировки</a></li>
+					<li><a href="#">Тренеры</a></li>
+					<li>
+						<a href="#">О центре</a>
+					
+						<ul class="sub-menu">
+							<li><a href="#">О школе и нашем центре</a></li>
+							<li><a href="#">Строительство спортобъектов</a></li>
+							<li><a href="#">Реализованные проекты</a></li>
+							<li><a href="#">Управляющая компания</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Интернет-магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+
+				<div class="header__phone--inner mobile">
+					<a href="tel:+74953238887" class="header__phone">
+						+7 (495) 323-88-87
+					</a>
+
+					<button class="button header__call--button">
+						<img src="img/phone.svg" alt="phone" class="header__call--icon">
+
+						Заказать обратный звонок
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" data-modal="call">
+		<div class="modal__inner">
+			<div class="modal__content">
+				<img src="img/close-red.svg" alt="close" class="modal__cross">
+
+				<p class="modal__title">
+					Заказать обратный звонок
+				</p>
+
+				<div class="modal__wrapper">
+					<input type="text" class="input default__input" placeholder="Ваше имя *">
+
+					<input type="text" class="input default__input" placeholder="Ваш телефон *">
+
+					<button class="button default__button modal__button">
+						Отправить
+					</button>
+				</div>
+
+				<p class="modal__agree">
+					Заполняя и отправляя форму, Вы даете <a href="#">Согласие на обработку персональных данных</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
