@@ -47,71 +47,71 @@ $(document).ready(function(){
     });
 
     // FAQ
-    let faqCount = 0;
+    //let faqCount = 0;
 
     $(".faq__item--question").on("click", function(e){
         e.preventDefault();
 
         if($(this).hasClass("active")){
             $(this).removeClass("active");
-            faqCount = 0;
+            //faqCount = 0;
 
-            $(".faq__prev").removeClass("active");
-            $(".faq__next").addClass("active");
+            //$(".faq__prev").removeClass("active");
+            //$(".faq__next").addClass("active");
         }
         else{
             $(".faq__item--question").removeClass("active");
             $(this).addClass("active");
-            faqCount = $(this).parent(".faq__item").index() + 1;
+            //faqCount = $(this).parent(".faq__item").index() + 1;
 
-            if(faqCount === $(".faq__item").length){
-                $(".faq__next").removeClass("active");
-            }
-            else{
-                $(".faq__next").addClass("active");
-            }
+            // if(faqCount === $(".faq__item").length){
+            //     $(".faq__next").removeClass("active");
+            // }
+            // else{
+            //     $(".faq__next").addClass("active");
+            // }
 
-            if(faqCount > 1){
-                $(".faq__prev").addClass("active");
-            }
-            else{
-                $(".faq__prev").removeClass("active");
-            }
+            // if(faqCount > 1){
+            //     $(".faq__prev").addClass("active");
+            // }
+            // else{
+            //     $(".faq__prev").removeClass("active");
+            // }
         }
     });
 
-    const getActiveByIndex = (index) => {
-        $(".faq__item--question").removeClass("active");
-        $(".faq__item--question").eq(index - 1).addClass("active");
-    }
+    // const getActiveByIndex = (index) => {
+    //     $(".faq__item--question").removeClass("active");
+    //     $(".faq__item--question").eq(index - 1).addClass("active");
+    // }
 
-    $(".faq__prev").on("click", function(){
-        faqCount -= 1;
+    // $(".faq__prev").on("click", function(){
+    //     faqCount -= 1;
         
-        getActiveByIndex(faqCount);
+    //     getActiveByIndex(faqCount);
 
-        if(faqCount < $(".faq__item").length){
-            $(".faq__next").addClass("active");
-        }
+    //     if(faqCount < $(".faq__item").length){
+    //         $(".faq__next").addClass("active");
+    //     }
 
-        if(faqCount < 2){
-            $(".faq__prev").removeClass("active");
-        }
-    });
+    //     if(faqCount < 2){
+    //         $(".faq__prev").removeClass("active");
+    //     }
+    // });
 
-    $(".faq__next").on("click", function(){
-        faqCount += 1;
+    // $(".faq__next").on("click", function(){
+    //     faqCount += 1;
 
-        getActiveByIndex(faqCount);
+    //     getActiveByIndex(faqCount);
 
-        if(faqCount === $(".faq__item").length){
-            $(".faq__next").removeClass("active");
-        }
+    //     if(faqCount === $(".faq__item").length){
+    //         $(".faq__next").removeClass("active");
+    //     }
 
-        if(faqCount > 1){
-            $(".faq__prev").addClass("active");
-        }
-    });
+    //     if(faqCount > 1){
+    //         $(".faq__prev").addClass("active");
+    //     }
+    // });
 
     // Модалки
     $(".modal__button").on("click", function(e){
@@ -132,6 +132,8 @@ $(document).ready(function(){
 
     // Слайдеры
     const reviews = new Swiper('.reviews__slider', {
+        speed: 700,
+        loop: true,
         navigation: {
             nextEl: '.reviews__next',
             prevEl: '.reviews__prev',
@@ -149,11 +151,33 @@ $(document).ready(function(){
     });
 
     const arenaSlider = new Swiper('.arena__slider', {
+        speed: 700,
+        loop: true,
         effect: "cards",
         grabCursor: true,
         navigation: {
             nextEl: '.arena__next',
             prevEl: '.arena__prev',
+        },
+    });
+
+    const partnersSlider = new Swiper('.partners__slider', {
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.partners__next',
+            prevEl: '.partners__prev',
+        },
+        breakpoints: {
+            "1200": {
+                slidesPerView: 4,
+            },
+            "992": {
+                slidesPerView: 3,
+            },
+            "0": {
+                slidesPerView: 2,
+            }
         },
     });
 
