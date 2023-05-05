@@ -84,6 +84,7 @@ input::-webkit-inner-spin-button{
 
 .img{
 	width: 100%;
+	flex-shrink: 0;
 }
 
 .title{
@@ -365,7 +366,8 @@ input::-webkit-inner-spin-button{
 }
 
 .main__next--block{
-	width: 30px;
+	padding: 0;
+	width: 20px;
 	display: flex;
 	position: absolute;
 	bottom: 30px;
@@ -541,6 +543,7 @@ input::-webkit-inner-spin-button{
 	font-weight: 500;
 	color: #2B3C49;
 	text-align: center;
+	font-size: 1.8rem;
 }
 
 .points__item--button{
@@ -792,6 +795,7 @@ input::-webkit-inner-spin-button{
 	font-weight: 700;
 	color: #2B3C49;
 	margin-top: .5rem;
+	text-align: center;
 }
 
 .coach__role{
@@ -1350,10 +1354,14 @@ input::-webkit-inner-spin-button{
 	}
 
 	.header__top{
+		position: fixed;
+		border-bottom: 1px solid transparent;
+	}
+
+	.header__top.fixed{
 		background: rgba(43, 60, 73, 0.8);
 		border-bottom: 1px solid #C8E5F5;
 		backdrop-filter: blur(2px);
-		position: fixed;
 	}
 
 	.header__top.active{
@@ -1437,7 +1445,6 @@ input::-webkit-inner-spin-button{
 	.header__phone--inner.mobile{
 		display: flex;
 		align-items: center;
-		margin-top: auto;
 	}
 
 	.header__call--button{
@@ -1493,12 +1500,35 @@ input::-webkit-inner-spin-button{
 		display: none;
 	}
 
-	.partners__slider{
+	.partners__slider, .main__form--input--inner{
 		width: 100%;
+	}
+
+	.main__form--button{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.main__form{
+		gap: 15px;
 	}
 
 	.partners__content{
 		margin-top: 1rem;
+	}
+
+	.default__padding{
+		padding: 1rem 0;
+	}
+
+	.points__item--button{
+		font-size: 1.8rem;
+		padding: 1.6rem 4.5rem;
+	}
+
+	.review__add{
+		font-size: 1.8rem;
+		padding: 1.8rem 2.2rem;
 	}
 }
 @media (max-width: 560px) {
@@ -1602,10 +1632,6 @@ input::-webkit-inner-spin-button{
 		font-size: 2rem;
 	}
 
-	.faq__item--question--text, .faq__item--answer{
-		font-size: 1.4rem;
-	}
-
 	.points{
 		gap: 15px;
 	}
@@ -1615,7 +1641,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.points__item--icon{
-		width: 38px;
+		width: 70px;
 	}
 
 	.welcome__wrap--text:first-child, .welcome__wrap--text{

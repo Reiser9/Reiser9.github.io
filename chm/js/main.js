@@ -19,9 +19,21 @@ $(document).ready(function(){
             $(".header__bottom").removeClass("active");
         }
     }
+
+    // Мобильное меню фиксится
+    const checkMobileFixed = () => {
+        if($(window).scrollTop() > 10){
+            $(".header__top").addClass("fixed");
+        }
+        else{
+            $(".header__top").removeClass("fixed");
+        }
+    }
     
+    checkMobileFixed();
     checkHeaderFixed();
     $(window).on("scroll", function(){
+        checkMobileFixed();
         checkHeaderFixed();
     });
 
@@ -34,6 +46,7 @@ $(document).ready(function(){
 
         $(".header__top").addClass("active");
         $(".modal__menu").addClass("active");
+        $(".header__top").addClass("fixed");
     });
 
     $(".cross").on("click", function(){
@@ -44,6 +57,7 @@ $(document).ready(function(){
 
         $(".header__top").removeClass("active");
         $(".modal__menu").removeClass("active");
+        $(".header__top").removeClass("fixed");
     });
 
     // FAQ
@@ -164,6 +178,10 @@ $(document).ready(function(){
     const partnersSlider = new Swiper('.partners__slider', {
         loop: true,
         spaceBetween: 20,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
         navigation: {
             nextEl: '.partners__next',
             prevEl: '.partners__prev',
