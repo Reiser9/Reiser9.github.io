@@ -231,6 +231,7 @@ input::-webkit-inner-spin-button{
 .header__call--button{
 	background: rgba(255, 255, 255, .2);
 	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -286,6 +287,7 @@ input::-webkit-inner-spin-button{
 	background: rgba(43, 60, 73, 0.7);
 	border: 1px solid #C8E5F5;
 	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 	border-radius: 10px;
 	padding: 1.3rem 2.1rem;
 	width: 300px;
@@ -1168,6 +1170,7 @@ input::-webkit-inner-spin-button{
 	padding: 2rem 0;
 	background: rgba(43, 60, 73, 0.8);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	transform: translateX(-110%);
 	opacity: 0;
 	transition: .3s ease-in-out;
@@ -1362,11 +1365,13 @@ input::-webkit-inner-spin-button{
 		background: rgba(43, 60, 73, 0.8);
 		border-bottom: 1px solid #C8E5F5;
 		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
 	}
 
 	.header__top.active{
 		border-bottom: 1px solid transparent;
 		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
 	}
 
 	.header__phone{
@@ -1450,6 +1455,7 @@ input::-webkit-inner-spin-button{
 	.header__call--button{
 		background: none;
 		backdrop-filter: unset;
+		-webkit-backdrop-filter: unset;
 	}
 
 	.header__call--button:hover{
@@ -1703,7 +1709,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.header__logo{
-		width: 170px;
+		width: 200px;
 	}
 
 	.arena__arrow{
