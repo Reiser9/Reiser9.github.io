@@ -208,6 +208,7 @@ input::-webkit-inner-spin-button{
 
 .header__logo{
 	display: flex;
+	justify-content: flex-start;
 	width: 327px;
 }
 

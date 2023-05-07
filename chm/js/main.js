@@ -57,7 +57,10 @@ $(document).ready(function(){
 
         $(".header__top").removeClass("active");
         $(".modal__menu").removeClass("active");
-        $(".header__top").removeClass("fixed");
+
+        if($(window).scrollTop() <= 10){
+            $(".header__top").removeClass("fixed");
+        }
     });
 
     // FAQ
