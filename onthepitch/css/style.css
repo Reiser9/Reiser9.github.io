@@ -134,7 +134,7 @@ input::-webkit-inner-spin-button{
 
 /* Main */
 .main{
-	padding: 6rem 0;
+	padding: 4rem 0 6rem 0;
 }
 
 .main__inner{
@@ -150,7 +150,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 45px;
+	gap: 35px;
 }
 
 .main__content{
@@ -187,7 +187,7 @@ input::-webkit-inner-spin-button{
 
 .main__counter{
 	width: 100%;
-	padding: 4rem 3rem;
+	padding: 2rem 3rem;
 	border-radius: 20px;
 	border: 1px solid #D4E4A3;
 	display: flex;
@@ -232,11 +232,11 @@ input::-webkit-inner-spin-button{
 .main__title--wrapper{
 	position: relative;
 	width: 100%;
-	max-width: 350px;
+	max-width: 315px;
 }
 
 .main__suptitle{
-	font-size: 9.8rem;
+	font-size: 8.5rem;
 	font-family: 'Russo One', sans-serif;
 	text-transform: uppercase;
 }
@@ -262,7 +262,7 @@ input::-webkit-inner-spin-button{
 
 .main__img--inner{
 	display: flex;
-	margin-top: 8rem;
+	margin-top: 5rem;
 }
 
 .main__img{
@@ -830,7 +830,7 @@ input::-webkit-inner-spin-button{
 	flex-shrink: 0;
 	display: flex;
 	gap: 24px;
-	margin-top: 6rem;
+	margin-top: 3rem;
 }
 
 .road__goal{
@@ -1554,10 +1554,6 @@ input::-webkit-inner-spin-button{
 
 	.road__item--title, .road__item--star{
 		font-size: 2.1rem;
-	}
-
-	.road__wrapper{
-		margin-top: 4rem;
 	}
 
 	.road__wrap{
