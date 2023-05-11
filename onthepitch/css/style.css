@@ -263,6 +263,8 @@ input::-webkit-inner-spin-button{
 .main__img--inner{
 	display: flex;
 	margin-top: 5rem;
+	width: 100%;
+	max-width: 540px;
 }
 
 .main__img{
