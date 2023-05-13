@@ -3,6 +3,7 @@
 
 	/* Colors */
 	--main: #E0AD28;
+	--secondary: #5DC886;
 }
 
 @font-face {
@@ -118,6 +119,321 @@ input::-webkit-inner-spin-button{
 	color: var(--main);
 }
 
+.green{
+	color: var(--secondary);
+}
+
+.header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 3.2rem;
+	z-index: 6;
+}
+
+.header__inner{
+	width: 100%;
+	border-top: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Main */
+.main{
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+}
+
+.main .container{
+	flex-grow: 1;
+	display: flex;
+}
+
+.main__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.main__inner{
+	width: 100%;
+	flex-grow: 1;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 2rem;
+}
+
+.main__qr{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+	pointer-events: none;
+}
+
+.qr1{
+	left: 0;
+}
+
+.qr2{
+	right: 0;
+}
+
+.main__content{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main__content--img{
+	pointer-events: none;
+	max-width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.main__content--img.mobile{
+	display: none;
+}
+
+.main__left, .main__center, .main__right{
+	display: flex;
+	align-items: center;
+}
+
+.main__right{
+	min-width: 500px;
+	justify-content: flex-end;
+}
+
+.main__left--text{
+	text-transform: uppercase;
+}
+
+.main__left--icon{
+	margin-right: 4rem;
+}
+
+.main__right--icon{
+	margin-left: 4rem;
+}
+
+.main__right--watch{
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.main__right--arrow{
+	width: 12px;
+}
+
+.main__right--watch:hover{
+	opacity: 0.7;
+}
+
+.main__center{
+	gap: 12px;
+}
+
+.main__center--link{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(2, 17, 32, 0.5);
+}
+
+.main__center--link--icon{
+	max-width: 70%;
+	max-height: 70%;
+}
+
+.main__center--bottom{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background: rgba(2, 17, 32, 0.5);
+}
+
+.main__center--bottom:hover{
+	opacity: 0.7;
+}
+
+.main__center--bottom--inner{
+	width: 50px;
+	height: 50px;
+	background: #F74A53;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.main__center--link:hover{
+	opacity: 0.7;
+}
+
+.main__tax{
+	width: 100%;
+	max-width: 315px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 70px;
+	position: absolute;
+	left: 70px;
+	bottom: 200px;
+}
+
+.main__tax--item{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main__tax--title{
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+	opacity: 0.8;
+	letter-spacing: 0.26em;
+	position: relative;
+	text-align: center;
+}
+
+.main__tax--title:before, .main__tax--title:after{
+	content: "";
+	display: block;
+	width: 75px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+.main__tax--title:after{
+	left: auto;
+	right: 0;
+}
+
+.main__tax--content{
+	margin-top: 1.5rem;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0.8;
+	min-height: 66px;
+}
+
+.main__tax--venki{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.main__tax--value{
+	font-size: 5.4rem;
+	letter-spacing: 0.26em;
+	text-align: center;
+	line-height: 1;
+}
+
+.main__tax--subvalue{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.main__fea{
+	width: 100%;
+	max-width: 430px;
+	position: absolute;
+	right: 50px;
+	bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__fea--wrap{
+	width: 100%;
+	max-width: 320px;
+}
+
+.main__fea--content{
+	width: 100%;
+	margin-top: 5rem;
+	background: rgba(15, 15, 15, .7);
+	padding: 1.6rem 2.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main__tax--fea{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.main__fea--title{
+	font-size: 2.2rem;
+	letter-spacing: 0.165em;
+	text-transform: uppercase;
+	padding-bottom: 1.2rem;
+	margin-bottom: 2.2rem;
+	border-bottom: 1px solid #fff;
+}
+
+.main__fea--text{
+	line-height: 152%;
+	letter-spacing: -0.035em;
+	color: rgba(255, 255, 255, .5);
+	margin-top: 0.8rem;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+	max-width: 300px;
+}
+
+.main__fea--text:first-of-type{
+	margin-top: 0;
+}
+
 /* About */
 .about{
 	padding: 7.8rem 0;
@@ -155,7 +471,7 @@ input::-webkit-inner-spin-button{
 	align-items: center;
 }
 
-.about__suptitle{
+.about__suptitle, .road__suptitle{
 	text-transform: uppercase;
 	padding-bottom: 1.2rem;
 	position: relative;
@@ -163,7 +479,7 @@ input::-webkit-inner-spin-button{
 	line-height: 1;
 }
 
-.about__suptitle::before{
+.about__suptitle::before, .road__suptitle::before{
 	content: "";
 	display: block;
 	width: 100%;
@@ -174,7 +490,7 @@ input::-webkit-inner-spin-button{
 	left: 0;
 }
 
-.about__title{
+.about__title, .road__title{
 	text-transform: uppercase;
 	width: 100%;
 	max-width: 950px;
@@ -252,13 +568,358 @@ input::-webkit-inner-spin-button{
 	line-height: 1.19;
 }
 
+/* Pokenomics */
+.pokenomics{
+	padding: 5rem 0;
+}
+
+.pokenomics__inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.pokenomics__content{
+	width: 100%;
+	max-width: 765px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
+
+.pokenomics__content:before{
+	content: "";
+	display: block;
+	width: 560px;
+	height: 560px;
+	border-radius: 50%;
+	background: linear-gradient(197.77deg, #FFD465 -13.64%, #E0AD28 67.92%, #E1AE2A 152.96%);
+	opacity: 0.4;
+	filter: blur(221.5px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.pokenomics__suptitle{
+	font-size: 3.2rem;
+	text-transform: uppercase;
+	line-height: 1;
+	position: relative;
+}
+
+.pokenomics__text--inner{
+	width: 100%;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-top: 1px solid #fff;
+	padding-top: 2.8rem;
+}
+
+.pokenomics__title{
+	font-size: 6.4rem;
+	letter-spacing: -0.08em;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.pokenomics__text{
+	margin-top: 1.6rem;
+	line-height: 152%;
+	letter-spacing: -0.035em;
+	font-size: 2rem;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+}
+
+.pokenomics__wrapper{
+	display: flex;
+	align-items: center;
+	gap: 26px;
+	margin-top: 2.6rem;
+}
+
+.pokenomics__button{
+	padding: 1.4rem 3.5rem;
+	background: linear-gradient(197.77deg, #FFD465 -13.64%, #E0AD28 67.92%, #E1AE2A 152.96%);
+	border-radius: 8px;
+	color: #333;
+	letter-spacing: -0.005em;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.pokenomics__button:hover{
+	opacity: 0.7;
+}
+
+.pokenomics__smile{
+	width: 47px;
+	flex-shrink: 0;
+}
+
+.pokenomics__chart{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.pokenomics__chart--img{
+	width: 390px;
+	flex-shrink: 0;
+}
+
+.pokenomics__chart--content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.pokenomics__chart--point{
+	letter-spacing: -0.035em;
+	color: #E7E7E7;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+	font-size: 3.2rem;
+}
+
+/* Road map */
+.road{
+	padding: 7rem 0rem;
+}
+
+.road__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.road__inner:before, .road__inner:after{
+	content: "";
+	width: 560px;
+	height: 560px;
+	border-radius: 50%;
+	background: linear-gradient(178.8deg, #8FFFBA 1.91%, #2F9656 118.41%);
+	opacity: 0.2;
+	filter: blur(221.5px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.road__inner:after{
+	top: auto;
+	bottom: 0;
+}
+
+.road__title{
+	max-width: 1100px;
+}
+
+.road__content{
+	width: 100%;
+	max-width: 1020px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	margin-top: 3rem;
+}
+
+.road__item{
+	width: 100%;
+	padding: 1.7rem 2.2rem;
+	border-bottom: 3px solid #F74A53;
+	background: rgba(70, 65, 65, .3);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.road__item--content{
+	display: flex;
+	align-items: flex-start;
+	gap: 25px;
+	width: 100%;
+}
+
+.road__item--wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 7px;
+}
+
+.road__item--num, .road__item--title{
+	letter-spacing: -0.08em;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+
+.road__item--text{
+	line-height: 152%;
+	letter-spacing: -0.035em;
+	color: rgba(255, 255, 255, .8);
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+	max-width: 800px;
+}
+
+.road__item--status{
+	width: 54px;
+	height: 54px;
+	flex-shrink: 0;
+	border-radius: 9px;
+	background: #6C6C6C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.road__item--status.ready{
+	background: linear-gradient(178.8deg, #8FFFBA 1.91%, #2F9656 118.41%);
+}
+
+.road__item--status--icon{
+	max-width: 60%;
+	max-height: 60%;
+}
+
+/* Footer */
+.footer{
+	padding: 6rem 0;
+	position: relative;
+}
+
+.footer__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.footer:after, .footer:before{
+	content: "";
+	display: block;
+	width: 560px;
+	height: 560px;
+	border-radius: 50%;
+	background: #F75253;
+	opacity: 0.2;
+	filter: blur(221.5px);
+	position: absolute;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+	left: 10%;
+}
+
+.footer:before{
+	left: auto;
+	right: 10%;
+}
+
+.footer__social{
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.footer__social--link{
+	display: flex;
+	width: 45px;
+}
+
+.footer__social--link:hover{
+	opacity: 0.7;
+}
+
+.footer__social--icon{
+	width: 100%;
+}
+
+.footer__content{
+	width: 100%;
+	margin-top: 2rem;
+	border-top: 1px solid #F8F8F8;
+	padding-top: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__copy{
+	width: 100%;
+	text-align: center;
+	margin-top: 4rem;
+	font-size: 1.4rem;
+	letter-spacing: 0.055em;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+}
+
+.footer__logo, .footer__link{
+	text-transform: uppercase;
+	font-size: 2.4rem;
+	font-family: 'Helvetica', sans-serif;
+}
+
+.footer__link{
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.tax__mobile{
+	padding: 3rem 0;
+	display: none;
+}
+
+.tax__mobile--inner{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: center;
+}
+
+.tax__mobile--inner .main__tax--item{
+	max-width: calc(100% / 2 - 40px / 2);
+}
+
+.poke__content{
+	display: none;
+	background: #0F0F0F;
+	padding: 3rem 0;
+}
+
+.poke__content--inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 /* Responsive */
-@media(max-width: 1660px){
+@media(max-width: 1680px){
 	.container{
 		max-width: 1180px;
 	}
 
-	.about__title{
+	.about__title, .road__title{
 		font-size: 7rem;
 	}
 
@@ -269,15 +930,110 @@ input::-webkit-inner-spin-button{
 	.about__point--value{
 		font-size: 4.6rem;
 	}
+
+	.pokenomics__title{
+		font-size: 4.5rem;
+	}
+
+	.pokenomics__content{
+		max-width: 550px;
+	}
+
+	.pokenomics__chart--img{
+		width: 300px;
+	}
+
+	.pokenomics__chart--point{
+		font-size: 2.8rem;
+	}
+
+	.road__title{
+		max-width: 910px;
+	}
+
+	.main__left--text{
+		font-size: 1.4rem;
+	}
+
+	.main__left--icon{
+		margin-right: 2rem;
+	}
+
+	.main__right--icon{
+		margin-left: 2rem;
+	}
+
+	.main__right{
+		min-width: 423px;
+	}
+
+	.main__tax{
+		bottom: 100px;
+		left: 40px;
+	}
+
+	.main__fea--wrap .main__tax--item{
+		display: none;
+	}
+
+	.main__fea--content{
+		margin-top: 0;
+	}
+
+	.main__fea{
+		right: 30px;
+	}
 }
 @media(max-width: 1200px){
 	.container{
 		max-width: 978px;
 	}
+
+	.pokenomics__chart{
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.main__left--icon, .main__right--icon{
+		display: none;
+	}
+
+	.main__right{
+		min-width: 300px;
+	}
+
+	.main__left--text{
+		max-width: 300px;
+	}
 }
 @media(max-width: 998px){
 	.container{
 		max-width: 748px;
+	}
+
+	.pokenomics__inner{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pokenomics__content{
+		max-width: 100%;
+	}
+
+	.pokenomics__chart{
+		flex-direction: row;
+	}
+
+	.tax__mobile, .poke__content{
+		display: block;
+	}
+
+	.main__tax{
+		display: none;
+	}
+
+	.main__qr{
+		width: 7px;
 	}
 }
 @media(max-width: 768px){
@@ -285,11 +1041,11 @@ input::-webkit-inner-spin-button{
 		max-width: 460px;
 	}
 
-	.about__title{
+	.about__title, .road__title{
 		font-size: 4rem;
 	}
 
-	.about__suptitle{
+	.about__suptitle, .road__suptitle{
 		padding-bottom: 0.6rem;
 		font-size: 2.2rem;
 	}
@@ -311,7 +1067,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.about__points{
-		margin-top: 3.2rem;
+		margin-top: 4rem;
 	}
 
 	.about{
@@ -329,6 +1085,160 @@ input::-webkit-inner-spin-button{
 		left: auto;
 		right: 0;
 	}
+	
+	.about__text--inner{
+		margin-top: 3rem;
+	}
+
+	.pokenomics__chart--img{
+		width: 220px;
+	}
+
+	.pokenomics__chart--point{
+		font-size: 2.2rem;
+	}
+
+	.pokenomics__title{
+		font-size: 3.6rem;
+	}
+
+	.pokenomics__content{
+		align-items: center;
+	}
+
+	.pokenomics__text--inner{
+		border-top: none;
+		padding-top: 0;
+	}
+
+	.pokenomics__content:before{
+		width: 250px;
+		height: 250px;
+		opacity: 0.7;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.pokenomics__suptitle{
+		font-size: 2.2rem;
+		padding-bottom: 0.6rem;
+	}
+
+	.pokenomics__suptitle:before{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #fff;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.pokenomics__title, .pokenomics__text{
+		text-align: center;
+	}
+
+	.pokenomics__text{
+		font-size: 1.6rem;
+	}
+
+	.pokenomics{
+		padding: 3rem 0;
+	}
+
+	.road__item--status{
+		display: none;
+	}
+
+	.road__inner:before, .road__inner:after{
+		width: 250px;
+		height: 250px;
+	}
+
+	.road{
+		padding: 5rem 0rem;
+	}
+
+	.footer__icon{
+		display: none;
+	}
+
+	.footer__logo{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.footer:after, .footer:before{
+		width: 250px;
+		height: 250px;
+		left: 0;
+		opacity: 0.7;
+	}
+
+	.footer:before{
+		left: auto;
+		right: 0;
+	}
+
+	.footer__content, .header__inner{
+		flex-wrap: wrap;
+	}
+
+	.footer{
+		padding: 3rem 0;
+	}
+
+	.main__content--img.mobile{
+		display: block;
+	}
+
+	.main__content--img{
+		display: none;
+	}
+
+	.header__inner{
+		border-top: none;
+	}
+
+	.header{
+		padding-top: 1.5rem;
+	}
+
+	.main__left, .main__center{
+		display: none;
+	}
+
+	.main__right{
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	.main__fea--content{
+		display: none;
+	}
+
+	.main__qr{
+		width: 5px;
+	}
+
+	.main{
+		min-height: 80vh;
+	}
+
+	.main__right{
+		min-width: unset;
+	}
+
+	.main__right--watch{
+		font-size: 1.4rem;
+	}
+
+	.tax__mobile--inner .main__tax--item{
+		min-width: unset;
+		max-width: 300px;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -341,17 +1251,56 @@ input::-webkit-inner-spin-button{
 		align-items: center;
 		gap: 20px;
 	}
+
+	.pokenomics__title{
+		font-size: 3rem;
+	}
+
+	.pokenomics__text{
+		margin-top: 3rem;
+	}
+
+	.pokenomics__text--inner{
+		margin-top: 1.6rem;
+	}
+
+	.footer__link{
+		width: 50%;
+		text-align: center;
+		margin-bottom: 1.2rem;
+	}
+
+	.footer__link:nth-last-child(2), .footer__link:nth-last-child(3){
+		margin-bottom: 0;
+	}
 }
 @media (max-width: 420px) {
-	.about__title{
+	.about__title, .road__title, .pokenomics__title{
 		font-size: 2.8rem;
 	}
 
-	.about__suptitle{
+	.about__suptitle, .road__suptitle{
 		font-size: 1.8rem;
 	}
 
 	.about__text{
 		font-size: 2rem;
+	}
+
+	.road__item--content{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+}
+@media (max-width: 385px) {
+	.pokenomics__chart{
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__social{
+		gap: 10px;
 	}
 }
