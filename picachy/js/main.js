@@ -3,8 +3,16 @@ $(document).ready(function(){
     const first = document.querySelector(".first__text");
     const second = document.querySelector(".second__text");
     const fird = document.querySelector(".fird__text");
+    
     const about = document.querySelector(".about");
     const scrollBottom = document.querySelector(".main__center--bottom");
+
+    const overlay = document.querySelector(".main__overlay");
+
+    const main = document.querySelector(".main");
+    const poke = document.querySelector(".poke__content");
+    const tax = document.querySelector(".tax__mobile");
+    
 
     scrollBottom.addEventListener("click", function(e){
         e.preventDefault();
@@ -15,10 +23,25 @@ $(document).ready(function(){
         });
     });
 
+    function checkAnimation() {
+        if(window.scrollY > poke.clientHeight + tax.clientHeight + (main.clientHeight / 2) && window.scrollY <= about.offsetTop - window.innerHeight / 2){
+            overlay.classList.add("active");
+        }
+        else{
+            overlay.classList.remove("active");
+        }
+    }
+
+    checkAnimation();
+
 	document.addEventListener("scroll", function(){
         const windowScroll = window.scrollY;
         const aboutScroll = about.offsetTop;
 
+        // Main animation
+        checkAnimation();
+        
+        // Text about
         if(windowScroll - aboutScroll < 0 && windowScroll - aboutScroll > -100){
             first.classList.add("active");
             second.classList.remove("active");
