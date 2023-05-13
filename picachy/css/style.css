@@ -138,6 +138,7 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-top: 1rem;
 }
 
 /* Main */
@@ -438,6 +439,7 @@ input::-webkit-inner-spin-button{
 .about{
 	padding: 7.8rem 0;
 	position: relative;
+	margin-top: 100vh;
 }
 
 .about:before, .about:after{
@@ -913,6 +915,24 @@ input::-webkit-inner-spin-button{
 	align-items: flex-start;
 }
 
+.header__social{
+	display: none;
+}
+
+.header__social--link{
+	width: 35px;
+	display: flex;
+}
+
+.header__social--icon{
+	width: 100%;
+}
+
+.header__circle{
+	margin-left: 1rem;
+	width: 21px;
+}
+
 /* Responsive */
 @media(max-width: 1680px){
 	.container{
@@ -1041,6 +1061,22 @@ input::-webkit-inner-spin-button{
 		max-width: 460px;
 	}
 
+	.header__social{
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.header__logo--wrap{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 1rem;
+	}
+
 	.about__title, .road__title{
 		font-size: 4rem;
 	}
@@ -1077,7 +1113,7 @@ input::-webkit-inner-spin-button{
 	.about:before, .about:after{
 		width: 280px;
 		height: 280px;
-		opacity: 0.7;
+		opacity: 1;
 		left: 0;
 	}
 
@@ -1114,7 +1150,7 @@ input::-webkit-inner-spin-button{
 	.pokenomics__content:before{
 		width: 250px;
 		height: 250px;
-		opacity: 0.7;
+		opacity: 1;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -1154,6 +1190,12 @@ input::-webkit-inner-spin-button{
 	.road__inner:before, .road__inner:after{
 		width: 250px;
 		height: 250px;
+		opacity: 1;
+	}
+
+	.road__inner:after{
+		bottom: auto;
+		top: 50%;
 	}
 
 	.road{
@@ -1170,11 +1212,16 @@ input::-webkit-inner-spin-button{
 		margin-bottom: 2rem;
 	}
 
+	.header__inner .footer__logo{
+		width: auto;
+		margin-bottom: 0;
+	}
+
 	.footer:after, .footer:before{
 		width: 250px;
 		height: 250px;
 		left: 0;
-		opacity: 0.7;
+		opacity: .8;
 	}
 
 	.footer:before{
@@ -1291,6 +1338,10 @@ input::-webkit-inner-spin-button{
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 10px;
+	}
+
+	.header__social{
+		gap: 0;
 	}
 }
 @media (max-width: 385px) {
