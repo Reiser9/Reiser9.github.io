@@ -1231,6 +1231,10 @@ input::-webkit-inner-spin-button{
 		min-width: unset;
 		max-width: 300px;
 	}
+
+	.about{
+		margin-top: 40vh;
+	}
 }
 @media(max-width: 480px){
 	.container{
