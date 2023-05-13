@@ -449,6 +449,7 @@ input::-webkit-inner-spin-button{
 	height: 560px;
 	background: linear-gradient(197.77deg, #FFD465 -13.64%, #E0AD28 67.92%, #E1AE2A 152.96%);
 	opacity: 0.3;
+	-webkit-filter: blur(221.5px);
 	filter: blur(221.5px);
 	position: absolute;
 	top: 150px;
@@ -600,6 +601,7 @@ input::-webkit-inner-spin-button{
 	border-radius: 50%;
 	background: linear-gradient(197.77deg, #FFD465 -13.64%, #E0AD28 67.92%, #E1AE2A 152.96%);
 	opacity: 0.4;
+	-webkit-filter: blur(221.5px);
 	filter: blur(221.5px);
 	position: absolute;
 	top: 0;
@@ -713,6 +715,7 @@ input::-webkit-inner-spin-button{
 	border-radius: 50%;
 	background: linear-gradient(178.8deg, #8FFFBA 1.91%, #2F9656 118.41%);
 	opacity: 0.2;
+	-webkit-filter: blur(221.5px);
 	filter: blur(221.5px);
 	position: absolute;
 	top: 0;
@@ -822,6 +825,7 @@ input::-webkit-inner-spin-button{
 	border-radius: 50%;
 	background: #F75253;
 	opacity: 0.2;
+	-webkit-filter: blur(221.5px);
 	filter: blur(221.5px);
 	position: absolute;
 	bottom: 0;
