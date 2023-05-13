@@ -135,6 +135,7 @@ input::-webkit-inner-spin-button{
 /* Main */
 .main{
 	padding: 4rem 0 6rem 0;
+	overflow-x: hidden;
 }
 
 .main__inner{
@@ -294,6 +295,7 @@ input::-webkit-inner-spin-button{
 /* Social */
 .social{
 	padding: 6rem 0;
+	overflow-x: hidden;
 }
 
 .social__inner{
@@ -375,6 +377,7 @@ input::-webkit-inner-spin-button{
 /* Textblock */
 .textblock{
 	padding: 6rem 0;
+	overflow-x: hidden;
 }
 
 .textblock__inner{
@@ -436,6 +439,7 @@ input::-webkit-inner-spin-button{
 /* Make it to the top */
 .make{
 	padding: 6rem 0;
+	overflow-x: hidden;
 }
 
 .make__inner{
@@ -604,6 +608,7 @@ input::-webkit-inner-spin-button{
 /* Play and earn */
 .earn{
 	padding: 6rem 0;
+	overflow-x: hidden;
 }
 
 .earn__inner{
@@ -929,6 +934,7 @@ input::-webkit-inner-spin-button{
 /* Faq */
 .faq{
 	padding: 10rem 0;
+	overflow-x: hidden;
 }
 
 .faq__inner{
