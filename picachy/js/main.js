@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+    $(".go").on("click", function(e){
+		e.preventDefault();
+		let point = $(this).attr("data-point");
+        
+		$('body,html').animate({scrollTop: $("#"+point).offset().top}, 500);
+	});
+
     const first = document.querySelector(".first__text");
     const second = document.querySelector(".second__text");
     const fird = document.querySelector(".fird__text");

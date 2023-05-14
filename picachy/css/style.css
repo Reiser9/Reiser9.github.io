@@ -54,7 +54,8 @@ body{
 	overflow-x: hidden;
 	font-size: 1.6rem;
 	font-family: 'DrukTextWide', cursive;
-	background: #000;
+	background: url("../img/background.png") #000 center no-repeat;
+	background-size: cover;
 }
 
 *,
@@ -522,8 +523,9 @@ input::-webkit-inner-spin-button{
 	max-width: 670px;
 	letter-spacing: -0.035em;
 	color: rgba(255, 255, 255, .4);
-	font-size: 3.2rem;
-	font-family: 'East Sea Dokdo', cursive;
+	font-size: 2.4rem;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
 	line-height: 102.5%;
 	transition: .2s linear;
 }
