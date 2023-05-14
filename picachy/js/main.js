@@ -24,11 +24,11 @@ $(document).ready(function(){
     });
 
     function checkAnimation() {
-        if(window.scrollY > poke.clientHeight + tax.clientHeight + (main.clientHeight / 2) && window.scrollY <= about.offsetTop - window.innerHeight / 2){
-            overlay.classList.add("active");
+        if(window.scrollY > poke.clientHeight + tax.clientHeight + (main.clientHeight / 2)){
+            document.body.classList.add("overlay");
         }
         else{
-            overlay.classList.remove("active");
+            document.body.classList.remove("overlay");
         }
     }
 

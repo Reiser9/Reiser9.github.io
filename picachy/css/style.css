@@ -154,6 +154,7 @@ input::-webkit-inner-spin-button{
 	position: relative;
 	min-height: 100vh;
 	display: flex;
+	transition: .2s linear;
 }
 
 .main .container{
@@ -443,29 +444,11 @@ input::-webkit-inner-spin-button{
 	margin-top: 0;
 }
 
-.main__overlay{
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	background: #000;
-	transition: .3s ease-in-out;
-	opacity: 0;
-	pointer-events: none;
-}
-
-.main__overlay.active{
-	opacity: 1;
-	pointer-events: all;
-}
-
 /* About */
 .about{
 	padding: 7.8rem 0;
 	position: relative;
-	margin-top: 100vh;
+	margin-top: 30vh;
 }
 
 .about__bg{
@@ -865,9 +848,14 @@ input::-webkit-inner-spin-button{
 	color: #f74a53;
 }
 
+.overlay .poke__content, .overlay .tax__mobile, .overlay .main{
+	opacity: 0;
+}
+
 .tax__mobile{
 	padding: 3rem 0;
 	display: none;
+	transition: .2s linear;
 }
 
 .tax__mobile--inner{
@@ -886,6 +874,7 @@ input::-webkit-inner-spin-button{
 	display: none;
 	background: #0F0F0F;
 	padding: 3rem 0;
+	transition: .2s linear;
 }
 
 .poke__content--inner{
@@ -1230,10 +1219,6 @@ input::-webkit-inner-spin-button{
 	.tax__mobile--inner .main__tax--item{
 		min-width: unset;
 		max-width: 300px;
-	}
-
-	.about{
-		margin-top: 40vh;
 	}
 }
 @media(max-width: 480px){
