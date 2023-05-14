@@ -1205,7 +1205,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.main{
-		min-height: 80vh;
+		min-height: 565px;
 	}
 
 	.main__right{
@@ -1255,6 +1255,14 @@ input::-webkit-inner-spin-button{
 
 	.main__fea--title, .main__fea--text{
 		text-align: center;
+	}
+
+	.main{
+		min-height: calc(100vw + 150px);
+	}
+
+	.pokenomics__button{
+		padding: 1.2rem 2.6rem;
 	}
 }
 @media (max-width: 420px) {

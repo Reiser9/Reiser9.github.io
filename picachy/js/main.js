@@ -7,8 +7,6 @@ $(document).ready(function(){
     const about = document.querySelector(".about");
     const scrollBottom = document.querySelector(".main__center--bottom");
 
-    const overlay = document.querySelector(".main__overlay");
-
     const main = document.querySelector(".main");
     const poke = document.querySelector(".poke__content");
     const tax = document.querySelector(".tax__mobile");
@@ -18,7 +16,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         window.scrollBy({
-            top: window.innerHeight * 1.8,
+            top: main.clientHeight,
             behavior: 'smooth'
         });
     });
