@@ -690,13 +690,13 @@ input::-webkit-inner-spin-button{
 }
 
 .road__bg1{
-	top: -200px;
-	left: 0;
+	top: 0px;
+	left: 30%;
 }
 
 .road__bg2{
-	bottom: -200px;
-	left: 0;
+	bottom: 0px;
+	right: 30%;
 }
 
 .road__title{
