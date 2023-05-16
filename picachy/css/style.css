@@ -207,14 +207,18 @@ input::-webkit-inner-spin-button{
 	justify-content: space-between;
 }
 
-.main__content--img{
-	pointer-events: none;
-	max-width: 100%;
+.main__content--wrap{
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
+}
+
+.main__content--img{
+	pointer-events: none;
+	max-width: 100%;
 }
 
 .main__content--img.mobile{
@@ -894,10 +898,12 @@ input::-webkit-inner-spin-button{
 .header__social--link{
 	width: 35px;
 	display: flex;
+	flex-shrink: 0;
 }
 
 .header__social--icon{
 	width: 100%;
+	flex-shrink: 0;
 }
 
 .header__circle{
