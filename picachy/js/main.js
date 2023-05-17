@@ -28,23 +28,23 @@ $(document).ready(function(){
         });
     });
 
-    function checkAnimation() {
-        if(window.scrollY > poke.clientHeight + tax.clientHeight + (main.clientHeight / 2)){
-            document.body.classList.add("overlay");
-        }
-        else{
-            document.body.classList.remove("overlay");
-        }
-    }
+    // function checkAnimation() {
+    //     if(window.scrollY > poke.clientHeight + tax.clientHeight + (main.clientHeight / 2)){
+    //         document.body.classList.add("overlay");
+    //     }
+    //     else{
+    //         document.body.classList.remove("overlay");
+    //     }
+    // }
 
-    checkAnimation();
+    // checkAnimation();
 
 	document.addEventListener("scroll", function(){
         const windowScroll = window.scrollY;
         const aboutScroll = about.offsetTop;
 
         // Main animation
-        checkAnimation();
+        // checkAnimation();
         
         // Text about
         if(windowScroll - aboutScroll < 0 && windowScroll - aboutScroll > -100){

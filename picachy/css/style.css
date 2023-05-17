@@ -454,7 +454,7 @@ input::-webkit-inner-spin-button{
 .about{
 	padding: 7.8rem 0;
 	position: relative;
-	margin-top: 30vh;
+	/* margin-top: 30vh; */
 }
 
 .about__bg{
