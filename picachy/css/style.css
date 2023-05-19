@@ -440,7 +440,7 @@ input::-webkit-inner-spin-button{
 	margin-top: 0.8rem;
 	font-family: 'Helvetica', sans-serif;
 	font-weight: 300;
-	max-width: 300px;
+	width: 100%;
 }
 
 .main__fea--text:first-of-type{
