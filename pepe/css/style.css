@@ -213,15 +213,21 @@ input::-webkit-inner-spin-button{
 	font-size: 4.2rem;
 	font-family: 'Johnny Torch';
 	border-radius: 50px;
+	border: 2px solid #C8EB3A;
+}
+
+.main__button:hover{
+	background: #3AE1EC;
 }
 
 .main__button:last-child{
 	background: #3AE1EC;
 	color: #232323;
+	border: 2px solid #3AE1EC;
 }
 
-.main__button:hover{
-	opacity: 0.7;
+.main__button:last-child:hover{
+	background: #C8EB3A;
 }
 
 /* About */
