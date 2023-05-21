@@ -18,7 +18,6 @@ $(document).ready(function(){
 
     const main = document.querySelector(".main");
     
-
     scrollBottom.addEventListener("click", function(e){
         e.preventDefault();
 
