@@ -687,6 +687,11 @@ input::-webkit-inner-spin-button{
 	.how__item--text{
 		font-size: 1.6rem;
 	}
+
+	.how__item--title, .how__item--text{
+		width: 100%;
+		text-align: center;
+	}
 }
 @media(max-width: 480px){
 	.container{
