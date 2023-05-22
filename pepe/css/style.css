@@ -137,7 +137,7 @@ input::-webkit-inner-spin-button{
 .social__inner{
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 60px;
 }
 
 .social__link{
@@ -502,7 +502,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.social__inner{
-		gap: 30px;
+		gap: 45px;
 	}
 
 	.about__title, .token__item--title{
@@ -552,7 +552,7 @@ input::-webkit-inner-spin-button{
 	}
 
 	.social__inner{
-		gap: 20px;
+		gap: 30px;
 	}
 
 	.social__link{
@@ -569,6 +569,10 @@ input::-webkit-inner-spin-button{
 
 	.main__button{
 		font-size: 3.4rem;
+	}
+
+	.header__nav{
+		gap: 20px;
 	}
 }
 @media(max-width: 768px){
