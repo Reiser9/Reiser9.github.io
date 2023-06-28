@@ -542,11 +542,22 @@ span{
 	padding: 18rem 0rem 0rem 0;
 	background: url("../img/main-farm.png") center no-repeat;
 	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.main__img--abs{
+	position: absolute;
+	bottom: 0;
+	right: -200px;
+	pointer-events: none;
+	width: 520px;
 }
 
 .main__inner{
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 }
 
 .main__img--inner{
@@ -558,6 +569,7 @@ span{
 
 .main__img{
 	width: 100%;
+	object-fit: cover;
 }
 
 .main__title--inner{
@@ -570,6 +582,7 @@ span{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	margin-bottom: 3rem;
 }
 
 .main__title{
@@ -605,6 +618,211 @@ span{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	margin-top: 6rem;
+}
+
+.main__form--inner{
+	width: 100%;
+	max-width: 410px;
+	flex-shrink: 0;
+	border: 2px solid #FFCC43;
+	border-radius: 10px;
+	background: #0A0A0A;
+	margin: 0 3rem 3rem 0;
+	position: relative;
+}
+
+.form__title{
+	width: 100%;
+	padding: 4rem 5rem 3rem 5rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	border-bottom: 1px solid #434343;
+}
+
+.form__wrapper{
+	width: 100%;
+	padding: 2.5rem 1.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form__button{
+	width: 100%;
+	max-width: 75%;
+	padding: 0.8rem 2.4rem;
+	color: #000;
+	border-radius: 5px;
+	background: #FFB63B;
+	border: 2px solid #FFB63B;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+.form__button:hover{
+	color: #fff;
+	border: 2px solid #A41401;
+	background: #000;
+}
+
+.form__value--inner{
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.form__value--inner p{
+	flex-shrink: 0;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+
+.form__value--inner:before, .form__value--inner:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #434343;
+}
+
+.form__method--inner{
+	width: 100%;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.form__method{
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	border-radius: 10px;
+	border: 1px solid #434343;
+	padding: 0.8rem 3.5rem;
+}
+
+.form__method:hover, .form__method.active{
+	border: 1px solid #FFB936;
+}
+
+.form__method--icon{
+	width: 24px;
+}
+
+.form__method--name{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.4rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.form__method--usdt{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.form__method--usdt--name, .form__method--usdt--subname{
+	color: #22B573;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
+.form__method--usdt--subname{
+	font-size: 1rem;
+}
+
+.form__balance, .form__text{
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #6F6F6F;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	border-bottom: 1px solid #434343;
+	margin-top: 2rem;
+}
+
+.form__text{
+	margin-top: 0.6rem;
+	color: #fff;
+	border-bottom: none;
+}
+
+.form__inputs{
+	width: 100%;
+	margin-top: 2rem;
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.form__input--inner{
+	width: calc(100% / 2 - 20px / 2);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+}
+
+.form__input--wrap{
+	width: 100%;
+	position: relative;
+}
+
+.form__input{
+	width: 100%;
+	padding: 0.8rem 4rem .8rem 1rem;
+	background: #2B2A2A;
+	border-radius: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.form__input::placeholder{
+	color: #6F6F6F;
+}
+
+.form__input--icon{
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	width: 24px;
+}
+
+.form__input--text--inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 4px;
+	flex-wrap: wrap;
+}
+
+.form__input--text, .form__input--max{
+	color: #6F6F6F;
+	font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+
+.form__input--max{
+	color: #fff;
 }
 
 /* Roadmap */
@@ -1134,6 +1352,11 @@ span{
 	.token__content{
 		align-items: center;
 	}
+
+	.main__img--abs{
+		right: -100px;
+		width: 350px;
+	}
 }
 @media(max-width: 768px){
 	.container{
@@ -1267,6 +1490,15 @@ span{
 	.main__text{
 		padding: 0rem 2rem;
 	}
+
+	.main__form--inner{
+		margin-right: 0;
+	}
+
+	.main__img--abs{
+		width: 250px;
+		right: -50px;
+	}
 }
 @media (max-width: 580px) {
 	.chart__info--title, .chart__info--value{
@@ -1396,18 +1628,40 @@ span{
 		margin-top: 2rem;
 	}
 }
+@media (max-width: 450px) {
+	.form__inputs{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.form__input--inner{
+		width: 100%;
+	}
+}
 @media (max-width: 410px) {
 	.chart{
 		width: 380px;
 		height: 380px;
 	}
 
-	.chart__info{
-		display: none;
-	}
-
 	.chart__img{
 		width: 220px;
+	}
+
+	.form__method--inner{
+		gap: 10px;
+	}
+
+	.form__method{
+		padding: 0.8rem 2.4rem;
+	}
+
+	.form__value--inner{
+		gap: 10px;
+	}
+
+	.form__title{
+		padding: 3rem 2rem 2rem 2rem;
 	}
 }
 @media (max-width: 390px) {
