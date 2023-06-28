@@ -32,28 +32,46 @@ $(document).ready(function(){
         $(".mobile__menu").toggleClass("active");
     });
 
+    const tokenSupply = $(".token__points--title").text().trim();
+    const tokenSupplyValue = $(".token__points--value").text().trim();
+
+    const chartTitle = $(".chart__info--title");
+    const chartInfo = $(".chart__info--value");
+
     $(".unit").on("mouseenter", function(){
         const index = $(this).index();
+        const current = $(".token__point").eq(index);
 
-        $(".token__point").eq(index).addClass("active");
+        current.addClass("active");
+        chartInfo.text(current.children(".token__percent").text().trim());
+        chartTitle.text(current.children(".token__point--wrapper").children(".token__name").text().trim());
     });
 
-    $(".unit").on("mouseleave", function(){
+    $(".unit").on("mouseleave", function(e){
         const index = $(this).index();
 
         $(".token__point").eq(index).removeClass("active");
+
+        chartTitle.text(tokenSupply);
+        chartInfo.text(tokenSupplyValue);
     });
 
     $(".token__point").on("mouseenter", function(){
         const index = $(this).index();
+        const current = $(".unit").eq(index);
 
-        $(".unit").eq(index).addClass("active");
+        current.addClass("active");
+        chartInfo.text($(this).children(".token__percent").text().trim());
+        chartTitle.text($(this).children(".token__point--wrapper").children(".token__name").text().trim());
     });
 
     $(".token__point").on("mouseleave", function(){
         const index = $(this).index();
 
         $(".unit").eq(index).removeClass("active");
+
+        chartTitle.text(tokenSupply);
+        chartInfo.text(tokenSupplyValue);
     });
 
     // Sliders

@@ -103,7 +103,7 @@ input::-webkit-inner-spin-button{
     justify-content: space-around;
     align-items: center;
     min-width: 100%;
-	animation: scrollDesktop 10s infinite linear;
+	animation: scrollDesktop 20s infinite linear;
 }
 
 @keyframes scrollDesktop {
@@ -316,6 +316,7 @@ span{
 .token{
 	width: 100%;
 	padding: 4rem 0;
+	overflow: hidden;
 }
 
 .token__inner{
@@ -465,13 +466,17 @@ span{
 .unit {
 	fill: none;
 	stroke-width: 6;
-	cursor: pointer;
-	
 	animation-name: render;
 	animation-duration: 1.5s;
 	transition-property: all; 
 	transition-duration: .3s;
 	stroke: #171717;
+}
+
+@media(any-hover: hover){
+	.unit{
+		cursor: pointer;
+	}
 }
 
 .unit:hover, .unit.active{
@@ -714,6 +719,7 @@ span{
 	position: absolute;
 	top: 0px;
 	left: 0;
+	pointer-events: none;
 }
 
 .roadmap__arrows{
@@ -1121,7 +1127,7 @@ span{
 	}
 
 	.token__inner{
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 	}
 
@@ -1132,6 +1138,10 @@ span{
 @media(max-width: 768px){
 	.container{
 		max-width: 460px;
+	}
+
+	.header{
+		position: relative;
 	}
 
 	.faq__item--answer{
@@ -1219,7 +1229,7 @@ span{
 	}
 
 	.main{
-		padding: 12rem 0rem 0rem 0;
+		padding: 6rem 0rem 0rem 0;
 	}
 
 	.main__text{
@@ -1253,19 +1263,19 @@ span{
 	.airdrop__inner{
 		padding: 2rem 3rem;
 	}
+
+	.main__text{
+		padding: 0rem 2rem;
+	}
 }
 @media (max-width: 580px) {
-	.chart{
-		width: 400px;
-		height: 400px;
-	}
-
 	.chart__info--title, .chart__info--value{
 		font-size: 1.6rem;
 	}
 
-	.chart__img{
-		width: 215px;
+	.chart{
+		width: 480px;
+		height: 480px;
 	}
 }
 @media(max-width: 480px){
@@ -1351,7 +1361,7 @@ span{
 	}
 
 	.main{
-		padding: 10rem 0rem 0rem 0;
+		padding: 2rem 0rem 0rem 0;
 	}
 
 	.main__title{
@@ -1388,8 +1398,8 @@ span{
 }
 @media (max-width: 410px) {
 	.chart{
-		width: 300px;
-		height: 300px;
+		width: 380px;
+		height: 380px;
 	}
 
 	.chart__info{
@@ -1397,7 +1407,7 @@ span{
 	}
 
 	.chart__img{
-		width: 170px;
+		width: 220px;
 	}
 }
 @media (max-width: 390px) {
