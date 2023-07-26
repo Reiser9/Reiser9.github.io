@@ -634,7 +634,8 @@ input::-webkit-inner-spin-button{
 	.main__man{
 		transform: translateX(0);
 		right: 0;
-		left: calc(50vw + 150px);
+		left: calc(40vw + 150px);
+		max-width: 520px;
 	}
 }
 @media(max-width: 1200px){
@@ -656,6 +657,7 @@ input::-webkit-inner-spin-button{
 		transform: translateX(0);
 		right: 0;
 		left: calc(50vw + 80px);
+		max-width: 400px;
 	}
 }
 @media(max-width: 998px){
