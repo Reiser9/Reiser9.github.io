@@ -390,7 +390,7 @@ input::-webkit-inner-spin-button{
 
 /* Map */
 .map{
-	padding: 5rem 0 2rem 0;
+	padding: 16rem 0 2rem 0;
 	position: relative;
 }
 
@@ -527,6 +527,8 @@ input::-webkit-inner-spin-button{
 	background: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
+	display: flex;
+	align-items: center;
 }
 
 .footer__social--link{
@@ -703,11 +705,14 @@ input::-webkit-inner-spin-button{
 	}
 
 	.main__man{
-		display: none;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 240px;
 	}
 
 	.main__content{
 		max-width: 100%;
+		padding: 4rem 4rem 32rem 4rem;
 	}
 
 	.main__date--block, .main__text--block{
@@ -809,6 +814,18 @@ input::-webkit-inner-spin-button{
 	.about__sky--top{
 		top: calc(-23vw + 100px);
 	}
+
+	.map{
+		padding: 4rem 0rem 2rem 0;
+	}
+
+	.main__man{
+		width: 175px;
+	}
+
+	.main__content{
+		padding: 4rem 4rem 24rem 4rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -868,7 +885,7 @@ input::-webkit-inner-spin-button{
 }
 @media (max-width: 390px) {
 	.main__content{
-		padding: 2.5rem 2.5rem 5rem 2.5rem;
+		padding: 2.5rem 2.5rem 24rem 2.5rem;
 	}
 
 	.main__text--title, .main__date{
