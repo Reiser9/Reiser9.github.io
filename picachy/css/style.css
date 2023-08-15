@@ -229,8 +229,12 @@ input::-webkit-inner-spin-button{
 	align-items: center;
 }
 
+.main__left{
+	gap: 20px;
+}
+
 .main__right{
-	min-width: 277px;
+	min-width: 310px;
 	justify-content: flex-end;
 }
 
