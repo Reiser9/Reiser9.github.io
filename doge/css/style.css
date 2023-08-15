@@ -205,15 +205,16 @@ input::-webkit-inner-spin-button{
 }
 
 .main__date{
-	font-size: 5.5rem;
-	color: #1C2734;
+	font-size: 3.2rem;
+	color: #2E2E2E;
 	font-family: 'Hitchcut', sans-serif;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .main__button{
 	text-transform: uppercase;
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 	background: #FF922E;
 	border-radius: 15px;
 	padding: 1.8rem 4.2rem;
@@ -224,6 +225,35 @@ input::-webkit-inner-spin-button{
 
 .main__button:hover{
 	background: #dc802a;
+}
+
+.main__text--wrap{
+	width: 100%;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__text--suptitle, .main__text--title{
+	text-align: center;
+	text-transform: uppercase;
+	color: #4d4d4d;
+	font-size: 2.4rem;
+	font-family: 'Hitchcut', sans-serif;
+}
+
+.main__text--title{
+	font-size: 8rem;
+	line-height: 1;
+}
+
+.blue{
+	color: #2EA7FF;
+}
+
+.green{
+	color: #30D815;
 }
 
 /* About */
@@ -797,7 +827,7 @@ input::-webkit-inner-spin-button{
 		justify-content: center;
 	}
 
-	.main__text--title, .main__date{
+	.main__text--title{
 		font-size: 5rem;
 	}
 
@@ -877,6 +907,10 @@ input::-webkit-inner-spin-button{
 	.about__sky--top{
 		top: calc(-32vw + 100px);
 	}
+
+	.main__text--wrap{
+		margin-top: 1.5rem;
+	}
 }
 @media (max-width: 420px) {
 	.about__tax--img{
@@ -888,11 +922,15 @@ input::-webkit-inner-spin-button{
 		padding: 2.5rem 2.5rem 24rem 2.5rem;
 	}
 
-	.main__text--title, .main__date{
+	.main__text--title{
 		font-size: 4rem;
 	}
 
 	.about__sky--top{
 		top: calc(-32vw + 85px);
+	}
+
+	.main__date{
+		font-size: 3rem;
 	}
 }
