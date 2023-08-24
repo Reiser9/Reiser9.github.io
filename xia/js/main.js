@@ -18,7 +18,8 @@ $(document).ready(function(){
         }
 	});
 
-	$(".menu").on("click", function(){
+	$(".menu").on("click", function(e){
+        e.preventDefault();
         $(this).removeClass("active");
         $(".cross").addClass("active");
 
@@ -26,7 +27,8 @@ $(document).ready(function(){
         $(".mobile__menu").addClass("active");
     });
 
-    $(".cross").on("click", function(){
+    $(".cross").on("click", function(e){
+        e.preventDefault();
         closeMenu();
     });
 
