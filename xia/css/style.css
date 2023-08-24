@@ -1859,6 +1859,10 @@ input::-webkit-inner-spin-button{
 		display: flex;
 		flex-direction: column;
 	}
+
+	.token__inner{
+		align-items: center;
+	}
 }
 @media(max-width: 480px){
 	.container{
