@@ -351,7 +351,7 @@ input::-webkit-inner-spin-button{
 
 .main__faq--content{
 	width: 100%;
-	padding: 3.6rem 2.4rem;
+	padding: 3.6rem 2.4rem 2rem 2.4rem;
 	background: #050307;
 	border-radius: 16px;
 	border: 1px solid #0096BE;
@@ -393,6 +393,15 @@ input::-webkit-inner-spin-button{
 	color: #B0B0B0;
 	margin-top: 1.2rem;
 	text-align: center;
+}
+
+.main__faq--more{
+	margin-top: 4rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	border-bottom: 1px solid #0096BE;
 }
 
 /* Lever */
