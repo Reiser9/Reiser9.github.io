@@ -1196,6 +1196,10 @@ input::-webkit-inner-spin-button{
 	.header__menu.active{
 		display: flex;
 	}
+
+	.main__title, .countdown__value, .title{
+		text-shadow: none;
+	}
 }
 @media(max-width: 480px){
 	.container{
