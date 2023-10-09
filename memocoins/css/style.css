@@ -822,6 +822,7 @@ input::-webkit-inner-spin-button{
 
 .main__line{
 	width: 100%;
+	display: flex;
 }
 
 /* Responsive */
