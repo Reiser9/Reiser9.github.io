@@ -258,7 +258,7 @@ input::-webkit-inner-spin-button{
 
 /* Airdrop */
 .airdrop{
-	padding: 6rem 0;
+	padding: 12rem 0 6rem 0;
 	position: relative;
 }
 
@@ -326,7 +326,7 @@ input::-webkit-inner-spin-button{
 
 .airdrop__left{
 	left: 0;
-	top: 0;
+	top: 100px;
 }
 
 .airdrop__right{
@@ -818,6 +818,10 @@ input::-webkit-inner-spin-button{
 	border-radius: 0 0 10px 10px;
 	border-top: none;
 	gap: 30px;
+}
+
+.main__line{
+	width: 100%;
 }
 
 /* Responsive */
