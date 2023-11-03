@@ -194,6 +194,10 @@ input::-webkit-inner-spin-button{
 	object-fit: cover;
 }
 
+.main__bg.mobile{
+	display: none;
+}
+
 .main__inner{
 	width: 100%;
 	display: flex;
@@ -1240,6 +1244,14 @@ input::-webkit-inner-spin-button{
 	.container{
 		max-width: 100%;
 		padding: 0rem 1.5rem;
+	}
+
+	.main__bg{
+		display: none;
+	}
+
+	.main__bg.mobile{
+		display: flex;
 	}
 
 	.main__title{
