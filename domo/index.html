@@ -17,6 +17,7 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
@@ -30,7 +31,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="header__inner">
                     <button class="header__menu-btn">
@@ -73,7 +74,7 @@
             </div>
         </header>
 
-        <main class="main">
+        <main class="main" data-aos="fade-up" data-aos-duration="1000">
             <img src="img/main/bg-1.png" alt="bg" class="main__bg main__bg_desktop">
             <img src="img/main/bg-2.png" alt="bg" class="main__bg main__bg_mobile">
 
@@ -84,7 +85,7 @@
             </div>
         </main>
 
-        <div class="introducing">
+        <div class="introducing" data-aos="fade-up" data-aos-duration="1000">
             <img src="img/introducing/stars.png" alt="bg" class="introducing__stars">
 
             <img src="img/introducing/planet.png" alt="planet" class="introducing__planet">
@@ -145,7 +146,7 @@
             </div>
         </div>
 
-        <div class="tokenomics">
+        <div class="tokenomics" data-aos="fade-up" data-aos-duration="1000">
             <img src="img/tokenomics/planet.png" alt="planet" class="tokenomics__planet">
 
             <div class="container">
@@ -203,7 +204,7 @@
             </div>
         </div>
 
-        <div class="road-map">
+        <div class="road-map" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="road-map__inner">
                     <img src="img/road-map/asteroids.png" alt="asteroids" class="road-map__asteroids">
@@ -265,7 +266,7 @@
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <div class="container">
                 <div class="footer__inner">
                     <img src="img/footer/asteroids.png" alt="asteroids" class="footer__asteroids">
@@ -302,6 +303,9 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
-
 </html>
