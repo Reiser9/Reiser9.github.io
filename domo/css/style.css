@@ -1,0 +1,1021 @@
+:root {
+  --mainColor: #82EEF4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.75;
+  }
+}
+svg {
+  flex-shrink: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Rowdies, sans-serif;
+  line-height: 1;
+  background-color: #030B0B;
+  color: #fff;
+}
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1310px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.ibg {
+  position: relative;
+}
+.ibg > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0;
+  outline: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 54px;
+  color: var(--mainColor);
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 40;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.text {
+  line-height: normal;
+  font-size: 24px;
+}
+@media (max-width: 992px) {
+  .text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+.main-color {
+  color: var(--mainColor);
+}
+
+.burger-btn {
+  flex: 0 0 40px;
+  height: 24px;
+  position: relative;
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger-btn {
+    display: flex;
+  }
+}
+
+.menu-popup {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.3s;
+  overflow: auto;
+  padding: 100px 20px 20px;
+}
+.menu-popup.active {
+  left: 0;
+}
+.menu-popup__close-btn {
+  display: flex;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.popup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100% - 40px);
+  margin: 20px auto;
+}
+.popup__inner {
+  width: 100%;
+  background-color: #fff;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.active .popup__inner {
+  transform: scale(1);
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu-btn {
+  display: none;
+  z-index: 1;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .header__menu-btn {
+    display: flex;
+  }
+}
+.header__menu-btn .close-icon {
+  display: none;
+}
+.header__menu-btn.active .open-icon {
+  display: none;
+}
+.header__menu-btn.active .close-icon {
+  display: block;
+}
+.header__nav {
+  background-color: rgba(16, 44, 55, 0.75);
+  padding: 22px 33px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .header__nav {
+    opacity: 0;
+    visibility: hidden;
+    padding: 90px 20px 60px;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+  }
+  .header__nav.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 768px) {
+  .header__links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.header__link:hover {
+  opacity: 0.75;
+}
+.header__social-links {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .header__social-links {
+    display: flex;
+  }
+}
+.header__social-link {
+  display: flex;
+}
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #242a5c;
+  background-color: #BDE9FF;
+  border: 4px solid #000;
+  padding: 13px 38px;
+  border-radius: 27.5px;
+  position: relative;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .header__btn {
+    padding: 12px 28px;
+  }
+}
+@media (max-width: 768px) {
+  .header__btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .header__btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+}
+.header__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #BDC0FF;
+  transform: translate(-10px, 10px);
+  border: 4px solid #000;
+  border-radius: 27.5px;
+  z-index: -1;
+  transition: 0.3s;
+}
+@media (any-hover: hover) {
+  .header__btn:hover {
+    background-color: #BDC0FF;
+    opacity: 1;
+  }
+  .header__btn:hover::before {
+    background-color: #BDE9FF;
+  }
+}
+
+.main {
+  position: relative;
+  display: flex;
+}
+.main__bg {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+@media (max-width: 576px) {
+  .main__bg_desktop {
+    display: none;
+  }
+}
+.main__bg_mobile {
+  display: none;
+  aspect-ratio: 9/16;
+}
+@media (max-width: 576px) {
+  .main__bg_mobile {
+    display: block;
+  }
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -115%);
+}
+.main__up-title {
+  color: #bde9ff;
+  font-size: 36px;
+  -webkit-text-stroke: 2px #000;
+}
+@media (max-width: 768px) {
+  .main__up-title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .main__up-title {
+    font-size: 32px;
+  }
+}
+.main__title {
+  color: #bde9ff;
+  font-size: 221px;
+  -webkit-text-stroke: 8px #000;
+}
+@media (max-width: 1200px) {
+  .main__title {
+    font-size: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .main__title {
+    font-size: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .main__title {
+    font-size: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .main__title {
+    font-size: 86px;
+  }
+}
+
+.introducing {
+  padding: 125px 0 135px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .introducing {
+    padding: 90px 0 86px;
+  }
+}
+@media (max-width: 768px) {
+  .introducing {
+    padding: 75px 0 50px;
+  }
+}
+@media (max-width: 576px) {
+  .introducing {
+    padding: 45px 0 20px;
+  }
+}
+.introducing__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.introducing__stars, .introducing__ufo, .introducing__planet {
+  position: absolute;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .introducing__stars, .introducing__ufo, .introducing__planet {
+    display: none;
+  }
+}
+.introducing__stars {
+  max-width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.introducing__ufo {
+  top: 0;
+  left: 0;
+}
+.introducing__planet {
+  left: 0;
+  bottom: 0;
+}
+.introducing__text {
+  margin-top: 25px;
+  max-width: 775px;
+}
+@media (max-width: 768px) {
+  .introducing__text {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .introducing__text {
+    margin-top: 15px;
+  }
+}
+.introducing__blocks {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .introducing__blocks {
+    margin-top: 60px;
+    gap: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .introducing__blocks {
+    margin-top: 45px;
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .introducing__blocks {
+    margin-top: 30px;
+    gap: 8px;
+  }
+}
+
+.block-introducing {
+  width: calc(100% / 3 - (3 - 1) * 40px / 3);
+  padding: 10px;
+  border-radius: 75px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .block-introducing {
+    width: calc(100% / 2 - (2 - 1) * 32px / 2);
+  }
+}
+@media (max-width: 768px) {
+  .block-introducing {
+    width: 100%;
+  }
+}
+.block-introducing__inner {
+  flex-grow: 1;
+  background-color: #060606;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  border-radius: 75px;
+}
+@media (max-width: 992px) {
+  .block-introducing__inner {
+    padding: 36px 32px;
+  }
+}
+@media (max-width: 768px) {
+  .block-introducing__inner {
+    padding: 32px 24px;
+  }
+}
+@media (max-width: 576px) {
+  .block-introducing__inner {
+    padding: 30px 20px;
+  }
+}
+.block-introducing__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+}
+@media (max-width: 576px) {
+  .block-introducing__text {
+    font-size: 16px;
+  }
+}
+
+.tokenomics {
+  padding-top: 40px;
+  padding-bottom: 135px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .tokenomics {
+    background-position: 85px;
+  }
+}
+@media (max-width: 768px) {
+  .tokenomics {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .tokenomics {
+    padding-bottom: 20px;
+  }
+}
+.tokenomics__planet {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  transform: translateY(-40%);
+}
+@media (max-width: 768px) {
+  .tokenomics__planet {
+    display: none;
+  }
+}
+.tokenomics__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tokenomics__title {
+  text-align: center;
+}
+.tokenomics__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+@media (max-width: 992px) {
+  .tokenomics__content {
+    flex-direction: column-reverse;
+    margin-top: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .tokenomics__content {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .tokenomics__content {
+    margin-top: 30px;
+  }
+}
+.tokenomics__img {
+  width: 100%;
+  max-width: 494px;
+  flex-shrink: 0;
+}
+@media (max-width: 1200px) {
+  .tokenomics__img {
+    max-width: 360px;
+  }
+}
+.tokenomics__img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.tokenomics__info {
+  width: 100%;
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+@media (max-width: 992px) {
+  .tokenomics__info {
+    gap: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .tokenomics__info {
+    gap: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .tokenomics__info {
+    gap: 30px;
+  }
+}
+.tokenomics__items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .tokenomics__items {
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .tokenomics__items {
+    gap: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .tokenomics__items {
+    gap: 10px;
+  }
+}
+.tokenomics__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #060606;
+  border: 1px solid #515151;
+  border-radius: 15px;
+  padding: 13px 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .tokenomics__item {
+    padding: 10px;
+  }
+}
+.tokenomics__item_address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+@media (max-width: 576px) {
+  .tokenomics__item_address {
+    text-align: center;
+    gap: 16px;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .tokenomics__icon {
+    width: 40px;
+  }
+}
+.tokenomics__note {
+  width: 100%;
+  max-width: 214px;
+  margin-left: auto;
+}
+@media (max-width: 576px) {
+  .tokenomics__note {
+    margin-left: unset;
+  }
+}
+.tokenomics__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .tokenomics__header {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.tokenomics__btn {
+  background-color: #FFF;
+  padding: 12px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+@media (any-hover: hover) {
+  .tokenomics__btn:hover {
+    opacity: 0.75;
+  }
+}
+.tokenomics__copy-text {
+  min-width: 89px;
+}
+.tokenomics__address {
+  font-size: 20px;
+  word-break: break-word;
+}
+@media (max-width: 576px) {
+  .tokenomics__address {
+    font-size: 16px;
+  }
+}
+
+.road-map {
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+@media (max-width: 992px) {
+  .road-map {
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .road-map {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .road-map {
+    padding-bottom: 45px;
+  }
+}
+.road-map__inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.road-map__asteroids {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -30%);
+}
+@media (max-width: 768px) {
+  .road-map__asteroids {
+    display: none;
+  }
+}
+.road-map__title {
+  text-align: center;
+}
+.road-map__ufos {
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .road-map__ufos {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .road-map__ufos {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 55px;
+  }
+}
+@media (max-width: 576px) {
+  .road-map__ufos {
+    margin-top: 50px;
+  }
+}
+.road-map__ufo {
+  display: flex;
+  position: relative;
+}
+.road-map__ufo_bottom {
+  padding-top: 110px;
+}
+@media (max-width: 1310px) {
+  .road-map__ufo_bottom {
+    padding-top: calc(110px - (169.1881918819px - 12.9151291513vw));
+  }
+}
+@media (max-width: 768px) {
+  .road-map__ufo_bottom {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .road-map__ufo_bottom {
+    padding-top: 0;
+  }
+}
+.road-map__image {
+  width: 100%;
+}
+.road-map__image img {
+  width: 100%;
+}
+.road-map__content {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12.5%;
+  width: 100%;
+  max-width: 180px;
+}
+.road-map__subtitle {
+  color: var(--mainColor);
+}
+.road-map__text {
+  font-size: 20px;
+}
+.road-map__arrow {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  max-width: 180px;
+  top: 150px;
+}
+@media (max-width: 1310px) {
+  .road-map__arrow {
+    max-width: calc(180px - (253.7822878229px - 19.3726937269vw));
+  }
+}
+@media (max-width: 768px) {
+  .road-map__arrow {
+    max-width: 75px;
+  }
+}
+@media (max-width: 1310px) {
+  .road-map__arrow {
+    top: calc(150px - (205.442804428px - 15.6826568266vw));
+  }
+}
+@media (max-width: 768px) {
+  .road-map__arrow {
+    top: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .road-map__arrow {
+    display: none;
+  }
+}
+
+.footer {
+  position: relative;
+  aspect-ratio: 144/41;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    aspect-ratio: unset;
+  }
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+.footer__asteroids {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -90%);
+}
+@media (max-width: 768px) {
+  .footer__asteroids {
+    display: none;
+  }
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__title {
+  font-size: 86px;
+  color: #BDE9FF;
+  -webkit-text-stroke: 4px #000;
+}
+.footer__social-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 576px) {
+  .footer__social-links {
+    gap: 24px;
+  }
+}
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 440px;
+}
+@media (max-width: 1200px) {
+  .footer__right {
+    gap: 20px;
+    max-width: 370px;
+  }
+}
+@media (max-width: 992px) {
+  .footer__right {
+    max-width: unset;
+    text-align: center;
+    gap: 30px;
+  }
+}
+.footer__text {
+  line-height: 135%;
+  color: #BDE9FF;
+}
+.footer__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .footer__bg {
+    width: auto;
+    position: static;
+    transform: translateX(4%);
+    min-height: 400px;
+  }
+}
