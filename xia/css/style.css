@@ -230,10 +230,32 @@ input::-webkit-inner-spin-button{
 	color: #B0B0B0;
 }
 
+.main__buttons{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 4rem;
+}
+
+.main__whitepaper{
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 2rem 5rem;
+}
+
+.main__whitepaper:hover{
+	background: #fff;
+	color: #000;
+}
+
 .main__white{
 	background: #0096BE;
-	border-radius: 16px;
-	margin-top: 4rem;
+	border-radius: 6px;
 	color: #fff;
 	font-size: 2.4rem;
 	text-transform: uppercase;
@@ -1715,6 +1737,21 @@ input::-webkit-inner-spin-button{
 
 	.main__white span{
 		padding: 1.2rem 3rem;
+	}
+
+	.main__whitepaper{
+		padding: 1.2rem 3rem;
+		font-size: 2.2rem;
+	}
+
+	.main__buttons{
+		gap: 12px;
+	}
+
+	.main__white, .main__whitepaper{
+		min-width: 280px;
+		justify-content: center;
+		display: flex;
 	}
 
 	.main__white{
