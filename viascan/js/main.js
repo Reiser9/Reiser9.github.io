@@ -2,7 +2,8 @@ $(document).ready(function(){
 
     const closeMenu = () => {
         $(".header__menu").removeClass("active");
-        $(".menu__dropdown").removeClass("active");
+        $(".menu__dropdown--bg").removeClass("active");
+        $("body").removeClass("scroll");
     }
 
     $(".main__mouse--icon").on("click", function(e){
@@ -14,6 +15,11 @@ $(document).ready(function(){
     $(".go").on("click", function(e){
 		e.preventDefault();
 		let point = $(this).attr("data-point");
+
+        if(!$("#"+point).length){
+            window.location.href = "/";
+        }
+
 		closeMenu();
 		$('body,html').animate({scrollTop: $("#"+point).offset().top}, 500);
 	});
@@ -34,7 +40,10 @@ $(document).ready(function(){
 
     $(".header__menu").on("click", function(){
         $(this).toggleClass("active");
-        $(".menu__dropdown").toggleClass("active");
+        $(".menu__dropdown--bg").toggleClass("active");
+        $("body").toggleClass("scroll");
+
+        $('body,html').animate({scrollTop: 0}, 200);
     });
 
     $('.how__item--preview').on('click', function() {
