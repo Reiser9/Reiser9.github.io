@@ -949,10 +949,13 @@ input::-webkit-inner-spin-button{
 	.contacts__content, .download__content{
 		margin-top: 1.6rem;
 	}
+
+	.contacts__content{
+		max-width: 200px;
+	}
 	
 	.contacts__item{
 		width: 100%;
-		justify-content: center;
 	}
 
 	.contacts{
