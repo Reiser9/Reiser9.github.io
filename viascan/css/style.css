@@ -678,6 +678,28 @@ input::-webkit-inner-spin-button{
 	color: #B0C2CF;
 }
 
+a.footer__text{
+	position: relative;
+	display: inline-block;
+}
+
+a.footer__text:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	opacity: 0;
+	transition: .2s linear;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #B0C2CF;
+}
+
+a.footer__text:hover:before{
+	opacity: 1;
+}
+
 /* Выпадающее меню */
 .menu__dropdown--bg{
 	display: none;
