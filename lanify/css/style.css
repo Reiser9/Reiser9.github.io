@@ -274,6 +274,22 @@ input::-webkit-inner-spin-button{
 	line-height: 1.25;
 }
 
+.main__slide:first-child .main__slide--text{
+	color: #3CCDC9;
+}
+
+.main__slide:nth-child(2) .main__slide--text{
+	color: #C5C5FF;
+}
+
+.main__slide:nth-child(3) .main__slide--text{
+	color: #98C7FF;
+}
+
+.main__slide:last-child .main__slide--text{
+	color: #BF90EE;
+}
+
 .main__slide--icon--inner{
 	width: 56px;
 	height: 56px;
