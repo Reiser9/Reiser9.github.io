@@ -231,6 +231,15 @@ input::-webkit-inner-spin-button{
 	margin-top: 1rem;
 }
 
+.main__buttons{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 11px;
+	margin-top: 3.5rem;
+	justify-content: center;
+}
+
 .main__button, .airdrop__button{
 	position: relative;
 	padding: 1.4rem 3.5rem;
@@ -240,13 +249,24 @@ input::-webkit-inner-spin-button{
 	font-size: 2.4rem;
 	font-weight: 700;
 	color: #64402F;
-	margin-top: 3.5rem;
+}
+
+.main__button:last-child{
+	color: #FFC331;
+	border: 3px solid #966D44;
+	background: #966D44;
+}
+
+.main__button:last-child:hover{
+	background: #764f28;
+	border: 3px solid #764f28;
 }
 
 .airdrop__button.disable{
 	pointer-events: none;
 	background: rgba(150, 109, 68, 1);
 	color: rgba(233, 198, 131, 1);
+	margin-top: 3.5rem;
 }
 
 .connect__text{
@@ -276,6 +296,10 @@ input::-webkit-inner-spin-button{
 	right: 6px;
 	border-radius: 10px;
 	z-index: -1;
+}
+
+.main__button:last-child:before{
+	background: #FFC331;
 }
 
 .header__button{
@@ -848,6 +872,9 @@ input::-webkit-inner-spin-button{
 	border-radius: 0 0 10px 10px;
 	border-top: none;
 	gap: 30px;
+	overflow-y: auto;
+	max-height: 85dvh;
+	padding-bottom: 40px;
 }
 
 .main__line{
@@ -857,6 +884,126 @@ input::-webkit-inner-spin-button{
 
 .header__button.mobile{
 	display: none;
+}
+
+/* Presale */
+.presale{
+	width: 100%;
+	padding: 10rem 0rem 13rem 0;
+	position: relative;
+}
+
+.presale__bg{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.presale__inner{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.presale__content{
+	width: 100%;
+	max-width: 950px;
+	border-radius: 20px;
+	background: #fff;
+	border: 3px solid #272727;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 9rem 2rem 9rem;
+	position: relative;
+}
+
+.presale__text{
+	width: 100%;
+	margin-top: 3.8rem;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: #000;
+}
+
+.presale__items{
+	width: 100%;
+	margin-top: 2rem;
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.presale__item{
+	width: calc(100% / 3 - 60px / 3);
+	background: #64402F;
+	border-radius: 9px;
+	border: 1px solid #272727;
+	font-weight: 700;
+	color: #FFC331;
+	font-size: 2rem;
+	padding: 1.3rem 0.5rem;
+	text-align: center;
+}
+
+.presale__item:hover{
+	background: #4d2f21;
+}
+
+.presale__subtitle{
+	width: 100%;
+	text-align: center;
+	margin-top: 0.5rem;
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: #64402F;
+}
+
+.presale__title--inner{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.presale__title{
+	font-size: 3rem;
+	color: #FFC331;
+	-webkit-text-stroke: 1px #000;
+    font-family: 'Chango', cursive;
+	text-transform: uppercase;
+}
+
+.presale__title---icon{
+	width: 32px;
+	flex-shrink: 0;
+}
+
+.presale__coin{
+	width: 150px;
+	flex-shrink: 0;
+	position: absolute;
+	top: -75px;
+	right: -75px;
+	pointer-events: none;
+}
+
+.header__presale{
+	background: #FFC331;
+	color: #64402F;
+	font-size: 2rem;
+	font-weight: 700;
+	border-radius: 10px;
+	padding: 0.6rem 2rem;
+}
+
+.header__presale:hover{
+	background: #d6a322;
 }
 
 /* Responsive */
@@ -1035,6 +1182,20 @@ input::-webkit-inner-spin-button{
 
 	.header__menu.active{
 		display: flex;
+	}
+
+	.presale{
+		padding: 6rem 0rem;
+	}
+
+	.presale__content{
+		padding: 2rem 5rem;
+	}
+
+	.presale__coin{
+		width: 100px;
+		top: -50px;
+		right: -50px;
 	}
 }
 @media(max-width: 768px){
@@ -1239,6 +1400,45 @@ input::-webkit-inner-spin-button{
 	.token__content{
 		margin-top: 3rem;
 	}
+
+	.presale__items{
+		gap: 17px;
+	}
+
+	.presale__item{
+		width: 100%;
+	}
+
+	.presale__title---icon{
+		display: none;
+	}
+
+	.presale__title{
+		text-align: center;
+		font-size: 2.4rem;
+	}
+
+	.presale__subtitle{
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+
+	.presale__item{
+		font-size: 1.6rem;
+	}
+
+	.presale__text{
+		margin-top: 2rem;
+	}
+
+	.header__presale{
+		display: none;
+	}
+
+	.header__presale.mobile{
+		display: flex;
+		padding: 0.6rem 2.6rem;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1355,5 +1555,26 @@ input::-webkit-inner-spin-button{
 
 	.header__button.mobile{
 		display: flex;
+	}
+
+	.presale__coin{
+		display: none;
+	}
+
+	.presale__content{
+		padding: 2rem;
+	}
+
+	.presale__title{
+		font-size: 2.2rem;
+	}
+
+	.presale__subtitle, .presale__text{
+		font-size: 1.6rem;
+		margin-top: 1rem;
+	}
+
+	.presale__item{
+		padding: 0.4rem;
 	}
 }
