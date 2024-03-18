@@ -6,6 +6,23 @@ $(document).ready(function(){
         $("body").removeClass("scroll");
     }
 
+    const scrollToHash = () => {
+        if(window.location.hash) {
+            var hash = window.location.hash.substring(1);
+            var targetElement = $('#' + hash);
+            
+            if(targetElement.length) {
+                $('html, body').animate({
+                    scrollTop: targetElement.offset().top
+                }, 500);
+    
+                setTimeout(() => {
+                    history.replaceState(null, null, ' ');
+                }, 600);
+            }
+        }
+    }
+
     $(".main__mouse--icon").on("click", function(e){
         e.preventDefault();
 
@@ -17,12 +34,16 @@ $(document).ready(function(){
 		let point = $(this).attr("data-point");
 
         if(!$("#"+point).length){
-            window.location.href = "/";
+            return window.location.href = `/#${point}`;
         }
 
+        history.replaceState(null, null, `#${point}`);
 		closeMenu();
-		$('body,html').animate({scrollTop: $("#"+point).offset().top}, 500);
+		// $('body,html').animate({scrollTop: $("#"+point).offset().top}, 500);
+        scrollToHash();
 	});
+
+    scrollToHash();
 
 	$(".questions__item").on("click", function(){
         if($(this).hasClass("active")){
