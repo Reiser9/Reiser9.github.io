@@ -909,6 +909,7 @@ input::-webkit-inner-spin-button{
 
 .carousel__inner{
 	width: 100%;
+	margin-top: 6rem;
 }
 
 .carousel__slide{
@@ -1252,6 +1253,10 @@ input::-webkit-inner-spin-button{
 	.token__element{
 		width: 33%;
 		flex-shrink: 0;
+	}
+
+	.carousel__inner{
+		margin-top: 4rem;
 	}
 }
 @media(max-width: 768px){
@@ -1634,6 +1639,10 @@ input::-webkit-inner-spin-button{
 
 	.token__element{
 		width: 65vw;
+	}
+
+	.carousel__inner{
+		margin-top: 3rem;
 	}
 }
 @media (max-width: 420px) {
