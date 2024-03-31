@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Mazze</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+	<!-- <div class="info__block" data-aos="fade-down" data-aos-duration="700">
+		<p class="info__block--text">
+			Mazze is now live on Coingecko!
+		</p>
+
+		<a href="#" class="info__block--more">
+			Read more
+		</a>
+	</div> -->
+
+	<header class="header">
+		<canvas class="noise"></canvas>
+
+		<div class="container" data-aos="fade-down" data-aos-duration="700">
+			<div class="header__inner">
+				<button class="button header__menu">
+					<span class="header__menu--icon">
+
+					</span>
+
+					Menu
+				</button>
+
+				<div class="menu__content">
+					<img src="img/menu-shadow.svg" alt="shadow" class="menu__shadow">
+
+					<div class="menu__nav">
+						<div class="menu__nav--content">
+							<a href="#" class="menu__nav--link">Home</a>
+							<a href="#" class="menu__nav--link">Use Cases</a>
+							<a href="#" class="menu__nav--link">Technical Capabilities</a>
+							<a href="#" class="menu__nav--link">FAQ</a>
+							<a href="#" class="menu__nav--link">Audit</a>
+							<a href="#" class="menu__nav--link">Career</a>
+						</div>
+
+						<div class="smallText menu__nav--copy">
+							&copy;2024 MazzeLabs. MADE WITH
+
+							<img src="img/heart.svg" alt="heart" class="menu__heart">
+						</div>
+					</div>
+
+					<div class="menu__wrapper">
+						<div class="menu__wrapper--content">
+							<img src="img/menu-logo.svg" alt="logo" class="menu__logo">
+
+							<p class="tagSmall menu__text">
+								An exclusive community who are building brands and boosting revenue together.
+							</p>
+
+							<a href="#" class="btnText menu__discord">
+								Join Discord
+								
+								<svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.3541 6.14059C18.0241 5.52059 16.5841 5.07059 15.0841 4.81059C15.071 4.81017 15.0579 4.81264 15.0458 4.81782C15.0337 4.82301 15.0229 4.83078 15.0141 4.84059C14.8341 5.17059 14.6241 5.60059 14.4841 5.93059C12.8931 5.69059 11.2751 5.69059 9.6841 5.93059C9.5441 5.59059 9.3341 5.17059 9.1441 4.84059C9.1341 4.82059 9.1041 4.81059 9.0741 4.81059C7.5741 5.07059 6.1441 5.52059 4.8041 6.14059C4.7941 6.14059 4.7841 6.15059 4.7741 6.16059C2.0541 10.2306 1.3041 14.1906 1.6741 18.1106C1.6741 18.1306 1.6841 18.1506 1.7041 18.1606C3.5041 19.4806 5.2341 20.2806 6.9441 20.8106C6.9741 20.8206 7.0041 20.8106 7.0141 20.7906C7.4141 20.2406 7.7741 19.6606 8.0841 19.0506C8.1041 19.0106 8.0841 18.9706 8.0441 18.9606C7.4741 18.7406 6.9341 18.4806 6.4041 18.1806C6.3641 18.1606 6.3641 18.1006 6.3941 18.0706C6.5041 17.9906 6.6141 17.9006 6.7241 17.8206C6.7441 17.8006 6.7741 17.8006 6.7941 17.8106C10.2341 19.3806 13.9441 19.3806 17.3441 17.8106C17.3641 17.8006 17.3941 17.8006 17.4141 17.8206C17.5241 17.9106 17.6341 17.9906 17.7441 18.0806C17.7841 18.1106 17.7841 18.1706 17.7341 18.1906C17.2141 18.5006 16.6641 18.7506 16.0941 18.9706C16.0541 18.9806 16.0441 19.0306 16.0541 19.0606C16.3741 19.6706 16.7341 20.2506 17.1241 20.8006C17.1541 20.8106 17.1841 20.8206 17.2141 20.8106C18.9341 20.2806 20.6641 19.4806 22.4641 18.1606C22.4841 18.1506 22.4941 18.1306 22.4941 18.1106C22.9341 13.5806 21.7641 9.65059 19.3941 6.16059C19.3841 6.15059 19.3741 6.14059 19.3541 6.14059ZM8.6041 15.7206C7.5741 15.7206 6.7141 14.7706 6.7141 13.6006C6.7141 12.4306 7.5541 11.4806 8.6041 11.4806C9.6641 11.4806 10.5041 12.4406 10.4941 13.6006C10.4941 14.7706 9.6541 15.7206 8.6041 15.7206ZM15.5741 15.7206C14.5441 15.7206 13.6841 14.7706 13.6841 13.6006C13.6841 12.4306 14.5241 11.4806 15.5741 11.4806C16.6341 11.4806 17.4741 12.4406 17.4641 13.6006C17.4641 14.7706 16.6341 15.7206 15.5741 15.7206Z" fill="currentColor"/>
+								</svg>
+							</a>
+						</div>
+
+						<div class="menu__wrapper--social">
+							<div class="menu__wrapper--buttons">
+								<a href="#" class="btnText menu__wrapper--button">
+									Zealy
+								</a>
+
+								<a href="#" class="btnText menu__wrapper--button">
+									Whitepaper
+								</a>
+							</div>
+
+							<div class="menu__wrapper--social--links">
+								<a href="#" class="menu__wrapper--social--link">
+									<svg viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.776703 8.03561C0.826669 8.01126 0.876659 7.98813 0.925376 7.96622C1.7723 7.58399 2.63048 7.22612 3.4874 6.86823C3.53362 6.86823 3.61105 6.81589 3.65477 6.79885C3.72097 6.77085 3.78719 6.74407 3.85339 6.71607C3.98081 6.66251 4.10823 6.61017 4.23439 6.55661C4.48922 6.4507 4.74278 6.34479 4.99761 6.23889L6.52283 5.60225C7.53964 5.17863 8.55773 4.75379 9.57454 4.33018C10.5914 3.90656 11.6094 3.48172 12.6262 3.05811C13.643 2.63449 14.6611 2.20966 15.6779 1.78605C16.6947 1.36243 17.7128 0.937592 18.7296 0.513975C18.9557 0.419026 19.2005 0.277817 19.4429 0.236429C19.6465 0.201128 19.8451 0.132963 20.05 0.0952269C20.4384 0.0234068 20.8669 -0.00580548 21.2392 0.151225C21.3678 0.206003 21.4865 0.282692 21.5852 0.378858C22.0574 0.834124 21.9911 1.58153 21.8912 2.22183C21.1954 6.68442 20.4997 11.1482 19.8026 15.6108C19.7077 16.2231 19.5778 16.8951 19.0819 17.2822C18.6621 17.6096 18.065 17.6461 17.5466 17.5073C17.0282 17.3674 16.5711 17.074 16.1226 16.7855C14.2626 15.5852 12.4014 14.385 10.5414 13.1847C10.0992 12.8999 9.60703 12.5274 9.61202 12.0101C9.61452 11.6984 9.80562 11.4209 10.0005 11.1738C11.6169 9.119 13.9491 7.70694 15.6842 5.74711C15.929 5.47078 16.1214 4.97169 15.7853 4.81223C15.5855 4.71728 15.3556 4.84631 15.1732 4.96925C12.8798 6.5213 10.5876 8.07456 8.29415 9.62661C7.54591 10.133 6.76144 10.654 5.85955 10.7782C5.05259 10.8902 4.24064 10.671 3.45992 10.4471C2.80536 10.2596 2.15203 10.0673 1.50122 9.86885C1.1552 9.76416 0.797942 9.65096 0.530623 9.41358C0.263303 9.17621 0.109677 8.77694 0.270819 8.46044C0.372001 8.26202 0.568122 8.13664 0.774233 8.03439L0.776703 8.03561Z" fill="currentColor"/>
+									</svg>
+								</a>
+
+								<a href="#" class="menu__wrapper--social--link">
+									<svg viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_225_3117)">
+											<path d="M13.6213 12.811C13.6213 16.7317 10.5909 19.9101 6.85264 19.9101C3.11441 19.9101 0.0839844 16.7317 0.0839844 12.811C0.0839844 8.89028 3.11441 5.71191 6.85264 5.71191C10.5908 5.71191 13.6213 8.89028 13.6213 12.811Z" fill="currentColor"/>
+											<path d="M21.047 12.8114C21.047 16.5021 19.5317 19.4939 17.6626 19.4939C15.7936 19.4939 14.2783 16.5021 14.2783 12.8114C14.2783 9.12075 15.7936 6.12891 17.6626 6.12891C19.5318 6.12891 21.047 9.12075 21.047 12.8114Z" fill="currentColor"/>
+											<path d="M24.0837 12.8105C24.0837 16.1172 23.5507 18.7978 22.8934 18.7978C22.236 18.7978 21.7031 16.1172 21.7031 12.8105C21.7031 9.50381 22.236 6.82324 22.8934 6.82324C23.5507 6.82324 24.0837 9.50381 24.0837 12.8105Z" fill="currentColor"/>
+										</g>
+
+										<defs>
+											<clipPath id="clip0_225_3117">
+												<rect width="24" height="25" fill="white" transform="translate(0.0839844 0.310547)"/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+
+								<a href="#" class="menu__wrapper--social--link">
+									<svg viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_225_3123)">
+											<path d="M8.38443 23.263C9.11075 23.263 9.31601 22.9788 9.31601 22.6156C9.31601 22.2524 9.31601 21.463 9.30022 20.3419C5.52654 21.1472 4.72127 18.5419 4.72127 18.5419C4.10548 17.0103 3.20548 16.584 3.20548 16.584C1.9739 15.763 3.30022 15.7788 3.30022 15.7788C4.65811 15.8735 5.38443 17.1524 5.38443 17.1524C6.60022 19.2051 8.55812 18.6051 9.3318 18.2577C9.39496 17.5788 9.69496 16.9314 10.2002 16.4577C7.18443 16.1261 4.01075 14.9735 4.01075 9.85771C3.99496 8.53139 4.50022 7.23665 5.41601 6.2735C5.25811 5.94192 4.80022 4.58402 5.52654 2.73665C5.52654 2.73665 6.66338 2.3735 9.26864 4.11034C11.495 3.51034 13.8318 3.51034 16.0581 4.11034C18.6318 2.38929 19.7844 2.73665 19.7844 2.73665C20.5107 4.56823 20.0529 5.92613 19.9265 6.2735C20.8423 7.23665 21.3318 8.53139 21.316 9.85771C21.316 14.9893 18.1423 16.1103 15.1107 16.4419C15.5844 16.8367 16.0265 17.6577 16.0265 18.9051C16.0265 20.7051 16.0107 22.1261 16.0107 22.5524C16.0107 22.8998 16.1686 23.184 16.9423 23.184L8.38443 23.263Z" fill="currentColor"/>
+										</g>
+
+										<defs>
+											<clipPath id="clip0_225_3123">
+												<rect width="24" height="25" fill="white" transform="translate(0.0839844 0.310547)"/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+
+								<a href="#" class="menu__wrapper--social--link">
+									<svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_225_3088)">
+											<path d="M13.0387 9.20261L20.6883 0.310547H18.8756L12.2334 8.0314L6.92835 0.310547H0.80957L8.83189 11.9858L0.80957 21.3105H2.62239L9.63669 13.1571L15.2392 21.3105H21.358L13.0382 9.20261H13.0387ZM10.5558 12.0887L9.74296 10.9261L3.27557 1.6752H6.05996L11.2792 9.14099L12.092 10.3036L18.8764 20.0079H16.0921L10.5558 12.0892V12.0887Z" fill="currentColor"/>
+										</g>
+
+										<defs>
+											<clipPath id="clip0_225_3088">
+												<rect width="21" height="21" fill="white" transform="translate(0.583984 0.310547)"/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+
+								<a href="#" class="menu__wrapper--social--link">
+									<img src="img/book.svg" alt="book">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" class="header__logo--img">
+				</a>
+
+				<div class="header__buttons">
+					<button class="button btnText header__button">
+						Devnet
+					</button>
+
+					<button class="button btnText header__button">
+						Buy
+
+						<svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.3536 4.85355C12.5488 4.65829 12.5488 4.34171 12.3536 4.14645L9.17157 0.964466C8.97631 0.769204 8.65973 0.769204 8.46447 0.964466C8.2692 1.15973 8.2692 1.47631 8.46447 1.67157L11.2929 4.5L8.46447 7.32843C8.2692 7.52369 8.2692 7.84027 8.46447 8.03553C8.65973 8.2308 8.97631 8.2308 9.17157 8.03553L12.3536 4.85355ZM0 5H12V4H0V5Z" fill="currentColor"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<img src="img/main-shadow.svg" alt="shadow" class="main__shadow">
+
+	<section class="main">
+		<img src="img/main-grid.svg" alt="grid" class="main__bg">
+
+		<div class="container">
+			<div class="main__inner" data-aos="fade-down" data-aos-duration="700">
+				<h1 class="h1 main__title">Future-Ready Blockchain</h1>
+
+				<div class="main__title--inner">
+					<p class="h1 textGradient main__subtitle">
+						Today's Speed
+					</p>
+
+					<lottie-player class="main__title--icon" src="https://lottie.host/ad37bd49-fb7c-4964-bcfc-20ff810e4f13/OyI9UqKIqv.json" loop autoplay></lottie-player>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main__points">
+		<canvas class="noise"></canvas>
+		<img src="img/main-shadow2.svg" alt="shadow" class="points__shadow">
+
+		<div class="container">
+			<div class="main__points--inner">
+				<div class="main__points--content" data-aos="fade-right" data-aos-duration="700">
+					<div class="main__points--wrapper">
+						<p class="main__point">Fast.</p>
+						<p class="main__point">Secure.</p>
+						<p class="main__point">Private.</p>
+					</div>
+
+					<lottie-player class="main__points--star" src="https://lottie.host/3cd13843-26fd-4a1a-bb63-346808f9286c/j7zDZ6Niae.json" loop autoplay></lottie-player>
+				</div>
+
+				<p class="smallText main__points--text" data-aos="fade-down" data-aos-duration="700">
+					Mazze is a Layer 1 blockchain that redefines performance through its PoW-based DAG architecture, achieving 40,000 TPS and 1s finality. Experience EVM compatible smart contracts and unparalleled privacy with ZK proofs.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<section class="partners">
+		<div class="container">
+			<div class="partners__inner" data-aos="fade-down" data-aos-duration="700">
+				<h3 class="h3 partners__title">
+					Our partners
+				</h3>
+
+				<lottie-player class="partners__icon" src="https://lottie.host/8c67dade-c4da-4ef4-acf0-0df65356e545/GsCOgBA9Rz.json" loop autoplay></lottie-player>
+			</div>
+		</div>
+
+		<div class="partners__content" data-aos="fade-in" data-aos-duration="700">
+			<div class="partners__wrapper">
+				<img src="img/partner1.svg" alt="partner" class="partners__img">
+				<img src="img/partner2.png" alt="partner" class="partners__img">
+				<img src="img/partner3.png" alt="partner" class="partners__img">
+				<img src="img/partner4.png" alt="partner" class="partners__img">
+				<img src="img/partner5.png" alt="partner" class="partners__img">
+				<img src="img/partner6.png" alt="partner" class="partners__img">
+				<img src="img/partner7.png" alt="partner" class="partners__img">
+				<img src="img/partner8.png" alt="partner" class="partners__img">
+			</div>
+
+			<div class="partners__wrapper">
+				<img src="img/partner1.svg" alt="partner" class="partners__img">
+				<img src="img/partner2.png" alt="partner" class="partners__img">
+				<img src="img/partner3.png" alt="partner" class="partners__img">
+				<img src="img/partner4.png" alt="partner" class="partners__img">
+				<img src="img/partner5.png" alt="partner" class="partners__img">
+				<img src="img/partner6.png" alt="partner" class="partners__img">
+				<img src="img/partner7.png" alt="partner" class="partners__img">
+				<img src="img/partner8.png" alt="partner" class="partners__img">
+			</div>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<div class="partners__inner reverse" data-aos="fade-down" data-aos-duration="700">
+				<lottie-player class="partners__icon2" src="https://lottie.host/f708adf0-7d4e-4663-83af-9e01587ef4f5/WZVzVLEN7y.json" loop autoplay></lottie-player>
+
+				<h3 class="h3 partners__title">
+					Press Release
+				</h3>
+			</div>
+		</div>
+
+		<div class="partners__content">
+			<div class="release__wrapper">
+				<img src="img/relese1.png" alt="release" class="relese__img">
+				<img src="img/relese2.png" alt="release" class="relese__img">
+				<img src="img/relese3.png" alt="release" class="relese__img">
+				<img src="img/relese4.png" alt="release" class="relese__img">
+			</div>
+		</div>
+	</section>
+
+	<section class="empower">
+		<div class="container">
+			<div class="empower__inner">
+				<h2 class="h1_2 textGradient empower__title" data-aos="fade-right" data-aos-duration="700">
+					Empower Your Blockchain Experience
+				</h2>
+
+				<p class="smallText empower__text" data-aos="fade-right" data-aos-duration="700">
+					Discover the unparalleled capabilities that set Mazze apart.
+				</p>
+
+				<img src="img/tags.svg" alt="tgs" class="empower__tags" data-aos="fade-in" data-aos-duration="700">
+			</div>
+		</div>
+
+		<div class="empower__blocks" data-aos="fade-in" data-aos-duration="700">
+			<div class="empower__block">
+				<lottie-player id="empowerIcon1" class="empower__icon1" src="https://lottie.host/42bbc589-4dec-48e1-a951-50c38e215a71/4W5kQq7WJh.json" autoplay></lottie-player>
+			</div>
+
+			<div class="empower__block">
+				<lottie-player id="empowerIcon2" class="empower__icon2" src="https://lottie.host/981a891c-270e-4711-a268-9311bf1ee0f4/HsbvZQcbh3.json" autoplay></lottie-player>
+			</div>
+
+			<div class="empower__block">
+				<lottie-player id="empowerIcon3" class="empower__icon3" src="https://lottie.host/f876ae55-08f4-463a-8940-fe62991aa50a/eHXSXwGmMv.json" autoplay></lottie-player>
+			</div>
+		</div>
+	</section>
+
+	<section class="advanced">
+		<canvas class="noise"></canvas>
+		<img src="img/advanced-bg.svg" alt="bg" class="advanced__bg">
+
+		<div class="container">
+			<div class="advanced__inner">
+				<img src="img/code.png" alt="code" class="advanced__img">
+
+				<div class="advanced__text--inner">
+					<h2 class="h1_2 textGradient advanced__title">
+						Advanced Tech at the Core
+					</h2>
+
+					<p class="smallText advanced__text">
+						Mazze leverages cutting-edge technology to offer unmatched blockchain solutions.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blockinfo">
+		<div class="container">
+			<div class="blockinfo__inner">
+				<div class="blockinfo__text--inner" data-aos="fade-down" data-aos-duration="700">
+					<h3 class="h3 textGradient blockinfo__title">
+						Financial Sector Transformation
+					</h3>
+
+					<p class="smallText blockinfo__text">
+						Mazze offers robust and transparent solutions for cross-border transactions, reducing processing times and costs significantly. It enables small businesses to engage effortlessly in international trade, bypassing traditional banking complexities and fees.
+					</p>
+				</div>
+
+				<div class="blockinfo__animation--inner">
+					<img src="img/animation-grid.svg" alt="grid" class="blockinfo__animation--grid">
+
+					<lottie-player class="blockinfo__animation1" src="https://lottie.host/48db9c91-2f99-4ab4-9d01-7a2a4ebcf2fb/IpMx6JTRJA.json" autoplay></lottie-player>
+
+					<lottie-player class="blockinfo__animation2" src="https://lottie.host/48db9c91-2f99-4ab4-9d01-7a2a4ebcf2fb/IpMx6JTRJA.json" autoplay></lottie-player>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blockinfo2">
+		<canvas class="noise"></canvas>
+
+		<div class="container">
+			<div class="blockinfo__inner">
+				<div class="blockinfo__animation--inner">
+					<img src="img/animation-grid.svg" alt="grid" class="blockinfo__animation--grid">
+
+					<img src="img/cheap.svg" alt="cheap" class="blockinfo2__icon">
+
+					<lottie-player class="blockinfo2__animation1" src="https://lottie.host/023af26f-278b-4303-9f85-3a519154e137/VCScobvtLv.json" autoplay></lottie-player>
+				</div>
+
+				<div class="blockinfo__text--inner" data-aos="fade-down" data-aos-duration="700">
+					<h3 class="h3 textGradient blockinfo__title">
+						Enhanced IoT & Real Estate
+					</h3>
+
+					<p class="smallText blockinfo__text">
+						Mazze streamlines real estate transactions with its transparent ledger, increasing trust and accountability in property transfers. In the IoT domain, it enables secure and efficient data exchange, optimizing device interoperability and opening new avenues for smart technology applications.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blockinfo3">
+		<div class="container">
+			<div class="blockinfo__inner">
+				<div class="blockinfo__text--inner" data-aos="fade-down" data-aos-duration="700">
+					<h3 class="h3 textGradient blockinfo__title">
+						Healthcare & Education
+					</h3>
+
+					<p class="smallText blockinfo__text">
+						In healthcare, Mazze enhances patient data management by securely storing and sharing medical records, ensuring confidentiality and efficiency. In education, it enables the creation of tamper-proof academic credentials, combating qualification fraud and simplifying verification processes for employers.
+					</p>
+				</div>
+
+				<div class="blockinfo__animation--inner">
+					<img src="img/animation-grid.svg" alt="grid" class="blockinfo__animation--grid">
+
+					<img src="img/education.svg" alt="education" class="blockinfo3__icon">
+
+					<lottie-player class="blockinfo3__animation1" src="https://lottie.host/823b57a9-9556-409c-925f-c2f107affe2a/ntSyP18HkY.json" autoplay></lottie-player>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="meet" data-aos="fade-right" data-aos-duration="700">
+		<img src="img/meet-bg.svg" alt="bg" class="meet__bg">
+
+		<div class="container">
+			<div class="meet__inner">
+				<h2 class="h1_2 textGradient meet__title">
+					Meet the Brains behind Mazze.
+				</h2>
+
+				<div class="meet__content">
+					<div class="meet__item">
+						<div class="meet__item--profile">
+							<div class="meet__item--avatar">
+								<img src="img/ava2.png" alt="avatar" class="meet__item--avatar--img">
+							</div>
+
+							<div class="meet__item--text--inner">
+								<p class="h3 meet__item--name">
+									profEdwin
+								</p>
+
+								<p class="mediumText meet__item--role">
+									Dev at Mazze
+								</p>
+							</div>
+						</div>
+
+						<div class="meet__item--social">
+							<a href="#" class="meet__item--social--link">
+								<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.084 4.81055H4.08398C2.98398 4.81055 2.09398 5.71055 2.09398 6.81055L2.08398 18.8105C2.08398 19.9105 2.98398 20.8105 4.08398 20.8105H20.084C21.184 20.8105 22.084 19.9105 22.084 18.8105V6.81055C22.084 5.71055 21.184 4.81055 20.084 4.81055ZM20.084 8.81055L12.084 13.8105L4.08398 8.81055V6.81055L12.084 11.8105L20.084 6.81055V8.81055Z" fill="currentColor"/>
+								</svg>
+							</a>
+
+							<a href="#" class="meet__item--social--link">
+								<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.3541 6.14059C18.0241 5.52059 16.5841 5.07059 15.0841 4.81059C15.071 4.81017 15.0579 4.81264 15.0458 4.81782C15.0337 4.82301 15.0229 4.83078 15.0141 4.84059C14.8341 5.17059 14.6241 5.60059 14.4841 5.93059C12.8931 5.69059 11.2751 5.69059 9.6841 5.93059C9.5441 5.59059 9.3341 5.17059 9.1441 4.84059C9.1341 4.82059 9.1041 4.81059 9.0741 4.81059C7.5741 5.07059 6.1441 5.52059 4.8041 6.14059C4.7941 6.14059 4.7841 6.15059 4.7741 6.16059C2.0541 10.2306 1.3041 14.1906 1.6741 18.1106C1.6741 18.1306 1.6841 18.1506 1.7041 18.1606C3.5041 19.4806 5.2341 20.2806 6.9441 20.8106C6.9741 20.8206 7.0041 20.8106 7.0141 20.7906C7.4141 20.2406 7.7741 19.6606 8.0841 19.0506C8.1041 19.0106 8.0841 18.9706 8.0441 18.9606C7.4741 18.7406 6.9341 18.4806 6.4041 18.1806C6.3641 18.1606 6.3641 18.1006 6.3941 18.0706C6.5041 17.9906 6.6141 17.9006 6.7241 17.8206C6.7441 17.8006 6.7741 17.8006 6.7941 17.8106C10.2341 19.3806 13.9441 19.3806 17.3441 17.8106C17.3641 17.8006 17.3941 17.8006 17.4141 17.8206C17.5241 17.9106 17.6341 17.9906 17.7441 18.0806C17.7841 18.1106 17.7841 18.1706 17.7341 18.1906C17.2141 18.5006 16.6641 18.7506 16.0941 18.9706C16.0541 18.9806 16.0441 19.0306 16.0541 19.0606C16.3741 19.6706 16.7341 20.2506 17.1241 20.8006C17.1541 20.8106 17.1841 20.8206 17.2141 20.8106C18.9341 20.2806 20.6641 19.4806 22.4641 18.1606C22.4841 18.1506 22.4941 18.1306 22.4941 18.1106C22.9341 13.5806 21.7641 9.65059 19.3941 6.16059C19.3841 6.15059 19.3741 6.14059 19.3541 6.14059ZM8.6041 15.7206C7.5741 15.7206 6.7141 14.7706 6.7141 13.6006C6.7141 12.4306 7.5541 11.4806 8.6041 11.4806C9.6641 11.4806 10.5041 12.4406 10.4941 13.6006C10.4941 14.7706 9.6541 15.7206 8.6041 15.7206ZM15.5741 15.7206C14.5441 15.7206 13.6841 14.7706 13.6841 13.6006C13.6841 12.4306 14.5241 11.4806 15.5741 11.4806C16.6341 11.4806 17.4741 12.4406 17.4641 13.6006C17.4641 14.7706 16.6341 15.7206 15.5741 15.7206Z" fill="currentColor"/>
+								</svg>
+							</a>
+
+							<a href="#" class="meet__item--social--link">
+								<svg viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.776703 8.03561C0.826669 8.01126 0.876659 7.98813 0.925376 7.96622C1.7723 7.58399 2.63048 7.22612 3.4874 6.86823C3.53362 6.86823 3.61105 6.81589 3.65477 6.79885C3.72097 6.77085 3.78719 6.74407 3.85339 6.71607C3.98081 6.66251 4.10823 6.61017 4.23439 6.55661C4.48922 6.4507 4.74278 6.34479 4.99761 6.23889L6.52283 5.60225C7.53964 5.17863 8.55773 4.75379 9.57454 4.33018C10.5914 3.90656 11.6094 3.48172 12.6262 3.05811C13.643 2.63449 14.6611 2.20966 15.6779 1.78605C16.6947 1.36243 17.7128 0.937592 18.7296 0.513975C18.9557 0.419026 19.2005 0.277817 19.4429 0.236429C19.6465 0.201128 19.8451 0.132963 20.05 0.0952269C20.4384 0.0234068 20.8669 -0.00580548 21.2392 0.151225C21.3678 0.206003 21.4865 0.282692 21.5852 0.378858C22.0574 0.834124 21.9911 1.58153 21.8912 2.22183C21.1954 6.68442 20.4997 11.1482 19.8026 15.6108C19.7077 16.2231 19.5778 16.8951 19.0819 17.2822C18.6621 17.6096 18.065 17.6461 17.5466 17.5073C17.0282 17.3674 16.5711 17.074 16.1226 16.7855C14.2626 15.5852 12.4014 14.385 10.5414 13.1847C10.0992 12.8999 9.60703 12.5274 9.61202 12.0101C9.61452 11.6984 9.80562 11.4209 10.0005 11.1738C11.6169 9.119 13.9491 7.70694 15.6842 5.74711C15.929 5.47078 16.1214 4.97169 15.7853 4.81223C15.5855 4.71728 15.3556 4.84631 15.1732 4.96925C12.8798 6.5213 10.5876 8.07456 8.29415 9.62661C7.54591 10.133 6.76144 10.654 5.85955 10.7782C5.05259 10.8902 4.24064 10.671 3.45992 10.4471C2.80536 10.2596 2.15203 10.0673 1.50122 9.86885C1.1552 9.76416 0.797942 9.65096 0.530623 9.41358C0.263303 9.17621 0.109677 8.77694 0.270819 8.46044C0.372001 8.26202 0.568122 8.13664 0.774233 8.03439L0.776703 8.03561Z" fill="currentColor"/>
+								</svg>
+							</a>
+						</div>
+
+						<div class="meet__item--description">
+							profEdwin is a dynamic and skilled blockchain developer, renowned for his strategic thinking and exceptional coding abilities in the crypto realm. His expertise in developing secure and efficient decentralized applications has contributed significantly to the growth and innovation in the blockchain industry. Known for his ability to transform complex blockchain challenges into simple, user-friendly solutions, profEdwin has played a pivotal role in multiple groundbreaking blockchain initiatives. His passion for technology and commitment to excellence make him a valuable asset to any team, driving forward with cutting-edge solutions that redefine the boundaries of blockchain technology.
+						</div>
+					</div>
+
+					<div class="meet__item">
+						<div class="meet__item--profile">
+							<div class="meet__item--avatar">
+								<img src="img/ava1.png" alt="avatar" class="meet__item--avatar--img">
+							</div>
+
+							<div class="meet__item--text--inner">
+								<p class="h3 meet__item--name">
+									Equin0x
+								</p>
+
+								<p class="mediumText meet__item--role">
+									Dev at Mazze
+								</p>
+							</div>
+						</div>
+
+						<div class="meet__item--social">
+							<a href="#" class="meet__item--social--link">
+								<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.084 4.81055H4.08398C2.98398 4.81055 2.09398 5.71055 2.09398 6.81055L2.08398 18.8105C2.08398 19.9105 2.98398 20.8105 4.08398 20.8105H20.084C21.184 20.8105 22.084 19.9105 22.084 18.8105V6.81055C22.084 5.71055 21.184 4.81055 20.084 4.81055ZM20.084 8.81055L12.084 13.8105L4.08398 8.81055V6.81055L12.084 11.8105L20.084 6.81055V8.81055Z" fill="currentColor"/>
+								</svg>
+							</a>
+
+							<a href="#" class="meet__item--social--link">
+								<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.3541 6.14059C18.0241 5.52059 16.5841 5.07059 15.0841 4.81059C15.071 4.81017 15.0579 4.81264 15.0458 4.81782C15.0337 4.82301 15.0229 4.83078 15.0141 4.84059C14.8341 5.17059 14.6241 5.60059 14.4841 5.93059C12.8931 5.69059 11.2751 5.69059 9.6841 5.93059C9.5441 5.59059 9.3341 5.17059 9.1441 4.84059C9.1341 4.82059 9.1041 4.81059 9.0741 4.81059C7.5741 5.07059 6.1441 5.52059 4.8041 6.14059C4.7941 6.14059 4.7841 6.15059 4.7741 6.16059C2.0541 10.2306 1.3041 14.1906 1.6741 18.1106C1.6741 18.1306 1.6841 18.1506 1.7041 18.1606C3.5041 19.4806 5.2341 20.2806 6.9441 20.8106C6.9741 20.8206 7.0041 20.8106 7.0141 20.7906C7.4141 20.2406 7.7741 19.6606 8.0841 19.0506C8.1041 19.0106 8.0841 18.9706 8.0441 18.9606C7.4741 18.7406 6.9341 18.4806 6.4041 18.1806C6.3641 18.1606 6.3641 18.1006 6.3941 18.0706C6.5041 17.9906 6.6141 17.9006 6.7241 17.8206C6.7441 17.8006 6.7741 17.8006 6.7941 17.8106C10.2341 19.3806 13.9441 19.3806 17.3441 17.8106C17.3641 17.8006 17.3941 17.8006 17.4141 17.8206C17.5241 17.9106 17.6341 17.9906 17.7441 18.0806C17.7841 18.1106 17.7841 18.1706 17.7341 18.1906C17.2141 18.5006 16.6641 18.7506 16.0941 18.9706C16.0541 18.9806 16.0441 19.0306 16.0541 19.0606C16.3741 19.6706 16.7341 20.2506 17.1241 20.8006C17.1541 20.8106 17.1841 20.8206 17.2141 20.8106C18.9341 20.2806 20.6641 19.4806 22.4641 18.1606C22.4841 18.1506 22.4941 18.1306 22.4941 18.1106C22.9341 13.5806 21.7641 9.65059 19.3941 6.16059C19.3841 6.15059 19.3741 6.14059 19.3541 6.14059ZM8.6041 15.7206C7.5741 15.7206 6.7141 14.7706 6.7141 13.6006C6.7141 12.4306 7.5541 11.4806 8.6041 11.4806C9.6641 11.4806 10.5041 12.4406 10.4941 13.6006C10.4941 14.7706 9.6541 15.7206 8.6041 15.7206ZM15.5741 15.7206C14.5441 15.7206 13.6841 14.7706 13.6841 13.6006C13.6841 12.4306 14.5241 11.4806 15.5741 11.4806C16.6341 11.4806 17.4741 12.4406 17.4641 13.6006C17.4641 14.7706 16.6341 15.7206 15.5741 15.7206Z" fill="currentColor"/>
+								</svg>
+							</a>
+
+							<a href="#" class="meet__item--social--link">
+								<svg viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.776703 8.03561C0.826669 8.01126 0.876659 7.98813 0.925376 7.96622C1.7723 7.58399 2.63048 7.22612 3.4874 6.86823C3.53362 6.86823 3.61105 6.81589 3.65477 6.79885C3.72097 6.77085 3.78719 6.74407 3.85339 6.71607C3.98081 6.66251 4.10823 6.61017 4.23439 6.55661C4.48922 6.4507 4.74278 6.34479 4.99761 6.23889L6.52283 5.60225C7.53964 5.17863 8.55773 4.75379 9.57454 4.33018C10.5914 3.90656 11.6094 3.48172 12.6262 3.05811C13.643 2.63449 14.6611 2.20966 15.6779 1.78605C16.6947 1.36243 17.7128 0.937592 18.7296 0.513975C18.9557 0.419026 19.2005 0.277817 19.4429 0.236429C19.6465 0.201128 19.8451 0.132963 20.05 0.0952269C20.4384 0.0234068 20.8669 -0.00580548 21.2392 0.151225C21.3678 0.206003 21.4865 0.282692 21.5852 0.378858C22.0574 0.834124 21.9911 1.58153 21.8912 2.22183C21.1954 6.68442 20.4997 11.1482 19.8026 15.6108C19.7077 16.2231 19.5778 16.8951 19.0819 17.2822C18.6621 17.6096 18.065 17.6461 17.5466 17.5073C17.0282 17.3674 16.5711 17.074 16.1226 16.7855C14.2626 15.5852 12.4014 14.385 10.5414 13.1847C10.0992 12.8999 9.60703 12.5274 9.61202 12.0101C9.61452 11.6984 9.80562 11.4209 10.0005 11.1738C11.6169 9.119 13.9491 7.70694 15.6842 5.74711C15.929 5.47078 16.1214 4.97169 15.7853 4.81223C15.5855 4.71728 15.3556 4.84631 15.1732 4.96925C12.8798 6.5213 10.5876 8.07456 8.29415 9.62661C7.54591 10.133 6.76144 10.654 5.85955 10.7782C5.05259 10.8902 4.24064 10.671 3.45992 10.4471C2.80536 10.2596 2.15203 10.0673 1.50122 9.86885C1.1552 9.76416 0.797942 9.65096 0.530623 9.41358C0.263303 9.17621 0.109677 8.77694 0.270819 8.46044C0.372001 8.26202 0.568122 8.13664 0.774233 8.03439L0.776703 8.03561Z" fill="currentColor"/>
+								</svg>
+							</a>
+						</div>
+
+						<div class="meet__item--description">
+							Equin0x is a blockchain wizard with a history of revolutionizing the digital landscape. Known for his innovative approach in decentralized technologies, Equin0x has been instrumental in driving several high-profile blockchain projects to success. His expertise spans from smart contract development to architecting robust blockchain infrastructures. With a keen eye for emerging trends and a penchant for pushing the boundaries of technology, Equin0x has consistently delivered solutions that are not only ahead of the curve but also set new industry benchmarks. His contributions, shrouded in anonymity, have left an indelible mark across various sectors, cementing his reputation as a trailblazer in the blockchain community.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pio" data-aos="fade-down" data-aos-duration="700">
+		<div class="container">
+			<div class="pio__inner">
+				<h2 class="h1_2 textGradient pio__title">
+					Pioneering Technical Excellence
+				</h2>
+
+				<p class="smallText pio__text">
+					Mazze introduces groundbreaking technological advancements in blockchain infrastructure, emphasizing speed, security, and scalability.
+				</p>
+
+				<div class="pio__content">
+					<div class="pio__item">
+						<canvas class="noise"></canvas>
+						<img src="img/pio-shadow1.svg" alt="shadow" class="pio__item--bg">
+
+						<p class="h3 textGradient pio__item--title">
+							High Throughput & Low Latency.
+						</p>
+
+						<p class="smallText pio__item--text">
+							Mazze blockchain is engineered for exceptional performance, boasting a groundbreaking transaction processing speed of 40,000 transactions per second (TPS). This high throughput is achieved through the innovative use of Directed Acyclic Graph (DAG) technology, which allows for parallel processing of transactions, significantly reducing the confirmation time...
+						</p>
+					</div>
+
+					<div class="pio__item">
+						<canvas class="noise"></canvas>
+						<img src="img/pio-shadow2.svg" alt="shadow" class="pio__item--bg">
+
+						<p class="h3 textGradient pio__item--title">
+							EVM-compatible Smart Contracts
+						</p>
+
+						<p class="smallText pio__item--text">
+							Mazze's smart contract platform is distinguished by the integration of Solidity as its primary programming language, specifically chosen to facilitate the migration of decentralized applications (dApps) from other blockchains, such as Ethereum. The alignment with Ethereum Virtual Machine (EVM) compatibility makes Solidity ideal for developing secure, efficient, and inter...
+						</p>
+					</div>
+
+					<div class="pio__item">
+						<canvas class="noise"></canvas>
+						<img src="img/pio-shadow3.svg" alt="shadow" class="pio__item--bg">
+
+						<p class="h3 textGradient pio__item--title">
+							Integrating ZK Proofs for Enhanced Privacy
+						</p>
+
+						<p class="smallText pio__item--text">
+							In Phase D of the Mazze project, we're enhancing data privacy by integrating Zero-Knowledge (ZK) Proofs, a cryptographic method that validates transactions without revealing their data. This aligns with blockchain's core principles of transparency and security while improving privacy. ZK Proofs, crucial in blockchain, offer privacy and scalability, solving visibility and size issues...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="faq">
+		<img src="img/main-grid.svg" alt="grid" class="faq__grid">
+
+		<div class="container">
+			<div class="faq__inner">
+				<div class="faq__text--inner" data-aos="fade-right" data-aos-duration="700">
+					<h3 class="h3 textGradient faq__title">
+						Got Questions? We've got Answers
+					</h3>
+
+					<p class="smallText faq__text">Frequently Asked Questions about Mazze.</p>
+
+					<button class="button faq__button">
+						Submit a Question
+
+						<svg viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.3536 4.85355C12.5488 4.65829 12.5488 4.34171 12.3536 4.14645L9.17157 0.964466C8.97631 0.769204 8.65973 0.769204 8.46447 0.964466C8.2692 1.15973 8.2692 1.47631 8.46447 1.67157L11.2929 4.5L8.46447 7.32843C8.2692 7.52369 8.2692 7.84027 8.46447 8.03553C8.65973 8.2308 8.97631 8.2308 9.17157 8.03553L12.3536 4.85355ZM0 5H12V4H0V5Z" fill="currentColor"/>
+						</svg>							
+					</button>
+				</div>
+
+				<div class="faq__content" data-aos="fade-down" data-aos-duration="700">
+					<div class="faq__item">
+						<div class="faq__item--title--inner">
+							<p class="number faq__item--title">
+								What is Mazze
+							</p>
+
+							<img src="img/arrow-bottom.svg" alt="arrow" class="faq__item--open">
+						</div>
+
+						<p class="smallText faq__item--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere facilis, odit ut iusto ullam, dicta minus iste provident fugiat rem error illo porro obcaecati veniam necessitatibus culpa reprehenderit quo?
+							Odio porro officiis natus explicabo voluptas dolorem! Animi perspiciatis sunt quae commodi dolor ullam architecto repellat eum atque, et corrupti, nesciunt earum labore! Libero quis nihil perspiciatis ullam, eius provident.
+							Rem atque ex quia reprehenderit maxime, temporibus obcaecati dolore sunt laboriosam earum ad perspiciatis repellat eius molestiae pariatur nihil nesciunt voluptates? Quo facere incidunt quod itaque dignissimos iure libero id.
+							Maiores nam animi totam vero dolore, optio necessitatibus velit commodi ullam? Quisquam, aliquam dicta. Maiores, voluptate quos. Molestias consequatur accusamus at necessitatibus adipisci repellat officiis sit impedit! Inventore, quas neque.
+							Dolorum impedit nihil sed labore sequi? Vel excepturi aspernatur dicta quas ducimus sapiente maiores earum voluptatibus. Voluptas, enim hic eligendi ducimus molestiae atque necessitatibus quaerat minus assumenda earum veritatis nostrum!
+						</p>
+					</div>
+
+					<div class="faq__item">
+						<div class="faq__item--title--inner">
+							<p class="number faq__item--title">
+								What is the purpose and vision of Mazze?
+							</p>
+
+							<img src="img/arrow-bottom.svg" alt="arrow" class="faq__item--open">
+						</div>
+
+						<p class="smallText faq__item--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere facilis, odit ut iusto ullam, dicta minus iste provident fugiat rem error illo porro obcaecati veniam necessitatibus culpa reprehenderit quo?
+							Odio porro officiis natus explicabo voluptas dolorem! Animi perspiciatis sunt quae commodi dolor ullam architecto repellat eum atque, et corrupti, nesciunt earum labore! Libero quis nihil perspiciatis ullam, eius provident.
+							Rem atque ex quia reprehenderit maxime, temporibus obcaecati dolore sunt laboriosam earum ad perspiciatis repellat eius molestiae pariatur nihil nesciunt voluptates? Quo facere incidunt quod itaque dignissimos iure libero id.
+							Maiores nam animi totam vero dolore, optio necessitatibus velit commodi ullam? Quisquam, aliquam dicta. Maiores, voluptate quos. Molestias consequatur accusamus at necessitatibus adipisci repellat officiis sit impedit! Inventore, quas neque.
+							Dolorum impedit nihil sed labore sequi? Vel excepturi aspernatur dicta quas ducimus sapiente maiores earum voluptatibus. Voluptas, enim hic eligendi ducimus molestiae atque necessitatibus quaerat minus assumenda earum veritatis nostrum!
+						</p>
+					</div>
+
+					<div class="faq__item">
+						<div class="faq__item--title--inner">
+							<p class="number faq__item--title">
+								What characterizes the Mazze public blockchain network?
+							</p>
+
+							<img src="img/arrow-bottom.svg" alt="arrow" class="faq__item--open">
+						</div>
+
+						<p class="smallText faq__item--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere facilis, odit ut iusto ullam, dicta minus iste provident fugiat rem error illo porro obcaecati veniam necessitatibus culpa reprehenderit quo?
+							Odio porro officiis natus explicabo voluptas dolorem! Animi perspiciatis sunt quae commodi dolor ullam architecto repellat eum atque, et corrupti, nesciunt earum labore! Libero quis nihil perspiciatis ullam, eius provident.
+							Rem atque ex quia reprehenderit maxime, temporibus obcaecati dolore sunt laboriosam earum ad perspiciatis repellat eius molestiae pariatur nihil nesciunt voluptates? Quo facere incidunt quod itaque dignissimos iure libero id.
+							Maiores nam animi totam vero dolore, optio necessitatibus velit commodi ullam? Quisquam, aliquam dicta. Maiores, voluptate quos. Molestias consequatur accusamus at necessitatibus adipisci repellat officiis sit impedit! Inventore, quas neque.
+							Dolorum impedit nihil sed labore sequi? Vel excepturi aspernatur dicta quas ducimus sapiente maiores earum voluptatibus. Voluptas, enim hic eligendi ducimus molestiae atque necessitatibus quaerat minus assumenda earum veritatis nostrum!
+						</p>
+					</div>
+
+					<div class="faq__item">
+						<div class="faq__item--title--inner">
+							<p class="number faq__item--title">
+								What are the benefits of Mazze's blockchain technology?
+							</p>
+
+							<img src="img/arrow-bottom.svg" alt="arrow" class="faq__item--open">
+						</div>
+
+						<p class="smallText faq__item--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere facilis, odit ut iusto ullam, dicta minus iste provident fugiat rem error illo porro obcaecati veniam necessitatibus culpa reprehenderit quo?
+							Odio porro officiis natus explicabo voluptas dolorem! Animi perspiciatis sunt quae commodi dolor ullam architecto repellat eum atque, et corrupti, nesciunt earum labore! Libero quis nihil perspiciatis ullam, eius provident.
+							Rem atque ex quia reprehenderit maxime, temporibus obcaecati dolore sunt laboriosam earum ad perspiciatis repellat eius molestiae pariatur nihil nesciunt voluptates? Quo facere incidunt quod itaque dignissimos iure libero id.
+							Maiores nam animi totam vero dolore, optio necessitatibus velit commodi ullam? Quisquam, aliquam dicta. Maiores, voluptate quos. Molestias consequatur accusamus at necessitatibus adipisci repellat officiis sit impedit! Inventore, quas neque.
+							Dolorum impedit nihil sed labore sequi? Vel excepturi aspernatur dicta quas ducimus sapiente maiores earum voluptatibus. Voluptas, enim hic eligendi ducimus molestiae atque necessitatibus quaerat minus assumenda earum veritatis nostrum!
+						</p>
+					</div>
+
+					<div class="faq__item">
+						<div class="faq__item--title--inner">
+							<p class="number faq__item--title">
+								What is the smart contract address for the MAZZE token?
+							</p>
+
+							<img src="img/arrow-bottom.svg" alt="arrow" class="faq__item--open">
+						</div>
+
+						<p class="smallText faq__item--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere facilis, odit ut iusto ullam, dicta minus iste provident fugiat rem error illo porro obcaecati veniam necessitatibus culpa reprehenderit quo?
+							Odio porro officiis natus explicabo voluptas dolorem! Animi perspiciatis sunt quae commodi dolor ullam architecto repellat eum atque, et corrupti, nesciunt earum labore! Libero quis nihil perspiciatis ullam, eius provident.
+							Rem atque ex quia reprehenderit maxime, temporibus obcaecati dolore sunt laboriosam earum ad perspiciatis repellat eius molestiae pariatur nihil nesciunt voluptates? Quo facere incidunt quod itaque dignissimos iure libero id.
+							Maiores nam animi totam vero dolore, optio necessitatibus velit commodi ullam? Quisquam, aliquam dicta. Maiores, voluptate quos. Molestias consequatur accusamus at necessitatibus adipisci repellat officiis sit impedit! Inventore, quas neque.
+							Dolorum impedit nihil sed labore sequi? Vel excepturi aspernatur dicta quas ducimus sapiente maiores earum voluptatibus. Voluptas, enim hic eligendi ducimus molestiae atque necessitatibus quaerat minus assumenda earum veritatis nostrum!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="road" data-aos="fade-down" data-aos-duration="700">
+		<div class="container">
+			<div class="road__inner">
+				<h2 class="h1_2 textGradient road__title">
+					Project Development Roadmap
+				</h2>
+
+				<p class="smallText road__text">
+					Discover our strategic milestones and how we're propelling towards a transformative future in blockchain technology.
+				</p>
+
+				<lottie-player class="road__icon" src="https://lottie.host/bae36509-c11e-4872-b471-1c42b0204e7c/oUfnax57pu.json" loop autoplay></lottie-player>
+			</div>
+		</div>
+
+		<div class="road__slider">
+			<div class="road__slide active">
+				<img src="img/road-shadow1.svg" alt="shadow" class="road__slide--bg road__bg2">
+
+				<div class="road__phase--inner">
+					<p class="road__phase">PHASE B</p>
+
+					<p class="tagSmall road__inprogress">In progress</p>
+				</div>
+
+				<div class="road__slide--title--inner">
+					<p class="h3 road__slide--title">
+						Q1-2 2024
+					</p>
+
+					<p class="tagSmall road__slide--name">
+						Community Building
+					</p>
+				</div>
+
+				<p class="road__slide--subtitle">
+					Community and Token Launch
+				</p>
+
+				<div class="road__slide--points">
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Wrapped token creation
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Community engagement
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Public sale
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Node operator recruitment
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Devnet launch
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Smart contract development
+					</div>
+				</div>
+			</div>
+
+			<div class="road__slide">
+				<img src="img/road-shadow2.svg" alt="shadow" class="road__slide--bg road__bg3">
+
+				<div class="road__phase--inner">
+					<p class="road__phase">PHASE C</p>
+				</div>
+
+				<div class="road__slide--title--inner">
+					<p class="h3 road__slide--title">
+						Q3-4 2024
+					</p>
+
+					<p class="tagSmall road__slide--name">
+						Mainnet Launch
+					</p>
+				</div>
+
+				<p class="road__slide--subtitle">
+					Community and Token Launch
+				</p>
+
+				<div class="road__slide--points">
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Mainnet launch
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Token swap bridge
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Smart contract integration
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Hackathon
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Grant program
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Ecosystem partnerships
+					</div>
+				</div>
+			</div>
+
+			<div class="road__slide">
+				<img src="img/road-shadow3.svg" alt="shadow" class="road__slide--bg road__bg4">
+
+				<div class="road__phase--inner">
+					<p class="road__phase">PHASE D</p>
+				</div>
+
+				<div class="road__slide--title--inner">
+					<p class="h3 road__slide--title">
+						2025
+					</p>
+
+					<p class="tagSmall road__slide--name">
+						Future Enhancements
+					</p>
+				</div>
+
+				<p class="road__slide--subtitle">
+					Continuous Development
+				</p>
+
+				<div class="road__slide--points">
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						DeFi integration strategies
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Privacy features - ZK Proofs
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Cross-Chain functionality
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Network optimization techniques
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Global compliance adherence
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle"></div>
+
+						Sustainability initiatives launch
+					</div>
+				</div>
+			</div>
+			
+			<div class="road__slide">
+				<img src="img/road-shadow4.svg" alt="shadow" class="road__slide--bg road__bg1">
+
+				<div class="road__phase--inner">
+					<p class="road__phase">PHASE A</p>
+				</div>
+
+				<div class="road__slide--title--inner">
+					<p class="h3 road__slide--title">
+						Q3 2023
+					</p>
+
+					<p class="tagSmall road__slide--name">
+						Conceptualization
+					</p>
+				</div>
+
+				<p class="road__slide--subtitle">
+					Shaping the Vision
+				</p>
+
+				<div class="road__slide--points">
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Concept development
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Whitepaper drafting
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Technical documentation
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Branding and initial marketing
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Online presence
+					</div>
+
+					<div class="smallText road__slide--point">
+						<div class="road__slide--point--circle">
+							<img src="img/check.svg" alt="check" class="road__slide--check">
+						</div>
+
+						Community outreach
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="join">
+		<img src="img/join-shadow.svg" alt="shadow" class="join__shadow">
+		
+		<div class="container">
+			<div class="join__inner">
+				<h2 class="h1_2 textGradient join__title">
+					Join our Blockchain Revolution.
+				</h2>
+
+				<p class="smallText join__text">
+					Be part of Mazze's transformative journey in the blockchain world. Connect, contribute, and grow with us.
+				</p>
+
+				<div class="join__buttons">
+					<button class="button join__button">
+						Get Started
+					</button>
+
+					<button class="button join__button">
+						Become a Member
+
+						<svg viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.3536 4.85355C12.5488 4.65829 12.5488 4.34171 12.3536 4.14645L9.17157 0.964466C8.97631 0.769204 8.65973 0.769204 8.46447 0.964466C8.2692 1.15973 8.2692 1.47631 8.46447 1.67157L11.2929 4.5L8.46447 7.32843C8.2692 7.52369 8.2692 7.84027 8.46447 8.03553C8.65973 8.2308 8.97631 8.2308 9.17157 8.03553L12.3536 4.85355ZM0 5H12V4H0V5Z" fill="#14110C"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="empower__blocks">
+			<div class="empower__block">
+				<lottie-player id="joinIcon1" class="empower__icon1" src="https://lottie.host/42bbc589-4dec-48e1-a951-50c38e215a71/4W5kQq7WJh.json" autoplay></lottie-player>
+			</div>
+
+			<div class="empower__block">
+				<lottie-player id="joinIcon2" class="join__icon2" src="https://lottie.host/7515dd68-c3b3-4718-874d-5d30c7def63b/NQR68tXd5V.json" autoplay></lottie-player>
+			</div>
+
+			<div class="empower__block">
+				<lottie-player id="joinIcon3" class="empower__icon3" src="https://lottie.host/f876ae55-08f4-463a-8940-fe62991aa50a/eHXSXwGmMv.json" autoplay></lottie-player>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<canvas class="noise"></canvas>
+
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__logo--inner">
+					<div class="footer__logo--wrapper">
+						<img src="img/footer-logo.svg" alt="logo" class="footer__logo">
+
+						<p class="footer__text">
+							Building the Future on Blockchain Fast. Secure. Private.
+						</p>
+					</div>
+
+					<nav class="footer__nav">
+						<a href="#" class="smallText footer__nav--link">Help Center</a>
+						<a href="#" class="smallText footer__nav--link">Terms of Service</a>
+						<a href="#" class="smallText footer__nav--link">Legal</a>
+						<a href="#" class="smallText footer__nav--link">Contact</a>
+					</nav>
+				</div>
+
+				<div class="footer__social--inner">
+					<div class="footer__social">
+						<a href="#" class="footer__social--link">
+							<svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_225_3088)">
+									<path d="M13.0387 9.20261L20.6883 0.310547H18.8756L12.2334 8.0314L6.92835 0.310547H0.80957L8.83189 11.9858L0.80957 21.3105H2.62239L9.63669 13.1571L15.2392 21.3105H21.358L13.0382 9.20261H13.0387ZM10.5558 12.0887L9.74296 10.9261L3.27557 1.6752H6.05996L11.2792 9.14099L12.092 10.3036L18.8764 20.0079H16.0921L10.5558 12.0892V12.0887Z" fill="currentColor"/>
+								</g>
+
+								<defs>
+									<clipPath id="clip0_225_3088">
+										<rect width="21" height="21" fill="white" transform="translate(0.583984 0.310547)"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<img src="img/z.png" alt="z">
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<img src="img/notion.svg" alt="notion">
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<img src="img/book.svg" alt="book">
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<svg viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.776703 8.03561C0.826669 8.01126 0.876659 7.98813 0.925376 7.96622C1.7723 7.58399 2.63048 7.22612 3.4874 6.86823C3.53362 6.86823 3.61105 6.81589 3.65477 6.79885C3.72097 6.77085 3.78719 6.74407 3.85339 6.71607C3.98081 6.66251 4.10823 6.61017 4.23439 6.55661C4.48922 6.4507 4.74278 6.34479 4.99761 6.23889L6.52283 5.60225C7.53964 5.17863 8.55773 4.75379 9.57454 4.33018C10.5914 3.90656 11.6094 3.48172 12.6262 3.05811C13.643 2.63449 14.6611 2.20966 15.6779 1.78605C16.6947 1.36243 17.7128 0.937592 18.7296 0.513975C18.9557 0.419026 19.2005 0.277817 19.4429 0.236429C19.6465 0.201128 19.8451 0.132963 20.05 0.0952269C20.4384 0.0234068 20.8669 -0.00580548 21.2392 0.151225C21.3678 0.206003 21.4865 0.282692 21.5852 0.378858C22.0574 0.834124 21.9911 1.58153 21.8912 2.22183C21.1954 6.68442 20.4997 11.1482 19.8026 15.6108C19.7077 16.2231 19.5778 16.8951 19.0819 17.2822C18.6621 17.6096 18.065 17.6461 17.5466 17.5073C17.0282 17.3674 16.5711 17.074 16.1226 16.7855C14.2626 15.5852 12.4014 14.385 10.5414 13.1847C10.0992 12.8999 9.60703 12.5274 9.61202 12.0101C9.61452 11.6984 9.80562 11.4209 10.0005 11.1738C11.6169 9.119 13.9491 7.70694 15.6842 5.74711C15.929 5.47078 16.1214 4.97169 15.7853 4.81223C15.5855 4.71728 15.3556 4.84631 15.1732 4.96925C12.8798 6.5213 10.5876 8.07456 8.29415 9.62661C7.54591 10.133 6.76144 10.654 5.85955 10.7782C5.05259 10.8902 4.24064 10.671 3.45992 10.4471C2.80536 10.2596 2.15203 10.0673 1.50122 9.86885C1.1552 9.76416 0.797942 9.65096 0.530623 9.41358C0.263303 9.17621 0.109677 8.77694 0.270819 8.46044C0.372001 8.26202 0.568122 8.13664 0.774233 8.03439L0.776703 8.03561Z" fill="currentColor"/>
+							</svg>
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<svg viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_225_3117)">
+									<path d="M13.6213 12.811C13.6213 16.7317 10.5909 19.9101 6.85264 19.9101C3.11441 19.9101 0.0839844 16.7317 0.0839844 12.811C0.0839844 8.89028 3.11441 5.71191 6.85264 5.71191C10.5908 5.71191 13.6213 8.89028 13.6213 12.811Z" fill="currentColor"/>
+									<path d="M21.047 12.8114C21.047 16.5021 19.5317 19.4939 17.6626 19.4939C15.7936 19.4939 14.2783 16.5021 14.2783 12.8114C14.2783 9.12075 15.7936 6.12891 17.6626 6.12891C19.5318 6.12891 21.047 9.12075 21.047 12.8114Z" fill="currentColor"/>
+									<path d="M24.0837 12.8105C24.0837 16.1172 23.5507 18.7978 22.8934 18.7978C22.236 18.7978 21.7031 16.1172 21.7031 12.8105C21.7031 9.50381 22.236 6.82324 22.8934 6.82324C23.5507 6.82324 24.0837 9.50381 24.0837 12.8105Z" fill="currentColor"/>
+								</g>
+
+								<defs>
+									<clipPath id="clip0_225_3117">
+										<rect width="24" height="25" fill="white" transform="translate(0.0839844 0.310547)"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<svg viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_225_3123)">
+									<path d="M8.38443 23.263C9.11075 23.263 9.31601 22.9788 9.31601 22.6156C9.31601 22.2524 9.31601 21.463 9.30022 20.3419C5.52654 21.1472 4.72127 18.5419 4.72127 18.5419C4.10548 17.0103 3.20548 16.584 3.20548 16.584C1.9739 15.763 3.30022 15.7788 3.30022 15.7788C4.65811 15.8735 5.38443 17.1524 5.38443 17.1524C6.60022 19.2051 8.55812 18.6051 9.3318 18.2577C9.39496 17.5788 9.69496 16.9314 10.2002 16.4577C7.18443 16.1261 4.01075 14.9735 4.01075 9.85771C3.99496 8.53139 4.50022 7.23665 5.41601 6.2735C5.25811 5.94192 4.80022 4.58402 5.52654 2.73665C5.52654 2.73665 6.66338 2.3735 9.26864 4.11034C11.495 3.51034 13.8318 3.51034 16.0581 4.11034C18.6318 2.38929 19.7844 2.73665 19.7844 2.73665C20.5107 4.56823 20.0529 5.92613 19.9265 6.2735C20.8423 7.23665 21.3318 8.53139 21.316 9.85771C21.316 14.9893 18.1423 16.1103 15.1107 16.4419C15.5844 16.8367 16.0265 17.6577 16.0265 18.9051C16.0265 20.7051 16.0107 22.1261 16.0107 22.5524C16.0107 22.8998 16.1686 23.184 16.9423 23.184L8.38443 23.263Z" fill="currentColor"/>
+								</g>
+
+								<defs>
+									<clipPath id="clip0_225_3123">
+										<rect width="24" height="25" fill="white" transform="translate(0.0839844 0.310547)"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+
+						<a href="#" class="footer__social--link">
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.3541 6.14059C18.0241 5.52059 16.5841 5.07059 15.0841 4.81059C15.071 4.81017 15.0579 4.81264 15.0458 4.81782C15.0337 4.82301 15.0229 4.83078 15.0141 4.84059C14.8341 5.17059 14.6241 5.60059 14.4841 5.93059C12.8931 5.69059 11.2751 5.69059 9.6841 5.93059C9.5441 5.59059 9.3341 5.17059 9.1441 4.84059C9.1341 4.82059 9.1041 4.81059 9.0741 4.81059C7.5741 5.07059 6.1441 5.52059 4.8041 6.14059C4.7941 6.14059 4.7841 6.15059 4.7741 6.16059C2.0541 10.2306 1.3041 14.1906 1.6741 18.1106C1.6741 18.1306 1.6841 18.1506 1.7041 18.1606C3.5041 19.4806 5.2341 20.2806 6.9441 20.8106C6.9741 20.8206 7.0041 20.8106 7.0141 20.7906C7.4141 20.2406 7.7741 19.6606 8.0841 19.0506C8.1041 19.0106 8.0841 18.9706 8.0441 18.9606C7.4741 18.7406 6.9341 18.4806 6.4041 18.1806C6.3641 18.1606 6.3641 18.1006 6.3941 18.0706C6.5041 17.9906 6.6141 17.9006 6.7241 17.8206C6.7441 17.8006 6.7741 17.8006 6.7941 17.8106C10.2341 19.3806 13.9441 19.3806 17.3441 17.8106C17.3641 17.8006 17.3941 17.8006 17.4141 17.8206C17.5241 17.9106 17.6341 17.9906 17.7441 18.0806C17.7841 18.1106 17.7841 18.1706 17.7341 18.1906C17.2141 18.5006 16.6641 18.7506 16.0941 18.9706C16.0541 18.9806 16.0441 19.0306 16.0541 19.0606C16.3741 19.6706 16.7341 20.2506 17.1241 20.8006C17.1541 20.8106 17.1841 20.8206 17.2141 20.8106C18.9341 20.2806 20.6641 19.4806 22.4641 18.1606C22.4841 18.1506 22.4941 18.1306 22.4941 18.1106C22.9341 13.5806 21.7641 9.65059 19.3941 6.16059C19.3841 6.15059 19.3741 6.14059 19.3541 6.14059ZM8.6041 15.7206C7.5741 15.7206 6.7141 14.7706 6.7141 13.6006C6.7141 12.4306 7.5541 11.4806 8.6041 11.4806C9.6641 11.4806 10.5041 12.4406 10.4941 13.6006C10.4941 14.7706 9.6541 15.7206 8.6041 15.7206ZM15.5741 15.7206C14.5441 15.7206 13.6841 14.7706 13.6841 13.6006C13.6841 12.4306 14.5241 11.4806 15.5741 11.4806C16.6341 11.4806 17.4741 12.4406 17.4641 13.6006C17.4641 14.7706 16.6341 15.7206 15.5741 15.7206Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+
+					<p class="smallText footer__copy">
+						&copy;2024 MazzeLabs. MADE WITH
+
+						<img src="img/heart.svg" alt="heart" class="footer__heart">
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
