@@ -78,7 +78,7 @@ input::-webkit-inner-spin-button{
 
 .noise {
 	position: absolute;
-	opacity: 0.06;
+	opacity: 0.03;
 	z-index: 99;
 	pointer-events: none;
 	user-select: none;
@@ -405,11 +405,13 @@ input::-webkit-inner-spin-button{
 	align-items: center;
 	justify-content: center;
 	color: var(--gray);
+	padding: 0;
 }
 
 .menu__wrapper--social--link svg, .menu__wrapper--social--link img{
 	max-width: 12px;
 	max-height: 12px;
+	flex-shrink: 0;
 }
 
 .menu__wrapper--buttons{
@@ -812,6 +814,7 @@ input::-webkit-inner-spin-button{
 	width: 100%;
 	padding: 10rem 0;
 	position: relative;
+	z-index: 4;
 }
 
 .meet__bg{
@@ -894,12 +897,14 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 0;
 }
 
 .meet__item--social--link svg{
 	max-width: 24px;
 	max-height: 24px;
 	color: var(--strokeColor);
+	flex-shrink: 0;
 }
 
 .meet__item--profile{
@@ -1426,6 +1431,7 @@ input::-webkit-inner-spin-button{
 	max-width: 25px;
 	max-height: 25px;
 	color: var(--gray);
+	flex-shrink: 0;
 }
 
 /* Hovers */
