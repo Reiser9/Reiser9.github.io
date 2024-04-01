@@ -409,8 +409,7 @@ input::-webkit-inner-spin-button{
 }
 
 .menu__wrapper--social--link svg, .menu__wrapper--social--link img{
-	max-width: 12px;
-	max-height: 12px;
+	width: 12px;
 	flex-shrink: 0;
 }
 
@@ -901,8 +900,7 @@ input::-webkit-inner-spin-button{
 }
 
 .meet__item--social--link svg{
-	max-width: 24px;
-	max-height: 24px;
+	width: 24px;
 	color: var(--strokeColor);
 	flex-shrink: 0;
 }
@@ -1428,8 +1426,7 @@ input::-webkit-inner-spin-button{
 }
 
 .footer__social--link svg, .footer__social--link img{
-	max-width: 25px;
-	max-height: 25px;
+	width: 25px;
 	color: var(--gray);
 	flex-shrink: 0;
 }
