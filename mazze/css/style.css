@@ -469,7 +469,7 @@ input::-webkit-inner-spin-button{
 	flex-shrink: 0;
 }
 
-.main__bg{
+.main__bg, #sketch{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1429,6 +1429,13 @@ input::-webkit-inner-spin-button{
 	width: 25px;
 	color: var(--gray);
 	flex-shrink: 0;
+}
+
+#sketch {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 /* Hovers */
