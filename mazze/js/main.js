@@ -249,8 +249,8 @@ class dotGrid {
     drawDots() {
       let size = 1;
       let gridSize = 20;
-      for (var i = 2; i < this.canvasWidth / this.dpr / gridSize - 1; i++) {
-        for (var j = 2; j < this.canvasHeight / this.dpr / gridSize - 1; j++) {
+      for (var i = 2; i < this.canvasWidth / this.dpr / gridSize - 2.5; i++) {
+        for (var j = 2; j < this.canvasHeight / this.dpr / gridSize - 2.5; j++) {
           let x = i * gridSize;
           let y = j * gridSize;
           let dist = this.pythag(x, y, this.mouseX, this.mouseY);
@@ -263,7 +263,7 @@ class dotGrid {
             Math.PI,
             true
           );
-          this.canvas.fillStyle = "white";
+          this.canvas.fillStyle = "rgba(255, 255, 255, .4)";
           this.canvas.fill();
         }
       }

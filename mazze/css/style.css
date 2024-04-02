@@ -689,6 +689,7 @@ input::-webkit-inner-spin-button{
 	align-items: flex-start;
 	gap: 83px;
 	position: relative;
+	z-index: 100;
 }
 
 .advanced__img{
@@ -1436,6 +1437,31 @@ input::-webkit-inner-spin-button{
 	height: 100%;
 	display: block;
 	margin: 0 auto;
+}
+
+.scanlines {
+    overflow: hidden;
+    mix-blend-mode: difference;
+}
+
+.scanlines::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
+    animation: fudge 7s ease-in-out alternate infinite;
+}
+
+@keyframes fudge{
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, 2%);
+	}
 }
 
 /* Hovers */
