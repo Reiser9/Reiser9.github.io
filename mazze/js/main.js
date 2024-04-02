@@ -163,127 +163,299 @@ $(document).ready(function () {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const canvases = document.querySelectorAll('.noise');
+// Шум
+// document.addEventListener("DOMContentLoaded", function() {
+//     const canvases = document.querySelectorAll('.noise');
 
-    canvases.forEach(function(canvas) {
-        const ctx = canvas.getContext('2d');
-        noise(ctx);
-    });
+//     canvases.forEach(function(canvas) {
+//         const ctx = canvas.getContext('2d');
+//         noise(ctx);
+//     });
 
-    function noise(ctx) {
-        const w = ctx.canvas.width,
-            h = ctx.canvas.height,
-            iData = ctx.createImageData(w, h),
-            buffer32 = new Uint32Array(iData.data.buffer),
-            len = buffer32.length;
-        let i = 0;
+//     function noise(ctx) {
+//         const w = ctx.canvas.width,
+//             h = ctx.canvas.height,
+//             iData = ctx.createImageData(w, h),
+//             buffer32 = new Uint32Array(iData.data.buffer),
+//             len = buffer32.length;
+//         let i = 0;
 
-        for (; i < len; i++) {
-            if (Math.random() < 0.5) buffer32[i] = 0xffffffff;
+//         for (; i < len; i++) {
+//             if (Math.random() < 0.5) buffer32[i] = 0xffffffff;
+//         }
+
+//         ctx.putImageData(iData, 0, 0);
+//     }
+
+//     (function loop() {
+//         canvases.forEach(function(canvas) {
+//             const ctx = canvas.getContext('2d');
+//             noise(ctx);
+//         });
+//         requestAnimationFrame(loop);
+//     })();
+// });
+
+// Сетка с наведением
+// class dotGrid {
+//     constructor(container = "sketch") {
+//       this.canvasElement = document.getElementById(container);
+  
+//       // Get the device pixel ratio, falling back to 1.
+//       this.dpr = window.devicePixelRatio || 1;
+  
+//       this.drawable = this.canvasElement.getBoundingClientRect();
+  
+//       this.canvasWidth = this.drawable.width * this.dpr;
+//       this.canvasHeight = this.drawable.height * this.dpr;
+  
+//       this.canvasElement.width = this.canvasWidth;
+//       this.canvasElement.height = this.canvasHeight;
+  
+//       this.mouseX = 0;
+//       this.mouseY = 0;
+  
+//       // Setup Canvas
+//       this.canvas = this.canvasElement.getContext("2d");
+//       this.canvas.scale(this.dpr, this.dpr);
+//     }
+  
+//     onMouseUpdate(e) {
+//       this.mouseX = e.pageX - this.drawable.left;
+//       this.mouseY = e.pageY - this.drawable.top;
+  
+//       window.requestAnimationFrame(this.draw.bind(this));
+//     }
+  
+//     init() {
+//       window.requestAnimationFrame(this.draw.bind(this));
+//       // Listen for Mouse updates
+//       document.body.addEventListener(
+//         "mousemove",
+//         this.onMouseUpdate.bind(this),
+//         false
+//       );
+//     }
+  
+//     // Draws the background and calls the function for drawing the dots
+//     draw() {
+//       this.canvas.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+//       this.drawDots();
+//     }
+  
+//     /*
+//     ((j - this.mouseY) / dist * 4)
+//     */
+  
+//     // i and j function as x and y when drawing the dot grid.
+//     drawDots() {
+//       let size = 1;
+//       let gridSize = 20;
+//       for (var i = 2; i < this.canvasWidth / this.dpr / gridSize - 2.5; i++) {
+//         for (var j = 2; j < this.canvasHeight / this.dpr / gridSize - 2.5; j++) {
+//           let x = i * gridSize;
+//           let y = j * gridSize;
+//           let dist = this.pythag(x, y, this.mouseX, this.mouseY);
+//           this.canvas.beginPath();
+//           this.canvas.arc(
+//             x + (x - this.mouseX) / dist * gridSize,
+//             y + (y - this.mouseY) / dist * gridSize,
+//             size,
+//             size,
+//             Math.PI,
+//             true
+//           );
+//           this.canvas.fillStyle = "rgba(255, 255, 255, .4)";
+//           this.canvas.fill();
+//         }
+//       }
+//     }
+  
+//     // Grabs mouse position, checks if the mouse is off the screen (NaN) and calculates the distance from the mouse pointer and each dot using the pythagorean theorem.
+//     pythag(ellipseX, ellipseY, mouseX, mouseY) {
+//       let x = mouseX;
+//       let y = mouseY;
+  
+//       if (x == NaN) {
+//         return 1;
+//       } else {
+//         let leg1 = Math.abs(x - ellipseX);
+//         let leg2 = Math.abs(y - ellipseY);
+//         let pyth = Math.pow(leg1, 2) + Math.pow(leg2, 2);
+//         return Math.sqrt(pyth);
+//       }
+//     }
+//   }
+  
+//   const grid = new dotGrid("sketch");
+//   grid.init();
+
+var c = document.querySelector('.sketch');
+var ctx = c.getContext("2d");
+
+window.onresize = resize;
+window.addEventListener('mousemove', onMouseMove);
+
+/*-----------------------*/
+
+var dots = [];
+var colW = 70;
+var lineH = 54;
+var nbCols;
+var nbLines;
+var nbDots;
+var mouse = {x: window.innerWidth * 0.5, y: window.innerHeight * 0.5};
+var action = {x: window.innerWidth * 0.5, y: window.innerHeight * 0.5};
+var zoneRadius;
+var zoneStep = 100;
+
+function start(){
+    draw();
+}
+
+var Dot = function(x, y){
+    this.x = x;
+    this.y = y;
+    this.ax = x;
+    this.ay = y;
+};
+
+function resize(){
+    var box = c.getBoundingClientRect();
+    var w = box.width;
+    var h = box.height;
+    c.width = w;
+    c.height = h;
+    zoneRadius = c.width * 0.2;
+    createDots();
+}
+
+function onMouseMove(e){
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+}
+
+function createDots(){
+    var w = c.width;
+    var h = c.height;
+    nbCols = ~~(w / colW) + 2;
+    nbLines = ~~(h / lineH) + 2;
+    nbDots = nbCols * nbLines;
+    var decalX = -17;
+    var decalY = -10;
+    dots = [];
+
+    for(var i = 0; i < nbLines; i++) {
+        for(var j = 0; j < nbCols; j++) {
+            dots.push(new Dot(decalX + j * colW, decalY + i * lineH));
         }
+    }
+}
 
-        ctx.putImageData(iData, 0, 0);
-    }
-
-    (function loop() {
-        canvases.forEach(function(canvas) {
-            const ctx = canvas.getContext('2d');
-            noise(ctx);
-        });
-        requestAnimationFrame(loop);
-    })();
-});
-
-class dotGrid {
-    constructor(container = "sketch") {
-      this.canvasElement = document.getElementById(container);
-  
-      // Get the device pixel ratio, falling back to 1.
-      this.dpr = window.devicePixelRatio || 1;
-  
-      this.drawable = this.canvasElement.getBoundingClientRect();
-  
-      this.canvasWidth = this.drawable.width * this.dpr;
-      this.canvasHeight = this.drawable.height * this.dpr;
-  
-      this.canvasElement.width = this.canvasWidth;
-      this.canvasElement.height = this.canvasHeight;
-  
-      this.mouseX = 0;
-      this.mouseY = 0;
-  
-      // Setup Canvas
-      this.canvas = this.canvasElement.getContext("2d");
-      this.canvas.scale(this.dpr, this.dpr);
-    }
-  
-    onMouseUpdate(e) {
-      this.mouseX = e.pageX - this.drawable.left;
-      this.mouseY = e.pageY - this.drawable.top;
-  
-      window.requestAnimationFrame(this.draw.bind(this));
-    }
-  
-    init() {
-      window.requestAnimationFrame(this.draw.bind(this));
-      // Listen for Mouse updates
-      document.body.addEventListener(
-        "mousemove",
-        this.onMouseUpdate.bind(this),
-        false
-      );
-    }
-  
-    // Draws the background and calls the function for drawing the dots
-    draw() {
-      this.canvas.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
-      this.drawDots();
-    }
-  
-    /*
-    ((j - this.mouseY) / dist * 4)
-    */
-  
-    // i and j function as x and y when drawing the dot grid.
-    drawDots() {
-      let size = 1;
-      let gridSize = 20;
-      for (var i = 2; i < this.canvasWidth / this.dpr / gridSize - 2.5; i++) {
-        for (var j = 2; j < this.canvasHeight / this.dpr / gridSize - 2.5; j++) {
-          let x = i * gridSize;
-          let y = j * gridSize;
-          let dist = this.pythag(x, y, this.mouseX, this.mouseY);
-          this.canvas.beginPath();
-          this.canvas.arc(
-            x + (x - this.mouseX) / dist * gridSize,
-            y + (y - this.mouseY) / dist * gridSize,
-            size,
-            size,
-            Math.PI,
-            true
-          );
-          this.canvas.fillStyle = "rgba(255, 255, 255, .4)";
-          this.canvas.fill();
+function drawDots(anchors, color, radius){
+    var dot;
+    for(var i = 0; i < nbDots; i++) {
+        dot = dots[i];
+        dist = getDistance(dot, action);
+        ctx.globalAlpha = Math.max(1 - (dist / (zoneRadius * 1.2)), 0);;
+        ctx.beginPath();
+        if(anchors) {
+            ctx.moveTo(dot.ax, dot.ay);
+            ctx.arc( dot.ax, dot.ay, radius, 0, Math.PI * 2, true);
         }
-      }
+        else {
+            ctx.moveTo(dot.x, dot.y);
+            ctx.arc( dot.x, dot.y, radius, 0, Math.PI * 2, true);            
+        }
+        ctx.closePath();
+        ctx.fillStyle = color;
+        ctx.fill();
     }
-  
-    // Grabs mouse position, checks if the mouse is off the screen (NaN) and calculates the distance from the mouse pointer and each dot using the pythagorean theorem.
-    pythag(ellipseX, ellipseY, mouseX, mouseY) {
-      let x = mouseX;
-      let y = mouseY;
-  
-      if (x == NaN) {
-        return 1;
-      } else {
-        let leg1 = Math.abs(x - ellipseX);
-        let leg2 = Math.abs(y - ellipseY);
-        let pyth = Math.pow(leg1, 2) + Math.pow(leg2, 2);
-        return Math.sqrt(pyth);
-      }
+}
+
+function drawLines(color){
+    var dot, nextDot, col, lin, dist;
+    for(var i = 0; i < nbDots; i++) {
+        line = ~~(i / nbCols);
+        col = i % nbCols;
+        
+        dot = dots[i];
+        dist = getDistance(dot, action);
+        ctx.globalAlpha = Math.max(1 - (dist / (zoneRadius * 1.2)), 0.05);
+        ctx.beginPath();
+        if(line < (nbLines - 1)){
+            nextDot = dots[i + nbCols];
+            ctx.moveTo(dot.x, dot.y);
+            ctx.lineTo(nextDot.x, nextDot.y);
+        }
+        if(col < (nbCols - 1)) {
+            nextDot = dots[i + 1];
+            ctx.moveTo(dot.x, dot.y);
+            ctx.lineTo(nextDot.x, nextDot.y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = color;
+        ctx.stroke();
     }
-  }
-  
-  const grid = new dotGrid("sketch");
-  grid.init();
+}
+
+function drawJoints(color){
+    var dot, nextDot, col, lin, dist;
+    for(var i = 0; i < nbDots; i++) {
+        dot = dots[i];
+        dist = getDistance(dot, action);
+        ctx.globalAlpha = Math.max(1 - (dist / (zoneRadius * 1.2)), 0.05);
+        ctx.beginPath();
+        
+        ctx.moveTo(dot.x, dot.y);
+        ctx.lineTo(dot.ax, dot.ay);
+        
+        ctx.closePath();
+        ctx.strokeStyle = color;
+        ctx.stroke();
+    }
+}
+
+function getDistance(dot1, dot2) {
+    return Math.sqrt((dot2.x - dot1.x) * (dot2.x - dot1.x) + (dot2.y - dot1.y) * (dot2.y - dot1.y));
+}
+
+function moveDots() {
+    var dot, dist, angle;
+    for(var i = 0; i < nbDots; i++) {
+        dot = dots[i];
+        angle = -Math.atan2(action.x - dot.ax, action.y - dot.ay) - (Math.PI * 0.5);
+        dist = getDistance(dot, action);
+        
+        if(dist <= zoneRadius) {
+            dot.x = dot.ax + zoneStep * (1 - (dist / zoneRadius)) * Math.cos(angle);
+            dot.y = dot.ay + zoneStep * (1 - (dist / zoneRadius)) * Math.sin(angle);
+        } 
+        else {
+            dot.x = dot.ax;
+            dot.y = dot.ay;
+        }
+    }
+}
+
+function draw(){
+    requestAnimationFrame(draw);
+    render();
+}
+
+function render(){
+    ctx.clearRect(0, 0, c.width, c.height);
+    
+    action.x += (mouse.x - action.x) * 0.07;
+    action.y += (mouse.y - action.y) * 0.07;
+
+    moveDots();
+    
+    drawLines("rgba(255, 255, 255, .3)");
+    drawJoints("#555555");
+    
+    drawDots(true, "#18a497", 1);
+}
+
+resize();
+start();
