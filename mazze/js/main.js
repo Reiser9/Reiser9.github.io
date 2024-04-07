@@ -181,10 +181,10 @@ document.addEventListener("DOMContentLoaded", function() {
         let i = 0;
 
         for (; i < len; i++) {
-            if (Math.random() < .8) buffer32[i] = 0xffffffff;
+            if (Math.random() < .1) buffer32[i] = 0xffffffff;
         }
 
-        ctx.putImageData(iData, 1, 1);
+        ctx.putImageData(iData, 0, 0);
     }
 
     (function loop() {
