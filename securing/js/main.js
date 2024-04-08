@@ -439,7 +439,7 @@ $(document).ready(function(){
 		let point = $(this).attr("data-point");
         close();
 
-		$('body,html').animate({scrollTop: $("#"+point).offset().top}, 500);
+		$('body,html').animate({scrollTop: $("#"+point).offset().top + 10}, 500);
 	});
 
     $(".menu__inner").on("click", function(){
@@ -480,6 +480,23 @@ $(document).ready(function(){
 
     $(".modal__content").on("click", function(e){
         e.stopPropagation();
+    });
+
+    // Скролл до блока
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop();
+
+        $('.header__nav a').each(function() {
+            var currLink = $(this);
+            var refElement = $(`#${currLink.attr('data-point')}`);
+
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('.header__nav a').removeClass('active');
+                currLink.addClass('active');
+            } else {
+                currLink.removeClass('active');
+            }
+        });
     });
 
     // Калькулятор
@@ -532,6 +549,7 @@ $(document).ready(function(){
 
         // Цена за готовый комплект
         totalSum += typeObject.complex[complex];
+        debugger;
         
         $(".calc__total--price").text(`${totalSum.toLocaleString()} руб.`);
     }

@@ -98,7 +98,7 @@ input::-webkit-inner-spin-button{
 
 .suptitle{
 	text-transform: uppercase;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	color: var(--darkBlue);
 	line-height: 2;
 }
@@ -203,6 +203,7 @@ input::-webkit-inner-spin-button{
 .header__nav{
 	display: flex;
 	align-items: center;
+	gap: 8px;
 }
 
 .header__nav--link{
@@ -259,6 +260,7 @@ input::-webkit-inner-spin-button{
 	bottom: 1px;
 	left: 0;
 	background: var(--brightOrange);
+	transition: .2s linear;
 }
 
 /* Главный блок */
@@ -300,7 +302,7 @@ input::-webkit-inner-spin-button{
 .main__slide--img{
 	width: 100%;
 	opacity: 0;
-	transition: .3s ease-in-out;
+	transition: .6s ease-in-out;
 }
 
 .slick-active .main__slide--img{
@@ -316,7 +318,7 @@ input::-webkit-inner-spin-button{
 	gap: 25px;
 	opacity: 0;
 	transform: translateX(80px);
-	transition: .3s ease-in-out;
+	transition: .6s ease-in-out;
 }
 
 .slick-active .main__slide--text{
@@ -436,7 +438,7 @@ input::-webkit-inner-spin-button{
 	align-items: center;
 	gap: 8px;
 	color: var(--lightBlue);
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 .services__item--point svg{
@@ -1218,20 +1220,21 @@ input[type='range']::-webkit-slider-thumb {
 	max-width: 140px;
 }
 
-.footer__link{
+.footer__link, .footer__mail{
 	font-size: 1.4rem;
 	color: var(--lightBlue);
 	line-height: 1.5;
+	border-bottom: 1px dashed transparent;
 }
 
 .footer__nav{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 16px;
 }
 
 .footer__nav--link{
-	padding: 0.8rem;
 	font-size: 1.4rem;
 	color: var(--lightBlue);
 	line-height: 1.6;
@@ -1651,7 +1654,7 @@ input[type='range']::-webkit-slider-thumb {
 		padding: 0.8rem 1.6rem;
 	}
 
-	.footer__nav--link:hover{
+	.footer__nav--link:hover, .footer__link:hover, .footer__mail:hover{
 		border-bottom: 1px dashed var(--lightBlue);
 	}
 
@@ -1673,6 +1676,14 @@ input[type='range']::-webkit-slider-thumb {
 		border: 2px solid var(--mediumBlue);
 		color: var(--mediumBlue);
 		background: none;
+	}
+
+	.header__call:hover span:before{
+		opacity: 0;
+	}
+
+	.modal__text a:hover{
+		text-decoration: none;
 	}
 }
 
@@ -1703,6 +1714,19 @@ input[type='range']::-webkit-slider-thumb {
 	.mobile__menu.active .mobile__menu--inner{
 		opacity: 1;
 		transform: translateY(0);
+	}
+
+	.header__phone--inner{
+		display: none;
+	}
+
+	.mobile__menu--phone{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 8px;
+		flex-wrap: wrap;
 	}
 }
 @media(max-width: 998px){
@@ -1739,7 +1763,7 @@ input[type='range']::-webkit-slider-thumb {
 		max-width: 460px;
 	}
 
-	.header__phone--inner, .footer__nav, .footer__copy--inner{
+	.footer__nav, .footer__copy--inner{
 		display: none;
 	}
 	
@@ -1757,15 +1781,6 @@ input[type='range']::-webkit-slider-thumb {
 
 	.footer{
 		padding: 3rem 0;
-	}
-
-	.mobile__menu--phone{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 8px;
-		flex-wrap: wrap;
 	}
 
 	.feedback__form{
@@ -1800,7 +1815,7 @@ input[type='range']::-webkit-slider-thumb {
 	}
 
 	.services__item--title{
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 
 	.services__item--wrapper{
@@ -1898,6 +1913,14 @@ input[type='range']::-webkit-slider-thumb {
 	.calc__slider--item{
 		width: 100%;
 	}
+
+	.default{
+		padding: 1.6rem 0;
+	}
+
+	.content__wrapper{
+		gap: 12px;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1959,12 +1982,8 @@ input[type='range']::-webkit-slider-thumb {
 		width: 100%;
 	}
 
-	.about__comment p, .about__text--wrapper p{
-		font-size: 1.4rem;
-	}
-
 	.title{
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 
 	.about__author{
@@ -2019,10 +2038,6 @@ input[type='range']::-webkit-slider-thumb {
 		gap: 16px;
 	}
 
-	.review__slide--text{
-		font-size: 1.4rem;
-	}
-
 	.slick-dots{
 		margin-top: 2.4rem;
 	}
@@ -2031,20 +2046,12 @@ input[type='range']::-webkit-slider-thumb {
 		margin-top: 2.4rem;
 	}
 
-	.default{
-		padding: 1.6rem 0;
-	}
-
 	.contacts{
 		padding: 1.6rem 0rem 0rem 0;
 	}
 	
 	.main__slide--title{
-		font-size: 1.8rem;
-	}
-
-	.main__slide--point{
-		font-size: 1.4rem;
+		font-size: 2rem;
 	}
 
 	.main__slide--buttons{
