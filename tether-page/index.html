@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Dashboard</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicon -->
+
+</head>
+<body>
+
+	<img src="img/ball2.svg" alt="ball" class="main__ball">
+	<img src="img/ball1.svg" alt="ball" class="main__ball2">
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<p class="header__logo">
+					Minhas informações
+				</p>
+
+				<div class="header__buttons">
+					<button class="button header__button">
+						Deslogar
+					</button>
+
+					<button class="button header__button">
+						Fazer Upgrade
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<div class="main__inner">
+				<div class="info__block">
+					<div class="info__block--wrapper">
+						<p class="info__block--text">
+							Username: Denis
+						</p>
+
+						<p class="info__block--text">
+							Status: Active
+						</p>
+						
+						<p class="info__block--text">
+							ID: 38
+						</p>
+					</div>
+
+					<div class="info__block--values">
+						<p class="info__block--text">
+							Plano de Stake: 23
+						</p>
+
+						<p class="info__block--text">
+							Valor em Stake: $1000
+						</p>
+
+						<p class="info__block--text">
+							Saldo: $0
+						</p>
+					</div>
+				</div>
+
+				<div class="info__block">
+					<div class="info__table--inner">
+						<p class="main__title">
+							Seus Pontos Binários
+						</p>
+
+						<div class="info__table">
+							<div class="info__table--headers">
+								<p class="info__table--equip info__table--header">
+									Equipe
+								</p>
+
+								<p class="info__table--pontos info__table--header">
+									Pontos
+								</p>
+							</div>
+
+							<div class="info__table--item">
+								<p class="info__table--equip info__table--text">
+									Equipe Esquerda
+								</p>
+
+								<p class="info__table--pontos info__table--text">
+									0
+								</p>
+							</div>
+
+							<div class="info__table--item">
+								<p class="info__table--equip info__table--text">
+									Equipe Direita
+								</p>
+
+								<p class="info__table--pontos info__table--text">
+									0
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="info__select--inner">
+						<p class="main__title">
+							Selecione o lado binário para novos indicados:
+						</p>
+
+						<div class="select__inner">
+							<select class="select info__select">
+								<option>Automático</option>
+								<option>Lado Esquerdo</option>
+								<option>Lado Direito</option>
+							</select>
+
+							<img src="img/arrow-bottom.svg" alt="arrow" class="select__arrow">
+						</div>
+
+						<button class="button rede__button">
+							Vizualizar Rede
+						</button>
+					</div>
+				</div>
+
+				<div class="indi__table--inner">
+					<p class="main__title">
+						Suas Indicações
+					</p>
+
+					<div class="info__table--outer">
+						<div class="indi__table">
+							<div class="indi__table--headers">
+								<p class="info__table--header indi__table--user">Username</p>
+								<p class="info__table--header indi__table--nome">Nome</p>
+								<p class="info__table--header indi__table--sob">Sobrenome</p>
+								<p class="info__table--header indi__table--email">Email</p>
+								<p class="info__table--header indi__table--status">Status</p>
+								<p class="info__table--header indi__table--valor">Valor em Stake</p>
+								<p class="info__table--header indi__table--lado">Lado</p>
+							</div>
+	
+							<!-- <div class="indi__table--item">
+								<p class="info__table--text indi__table--user">Username</p>
+								<p class="info__table--text indi__table--nome">Nome</p>
+								<p class="info__table--text indi__table--sob">Sobrenome</p>
+								<p class="info__table--text indi__table--email">Email</p>
+								<p class="info__table--text indi__table--status">Status</p>
+								<p class="info__table--text indi__table--valor">Valor em Stake</p>
+								<p class="info__table--text indi__table--lado">Lado</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="link__inner">
+					<p class="main__title">
+						Seu Link de Indicação:
+					</p>
+
+					<div class="link__content">
+						<div class="link__block">
+							https://g20-premarketing.com/register.html?referred_by=3123
+						</div>
+
+						<button class="button link__copy">
+							Copy link
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

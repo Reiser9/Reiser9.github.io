@@ -1695,10 +1695,7 @@ input::-webkit-inner-spin-button{
 	padding: 2.4rem;
 	position: relative;
 	overflow: hidden;
-}
-
-.testnet__item.active{
-	border: 1px solid #FD9109;
+	transition: .2s linear;
 }
 
 .testnet__item--icon{
@@ -1864,6 +1861,10 @@ input::-webkit-inner-spin-button{
 	.landing__slider--dots .slick-dots li button:hover{
 		border: 1px solid #FD9109;
 		color: #FD9109;
+	}
+
+	.testnet__item:hover{
+		border: 1px solid #FD9109;
 	}
 }
 
