@@ -16,6 +16,7 @@
 
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon.png">
@@ -28,7 +29,7 @@
 </head>
 <body>
 	
-	<header class="header">
+	<header class="header" data-aos="fade-down" data-aos-duration="700">
 		<div class="container">
 			<div class="header__inner">
 				<a href="/" class="header__logo">
@@ -39,7 +40,7 @@
 					<a href="#" class="header__nav--link go" data-point="home">Home</a>
 					<a href="#" class="header__nav--link go" data-point="about">About</a>
 					<a href="#" class="header__nav--link go" data-point="token">Tokenomics</a>
-					<a href="#" class="header__nav--link go" data-point="road">Road map</a>
+					<a href="#" class="header__nav--link go" data-point="count">Countdown</a>
 				</nav>
 
 				<div class="header__socials">
@@ -66,7 +67,7 @@
 				<a href="#" class="header__nav--link go" data-point="home">Home</a>
 				<a href="#" class="header__nav--link go" data-point="about">About</a>
 				<a href="#" class="header__nav--link go" data-point="token">Tokenomics</a>
-				<a href="#" class="header__nav--link go" data-point="road">Road map</a>
+				<a href="#" class="header__nav--link go" data-point="count">Countdown</a>
 			</nav>
 
 			<div class="header__socials">
@@ -81,7 +82,7 @@
 		</div>
 	</div>
 
-	<section class="main" id="home">
+	<section class="main" id="home" data-aos="fade-in" data-aos-duration="700">
 		<img src="img/main-bg.svg" alt="bg" class="main__bg">
 		<img src="img/main-bg-mobile.svg" alt="bg" class="main__bg mobile">
 
@@ -197,7 +198,7 @@
 					Mizuhara had
 				</p>
 
-				<div class="about__img--inner">
+				<div class="about__img--inner" data-aos="fade-in" data-aos-duration="700">
 					<img src="img/about-img.png" alt="about" class="about__img">
 
 					<p class="about__textbox textbox1">Winning bets of $142,256,769.74 with</p>
@@ -206,7 +207,7 @@
 					<p class="about__textbox textbox4">Transferred more than $16,000,000 from Shohei&rsquo;s Bank Account</p>
 				</div>
 
-				<p class="about__text">
+				<p class="about__text" data-aos="fade-in" data-aos-duration="700">
 					$IPPEI is a meme coin for gamblers. Have you ever hit a home run in your life? If you shared your life with the man who hits the most home runs in the world, how could you not want to hit one yourself? But not everyone is given an equal chance to get in the batter's box.
 				</p>
 			</div>
@@ -221,7 +222,7 @@
 
 		<div class="container">
 			<div class="how__inner">
-				<div class="title__inner how__title--inner">
+				<div class="title__inner how__title--inner" data-aos="fade-in" data-aos-duration="700">
 					<p class="title__bg">How to buy</p>
 					<h2 class="title">How to buy</h2>
 
@@ -229,7 +230,7 @@
 					<img src="img/dollar.svg" alt="dollar" class="how__dollar how__dollar2">
 				</div>
 
-				<div class="how__content">
+				<div class="how__content" data-aos="fade-in" data-aos-duration="700">
 					<div class="how__item">
 						<img src="img/helmet1.svg" alt="helmet" class="how__item--img">
 
@@ -303,19 +304,19 @@
 
 		<div class="container">
 			<div class="token__inner">
-				<div class="title__inner">
+				<div class="title__inner" data-aos="fade-in" data-aos-duration="700">
 					<p class="title__bg">Tokenomics</p>
 					<h2 class="title">Tokenomics</h2>
 				</div>
 
 				<div class="token__content">
-					<div class="token__img--inner">
+					<div class="token__img--inner" data-aos="fade-in" data-aos-duration="700">
 						<img src="img/token-img.svg" alt="token" class="token__img">
 
 						<p class="token__img--value">Token Supply: 40,678,436</p>
 					</div>
 
-					<div class="token__table">
+					<div class="token__table" data-aos="fade-in" data-aos-duration="700">
 						<div class="token__table--wrapper">
 							<div class="token__table--item">
 								<p class="token__table--text">
@@ -469,12 +470,12 @@
 		</div>
 	</div>
 
-	<section class="countdown" id="road">
+	<section class="countdown" id="count">
 		<img src="img/count-bg.png" alt="bg" class="countdown__bg">
 
 		<div class="container">
 			<div class="countdown__inner">
-				<div class="countdown__content">
+				<div class="countdown__content" data-aos="fade-in" data-aos-duration="700">
 					<img src="img/count-img.png" alt="img" class="countdown__content--bg">
 
 					<h2 class="countdown__title">Countdown to the decision</h2>
@@ -539,7 +540,7 @@
 					<a href="#" class="header__nav--link go" data-point="home">Home</a>
 					<a href="#" class="header__nav--link go" data-point="about">About</a>
 					<a href="#" class="header__nav--link go" data-point="token">Tokenomics</a>
-					<a href="#" class="header__nav--link go" data-point="road">Road map</a>
+					<a href="#" class="header__nav--link go" data-point="count">Countdown</a>
 				</nav>
 
 				<p class="footer__copy">
@@ -551,5 +552,9 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

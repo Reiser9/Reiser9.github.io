@@ -281,6 +281,7 @@ input::-webkit-inner-spin-button{
 .main__title{
 	color: #fff;
 	position: relative;
+	text-shadow: #000 1px 0 25px;
 }
 
 .main__title--bg{
@@ -590,6 +591,10 @@ input::-webkit-inner-spin-button{
 .how__item--title{
 	font-size: 2.4rem;
 	color: #243A6C;
+}
+
+.how__item--title--img{
+	max-height: 50px;
 }
 
 .how__item--text{
