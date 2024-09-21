@@ -58,4 +58,11 @@ $(document).ready(function(){
         }
     });
 
+    // Sliders
+    const casesSlider = new Swiper(".cases__item--slider", {
+        pagination: {
+            el: ".cases__slider--pagination",
+            clickable: true,
+        },
+    });
 });

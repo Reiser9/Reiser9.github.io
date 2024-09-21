@@ -260,7 +260,7 @@ input::-webkit-inner-spin-button{
 /* Главный блок */
 .main{
 	width: 100%;
-	min-height: 100dvh;
+	min-height: 100vh;
 	position: relative;
 	display: flex;
 }
@@ -319,7 +319,7 @@ input::-webkit-inner-spin-button{
 
 .main__title{
 	width: 100%;
-	max-width: 1140px;
+	max-width: 1200px;
 	text-align: center;
 	font-size: 6.4rem;
 	font-weight: 500;
@@ -391,13 +391,203 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	gap: 12px;
+	gap: 16px;
 	flex-wrap: wrap;
 }
 
 .cases__title{
 	width: 100%;
 	max-width: 900px;
+}
+
+.cases__text{
+	font-size: 3.2rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.cases__text:before{
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #D6783D;
+}
+
+.cases__content{
+	width: 100%;
+	margin-top: 5.6rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.cases__item{
+	width: calc(100% / 3 - 48px / 3);
+	background: #F1F2F1;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
+
+.cases__info--wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.4rem 3.2rem;
+}
+
+.cases__info--city{
+	font-size: 3.2rem;
+	font-weight: 700;
+	color: #1D1C1C;
+}
+
+.cases__info--location{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #D6783D;
+	font-size: 2rem;
+}
+
+.cases__info--location--icon{
+	width: 24px;
+	flex-shrink: 0;
+}
+
+.cases__item--info{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 2.4rem 3.2rem;
+	border-top: 1px solid #E7E3DA;
+	border-bottom: 1px solid #E7E3DA;
+	gap: 8px;
+	padding: 0.8rem 3.2rem;
+}
+
+.cases__item--info:last-child{
+	border-bottom: none;
+	padding-bottom: 2.4rem;
+}
+
+.cases__item--info--element{
+	width: 100%;
+	padding: 0.8rem 0;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.cases__item--info--element p{
+	background: #F1F2F1;
+	position: relative;
+	z-index: 2;
+}
+
+.cases__item--info--element p:first-child{
+	font-size: 2rem;
+	color: #1D1C1C;
+	font-weight: 700;
+}
+
+.cases__item--info--element p:last-child{
+	font-size: 2rem;
+	color: #1D1C1C;
+	text-align: right;
+}
+
+.cases__item--info--element:before{
+	content: "";
+	display: block;
+	width: 100%;
+	border-bottom: 1px dashed rgba(29, 29, 28, .3);
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}
+
+.cases__item--link--wrapper{
+	width: 100%;
+	padding: 2.1rem 3.2rem;
+}
+
+.cases__item--link{
+	width: 100%;
+	text-align: center;
+	padding: 2rem 3rem;
+	text-transform: uppercase;
+	background: #1D1C1C;
+	border-radius: 50px;
+	font-size: 2rem;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.cases__item--slider{
+	width: 100%;
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+.cases__item--slider:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+	background: rgba(29, 29, 28, .3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.cases__slider--pagination{
+	width: calc(100% - 48px)!important;
+	position: absolute;
+	top: 16px!important;
+	left: 24px!important;
+	z-index: 3;
+	bottom: auto!important;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.cases__slider--pagination .swiper-pagination-bullet{
+	width: 100%;
+	height: 4px;
+	background: rgba(231, 227, 218, .3);
+	border-radius: 0;
+	transition: .2s linear;
+	opacity: 1;
+}
+
+.cases__slider--pagination .swiper-pagination-bullet-active{
+	background: #F1F2F1;
+}
+
+.cases__item--slide{
+	display: flex;
+	aspect-ratio: 1.7 / 1;
+}
+
+.cases__item--slide--img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* Почему метры */
@@ -407,6 +597,30 @@ input::-webkit-inner-spin-button{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.why__banner{
+	width: 100%;
+	position: relative;
+	min-height: 420px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.why__banner--img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.why__title{
+	font-size: 6.4rem;
 }
 
 /* Контакты */
@@ -993,6 +1207,67 @@ input::-webkit-inner-spin-button{
 	display: flex;
 }
 
+/* О нас */
+.about{
+	width: 100%;
+	padding: 8rem 0;
+}
+
+.about__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.about__text{
+	width: 100%;
+	max-width: 1580px;
+	font-size: 4rem;
+	font-family: "Unbounded", sans-serif;
+}
+
+.about__wrapper{
+	width: 100%;
+	margin-top: 16rem;
+	padding-bottom: 4rem;
+	border-bottom: 1px solid rgba(231, 227, 218, .1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about__points{
+	display: flex;
+	align-items: center;
+	gap: 57px;
+}
+
+.about__point{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.about__point:before{
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #D6783D;
+}
+
+/* Карточка студии */
+.morestudios__title{
+	width: 100%;
+	max-width: 800px;
+}
+
 /* Подвал */
 .footer{
 	width: 100%;
@@ -1328,7 +1603,7 @@ input::-webkit-inner-spin-button{
 		background: #cc6b2e;
 	}
 
-	.studio__item--link:hover, .main__link:hover{
+	.studio__item--link:hover, .main__link:hover, .cases__item--link:hover{
 		opacity: 0.8;
 	}
 }
@@ -1347,6 +1622,35 @@ input::-webkit-inner-spin-button{
 	.studio__item--price{
 		font-size: 2rem;
 	}
+
+	.cases__info--wrapper{
+		padding: 2rem;
+	}
+	
+	.cases__info--city{
+		font-size: 2.4rem;
+	}
+
+	.cases__item--info{
+		padding: 0.8rem 2rem;
+	}
+
+	.cases__item--link--wrapper{
+		padding: 2rem 2rem;
+	}
+
+	.cases__info--location, .cases__item--info--element p:last-child,
+	.cases__item--info--element p:first-child{
+		font-size: 1.8rem;
+	}
+
+	.about__points{
+		gap: 30px;
+	}
+
+	.about__point{
+		font-size: 1.8rem;
+	}
 }
 @media(max-width: 1360px){
 	.container{
@@ -1363,6 +1667,19 @@ input::-webkit-inner-spin-button{
 
 	.main__title{
 		font-size: 5.6rem;
+	}
+
+	.cases__item{
+		width: calc(100% / 2 - 24px / 2);
+	}
+
+	.about__wrapper{
+		gap: 24px;
+		flex-wrap: wrap;
+	}
+
+	.about__text{
+		font-size: 3.5rem;
 	}
 }
 @media(max-width: 1200px){
@@ -1398,6 +1715,33 @@ input::-webkit-inner-spin-button{
 
 	.feedback__input--inner{
 		max-width: 310px;
+	}
+
+	.about__points{
+		overflow-x: auto;
+		padding-bottom: 1rem;
+	}
+
+	.about__points::-webkit-scrollbar-thumb{
+		border-radius: 50px;
+		background: #D6783D;
+	}
+
+	.about__points::-webkit-scrollbar-track{
+		background: rgba(231, 227, 218, .2);
+	}
+
+	.about__points::-webkit-scrollbar{
+		width: 100%;
+		height: 4px;
+	}
+
+	.about__point{
+		flex-shrink: 0;
+	}
+
+	.about__wrapper{
+		margin-top: 10rem;
 	}
 }
 @media(max-width: 998px){
@@ -1572,6 +1916,32 @@ input::-webkit-inner-spin-button{
 
 	.main__wrapper{
 		gap: 16px;
+	}
+
+	.cases__item--link{
+		padding: 1.6rem 2rem;
+		font-size: 1.6rem;
+	}
+
+	.cases__info--city{
+		font-size: 2rem;
+	}
+
+	.cases__info--location, .cases__item--info--element p:last-child, .cases__item--info--element p:first-child{
+		font-size: 1.4rem;
+	}
+
+	.cases__text{
+		font-size: 2rem;
+	}
+
+	.about__text{
+		font-size: 3rem;
+	}
+
+	.about__wrapper{
+		padding-bottom: 0;
+		border-bottom: none;
 	}
 }
 @media(max-width: 768px){
@@ -1810,6 +2180,53 @@ input::-webkit-inner-spin-button{
 	.main__bg.mobile{
 		display: flex;
 	}
+
+	.cases__item{
+		width: 100%;
+	}
+
+	.cases__text{
+		font-size: 1.8rem;
+		gap: 8px;
+	}
+
+	.cases__text:before{
+		width: 8px;
+		height: 8px;
+	}
+
+	.cases__content{
+		margin-top: 2.4rem;
+	}
+
+	.cases{
+		padding: 6rem 0;
+	}
+
+	.about__text{
+		font-size: 1.8rem;
+	}
+
+	.about{
+		padding: 6rem 0;
+	}
+
+	.about__wrapper{
+		margin-top: 3rem;
+	}
+
+	.about__points{
+		padding-top: 2rem;
+	}
+
+	.about__point{
+		font-size: 1.6rem;
+	}
+
+	.about__point:before{
+		width: 8px;
+		height: 8px;
+	}
 }
 @media(max-width: 480px){
 	.container{
@@ -1930,5 +2347,17 @@ input::-webkit-inner-spin-button{
 
 	.faq__title{
 		max-width: 240px;
+	}
+
+	.cases, .why, .about{
+		padding: 4rem 0;
+	}
+
+	.about__text{
+		font-size: 1.6rem;
+	}
+
+	.about__point{
+		font-size: 1.4rem;
 	}
 }
