@@ -29,7 +29,716 @@
 </head>
 <body>
 	
+	<header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.svg" alt="logo" class="header__logo--img">
+                </a>
+
+                <nav class="header__nav">
+                    <li class="current-menu-item"><a href="#">Студии</a></li>
+                    <li><a href="#">Стать инвестором</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </nav>
+
+                <div class="header__menu--wrapper">
+                    <a href="tel:79999999999" class="header__phone">
+                        <svg class="header__phone--icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5253 4.30599C13.5508 4.21081 13.5947 4.12158 13.6547 4.04339C13.7147 3.9652 13.7894 3.8996 13.8748 3.85032C13.9601 3.80104 14.0543 3.76906 14.152 3.7562C14.2496 3.74334 14.3489 3.74985 14.4441 3.77537C15.8344 4.13813 17.103 4.86497 18.119 5.88103C19.1351 6.89708 19.8619 8.16562 20.2247 9.55599C20.2502 9.65116 20.2567 9.75042 20.2439 9.84811C20.231 9.94579 20.199 10.04 20.1497 10.1253C20.1005 10.2106 20.0349 10.2854 19.9567 10.3454C19.8785 10.4053 19.7893 10.4493 19.6941 10.4747C19.6307 10.4914 19.5655 10.4999 19.5 10.5001C19.3347 10.5001 19.1741 10.4455 19.043 10.3448C18.912 10.244 18.8179 10.1029 18.7753 9.94318C18.4795 8.80817 17.8863 7.77259 17.0569 6.9432C16.2275 6.11381 15.1919 5.52061 14.0569 5.22474C13.9616 5.19938 13.8723 5.15549 13.794 5.09558C13.7157 5.03566 13.65 4.9609 13.6006 4.87557C13.5513 4.79024 13.5192 4.69601 13.5063 4.59828C13.4933 4.50054 13.4998 4.40122 13.5253 4.30599ZM13.3069 8.22474C14.5997 8.56974 15.4303 9.40037 15.7753 10.6932C15.8179 10.8529 15.912 10.994 16.043 11.0948C16.1741 11.1955 16.3347 11.25 16.5 11.2501C16.5655 11.2499 16.6307 11.2414 16.6941 11.2247C16.7893 11.1993 16.8785 11.1553 16.9567 11.0954C17.0349 11.0354 17.1005 10.9606 17.1497 10.8753C17.199 10.79 17.231 10.6958 17.2439 10.5981C17.2567 10.5004 17.2502 10.4012 17.2247 10.306C16.7447 8.50974 15.4903 7.25537 13.6941 6.77537C13.5019 6.72402 13.2971 6.75113 13.1249 6.85073C12.9527 6.95033 12.8271 7.11426 12.7758 7.30646C12.7244 7.49866 12.7516 7.70338 12.8512 7.87559C12.9508 8.04781 13.1147 8.1734 13.3069 8.22474ZM20.9888 17.1638C20.8216 18.4341 20.1977 19.6002 19.2337 20.4442C18.2696 21.2882 17.0313 21.7523 15.75 21.7501C8.30626 21.7501 2.25001 15.6938 2.25001 8.25005C2.24771 6.96876 2.7119 5.73045 3.55588 4.76639C4.39986 3.80234 5.56592 3.17847 6.83626 3.0113C7.1575 2.97208 7.4828 3.0378 7.76362 3.19865C8.04444 3.35951 8.2657 3.60687 8.39438 3.9038L10.3744 8.32412V8.33537C10.4729 8.56267 10.5136 8.81083 10.4928 9.05769C10.472 9.30455 10.3904 9.54242 10.2553 9.75005C10.2384 9.77537 10.2206 9.7988 10.2019 9.82224L8.25001 12.136C8.9522 13.5629 10.4447 15.0422 11.8903 15.7463L14.1722 13.8047C14.1946 13.7859 14.2181 13.7684 14.2425 13.7522C14.45 13.6139 14.6887 13.5294 14.937 13.5065C15.1853 13.4836 15.4354 13.5229 15.6647 13.621L15.6769 13.6266L20.0934 15.6057C20.3909 15.7339 20.6389 15.955 20.8003 16.2358C20.9616 16.5167 21.0278 16.8422 20.9888 17.1638ZM19.5 16.9763H19.4897L15.0834 15.0029L12.8006 16.9444C12.7785 16.9633 12.7554 16.9808 12.7313 16.9969C12.5154 17.1409 12.2659 17.2265 12.0071 17.2452C11.7483 17.2639 11.489 17.2152 11.2547 17.1038C9.49876 16.2554 7.74845 14.5182 6.89907 12.781C6.7866 12.5484 6.73613 12.2906 6.75255 12.0327C6.76898 11.7749 6.85174 11.5256 6.99282 11.3091C7.00868 11.2837 7.02655 11.2595 7.04626 11.2369L9.00001 8.92037L7.03126 4.51412C7.03088 4.51038 7.03088 4.50661 7.03126 4.50287C6.12212 4.62146 5.28739 5.0674 4.68339 5.75716C4.0794 6.44693 3.74755 7.33322 3.75001 8.25005C3.75348 11.4316 5.01888 14.4818 7.26856 16.7315C9.51825 18.9812 12.5685 20.2466 15.75 20.2501C16.6663 20.2532 17.5523 19.9225 18.2425 19.3198C18.9327 18.7171 19.3797 17.8837 19.5 16.9754V16.9763Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+
+                    <div class="header__menu">
+                        <img src="img/menu.svg" alt="menu" class="header__menu--icon menu__icon">
+                        <img src="img/cross.svg" alt="menu" class="header__menu--icon cross__icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<main class="main">
+		<img src="img/main-bg.png" alt="bg" class="main__bg">
+		<img src="img/main-bg-mobile.png" alt="bg" class="main__bg mobile">
+
+		<div class="container">
+			<div class="main__inner">
+				<div class="main__wrapper">
+					<h1 class="main__title">
+						Инвестиционные квартиры-студии в историческом центре
+					</h1>
 	
+					<p class="main__text">
+						Безопасно инвестируйте в ликвидную недвижимость с гарантированной доходностью
+					</p>
+				</div>
+
+				<div class="main__links">
+					<a href="#" class="main__link">
+						Студии в москве
+
+						<span class="main__link--icon">
+							<img src="img/arrow-right.svg" alt="arrow">
+						</span>
+					</a>
+
+					<a href="#" class="main__link">
+						Студии в санкт-петербурге
+
+						<span class="main__link--icon">
+							<img src="img/arrow-right.svg" alt="arrow">
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<section class="cases">
+		<div class="container">
+			<div class="cases__inner">
+				<div class="cases__title--inner">
+					<h2 class="title cases__title">Гарантированный пассивный доход</h2>
+
+					<p class="cases__text">
+						Кейсы наших клиентов
+					</p>
+				</div>
+
+				<div class="cases__content">
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="why">
+		<div class="container">
+			<div class="why__inner">
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="studios">
+		<div class="container">
+			<div class="studios__inner">
+				<h2 class="title studios__title">Студии</h2>
+
+				<div class="studios__wrapper">
+					<div class="footer__contact--switch contact__switch studios__switch">
+						<p class="footer__contact--switch--text">В москве</p>
+
+						<div class="footer__contact--switch--content">
+							<div class="footer__contact--switch--circle"></div>
+						</div>
+
+						<p class="footer__contact--switch--text">В Санкт-петербурге</p>
+					</div>
+
+					<a href="#" class="orange__link studios__link">
+						Смотреть все студии
+					</a>
+				</div>
+
+				<div class="studios__content studios__moscow active">
+					<div class="studio__item">
+						<div class="studio__item--img--inner">
+							<img src="img/studio1.png" alt="studio" class="studio__item--img">
+						</div>
+
+						<div class="studio__item--info--content">
+							<div class="studio__item--info--wrapper">
+								<p class="studio__item--info--text">Доходность</p>
+
+								<p class="studio__item--info--profit">83.000 руб/мес</p>
+							</div>
+
+							<div class="studio__item--info--tags">
+								<p class="studio__item--info--tag">м. Бауманская</p>
+								<p class="studio__item--info--tag">24.7 м²</p>
+								<p class="studio__item--info--tag">4 этаж</p>
+								<p class="studio__item--info--tag">Потолки 4.1 м</p>
+								<p class="studio__item--info--tag">Ключи до 30.11.2024</p>
+							</div>
+						</div>
+
+						<div class="studio__item--bottom">
+							<p class="studio__item--price">8.300.000 р</p>
+
+							<a href="#" class="studio__item--link">Смотреть</a>
+						</div>
+					</div>
+
+					<div class="studio__item">
+						<div class="studio__item--img--inner">
+							<img src="img/studio1.png" alt="studio" class="studio__item--img">
+						</div>
+
+						<div class="studio__item--info--content">
+							<div class="studio__item--info--wrapper">
+								<p class="studio__item--info--text">Доходность</p>
+
+								<p class="studio__item--info--profit">83.000 руб/мес</p>
+							</div>
+
+							<div class="studio__item--info--tags">
+								<p class="studio__item--info--tag">м. Бауманская</p>
+								<p class="studio__item--info--tag">24.7 м²</p>
+								<p class="studio__item--info--tag">4 этаж</p>
+								<p class="studio__item--info--tag">Потолки 4.1 м</p>
+								<p class="studio__item--info--tag">Ключи до 30.11.2024</p>
+							</div>
+						</div>
+
+						<div class="studio__item--bottom">
+							<p class="studio__item--price">8.300.000 р</p>
+
+							<a href="#" class="studio__item--link">Смотреть</a>
+						</div>
+					</div>
+
+					<div class="studio__item">
+						<div class="studio__item--img--inner">
+							<img src="img/studio1.png" alt="studio" class="studio__item--img">
+						</div>
+
+						<div class="studio__item--info--content">
+							<div class="studio__item--info--wrapper">
+								<p class="studio__item--info--text">Доходность</p>
+
+								<p class="studio__item--info--profit">83.000 руб/мес</p>
+							</div>
+
+							<div class="studio__item--info--tags">
+								<p class="studio__item--info--tag">м. Бауманская</p>
+								<p class="studio__item--info--tag">24.7 м²</p>
+								<p class="studio__item--info--tag">4 этаж</p>
+								<p class="studio__item--info--tag">Потолки 4.1 м</p>
+								<p class="studio__item--info--tag">Ключи до 30.11.2024</p>
+							</div>
+						</div>
+
+						<div class="studio__item--bottom">
+							<p class="studio__item--price">8.300.000 р</p>
+
+							<a href="#" class="studio__item--link">Смотреть</a>
+						</div>
+					</div>
+
+					<div class="studio__item">
+						<div class="studio__item--img--inner">
+							<img src="img/studio1.png" alt="studio" class="studio__item--img">
+						</div>
+
+						<div class="studio__item--info--content">
+							<div class="studio__item--info--wrapper">
+								<p class="studio__item--info--text">Доходность</p>
+
+								<p class="studio__item--info--profit">83.000 руб/мес</p>
+							</div>
+
+							<div class="studio__item--info--tags">
+								<p class="studio__item--info--tag">м. Бауманская</p>
+								<p class="studio__item--info--tag">24.7 м²</p>
+								<p class="studio__item--info--tag">4 этаж</p>
+								<p class="studio__item--info--tag">Потолки 4.1 м</p>
+								<p class="studio__item--info--tag">Ключи до 30.11.2024</p>
+							</div>
+						</div>
+
+						<div class="studio__item--bottom">
+							<p class="studio__item--price">8.300.000 р</p>
+
+							<a href="#" class="studio__item--link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="studios__content studios__piter">
+					<div class="studio__item">
+						<div class="studio__item--img--inner">
+							<img src="img/studio1.png" alt="studio" class="studio__item--img">
+						</div>
+
+						<div class="studio__item--info--content">
+							<div class="studio__item--info--wrapper">
+								<p class="studio__item--info--text">Доходность</p>
+
+								<p class="studio__item--info--profit">83.000 руб/мес</p>
+							</div>
+
+							<div class="studio__item--info--tags">
+								<p class="studio__item--info--tag">м. Бауманская</p>
+								<p class="studio__item--info--tag">24.7 м²</p>
+								<p class="studio__item--info--tag">4 этаж</p>
+								<p class="studio__item--info--tag">Потолки 4.1 м</p>
+								<p class="studio__item--info--tag">Ключи до 30.11.2024</p>
+							</div>
+						</div>
+
+						<div class="studio__item--bottom">
+							<p class="studio__item--price">8.300.000 р</p>
+
+							<a href="#" class="studio__item--link">Смотреть</a>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="orange__link studios__link mobile">
+					Смотреть все студии
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="howwork">
+		<div class="container">
+			<div class="howwork__inner">
+				<h2 class="title howwork__title">Как мы работаем</h2>
+
+				<div class="howwork__content">
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="s3d">
+		<div class="container">
+			<div class="s3d__inner">
+				<h2 class="title s3d__title">3D экскурсия по объектам</h2>
+
+				<div class="s3d__content">
+					<img src="img/3d-bg.png" alt="bg" class="s3d__bg">
+
+					<button class="button orange__link s3d__button">
+						Начать 3d тур
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="faq">
+		<div class="container">
+			<div class="faq__inner">
+				<h2 class="title faq__title">ЧАСТЫЕ ВОПРОСЫ</h2>
+
+				<div class="faq__content">
+					<div class="faq__item">
+						<p class="faq__item--question">
+							МОГУ ЛИ Я ПРОПИСАТЬСЯ В СТУДИИ?
+						</p>
+
+						<p class="faq__item--answer">
+							Да. После приобретения вы становитесь собственником квартиры.
+						</p>
+
+						<div class="faq__item--open">
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--plus">
+								<path d="M25.3332 17.3307H17.3332V25.3307H14.6665V17.3307H6.6665V14.6641H14.6665V6.66406H17.3332V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--minus">
+								<path d="M25.3332 17.3307H6.6665V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<p class="faq__item--question">
+							ВЫ ОКАЗЫВАЕТЕ ЮРИДИЧЕСКУЮ ПОМОЩЬ?
+						</p>
+
+						<p class="faq__item--answer">
+							Мы оказываем полное юридическое, нотариальное сопровождение сделки. На всех этапах мы с вами!
+						</p>
+
+						<div class="faq__item--open">
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--plus">
+								<path d="M25.3332 17.3307H17.3332V25.3307H14.6665V17.3307H6.6665V14.6641H14.6665V6.66406H17.3332V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--minus">
+								<path d="M25.3332 17.3307H6.6665V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<p class="faq__item--question">
+							РЕМОНТ ВХОДИТ В СТОИМОСТЬ КВАРТИРЫ?
+						</p>
+
+						<p class="faq__item--answer">
+							Да. В стоимость уже включена индивидуальная дизайнерская отделка. Концепт-дизайн каждой студии мы создаем вместе с клиентом.Также мы даем 2 года гарантии на ремонт.
+						</p>
+
+						<div class="faq__item--open">
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--plus">
+								<path d="M25.3332 17.3307H17.3332V25.3307H14.6665V17.3307H6.6665V14.6641H14.6665V6.66406H17.3332V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--minus">
+								<path d="M25.3332 17.3307H6.6665V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<p class="faq__item--question">
+							a ЕСЛИ Я ЗАХОЧУ ПРОДАТЬ СТУДИЮ?
+						</p>
+
+						<p class="faq__item--answer">
+							После приобретения все собственники квартир-студий подписывают отказ от приоритетного права на покупку вашей доли. Вы можете продать студию в любой момент.
+						</p>
+
+						<div class="faq__item--open">
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--plus">
+								<path d="M25.3332 17.3307H17.3332V25.3307H14.6665V17.3307H6.6665V14.6641H14.6665V6.66406H17.3332V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--minus">
+								<path d="M25.3332 17.3307H6.6665V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<p class="faq__item--question">
+							ПЕРЕПЛАНИРОВКА СОГЛАСОВАНА?
+						</p>
+
+						<p class="faq__item--answer">
+							Да. Мы приобретаем только те объекты, где можно согласовать перепланировку. Компания работает согласно установленным СНиПам и не приобретает объекты в домах-памятниках.
+						</p>
+
+						<div class="faq__item--open">
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--plus">
+								<path d="M25.3332 17.3307H17.3332V25.3307H14.6665V17.3307H6.6665V14.6641H14.6665V6.66406H17.3332V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+
+							<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="faq__item--minus">
+								<path d="M25.3332 17.3307H6.6665V14.6641H25.3332V17.3307Z" fill="currentColor"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="feedback">
+        <img src="img/form-bg-mobile.png" alt="bg" class="feedback__bg mobile">
+
+        <div class="container">
+            <div class="feedback__inner">
+                <img src="img/form-bg.png" alt="bg" class="feedback__bg">
+
+                <p class="title feedback__title">ТУР ПО ШОУРУМУ</p>
+
+                <p class="feedback__text">Запишитесь на просмотр нашего шоурума, оцените качество и дизайн.</p>
+
+                <div class="feedback__content">
+                    <div class="feedback__input--inner">
+                        <p class="feedback__input--title required">Ваш номер телефона</p>
+
+                        <input type="text" placeholder="+7 (999) 999-99-99" class="input feedback__input">
+                    </div>
+
+                    <div class="feedback__input--inner">
+                        <p class="feedback__input--title required">Город</p>
+
+                        <div class="feedback__select--inner">
+                            <img src="img/arrow-bottom.svg" alt="arrow" class="feedback__select--arrow">
+
+                            <select class="select feedback__select">
+                                <option>Москва</option>
+                                <option>Санкт-Петербург</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="button feedback__button">
+                        Оставить заявку
+                    </button>
+                </div>
+
+                <p class="feedback__info">
+                    Менеджер свяжется с вами в течение 15 минут для уточнения деталей
+                </p>
+            </div>
+        </div>
+    </div>
+
+	<footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <a href="/" class="header__logo">
+                        <img src="img/logo.svg" alt="logo" class="header__logo--img">
+                    </a>
+
+                    <a href="#" class="footer__top--phone">
+                        <span class="header__phone">
+                            <svg class="header__phone--icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5253 4.30599C13.5508 4.21081 13.5947 4.12158 13.6547 4.04339C13.7147 3.9652 13.7894 3.8996 13.8748 3.85032C13.9601 3.80104 14.0543 3.76906 14.152 3.7562C14.2496 3.74334 14.3489 3.74985 14.4441 3.77537C15.8344 4.13813 17.103 4.86497 18.119 5.88103C19.1351 6.89708 19.8619 8.16562 20.2247 9.55599C20.2502 9.65116 20.2567 9.75042 20.2439 9.84811C20.231 9.94579 20.199 10.04 20.1497 10.1253C20.1005 10.2106 20.0349 10.2854 19.9567 10.3454C19.8785 10.4053 19.7893 10.4493 19.6941 10.4747C19.6307 10.4914 19.5655 10.4999 19.5 10.5001C19.3347 10.5001 19.1741 10.4455 19.043 10.3448C18.912 10.244 18.8179 10.1029 18.7753 9.94318C18.4795 8.80817 17.8863 7.77259 17.0569 6.9432C16.2275 6.11381 15.1919 5.52061 14.0569 5.22474C13.9616 5.19938 13.8723 5.15549 13.794 5.09558C13.7157 5.03566 13.65 4.9609 13.6006 4.87557C13.5513 4.79024 13.5192 4.69601 13.5063 4.59828C13.4933 4.50054 13.4998 4.40122 13.5253 4.30599ZM13.3069 8.22474C14.5997 8.56974 15.4303 9.40037 15.7753 10.6932C15.8179 10.8529 15.912 10.994 16.043 11.0948C16.1741 11.1955 16.3347 11.25 16.5 11.2501C16.5655 11.2499 16.6307 11.2414 16.6941 11.2247C16.7893 11.1993 16.8785 11.1553 16.9567 11.0954C17.0349 11.0354 17.1005 10.9606 17.1497 10.8753C17.199 10.79 17.231 10.6958 17.2439 10.5981C17.2567 10.5004 17.2502 10.4012 17.2247 10.306C16.7447 8.50974 15.4903 7.25537 13.6941 6.77537C13.5019 6.72402 13.2971 6.75113 13.1249 6.85073C12.9527 6.95033 12.8271 7.11426 12.7758 7.30646C12.7244 7.49866 12.7516 7.70338 12.8512 7.87559C12.9508 8.04781 13.1147 8.1734 13.3069 8.22474ZM20.9888 17.1638C20.8216 18.4341 20.1977 19.6002 19.2337 20.4442C18.2696 21.2882 17.0313 21.7523 15.75 21.7501C8.30626 21.7501 2.25001 15.6938 2.25001 8.25005C2.24771 6.96876 2.7119 5.73045 3.55588 4.76639C4.39986 3.80234 5.56592 3.17847 6.83626 3.0113C7.1575 2.97208 7.4828 3.0378 7.76362 3.19865C8.04444 3.35951 8.2657 3.60687 8.39438 3.9038L10.3744 8.32412V8.33537C10.4729 8.56267 10.5136 8.81083 10.4928 9.05769C10.472 9.30455 10.3904 9.54242 10.2553 9.75005C10.2384 9.77537 10.2206 9.7988 10.2019 9.82224L8.25001 12.136C8.9522 13.5629 10.4447 15.0422 11.8903 15.7463L14.1722 13.8047C14.1946 13.7859 14.2181 13.7684 14.2425 13.7522C14.45 13.6139 14.6887 13.5294 14.937 13.5065C15.1853 13.4836 15.4354 13.5229 15.6647 13.621L15.6769 13.6266L20.0934 15.6057C20.3909 15.7339 20.6389 15.955 20.8003 16.2358C20.9616 16.5167 21.0278 16.8422 20.9888 17.1638ZM19.5 16.9763H19.4897L15.0834 15.0029L12.8006 16.9444C12.7785 16.9633 12.7554 16.9808 12.7313 16.9969C12.5154 17.1409 12.2659 17.2265 12.0071 17.2452C11.7483 17.2639 11.489 17.2152 11.2547 17.1038C9.49876 16.2554 7.74845 14.5182 6.89907 12.781C6.7866 12.5484 6.73613 12.2906 6.75255 12.0327C6.76898 11.7749 6.85174 11.5256 6.99282 11.3091C7.00868 11.2837 7.02655 11.2595 7.04626 11.2369L9.00001 8.92037L7.03126 4.51412C7.03088 4.51038 7.03088 4.50661 7.03126 4.50287C6.12212 4.62146 5.28739 5.0674 4.68339 5.75716C4.0794 6.44693 3.74755 7.33322 3.75001 8.25005C3.75348 11.4316 5.01888 14.4818 7.26856 16.7315C9.51825 18.9812 12.5685 20.2466 15.75 20.2501C16.6663 20.2532 17.5523 19.9225 18.2425 19.3198C18.9327 18.7171 19.3797 17.8837 19.5 16.9754V16.9763Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+
+                        8 (800) 500 - 8 - 500
+                    </a>
+                </div>
+
+                <nav class="footer__nav">
+                    <li class="current-menu-item"><a href="#">Студии</a></li>
+                    <li><a href="#">Стать инвестором</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </nav>
+
+                <div class="footer__contact">
+                    <div class="footer__contact--switch--inner">
+                        <p class="footer__contact--switch--title">Студии</p>
+
+                        <div class="footer__contact--switch footer__switch">
+                            <p class="footer__contact--switch--text">В москве</p>
+
+                            <div class="footer__contact--switch--content">
+                                <div class="footer__contact--switch--circle"></div>
+                            </div>
+
+                            <p class="footer__contact--switch--text">В Санкт-петербурге</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__contact--item contact__moscow active">
+                        <p class="footer__contact--title">
+                            Студии в Москве
+                        </p>
+
+                        <div class="footer__contact--office--item">
+                            <p class="footer__contact--office--text">Офис:</p>
+
+                            <p class="footer__contact--office--address">
+                                <img src="img/location.svg" alt="location" class="footer__contact--office--icon">
+
+                                ул. Большая Полянка, д. 7/10, ст. м. "Полянка"
+                            </p>
+                        </div>
+
+                        <div class="footer__contact--socials">
+                            <a href="#" target="_blank" class="footer__contact--social--link">
+                                <img src="img/telegram.svg" alt="telegram" class="footer__contact--social--icon">
+                            </a>
+
+                            <a href="#" target="_blank" class="footer__contact--social--link">
+                                <img src="img/vk.svg" alt="vk" class="footer__contact--social--icon">
+                            </a>
+
+                            <a href="#" target="_blank" class="footer__contact--social--link">
+                                <img src="img/dzen.svg" alt="dzen" class="footer__contact--social--icon">
+                            </a>
+
+                            <div class="footer__contact--social--wrapper">
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/instagram.svg" alt="instagram" class="footer__contact--social--icon">
+                                </a>
+    
+                                <p class="footer__contact--social--text">
+                                    *деятельность организации запрещена на территории РФ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__contact--item contact__piter">
+                        <p class="footer__contact--title">
+                            Студии в Санкт-Петербурге
+                        </p>
+
+                        <div class="footer__contact--office--item">
+                            <p class="footer__contact--office--text">Офис:</p>
+
+                            <p class="footer__contact--office--address">
+                                <img src="img/location.svg" alt="location" class="footer__contact--office--icon">
+
+                                ул. 5-я Советская, д. 7-9, ст. м. "Площадь Восстания"
+                            </p>
+                        </div>
+
+                        <div class="footer__contact--socials">
+                            <a href="#" target="_blank" class="footer__contact--social--link">
+                                <img src="img/telegram.svg" alt="telegram" class="footer__contact--social--icon">
+                            </a>
+
+                            <a href="#" target="_blank" class="footer__contact--social--link">
+                                <img src="img/vk.svg" alt="vk" class="footer__contact--social--icon">
+                            </a>
+
+                            <a href="#" target="_blank" class="footer__contact--social--link">
+                                <img src="img/dzen.svg" alt="dzen" class="footer__contact--social--icon">
+                            </a>
+
+                            <div class="footer__contact--social--wrapper">
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/instagram.svg" alt="instagram" class="footer__contact--social--icon">
+                                </a>
+    
+                                <p class="footer__contact--social--text">
+                                    *деятельность организации запрещена на территории РФ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <a href="#" class="footer__bottom--link">
+                        Политика конфиденциальности
+                    </a>
+
+                    <a href="#" class="footer__bottom--link">
+                        Управляющая компания "Метры в центре"
+                    </a>
+
+                    <a href="#" class="footer__bottom--link">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile__menu">
+        <div class="container">
+            <div class="mobile__menu--content">
+                <nav class="mobile__menu--nav">
+                    <li class="current-menu-item">
+                        <a href="#">Студии</a>
+
+                        <ul class="submenu">
+                            <li><a href="#">в Москве</a></li>
+                            <li><a href="#">в Санкт-Петербурге</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Инвесторам</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </nav>
+    
+                <div class="mobile__menu--bottom">
+                    <div class="mobile__menu--contact">
+                        <div class="footer__contact--switch footer__switch">
+                            <p class="footer__contact--switch--text">В москве</p>
+
+                            <div class="footer__contact--switch--content">
+                                <div class="footer__contact--switch--circle"></div>
+                            </div>
+
+                            <p class="footer__contact--switch--text">В Санкт-петербурге</p>
+                        </div>
+    
+                        <div class="footer__contact--item contact__moscow active">
+                            <p class="footer__contact--title">
+                                Студии в Москве
+                            </p>
+    
+                            <div class="footer__contact--office--item">
+                                <p class="footer__contact--office--text">Офис:</p>
+    
+                                <p class="footer__contact--office--address">
+                                    <img src="img/location.svg" alt="location" class="footer__contact--office--icon">
+    
+                                    ул. Большая Полянка, д. 7/10, ст. м. "Полянка"
+                                </p>
+                            </div>
+    
+                            <div class="footer__contact--socials">
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/telegram.svg" alt="telegram" class="footer__contact--social--icon">
+                                </a>
+    
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/vk.svg" alt="vk" class="footer__contact--social--icon">
+                                </a>
+    
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/dzen.svg" alt="dzen" class="footer__contact--social--icon">
+                                </a>
+    
+                                <div class="footer__contact--social--wrapper">
+                                    <a href="#" target="_blank" class="footer__contact--social--link">
+                                        <img src="img/instagram.svg" alt="instagram" class="footer__contact--social--icon">
+                                    </a>
+        
+                                    <p class="footer__contact--social--text">
+                                        *деятельность организации запрещена на территории РФ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="footer__contact--item contact__piter">
+                            <p class="footer__contact--title">
+                                Студии в Санкт-Петербурге
+                            </p>
+    
+                            <div class="footer__contact--office--item">
+                                <p class="footer__contact--office--text">Офис:</p>
+    
+                                <p class="footer__contact--office--address">
+                                    <img src="img/location.svg" alt="location" class="footer__contact--office--icon">
+    
+                                    ул. 5-я Советская, д. 7-9, ст. м. "Площадь Восстания"
+                                </p>
+                            </div>
+    
+                            <div class="footer__contact--socials">
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/telegram.svg" alt="telegram" class="footer__contact--social--icon">
+                                </a>
+    
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/vk.svg" alt="vk" class="footer__contact--social--icon">
+                                </a>
+    
+                                <a href="#" target="_blank" class="footer__contact--social--link">
+                                    <img src="img/dzen.svg" alt="dzen" class="footer__contact--social--icon">
+                                </a>
+    
+                                <div class="footer__contact--social--wrapper">
+                                    <a href="#" target="_blank" class="footer__contact--social--link">
+                                        <img src="img/instagram.svg" alt="instagram" class="footer__contact--social--icon">
+                                    </a>
+        
+                                    <p class="footer__contact--social--text">
+                                        *деятельность организации запрещена на территории РФ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button class="button mobile__menu--button">
+                        Консультация
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>

@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".contact__switch").on("click", function(){
+    $(".contact__switch--handler").on("click", function(){
         $(this).toggleClass("active");
 
         if($(this).hasClass("active")){
@@ -31,6 +31,30 @@ $(document).ready(function(){
         else{
             $(".contacts__moscow").addClass("active");
             $(".contacts__piter").removeClass("active");
+        }
+    });
+
+    $(".studios__switch").on("click", function(){
+        $(this).toggleClass("active");
+
+        if($(this).hasClass("active")){
+            $(".studios__moscow").removeClass("active");
+            $(".studios__piter").addClass("active");
+        }
+        else{
+            $(".studios__moscow").addClass("active");
+            $(".studios__piter").removeClass("active");
+        }
+    });
+
+    // Faq
+    $(".faq__item").on("click", function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+        }
+        else{
+            $(".faq__item").removeClass("active");
+            $(this).toggleClass("active");
         }
     });
 
