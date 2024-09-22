@@ -89,7 +89,7 @@ $(document).ready(function(){
     });
 
 	const reviewSlider = new Swiper(".reviews__slider", {
-        spaceBetween: 20,
+        spaceBetween: 40,
         pagination: {
             el: ".reviews__slider--pagin--value",
             type: "fraction",
