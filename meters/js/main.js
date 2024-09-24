@@ -161,28 +161,6 @@ $(document).ready(function () {
         document.addEventListener("scroll", roadRotate);
     }
 
-    $('.filters__meters').slider({
-		range: true,
-		min: 13.2,
-		max: 60.2,
-		values: ['13.2', '60.2'],
-		slide: function(event, ui) {
-			$('.filters__meters--min').text(ui.values[0]);
-			$('.filters__meters--max').text(ui.values[1]);
-		}
-	});
-
-    $('.filters__price').slider({
-		range: true,
-		min: 5000000,
-		max: 25200000,
-		values: ['5000000', '25200000'],
-		slide: function(event, ui) {
-			$('.filters__price--min').text((ui.values[0]).toLocaleString());
-			$('.filters__price--max').text((ui.values[1]).toLocaleString());
-		}
-	});
-
     $(".open__filter").on("click", function(){
         $("body").addClass("scroll2");
         $(".filters__wrap").addClass("active");

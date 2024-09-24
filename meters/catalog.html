@@ -19,6 +19,30 @@
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
 
+    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=26290a34-5cc8-4a9f-b7a5-b4c4889ddfd4&lang=ru_RU"></script>
+    <script>
+        initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+
+            const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+
+            const map = new YMap(
+                document.getElementById('map'),
+
+                {
+                    location: {
+                        center: [37.588144, 55.733842],
+                        zoom: 10
+                    }
+                }
+            );
+
+            map.addChild(new YMapDefaultSchemeLayer());
+        }
+    </script> -->
+
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -60,6 +84,8 @@
             </div>
         </div>
     </header>
+
+    <!-- <div id="map" style="width: 600px; height: 400px"></div> -->
 
 	<section class="studios catalog__studios">
 		<div class="container">
@@ -759,5 +785,28 @@
 	<script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 	<script src="js/main.js"></script>
+    <script>
+        $('.filters__meters').slider({
+            range: true,
+            min: 13.2,
+            max: 60.2,
+            values: ['13.2', '60.2'],
+            slide: function(event, ui) {
+                $('.filters__meters--min').text(ui.values[0]);
+                $('.filters__meters--max').text(ui.values[1]);
+            }
+        });
+
+        $('.filters__price').slider({
+            range: true,
+            min: 5000000,
+            max: 25200000,
+            values: ['5000000', '25200000'],
+            slide: function(event, ui) {
+                $('.filters__price--min').text((ui.values[0]).toLocaleString());
+                $('.filters__price--max').text((ui.values[1]).toLocaleString());
+            }
+        });
+    </script>
 </body>
 </html>
