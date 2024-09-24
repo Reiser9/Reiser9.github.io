@@ -17,6 +17,7 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -60,12 +61,192 @@
         </div>
     </header>
 
-	
-
-	<section class="studios">
+	<section class="studios catalog__studios">
 		<div class="container">
 			<div class="studios__inner">
 				<h2 class="title studios__title">Выберите недвижимость</h2>
+
+                <div class="studios__filters">
+                    <div class="filters__wrap">
+                        <div class="filters__outer">
+                            <div class="studios__filters--content">
+                                <div class="filters__topbar">
+                                    <div class="filters__topbar--inner">
+                                        <button class="button filters__topbar--close">
+                                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9987 8.66663H5.27466L8.27466 11.6666L7.33199 12.6093L2.72266 7.99996L7.33199 3.39063L8.27466 4.33329L5.27466 7.33329H12.9987V8.66663Z" fill="currentColor"/>
+                                            </svg>
+                                        </button>
+
+                                        <p class="filters__title">Фильтры</p>
+                                    </div>
+
+                                    <button class="button studios__filters--reset">Сбросить</button>
+                                </div>
+
+                                <div class="studios__filters--item">
+                                    <p class="studios__filters--item--title">Город</p>
+        
+                                    <div class="studios__filters--item--select--inner">
+                                        <img src="img/arrow-bottom-orange.svg" alt="arrow" class="studios__filters--item--select--arrow">
+        
+                                        <select class="select studios__filters--item--select">
+                                            <option>Все</option>
+                                            <option>Москва</option>
+                                            <option>Санкт-Петербург</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="studios__filters--item">
+                                    <p class="studios__filters--item--title">Метро</p>
+        
+                                    <div class="studios__filters--item--select--inner">
+                                        <img src="img/arrow-bottom-orange.svg" alt="arrow" class="studios__filters--item--select--arrow">
+        
+                                        <select class="select studios__filters--item--select">
+                                            <option>Все</option>
+                                            <option>Площадь Восстания</option>
+                                            <option>Маяковская</option>
+                                            <option>Чернышевская </option>
+                                            <option>Владимирская</option>
+                                            <option>Достоевская</option>
+                                            <option>Садовая</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="studios__filters--item meters__filter">
+                                    <p class="studios__filters--item--title">Метраж:</p>
+        
+                                    <div class="studios__filters--slider--inner">
+                                        <div class="studios__filters--slider--point">
+                                            от
+        
+                                            <span><span class="filters__meters--min">13.2</span> м²</span>
+                                        </div>
+        
+                                        <div class="studios__filters--slider--point">
+                                            до
+        
+                                            <span><span class="filters__meters--max">60.2</span> м²</span>
+                                        </div>
+        
+                                        <div class="filters__meters"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="studios__filters--item">
+                                    <p class="studios__filters--item--title">Цена:</p>
+        
+                                    <div class="studios__filters--slider--inner">
+                                        <div class="studios__filters--slider--point">
+                                            от
+        
+                                            <span><span class="filters__price--min">5 000 000</span> р</span>
+                                        </div>
+        
+                                        <div class="studios__filters--slider--point">
+                                            до
+        
+                                            <span><span class="filters__price--max">25 200 000</span> р</span>
+                                        </div>
+        
+                                        <div class="filters__price"></div>
+                                    </div>
+                                </div>
+
+                                <div class="filters__all">
+                                    <button class="button filters__all--button">
+                                        Найдено 86 квартир-студии
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="studios__filters--active">
+                        <div class="studios__filters--elements">
+                            <p class="studios__filters--text">
+                                56 квартир-студии, с параметрами:
+                            </p>
+
+                            <button class="button studios__filters--tag">
+                                Санкт-Петербург
+
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6801 7.81947C17.7801 7.72266 17.8599 7.60685 17.9148 7.47878C17.9697 7.35071 17.9987 7.21295 18 7.07354C18.0012 6.93414 17.9748 6.79587 17.9222 6.66681C17.8697 6.53776 17.792 6.42049 17.6938 6.32187C17.5956 6.22324 17.4787 6.14522 17.3501 6.09237C17.2215 6.03952 17.0837 6.01289 16.9448 6.01403C16.8058 6.01518 16.6684 6.04408 16.5407 6.09904C16.413 6.15401 16.2975 6.23394 16.2009 6.33417L12.0059 10.5409L7.81238 6.33417C7.71656 6.23101 7.60101 6.14828 7.47262 6.09089C7.34423 6.03351 7.20564 6.00265 7.06511 6.00016C6.92457 5.99768 6.78498 6.02361 6.65466 6.07642C6.52433 6.12922 6.40594 6.20782 6.30655 6.30752C6.20717 6.40722 6.12882 6.52598 6.07618 6.65671C6.02354 6.78745 5.99768 6.92748 6.00016 7.06845C6.00264 7.20943 6.0334 7.34846 6.09061 7.47725C6.14781 7.60604 6.23029 7.72195 6.33312 7.81807L10.5239 12.0262L6.33033 16.2329C6.14545 16.4319 6.0448 16.6952 6.04959 16.9672C6.05437 17.2392 6.16422 17.4987 6.35598 17.6911C6.54774 17.8834 6.80645 17.9936 7.0776 17.9984C7.34875 18.0032 7.61118 17.9023 7.80959 17.7168L12.0059 13.5101L16.1995 17.7182C16.3979 17.9037 16.6603 18.0046 16.9315 17.9998C17.2026 17.995 17.4613 17.8848 17.6531 17.6925C17.8448 17.5001 17.9547 17.2406 17.9595 16.9686C17.9643 16.6966 17.8636 16.4333 17.6787 16.2343L13.488 12.0262L17.6801 7.81947Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+
+                            <button class="button studios__filters--tag">
+                                м. Садовая
+
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6801 7.81947C17.7801 7.72266 17.8599 7.60685 17.9148 7.47878C17.9697 7.35071 17.9987 7.21295 18 7.07354C18.0012 6.93414 17.9748 6.79587 17.9222 6.66681C17.8697 6.53776 17.792 6.42049 17.6938 6.32187C17.5956 6.22324 17.4787 6.14522 17.3501 6.09237C17.2215 6.03952 17.0837 6.01289 16.9448 6.01403C16.8058 6.01518 16.6684 6.04408 16.5407 6.09904C16.413 6.15401 16.2975 6.23394 16.2009 6.33417L12.0059 10.5409L7.81238 6.33417C7.71656 6.23101 7.60101 6.14828 7.47262 6.09089C7.34423 6.03351 7.20564 6.00265 7.06511 6.00016C6.92457 5.99768 6.78498 6.02361 6.65466 6.07642C6.52433 6.12922 6.40594 6.20782 6.30655 6.30752C6.20717 6.40722 6.12882 6.52598 6.07618 6.65671C6.02354 6.78745 5.99768 6.92748 6.00016 7.06845C6.00264 7.20943 6.0334 7.34846 6.09061 7.47725C6.14781 7.60604 6.23029 7.72195 6.33312 7.81807L10.5239 12.0262L6.33033 16.2329C6.14545 16.4319 6.0448 16.6952 6.04959 16.9672C6.05437 17.2392 6.16422 17.4987 6.35598 17.6911C6.54774 17.8834 6.80645 17.9936 7.0776 17.9984C7.34875 18.0032 7.61118 17.9023 7.80959 17.7168L12.0059 13.5101L16.1995 17.7182C16.3979 17.9037 16.6603 18.0046 16.9315 17.9998C17.2026 17.995 17.4613 17.8848 17.6531 17.6925C17.8448 17.5001 17.9547 17.2406 17.9595 16.9686C17.9643 16.6966 17.8636 16.4333 17.6787 16.2343L13.488 12.0262L17.6801 7.81947Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+
+                            <button class="button studios__filters--tag">
+                                14.2 - 60.2 м²
+
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6801 7.81947C17.7801 7.72266 17.8599 7.60685 17.9148 7.47878C17.9697 7.35071 17.9987 7.21295 18 7.07354C18.0012 6.93414 17.9748 6.79587 17.9222 6.66681C17.8697 6.53776 17.792 6.42049 17.6938 6.32187C17.5956 6.22324 17.4787 6.14522 17.3501 6.09237C17.2215 6.03952 17.0837 6.01289 16.9448 6.01403C16.8058 6.01518 16.6684 6.04408 16.5407 6.09904C16.413 6.15401 16.2975 6.23394 16.2009 6.33417L12.0059 10.5409L7.81238 6.33417C7.71656 6.23101 7.60101 6.14828 7.47262 6.09089C7.34423 6.03351 7.20564 6.00265 7.06511 6.00016C6.92457 5.99768 6.78498 6.02361 6.65466 6.07642C6.52433 6.12922 6.40594 6.20782 6.30655 6.30752C6.20717 6.40722 6.12882 6.52598 6.07618 6.65671C6.02354 6.78745 5.99768 6.92748 6.00016 7.06845C6.00264 7.20943 6.0334 7.34846 6.09061 7.47725C6.14781 7.60604 6.23029 7.72195 6.33312 7.81807L10.5239 12.0262L6.33033 16.2329C6.14545 16.4319 6.0448 16.6952 6.04959 16.9672C6.05437 17.2392 6.16422 17.4987 6.35598 17.6911C6.54774 17.8834 6.80645 17.9936 7.0776 17.9984C7.34875 18.0032 7.61118 17.9023 7.80959 17.7168L12.0059 13.5101L16.1995 17.7182C16.3979 17.9037 16.6603 18.0046 16.9315 17.9998C17.2026 17.995 17.4613 17.8848 17.6531 17.6925C17.8448 17.5001 17.9547 17.2406 17.9595 16.9686C17.9643 16.6966 17.8636 16.4333 17.6787 16.2343L13.488 12.0262L17.6801 7.81947Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <button class="button studios__filters--reset">
+                            Сбросить все фильтры
+                        </button>
+                    </div>
+                </div>
+
+                <button class="button open__filter">
+                    Открыть фильтр
+                </button>
+
+                <div class="studios__filter--buttons">
+                    <button class="button filter__sort--button">
+                        <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9517 6.71997L7.23169 3L3.51172 6.71997" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.23047 21V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.0508 17.28L17.7708 21L21.4908 17.28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.7734 3V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                        Сортировать
+                    </button>
+
+                    <div class="filter__sort--view--buttons">
+                        <button class="button filter__view--button active">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9 15H4.1C3.79029 15 3.64075 15.037 3.58054 15.0588C3.55468 15.1236 3.5 15.3098 3.5 15.73V19.77C3.5 20.1902 3.55468 20.3764 3.58054 20.4412C3.64075 20.463 3.79029 20.5 4.1 20.5H19.9C20.2097 20.5 20.3593 20.463 20.4195 20.4412C20.4453 20.3764 20.5 20.1902 20.5 19.77V15.73C20.5 15.3098 20.4453 15.1236 20.4195 15.0588C20.3592 15.037 20.2097 15 19.9 15ZM20.4534 15.0744C20.4532 15.0746 20.4504 15.0732 20.4458 15.0698C20.4512 15.0726 20.4536 15.0743 20.4534 15.0744ZM20.4534 20.4256C20.4536 20.4257 20.4512 20.4274 20.4458 20.4302C20.4504 20.4268 20.4532 20.4254 20.4534 20.4256ZM3.54664 20.4256C3.54684 20.4254 3.54957 20.4268 3.55421 20.4302C3.54876 20.4274 3.54644 20.4257 3.54664 20.4256ZM3.54664 15.0744C3.54644 15.0743 3.54876 15.0726 3.5542 15.0698C3.54956 15.0732 3.54684 15.0746 3.54664 15.0744ZM4.1 13.5H19.9C21.4 13.5 22 14.14 22 15.73V19.77C22 21.36 21.4 22 19.9 22H4.1C2.6 22 2 21.36 2 19.77V15.73C2 14.14 2.6 13.5 4.1 13.5Z" fill="currentColor"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9 3.5H4.1C3.79029 3.5 3.64075 3.53698 3.58054 3.5588C3.55468 3.62363 3.5 3.80979 3.5 4.23V8.27C3.5 8.69021 3.55468 8.87637 3.58054 8.9412C3.64075 8.96302 3.79029 9 4.1 9H19.9C20.2097 9 20.3593 8.96302 20.4195 8.94119C20.4453 8.87636 20.5 8.6902 20.5 8.27V4.23C20.5 3.8098 20.4453 3.62364 20.4195 3.5588C20.3592 3.53697 20.2097 3.5 19.9 3.5ZM20.4534 3.57441C20.4532 3.57456 20.4504 3.57318 20.4458 3.56984C20.4512 3.57259 20.4536 3.57426 20.4534 3.57441ZM20.4534 8.92559C20.4536 8.92574 20.4512 8.92741 20.4458 8.93016C20.4504 8.92681 20.4532 8.92544 20.4534 8.92559ZM3.54664 8.92559C3.54684 8.92544 3.54957 8.92681 3.55421 8.93016C3.54876 8.92741 3.54644 8.92574 3.54664 8.92559ZM3.54664 3.57441C3.54644 3.57426 3.54876 3.57259 3.5542 3.56984C3.54956 3.57319 3.54684 3.57456 3.54664 3.57441ZM4.1 2H19.9C21.4 2 22 2.64 22 4.23V8.27C22 9.86 21.4 10.5 19.9 10.5H4.1C2.6 10.5 2 9.86 2 8.27V4.23C2 2.64 2.6 2 4.1 2Z" fill="currentColor"/>
+                            </svg>
+
+                            <span>Списком</span>
+                        </button>
+
+                        <button class="button filter__view--button">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1444_5422)">
+                                    <path d="M2.28906 7.77998V17.51C2.28906 19.41 3.63906 20.19 5.27906 19.25L7.62906 17.91C8.13906 17.62 8.98906 17.59 9.51906 17.86L14.7691 20.49C15.2991 20.75 16.1491 20.73 16.6591 20.44L20.9891 17.96C21.5391 17.64 21.9991 16.86 21.9991 16.22V6.48998C21.9991 4.58998 20.6491 3.80998 19.0091 4.74998L16.6591 6.08998C16.1491 6.37998 15.2991 6.40998 14.7691 6.13998L9.51906 3.51998C8.98906 3.25998 8.13906 3.27998 7.62906 3.56998L3.29906 6.04998C2.73906 6.36998 2.28906 7.14998 2.28906 7.77998Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.55859 4V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7305 6.62012V20.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+
+                                <defs>
+                                    <clipPath id="clip0_1444_5422">
+                                        <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span>На карте</span>
+                        </button>
+                    </div>
+                </div>
 
 				<div class="studios__content active">
 					<div class="studio__item">
@@ -576,6 +757,7 @@
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

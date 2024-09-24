@@ -32,6 +32,14 @@ $(document).ready(function () {
         switchHandler($(this), $(".studios__piter"), $(".studios__moscow"));
     });
 
+    $(".chart__switch").on("click", function(){
+        switchHandler($(this), $(".chart__piter"), $(".chart__moscow"));
+    });
+
+    $(".program__switch").on("click", function(){
+        switchHandler($(this), $(".program__piter"), $(".program__moscow"));
+    });
+
     // How we work
     $(".howwork__item").on("click", function(){
         if ($(this).hasClass("active")) {
@@ -117,6 +125,83 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    // Program slide effect
+    const program = document.querySelector(".program");
+    const programWrap = document.querySelector(".program__wrap");
+    const programContent = document.querySelector(".program__inner");
+
+    const roadRotate = () => {
+        const roadWidth = programContent.clientWidth;
+        
+        const roadScrollTop = program.offsetTop;
+        const windowScroll = window.scrollY;
+        const windowWidth = window.outerWidth;
+
+        program.setAttribute("style", `min-height: ${(roadWidth - windowWidth / 2) + programWrap.clientHeight}px`);
+
+        if(roadScrollTop - windowScroll <= 0){
+            if((roadWidth - windowWidth / 2) > Math.abs(roadScrollTop - windowScroll)){
+                
+                let turn = Math.abs(roadScrollTop - windowScroll);
+
+                programWrap.scrollLeft = turn;
+            }
+            else{
+                programWrap.scrollLeft = roadWidth;
+            }
+        }
+        else{
+            programWrap.scrollLeft = 0;
+        }
+    }
+
+    if(program){
+        roadRotate
+
+        document.addEventListener("scroll", roadRotate);
+    }
+
+    $('.filters__meters').slider({
+		range: true,
+		min: 13.2,
+		max: 60.2,
+		values: ['13.2', '60.2'],
+		slide: function(event, ui) {
+			$('.filters__meters--min').text(ui.values[0]);
+			$('.filters__meters--max').text(ui.values[1]);
+		}
+	});
+
+    $('.filters__price').slider({
+		range: true,
+		min: 5000000,
+		max: 25200000,
+		values: ['5000000', '25200000'],
+		slide: function(event, ui) {
+			$('.filters__price--min').text((ui.values[0]).toLocaleString());
+			$('.filters__price--max').text((ui.values[1]).toLocaleString());
+		}
+	});
+
+    $(".open__filter").on("click", function(){
+        $("body").addClass("scroll2");
+        $(".filters__wrap").addClass("active");
+    });
+
+    $(".filters__topbar--inner").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".filters__wrap").removeClass("active");
+    });
+
+    $(".filters__wrap").on("click", function(){
+        $("body").removeClass("scroll2");
+        $(".filters__wrap").removeClass("active");
+    });
+
+    $(".studios__filters--content").on("click", function(e){
+        e.stopPropagation();
+    });
+
     // Sliders
     const casesSlider = new Swiper(".cases__item--slider", {
         pagination: {
@@ -163,6 +248,47 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".gallery__arrow--next",
             prevEl: ".gallery__arrow--prev",
+        }
+    });
+
+    const locationSlider = new Swiper(".location__slider", {
+        autoHeight: true,
+        slidesPerView: 1.1,
+        spaceBetween: 24,
+        pagination: {
+            el: ".location__paggination",
+            type: "fraction",
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"><span>'+ (index + 1 >= 10 ? index + 1 : `0${index + 1}`) +'</span></span>';
+            }
+        },
+        navigation: {
+            nextEl: ".location__next",
+            prevEl: ".location__prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 8
+            },
+            998: {
+                slidesPerView: 1.1,
+            }
+        }
+    });
+
+    const locationMiniSlider = new Swiper(".location__slide--slider", {
+        allowTouchMove: false,
+        pagination: {
+            el: ".location__paggination--mini",
+            type: "fraction",
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"><span>'+ (index + 1 >= 10 ? index + 1 : `0${index + 1}`) +'</span></span>';
+            }
+        },
+        navigation: {
+            nextEl: ".location__mini--next",
+            prevEl: ".location__mini--prev",
         }
     });
 });
