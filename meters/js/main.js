@@ -60,32 +60,6 @@ $(document).ready(function () {
         }
     });
 
-    $(window).scroll(function () {
-        $(".placement").each(function () {
-            var blockPosition = $(this).offset().top;
-            var scrollPosition = $(window).scrollTop() + $(window).height() / 5;
-
-            if (scrollPosition >= blockPosition) {
-                $(this).addClass("active");
-            }
-            else{
-                $(this).removeClass("active");
-            }
-        });
-
-        $(".center").each(function () {
-            var blockPosition = $(this).offset().top;
-            var scrollPosition = $(window).scrollTop() + $(window).height() / 5;
-
-            if (scrollPosition >= blockPosition) {
-                $(this).addClass("active");
-            }
-            else{
-                $(this).removeClass("active");
-            }
-        });
-    });
-
     // Product image view
     $(".product__slider--bottom--item").on("click", function(){
         if($(this).hasClass("active")){
@@ -139,12 +113,12 @@ $(document).ready(function () {
 
         program.setAttribute("style", `min-height: ${(roadWidth - windowWidth / 2) + programWrap.clientHeight}px`);
 
-        if(roadScrollTop - windowScroll <= 0){
+        if(roadScrollTop - windowScroll <= -150){
             if((roadWidth - windowWidth / 2) > Math.abs(roadScrollTop - windowScroll)){
                 
                 let turn = Math.abs(roadScrollTop - windowScroll);
 
-                programWrap.scrollLeft = turn;
+                programWrap.scrollLeft = turn + -150;
             }
             else{
                 programWrap.scrollLeft = roadWidth;
