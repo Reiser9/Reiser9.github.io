@@ -435,16 +435,6 @@ input::-webkit-inner-spin-button{
 .numbers{
 	width: 100%;
 	padding: 7rem 0;
-	transition: .4s ease-in-out;
-	opacity: 0;
-}
-
-.numbers.section__active{
-	opacity: 1;
-}
-
-.numbers.prev{
-	opacity: 0;
 }
 
 .numbers__inner{
@@ -673,6 +663,31 @@ input::-webkit-inner-spin-button{
 	margin-top: 8rem;
 }
 
+/* Test */
+.contentFull{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.contentInner{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.center__text--inner{
+	position: sticky;
+	top: 0;
+	min-height: 100vh;
+	justify-content: center;
+}
+
+.center__img--inner{
+	width: 100%;
+}
+
 /* Кейсы наших клиентов */
 .cases{
 	width: 100%;
@@ -893,16 +908,24 @@ input::-webkit-inner-spin-button{
 /* Почему метры */
 .why{
 	width: 100%;
+	display: flex;
+}
+
+.why__wrap{
+	width: 100%;
 	padding: 4rem 0;
+    position: sticky;
+    top: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .why__banner{
 	width: 100%;
 	position: relative;
-	flex: 1;
+	height: 100vh;
 	padding: 2rem 0;
 	display: flex;
 	align-items: center;
@@ -925,12 +948,18 @@ input::-webkit-inner-spin-button{
 }
 
 .why__content{
-	width: 100%;
 	margin-top: 5.6rem;
-	overflow: auto;
-	display: flex;
-	gap: 80px;
 	padding: 0 calc((100vw - 1792px) / 2);
+	overflow-y: auto;
+	padding-right: 3.2rem;
+	flex-shrink: 0;
+	display: flex;
+}
+
+.why__block--content{
+	display: flex;
+	flex-shrink: 0;
+	gap: 80px;
 }
 
 .why__item{
@@ -4352,7 +4381,7 @@ input::-webkit-inner-spin-button{
 		font-size: 1.8rem;
 	}
 
-	.center__img--inner{
+	.contentInner{
 		width: 45%;
 	}
 
@@ -6010,6 +6039,9 @@ input::-webkit-inner-spin-button{
 
 	.why__content{
 		margin-top: 2.4rem;
+	}
+
+	.why__block--content{
 		gap: 24px;
 	}
 
@@ -6049,20 +6081,33 @@ input::-webkit-inner-spin-button{
 		gap: 40px;
 	}
 
-	.center__img--inner{
+	/* .center__img--inner{
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 		z-index: -2;
+	} */
+
+	.contentInner{
+		width: 100%;
+	}
+
+	.contentInner{
+		position: absolute;
+	}
+
+	.contentFull{
+		position: relative;
+		height: 200vh;
 	}
 
 	.merge{
 		position: relative;
 	}
 
-	.merge:before{
+	.center__img--inner:before{
 		content: "";
 		display: block;
 		width: 100%;
@@ -6071,6 +6116,10 @@ input::-webkit-inner-spin-button{
 		position: absolute;
 		top: 0;
 		left: 0;
+		z-index: 0;
+	}
+
+	.center__img{
 		z-index: -1;
 	}
 
@@ -6864,7 +6913,7 @@ input::-webkit-inner-spin-button{
 		max-width: 240px;
 	}
 
-	.cases, .why, .about, .reviews, .numbers, .howwork, .s3d, .about__block, .location, .chart,
+	.cases, .about, .reviews, .numbers, .howwork, .s3d, .about__block, .location, .chart,
 	.own{
 		padding: 4rem 0;
 	}

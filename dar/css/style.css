@@ -533,6 +533,7 @@ input::-webkit-inner-spin-button{
 .footer__logos{
 	width: 100%;
 	display: flex;
+	align-items: center;
 	flex-wrap: wrap;
 	gap: 36px 20px;
 	justify-content: center;

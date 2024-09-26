@@ -130,9 +130,46 @@ $(document).ready(function () {
     }
 
     if(program){
-        roadRotate
+        roadRotate();
 
         document.addEventListener("scroll", roadRotate);
+    }
+
+    // Why slide
+    const why = document.querySelector(".why");
+    const whyWrap = document.querySelector(".why__wrap");
+    const whyContent = document.querySelector(".why__block--content");
+    const whyScroll = document.querySelector(".why__content");
+
+    const whyRotate = () => {
+        const whyWidth = whyContent.clientWidth;
+        
+        const whyScrollTop = why.offsetTop;
+        const windowScroll = window.scrollY;
+        const windowWidth = window.outerWidth;
+        const whyBannerHeight = document.querySelector(".why__banner").clientHeight;
+
+        why.setAttribute("style", `min-height: ${whyWidth - (windowWidth / 2) + 250}px`);
+
+        if(whyScrollTop - windowScroll <= 0){
+            if(whyWidth - (windowWidth / 2) > Math.abs(whyScrollTop - windowScroll)){
+                let turn = Math.abs(whyScrollTop - windowScroll);
+
+                whyScroll.scrollLeft = turn;
+            }
+            else{
+                whyScroll.scrollLeft = whyWidth;
+            }
+        }
+        else{
+            whyScroll.scrollLeft = 0;
+        }
+    }
+
+    if(why){
+        whyRotate();
+
+        document.addEventListener("scroll", whyRotate);
     }
 
     $(".open__filter").on("click", function(){
