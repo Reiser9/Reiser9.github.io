@@ -5,10 +5,12 @@ let isAnimating = false;
 let lastScrollTop = $(window).scrollTop();
 
 const smoothScrollToPosition = (position) => {
+    $("body").css("overflow", "hidden");
     isAnimating = true;
     $('html, body').animate({scrollTop: position}, 800, () => {
         isAnimating = false;
         lastScrollTop = $(window).scrollTop();
+        $("body").css("overflow", "visible");
     });
 
     $(".section.section__active").removeClass("prev");
