@@ -203,6 +203,9 @@ $(document).ready(function () {
         slidesPerView: 2,
         spaceBetween: 20,
         centeredSlides: true,
+        autoplay: {
+            
+        },
         navigation: {
             nextEl: ".reviews__next",
             prevEl: ".reviews__prev",
@@ -227,6 +230,7 @@ $(document).ready(function () {
     });
 
     const gallerySlider = new Swiper(".gallery__slider", {
+        // 1 раз в 5 сек
         pagination: {
             el: ".gallery__slide--pagination",
             clickable: true,
