@@ -2010,12 +2010,16 @@ input::-webkit-inner-spin-button{
 }
 
 .placement_img2{
+	width: 100%;
+	max-width: 430px;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 0;
 }
 
 .placement_img3{
+	width: 100%;
+	max-width: 280px;
 	bottom: 80px;
 	right: 151px;
 }
@@ -2023,6 +2027,8 @@ input::-webkit-inner-spin-button{
 .placement_img4{
 	right: 0;
 	bottom: 258px;
+	width: 100%;
+	max-width: 127px;
 }
 
 .placement__img.mobile{
