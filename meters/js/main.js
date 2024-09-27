@@ -201,10 +201,13 @@ $(document).ready(function () {
 
     const reviewsSlider = new Swiper(".reviews__slider", {
         slidesPerView: 2,
+        speed: 1000,
         spaceBetween: 20,
         centeredSlides: true,
+        loop: true,
         autoplay: {
-            
+            delay: 5000,
+            disableOnInteraction: false,
         },
         navigation: {
             nextEl: ".reviews__next",
@@ -226,11 +229,24 @@ $(document).ready(function () {
                 slidesPerView: 2,
                 spaceBetween: 20
             }
-        }
+        },
+        on: {
+            init() {
+                this.el.addEventListener('mouseenter', () => {
+                    this.autoplay.stop();
+                });
+        
+                this.el.addEventListener('mouseleave', () => {
+                    this.autoplay.start();
+                });
+            }
+        },
     });
 
     const gallerySlider = new Swiper(".gallery__slider", {
-        // 1 раз в 5 сек
+        autoplay: {
+            delay: 5000
+        },
         pagination: {
             el: ".gallery__slide--pagination",
             clickable: true,
