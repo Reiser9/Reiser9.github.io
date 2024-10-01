@@ -39,4 +39,32 @@ $(document).ready(function(){
         }
     });
 
+    $(".favorite__button").on("click", function(){
+        $(this).toggleClass("active");
+    });
+
+    $(".dropdown__template").on("click", function(e){
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(this).siblings(".dropdown__template--content").toggleClass("active");
+    });
+
+    $(".template__video--img").on("click", function(){
+        const videoUrl = $(this).attr("data-video");
+
+        $(".modal__video").attr("src", videoUrl);
+        $(".modal").addClass("active");
+        $("body").addClass("scroll");
+    });
+
+    $(".modal").on("click", function(){
+        $(".modal").removeClass("active");
+        $("body").removeClass("scroll");
+        $(".modal__video").attr("src", "");
+    });
+
+    $(".modal__content").on("click", function(e){
+        e.stopPropagation();
+    });
+
 });
