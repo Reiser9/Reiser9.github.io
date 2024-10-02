@@ -171,13 +171,17 @@ input::-webkit-inner-spin-button{
 	display: none;
 }
 
-.header__menu--link img{
+.header__menu--link svg{
 	display: none;
 }
 
 .menu__link{
 	padding: 2rem 0;
 	display: inline-block;
+}
+
+.menu__link.active{
+	color: #FFEEDB;
 }
 
 .mobile__menu{
@@ -1290,7 +1294,6 @@ input::-webkit-inner-spin-button{
 
 .mobile__menu--link.active{
 	font-weight: 700;
-	text-decoration: underline;
 	color: #07B1BC;
 }
 
@@ -1630,7 +1633,7 @@ input::-webkit-inner-spin-button{
 		position: relative;
 	}
 
-	.menu__link img{
+	.menu__link svg{
 		display: flex;
 		width: 24px;
 		flex-shrink: 0;
@@ -1639,8 +1642,12 @@ input::-webkit-inner-spin-button{
 		left: -30px;
 	}
 
-	.menu__link.active img{
+	.menu__link.active svg{
 		transform: rotate(180deg);
+	}
+
+	.mobile__menu--link:hover, .mobile__menu--link.active{
+		color: #FFEEDB;
 	}
 
 	.breadcrumbs__link, .breadcrumbs__text{
