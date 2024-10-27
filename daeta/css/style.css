@@ -232,6 +232,7 @@ input::-webkit-inner-spin-button{
 	width: calc(100% / 6);
 	background: #0B0B0B;
 	font-size: 1.4rem;
+	color: #808080;
 }
 
 /* Token usecase */
