@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Дар</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+	<!-- Style -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicon -->
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" alt="logo" class="header__logo--img">
+					</a>
+	
+					<div class="header__wrapper">
+						<button class="button header__search">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.7549 14.2549H14.9649L14.6849 13.9849C15.6649 12.8449 16.2549 11.3649 16.2549 9.75488C16.2549 6.16488 13.3449 3.25488 9.75488 3.25488C6.16488 3.25488 3.25488 6.16488 3.25488 9.75488C3.25488 13.3449 6.16488 16.2549 9.75488 16.2549C11.3649 16.2549 12.8449 15.6649 13.9849 14.6849L14.2549 14.9649V15.7549L19.2549 20.7449L20.7449 19.2549L15.7549 14.2549ZM9.75488 14.2549C7.26488 14.2549 5.25488 12.2449 5.25488 9.75488C5.25488 7.26488 7.26488 5.25488 9.75488 5.25488C12.2449 5.25488 14.2549 7.26488 14.2549 9.75488C14.2549 12.2449 12.2449 14.2549 9.75488 14.2549Z" fill="#4B4B4B"/>
+							</svg>
+	
+							Поиск
+						</button>
+	
+						<a href="favorites.html" class="header__favorite">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.3595 12.8436C14.4487 13.7848 12.9258 15.2167 10.7749 17.1494L9.99644 17.8274L9.20253 17.1104C9.20242 17.1103 9.20231 17.1102 9.2022 17.1101C7.54707 15.6111 6.35289 14.5098 5.61378 13.8014C4.89112 13.1089 4.06896 12.242 3.14606 11.1963C2.2817 10.182 1.73216 9.32514 1.44405 8.62061C1.14589 7.85962 1 7.09474 1 6.32031C1 5.04187 1.41936 3.99938 2.25926 3.13153C3.12504 2.26825 4.17795 1.83594 5.48438 1.83594C6.99715 1.83594 8.21945 2.40523 9.22035 3.59049L9.98438 4.49527L10.7484 3.59049C11.7493 2.40523 12.9716 1.83594 14.4844 1.83594C15.7932 1.83594 16.8258 2.26935 17.6574 3.12616L17.6626 3.13152L17.6679 3.13679C18.5389 4.00779 18.9688 5.04861 18.9688 6.32031C18.9688 7.30947 18.6402 8.39472 17.8997 9.59083C17.1228 10.8459 16.2789 11.9241 15.371 12.832L15.3652 12.8378L15.3595 12.8436Z" stroke="#4B4B4B" stroke-width="2"/>
+							</svg>
+	
+							<span>Избранные статьи (1)</span>
+						</a>
+	
+						<a href="login.html" class="header__link">
+							Личный кабинет
+						</a>
+
+						<button class="button menu__button">
+							<img src="img/menu.svg" alt="menu" class="header__menu--icon menu">
+							<img src="img/close.svg" alt="close" class="header__menu--icon cross">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__menu">
+			<div class="container">
+				<nav class="header__menu--content">
+					<div class="header__menu--wrapper">
+						<a href="#" class="header__menu--link menu__link" data-menu="1">
+							Гибридная амбулаторная реабилитация
+
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.98438 9.98438H17.0156L12 15L6.98438 9.98438Z" fill="currentColor"/>
+							</svg>
+						</a>
+
+						<div class="mobile__menu" data-menu="1">
+							<div class="container">
+								<div class="mobile__menu--inner">
+									<a href="#" class="mobile__menu--link">Амбулаторная гибридная реабилитация</a>
+									<a href="https://rutube.ru/plst/464151/" class="mobile__menu--link">Видеолекции по телереабилитации</a>
+									<a href="onkozabolevaniya.html" class="mobile__menu--link">Реабилитация онкологических больных</a>
+									<a href="#" class="mobile__menu--link">Реабилитация пациентов с рассеянным склерозом</a>
+									<a href="#" class="mobile__menu--link">Реабилитация нефрологических пациентов на диализе и после трансплантации почки</a>
+									<a href="#" class="mobile__menu--link">Телереабилитация в кардиологии</a>
+									<a href="#" class="mobile__menu--link">Телетравматология</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__menu--wrapper">
+						<a href="#" class="header__menu--link menu__link" data-menu="2">
+							Телеобразование по реабилитации
+							
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.98438 9.98438H17.0156L12 15L6.98438 9.98438Z" fill="currentColor"/>
+							</svg>
+						</a>
+
+						<div class="mobile__menu" data-menu="2">
+							<div class="container">
+								<div class="mobile__menu--inner">
+									<a href="https://oncorehab.2dsd.ru/" class="mobile__menu--link">Особенности реабилитации онкологических больных</a>
+									<a href="https://b279d7.skillspace.ru/school" class="mobile__menu--link">Школа реабилитационной медицины им. Н.А. Бернштейна</a>
+									<a href="https://disk.yandex.ru/d/Brj5p7MFStKGMA" class="mobile__menu--link">Видеолекции по новой модели реабилитации</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__menu--wrapper">
+						<a href="#" class="header__menu--link menu__link" data-menu="3">
+							Инфоподдержка пациентам
+						
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.98438 9.98438H17.0156L12 15L6.98438 9.98438Z" fill="currentColor"/>
+							</svg>
+						</a>
+						
+						<div class="mobile__menu" data-menu="3">
+							<div class="container">
+								<div class="mobile__menu--inner">
+									<a href="oms.html" class="mobile__menu--link">Как получить медицинскую реабилитацию по ОМС</a>
+									<a href="invalid.html" class="mobile__menu--link">Поддержка в получении инвалидности</a>
+									<a href="complex.html" class="mobile__menu--link">Комплексная реабилитация и абилитация и санаторно-курортное лечение</a>
+									<a href="palliativ.html" class="mobile__menu--link">Паллиативным пациентам и их родственникам</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="header__menu--link mobile">Избранные статьи (1)</a>
+					<a href="#" class="header__menu--link mobile">Личный кабинет</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Реабилитация онкологических больных</a>
+                <p class="breadcrumbs__text">Что такое медицинская реабилитация</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="template">
+		<div class="container">
+			<div class="template__inner">
+                <div class="template__menu">
+                    <div class="template__menu--wrapper">
+                        <a href="#" class="template__menu--href dropdown__template">
+                            Что такое медицинская реабилитация
+                        </a>
+                    </div>
+
+                    <div class="template__menu--wrapper">
+                        <button class="button template__action--link">
+                            <img src="img/print.svg" alt="print">
+
+                            Распечатать страницу целиком
+                        </button>
+
+                        <a href="#" class="template__action--link">
+                            <img src="img/share.svg" alt="share">
+
+                            Поделиться
+                        </a>
+                    </div>
+                </div>
+
+                <div class="template__content">
+                    <div class="template__content--block">
+                        <h1 class="title blue">Что такое медицинская реабилитация</h1>
+
+                        <h2 class="subtitle">Для чего нужна медицинская реабилитация</h2>
+
+                        <ul>
+                            <li>
+                                для восстановления функции пораженного органа или системы;
+                            </li>
+
+                            <li>
+                                для помощи организму в процессе выздоровления;
+                            </li>
+
+                            <li>
+                                для профилактики возможных осложнений;
+                            </li>
+
+                            <li>
+                                для адаптации к новым условиям жизни — если полностью нельзя восстановить утраченные функции.
+                            </li>
+                        </ul>
+
+                        <p>
+                            Лечащий врач оценивает состояние пациента, его реабилитационный потенциал и формирует план реабилитационных мероприятий. В процессе лечащий врач оценивает состояние пациента и может корректировать программу лечения и подключать узких специалистов — все зависит от состояния пациента, его заболевания и индивидуальных особенностей. Во время реабилитации с пациентом работает несколько специалистов. Наиболее часто это — терапевт, хирург, реабилитолог, психолог, физиотерапевт и логопед.
+                        </p>
+
+                        <div class="action__block">
+                            <a href="#" class="template__action--link">
+                                <img src="img/share.svg" alt="share">
+
+                                Поделиться
+                            </a>
+
+                            <button class="button template__action--link favorite__button">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2386 5.56353L12 6.4576L12.7614 5.56353C13.6678 4.49913 15.0628 3.8252 16.5 3.8252C19.0277 3.8252 21 5.79748 21 8.3252C21 9.88671 20.3068 11.3817 18.8822 13.1233C17.4462 14.879 15.3734 16.7612 12.7783 19.1144L12.7768 19.1157L11.9974 19.8252L11.2225 19.1251C11.2222 19.1248 11.2218 19.1245 11.2214 19.1241C8.62661 16.7661 6.55409 14.8818 5.11801 13.1248C3.69325 11.3817 3 9.88673 3 8.3252C3 5.79748 4.97228 3.8252 7.5 3.8252C8.93721 3.8252 10.3322 4.49913 11.2386 5.56353Z" fill="#fff" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+
+                                В избранное
+                            </button>
+                        </div>
+
+                        <div class="action__block">
+                            <button class="button template__action--link up">
+                                <img src="img/arrow-top.svg" alt="arrow-top">
+
+                                Вернуться к началу страницы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gibrid">
+		<div class="container">
+			<div class="gibrid__inner">
+				<h2 class="title gibrid__title">Гибридная амбулаторная реабилитация с применением ТМК</h2>
+
+				<div class="gibrid__content">
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid1.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Амбулаторная гибридная реабилитация
+						</p>
+					</a>
+
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid2.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Видеолекции по телереабилитации
+						</p>
+					</a>
+
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid3.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Реабилитация онкологических больных
+						</p>
+					</a>
+
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid4.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Реабилитация пациентов с рассеянным склерозом
+						</p>
+					</a>
+
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid5.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Реабилитация нефропациентов на диализе и после трансплантации почки
+						</p>
+					</a>
+
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid6.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Телереабилитация в кардиологии
+						</p>
+					</a>
+
+					<a href="#" class="gibrid__item">
+						<span class="gibrid__item--img">
+							<img src="img/gibrid7.png" alt="gibrid">
+						</span>
+
+						<p class="gibrid__item--text">
+							Телетравматология
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__inner">
+				<div class="footer__logos">
+					<img src="img/logo1.png" alt="logo" class="footer__logo">
+					<img src="img/logo2.png" alt="logo" class="footer__logo">
+					<img src="img/logo3.png" alt="logo" class="footer__logo">
+					<img src="img/logo4.png" alt="logo" class="footer__logo">
+					<img src="img/logo5.png" alt="logo" class="footer__logo">
+					<img src="img/logo6.png" alt="logo" class="footer__logo">
+					<img src="img/logo7.png" alt="logo" class="footer__logo">
+					<img src="img/logo8.png" alt="logo" class="footer__logo">
+					<img src="img/logo9.png" alt="logo" class="footer__logo">
+					<img src="img/logo10.png" alt="logo" class="footer__logo">
+				</div>
+
+				<div class="footer__content">
+					<div class="footer__item">
+						<a href="#" class="footer__item--link">Телеобразование специалистов по реабилитации</a>
+						<a href="#" class="footer__item--link">Гибридная амбулаторная реабилитация с применением ТМК</a>
+						<a href="#" class="footer__item--link">Как получить медицинскую реабилитацию по ОМС</a>
+						<a href="#" class="footer__item--link">Поддержка в получении инвалидности</a>
+					</div>
+
+					<div class="footer__item">
+						<a href="#" class="footer__item--link">Комплексная реабилитация и абилитация и санаторно-курортное лечение</a>
+						<a href="#" class="footer__item--link">Паллиативная помощь</a>
+						<a href="#" class="footer__item--link">Личный кабинет врача</a>
+						<a href="#" class="footer__item--link">Политика конфиденциальности</a>
+					</div>
+
+					<div class="footer__item">
+						<p class="footer__item--title">Контакты</p>
+
+						<a href="mailto:Kargalska@yandex.ru" class="footer__item--link">Kargalska@yandex.ru</a>
+						<a href="tel:79169810090" class="footer__item--link">тел. +7 916 981-00-90</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__content">
+                <iframe class="modal__video" src="" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

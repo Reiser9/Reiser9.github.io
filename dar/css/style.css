@@ -718,12 +718,38 @@ input::-webkit-inner-spin-button{
 	font-size: 1.4rem;
 }
 
+.template__content--block table{
+	width: 100%;
+	border: 1px solid #000;
+}
+
+.template__content--block td, .template__content--block th{
+	padding: 0.5rem 1rem;
+	border-right: 1px solid #000;
+}
+
+.template__content--block td{
+	border-top: 1px solid #000;
+}
+
+.template__content--block td:last-child, .template__content--block th:last-child{
+	border-right: none;
+}
+
 .template__text--block ol li{
 	font-size: 1.4rem;
 }
 
+.danger{
+	padding: 5px 10px;
+	border-left: 2px solid red;
+	color: red;
+	margin: 10px 0;
+}
+
 .template__text--block a{
-	font-size: inherit;
+	font-size: 1.4rem;
+	color: #007cee;
 }
 
 .template__videos{
