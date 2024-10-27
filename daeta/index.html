@@ -16,6 +16,7 @@
 
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="img/favicon/favicon-48x48.png" sizes="48x48" />
@@ -245,6 +246,34 @@
 
 					<a href="#" class="road__item margin">
 						<span class="road__item--top">
+							<span class="road__item--name">The second Stage</span>
+
+							<span class="road__item--number">[ 02 ]</span>
+						</span>
+
+						<span class="road__item--bottom">
+							<span class="road__item--square"></span>
+
+							<span class="road__item--title">
+								Explore
+							</span>
+						</span>
+
+						<span class="brack gorizontal top left"></span>
+						<span class="brack vertical top left"></span>
+						
+						<span class="brack gorizontal bottom left"></span>
+						<span class="brack vertical bottom left"></span>
+
+						<span class="brack gorizontal top right"></span>
+						<span class="brack vertical top right"></span>
+
+						<span class="brack gorizontal bottom right"></span>
+						<span class="brack vertical bottom right"></span>
+					</a>
+
+					<a href="#" class="road__item">
+						<span class="road__item--top">
 							<span class="road__item--name">The third Stage</span>
 
 							<span class="road__item--number">[ 03 ]</span>
@@ -283,34 +312,6 @@
 
 							<span class="road__item--title">
 								Expand
-							</span>
-						</span>
-
-						<span class="brack gorizontal top left"></span>
-						<span class="brack vertical top left"></span>
-						
-						<span class="brack gorizontal bottom left"></span>
-						<span class="brack vertical bottom left"></span>
-
-						<span class="brack gorizontal top right"></span>
-						<span class="brack vertical top right"></span>
-
-						<span class="brack gorizontal bottom right"></span>
-						<span class="brack vertical bottom right"></span>
-					</a>
-
-					<a href="#" class="road__item">
-						<span class="road__item--top">
-							<span class="road__item--name">The second Stage</span>
-
-							<span class="road__item--number">[ 02 ]</span>
-						</span>
-
-						<span class="road__item--bottom">
-							<span class="road__item--square"></span>
-
-							<span class="road__item--title">
-								Explore
 							</span>
 						</span>
 
@@ -486,50 +487,80 @@
 		<div class="container">
 			<div class="posts__inner">
 				<h2 class="posts__title"><span>DÆTA</span> Posts</h2>
+
+				<div class="posts__arrows">
+					<button class="button post__arrow post__prev">
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.50624 11.8854L0.22674 5.92207L6.05276 0.0412655L7.10818 1.0436L2 5L2.95378 5.23705L21.7463 5.36517L21.8002 6.77284L3.00781 6.64472L2 7L7.48544 10.8969L6.50624 11.8854Z" fill="currentColor"/>
+						</svg>
+					</button>
+
+					<button class="button post__arrow post__next">
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.4939 11.8853L21.7734 5.92194L15.9474 0.0411404L14.892 1.04347L20.1749 5.03125L19.0464 5.23693L0.253822 5.36505L0.199926 6.77272L18.9923 6.6446L19.9045 6.95533L14.5147 10.8968L15.4939 11.8853Z" fill="currentColor"/>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</div>
 
-		<div class="posts__content">
-			<div class="post__item">
-				<img src="img/post1.svg" alt="post" class="post__item--img">
-
-				<p class="post__name">KevinP</p>
-
-				<div class="post__wrapper">
-					<p class="post__title">Encryption and Security</p>
-
-					<p class="post__text">
-						DÆTA implements cutting-edge encryption and security protocols to protect the privacy and integrity of all stored data.
-					</p>
-				</div>
-			</div>
-
-			<div class="post__item">
-				<img src="img/post2.svg" alt="post" class="post__item--img">
-
-				<p class="post__name">DTVictor & KevinP</p>
-
-				<div class="post__wrapper">
-					<p class="post__title">GPT-to-Earn</p>
-
-					<p class="post__text">
-						Monetize your conversations with AI using the GPT-to-Earn Chrome extension.
-					</p>
-				</div>
-			</div>
-
-			<div class="post__item">
-				<img src="img/post3.svg" alt="post" class="post__item--img">
-
-				<p class="post__name">DTVictor & KevinP</p>
-
-				<div class="post__wrapper">
-					<p class="post__title">Storage Node</p>
-
-					<p class="post__text">
-						Operate a DÆTA node to contribute storage, support the network and earn tokens.
-					</p>
-				</div>
+		<div class="posts__content swiper">
+			<div class="swiper-wrapper">
+				<a href="#" class="post__item swiper-slide">
+					<img src="img/post1.svg" alt="post" class="post__item--img">
+	
+					<span class="post__name">KevinP</span>
+	
+					<span class="post__wrapper">
+						<span class="post__title">Encryption and Security</span>
+	
+						<span class="post__text">
+							DÆTA implements cutting-edge encryption and security protocols to protect the privacy and integrity of all stored data.
+						</span>
+					</span>
+				</a>
+	
+				<a href="#" class="post__item swiper-slide">
+					<img src="img/post2.svg" alt="post" class="post__item--img">
+	
+					<span class="post__name">DTVictor & KevinP</span>
+	
+					<span class="post__wrapper">
+						<span class="post__title">GPT-to-Earn</span>
+	
+						<span class="post__text">
+							Monetize your conversations with AI using the GPT-to-Earn Chrome extension.
+						</span>
+					</span>
+				</a>
+	
+				<a href="#" class="post__item swiper-slide">
+					<img src="img/post3.svg" alt="post" class="post__item--img">
+	
+					<span class="post__name">DTVictor & KevinP</span>
+	
+					<span class="post__wrapper">
+						<span class="post__title">Storage Node</span>
+	
+						<span class="post__text">
+							Operate a DÆTA node to contribute storage, support the network and earn tokens.
+						</span>
+					</span>
+				</a>
+	
+				<a href="#" class="post__item swiper-slide">
+					<img src="img/post3.svg" alt="post" class="post__item--img">
+	
+					<span class="post__name">DTVictor & KevinP</span>
+	
+					<span class="post__wrapper">
+						<span class="post__title">Storage Node</span>
+	
+						<span class="post__text">
+							Operate a DÆTA node to contribute storage, support the network and earn tokens.
+						</span>
+					</span>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -613,6 +644,7 @@
 	</footer>
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

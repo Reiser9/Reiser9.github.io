@@ -80,4 +80,24 @@ $(document).ready(function(){
         document.addEventListener("scroll", whyRotate);
     }
 
+    // Slider
+    const postsSlider = new Swiper(".posts__content", {
+        slidesPerView: 3,
+        navigation: {
+            nextEl: ".post__next",
+            prevEl: ".post__prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            560: {
+                slidesPerView: 2,
+            },
+            998: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
 });
