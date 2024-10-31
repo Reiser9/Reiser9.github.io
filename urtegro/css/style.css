@@ -1,0 +1,2081 @@
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Bold.eot');
+    src: local('RF Dewi Extended Bold'), local('RFDewiExtended-Bold'),
+        url('../fonts/RFDewiExtended-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Bold.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Bold.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Light.eot');
+    src: local('RF Dewi Extended Light'), local('RFDewiExtended-Light'),
+        url('../fonts/RFDewiExtended-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Light.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Light.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Black.eot');
+    src: local('RF Dewi Extended Black'), local('RFDewiExtended-Black'),
+        url('../fonts/RFDewiExtended-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Black.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Black.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Regular.eot');
+    src: local('RF Dewi Extended Regular'), local('RFDewiExtended-Regular'),
+        url('../fonts/RFDewiExtended-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Regular.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Regular.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-UltralightItalic.eot');
+    src: local('RF Dewi Extended Ultralight Italic'), local('RFDewiExtended-UltralightItalic'),
+        url('../fonts/RFDewiExtended-UltralightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-UltralightItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-UltralightItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-UltralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-UltraboldItalic.eot');
+    src: local('RF Dewi Extended Ultrabold Italic'), local('RFDewiExtended-UltraboldItalic'),
+        url('../fonts/RFDewiExtended-UltraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-UltraboldItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-UltraboldItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-UltraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Italic.eot');
+    src: local('RF Dewi Extended Italic'), local('RFDewiExtended-Italic'),
+        url('../fonts/RFDewiExtended-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Italic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Italic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Ultrabold.eot');
+    src: local('RF Dewi Extended Ultrabold'), local('RFDewiExtended-Ultrabold'),
+        url('../fonts/RFDewiExtended-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Ultrabold.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Ultrabold.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-LightItalic.eot');
+    src: local('RF Dewi Extended Light Italic'), local('RFDewiExtended-LightItalic'),
+        url('../fonts/RFDewiExtended-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-LightItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-LightItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Thin.eot');
+    src: local('RF Dewi Extended Thin'), local('RFDewiExtended-Thin'),
+        url('../fonts/RFDewiExtended-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Thin.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Thin.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Semibold.eot');
+    src: local('RF Dewi Extended Semibold'), local('RFDewiExtended-Semibold'),
+        url('../fonts/RFDewiExtended-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Semibold.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Semibold.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-SemiboldItalic.eot');
+    src: local('RF Dewi Extended Semibold Italic'), local('RFDewiExtended-SemiboldItalic'),
+        url('../fonts/RFDewiExtended-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-SemiboldItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-BoldItalic.eot');
+    src: local('RF Dewi Extended Bold Italic'), local('RFDewiExtended-BoldItalic'),
+        url('../fonts/RFDewiExtended-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-BoldItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-BoldItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-BlackItalic.eot');
+    src: local('RF Dewi Extended Black Italic'), local('RFDewiExtended-BlackItalic'),
+        url('../fonts/RFDewiExtended-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-BlackItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-BlackItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-Ultralight.eot');
+    src: local('RF Dewi Extended Ultralight'), local('RFDewiExtended-Ultralight'),
+        url('../fonts/RFDewiExtended-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-Ultralight.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-Ultralight.woff') format('woff'),
+        url('../fonts/RFDewiExtended-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('../fonts/RFDewiExtended-ThinItalic.eot');
+    src: local('RF Dewi Extended Thin Italic'), local('RFDewiExtended-ThinItalic'),
+        url('../fonts/RFDewiExtended-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExtended-ThinItalic.woff2') format('woff2'),
+        url('../fonts/RFDewiExtended-ThinItalic.woff') format('woff'),
+        url('../fonts/RFDewiExtended-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+:root{
+	font-size: 10px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 1.6rem;
+	background: #222;
+	font-family: 'RF Dewi Extended', sans-serif;
+}
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+a, button, input, textarea, select{
+	transition: .2s linear;
+	font-size: 1.6rem;
+	font-family: 'RF Dewi Extended', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h5, p{
+	margin: 0;
+	font-weight: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	appearance: none;
+}
+
+.button, .input{
+	border: none;
+	cursor: pointer;
+	background: none;
+	outline: none;
+}
+
+.input{
+	cursor: text;
+}
+
+.input:focus::placeholder{
+	opacity: 0;	
+}
+
+.container{
+	width: 100%;
+	max-width: 1420px;
+	margin: 0 auto;
+}
+
+/* Шапка */
+.header{
+	width: 100%;
+	padding: 3.2rem 0;
+	position: relative;
+	z-index: 9;
+}
+
+.header.dark{
+	background: #DADCDA;
+}
+
+.header__inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo{
+	display: flex;
+	width: 100%;
+	max-width: 207px;
+	color: #DADCDA;
+}
+
+.dark .header__logo{
+	color: #222;
+}
+
+.header__logo svg{
+	width: 100%;
+}
+
+.header__menu{
+	padding: 0;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #DADCDA;
+}
+
+.dark .header__menu{
+	color: #222;
+}
+
+.cross, .header__menu.active .menu{
+	display: none;
+}
+
+.header__menu.active .cross{
+	display: flex;
+}
+
+.header__menu--wrapper{
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	display: flex;
+	pointer-events: none;
+	opacity: 0;
+	transition: .2s linear;
+	transform: translateY(-40px);
+}
+
+.header__menu--wrapper.active{
+	transform: translateY(0);
+	opacity: 1;
+	pointer-events: all;
+}
+
+.header__nav{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+}
+
+.header__nav li a{
+	font-size: 2.4rem;
+	color: #999;
+	text-transform: uppercase;
+	padding: 0.8rem 0;
+	display: inline-block;
+	position: relative;
+}
+
+.dark .header__nav li a{
+	color: #222;
+}
+
+.header__nav li a:before{
+	content: "";
+	width: 0%;
+	height: 1px;
+	background: #FFCA00;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: .2s linear;
+}
+
+.header__nav li a:hover:before{
+	width: 100%;
+}
+
+.margin__block{
+	width: 100%;
+}
+
+/* Блок контактов */
+.contact__block{
+	width: 100%;
+	padding: 10rem 0 20rem 0;
+	background: #222;
+}
+
+.contact__block--inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 54px;
+	padding-top: 6rem;
+	border-top: 1px solid #FFCA00;
+}
+
+.contact__block--wrapper, .contact__block--item{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.contact__block--items{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	gap: 78px;
+}
+
+.contact__block--title, .contact__block--value{
+	font-size: 2.4rem;
+	color: #DADCDA;
+	font-weight: 700;
+}
+
+.contact__block--value{
+	font-weight: 400;
+}
+
+.title__block{
+	width: 100%;
+	padding: 4rem 0;
+	border-bottom: 1px solid #999;
+}
+
+.title__value{
+	font-size: 4.8rem;
+	color: #DADCDA;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.contact__map{
+	width: 100%;
+	margin-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.contact__map--map{
+	width: 100%;
+	height: 700px;
+	border: none;
+}
+
+.contact__map--link{
+	display: none;
+	font-size: 1.8rem;
+	color: #FFCA00;
+	width: 100%;
+	text-align: center;
+	padding: 1.5rem 3rem;
+	border: 1px solid #FFCA00;
+	justify-content: center;
+}
+
+/* Проекты */
+.projects{
+	width: 100%;
+	padding: 15rem 0;
+	background: #DADCDA;
+}
+
+.projects__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 60px;
+}
+
+.project__item{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 80px;
+	padding-bottom: 6rem;
+	border-bottom: 1px solid #FFCA00;
+}
+
+.project__item--title{
+	color: #222;
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+.project__item--content{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	gap: 80px;
+}
+
+.project__item--subtitle{
+	color: #999;
+	font-size: 2.4rem;
+	width: 100%;
+	max-width: 250px;
+	flex-shrink: 0;
+	position: sticky;
+	top: 10px;
+}
+
+.project__item--wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 26px;
+}
+
+.project__item--text{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.project__item--text p{
+	font-size: 2.4rem;
+	color: #222;
+}
+
+.project__item--tags{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.project__item--tags a{
+	color: #999;
+}
+
+/* Подвал */
+.footer{
+	width: 100%;
+	padding: 4.2rem 0rem 3.8rem 0;
+	background: #000;
+}
+
+.footer__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15rem;
+}
+
+.footer__top{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.footer__logo--inner{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.footer__logo--title{
+	color: #DADCDA;
+	font-size: 8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.footer__logo--text{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #FFCA00;
+	word-spacing: 79%;
+	letter-spacing: 10px;
+}
+
+.footer__nav{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 24px;
+}
+
+.footer__nav li a{
+	text-transform: uppercase;
+	color: #999;
+	font-size: 3.2rem;
+}
+
+.footer__nav li a:hover{
+	color: #fff;
+}
+
+.footer__bottom{
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.footer__bottom--wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.footer__copy{
+	text-transform: uppercase;
+	color: #DADCDA;
+}
+
+.footer__policy{
+	color: #DADCDA;
+	text-transform: lowercase;
+}
+
+.footer__allright{
+	color: #DADCDA;
+}
+
+/* Хлебные крошки */
+.breadcrumbs{
+	width: 100%;
+	padding: 8rem 0rem 4rem 0;
+}
+
+.breadcrumbs__inner{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.breadcrumbs__link, .breadcrumbs__text{
+	color: #999;
+	font-size: 2rem;
+	padding: 0.8rem 0;
+	padding-left: 2rem;
+	position: relative;
+}
+
+.breadcrumbs__link:before, .breadcrumbs__text:before{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #999;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.breadcrumbs__link:first-child, .breadcrumbs__text:first-child{
+	padding-left: 0;
+}
+
+.breadcrumbs__link:first-child:before, .breadcrumbs__text:first-child:before{
+	display: none;
+}
+
+.breadcrumbs__link:hover{
+	color: #fff;
+}
+
+/* Проекты */
+.projects__filter{
+	width: 100%;
+	padding: 4rem 0 15rem 0;
+}
+
+.projects__filter--inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects__filter--title{
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 4.8rem;
+	color: #DADCDA;
+}
+
+.projects__filter--text{
+	width: 100%;
+	max-width: 940px;
+	margin-top: 8rem;
+	font-size: 2.4rem;
+	color: #DADCDA;
+}
+
+.projects__filter--content{
+	width: 100%;
+	margin-top: 15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 100px;
+}
+
+.projects__filter--search{
+	width: 100%;
+	position: relative;
+}
+
+.projects__filter--search--input{
+	width: 100%;
+	min-height: 80px;
+	border: 1px solid #FFCA00;
+	font-size: 2.4rem;
+	color: #DADCDA;
+	padding: 1.6rem 8rem 1.6rem 2rem;
+}
+
+.projects__filter--search--icon{
+	width: 40px;
+	flex-shrink: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	pointer-events: none;
+}
+
+.projects__filter--bottom{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.projects__filter--buttons{
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+
+.projects__filter--apply, .projects__filter--reset{
+	padding: 1.7rem 4.5rem;
+	border: 2px solid #FFCA00;
+	background: #FFCA00;
+	color: #222;
+	font-size: 2rem;
+}
+
+.projects__filter--reset{
+	color: #DADCDA;
+	background: transparent;
+}
+
+/* Практики */
+.practices{
+	width: 100%;
+	margin-top: 10rem;
+	padding: 10rem 0;
+	background: #DADCDA;
+}
+
+.practices__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+.practices__wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 60px;
+}
+
+.practices__wrapper--title{
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 4.8rem;
+	color: #222;
+}
+
+.practices__items{
+	width: 100%;
+	max-width: 940px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+.practices__item{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+	color: #222;
+	font-size: 3.2rem;
+}
+
+.practices__item span{
+	width: 53px;
+	height: 53px;
+	background: #FFCA00;
+	color: #222;
+	font-size: 3.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+/* Практика */
+.practice{
+	width: 100%;
+	padding: 12rem 0 15rem 0;
+	background: #DADCDA;
+}
+
+.practice__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.practice__title{
+	text-transform: uppercase;
+	color: #222;
+	font-size: 4.8rem;
+}
+
+.practice__content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.practice__name{
+	width: 100%;
+	padding: 1.6rem 1rem;
+	border-bottom: 1px solid #FFCA00;
+	color: #222;
+	font-size: 2.4rem;
+}
+
+.practice__wrapper--content{
+	width: 100%;
+	max-width: 940px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+	margin-top: 6rem;
+}
+
+.practice__wrapper--content p{
+	font-size: 2.4rem;
+}
+
+.practice__wrapper--content h3{
+	font-size: 3.2rem;
+}
+
+.practice__button--inner{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 8rem;
+}
+
+.practice__button{
+	padding: 1.7rem 7.8rem;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	font-size: 2rem;
+	color: #222;
+	border: 2px solid #222;
+}
+
+.practice__button:hover{
+	background: #222;
+	color: #fff;
+}
+
+/* О бюро */
+.about{
+	width: 100%;
+	padding: 8rem 0rem 10rem 0;
+}
+
+.about__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.about__block{
+	width: 100%;
+	max-width: 940px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.about__block p{
+	font-size: 2.4rem;
+	color: #DADCDA;
+}
+
+.about__block h3{
+	font-size: 3.2rem;
+	color: #DADCDA;
+}
+
+/* Команда */
+.team{
+	width: 100%;
+	padding: 8rem 0rem 10rem 0;
+}
+
+.team__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team__content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px;
+	margin-top: 15rem;
+}
+
+.team__item{
+	width: calc(100% / 3 - 160px / 3);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.team__item--name{
+	color: #DADCDA;
+	font-size: 3.2rem;
+}
+
+.team__item--role{
+	font-size: 2rem;
+	color: #FFCA00;
+}
+
+.team__item--img--inner{
+	width: 100%;
+	aspect-ratio: 1 / 1.25;
+	display: flex;
+}
+
+.team__item--img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team__button--inner{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15rem;
+}
+
+.team__button{
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	border: 2px solid #DADCDA;
+	padding: 1.3rem 10rem;
+	color: #DADCDA;
+	font-size: 2rem;
+}
+
+.team__button:hover{
+	color: #222;
+	background: #DADCDA;
+}
+
+/* Новости */
+.news{
+	width: 100%;
+	padding: 20rem 0;
+	background: #DADCDA;
+}
+
+.news__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 100px;
+}
+
+.news__link{
+	padding: 1.5rem 7rem;
+	border: 2px solid #222;
+	color: #222;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	font-size: 2rem;
+}
+
+.news__link:hover{
+	background: #222;
+	color: #DADCDA;
+}
+
+.news__title{
+	width: 100%;
+}
+
+.title{
+	font-size: 4.8rem;
+	font-weight: 600;
+}
+
+.news__content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.news__item{
+	width: 100%;
+	padding: 3.6rem 0;
+	border-bottom: 1px solid #FFCA00;
+	display: flex;
+	justify-content: center;
+}
+
+.news__item--content{
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	align-items: flex-start;
+	gap: 65px;
+}
+
+.news__item--date{
+	color: #222;
+	font-size: 2.4rem;
+	font-weight: 700;
+	flex-shrink: 0;
+	text-align: right;
+	width: 100%;
+	max-width: 260px;
+}
+
+.news__item--title--inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 26px;
+}
+
+.news__item--title{
+	font-size: 3.2rem;
+	color: #222;
+}
+
+.news__item--tags{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.news__item--tags span{
+	color: #999;
+}
+
+/* Главный блок */
+.main{
+	width: 100%;
+}
+
+.main__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 90px;
+	min-height: calc(100dvh - 127px);
+	padding: 18rem 0 10rem 0;
+}
+
+@media (min-height: 1300px) {
+	.main__inner{
+		min-height: auto;
+	}
+}
+
+.main__suptitle{
+	font-size: 3.2rem;
+	color: #FFCA00;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	text-align: center;
+}
+
+.main__title--inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	margin-top: 2.3rem;
+}
+
+.main__title{
+	text-transform: uppercase;
+	color: #DADCDA;
+	text-transform: uppercase;
+	font-size: 9.6rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.main__subtitle{
+	text-transform: uppercase;
+	color: #999;
+	letter-spacing: 13px;
+	text-align: center;
+}
+
+.main__wrap{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__name{
+	font-size: 5.6rem;
+	text-transform: uppercase;
+	color: #DADCDA;
+	text-align: center;
+}
+
+.main__down{
+	margin-top: 5rem;
+	display: flex;
+	padding: 0;
+	color: #999;
+	width: 36px;
+	height: 20px;
+	position: relative;
+}
+
+.main__down svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+/* Информация */
+.info{
+	width: 100%;
+	position: relative;
+}
+
+.info:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: rgba(34, 34, 34, .6);
+}
+
+.info__bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.info__inner{
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	min-height: 1200px;
+	padding: 20rem 0rem 13rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.info__text{
+	width: 100%;	
+	max-width: 660px;
+	border-bottom: 1px solid #FFCA00;
+	color: #DADCDA;
+	padding: 0 8rem 3.2rem 0;
+	font-size: 2.4rem;
+}
+
+.info__item{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	position: absolute;
+}
+
+.info__item:nth-child(2){
+	left: 10%;
+	bottom: 290px;
+}
+
+.info__item:nth-child(3){
+	right: 11%;
+	bottom: 430px;
+}
+
+.info__item--name, .info__item--role{
+	color: #DADCDA;
+	opacity: 0.5;
+	font-size: 2.4rem;
+}
+
+.info__item--role{
+	font-size: 1.6rem;
+}
+
+.info__button--inner{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.info__button{
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 1.6rem 5.5rem;
+	border: 2px solid #FFCA00;
+	color: #DADCDA;
+	font-size: 2rem;
+}
+
+.info__button:hover{
+	background: #FFCA00;
+	color: #222;
+}
+
+/* Отзывы */
+.reviews{
+	width: 100%;
+	padding: 20rem 0;
+}
+
+.reviews__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
+
+.reviews__slider{
+	width: calc(100% - 104px);
+	margin: 0rem 5.2rem;
+	position: relative;
+}
+
+.reviews__slide{
+	padding: 3.2rem;
+	border: 1px solid #DADCDA;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+.reviews__slide--wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.reviews__item--text{
+	color: #DADCDA;
+	font-size: 2.4rem;
+}
+
+.reviews__item--name{
+	opacity: 0.5;
+	color: #DADCDA;
+	font-size: 2.4rem;
+}
+
+.reviews__item--date{
+	opacity: 0.5;
+	color: #DADCDA;
+}
+
+.reviews__slider--pagination{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin-top: 3.2rem;
+}
+
+.reviews__slider--pagination .swiper-pagination-bullet{
+	width: 23px;
+	height: 23px;
+	border: 1px solid #DADCDA;
+	margin: 0!important;
+	border-radius: 0;
+	background: none;
+}
+
+.reviews__slider--pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: #DADCDA;
+}
+
+.reviews__slider--arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(calc(-50% - 22.5px));
+	color: #DADCDA;
+}
+
+.reviews__next{
+	right: 0;
+}
+
+.reviews__prev{
+	left: 0;
+}
+
+.swiper-button-disabled{
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* Партнеры */
+.partners{
+	width: 100%;
+	padding: 20rem 0rem 10rem 0;
+}
+
+.partners__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+.partners__title{
+	color: #DADCDA;
+}
+
+.partners__slider--inner{
+	width: 100%;
+	position: relative;
+}
+
+.partners__slider{
+	width: calc(100% - 100px);
+	margin: 0 5rem;
+}
+
+.partners__slide{
+	padding: 2rem;
+	border: 3px solid #595A59;
+	display: flex!important;
+}
+
+.partners__slide--img{
+	width: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+.partners__slider--arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #DADCDA;
+}
+
+.partners__next{
+	right: 0;
+}
+
+.partners__prev{
+	left: 0;
+}
+
+/* Адаптив */
+@media(max-width: 1440px){
+	.container{
+		max-width: 1180px;
+	}
+}
+@media(max-width: 1200px){
+	.container{
+		max-width: 978px;
+	}
+
+	.contact__map--map{
+		height: 500px;
+	}
+
+	.project__item--content{
+		gap: 40px;
+	}
+
+	.project__item--text p, .project__item--subtitle{
+		font-size: 2rem;
+	}
+
+	.project__item--subtitle{
+		max-width: 220px;
+	}
+
+	.project__item--title{
+		font-size: 3.2rem;
+	}
+
+	.project__item{
+		gap: 50px;
+	}
+
+	.projects{
+		padding: 12rem 0;
+	}
+
+	.team__content{
+		gap: 40px;
+	}
+
+	.team__item{
+		width: calc(100% / 3 - 80px / 3);
+		gap: 12px;
+	}
+
+	.team__item--name{
+		font-size: 2.4rem;
+	}
+
+	.team__item--role{
+		font-size: 1.8rem;
+	}
+
+	.team__content{
+		margin-top: 10rem;
+	}
+
+	.main__title{
+		font-size: 7rem;
+	}
+
+	.main__suptitle{
+		font-size: 2.4rem;
+	}
+
+	.main__subtitle{
+		font-size: 1.4rem;
+	}
+
+	.main__name{
+		font-size: 4.6rem;
+	}
+
+	.main__inner{
+		padding: 14rem 0rem 10rem 0;
+	}
+
+	.info__inner{
+		min-height: 860px;
+		padding: 10rem 0rem 13rem 0;
+	}
+
+	.info__item:nth-child(3){
+		right: 7%;
+		bottom: 300px;
+	}
+
+	.reviews{
+		padding: 15rem 0;
+	}
+
+	.reviews__slide{
+		padding: 2rem;
+	}
+
+	.partners{
+		padding: 15rem 0 5rem 0;
+	}
+}
+@media(max-width: 998px){
+	.container{
+		max-width: 748px;
+	}
+
+	.footer__nav li a{
+		font-size: 2.4rem;
+	}
+
+	.footer__logo--title{
+		font-size: 6rem;
+	}
+
+	.footer__inner{
+		gap: 10rem;
+	}
+
+	.contact__block--inner{
+		gap: 40px;
+	}
+
+	.contact__block--items{
+		gap: 32px;
+	}
+
+	.contact__block--title{
+		font-size: 2rem;
+	}
+
+	.contact__block--value{
+		font-size: 1.7rem;
+	}
+
+	.contact__block{
+		padding: 5rem 0rem 15rem 0;
+	}
+
+	.projects__filter--text{
+		margin-top: 6rem;
+		font-size: 1.8rem;
+	}
+
+	.practices__item{
+		font-size: 2rem;
+		gap: 16px;
+	}
+	
+	.practices__item span{
+		width: 45px;
+		height: 45px;
+		font-size: 2rem;
+	}
+
+	.practices__wrapper{
+		gap: 32px;
+	}
+
+	.practices{
+		padding: 6rem 0;
+		margin-top: 6rem;
+	}
+
+	.team__item{
+		width: calc(100% / 2 - 40px / 2);
+	}
+
+	.news__item--content{
+		gap: 30px;
+	}
+
+	.news__item--title{
+		font-size: 2.4rem;
+	}
+
+	.news__item--date{
+		font-size: 2rem;
+	}
+
+	.news__item--tags{
+		gap: 12px;
+	}
+
+	.main__name{
+		font-size: 3.2rem;
+	}
+
+	.info__item--name{
+		font-size: 2rem;
+	}
+
+	.info__item--role{
+		font-size: 1.2rem;
+	}
+
+	.info__text{
+		font-size: 1.8rem;
+		max-width: 500px;
+		padding-right: 0;
+	}
+
+	.info__inner{
+		min-height: 700px;
+		padding: 7rem 0rem 8rem 0;
+	}
+
+	.reviews__item--text, .reviews__item--name{
+		font-size: 2rem;
+	}
+}
+@media(max-width: 768px){
+	.container{
+		max-width: 460px;
+	}
+
+	.footer__bottom, .footer__top{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footer__nav{
+		align-items: flex-start;
+	}
+
+	.header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #222;
+	}
+
+	.header__menu--wrapper{
+		top: 115px;
+		height: calc(100vh - 115px);
+		background: #222;
+		align-items: flex-start;
+		border-top: 1px solid #DADCDA;
+		padding-top: 3.2rem;
+		position: fixed;
+		overflow-y: auto;
+	}
+
+	.dark .header__menu--wrapper{
+		background: #DADCDA;
+		border-top: 1px solid #222;
+	}
+
+	.header__nav li{
+		width: 100%;
+	}
+
+	.header{
+		padding: 3.2rem 0rem 2rem 0;
+	}
+
+	.header__logo{
+		max-width: 175px;
+	}
+
+	.header__nav{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.header__nav li a{
+		width: 100%;
+		padding: 2.4rem 2rem;
+		border-bottom: 1px solid #3A3A3A;
+	}
+
+	.contact__block--items{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.margin__block{
+		margin-top: 11.5rem;
+	}
+
+	.contact__map--map{
+		height: 350px;
+	}
+
+	.contact__map{
+		margin-top: 5rem;
+	}
+
+	.title__value, .projects__filter--title, .practices__wrapper--title, .practice__title,
+	.title{
+		font-size: 3.2rem;
+	}
+
+	.contact__map--link{
+		display: flex;
+		width: calc(100% - 3.2rem);
+		margin: 0rem 1.6rem;
+	}
+
+	.contact__map--link:hover{
+		background: #FFCA00;
+		color: #222;
+	}
+
+	.title__block{
+		padding: 2.4rem 0;
+	}
+
+	.project__item--content{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+	}
+
+	.project__item{
+		gap: 24px;
+		padding-bottom: 3.2rem;
+	}
+
+	.projects{
+		padding: 8rem 0;
+	}
+
+	.projects__inner{
+		gap: 40px;
+	}
+
+	.project__item--tags{
+		gap: 16px;
+	}
+
+	.project__item--tags a{
+		font-size: 1.4rem;
+	}
+
+	.project__item--subtitle{
+		position: relative;
+		top: 0;
+	}
+
+	.projects__filter--text{
+		font-size: 1.6rem;
+	}
+
+	.projects__filter{
+		padding: 4rem 0rem 10rem 0;
+	}
+
+	.projects__filter--buttons{
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+	}
+
+	.projects__filter--apply, .projects__filter--reset{
+		width: 100%;
+		text-align: center;
+		font-size: 1.8rem;
+		padding: 1.3rem 3rem;
+	}
+
+	.projects__filter--bottom{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.breadcrumbs__inner{
+		gap: 12px;
+	}
+
+	.breadcrumbs__link, .breadcrumbs__text, .practice__wrapper--content p, .about__block p{
+		font-size: 1.6rem;
+	}
+
+	.practice__wrapper--content h3, .about__block h3{
+		font-size: 2rem;
+	}
+
+	.breadcrumbs{
+		padding: 4rem 0rem 2rem 0;
+	}
+
+	.practices__wrapper--title{
+		font-size: 2.4rem;
+	}
+
+	.practice__wrapper--content{
+		gap: 24px;
+	}
+
+	.practice__button--inner{
+		margin-top: 6rem;
+	}
+
+	.practice__button{
+		font-size: 1.8rem;
+		padding: 1.3rem 3rem;
+	}
+
+	.practice{
+		padding: 6rem 0rem 10rem 0;
+	}
+
+	.practice__wrapper--content{
+		margin-top: 3.6rem;
+	}
+
+	.practice__content{
+		margin-top: 3.2rem;
+	}
+
+	.practice__name{
+		padding: 0.8rem 0;
+		font-size: 2rem;
+	}
+
+	.about, .team{
+		padding: 6rem 0rem 5rem 0;
+	}
+
+	.team__item{
+		width: 100%;
+	}
+
+	.team__content{
+		margin-top: 8rem;
+	}
+
+	.team__button--inner{
+		margin-top: 6rem;
+	}
+
+	.team__button, .news__link{
+		padding: 1.3rem 3rem;
+		font-size: 1.8rem;
+	}
+
+	.news__item--content{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.news__item--date{
+		max-width: 100%;
+		text-align: left;
+	}
+
+	.news__item--title--inner{
+		gap: 16px;
+	}
+
+	.news__item--title{
+		font-size: 2rem;
+	}
+
+	.news__item--date{
+		font-size: 1.8rem;
+	}
+
+	.news__item{
+		padding: 1.6rem 0;
+	}
+
+	.news__content{
+		gap: 20px;
+	}
+
+	.news__inner{
+		gap: 32px;
+	}
+
+	.news{
+		padding: 8rem 0;
+	}
+
+	.news__link{
+		margin-top: 2.8rem;
+	}
+
+	.main__title{
+		font-size: 4.8rem;
+	}
+
+	.main__suptitle{
+		font-size: 2rem;
+	}
+
+	.main__subtitle{
+		font-size: 1.2rem;
+		letter-spacing: 7px;
+	}
+
+	.main__name{
+		font-size: 2.4rem;
+	}
+
+	.main__inner{
+		padding: 10rem 0rem 7rem 0;
+	}
+
+	.main__inner{
+		min-height: calc(100dvh - 115px);
+	}
+
+	.main__down{
+		margin-top: 2.4rem;
+		width: 100%;
+		max-width: 30px;
+		display: flex;
+	}
+
+	.main__down svg{
+		width: 100%;
+	}
+
+	.info__item:nth-child(3){
+		align-items: flex-end;
+	}
+
+	.info__item{
+		max-width: 150px;
+	}
+
+	.info__item:nth-child(3) .info__item--name, .info__item:nth-child(3) .info__item--role{
+		text-align: right;
+	}
+
+	.info__button--inner{
+		justify-content: center;
+	}
+
+	.info__inner{
+		padding: 4rem 0rem 3.5rem 0;
+	}
+
+	.info__item:nth-child(2){
+		bottom: 190px;
+	}
+
+	.info__item:nth-child(3){
+		right: 5%;
+		bottom: 150px;
+	}
+
+	.info__button{
+		font-size: 1.8rem;
+		padding: 1.3rem 4.4rem;
+	}
+
+	.reviews__item--date{
+		font-size: 1.4rem;
+	}
+
+	.reviews{
+		padding: 10rem 0;
+	}
+
+	.reviews__slider{
+		width: 100%;
+		margin: 0;
+	}
+
+	.reviews__slider--arrow{
+		display: none;
+	}
+
+	.reviews__slider--pagination .swiper-pagination-bullet{
+		width: 12px;
+		height: 12px;
+	}
+
+	.partners__slider{
+		width: 100%;
+		margin: 0;
+	}
+
+	.partners__slider--arrow{
+		display: none;
+	}
+
+	.partners__inner{
+		gap: 32px;
+	}
+
+	.partners{
+		padding: 10rem 0rem 0rem 0;
+	}
+}
+@media(max-width: 480px){
+	.container{
+		max-width: 100%;
+		padding: 0rem 1.6rem;
+	}
+
+	.footer__logo--title{
+		font-size: 5.6rem;
+	}
+
+	.footer__inner{
+		gap: 74px;
+	}
+
+	.footer__copy, .footer__policy, .footer__allright{
+		font-size: 1.2rem;
+	}
+
+	.info__text{
+		padding: 0 0 2.5rem 0;
+	}
+
+	.info__inner{
+		min-height: 660px;
+	}
+
+	.info__bg{
+		object-position: 56%;
+	}
+
+	.info__item:nth-child(2){
+		left: 0;
+		bottom: 186px;
+	}
+
+	.info__item:nth-child(3){
+		right: 0;
+		bottom: 140px;
+	}
+
+	.info__text{
+		font-size: 1.6rem;
+	}
+
+	.reviews__item--text{
+		font-size: 1.6rem;
+	}
+}
