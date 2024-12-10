@@ -78,4 +78,50 @@ $(document).ready(function () {
             },
         },
     });
+
+    // Форма обратной связи
+    $(".contact__form--button").on("click", function(e){
+        e.preventDefault();
+
+        const phone = $(".form__phone").val().trim();
+        const name = $(".form__name").val().trim();
+        const question = $(".form__question").val().trim();
+
+        if(!phone){
+            return alert("Телефон должен быть заполнен");
+        }
+        else if(!name){
+            return alert("Имя должно быть заполнено");
+        }
+        else if(!question){
+            return alert("Поле вопроса должно быть заполнено");
+        }
+
+        $.ajax({
+            url: "/mail.php",
+            type: "POST",
+            data: {
+                phone,
+                name,
+                question
+            },
+            beforeSend: () => {
+                $(this).addClass("disabled");
+            },
+            success: function (res) {
+                if(res === "Error"){
+                    return alert("Возникла ошибка при отправке заявки, попробуйте позже");
+                }
+
+                alert("Ваша заявка успешно отправлена!");
+                $(".form__phone").val("");
+                $(".form__name").val("");
+                $(".form__question").val("");
+            },
+            complete: () => {
+                $(this).removeClass("disabled");
+            }
+        });
+    });
+
 });
