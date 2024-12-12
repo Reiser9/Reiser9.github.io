@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<!-- SEO -->
+	<meta name="description" content="Готовься к ЕГЭ бесплатно и без рекламы на сайте ResEz. Создавай свои варианты, отслеживай историю решений и повышай свои баллы легко и удобно!">
+	<meta name="keywords" content="ЕГЭ, подготовка к ЕГЭ, варианты ЕГЭ, история решений, бесплатная подготовка к ЕГЭ, ResEz, ЕГЭ без рекламы, образовательная платформа">
+	<meta name="author" content="ResEz Team">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="ResEz — Подготовка к ЕГЭ бесплатно и без рекламы">
+	<meta property="og:description" content="Легкая и удобная подготовка к ЕГЭ без рекламы. Создавайте варианты, отслеживайте историю решений и улучшайте свои результаты!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ege.resez.ru">
+	<meta property="og:image" content="https://ege.resez.ru/img/main-img1.svg">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="ResEz — Подготовка к ЕГЭ бесплатно и без рекламы">
+	<meta name="twitter:description" content="Создавай варианты ЕГЭ, следи за своей историей решений и готовься легко и бесплатно. Без рекламы!">
+	<meta name="twitter:image" content="https://ege.resez.ru/img/main-img1.svg">
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+		ym(99188312, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/99188312" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
 	<!-- Title -->
 	<title>ResEz - Готовься к ЕГЭ легко и бесплатно</title>
 
 	<!-- Style -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 
 	<!-- Favicon -->
@@ -33,32 +69,32 @@
 				</a>
 
 				<nav class="header__nav">
-					<a href="#" class="header__nav--link">
+					<button class="button header__nav--link go" data-point="service">
 						О сервисе
-					</a>
+					</button>
 
-					<a href="#" class="header__nav--link">
+					<button class="button header__nav--link go" data-point="advert">
 						Реклама
-					</a>
+					</button>
 
-					<a href="#" class="header__nav--link">
-						Прогресс
-					</a>
+					<button class="button header__nav--link go" data-point="motivation">
+						Мотивация
+					</button>
 
-					<a href="#" class="header__nav--link">
-						Как работает
-					</a>
+					<button class="button header__nav--link go" data-point="howwork">
+						Как пользоваться
+					</button>
 
-					<a href="#" class="header__nav--link">
+					<button class="button header__nav--link go" data-point="blog">
 						Блог
-					</a>
+					</button>
 
-					<a href="#" class="header__nav--link">
+					<button class="button header__nav--link go" data-point="contact">
 						Контакты
-					</a>
+					</button>
 				</nav>
 
-				<a href="#" class="def__link header__link">
+				<a href="https://resez.ru" class="def__link header__link">
 					Попробовать <span>бесплатно</span>
 				</a>
 			</div>
@@ -83,7 +119,7 @@
 						Все задания, справочники и баллы <span>в одном месте</span>. Быстро, надежно и удобно.
 					</p>
 
-					<a href="#" class="def__link main__link">
+					<a href="https://resez.ru" class="def__link main__link">
 						Попробовать бесплатно
 					</a>
 				</div>
@@ -91,7 +127,7 @@
 		</div>
 	</main>
 
-	<section class="def__section say">
+	<section class="def__section say" id="service">
 		<div class="container">
 			<div class="say__inner">
 				<h2 class="title2 say__title">
@@ -151,7 +187,7 @@
 		</div>
 	</section>
 
-	<section class="def__section noads">
+	<section class="def__section noads" id="advert">
 		<div class="bg__def noads__bg">
 			<div class="noads__element noads__element3 noads__hide">
 				<p class="noads__element--tag">Реклама</p>
@@ -253,7 +289,7 @@
 						</p>
 					</div>
 
-					<a href="#" class="def__link noads__link">
+					<a href="https://resez.ru" class="def__link noads__link">
 						Попробовать бесплатно
 					</a>
 				</div>
@@ -291,7 +327,7 @@
 								</p>
 
 								<div class="howuse__variant--task--controller--count--inner task__count--container">
-									<button class="button howuse__variant--task--controller--count--button count__minus disabled">
+									<button aria-label="Увеличить количество заданий" class="button howuse__variant--task--controller--count--button count__minus disabled">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
 									</button>
 
@@ -299,7 +335,7 @@
 										1
 									</p>
 
-									<button class="button howuse__variant--task--controller--count--button count__plus">
+									<button aria-label="Уменьшить количество заданий" class="button howuse__variant--task--controller--count--button count__plus">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
 									</button>
 								</div>
@@ -311,7 +347,7 @@
 								</p>
 
 								<div class="howuse__variant--task--controller--count--inner task__difficult--container">
-									<button class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
+									<button aria-label="Усложнить задание" class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
 									</button>
 
@@ -319,7 +355,7 @@
 										Легкая
 									</p>
 
-									<button class="button howuse__variant--task--controller--difficult--button difficult__plus">
+									<button aria-label="Облегчить задание" class="button howuse__variant--task--controller--difficult--button difficult__plus">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
 									</button>
 								</div>
@@ -341,7 +377,7 @@
 								</p>
 
 								<div class="howuse__variant--task--controller--count--inner task__count--container">
-									<button class="button howuse__variant--task--controller--count--button count__minus disabled">
+									<button aria-label="Увеличить количество заданий" class="button howuse__variant--task--controller--count--button count__minus disabled">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
 									</button>
 
@@ -349,7 +385,7 @@
 										1
 									</p>
 
-									<button class="button howuse__variant--task--controller--count--button count__plus">
+									<button aria-label="Уменьшить количество заданий" class="button howuse__variant--task--controller--count--button count__plus">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
 									</button>
 								</div>
@@ -361,7 +397,7 @@
 								</p>
 
 								<div class="howuse__variant--task--controller--count--inner task__difficult--container">
-									<button class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
+									<button aria-label="Усложнить задание" class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
 									</button>
 
@@ -369,7 +405,7 @@
 										Легкая
 									</p>
 
-									<button class="button howuse__variant--task--controller--difficult--button difficult__plus">
+									<button aria-label="Облегчить задание" class="button howuse__variant--task--controller--difficult--button difficult__plus">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
 									</button>
 								</div>
@@ -377,7 +413,7 @@
 						</div>
 					</div>
 
-					<a href="#" class="choose__task--add">
+					<a href="https://resez.ru" class="choose__task--add">
 						<span class="choose__task--add--icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 								<path d="M5 12h14"/><path d="M12 5v14"/>
@@ -393,7 +429,7 @@
 		</div>
 	</section>
 
-	<section class="def__section reward">
+	<section class="def__section reward" id="motivation">
 		<div class="bg__def reward__bg">
 			<div class="reward__task reward__task1">
 				Собрать свой вариант
@@ -468,7 +504,7 @@
 							</svg>
 						</div>
 
-						<a href="#" class="def__link reward__link">
+						<a href="https://resez.ru" class="def__link reward__link">
 							Попробовать бесплатно
 						</a>
 					</div>
@@ -511,7 +547,7 @@
 		</div>
 	</section>
 
-	<section class="def__section howuse">
+	<section class="def__section howuse" id="howwork">
 		<div class="container">
 			<div class="howuse__inner">
 				<h2 class="title2 howuse__title">
@@ -543,7 +579,7 @@
 						</div>
 
 						<div class="howuse__link--inner">
-							<a href="#" class="def__link howuse__link">
+							<a href="https://resez.ru" class="def__link howuse__link">
 								Попробовать бесплатно
 							</a>
 						</div>
@@ -598,7 +634,7 @@
 													</p>
 	
 													<div class="howuse__variant--task--controller--count--inner task__count--container">
-														<button class="button howuse__variant--task--controller--count--button count__minus disabled">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--count--button count__minus disabled">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
 														</button>
 	
@@ -606,7 +642,7 @@
 															1
 														</p>
 	
-														<button class="button howuse__variant--task--controller--count--button count__plus">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--count--button count__plus">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
 														</button>
 													</div>
@@ -618,7 +654,7 @@
 													</p>
 	
 													<div class="howuse__variant--task--controller--count--inner task__difficult--container">
-														<button class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
 														</button>
 	
@@ -626,7 +662,7 @@
 															Легкая
 														</p>
 	
-														<button class="button howuse__variant--task--controller--difficult--button difficult__plus">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--difficult--button difficult__plus">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
 														</button>
 													</div>
@@ -648,7 +684,7 @@
 													</p>
 	
 													<div class="howuse__variant--task--controller--count--inner task__count--container">
-														<button class="button howuse__variant--task--controller--count--button count__minus disabled">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--count--button count__minus disabled">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
 														</button>
 	
@@ -656,7 +692,7 @@
 															1
 														</p>
 	
-														<button class="button howuse__variant--task--controller--count--button count__plus">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--count--button count__plus">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
 														</button>
 													</div>
@@ -668,7 +704,7 @@
 													</p>
 	
 													<div class="howuse__variant--task--controller--count--inner task__difficult--container">
-														<button class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--difficult--button difficult__minus disabled">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
 														</button>
 	
@@ -676,7 +712,7 @@
 															Легкая
 														</p>
 	
-														<button class="button howuse__variant--task--controller--difficult--button difficult__plus">
+														<button aria-hidden="true" class="button howuse__variant--task--controller--difficult--button difficult__plus">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
 														</button>
 													</div>
@@ -885,7 +921,7 @@
 		</div>
 	</section>
 
-	<section class="def__section blog">
+	<section class="def__section blog" id="blog">
 		<div class="container">
 			<div class="blog__inner">
 				<div class="blog__content">
@@ -1115,7 +1151,7 @@
 		</div>
 	</section>
 
-	<section class="def__section feedback">
+	<section class="def__section feedback" id="contact">
 		<div class="container">
 			<div class="feedback__inner">
 				<div class="feedback__content">
@@ -1130,19 +1166,19 @@
 					</p>
 
 					<div class="feedback__social">
-						<a href="#" class="footer__social--link">
+						<a href="https://t.me/reseztg" target="_blank" aria-label="Телеграм канал" class="footer__social--link">
 							<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M23.6 1.62257L19.9935 20.4506C19.9935 20.4506 19.4889 21.756 18.1027 21.13L9.78154 14.523L9.74295 14.5035C10.867 13.4584 19.5829 5.3431 19.9639 4.97525C20.5536 4.40554 20.1875 4.06638 19.5028 4.49673L6.6282 12.9635L1.66121 11.2328C1.66121 11.2328 0.879558 10.9449 0.80436 10.3188C0.728173 9.69174 1.68694 9.35258 1.68694 9.35258L21.9358 1.12664C21.9358 1.12664 23.6 0.369418 23.6 1.62257V1.62257Z" fill="currentColor"/>
 							</svg>
 						</a>
 	
-						<a href="#" class="footer__social--link">
+						<a href="https://vk.com/resez" target="_blank" aria-label="Группа вконтакте" class="footer__social--link">
 							<svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M15.1791 16.9001C6.1592 16.9001 1.01441 10.5938 0.800049 0.100098H5.31823C5.46663 7.8022 8.79755 11.0647 11.4359 11.7373V0.100098H15.6902V6.74274C18.2956 6.45685 21.0329 3.42983 21.9563 0.100098H26.2107C25.8627 1.82699 25.1691 3.46208 24.1732 4.9031C23.1773 6.34412 21.9005 7.56006 20.4228 8.47487C22.0723 9.31076 23.5292 10.4939 24.6975 11.9462C25.8657 13.3985 26.7186 15.0869 27.2001 16.9001H22.517C22.0848 15.3252 21.2065 13.9155 19.9921 12.8475C18.7777 11.7795 17.2812 11.1008 15.6902 10.8965V16.9001H15.1791V16.9001Z" fill="currentColor"/>
 							</svg>
 						</a>
 
-						<a href="#" class="footer__social--link">
+						<a href="https://www.youtube.com/@ResEzYT" target="_blank" aria-label="Ютуб канал" class="footer__social--link">
 							<svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M4.70936 26.3494C4.0229 26.1463 3.39655 25.785 2.88317 25.296C2.3698 24.807 1.98445 24.2046 1.75966 23.5396C0.475112 20.1029 0.094505 5.75213 2.56845 2.91913C3.39182 1.99754 4.55431 1.43013 5.8036 1.34008C12.4404 0.643439 32.9456 0.736325 35.3006 1.57229C35.963 1.78207 36.5681 2.13545 37.0707 2.60596C37.5733 3.07648 37.9603 3.65193 38.2027 4.28919C39.6062 7.84205 39.6538 20.7531 38.0124 24.1666C37.577 25.0552 36.8481 25.7749 35.9429 26.2101C33.4689 27.4176 7.99208 27.3944 4.70936 26.3494ZM15.2474 19.6153L27.1413 13.5777L15.2474 7.49372V19.6153Z" fill="white"/>
 							</svg>
@@ -1160,19 +1196,19 @@
 		<div class="container">
 			<div class="footer__inner">
 				<div class="footer__social">
-					<a href="#" class="footer__social--link">
+					<a href="https://t.me/reseztg" target="_blank" aria-label="Телеграм канал" class="footer__social--link">
 						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M23.6 1.62257L19.9935 20.4506C19.9935 20.4506 19.4889 21.756 18.1027 21.13L9.78154 14.523L9.74295 14.5035C10.867 13.4584 19.5829 5.3431 19.9639 4.97525C20.5536 4.40554 20.1875 4.06638 19.5028 4.49673L6.6282 12.9635L1.66121 11.2328C1.66121 11.2328 0.879558 10.9449 0.80436 10.3188C0.728173 9.69174 1.68694 9.35258 1.68694 9.35258L21.9358 1.12664C21.9358 1.12664 23.6 0.369418 23.6 1.62257V1.62257Z" fill="currentColor"/>
 						</svg>
 					</a>
 
-					<a href="#" class="footer__social--link">
+					<a href="https://vk.com/resez" target="_blank" aria-label="Группа вконтакте" class="footer__social--link">
 						<svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M15.1791 16.9001C6.1592 16.9001 1.01441 10.5938 0.800049 0.100098H5.31823C5.46663 7.8022 8.79755 11.0647 11.4359 11.7373V0.100098H15.6902V6.74274C18.2956 6.45685 21.0329 3.42983 21.9563 0.100098H26.2107C25.8627 1.82699 25.1691 3.46208 24.1732 4.9031C23.1773 6.34412 21.9005 7.56006 20.4228 8.47487C22.0723 9.31076 23.5292 10.4939 24.6975 11.9462C25.8657 13.3985 26.7186 15.0869 27.2001 16.9001H22.517C22.0848 15.3252 21.2065 13.9155 19.9921 12.8475C18.7777 11.7795 17.2812 11.1008 15.6902 10.8965V16.9001H15.1791V16.9001Z" fill="currentColor"/>
 						</svg>
 					</a>
 
-					<a href="#" class="footer__social--link">
+					<a href="https://www.youtube.com/@ResEzYT" target="_blank" aria-label="Ютуб канал" class="footer__social--link">
 						<svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.70936 26.3494C4.0229 26.1463 3.39655 25.785 2.88317 25.296C2.3698 24.807 1.98445 24.2046 1.75966 23.5396C0.475112 20.1029 0.094505 5.75213 2.56845 2.91913C3.39182 1.99754 4.55431 1.43013 5.8036 1.34008C12.4404 0.643439 32.9456 0.736325 35.3006 1.57229C35.963 1.78207 36.5681 2.13545 37.0707 2.60596C37.5733 3.07648 37.9603 3.65193 38.2027 4.28919C39.6062 7.84205 39.6538 20.7531 38.0124 24.1666C37.577 25.0552 36.8481 25.7749 35.9429 26.2101C33.4689 27.4176 7.99208 27.3944 4.70936 26.3494ZM15.2474 19.6153L27.1413 13.5777L15.2474 7.49372V19.6153Z" fill="white"/>
 						</svg>
@@ -1181,7 +1217,7 @@
 
 				<p class="footer__logo">ResEz</p>
 
-				<a href="#" class="def__link footer__link">
+				<a href="https://resez.ru" class="def__link footer__link">
 					Попробовать бесплатно
 				</a>
 			</div>
@@ -1189,6 +1225,6 @@
 	</footer>
 	
 	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>

@@ -117,6 +117,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
         });
 
+    // Скролл до пункта
+    const goElements = document.querySelectorAll('.go');
+  
+    goElements.forEach(element => {
+        element.addEventListener('click', () => {
+            const targetId = element.getAttribute('data-point');
+            if (targetId) {
+                const targetElement = document.getElementById(targetId);
+
+                if(!targetElement) return;
+                
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
     // Блок с рекламой
     const adsSwitch = document.querySelector(".noads__switch");
     const adsSwitchInner = document.querySelector(".noads__switch--inner");
