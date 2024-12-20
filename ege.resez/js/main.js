@@ -163,6 +163,53 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Модальные окна
+    document.querySelectorAll(".modal__show").forEach((button) => {
+        button.addEventListener("click", () => {
+            const modalId = button.getAttribute('data-modal');
+
+            if (modalId) {
+                const targetElement = document.getElementById(modalId);
+
+                if(!targetElement) return;
+                
+                targetElement.classList.add("active");
+            }
+        });
+    });
+
+    document.querySelectorAll(".modal__close").forEach((button) => {
+        button.addEventListener("click", () => {
+            document.querySelectorAll(".modal").forEach((modal) => {
+                modal.classList.remove("active");
+            });
+        });
+    });
+
+    document.querySelectorAll(".modal").forEach((modal) => {
+        const iframe = modal.querySelector(".modal__video");
+        const originalSrc = iframe.src;
+    
+        modal.addEventListener("click", () => {
+            modal.classList.remove("active");
+            iframe.src = "";
+        });
+
+        modal.querySelector(".modal__close").addEventListener("click", () => {
+            modal.classList.remove("active");
+            iframe.src = "";
+        });
+    
+        modal.querySelector(".modal__content").addEventListener("click", (event) => {
+            event.stopPropagation();
+        });
+    
+        document.querySelector(".modal__video--show").addEventListener("click", () => {
+            modal.classList.add("active");
+            iframe.src = originalSrc;
+        });
+    });
+
     // Слайдеры
     const subjects = new Swiper(".subjects__slider", {
         spaceBetween: 24,

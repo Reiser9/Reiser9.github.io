@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-ExtraLight.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 	font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 	font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-Light.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 	font-display: swap;
@@ -27,8 +24,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-LightItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 	font-display: swap;
@@ -36,8 +32,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-Regular.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 	font-display: swap;
@@ -45,8 +40,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-Italic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 	font-display: swap;
@@ -54,8 +48,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-Medium.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 	font-display: swap;
@@ -63,8 +56,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-MediumItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 	font-display: swap;
@@ -72,8 +64,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-SemiBold.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 	font-display: swap;
@@ -81,8 +72,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 	font-display: swap;
@@ -90,8 +80,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-Bold.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 	font-display: swap;
@@ -99,8 +88,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-BoldItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 	font-display: swap;
@@ -108,8 +96,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-ExtraBold.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 	font-display: swap;
@@ -117,8 +104,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 	font-display: swap;
@@ -126,8 +112,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-Black.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 	font-display: swap;
@@ -135,8 +120,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito'),
-        url('https://ege.resez.ru/fonts/Nunito-BlackItalic.ttf') format('truetype');
+    src: url('https://ege.resez.ru/fonts/Nunito-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 	font-display: swap;
@@ -165,6 +149,7 @@ body{
 	overflow-x: hidden;
 	font-size: 1.6rem;
 	font-family: 'Nunito', sans-serif;
+	font-display: swap;
 }
 
 *,
@@ -177,6 +162,7 @@ a, button, input, textarea, select{
 	transition: .2s linear;
 	font-size: 1.6rem;
 	font-family: 'Nunito', sans-serif;
+	font-display: swap;
 }
 
 a{
@@ -1138,6 +1124,7 @@ input::-webkit-inner-spin-button{
 	align-items: flex-start;
 	gap: 32px;
 	position: relative;
+	overflow: hidden;
 }
 
 .howuse__item--text--inner{
@@ -1479,6 +1466,16 @@ input::-webkit-inner-spin-button{
 	overflow: hidden;
 }
 
+.howuse__video--preview{
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .howuse__video--item:before{
 	content: "";
 	width: 100%;
@@ -1547,6 +1544,7 @@ input::-webkit-inner-spin-button{
 	min-height: 160px;
 	padding: 2.4rem;
 	background: var(--mainLight);
+	user-select: none;
 }
 
 .subjects__slide--name{
@@ -2130,6 +2128,83 @@ input::-webkit-inner-spin-button{
 	max-height: 55%;
 }
 
+/* Модальное окно */
+.modal{
+	width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .2s linear;
+}
+
+.modal.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal__wrapper{
+	width: 100%;
+	max-width: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 3.5rem);
+    margin: 1.75rem auto;
+}
+
+.modal__content{
+	width: 100%;
+	aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    background: var(--white);
+    display: flex;
+	position: relative;
+	transform: scale(0.8);
+	transition: transform .2s linear;
+}
+
+.modal.active .modal__content{
+	transform: scale(1);
+}
+
+.modal__close{
+	width: 38px;
+	height: 38px;
+	border-radius: 50px;
+	background: var(--main);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.modal__close svg{
+	width: 24px;
+	height: 24px;
+}
+
+.modal__video{
+	width: 100%;
+	display: none;
+	border: none;
+	border-radius: 8px;
+}
+
+.modal.active .modal__video{
+	display: flex;
+}
+
 @media (any-hover: hover) {
 	.faq__item, .button, .input, .howuse__video--item, .noads__switch{
 		cursor: pointer;
@@ -2139,11 +2214,11 @@ input::-webkit-inner-spin-button{
 		color: var(--main);
 	}
 
-	.def__link:hover, .footer__social--link:hover{
+	.def__link:hover, .footer__social--link:hover, .modal__close:hover{
 		background: var(--mainHover);
 	}
 	
-	.def__link:active{
+	.def__link:active, .modal__close:active{
 		background: var(--mainActive);
 	}
 
@@ -2573,6 +2648,16 @@ input::-webkit-inner-spin-button{
 		right: -155px;
 		width: 56dvw;
 	}
+
+	.howuse__video--preview{
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 @media (max-width: 900px) {
 	.subjects__slider{
@@ -2834,6 +2919,18 @@ input::-webkit-inner-spin-button{
 	.main__img2{
 		width: 480px;
 		right: -190px;
+	}
+
+	.modal__close{
+		width: 34px;
+		height: 34px;
+		top: 10px;
+		right: 10px;
+	}
+
+	.modal__close svg{
+		width: 20px;
+		height: 20px;
 	}
 }
 @media (max-width: 550px) {

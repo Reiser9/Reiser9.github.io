@@ -64,9 +64,9 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="/" class="header__logo">
+				<p class="header__logo">
 					ResEz
-				</a>
+				</p>
 
 				<nav class="header__nav">
 					<button class="button header__nav--link go" data-point="service">
@@ -787,7 +787,9 @@
 						</div>
 					</div>
 
-					<div class="howuse__video--item">
+					<div class="howuse__video--item modal__video--show modal__show" data-modal="videoModal">
+						<img src="img/video-preview.svg" alt="Превью видео инструкции" class="howuse__video--preview">
+
 						<div class="button howuse__video--button">
 							<span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
@@ -926,14 +928,14 @@
 			<div class="blog__inner">
 				<div class="blog__content">
 					<h2 class="title2 blog__title">
-						Наш блог с лайфхаками для ЕГЭ
+						Наш блог с лайфхаками для ЕГЭ
 					</h2>
 
 					<p class="blog__text">
 						Готовьтесь умнее, а не дольше! В нашем блоге вы найдёте советы по подготовке, разбор сложных заданий, лайфхаки для запоминания информации и многое другое. Всё, чтобы вы сдали ЕГЭ легко и уверенно.
 					</p>
 
-					<a href="#" class="def__link blog__link">
+					<a href="https://dzen.ru/resez" target="_blank" class="def__link blog__link">
 						Перейти в блог
 					</a>
 				</div>
@@ -1223,6 +1225,18 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal" id="videoModal">
+		<div class="modal__wrapper">
+			<div class="modal__content">
+				<button class="button modal__close" aria-label="Закрыть модальное окно">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+				</button>
+
+				<iframe class="modal__video" src="https://vk.com/video_ext.php?oid=-223146174&id=456239017&hd=2&autoplay=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
 	
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
