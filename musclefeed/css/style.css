@@ -2590,14 +2590,22 @@ input::-webkit-inner-spin-button{
 		z-index: 2;
 		max-width: 640px;
 	}
+
+	.reviewform__img{
+		max-width: 550px;
+	}
 }
 @media(max-width: 1270px){
 	.container{
 		max-width: 978px;
 	}
 
-	.team, .reviews, .map, .complex, .how{
+	.team, .reviews, .map, .complex, .how, .reviewform{
 		padding: 6rem 0;
+	}
+
+	.reviewpage{
+		padding: 0.8rem 0rem 6rem 0;
 	}
 
 	.reviews__text{
@@ -2727,6 +2735,14 @@ input::-webkit-inner-spin-button{
 	.main__man{
 		max-width: 430px;
 	}
+
+	.reviewform__form--title{
+		font-size: 3.2rem;
+	}
+
+	.reviewform__img{
+		max-width: 350px;
+	}
 }
 @media(max-width: 1065px){
 	.container{
@@ -2808,8 +2824,12 @@ input::-webkit-inner-spin-button{
 		max-width: 175px;
 	}
 
-	.team, .reviews, .map, .complex, .how{
+	.team, .reviews, .map, .complex, .how, .reviewform{
 		padding: 5rem 0;
+	}
+
+	.reviewpage{
+		padding: 0.8rem 0rem 5rem 0;
 	}
 
 	.reviews__title--inner{
@@ -2982,6 +3002,35 @@ input::-webkit-inner-spin-button{
 	.banner__food.small{
 		max-width: 380px;
 	}
+
+	.reviewform__inner{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.reviewform__img{
+		max-width: 550px;
+	}
+
+	.reviewform__form{
+		gap: 40px;
+	}
+
+	.reviewform__buttons{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.reviewform__button{
+		width: 100%;
+		justify-content: center;
+	}
+
+	.reviewpage__title--inner{
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 @media(max-width: 768px){
 	.container{
@@ -3112,8 +3161,12 @@ input::-webkit-inner-spin-button{
 		padding: 0.8rem 0rem 2.4rem 0;
 	}
 
-	.team, .reviews, .map, .complex, .how{
+	.team, .reviews, .map, .complex, .how, .reviewform{
 		padding: 4rem 0;
+	}
+
+	.reviewpage{
+		padding: 0.8rem 0rem 4rem 0;
 	}
 
 	.complex__title{
@@ -3369,6 +3422,18 @@ input::-webkit-inner-spin-button{
 		transform: translateY(0);
 		top: auto;
 		bottom: -40px;
+	}
+
+	.reviewform__form--input--inner{
+		width: 100%;
+	}
+
+	.reviewpage__title--inner{
+		margin-top: 4rem;
+	}
+
+	.reviewpage__title{
+		font-size: 2.8rem;
 	}
 }
 @media(max-width: 480px){
