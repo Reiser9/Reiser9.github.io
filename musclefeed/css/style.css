@@ -4985,4 +4985,8 @@ input::-webkit-inner-spin-button{
 	.swap__item--param{
 		font-size: 1.4rem;
 	}
+
+	.complex__text--text{
+		max-width: 210px;
+	}
 }

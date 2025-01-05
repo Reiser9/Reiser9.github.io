@@ -167,11 +167,6 @@ $(document).ready(function(){
         }
     });
 
-    $(".order2step").on("click", function(){
-        $(".modal").removeClass("active");
-        $(".modal[data-modal='order3']").addClass("active");
-    });
-
     // Добавить новый адрес
     $(".add__address").on("click", function(){
         $(this).addClass("hide");
@@ -249,7 +244,7 @@ $(document).ready(function(){
         spaceBetween: 24,
         breakpoints: {
             0: {
-                slidesPerView: 1,
+                slidesPerView: 1.1,
                 spaceBetween: 8,
             },
             480: {
