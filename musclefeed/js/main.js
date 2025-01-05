@@ -33,6 +33,24 @@ $(document).ready(function(){
         $(this).toggleClass("active");
     });
 
+    // Замена блюда
+    $(".swap__item--button").on("click", function(){
+        $(".swap__elems").toggleClass("active");
+    });
+
+    // Выбор рациона
+    $(".complex__item").on("click", function(){
+        $(".complex__item").removeClass("active");
+        $(".complex__wrp").removeClass("active");
+
+        const complex = $(this).attr("data-complex");
+
+        if(!complex) return;
+
+        $(this).addClass("active");
+        $(".complex__wrp[data-complex="+complex+"]").addClass("active");
+    });
+
     // Модалки
     $(".modal__show").on("click", function(e){
         e.preventDefault();
@@ -41,6 +59,7 @@ $(document).ready(function(){
 
         if(!modal) return;
 
+        $(".modal").removeClass("active");
         $("body").addClass("scroll2");
         $(".modal[data-modal="+modal+"]").addClass("active");
     });
@@ -59,71 +78,78 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-    // Календарь
-    $(".modal__calendar").MEC({
-        from_monday: true,
-    });
-
-    const getDateFromString = (day, monthYear) => {
-        const fullDateString = `${monthYear} ${day}`;
-        const date = new Date(fullDateString);
-
-        if (!isNaN(date)) {
-            return date;
-        }
-
-        throw new Error('Invalid date string');
-    }
-
-    $(".modal__calendar").on("click", ".a-date:not(.blurred)", function(){
-        const day = $(this).text();
-        const year = $("#monthYear").text();
-        const date = getDateFromString(day, year); // Выбранная дата
-    });
-
-    const disabledDates = ['2025-03-15', '2025-04-01', '2025-04-15']; // Даты, которые не будут активны
-
-    const isDateDisabled = (day, monthYear) => {
-        const fullDate = new Date(`${monthYear} ${day}`);
-
-        if (!isNaN(fullDate)) {
-            const dateString = `${fullDate.getFullYear()}-${String(fullDate.getMonth() + 1).padStart(2, '0')}-${String(fullDate.getDate()).padStart(2, '0')}`;
-            return disabledDates.includes(dateString);
-        }
-
-        return false;
-    }
-
-    const observer = new MutationObserver(() => {
-        $('.a-date').each(function () {
-            const day = $(this).text();
-            const monthYear = $("#monthYear").text();
-    
-            if (day && monthYear && isDateDisabled(day, monthYear)) {
-                $(this).addClass('blurred');
-            }
-        });
-    });
-
-    const calendar = document.querySelector('.modal__calendar');
-    
-    if(calendar){
-        observer.observe(calendar, {
-            childList: true,
-            subtree: true
-        });
-    }
-
     // Появление корзины
     $(".food__form--choose").on("click", function(){
         $(this).siblings(".food__form--choose").removeClass("active");
         $(this).addClass("active");
 
-        $(".cart").addClass("active");
+        $(".cart").removeClass("active");
+        $(".cart[data-cart='balance']").addClass("active");
+    });
+
+    // Добавление в корзину
+    $(".addto__cart").on("click", function(){
+        $(this).addClass("added");
+
+        $(".cart").removeClass("active");
+        $(".cart[data-cart='choose']").addClass("active");
+    });
+
+    $(".food__minus").on("click", function(){
+        const block = $(this).siblings(".food__count");
+        let text = block.text();
+        let number = parseInt(text, 10);
+
+        if (isNaN(number)) {
+            number = 1;
+        } else {
+            number -= 1;
+        }
+
+        if (number <= 1) {
+            number = 1;
+        }
+
+        block.text(number);
+    });
+
+    $(".food__plus").on("click", function(){
+        const block = $(this).siblings(".food__count");
+        let text = block.text();
+        let number = parseInt(text, 10);
+
+        if (isNaN(number)) {
+            number = 1;
+        } else {
+            number += 1;
+        }
+
+        if (number > 99) {
+            number = 99;
+        }
+
+        block.text(number);
     });
 
     // Переключатель
     $("#allergy_switch").on("click", function(){
+        $(this).toggleClass("active");
+    });
+
+    $(".orders__item--freeze--switch").on("click", function(){
+        $(this).toggleClass("active");
+    });
+
+    // Faq
+    $(".faq__cat").on("click", function(){
+        $(".faq__cat").removeClass("active");
+        $(this).addClass("active");
+
+        $(".faq__content").removeClass("active");
+        $(".faq__content").eq($(this).index()).addClass("active");
+    });
+
+    $(".faq__item").on("click", function(){
         $(this).toggleClass("active");
     });
 
@@ -144,6 +170,21 @@ $(document).ready(function(){
     $(".order2step").on("click", function(){
         $(".modal").removeClass("active");
         $(".modal[data-modal='order3']").addClass("active");
+    });
+
+    // Добавить новый адрес
+    $(".add__address").on("click", function(){
+        $(this).addClass("hide");
+        $(".add__address--form").addClass("active");
+        $(".save__address").removeClass("hide");
+    });
+
+    $(".save__address").on("click", function(){
+        $(this).addClass("hide");
+        $(".add__address--form").removeClass("active");
+        $(".add__address").removeClass("hide");
+
+        // Доп. логика сохранения адреса..
     });
 
     // Слайдеры
