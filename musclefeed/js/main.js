@@ -78,15 +78,6 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-    // Появление корзины
-    $(".food__form--choose").on("click", function(){
-        $(this).siblings(".food__form--choose").removeClass("active");
-        $(this).addClass("active");
-
-        $(".cart").removeClass("active");
-        $(".cart[data-cart='balance']").addClass("active");
-    });
-
     // Добавление в корзину
     $(".addto__cart").on("click", function(){
         $(this).addClass("added");

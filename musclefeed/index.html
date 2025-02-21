@@ -380,34 +380,34 @@
 								</button>
 							</div>
 	
-							<div class="food__form--item--content">
-								<button class="button food__form--choose active">
+							<div class="food__form--item--content" data-value="calories">
+								<button class="button food__form--choose food__calories active" data-value="750">
 									750  ккал
 									<span class="food__sign">4 приема</span>
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose food__calories" data-value="1 000">
 									1 000  ккал
 									<span class="food__sign">5 приема</span>
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose food__calories" data-value="1 500">
 									1 500  ккал
 									<span class="food__sign">6 приема</span>
 								</button>
 	
-								<button class="button food__form--choose">
-									1 500  ккал
+								<button class="button food__form--choose food__calories" data-value="2 500">
+									2 500  ккал
 									<span class="food__sign">6 приема</span>
 								</button>
 	
-								<button class="button food__form--choose">
-									1 500  ккал
+								<button class="button food__form--choose food__calories" data-value="3 500">
+									3 500  ккал
 									<span class="food__sign">6 приема</span>
 								</button>
 	
-								<button class="button food__form--choose">
-									1 500  ккал
+								<button class="button food__form--choose food__calories" data-value="4 500">
+									4 500  ккал
 									<span class="food__sign">6 приема</span>
 								</button>
 							</div>
@@ -420,32 +420,32 @@
 								</p>
 							</div>
 	
-							<div class="food__form--item--content">
-								<button class="button food__form--choose active">
+							<div class="food__form--item--content" data-value="duration">
+								<button class="button food__form--choose active" data-value="1 день">
 									1 день
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose" data-value="2 дня">
 									2 дня
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose" data-value="5 дней">
 									5 дней
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose" data-value="Неделя" data-subvalue="3 дня в подарок!" data-highlight="+ 3 дня">
 									Неделя
 	
 									<span class="food__sale block">3 дня в подарок</span>
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose" data-value="2 недели">
 									2 недели
 	
 									<span class="food__sale">-10%</span>
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose" data-value="Месяц">
 									Месяц
 	
 									<span class="food__sale">-20%</span>
@@ -460,16 +460,16 @@
 								</p>
 							</div>
 	
-							<div class="food__form--item--content big">
-								<button class="button food__form--choose">
+							<div class="food__form--item--content big" data-value="mode">
+								<button class="button food__form--choose active" data-value="Будни">
 									Будни
 								</button>
 	
-								<button class="button food__form--choose active">
+								<button class="button food__form--choose" data-value="Пропускаем пятницу">
 									Пропускаем пятницу
 								</button>
 	
-								<button class="button food__form--choose">
+								<button class="button food__form--choose" data-value="Пропускаем пятницу и субботу">
 									Пропускаем пятницу и субботу
 								</button>
 							</div>
@@ -496,7 +496,7 @@
 								</button>
 	
 								<p class="food__form--date--text">
-									Мы привезем еду: 15.12.2024 года
+									Мы привезем еду: <span class="order__date">15.12.2024 года</span>
 								</p>
 							</div>
 						</div>
@@ -820,7 +820,7 @@
 								</button>
 	
 								<p class="food__form--date--text">
-									Мы привезем еду: 15.12.2024 года
+									Мы привезем еду: <span class="order__date">15.12.2024 года</span>
 								</p>
 							</div>
 						</div>
@@ -1191,7 +1191,7 @@
 					</div>
 
 					<button class="button cart__button modal__show" data-modal="order">
-						Оформить заказ за 2 345 ₪
+						Оформить заказ за <span class="order__price">2 345</span> ₪
 
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1793,9 +1793,9 @@
 						</p>
 
 						<div class="calc__form--item--content">
-							<input type="number" class="input calc__form--item--elem calc__form--item--input" placeholder="Год рождения">
-							<input type="number" class="input calc__form--item--elem calc__form--item--input" placeholder="Рост, см">
-							<input type="number" class="input calc__form--item--elem calc__form--item--input" placeholder="Вес, кг">
+							<input type="number" class="input calc__form--item--elem calc__form--item--input calc__birthYear" placeholder="Год рождения">
+							<input type="number" class="input calc__form--item--elem calc__form--item--input calc__height" placeholder="Рост, см">
+							<input type="number" class="input calc__form--item--elem calc__form--item--input calc__weight" placeholder="Вес, кг">
 						</div>
 					</div>
 
@@ -1805,8 +1805,8 @@
 						</p>
 
 						<div class="calc__form--item--content">
-							<button class="button calc__form--item--elem calc__form--item--button">Женский</button>
-							<button class="button calc__form--item--elem calc__form--item--button active">Мужской</button>
+							<button class="button calc__form--item--elem calc__form--item--button active" data-form="gender" data-value="female">Женский</button>
+							<button class="button calc__form--item--elem calc__form--item--button" data-form="gender" data-value="male">Мужской</button>
 						</div>
 					</div>
 
@@ -1816,10 +1816,10 @@
 						</p>
 
 						<div class="calc__form--item--content">
-							<button class="button calc__form--item--elem calc__form--item--button">Низкая</button>
-							<button class="button calc__form--item--elem calc__form--item--button">Средняя</button>
-							<button class="button calc__form--item--elem calc__form--item--button active">Активная</button>
-							<button class="button calc__form--item--elem calc__form--item--button">Экстрим</button>
+							<button class="button calc__form--item--elem calc__form--item--button big active" data-form="activity" data-value="1.2">Нет физической активности</button>
+							<button class="button calc__form--item--elem calc__form--item--button big" data-form="activity" data-value="1.3">1-2 тренировки в неделю</button>
+							<button class="button calc__form--item--elem calc__form--item--button big" data-form="activity" data-value="1.7">Каждодневные тренировки</button>
+							<button class="button calc__form--item--elem calc__form--item--button big" data-form="activity" data-value="1.9">3-4 тренировки в неделю</button>
 						</div>
 					</div>
 
@@ -1829,19 +1829,19 @@
 						</p>
 
 						<div class="calc__form--item--content">
-							<button class="button calc__form--item--elem calc__form--item--button active">Похудеть</button>
-							<button class="button calc__form--item--elem calc__form--item--button">Баланс</button>
-							<button class="button calc__form--item--elem calc__form--item--button">Набор веса</button>
+							<button class="button calc__form--item--elem calc__form--item--button big active" data-form="target" data-value="0.8">Сбросить вес</button>
+							<button class="button calc__form--item--elem calc__form--item--button big" data-form="target" data-value="1">Поддерживать вес</button>
+							<button class="button calc__form--item--elem calc__form--item--button big" data-form="target" data-value="1.25">Набор веса</button>
 						</div>
 					</div>
 				</div>
 
 				<div class="calc__result">
 					<p class="calc__result--count">
-						Результат: 2 500 ККал/день
+						Результат: <span class="calc__result--value">-</span> ККал/день
 					</p>
 
-					<button class="button calc__result--button">
+					<button class="button calc__result--button calc__confirm">
 						Применить
 
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1918,8 +1918,8 @@
 							Калорийность, ККал
 						</p>
 
-						<p class="order__item--title">
-							1 500
+						<p class="order__item--title order__value" data-order="calories">
+							750
 						</p>
 					</div>
 
@@ -1929,12 +1929,10 @@
 						</p>
 
 						<p class="order__item--title">
-							14 дней <span>+ 3 дня</span>
+							<span class="order__value" data-order="duration">14 дней</span> <span class="order__highlight" data-highlight="duration"></span>
 						</p>
 
-						<p class="order__item--subtext">
-							3 дня в подарок!
-						</p>
+						<p class="order__item--subtext order__subvalue" data-subvalue="duration"></p>
 					</div>
 
 					<div class="order__item">
@@ -1943,7 +1941,7 @@
 						</p>
 
 						<p class="order__item--title">
-							Начало доставки 15.12.2024
+							Начало доставки: <span class="order__dilivery">15.12.2024</span>
 						</p>
 					</div>
 
@@ -1952,8 +1950,8 @@
 							Формат питания
 						</p>
 
-						<p class="order__item--title">
-							Пропускаем пятницы и субботы
+						<p class="order__item--title order__value" data-order="mode">
+							Будни
 						</p>
 					</div>
 				</div>
@@ -2023,7 +2021,7 @@
 				<div class="calc__result">
 					<div class="order__text--inner">
 						<p class="calc__result--count">
-							Итого: 2 500 ₪
+							Итого: <span class="cart__price--value">0</span> ₪
 						</p>
 
 						<div class="order__text--sale">
@@ -2076,8 +2074,8 @@
 							Калорийность, ККал
 						</p>
 
-						<p class="order__item--title">
-							1 500
+						<p class="order__item--title order__value" data-order="calories">
+							750
 						</p>
 					</div>
 
@@ -2087,12 +2085,10 @@
 						</p>
 
 						<p class="order__item--title">
-							14 дней <span>+ 3 дня</span>
+							<span class="order__value" data-order="duration">14 дней</span> <span class="order__highlight" data-highlight="duration"></span>
 						</p>
 
-						<p class="order__item--subtext">
-							3 дня в подарок!
-						</p>
+						<p class="order__item--subtext order__subvalue" data-subvalue="duration"></p>
 					</div>
 
 					<div class="order__item">
@@ -2101,7 +2097,7 @@
 						</p>
 
 						<p class="order__item--title">
-							Начало доставки 15.12.2024
+							Начало доставки: <span class="order__dilivery">15.12.2024</span>
 						</p>
 					</div>
 
@@ -2110,8 +2106,8 @@
 							Формат питания
 						</p>
 
-						<p class="order__item--title">
-							Пропускаем пятницы и субботы
+						<p class="order__item--title order__value" data-order="mode">
+							Будни
 						</p>
 					</div>
 				</div>
@@ -2179,7 +2175,7 @@
 				<div class="calc__result">
 					<div class="order__text--inner">
 						<p class="calc__result--count">
-							Итого: 2 500 ₪
+							Итого: <span class="cart__price--value">0</span> ₪
 						</p>
 
 						<div class="order__text--sale">
@@ -2209,7 +2205,7 @@
 				</button>
 
 				<p class="modal__delivery--title">
-					оформление заказа
+					Оформление заказа
 				</p>
 
 				<p class="calc__text">
@@ -2378,7 +2374,7 @@
 				<div class="calc__result">
 					<div class="order__text--inner">
 						<p class="calc__result--count">
-							Итого: 2 500 ₪
+							Итого: <span class="cart__price--value">0</span> ₪
 						</p>
 
 						<div class="order__text--sale">
@@ -2921,6 +2917,7 @@
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/mini-event-calendar.min.js"></script>
 	<script src="js/calendarModal.js"></script>
+	<script src="js/calculate.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

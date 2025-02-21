@@ -560,6 +560,10 @@ input::-webkit-inner-spin-button{
 	align-items: flex-start;
 }
 
+.food__item{
+	height: auto!important;
+}
+
 .food__menu--item{
 	width: calc(100% / 5 - 96px / 5);
 }
@@ -581,12 +585,14 @@ input::-webkit-inner-spin-button{
 }
 
 .food__item--img img{
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .food__item--text--inner{
 	width: 100%;
+	height: 100%;
 	padding: 2.4rem 1.6rem;
 	display: flex;
 	flex-direction: column;
@@ -616,7 +622,7 @@ input::-webkit-inner-spin-button{
 
 .food__item--params{
 	width: 100%;
-	margin-top: 2.4rem;
+	margin: 2.4rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -647,7 +653,7 @@ input::-webkit-inner-spin-button{
 	color: #fff;
 	background: #FF6433;
 	border-radius: 16px;
-	margin-top: 2.4rem;
+	margin-top: auto;
 	justify-content: center;
 	gap: 8px;
 }
@@ -2175,6 +2181,14 @@ input::-webkit-inner-spin-button{
 	width: calc(100% / 4 - 48px / 4);
 }
 
+.calc__form--item--elem.medium{
+	width: calc(100% / 3 - 32px / 3);
+}
+
+.calc__form--item--elem.big{
+	width: calc(100% / 2 - 16px / 2);
+}
+
 .calc__form--item--input{
 	padding: 1.5rem 0.8rem 1.5rem 1.6rem;
 	border-radius: 16px;
@@ -2407,7 +2421,7 @@ input::-webkit-inner-spin-button{
 	line-height: 1.2;
 }
 
-.order__item--title span{
+.order__item--title span:last-child{
 	color: #00A31E;
 }
 
@@ -4802,6 +4816,10 @@ input::-webkit-inner-spin-button{
 	}
 
 	.swap__modal--item{
+		width: 100%;
+	}
+
+	.calc__form--item--elem.medium, .calc__form--item--elem.big{
 		width: 100%;
 	}
 }
