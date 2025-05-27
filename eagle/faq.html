@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Орлы</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Орлы" />
+	<link rel="manifest" href="img/favicon/site.webmanifest" />
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__top">
+					<button class="button menu__button">
+						<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.25 15.0827H26.75M1.25 7.99935H26.75M1.25 0.916016H26.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="header__search--inner">
+						<a href="/" class="header__logo">
+							<img src="img/logo.svg" alt="logo">
+						</a>
+
+						<div class="header__search--block">
+							<input type="text" class="input header__search" placeholder="Поиск по сайту">
+
+							<img src="img/search.svg" alt="search" class="header__search--icon">
+						</div>
+					</div>
+
+					<div class="header__profile--inner">
+						<button class="button angular__button header__button">
+							<span></span>
+
+							Подать достижение
+						</button>
+
+						<div class="header__profile--block">
+							<div class="header__profile--element">
+								<div class="header__profile--avatar">
+									<img src="img/avatar.png" alt="avatar">
+								</div>
+
+								<p class="header__profile--title">
+									Мой кабинет
+
+									<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.915361 1.66667L7.9987 8.75L15.082 1.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</p>
+							</div>
+
+							<div class="header__profile--dropdown">
+								<div class="header__profile--dropdown--top">
+									<p class="header__profile--dropdown--title">
+										Мой кабинет
+									</p>
+
+									<button class="button header__profile--dropdown--close">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.5 18.5L10 10M10 10L1.5 1.5M10 10L18.5 1.5M10 10L1.5 18.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+
+								<div class="header__profile--dropdown--info">
+									<div class="header__profile--dropdown--avatar">
+										<img src="img/avatar.png" alt="avatar">
+									</div>
+
+									<div class="header__profile--dropdown--info--block w100 fc">
+										<p class="header__profile--dropdown--text">
+											Елена Величкина
+										</p>
+
+										<p class="header__profile--dropdown--subtext">
+											AlenaVelichkina@gmail.com
+										</p>
+									</div>
+								</div>
+
+								<div class="header__profile--dropdown--content">
+									<a href="#" class="header__profile--dropdown--link">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 19C18 16.7909 15.3137 15 12 15C8.68629 15 6 16.7909 6 19M12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8C16 10.2091 14.2091 12 12 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Профиль
+									</a>
+
+									<a href="#" class="header__profile--dropdown--link">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Клуб путешественников
+									</a>
+
+									<a href="#" class="header__profile--dropdown--link">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.33496 10.3363C2.02171 10.0466 2.19187 9.5229 2.61557 9.47267L8.61914 8.76058C8.79182 8.7401 8.94181 8.63166 9.01465 8.47376L11.5469 2.98397C11.7256 2.59654 12.2764 2.59646 12.4551 2.9839L14.9873 8.47365C15.0601 8.63155 15.2092 8.74028 15.3818 8.76075L21.3857 9.47267C21.8094 9.5229 21.9791 10.0468 21.6659 10.3364L17.2278 14.4414C17.1001 14.5595 17.0433 14.7352 17.0771 14.9058L18.255 20.8355C18.3382 21.2539 17.8928 21.5782 17.5205 21.3698L12.2451 18.4161C12.0934 18.3312 11.9091 18.3316 11.7573 18.4165L6.48144 21.369C6.10913 21.5774 5.66294 21.2539 5.74609 20.8354L6.92414 14.9061C6.95803 14.7356 6.90134 14.5594 6.77367 14.4414L2.33496 10.3363Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Мои достижения
+									</a>
+
+									<a href="#" class="header__profile--dropdown--link">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 21V15.6871M4 15.6871C9.81818 11.1377 14.1818 20.2363 20 15.6869V4.31347C14.1818 8.86284 9.81818 -0.236103 4 4.31327V15.6871Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Моя ближайшая цель
+									</a>
+
+									<div class="divider"></div>
+
+									<a href="#" class="header__profile--dropdown--link">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 15L15 12M15 12L12 9M15 12H4M4 7.24802V7.2002C4 6.08009 4 5.51962 4.21799 5.0918C4.40973 4.71547 4.71547 4.40973 5.0918 4.21799C5.51962 4 6.08009 4 7.2002 4H16.8002C17.9203 4 18.4796 4 18.9074 4.21799C19.2837 4.40973 19.5905 4.71547 19.7822 5.0918C20 5.5192 20 6.07899 20 7.19691V16.8036C20 17.9215 20 18.4805 19.7822 18.9079C19.5905 19.2842 19.2837 19.5905 18.9074 19.7822C18.48 20 17.921 20 16.8031 20H7.19691C6.07899 20 5.5192 20 5.0918 19.7822C4.71547 19.5905 4.40973 19.2839 4.21799 18.9076C4 18.4798 4 17.9201 4 16.8V16.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Выйти
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__nav">
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link parent">
+							Мероприятия
+	
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">Ежедневные вебинары</a>
+							<a href="#" class="header__dropdown--link">Мероприятия месяца</a>
+							<a href="#" class="header__dropdown--link">Мероприятия года</a>
+						</div>
+					</div>
+
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link yellow parent">
+							О нас
+
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">ЛСП</a>
+							<a href="#" class="header__dropdown--link">Команда Орлы</a>
+							<a href="#" class="header__dropdown--link">Лидеры</a>
+							<a href="#" class="header__dropdown--link">Достижения</a>
+						</div>
+					</div>
+
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link purple parent">
+							Мы учимся
+
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">Аудиоматериалы</a>
+							<a href="#" class="header__dropdown--link">Видеоматериалы</a>
+							<a href="#" class="header__dropdown--link">Книги</a>
+							<a href="#" class="header__dropdown--link">Бизнес-план</a>
+							<a href="#" class="header__dropdown--link">Первые 90 дней</a>
+							<a href="#" class="header__dropdown--link">Ключевой человек</a>
+							<a href="#" class="header__dropdown--link">ЧЗВ</a>
+						</div>
+					</div>
+
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link orange parent">
+							Инструменты
+
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">Флешмобы</a>
+							<a href="#" class="header__dropdown--link">Живой каталог</a>
+							<a href="#" class="header__dropdown--link">Голосовые с видеорядом</a>
+							<a href="#" class="header__dropdown--link">Бизнес-план</a>
+							<a href="#" class="header__dropdown--link">Показ товара</a>
+						</div>
+					</div>
+
+					<a href="#" class="header__nav--link green">
+						Новости
+					</a>
+
+					<a href="#" class="header__nav--link pink">
+						Контакты
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="mobile__menu">
+		<div class="container">
+			<div class="mobile__menu--content">
+				<button class="button mobile__menu--close">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.5 18.5L10 10M10 10L1.5 1.5M10 10L18.5 1.5M10 10L1.5 18.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+	
+				<button class="button angular__button header__button mobile">
+					<span></span>
+
+					Подать достижение
+				</button>
+
+				<div class="header__search--block mobile">
+					<input type="text" class="input header__search" placeholder="Поиск по сайту">
+
+					<img src="img/search.svg" alt="search" class="header__search--icon">
+				</div>
+
+				<div class="header__nav mobile">
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link parent">
+							Мероприятия
+	
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">Ежедневные вебинары</a>
+							<a href="#" class="header__dropdown--link">Мероприятия месяца</a>
+							<a href="#" class="header__dropdown--link">Мероприятия года</a>
+						</div>
+					</div>
+
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link yellow parent">
+							О нас
+
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">ЛСП</a>
+							<a href="#" class="header__dropdown--link">Команда Орлы</a>
+							<a href="#" class="header__dropdown--link">Лидеры</a>
+							<a href="#" class="header__dropdown--link">Достижения</a>
+						</div>
+					</div>
+
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link purple parent">
+							Мы учимся
+
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">Аудиоматериалы</a>
+							<a href="#" class="header__dropdown--link">Видеоматериалы</a>
+							<a href="#" class="header__dropdown--link">Книги</a>
+							<a href="#" class="header__dropdown--link">Бизнес-план</a>
+							<a href="#" class="header__dropdown--link">Первые 90 дней</a>
+							<a href="#" class="header__dropdown--link">Ключевой человек</a>
+							<a href="#" class="header__dropdown--link">ЧЗВ</a>
+						</div>
+					</div>
+
+					<div class="header__nav--link--inner">
+						<a href="#" class="header__nav--link orange parent">
+							Инструменты
+
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.41731 1.16667L8.50065 8.25L15.584 1.16667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+
+						<div class="header__dropdown">
+							<a href="#" class="header__dropdown--link">Флешмобы</a>
+							<a href="#" class="header__dropdown--link">Живой каталог</a>
+							<a href="#" class="header__dropdown--link">Голосовые с видеорядом</a>
+							<a href="#" class="header__dropdown--link">Бизнес-план</a>
+							<a href="#" class="header__dropdown--link">Показ товара</a>
+						</div>
+					</div>
+
+					<a href="#" class="header__nav--link green">
+						Новости
+					</a>
+
+					<a href="#" class="header__nav--link pink">
+						Контакты
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="def__section">
+		<div class="container">
+			<div class="news__inner w100 fc">
+				<div class="breadcrumbs">
+					<a href="/" class="breadcrumbs__link">Главная</a>
+					<p class="breadcrumbs__text">Новости</p>
+				</div>
+
+				<h1 class="title news__title">
+					Новости
+				</h1>
+
+				<div class="news__tags">
+					<a href="#" class="news__tag active">
+						#Все новости
+					</a>
+
+					<a href="#" class="news__tag">
+						#Мероприятия
+					</a>
+
+					<a href="#" class="news__tag">
+						#Поздравления
+					</a>
+				</div>
+
+				<div class="news__content">
+					<a href="#" class="news__item">
+						<span class="news__item--text w100 fc">
+							<span class="news__item--date">
+								22.12.2024
+							</span>
+
+							<span class="news__item--title">
+								С Днём Рождения, наша Алена!
+							</span>
+
+							<span class="news__item--subtitle">
+								Желаем тебе красивого пути к красивому уровню с красивым стилем жизни!
+							</span>
+
+							<span class="news__item--link">
+								Читать полностью
+							</span>
+						</span>
+
+						<span class="news__item--img">
+							<img src="img/avatar.png" alt="avatar">
+						</span>
+					</a>
+
+					<a href="#" class="news__item">
+						<span class="news__item--text w100 fc">
+							<span class="news__item--date">
+								22.12.2024
+							</span>
+
+							<span class="news__item--title">
+								С Днём Рождения, наша Алена!
+							</span>
+
+							<span class="news__item--subtitle">
+								Желаем тебе красивого пути к красивому уровню с красивым стилем жизни!
+							</span>
+
+							<span class="news__item--link">
+								Читать полностью
+							</span>
+						</span>
+
+						<span class="news__item--img">
+							<img src="img/avatar.png" alt="avatar">
+						</span>
+					</a>
+
+					<a href="#" class="news__item">
+						<span class="news__item--text w100 fc">
+							<span class="news__item--date">
+								22.12.2024
+							</span>
+
+							<span class="news__item--title">
+								С Днём Рождения, наша Алена!
+							</span>
+
+							<span class="news__item--subtitle">
+								Желаем тебе красивого пути к красивому уровню с красивым стилем жизни!
+							</span>
+
+							<span class="news__item--link">
+								Читать полностью
+							</span>
+						</span>
+
+						<span class="news__item--img">
+							<img src="img/avatar.png" alt="avatar">
+						</span>
+					</a>
+
+					<a href="#" class="news__item">
+						<span class="news__item--text w100 fc">
+							<span class="news__item--date">
+								22.12.2024
+							</span>
+
+							<span class="news__item--title">
+								С Днём Рождения, наша Алена!
+							</span>
+
+							<span class="news__item--subtitle">
+								Желаем тебе красивого пути к красивому уровню с красивым стилем жизни!
+							</span>
+
+							<span class="news__item--link">
+								Читать полностью
+							</span>
+						</span>
+
+						<span class="news__item--img">
+							<img src="img/avatar.png" alt="avatar">
+						</span>
+					</a>
+				</div>
+
+				<button class="button blue__button news__button--more">
+					Развернуть больше
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__content">
+					<div class="footer__logo--inner">
+						<div class="footer__logo">
+							<img src="img/logo-full.svg" alt="logo">
+						</div>
+
+						<a href="#" class="footer__copy">
+							Политика конфиденциальности
+						</a>
+					</div>
+
+					<div class="footer__nav--block fc">
+						<p class="footer__nav--title">
+							Мероприятия
+						</p>
+
+						<div class="footer__nav--links fc">
+							<a href="#" class="footer__nav--link">
+								Ежедневные вебинары
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Мероприятия месяца
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Мероприятия года
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__nav--block fc">
+						<p class="footer__nav--title">
+							О нас
+						</p>
+
+						<div class="footer__nav--links fc">
+							<a href="#" class="footer__nav--link">
+								ЛСП
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Команда Орлы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Лидеры
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Достижения
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Новости
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__nav--block fc">
+						<p class="footer__nav--title">
+							Инструменты
+						</p>
+
+						<div class="footer__nav--links fc">
+							<a href="#" class="footer__nav--link">
+								Флешмобы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Живой каталог
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Голосовые с видеорядом
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Бизнес-план
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Показ товара
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__nav--block fc">
+						<p class="footer__nav--title">
+							Мы учимся
+						</p>
+
+						<div class="footer__nav--links fc">
+							<a href="#" class="footer__nav--link">
+								Видеоматериалы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Аудиоматериалы
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Книги
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Бизнес-план
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Первые 90 дней
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								Ключевой человек
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								ЧЗВ
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__nav--block fc">
+						<p class="footer__nav--title">
+							Контакты
+						</p>
+
+						<div class="footer__nav--links fc">
+							<a href="#" class="footer__nav--link">
+								ddt_diamond@mail.ru
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								+7 (920) 827-17-17
+							</a>
+
+							<a href="#" class="footer__nav--link">
+								+7 (920) 827-07-07
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__bottom">
+					<p>
+						2014-2024 @ orelsoloshenko.com Все содержимое является интеллектуальной собственностью и принадлежит зарегистрированному администратору сайта. Все права защищены.
+					</p>
+
+					<p>
+						Использование любых материалов без согласия собственников запрещено и преследуется по закону.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
