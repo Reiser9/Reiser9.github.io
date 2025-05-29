@@ -49,9 +49,43 @@ document.addEventListener('click', function (e) {
         const parent = targetEl.closest('.faq-item');
         parent.classList.toggle('active');
     }
+
+    if (targetEl.closest('.burger-btn')) {
+        headerNav.classList.toggle('active');
+        body.classList.toggle('lock');
+    }
+
+    if (
+        headerNav.classList.contains('active') &&
+        !targetEl.closest('.header__nav') &&
+        !targetEl.closest('.burger-btn')
+    ) {
+        headerNav.classList.remove('active');
+        body.classList.remove('lock');
+    }
 });
+
+const navLink = document.querySelectorAll(".go");
+navLink.forEach(
+    elem => elem.addEventListener("click", function(e){
+        e.preventDefault();
+        
+        const idPoint = this.dataset.point;
+        
+        if(!idPoint) return;
+
+        document.querySelector("#" + idPoint).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+        body.classList.remove('lock');
+        headerNav.classList.remove('active');
+    })
+);
 
 // бургер меню
 // const burgerBtn = document.querySelector('.burger-btn');
-// const body = document.body;
+const headerNav = document.querySelector('.header__nav');
+const body = document.body;
 // const wrapper = document.querySelector('.wrapper');

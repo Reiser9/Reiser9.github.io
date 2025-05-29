@@ -6,10 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Title -->
-    <title>Yogo</title>
+    <title>Yo.Go</title>
 
     <!-- Favicon -->
      <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
@@ -21,12 +24,12 @@
 
 <body>
     <div class="wrapper lock-padding">
-        <header class="header">
+        <header class="header" data-aos="fade-in">
             <div class="container">
                 <div class="header__inner">
-                    <a href="/" class="header__logo">
+                    <a href="/" class="header-logo">
                         <img src="img/logo-icon.svg" alt="logo">
-                        <img src="img/logo-text.svg" alt="logo">
+                        <img class="header-logo__text" src="img/logo-text.svg" alt="logo">
                     </a>
 
                     <nav class="header__nav">
@@ -37,14 +40,18 @@
                         <a href="#" class="header__nav--link go" data-point="faq">FAQ</a>
                     </nav>
 
-                    <a href="#" class="btn header__link">
+                    <a href="https://t.me/yogoodbot" target="_blank" class="btn header__link">
                         Начать торговлю
                     </a>
+
+                    <button class="burger-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+                    </button>
                 </div>
             </div>
         </header>
 
-        <section class="mainsection">
+        <section class="mainsection" data-aos="fade-in">
             <video src="img/main-bg.mp4" class="mainsection__video" autoplay muted loop></video>
 
             <img src="img/main-light1.png" alt="light" class="mainsection__light mainsection__light1">
@@ -67,7 +74,7 @@
                     <img src="img/mon.png" alt="coin" class="mainsection__coin mainsection__coin3">
                     <img src="img/eth.png" alt="coin" class="mainsection__coin mainsection__coin4">
 
-                    <a href="#" class="mainlink__block">
+                    <a href="https://t.me/yogoodbot" target="_blank" class="mainlink__block">
                         <span class="mainlink__block--star">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.92423 6.68254e-08C7.47227 -0.000158266 7.01072 0.281045 6.73736 0.840753L5.05594 4.30247L1.22333 4.84643C-0.0092193 5.0179 -0.408536 6.2271 0.481535 7.09635L3.25086 9.79197L2.60803 13.5753C2.39634 14.8001 3.41213 15.5403 4.51199 14.96C4.93696 14.7351 7.12204 13.6031 7.92423 13.1795L11.3365 14.96C12.4376 15.5403 13.4566 14.8008 13.2404 13.5753L12.5728 9.79197L15.3422 7.09635C16.2365 6.23026 15.8578 5.02139 14.6251 4.84643L10.7678 4.30247L9.1111 0.840753C8.83813 0.280807 8.37619 0.000237567 7.92423 6.68254e-08Z" fill="url(#paint0_linear_2_112)"/>
@@ -99,11 +106,11 @@
                     </div>
 
                     <div class="main__links">
-                        <a href="#" class="btn main__link">
+                        <a href="https://t.me/yogoodbot" target="_blank" class="btn main__link">
                             Открыть в Telegram
                         </a>
 
-                        <a href="#" class="main__link--more">
+                        <a href="#" class="main__link--more go" data-point="howwork">
                             Узнать подробнее
 
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,11 +123,11 @@
         </section>
 
         <main class="main" id="howwork">
-            <div class="section">
+            <div class="section howwork">
                 <div class="container">
                     <div class="inner">
                         <div class="head">
-                            <div class="label item">
+                            <div class="label item" data-aos="fade-in">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -129,11 +136,11 @@
                                 </svg>
                                 Как работает наша система?
                             </div>
-                            <h2 class="title">Автоматизированная торговля, где каждая копейка работает на вас</h2>
+                            <h2 class="title" data-aos="fade-in">Автоматизированная торговля, где каждая копейка работает на вас</h2>
                         </div>
 
                         <div class="trading__cards">
-                            <div class="trading-card">
+                            <div class="trading-card" data-aos="fade-in" data-aos-delay="300">
                                 <div class="trading-card__img ibg">
                                     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
                                     <dotlottie-player src="https://lottie.host/c16e45c1-2180-44cf-aa60-78b017d9d1cf/rLqFNwKdwk.lottie" background="transparent" speed="1" class="trading-card--anim" loop autoplay></dotlottie-player>
@@ -155,9 +162,10 @@
                                 </div>
                             </div>
 
-                            <div class="trading-card">
+                            <div class="trading-card" data-aos="fade-in" data-aos-delay="600">
                                 <div class="trading-card__img ibg">
-                                    <dotlottie-player src="https://lottie.host/c16e45c1-2180-44cf-aa60-78b017d9d1cf/rLqFNwKdwk.lottie" background="transparent" speed="1" class="trading-card--anim" loop autoplay></dotlottie-player>
+                                    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                                    <dotlottie-player src="https://lottie.host/51d3f1c0-4e9c-4bc9-85f8-28ed6584b465/iTC7dgwY1l.lottie" background="transparent" speed="1" class="trading-card--anim" loop autoplay></dotlottie-player>
                                 </div>
                                 <div class="trading-card__content">
                                     <p class="trading-card__title item">
@@ -177,9 +185,10 @@
                                 </div>
                             </div>
 
-                            <div class="trading-card">
+                            <div class="trading-card" data-aos="fade-in" data-aos-delay="900">
                                 <div class="trading-card__img ibg">
-                                    <dotlottie-player src="https://lottie.host/c16e45c1-2180-44cf-aa60-78b017d9d1cf/rLqFNwKdwk.lottie" background="transparent" speed="1" class="trading-card--anim" loop autoplay></dotlottie-player>
+                                    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                                    <dotlottie-player src="https://lottie.host/60c17669-3eeb-4ba3-963a-37a743e35a26/zyToRHD12c.lottie" background="transparent" speed="1" class="trading-card--anim" loop autoplay></dotlottie-player>
                                 </div>
                                 <div class="trading-card__content">
                                     <p class="trading-card__title item">
@@ -207,7 +216,7 @@
                 <div class="model__container container">
                     <div class="inner">
                         <div class="head">
-                            <div class="label item">
+                            <div class="label item" data-aos="fade-in">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -216,11 +225,11 @@
                                 </svg>
                                 Ваши средства — под контролем
                             </div>
-                            <h2 class="title">Финансовая модель YO.GO!</h2>
+                            <h2 class="title" data-aos="fade-in">Финансовая модель YO.GO!</h2>
                         </div>
 
                         <div class="model__cards">
-                            <div class="model-card">
+                            <div class="model-card" data-aos="fade-in" data-aos-delay="100" data-aos-duration="700">
                                 <div class="model-card__img ibg">
                                     <img src="img/model/1.png" alt="pic">
                                 </div>
@@ -231,7 +240,7 @@
                                 </div>
                             </div>
 
-                            <div class="model-card">
+                            <div class="model-card" data-aos="fade-in" data-aos-delay="200" data-aos-duration="700">
                                 <div class="model-card__img ibg">
                                     <img src="img/model/2.png" alt="pic">
                                 </div>
@@ -243,7 +252,7 @@
                                 </div>
                             </div>
 
-                            <div class="model-card">
+                            <div class="model-card" data-aos="fade-in" data-aos-delay="300" data-aos-duration="700">
                                 <div class="model-card__img ibg">
                                     <img src="img/model/3.png" alt="pic">
                                 </div>
@@ -256,7 +265,7 @@
                                 </div>
                             </div>
 
-                            <div class="model-card">
+                            <div class="model-card" data-aos="fade-in" data-aos-delay="400" data-aos-duration="700">
                                 <div class="model-card__img ibg">
                                     <img src="img/model/4.png" alt="pic">
                                 </div>
@@ -268,7 +277,7 @@
                                 </div>
                             </div>
 
-                            <div class="model-card">
+                            <div class="model-card" data-aos="fade-in" data-aos-delay="500" data-aos-duration="700">
                                 <div class="model-card__img ibg">
                                     <img src="img/model/5.png" alt="pic">
                                 </div>
@@ -279,7 +288,7 @@
                                 </div>
                             </div>
 
-                            <div class="model-card">
+                            <div class="model-card" data-aos="fade-in" data-aos-delay="600" data-aos-duration="700">
                                 <div class="model-card__img ibg">
                                     <img src="img/model/6.png" alt="pic">
                                 </div>
@@ -298,11 +307,11 @@
             <div class="section">
                 <div class="container">
                     <div class="inner">
-                        <h2 class="community__title title">
+                        <h2 class="community__title title" data-aos="fade-in">
                             Присоединяйтесь к бизнес комьюнити YO.GO! — <span>живое общение, реальные кейсы, обсуждение сделок, отзывы и ответы на вопросы</span> в реальном времени.
                         </h2>
 
-                        <div class="community__wrapper">
+                        <div class="community__wrapper" data-aos="fade-in">
                             <div class="community__stats">
                                 <p class="community__text">15K <span>отзывов</span></p>
                                 
@@ -355,16 +364,16 @@
 
                                 <div class="community__peoples">
                                     <div class="community__people ibg">
-                                        <img src="img/community/1.jpg" alt="people">
+                                        <img src="img/community/people1.jpg" alt="people">
                                     </div>
                                     <div class="community__people ibg">
-                                        <img src="img/community/1.jpg" alt="people">
+                                        <img src="img/community/people2.jpg" alt="people">
                                     </div>
                                     <div class="community__people ibg">
-                                        <img src="img/community/1.jpg" alt="people">
+                                        <img src="img/community/people3.jpg" alt="people">
                                     </div>
                                     <div class="community__people ibg">
-                                        <img src="img/community/1.jpg" alt="people">
+                                        <img src="img/community/people4.jpg" alt="people">
                                     </div>
                                     <div class="community__people ibg">
                                         15k
@@ -372,7 +381,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn">Открыть в Telegram</a>
+
+                        <a href="https://t.me/yogoodbot" target="_blank" class="btn">Открыть в Telegram</a>
                     </div>
                 </div>
             </div>
@@ -381,7 +391,7 @@
                 <div class="model__container container">
                     <div class="inner">
                         <div class="head">
-                            <div class="label item">
+                            <div class="label item" data-aos="fade-in">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -390,11 +400,11 @@
                                 </svg>
                                 Реферальная программа
                             </div>
-                            <h2 class="title">Зарабатывайте вместе с нами</h2>
+                            <h2 class="title" data-aos="fade-in">Зарабатывайте вместе с нами</h2>
                         </div>
 
                         <div class="earn__cards">
-                            <div class="earn-card">
+                            <div class="earn-card" data-aos="fade-in" data-aos-delay="300">
                                 <p class="earn-card__label">1 уровень</p>
                                 <p class="earn-card__title">Лично приглашённые вами пользователи.</p>
                                 <p class="earn-card__benefit">Что вы получаете</p>
@@ -429,7 +439,7 @@
                                 </div>
                             </div>
 
-                            <div class="earn-card">
+                            <div class="earn-card" data-aos="fade-in" data-aos-delay="600">
                                 <p class="earn-card__label">2-й уровень</p>
                                 <p class="earn-card__title">Рефералы ваших рефералов.</p>
                                 <p class="earn-card__benefit">Что вы получаете</p>
@@ -465,7 +475,7 @@
                                 </div>
                             </div>
 
-                            <div class="earn-card">
+                            <div class="earn-card" data-aos="fade-in" data-aos-delay="900">
                                 <p class="earn-card__label">3-й уровень</p>
                                 <p class="earn-card__title">Три уровня — тройная выгода</p>
                                 <p class="earn-card__benefit">Что вы получаете</p>
@@ -508,10 +518,10 @@
             <div class="section" id="howstart">
                 <div class="container">
                     <div class="inner">
-                        <h2 class="title">Как начать работу</h2>
+                        <h2 class="title" data-aos="fade-in">Как начать работу</h2>
 
                         <div class="trading__cards">
-                            <div class="trading-card">
+                            <div class="trading-card" data-aos="fade-in" data-aos-delay="300">
                                 <div class="trading-card__img ibg">
                                     <img src="img/start/1.png" alt="pic">
                                 </div>
@@ -533,7 +543,7 @@
                                 </div>
                             </div>
 
-                            <div class="trading-card">
+                            <div class="trading-card" data-aos="fade-in" data-aos-delay="600">
                                 <div class="trading-card__img ibg">
                                     <img src="img/start/2.png" alt="pic">
                                 </div>
@@ -557,7 +567,7 @@
                                 </div>
                             </div>
 
-                            <div class="trading-card">
+                            <div class="trading-card" data-aos="fade-in" data-aos-delay="900">
                                 <div class="trading-card__img ibg">
                                     <img src="img/start/3.png" alt="pic">
                                 </div>
@@ -590,10 +600,10 @@
             <div class="section">
                 <div class="container">
                     <div class="inner">
-                        <h2 class="faq__title title">Последние новости</h2>
+                        <h2 class="faq__title title" data-aos="fade-in">Последние новости</h2>
 
                         <div class="news__content">
-                            <div class="news__item big">
+                            <div class="news__item big" data-aos="fade-in" data-aos-delay="200">
                                 <div class="news__text--block">
                                     <p class="news__text--title">
                                         Технический разбор YO.GO!: как работает ИИ-ядро платформы
@@ -607,7 +617,7 @@
                                 <img src="img/news1.png" alt="img" class="news__item--bg">
                             </div>
 
-                            <a href="https://telegra.ph/Trejding-veroyatnosti-05-27" target="_blank" class="news__item">
+                            <a href="https://telegra.ph/Trejding-veroyatnosti-05-27" target="_blank" class="news__item" data-aos="fade-in" data-aos-delay="400">
                                 <span class="news__item--sign">
                                     Трейдинг вероятности
                                 </span>
@@ -615,7 +625,7 @@
                                 <img src="img/news2.png" alt="img" class="news__item--img">
                             </a>
 
-                            <a href="https://telegra.ph/Multi-Account-Strategy-kak-YOGO-budet-masshtabirovat-pul-bez-poteri-skorosti-05-27" target="_blank" class="news__item">
+                            <a href="https://telegra.ph/Multi-Account-Strategy-kak-YOGO-budet-masshtabirovat-pul-bez-poteri-skorosti-05-27" target="_blank" class="news__item" data-aos="fade-in" data-aos-delay="600">
                                 <span class="news__item--sign">
                                     Рост без потери скорости
                                 </span>
@@ -623,7 +633,7 @@
                                 <img src="img/news3.png" alt="img" class="news__item--img">
                             </a>
 
-                            <a href="https://telegra.ph/V-chyom-raznica-mezhdu-YOGO-i-klassicheskim-trejding-botom-05-27" target="_blank" class="news__item">
+                            <a href="https://telegra.ph/V-chyom-raznica-mezhdu-YOGO-i-klassicheskim-trejding-botom-05-27" target="_blank" class="news__item" data-aos="fade-in" data-aos-delay="800">
                                 <span class="news__item--sign">
                                     Сравнение: YO.GO! VS Другой трейдинг бот
                                 </span>
@@ -638,10 +648,10 @@
             <div class="section" id="faq">
                 <div class="faq__container container">
                     <div class="inner">
-                        <h2 class="faq__title title">Вопросы и ответы:</h2>
+                        <h2 class="faq__title title" data-aos="fade-in">Вопросы и ответы:</h2>
 
                         <div class="faq__items">
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Что такое YO.GO!?</span>
                                     <span class="faq-item__icon">
@@ -668,7 +678,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Как работает YO.GO!?</span>
                                     <span class="faq-item__icon">
@@ -707,7 +717,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Кто управляет системой?</span>
                                     <span class="faq-item__icon">
@@ -737,7 +747,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Какие активы торгует YO.GO!?</span>
                                     <span class="faq-item__icon">
@@ -761,7 +771,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Сколько я могу заработать?</span>
                                     <span class="faq-item__icon">
@@ -791,7 +801,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Как насчёт рисков?</span>
                                     <span class="faq-item__icon">
@@ -823,7 +833,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Можно ли вывести средства?</span>
                                     <span class="faq-item__icon">
@@ -852,7 +862,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Как работает реферальная программа?</span>
                                     <span class="faq-item__icon">
@@ -884,7 +894,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Безопасно ли это?</span>
                                     <span class="faq-item__icon">
@@ -915,7 +925,7 @@
                                 </div>
                             </div>
 
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-in">
                                 <button class="faq-item__btn item">
                                     <span class="faq-item__label text">Как начать?</span>
                                     <span class="faq-item__icon">
@@ -952,12 +962,12 @@
             <div class="footer__container container">
                 <div class="footer__inner">
                     <div class="footer__part item">
-                        <a href="#" class="logo item">
+                        <a href="/" class="logo item">
                             <img src="img/logo-icon.svg" alt="logo">
                             <img src="img/logo-text.svg" alt="logo">
                         </a>
                         <div class="footer__btns item">
-                            <a href="#" class="item">
+                            <a href="https://t.me/+9Wsu6icser4wM2Iy" target="_blank" class="item">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -965,18 +975,18 @@
                                         fill="#71717A" />
                                 </svg>
                             </a>
-                            <a href="#" class="footer__btn btn">Начать торговлю</a>
+                            <a href="https://t.me/yogoodbot" target="_blank" class="footer__btn btn">Начать торговлю</a>
                         </div>
                     </div>
                     <div class="footer__part item">
-                        <button class="footer__anchor">Как работает?</button>
-                        <button class="footer__anchor">Финансовая модель</button>
-                        <button class="footer__anchor">Реферальная программа</button>
-                        <button class="footer__anchor">Как начать работу</button>
-                        <button class="footer__anchor">FAQ</button>
+                        <a href="#" class="footer__anchor go" data-point="howwork">Как работает?</a>
+                        <a href="#" class="footer__anchor go" data-point="finance">Финансовая модель</a>
+                        <a href="#" class="footer__anchor go" data-point="ref">Реферальная программа</a>
+                        <a href="#" class="footer__anchor go" data-point="howstart">Как начать работу</a>
+                        <a href="#" class="footer__anchor go" data-point="faq">FAQ</a>
                     </div>
                     <div class="footer__part item">
-                        <p class="footer__copy">© 2025 Yo.Go! . All rights reserved.</p>
+                        <p class="footer__copy">© 2025 Yo.Go!. All rights reserved.</p>
                         <div class="footer__btns item">
                             <a href="#" class="footer__link">Политика конфиденциальности</a>
                             <a href="#" class="footer__link">Поддержка</a>
@@ -987,6 +997,10 @@
         </footer>
     </div>
 
+    <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
