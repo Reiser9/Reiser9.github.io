@@ -231,6 +231,22 @@ button {
 
 .section {
     padding: 40px 0;
+
+    @media (max-width: 1200px) {
+        padding: 36px 0;
+    }
+
+    @media (max-width: 992px) {
+        padding: 32px 0;
+    }
+
+    @media (max-width: 76px) {
+        padding: 24px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 20px 0;
+    }
 }
 
 .inner {
@@ -260,6 +276,22 @@ button {
     font-size: 40px;
     max-width: 694px;
     text-align: center;
+
+    @media (max-width: 1200px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 24px;
+    }
 }
 
 .btn {
@@ -272,6 +304,22 @@ button {
     border-radius: 6px;
     border: 1px solid #6c7278;
     padding: 19px 40px;
+
+    @media (max-width: 1200px) {
+        padding: 18px 38px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 17px 34px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 15px 30px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 14px 28px;
+    }
 }
 
 .text {
@@ -283,6 +331,14 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 56px;
+
+    @media (max-width: 1200px) {
+        gap: 24px;
+    }
+
+    @media (max-width: 576px) {
+        gap: 20px;
+    }
 }
 
 .trading-card {
@@ -290,6 +346,21 @@ button {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @media (max-width: 1200px) {
+        @include adaptive-width(3, 24);
+        gap: 20px;
+    }
+
+    @media (max-width: 992px) {
+        @include adaptive-width(2, 24);
+        gap: 16px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        gap: 12px;
+    }
 
     &__img {
         padding-bottom: 76.545%;
@@ -299,11 +370,31 @@ button {
         display: flex;
         flex-direction: column;
         gap: 12px;
+
+        @media (max-width: 992px) {
+            gap: 12px;
+        }
+
+        @media (max-width: 576px) {
+            gap: 8px;
+        }
     }
 
     &__title {
         font-weight: 700;
         font-size: 24px;
+
+        @media (max-width: 992px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
 
     &__label {
@@ -315,6 +406,14 @@ button {
     &__text {
         font-weight: 500;
         color: #acb5bb;
+
+        @media (max-width: 992px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -327,12 +426,32 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 24px;
+
+    @media (max-width: 1200px) {
+        gap: 8px 20px;
+    }
+
+    @media (max-width: 992px) {
+        gap: 8px 16px;
+    }
 }
 
 .model-card {
     @include adaptive-width(3, 24);
     border: 1px solid rgba($color: #fff, $alpha: 0.1);
     border-radius: 10px;
+
+    @media (max-width: 1200px) {
+        @include adaptive-width(3, 20);
+    }
+
+    @media (max-width: 992px) {
+        @include adaptive-width(2, 16);
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 
     &__img {
         padding-bottom: 91.81%;
@@ -361,6 +480,22 @@ button {
         font-size: 42px;
         max-width: 900px;
 
+        @media (max-width: 1200px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 26px;
+        }
+
         span {
             // TODO: тут должен быть градиентный текст
             color: #6b89ff;
@@ -384,6 +519,14 @@ button {
         font-size: 18px;
         font-weight: 800;
 
+        @media (max-width: 992px) {
+            font-size: 17px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+
         span {
             color: rgba(248, 248, 248, 0.7);
         }
@@ -397,6 +540,14 @@ button {
     &__avg {
         font-weight: 800;
         font-size: 22px;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
 
     &__peoples {
@@ -445,16 +596,45 @@ button {
     flex-direction: column;
     border-radius: 24px;
 
+    @media (max-width: 992px) {
+        border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+        border-radius: 16px;
+    }
+
+    @media (max-width: 576px) {
+        border-radius: 12px;
+    }
+
     &__btn {
         padding: 24px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-align: left;
+
+        @media (max-width: 992px) {
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 16px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 12px;
+        }
     }
 
     &__label {
         font-weight: 600;
         font-size: 18px;
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
     }
 
     &__icon {
@@ -465,6 +645,7 @@ button {
         justify-content: center;
         align-items: center;
         border: 1px solid rgba($color: #fff, $alpha: 0.1);
+        flex-shrink: 0;
     }
 
     &__plus {
@@ -483,6 +664,18 @@ button {
         flex-direction: column;
         gap: 8px;
 
+        @media (max-width: 992px) {
+            padding: 12px 20px 20px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 10px 16px 16px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 8px 12px 12px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -491,6 +684,21 @@ button {
             width: calc(100% - 48px);
             height: 1px;
             background-color: rgba($color: #fff, $alpha: 0.1);
+
+            @media (max-width: 992px) {
+                left: 20px;
+                width: calc(100% - 40px);
+            }
+
+            @media (max-width: 768px) {
+                left: 16px;
+                width: calc(100% - 32px);
+            }
+
+            @media (max-width: 768px) {
+                left: 12px;
+                width: calc(100% - 24px);
+            }
         }
     }
 
@@ -525,6 +733,7 @@ button {
         bottom: 0;
         left: 0;
         z-index: -1;
+        width: 100%;
     }
 
     &__container {
@@ -535,16 +744,30 @@ button {
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        @media (max-width: 992px) {
+            gap: 16px;
+        }
+
+        @media (max-width: 576px) {
+            gap: 12px;
+        }
     }
 
     &__part {
-        display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
+
+        @media (max-width: 576px) {
+            gap: 12px;
+            flex-direction: column;
+        }
     }
 
     &__btns {
         gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__anchor {
@@ -575,30 +798,83 @@ button {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+
+        @media (max-width: 1200px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 992px) {
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 12px;
+        }
     }
 }
 .earn-card {
     @include adaptive-width(3, 24);
-    border: 1px solid #44444A;
+    border: 1px solid #44444a;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding: 24px;
 
+    @media (max-width: 1200px) {
+        @include adaptive-width(3, 20);
+    }
+
+    @media (max-width: 992px) {
+        @include adaptive-width(2, 16);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    @media (max-width: 576px) {
+        gap: 12px;
+        padding: 12px;
+    }
+
     &__label {
         font-weight: 600;
+
+        @media (max-width: 576px) {
+            font-size: 15px;
+        }
     }
 
     &__title {
         font-weight: 500;
         font-size: 28px;
+
+        @media (max-width: 1200px) {
+            font-size: 26px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 20px;
+        }
     }
 
     &__benefit {
         font-weight: 500;
         font-size: 10px;
-        color: #6C7278;
+        color: #6c7278;
         width: 100%;
         text-align: center;
         position: relative;
@@ -611,7 +887,7 @@ button {
             transform: translateY(-50%);
             width: 100%;
             height: 1px;
-            background-color: #6C7278;
+            background-color: #6c7278;
             z-index: -2;
         }
 
@@ -637,5 +913,9 @@ button {
     &__item {
         display: flex;
         gap: 10px;
+
+        @media (max-width: 576px) {
+            font-size: 15px;
+        }
     }
 }
