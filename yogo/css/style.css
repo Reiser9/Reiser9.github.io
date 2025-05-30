@@ -227,30 +227,7 @@ button {
 .howwork{
   position: relative;
   z-index: 2;
-}
-
-@media (max-width: 1200px) {
-  .section {
-    padding: 36px 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .section {
-    padding: 32px 0;
-  }
-}
-
-@media (max-width: 76px) {
-  .section {
-    padding: 24px 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .section {
-    padding: 20px 0;
-  }
+  background: #000;
 }
 
 .inner {
@@ -407,6 +384,8 @@ button {
   height: 100%;
   top: 0;
   left: 0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .trading-card__content {
@@ -1255,6 +1234,22 @@ button {
   left: 0;
 }
 
+@media (max-width: 576px) {
+  .news__item--img{
+    top: -140px;
+  }
+}
+@media (max-width: 440px) {
+  .news__item--img{
+    top: -90px;
+  }
+}
+@media (max-width: 370px) {
+  .news__item--img{
+    top: -50px;
+  }
+}
+
 /* Шапка */
 .header {
   width: 100%;
@@ -1397,6 +1392,12 @@ button {
   z-index: 9;
 }
 
+@media (max-width: 480px) {
+  .mainlink__block{
+    font-size: 11px;
+  }
+}
+
 .mainlink__block:hover {
   border: 1px solid rgba(252, 252, 253, 0.4);
   color: #fff;
@@ -1409,6 +1410,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .mainlink__block--star{
+    padding: 4px 8px;
+  }
 }
 
 .mainlink__block--arrow {
@@ -1428,6 +1435,13 @@ button {
   padding-bottom: 10px;
   position: relative;
   z-index: 9;
+}
+
+@media (max-width: 768px) {
+  .main__title--inner{
+    margin-top: 25px;
+    padding-top: 8px;
+  }
 }
 
 .main__title--inner:before,
@@ -1455,29 +1469,34 @@ button {
   text-align: center;
   width: 100%;
   max-width: 1000px;
+  min-height: 144px;
 }
 
 @media (max-width: 1200px) {
   .main__title {
     font-size: 64px;
+    min-height: 136px;
   }
 }
 
 @media (max-width: 992px) {
   .main__title {
     font-size: 54px;
+    min-height: 118px;
   }
 }
 
 @media (max-width: 768px) {
   .main__title {
     font-size: 44px;
+    min-height: 98px;
   }
 }
 
 @media (max-width: 576px) {
   .main__title {
     font-size: 36px;
+    min-height: 108px;
   }
 }
 
@@ -1504,7 +1523,7 @@ button {
 
 @media (max-width: 576px) {
   .main__text {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -1562,8 +1581,8 @@ button {
 }
 
 .mainsection__video {
-  width: 100%;
-  max-width: 1900px;
+  width: 120%;
+  max-width: 2200px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1654,8 +1673,8 @@ button {
 }
 
 .mainsection__light2 {
-  bottom: -50px;
-  right: 0;
+  bottom: -200px;
+  right: -500px;
 }
 
 .mainsection__ellipse,
@@ -1747,8 +1766,17 @@ button {
   right: 0;
 }
 
+.main__grid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
 @media (max-width:992px) {
-  .mainsection__inner > img {
+  .mainsection__inner > img:not(.main__grid) {
     display: none;
   }
 }

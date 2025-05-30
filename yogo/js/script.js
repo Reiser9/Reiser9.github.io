@@ -88,4 +88,52 @@ navLink.forEach(
 // const burgerBtn = document.querySelector('.burger-btn');
 const headerNav = document.querySelector('.header__nav');
 const body = document.body;
+
+new TypeIt("#mainTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#howworkTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#financeTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#communityTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#refTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#howstartTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#blogTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
+
+new TypeIt("#faqTitle", {
+    strings: "",
+    speed: 50,
+    waitUntilVisible: true,
+}).go();
 // const wrapper = document.querySelector('.wrapper');
