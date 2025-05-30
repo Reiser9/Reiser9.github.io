@@ -1775,6 +1775,12 @@ button {
   pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  .main__grid{
+    display: none;
+  }
+}
+
 @media (max-width:992px) {
   .mainsection__inner > img:not(.main__grid) {
     display: none;
