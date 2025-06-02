@@ -1057,7 +1057,7 @@ button {
 }
 }
 
-.news__item {
+.news__item, .news__item--single {
   width: calc(100% / 3 - 48px / 3);
   position: relative;
   overflow: hidden;
@@ -1069,6 +1069,25 @@ button {
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
+}
+
+.news__item--single{
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .news__item--single{
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 998px) {
+  .news__item--single .news__item--bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width:992px) {
@@ -1281,6 +1300,14 @@ button {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.header-logo img{
+  max-width: 50px;
+}
+
+.logo img{
+  max-width: 50px;
 }
 
 @media (max-width: 576px) {
@@ -1791,5 +1818,90 @@ button {
   .mainsection__light{
     opacity: 0.5;
     max-width: 400px;
+  }
+}
+
+.newssingle{
+  width: 100%;
+  padding: 118px 0 60px 0;
+}
+
+.newssingle__inner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.newssingle__back{
+  display: inline-block;
+  padding: 16px 33px;
+  border: 1px solid #2450FF;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2450FF;
+  border-radius: 9px;
+}
+
+.newssingle__back:hover{
+  background: #2450FF;
+  color: #fff;
+}
+
+.newssingle__content, .newssingle__item, .newssingle__list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.newssingle__item{
+  gap: 16px;
+}
+
+.newssingle__item p{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  line-height: 1.4;
+}
+
+.newssingle__item p span{
+  font-weight: 700;
+}
+
+.newssingle__list{
+  gap: 6px;
+}
+
+.newssingle__item h2{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+}
+
+@media (max-width: 998px) {
+  .newssingle__item p{
+    font-size: 18px;
+  }
+
+  .newssingle__item h2{
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .newssingle__item p{
+    font-size: 16px;
+  }
+
+  .newssingle__item h2{
+    font-size: 24px;
   }
 }
