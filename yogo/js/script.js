@@ -65,29 +65,73 @@ document.addEventListener('click', function (e) {
     }
 });
 
-const navLink = document.querySelectorAll(".go");
-navLink.forEach(
-    elem => elem.addEventListener("click", function(e){
-        e.preventDefault();
+// const navLink = document.querySelectorAll(".go");
+// navLink.forEach(
+//     elem => elem.addEventListener("click", function(e){
+//         e.preventDefault();
         
-        const idPoint = this.dataset.point;
+//         const idPoint = this.dataset.point;
         
-        if(!idPoint) return;
+//         if(!idPoint) return;
 
-        document.querySelector("#" + idPoint).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+//         document.querySelector("#" + idPoint).scrollIntoView({
+//             behavior: "smooth",
+//             block: "start"
+//         });
 
-        body.classList.remove('lock');
-        headerNav.classList.remove('active');
-    })
-);
+//         body.classList.remove('lock');
+//         headerNav.classList.remove('active');
+//     })
+// );
 
 // бургер меню
 // const burgerBtn = document.querySelector('.burger-btn');
 const headerNav = document.querySelector('.header__nav');
 const body = document.body;
+
+document.addEventListener("DOMContentLoaded", function(){
+    const goLinks = document.querySelectorAll('.go');
+
+    goLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const targetId = this.dataset.point;
+
+            if (!targetId) {
+                return;
+            }
+
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            } else {
+                const baseUrl = window.location.origin;
+                window.location.href = baseUrl + '/#' + targetId;
+            }
+        });
+    });
+
+    if (window.location.hash) {
+        const hashId = window.location.hash.substring(1);
+        const hashElement = document.getElementById(hashId);
+
+        if (hashElement) {
+            hashElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            history.replaceState({}, document.title, window.location.pathname + window.location.search);
+        } else {
+            history.replaceState({}, document.title, window.location.pathname + window.location.search);
+        }
+    }
+});
 
 // new TypeIt("#mainTitle", {
 //     strings: "",
