@@ -1329,7 +1329,7 @@ button {
   color: #fff;
   font-weight: 700;
   outline: none;
-  padding-right: 7px;
+  padding: 0 9px 0 4px;
 }
 
 @media (max-width: 420px) {
