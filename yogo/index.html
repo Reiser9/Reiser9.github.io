@@ -34,16 +34,30 @@
                     </a>
 
                     <nav class="header__nav">
-                        <a href="#" class="header__nav--link go" data-point="howwork">Как работает?</a>
-                        <a href="#" class="header__nav--link go" data-point="finance">Финансовая модель</a>
-                        <a href="#" class="header__nav--link go" data-point="ref">Реферальная программа</a>
-                        <a href="#" class="header__nav--link go" data-point="howstart">Как начать работу</a>
-                        <a href="#" class="header__nav--link go" data-point="faq">FAQ</a>
+                        <a href="#" class="header__nav--link go" data-point="howwork" data-translate="menu1">Как работает?</a>
+                        <a href="#" class="header__nav--link go" data-point="finance" data-translate="menu2">Финансовая модель</a>
+                        <a href="#" class="header__nav--link go" data-point="ref" data-translate="menu3">Реферальная программа</a>
+                        <a href="#" class="header__nav--link go" data-point="howstart" data-translate="menu4">Как начать работу</a>
+                        <a href="#" class="header__nav--link go" data-point="faq" data-translate="menu5">FAQ</a>
                     </nav>
 
-                    <a href="https://t.me/yogoodbot" target="_blank" class="btn header__link">
-                        Начать торговлю
-                    </a>
+                    <div class="header__wrap">
+                        <div class="lang__wrapper">
+                            <select class="lang__select">
+                                <option value="ru" data-translate="ru">RU</option>
+                                <option value="en" data-translate="en">ENG</option>
+                                <option value="es" data-translate="es">ESP</option>
+                            </select>
+
+                            <svg class="lang__select--arrow" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 6L6.53109 0.75H0.468911L3.5 6Z" fill="white"/>
+                            </svg>
+                        </div>
+
+                        <a href="https://t.me/yogoodbot" target="_blank" class="btn header__link" data-translate="start">
+                            Начать торговлю
+                        </a>
+                    </div>
 
                     <button class="burger-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
@@ -91,7 +105,7 @@
                             </svg>
                         </span>
 
-                        YO.GO! — автоматическая торговля в Telegram.
+                        <span data-translate="start_block">YO.GO! — автоматическая торговля в Telegram.</span>
 
                         <svg class="mainlink__block--arrow" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.013 10L6.051 9.046L9.391 5.696H0V4.304H9.392L6.05 0.96L7.013 0L12 5L7.013 10Z" fill="white"/>
@@ -100,20 +114,20 @@
 
                     <div class="main__title--inner">
                         <h1 class="main__title" id="mainTitle">
-                            <span>Умная</span> торговая <span>система</span> нового поколения.
+                            <span class="blue" data-translate="main_title1">Умная</span> <span data-translate="main_title2">торговая</span> <span class="blue" data-translate="main_title3">система</span> <span data-translate="main_title4">нового поколения</span>
                         </h1>
 
-                        <p class="main__text">
+                        <p class="main__text" data-translate="main_text">
                             Автоматизируйте трейдинг и зарабатывайте без ограничений
                         </p>
                     </div>
 
                     <div class="main__links">
-                        <a href="https://t.me/yogoodbot" target="_blank" class="btn main__link">
+                        <a href="https://t.me/yogoodbot" target="_blank" class="btn main__link" data-translate="open_telegram">
                             Открыть в Telegram
                         </a>
 
-                        <a href="#" class="main__link--more go" data-point="howwork">
+                        <a href="#" class="main__link--more go" data-point="howwork" data-translate="more">
                             Узнать подробнее
 
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,9 +151,9 @@
                                         d="M12.6267 3.61336L9.17999 1.62002C8.51999 1.24002 7.48666 1.24002 6.82666 1.62002L3.34666 3.62669C1.96666 4.56002 1.88666 4.70002 1.88666 6.18669V9.80669C1.88666 11.2934 1.96666 11.44 3.37332 12.3867L6.81999 14.38C7.15332 14.5734 7.57999 14.6667 7.99999 14.6667C8.41999 14.6667 8.84666 14.5734 9.17332 14.38L12.6533 12.3734C14.0333 11.44 14.1133 11.3 14.1133 9.81335V6.18669C14.1133 4.70002 14.0333 4.56002 12.6267 3.61336ZM7.99999 10.1667C6.80666 10.1667 5.83332 9.19335 5.83332 8.00002C5.83332 6.80669 6.80666 5.83335 7.99999 5.83335C9.19332 5.83335 10.1667 6.80669 10.1667 8.00002C10.1667 9.19335 9.19332 10.1667 7.99999 10.1667Z"
                                         fill="white" />
                                 </svg>
-                                Как работает наша система?
+                                <span data-translate="work">Как работает наша система?</span>
                             </div>
-                            <h2 class="title" id="howworkTitle">Автоматизированная торговля, где каждая копейка работает на вас</h2>
+                            <h2 class="title" id="howworkTitle" data-translate="work_title">Автоматизированная торговля, где каждая копейка работает на вас</h2>
                         </div>
 
                         <div class="trading__cards">
@@ -160,9 +174,9 @@
                                                 d="M17.5392 2.16663H8.46082C4.51749 2.16663 2.16666 4.51746 2.16666 8.46079V17.5283C2.16666 21.4825 4.51749 23.8333 8.46082 23.8333H17.5283C21.4717 23.8333 23.8225 21.4825 23.8225 17.5391V8.46079C23.8333 4.51746 21.4825 2.16663 17.5392 2.16663ZM8.26582 19.6625C8.26582 20.1066 7.89749 20.475 7.45332 20.475C7.00916 20.475 6.64082 20.1066 6.64082 19.6625V17.42C6.64082 16.9758 7.00916 16.6075 7.45332 16.6075C7.89749 16.6075 8.26582 16.9758 8.26582 17.42V19.6625ZM13.8125 19.6625C13.8125 20.1066 13.4442 20.475 13 20.475C12.5558 20.475 12.1875 20.1066 12.1875 19.6625V15.1666C12.1875 14.7225 12.5558 14.3541 13 14.3541C13.4442 14.3541 13.8125 14.7225 13.8125 15.1666V19.6625ZM19.3592 19.6625C19.3592 20.1066 18.9908 20.475 18.5467 20.475C18.1025 20.475 17.7342 20.1066 17.7342 19.6625V12.9241C17.7342 12.48 18.1025 12.1116 18.5467 12.1116C18.9908 12.1116 19.3592 12.48 19.3592 12.9241V19.6625ZM19.3592 9.50079C19.3592 9.94496 18.9908 10.3133 18.5467 10.3133C18.1025 10.3133 17.7342 9.94496 17.7342 9.50079V8.44996C14.9717 11.2883 11.5158 13.2925 7.64832 14.2566C7.58332 14.2783 7.51832 14.2783 7.45332 14.2783C7.08499 14.2783 6.75999 14.0291 6.66249 13.6608C6.55416 13.2275 6.81416 12.7833 7.25832 12.675C10.9092 11.765 14.1592 9.84746 16.7375 7.13913H15.3833C14.9392 7.13913 14.5708 6.77079 14.5708 6.32663C14.5708 5.88246 14.9392 5.51413 15.3833 5.51413H18.5575C18.6008 5.51413 18.6333 5.53579 18.6767 5.53579C18.7308 5.54663 18.785 5.54663 18.8392 5.56829C18.8933 5.58996 18.9367 5.62246 18.9908 5.65496C19.0233 5.67663 19.0558 5.68746 19.0883 5.70913C19.0992 5.71996 19.0992 5.73079 19.11 5.73079C19.1533 5.77413 19.1858 5.81746 19.2183 5.86079C19.2508 5.90413 19.2833 5.93663 19.2942 5.97996C19.3158 6.02329 19.3158 6.06663 19.3267 6.12079C19.3375 6.17496 19.3592 6.22913 19.3592 6.29413C19.3592 6.30496 19.37 6.31579 19.37 6.32663V9.50079H19.3592Z"
                                                 fill="white" />
                                         </svg>
-                                        Старт за минуту
+                                        <span data-translate="work_title1">Старт за минуту</span>
                                     </p>
-                                    <p class="trading-card__text text">
+                                    <p class="trading-card__text text" data-translate="work_text1">
                                         Ваши средства поступают в общий пул сразу после пополнения — нет ожидания.
                                         Сделки исполняются в реальном времени.
                                     </p>
@@ -185,9 +199,9 @@
                                                 d="M20.4184 4.46333L14.46 2.23166C13.8425 2.00416 12.835 2.00416 12.2175 2.23166L6.2592 4.46333C5.11087 4.89666 4.1792 6.23999 4.1792 7.46416V16.2392C4.1792 17.1167 4.75337 18.2758 5.45753 18.7958L11.4159 23.2483C12.4667 24.0392 14.1892 24.0392 15.24 23.2483L21.1984 18.7958C21.9025 18.265 22.4767 17.1167 22.4767 16.2392V7.46416C22.4875 6.23999 21.5559 4.89666 20.4184 4.46333ZM17.1034 10.53L12.445 15.1883C12.2825 15.3508 12.0767 15.4267 11.8709 15.4267C11.665 15.4267 11.4592 15.3508 11.2967 15.1883L9.56337 13.4333C9.2492 13.1192 9.2492 12.5992 9.56337 12.285C9.87753 11.9708 10.3975 11.9708 10.7117 12.285L11.8817 13.455L15.9659 9.37083C16.28 9.05666 16.8 9.05666 17.1142 9.37083C17.4284 9.68499 17.4284 10.2158 17.1034 10.53Z"
                                                 fill="white" />
                                         </svg>
-                                        Прогнозирования роста
+                                        <span data-translate="work_title2">Прогнозирования роста</span>
                                     </p>
-                                    <p class="trading-card__text text">
+                                    <p class="trading-card__text text" data-translate="work_text2">
                                         YO.GO! изучает поведение рынка в реальном времени. Модель сверяет ситуацию с
                                         тысячами прошлых кейсов. Если вероятность положительного исхода >70% —
                                         происходит вход в сделку.
@@ -211,9 +225,10 @@
                                                 d="M19.4025 11.6134H16.055V3.81339C16.055 1.99339 15.0692 1.62505 13.8667 2.99005L13 3.97589L5.66585 12.3176C4.65835 13.4551 5.08085 14.3867 6.59751 14.3867H9.94501V22.1867C9.94501 24.0067 10.9308 24.3751 12.1333 23.0101L13 22.0242L20.3342 13.6826C21.3417 12.5451 20.9192 11.6134 19.4025 11.6134Z"
                                                 fill="white" />
                                         </svg>
-                                        Торговля с акцентом на стабильность
+                                        <span data-translate="work_title3">Торговля с акцентом на стабильность</span>
+                                        
                                     </p>
-                                    <p class="trading-card__text text">
+                                    <p class="trading-card__text text" data-translate="work_text3">
                                         Мы не делаем ставку на одну большую сделку.
                                         Капитал дробится на десятки частей — система совершает множество микросделок,
                                         распределяя риски и стабилизируя результат.
@@ -236,9 +251,9 @@
                                         d="M11.94 7.14668H9.88001V2.34668C9.88001 1.22668 9.27334 1.00001 8.53334 1.84001L8.00001 2.44668L3.48667 7.58001C2.86667 8.28001 3.12667 8.85335 4.06001 8.85335H6.12001V13.6533C6.12001 14.7733 6.72667 15 7.46667 14.16L8.00001 13.5533L12.5133 8.42001C13.1333 7.72001 12.8733 7.14668 11.94 7.14668Z"
                                         fill="white" />
                                 </svg>
-                                Ваши средства — под контролем
+                                <span data-translate="finance">Ваши средства — под контролем</span>
                             </div>
-                            <h2 class="title" id="financeTitle">Финансовая модель YO.GO!</h2>
+                            <h2 class="title" id="financeTitle" data-translate="finance_title">Финансовая модель YO.GO!</h2>
                         </div>
 
                         <div class="model__cards">
@@ -247,8 +262,8 @@
                                     <img src="img/model/1.png" alt="pic">
                                 </div>
                                 <div class="model-card__content">
-                                    <p class="model-card__title">Пополнение</p>
-                                    <p class="model-card__text text">Автоматическое пополнение, через любой удобный TON
+                                    <p class="model-card__title" data-translate="finance_title1">Пополнение</p>
+                                    <p class="model-card__text text" data-translate="finance_text1">Автоматическое пополнение, через любой удобный TON
                                         сервис. Вы вносите депозит в USDT через сеть TON — быстро и удобно.</p>
                                 </div>
                             </div>
@@ -258,8 +273,8 @@
                                     <img src="img/model/2.png" alt="pic">
                                 </div>
                                 <div class="model-card__content">
-                                    <p class="model-card__title">AML фильтрация</p>
-                                    <p class="model-card__text text">Прежде, чем средства попадают в пул, они проходят
+                                    <p class="model-card__title" data-translate="finance_title2">AML фильтрация</p>
+                                    <p class="model-card__text text" data-translate="finance_text2">Прежде, чем средства попадают в пул, они проходят
                                         АМL проверку на промежуточной бирже. Если средства не прошли проверку, они будут
                                         моментально возвращены отправителю в полном объеме.</p>
                                 </div>
@@ -270,8 +285,8 @@
                                     <img src="img/model/3.png" alt="pic">
                                 </div>
                                 <div class="model-card__content">
-                                    <p class="model-card__title">Торговый пул</p>
-                                    <p class="model-card__text text">После проверки средства поступают в единый торговый
+                                    <p class="model-card__title" data-translate="finance_title3">Торговый пул</p>
+                                    <p class="model-card__text text" data-translate="finance_text3">После проверки средства поступают в единый торговый
                                         пул, которым управляет нейросеть. Доступ к пулу закрыт от сторонних вмешательств
                                         — платформа не имеет доступа к вашим кошелькам, а только к средствам, выделенным
                                         на торговлю.</p>
@@ -283,8 +298,8 @@
                                     <img src="img/model/4.png" alt="pic">
                                 </div>
                                 <div class="model-card__content">
-                                    <p class="model-card__title">Вывод</p>
-                                    <p class="model-card__text text">Вывод доступен в любой момент — нету
+                                    <p class="model-card__title" data-translate="finance_title4">Вывод</p>
+                                    <p class="model-card__text text" data-translate="finance_text4">Вывод доступен в любой момент — нету
                                         locked-периодов. Средства возвращаются обратным маршрутом через ту же
                                         промежуточную биржу, чтобы сохранить чистоту движения капитала.</p>
                                 </div>
@@ -295,8 +310,8 @@
                                     <img src="img/model/5.png" alt="pic">
                                 </div>
                                 <div class="model-card__content">
-                                    <p class="model-card__title">Процесс</p>
-                                    <p class="model-card__text text">Формируете инвойс на вывод в личном кабинете и
+                                    <p class="model-card__title" data-translate="finance_title5">Процесс</p>
+                                    <p class="model-card__text text" data-translate="finance_text5">Формируете инвойс на вывод в личном кабинете и
                                         ожидаете получение средств. Обычно это занимает 15 минут.</p>
                                 </div>
                             </div>
@@ -306,8 +321,8 @@
                                     <img src="img/model/6.png" alt="pic">
                                 </div>
                                 <div class="model-card__content">
-                                    <p class="model-card__title">Безопасность</p>
-                                    <p class="model-card__text text">YO.GO! Получает только публичный адрес вашего
+                                    <p class="model-card__title" data-translate="finance_title6">Безопасность</p>
+                                    <p class="model-card__text text" data-translate="finance_text6">YO.GO! Получает только публичный адрес вашего
                                         кошелька. Все действия системы защищены шифрованием и не зависят от
                                         человеческого фактора.</p>
                                 </div>
@@ -321,12 +336,12 @@
                 <div class="container">
                     <div class="inner">
                         <h2 class="community__title title" id="communityTitle">
-                            Присоединяйтесь к бизнес комьюнити YO.GO! — <span>живое общение, реальные кейсы, обсуждение сделок, отзывы и ответы на вопросы</span> в реальном времени.
+                            <span data-translate="community_title1">Присоединяйтесь к бизнес комьюнити YO.GO! —</span> <span class="blue" data-translate="community_title2">живое общение, реальные кейсы, обсуждение сделок, отзывы и ответы на вопросы</span> <span data-translate="community_title3">в реальном времени.</span>
                         </h2>
 
                         <div class="community__wrapper">
                             <div class="community__stats">
-                                <p class="community__text">1000+ участников</p>
+                                <p class="community__text" data-translate="peoples">1000+ участников</p>
                                 
                                 <div class="community__stars">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
@@ -395,7 +410,7 @@
                             </div>
                         </div>
 
-                        <a href="https://t.me/yogoodbot" target="_blank" class="btn">Открыть в Telegram</a>
+                        <a href="https://t.me/yogoodbot" target="_blank" class="btn" data-translate="open_telegram">Открыть в Telegram</a>
                     </div>
                 </div>
             </div>
@@ -411,16 +426,16 @@
                                         d="M13.22 5.80003L10.2 2.78003C9.56667 2.1467 8.69334 1.8067 7.8 1.85337L4.46667 2.01337C3.13334 2.07337 2.07334 3.13337 2.00667 4.46003L1.84667 7.79337C1.80667 8.6867 2.14 9.56003 2.77334 10.1934L5.79334 13.2134C7.03334 14.4534 9.04667 14.4534 10.2933 13.2134L13.22 10.2867C14.4667 9.05337 14.4667 7.04003 13.22 5.80003ZM6.33334 8.25337C5.27334 8.25337 4.41334 7.39337 4.41334 6.33337C4.41334 5.27337 5.27334 4.41337 6.33334 4.41337C7.39334 4.41337 8.25334 5.27337 8.25334 6.33337C8.25334 7.39337 7.39334 8.25337 6.33334 8.25337Z"
                                         fill="white" />
                                 </svg>
-                                Реферальная программа
+                                <span data-translate="ref">Реферальная программа</span>
                             </div>
-                            <h2 class="title" id="refTitle">Зарабатывайте вместе с нами</h2>
+                            <h2 class="title" id="refTitle" data-translate="ref_title">Зарабатывайте вместе с нами</h2>
                         </div>
 
                         <div class="earn__cards">
                             <div class="earn-card">
-                                <p class="earn-card__label">1 уровень</p>
-                                <p class="earn-card__title">Лично приглашённые вами пользователи.</p>
-                                <p class="earn-card__benefit">Что вы получаете</p>
+                                <p class="earn-card__label" data-translate="level1">1 уровень</p>
+                                <p class="earn-card__title" data-translate="ref_title1">Лично приглашённые вами пользователи.</p>
+                                <p class="earn-card__benefit" data-translate="who_you_get">Что вы получаете</p>
                                 <div class="earn-card__items">
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -429,7 +444,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        +1% от их прибыли — пассивный доход с каждой успешной сделки.
+                                        <span data-translate="ref_point1">+1% от их прибыли — пассивный доход с каждой успешной сделки.</span>
                                     </div>
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -438,7 +453,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        +1% от суммы их пополнений (одноразово при депозите).
+                                        <span data-translate="ref_point1">+1% от суммы их пополнений (одноразово при депозите).</span>
                                     </div>
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -447,15 +462,15 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        Быстрый старт — даже 1 активный реферал приносит от 5 USDT в день.
+                                        <span data-translate="ref_point3">Быстрый старт — даже 1 активный реферал приносит от 5 USDT в день.</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="earn-card">
-                                <p class="earn-card__label">2-й уровень</p>
-                                <p class="earn-card__title">Рефералы ваших рефералов.</p>
-                                <p class="earn-card__benefit">Что вы получаете</p>
+                                <p class="earn-card__label" data-translate="level2">2-й уровень</p>
+                                <p class="earn-card__title" data-translate="ref_title2">Рефералы ваших рефералов.</p>
+                                <p class="earn-card__benefit" data-translate="who_you_get">Что вы получаете</p>
                                 <div class="earn-card__items">
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -464,7 +479,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        +2% от прибыли — вдвое выше, чем с первого уровня.
+                                        <span data-translate="ref_point4">+2% от прибыли — вдвое выше, чем с первого уровня.</span>
                                     </div>
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -473,7 +488,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        Автомасштабирование — каждый новый участник 2-го уровня увеличивает ваш доход.
+                                        <span data-translate="ref_point5">Автомасштабирование — каждый новый участник 2-го уровня увеличивает ваш доход.</span>
                                     </div>
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -482,15 +497,15 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        Никаких усилий — вы не приглашали этих людей, но система считает их вашими.
+                                        <span data-translate="ref_point6">Никаких усилий — вы не приглашали этих людей, но система считает их вашими.</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="earn-card">
-                                <p class="earn-card__label">3-й уровень</p>
-                                <p class="earn-card__title">Три уровня — тройная выгода</p>
-                                <p class="earn-card__benefit">Что вы получаете</p>
+                                <p class="earn-card__label" data-translate="level3">3-й уровень</p>
+                                <p class="earn-card__title" data-translate="ref_title3">Три уровня — тройная выгода</p>
+                                <p class="earn-card__benefit" data-translate="who_you_get">Что вы получаете</p>
                                 <div class="earn-card__items">
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -499,7 +514,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        +0.25% от прибыли — пассивный доход с третьего эшелона.
+                                        <span data-translate="ref_point7">+0.25% от прибыли — пассивный доход с третьего эшелона.</span>
                                     </div>
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -508,7 +523,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        Долгосрочная выгода — даже через год вы получаете % с этих пользователей.
+                                        <span data-translate="ref_point8">Долгосрочная выгода — даже через год вы получаете % с этих пользователей.</span>
                                     </div>
                                     <div class="earn-card__item text">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -517,8 +532,7 @@
                                                 d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
                                                 fill="#44D1BB" />
                                         </svg>
-                                        Эффект снежного кома — 10 рефералов 3-го уровня = 80 USDT/день без вашего
-                                        участия.
+                                        <span data-translate="ref_point9">Эффект снежного кома — 10 рефералов 3-го уровня = 80 USDT/день без вашего участия.</span>
                                     </div>
                                 </div>
                             </div>
@@ -530,7 +544,7 @@
             <div class="section" id="howstart">
                 <div class="container">
                     <div class="inner">
-                        <h2 class="title" id="howstartTitle">Как начать работу</h2>
+                        <h2 class="title" id="howstartTitle" data-translate="start_title">Как начать работу</h2>
 
                         <div class="trading__cards">
                             <div class="trading-card">
@@ -548,12 +562,12 @@
                                                 d="M6.44894 4.03809C4.79194 4.03809 3.44894 5.38109 3.44894 7.03809V14.0381C2.89694 14.0381 2.44894 14.4861 2.44894 15.0381V17.0381C2.44894 18.7341 3.69094 20.0381 5.44894 20.0381H19.4489C21.2069 20.0381 22.4489 18.7341 22.4489 17.0381V15.0381C22.4489 14.4861 22.0009 14.0381 21.4489 14.0381V7.03809C21.4489 5.38109 20.1059 4.03809 18.4489 4.03809H6.44894ZM4.44894 16.0381H20.4489V17.0381C20.4489 17.6511 20.0799 18.0381 19.4489 18.0381H5.44894C4.81794 18.0381 4.44894 17.6511 4.44894 17.0381V16.0381Z"
                                                 fill="white" />
                                         </svg>
-                                        Откройте YO.GO в Telegram
+                                        <span data-translate="start_title1">Откройте YO.GO в Telegram</span>
                                     </p>
-                                    <p class="trading-card__label">Где найти:</p>
+                                    <p class="trading-card__label" data-translate="start_text11">Где найти:</p>
                                     <ul class="trading-card__text text">
-                                        <li>— Перейдите по ссылке или найдите @yogoodbot в поиске Telegram.</li>
-                                        <li>— Нажмите «Start» → авторизация за 3 секунды.</li>
+                                        <li data-translate="start_text12">— Перейдите по ссылке или найдите @yogoodbot в поиске Telegram.</li>
+                                        <li data-translate="start_text13">— Нажмите «Start» → авторизация за 3 секунды.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -574,13 +588,13 @@
                                                 d="M4.97656 4.99707C2.76756 4.99707 0.976562 6.78797 0.976562 8.99707V14.9971C0.976562 17.2061 2.76756 18.9971 4.97656 18.9971H18.9766C21.1856 18.9971 22.9766 17.2061 22.9766 14.9971V8.99707C22.9766 6.78797 21.1856 4.99707 18.9766 4.99707H4.97656ZM4.97656 6.99707H5.97656C5.97656 8.65397 4.63356 9.99707 2.97656 9.99707V8.99707C2.97656 7.89247 3.87156 6.99707 4.97656 6.99707ZM17.9766 6.99707H18.9766C20.0816 6.99707 20.9766 7.89247 20.9766 8.99707V9.99707C19.3196 9.99707 17.9766 8.65397 17.9766 6.99707ZM11.9766 8.99707C13.6336 8.99707 14.9766 10.3401 14.9766 11.9971C14.9766 13.6541 13.6336 14.9971 11.9766 14.9971C10.3196 14.9971 8.97656 13.6541 8.97656 11.9971C8.97656 10.3401 10.3196 8.99707 11.9766 8.99707ZM11.9766 10.9971C11.4246 10.9971 10.9766 11.4451 10.9766 11.9971C10.9766 12.5491 11.4246 12.9971 11.9766 12.9971C12.5286 12.9971 12.9766 12.5491 12.9766 11.9971C12.9766 11.4451 12.5286 10.9971 11.9766 10.9971ZM2.97656 13.9971C4.63356 13.9971 5.97656 15.3401 5.97656 16.9971H4.97656C3.87156 16.9971 2.97656 16.1021 2.97656 14.9971V13.9971ZM20.9766 13.9971V14.9971C20.9766 16.1021 20.0816 16.9971 18.9766 16.9971H17.9766C17.9766 15.3401 19.3196 13.9971 20.9766 13.9971Z"
                                                 fill="white" />
                                         </svg>
-                                        Пополните баланс
+                                        <span data-translate="start_title2">Пополните баланс</span>
                                     </p>
-                                    <p class="trading-card__label">Как пополнить:</p>
+                                    <p class="trading-card__label" data-translate="start_text21">Как пополнить:</p>
                                     <ul class="trading-card__text text">
-                                        <li>1. Выберите «Пополнить» → укажите сумму.</li>
-                                        <li>2. Скопируйте адрес TON-кошелька платформы.</li>
-                                        <li>3. Отправьте USDT с вашего кошелька → дождитесь 2 подтверждений в сети (2–7
+                                        <li data-translate="start_text22">1. Выберите «Пополнить» → укажите сумму.</li>
+                                        <li data-translate="start_text23">2. Скопируйте адрес TON-кошелька платформы.</li>
+                                        <li data-translate="start_text24">3. Отправьте USDT с вашего кошелька → дождитесь 2 подтверждений в сети (2–7
                                             мин).</li>
                                     </ul>
                                 </div>
@@ -603,15 +617,15 @@
                                                 fill="white" />
                                         </svg>
 
-                                        Наблюдайте за трейдами
+                                        <span data-translate="start_title3">Наблюдайте за трейдами</span>
                                     </p>
-                                    <p class="trading-card__label">Где смотреть:</p>
+                                    <p class="trading-card__label" data-translate="start_text31">Где смотреть:</p>
                                     <ul class="trading-card__text text">
-                                        <li>Вкладка «Мои трейды»:</li>
-                                        <li>— Время сделки.</li>
-                                        <li>— Криптопара (например, BTC/USDT).</li>
-                                        <li>— Результат: ▲ +1.8% или ▼ -0.5%.</li>
-                                        <li>— График «Динамика баланса»: рост/падение за час, день, неделю.</li>
+                                        <li data-translate="start_text32">Вкладка «Мои трейды»:</li>
+                                        <li data-translate="start_text33">— Время сделки.</li>
+                                        <li data-translate="start_text34">— Криптопара (например, BTC/USDT).</li>
+                                        <li data-translate="start_text35">— Результат: ▲ +1.8% или ▼ -0.5%.</li>
+                                        <li data-translate="start_text36">— График «Динамика баланса»: рост/падение за час, день, неделю.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -623,16 +637,16 @@
             <div class="section">
                 <div class="container">
                     <div class="inner">
-                        <h2 class="faq__title title" id="blogTitle">Последние новости</h2>
+                        <h2 class="faq__title title" id="blogTitle" data-translate="news_title">Последние новости</h2>
 
                         <div class="news__content">
                             <div class="news__item big">
                                 <div class="news__text--block">
-                                    <p class="news__text--title">
+                                    <p class="news__text--title" data-translate="news_title1">
                                         Технический разбор YO.GO!: как работает ИИ-ядро платформы
                                     </p>
 
-                                    <a href="news1.html" class="news__text--link">
+                                    <a href="news1.html" class="news__text--link" data-translate="read">
                                         Читать
                                     </a>
                                 </div>
@@ -641,7 +655,7 @@
                             </div>
 
                             <a href="news2.html"  class="news__item">
-                                <span class="news__item--sign">
+                                <span class="news__item--sign" data-translate="news_title2">
                                     Трейдинг вероятности
                                 </span>
 
@@ -649,7 +663,7 @@
                             </a>
 
                             <a href="news3.html" class="news__item">
-                                <span class="news__item--sign">
+                                <span class="news__item--sign" data-translate="news_title3">
                                     Рост без потери скорости
                                 </span>
 
@@ -657,7 +671,7 @@
                             </a>
 
                             <a href="news4.html" class="news__item">
-                                <span class="news__item--sign">
+                                <span class="news__item--sign" data-translate="news_title4">
                                     Сравнение: YO.GO! VS Другой трейдинг бот
                                 </span>
 
@@ -671,12 +685,12 @@
             <div class="section" id="faq">
                 <div class="faq__container container">
                     <div class="inner">
-                        <h2 class="faq__title title" id="faqTitle">Вопросы и ответы:</h2>
+                        <h2 class="faq__title title" id="faqTitle" data-translate="faq_title">Вопросы и ответы:</h2>
 
                         <div class="faq__items">
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Что такое YO.GO!?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title1">Что такое YO.GO!?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -693,17 +707,17 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">YO.GO! — это интеллектуальная торговая система, которая работает на основе машинного обучения.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer11">YO.GO! — это интеллектуальная торговая система, которая работает на основе машинного обучения.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Система анализирует рынок криптовалют, принимает решения по сделкам и распределяет капитал в пуле, минимизируя риски и стабильно принося доход.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer12">Система анализирует рынок криптовалют, принимает решения по сделкам и распределяет капитал в пуле, минимизируя риски и стабильно принося доход.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Как работает YO.GO!?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title2">Как работает YO.GO!?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -720,29 +734,29 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">1. Вы пополняете баланс в USDT (TON).</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer21">1. Вы пополняете баланс в USDT (TON).</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">2. Средства проходят AML-фильтр и поступают в общий пул.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer22">2. Средства проходят AML-фильтр и поступают в общий пул.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">3. ИИ анализирует 20+ валютных пар и ищет точки входа с вероятностью успеха выше 70%.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer23">3. ИИ анализирует 20+ валютных пар и ищет точки входа с вероятностью успеха выше 70%.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">4. Капитал распределяется на мелкие сделки (обычно 0.5–2% на каждую).</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer24">4. Капитал распределяется на мелкие сделки (обычно 0.5–2% на каждую).</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">5. Сделки открываются и закрываются в реальном времени.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer25">5. Сделки открываются и закрываются в реальном времени.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">6. Прибыль накапливается в вашем балансе.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer26">6. Прибыль накапливается в вашем балансе.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Кто управляет системой?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title3">Кто управляет системой?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -759,20 +773,20 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">YO.GO! — это автоматическая платформа, решения принимает ИИ, а не человек.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer31">YO.GO! — это автоматическая платформа, решения принимает ИИ, а не человек.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Все аккаунты на биржах верифицированы на сотрудников YO.GO.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer32">Все аккаунты на биржах верифицированы на сотрудников YO.GO.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Никаких дроп-аккаунтов, сторонних управляющих или ручного трейдинга.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer33">Никаких дроп-аккаунтов, сторонних управляющих или ручного трейдинга.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Какие активы торгует YO.GO!?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title4">Какие активы торгует YO.GO!?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -789,14 +803,14 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Система фокусируется на активах с достаточной волатильностью и объёмами: BTC, ETH, SOL, DOGE, TON, BNB, XRP и другие ликвидные пары (20 активов).</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer41">Система фокусируется на активах с достаточной волатильностью и объёмами: BTC, ETH, SOL, DOGE, TON, BNB, XRP и другие ликвидные пары (20 активов).</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Сколько я могу заработать?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title5">Сколько я могу заработать?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -813,20 +827,20 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Средняя доходность YO.GO варьируется в пределах 1.4% в сутки.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer51">Средняя доходность YO.GO варьируется в пределах 1.4% в сутки.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Точные результаты зависят от рынка: если высокая волатильность — доход выше, если рынок "спит" — ниже.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer52">Точные результаты зависят от рынка: если высокая волатильность — доход выше, если рынок "спит" — ниже.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">📊 Статистика работы публикуется в чате и доступна в приложении.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer53">📊 Статистика работы публикуется в чате и доступна в приложении.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Как насчёт рисков?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title6">Как насчёт рисков?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -843,22 +857,22 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">YO.GO! — это трейдинг, риски есть всегда.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer61">YO.GO! — это трейдинг, риски есть всегда.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Но система работает на основе модели вероятности, это помогает сократить риски:</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer62">Но система работает на основе модели вероятности, это помогает сократить риски:</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">- Много мелких сделок = минимизация просадок.</p>
-                                        <p class="faq-item__text text">- Ограничение риска на каждую сделку.</p>
-                                        <p class="faq-item__text text">- Нет "алл-ин" позиций.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer63">- Много мелких сделок = минимизация просадок.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer64">- Ограничение риска на каждую сделку.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer65">- Нет "алл-ин" позиций.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Можно ли вывести средства?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title7">Можно ли вывести средства?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -875,19 +889,19 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">✅ Да!</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer71">✅ Да!</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">- Мы не замораживаем депозит.</p>
-                                        <p class="faq-item__text text">- Вывод средств возможен в любой момент.</p>
-                                        <p class="faq-item__text text">- Время обработки: от 5 минут до 72 часов (зависит от нагрузки).</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer72">- Мы не замораживаем депозит.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer73">- Вывод средств возможен в любой момент.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer74">- Время обработки: от 5 минут до 72 часов (зависит от нагрузки).</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Как работает реферальная программа?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title8">Как работает реферальная программа?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -904,22 +918,22 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">YO.GO! предлагает 3-уровневую реферальную систему:</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer81">YO.GO! предлагает 3-уровневую реферальную систему:</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">1. 1% от дохода трейдов ваших приглашённых.</p>
-                                        <p class="faq-item__text text">2. 2% от дохода трейдов их приглашённых.</p>
-                                        <p class="faq-item__text text">3. 0.25% от дохода трейдов третьей линии.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer82">1. 1% от дохода трейдов ваших приглашённых.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer83">2. 2% от дохода трейдов их приглашённых.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer84">3. 0.25% от дохода трейдов третьей линии.</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Бонус: 1% от каждого пополнения 1-й линии.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer85">Бонус: 1% от каждого пополнения 1-й линии.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Безопасно ли это?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title9">Безопасно ли это?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -936,21 +950,21 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">Мы используем:</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer91">Мы используем:</p>
                                     </div>
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">- AML-фильтры для всех пополнений, в пул попадают только "чистые" активы.</p>
-                                        <p class="faq-item__text text">- Ограниченный API-доступ (только торговля, без вывода).</p>
-                                        <p class="faq-item__text text">- Верифицированные аккаунты на биржах.</p>
-                                        <p class="faq-item__text text">- Архитектуру с многоуровневым контролем и резервными аккаунтами.</p>
-                                        <p class="faq-item__text text">- Ваши средства остаются под контролем системы, а не отдельных трейдеров.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer92">- AML-фильтры для всех пополнений, в пул попадают только "чистые" активы.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer93">- Ограниченный API-доступ (только торговля, без вывода).</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer94">- Верифицированные аккаунты на биржах.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer95">- Архитектуру с многоуровневым контролем и резервными аккаунтами.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer96">- Ваши средства остаются под контролем системы, а не отдельных трейдеров.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-item__btn item">
-                                    <span class="faq-item__label text">Как начать?</span>
+                                    <span class="faq-item__label text" data-translate="faq_title10">Как начать?</span>
                                     <span class="faq-item__icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -967,10 +981,10 @@
                                 </button>
                                 <div class="faq-item__content">
                                     <div class="faq-item__paragraph">
-                                        <p class="faq-item__text text">1. Подключите кошелёк.</p>
-                                        <p class="faq-item__text text">2. Пополните баланс.</p>
-                                        <p class="faq-item__text text">3. Ваш капитал начнёт работать автоматически.</p>
-                                        <p class="faq-item__text text">4. Отслеживайте сделки и доходность в приложении.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer101">1. Подключите кошелёк.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer102">2. Пополните баланс.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer103">3. Ваш капитал начнёт работать автоматически.</p>
+                                        <p class="faq-item__text text" data-translate="faq_answer104">4. Отслеживайте сделки и доходность в приложении.</p>
                                     </div>
                                 </div>
                             </div>
@@ -999,20 +1013,20 @@
                                         fill="#71717A" />
                                 </svg>
                             </a>
-                            <a href="https://t.me/yogoodbot" target="_blank" class="footer__btn btn">Начать торговлю</a>
+                            <a href="https://t.me/yogoodbot" target="_blank" class="footer__btn btn" data-translate="start">Начать торговлю</a>
                         </div>
                     </div>
                     <div class="footer__part item">
-                        <a href="#" class="footer__anchor go" data-point="howwork">Как работает?</a>
-                        <a href="#" class="footer__anchor go" data-point="finance">Финансовая модель</a>
-                        <a href="#" class="footer__anchor go" data-point="ref">Реферальная программа</a>
-                        <a href="#" class="footer__anchor go" data-point="howstart">Как начать работу</a>
-                        <a href="#" class="footer__anchor go" data-point="faq">FAQ</a>
+                        <a href="#" class="footer__anchor go" data-point="howwork" data-translate="menu1">Как работает?</a>
+                        <a href="#" class="footer__anchor go" data-point="finance" data-translate="menu2">Финансовая модель</a>
+                        <a href="#" class="footer__anchor go" data-point="ref" data-translate="menu3">Реферальная программа</a>
+                        <a href="#" class="footer__anchor go" data-point="howstart" data-translate="menu4">Как начать работу</a>
+                        <a href="#" class="footer__anchor go" data-point="faq" data-translate="menu5">FAQ</a>
                     </div>
                     <div class="footer__part item">
                         <p class="footer__copy">© 2025 Yo.Go!. All rights reserved.</p>
                         <div class="footer__btns item">
-                            <a href="#" class="footer__link">Поддержка</a>
+                            <a href="#" class="footer__link" data-translate="support">Поддержка</a>
                         </div>
                     </div>
                 </div>
