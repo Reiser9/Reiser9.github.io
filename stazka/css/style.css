@@ -356,6 +356,33 @@ input::-webkit-inner-spin-button{
 	color: #fff;
 }
 
+.services__link.active{
+	background: #E6511F;
+}
+
+.services__link--tag, .services__link--title, .services__link--text, .services__link--price,
+.services__link--more, .services__link--more svg{
+	transition: .2s linear;
+}
+
+.services__link.active .services__link--tag{
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.services__link.active .services__link--title, .services__link.active .services__link--text,
+.services__link.active .services__link--price{
+	color: #fff;
+}
+
+.services__link.active .services__link--more{
+	background: #fff;
+}
+
+.services__link.active .services__link--more svg{
+	color: #E6531F;
+}
+
 .how{
 	width: 100%;
 	padding: 5rem 0rem 6rem 0;
@@ -949,6 +976,7 @@ input::-webkit-inner-spin-button{
 	text-align: right;
 	font-size: 1.4rem;
 	margin-top: 1.2rem;
+	display: none;
 }
 
 @media(any-hover: hover){
@@ -967,33 +995,6 @@ input::-webkit-inner-spin-button{
 
 	.header__nav--link:hover{
 		color: #E6511F;
-	}
-
-	.services__link:hover{
-		background: #E6511F;
-	}
-
-	.services__link--tag, .services__link--title, .services__link--text, .services__link--price,
-	.services__link--more, .services__link--more svg{
-		transition: .2s linear;
-	}
-
-	.services__link:hover .services__link--tag{
-		border: 1px solid #fff;
-		color: #fff;
-	}
-
-	.services__link:hover .services__link--title, .services__link:hover .services__link--text,
-	.services__link:hover .services__link--price{
-		color: #fff;
-	}
-
-	.services__link:hover .services__link--more{
-		background: #fff;
-	}
-
-	.services__link:hover .services__link--more svg{
-		color: #E6531F;
 	}
 }
 /* Адаптив */
