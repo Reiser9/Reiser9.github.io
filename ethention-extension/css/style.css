@@ -1,0 +1,853 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+:root{
+	font-size: 10px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 1.6rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    background: #050505;
+    color: #fff;
+}
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+a, button, input, textarea, select{
+	transition: .2s linear;
+	font-size: 1.6rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h5, p{
+	margin: 0;
+	font-weight: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	appearance: none;
+}
+
+@media (any-hover: hover) {
+    button{
+        cursor: pointer;
+    }
+}
+
+.extensionBgInner{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.extensionBg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.extensionLogo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 6.8rem 2rem 5.1rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.extensionLogo img{
+	width: 80px;
+	height: 80px;
+}
+
+.extensionLogin{
+    width: 100%;
+    padding: 2.6rem 2.1rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.extensionLoginWrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 10rem;
+}
+
+.extensionLoginText{
+    color: #666;
+    text-align: center;
+}
+
+.extensionLoginText span{
+    color: #fff;
+}
+
+.extensionLoginClient{
+    background: none;
+    border: 1px solid #15F2CD;
+    border-radius: 50px;
+    padding: 0.7rem 1rem;
+    font-family: 'OpenSans', sans-serif;
+    color: #15F2CD;
+}
+
+.extensionLoginClient:hover{
+    color: #000;
+    background: #15F2CD;
+}
+
+.extensionLoginInputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.extensionLoginButton{
+    width: 100%;
+    text-align: center;
+    padding: 1.1rem;
+    background: #080808;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.extensionLoginButton svg{
+    width: 14px;
+    flex-shrink: 0;
+    position: relative;
+    top: 2px;
+}
+
+.extensionLoginButton.disabled{
+    background: #4D4D4D;
+    pointer-events: none;
+}
+
+.extensionLoginButton:hover{
+    background: #fff;
+    color: #000;
+}
+
+.extensionLoginInputInner{
+    width: 100%;
+    position: relative;
+}
+
+.extensionLoginInputInner svg{
+    width: 14px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 22px;
+    pointer-events: none;
+    color: #666;
+}
+
+.extensionLoginInput{
+    width: 100%;
+    /* padding: 1.2rem 5.2rem 1.2rem 2.2rem; */
+    padding: 1.2rem 2.2rem;
+    background: rgba(19, 19, 19, .83);
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 12px;
+    outline: none;
+    color: #fff;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.extensionLoginInput::placeholder{
+    color: #666;
+}
+
+.clientIdTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.clientAttentionBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 3rem 0;
+}
+
+.clientAttentionTitleInner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.clientAttentionTitleInner span{
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.9rem;
+    font-weight: 700;
+    background: rgba(19, 19, 19, .59);
+    border: 1px solid rgba(255, 255, 255, .34);
+}
+
+.clientAttentionTitle{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.clientAttentionText{
+    font-weight: 500;
+    color: #D0D0D0;
+}
+
+.extensionHeader{
+    width: 100%;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(to top, rgba(0, 0, 0, .84), rgba(0, 0, 0, 0));
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #232323;
+}
+
+.extensionHeader img{
+	width: 37px;
+	height: 37px;
+}
+
+.extensionCount{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 4.3rem 0rem 6.2rem 0;
+}
+
+.extensionCountValue{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extensionCountValue p{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.extensionCountValue p span{
+    position: relative;
+    z-index: 2;
+}
+
+.extensionCountValue p:before, .extensionCountValue p:after{
+    content: "";
+    display: block;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: #313131;
+    filter: blur(20px);
+    top: -9px;
+    right: -11px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.extensionCountValue p:after{
+    width: 106px;
+    height: 106px;
+    filter: blur(14px);
+    top: auto;
+    bottom: -50px;
+    right: auto;
+    left: -30px;
+}
+
+.extensionCountValue.green p{
+    background: #2E6D3B;
+}
+
+.extensionCountValue.green p:after{
+    background: #23DC5E;
+}
+
+.extensionCountValue.orange p{
+    background: #FFE2A9;
+}
+
+.extensionCountValue.orange p:after{
+    background: #DC9E23;
+}
+
+.extensionCountValue.red p{
+    background: #9A4C32;
+}
+
+.extensionCountValue.red p:after{
+    background: #DC5123;
+}
+
+.extensionCountTitle{
+    text-align: center;
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.extensionDailyWrap{
+    width: 100%;
+    padding: 0rem 1.5rem 6rem 1.5rem;
+}
+
+.extensionDaily{
+    width: 100%;
+    padding: 2rem 2.6rem 2.5rem 2rem;
+    background: linear-gradient(to bottom, #080808, #181818);
+    border: 1px solid #242424;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.extensionDailyTitleWrap{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.extensionDailyTitleInner{
+    width: 100%;
+    max-width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.extensionDailyTitle{
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.extensionDailyText{
+    color: #D0D0D0;
+    font-weight: 200;
+}
+
+.extensionDailyText span{
+    font-weight: 500;
+}
+
+.extensionDailyCount{
+    width: 62px;
+    height: 62px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'OpenSans', sans-serif;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 800;
+    border: 1px solid rgba(255, 255, 255, .34);
+    background: rgba(0, 0, 0, .59);
+}
+
+.extensionDailyItems{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.extensionDailyItem{
+    width: calc(100% / 5 - 40px / 5);
+    height: 4px;
+    border-radius: 50px;
+    background: #535353;
+}
+
+.extensionDailyItem.active{
+    background: #fff;
+}
+
+.extensionFlashInner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 5rem 0 3rem 0;
+}
+
+.extensionFlashIcon, .extensionInfoIcon{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, .34);
+    background: rgba(0, 0, 0, .59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extensionInfoIcon img{
+	width: 31px;
+	height: 31px;
+}
+
+.extensionFlashIcon svg{
+    width: 28px;
+    flex-shrink: 0;
+    color: #fff;
+}
+
+.extensionInfoWindow{
+    width: 100%;
+    padding: 2.7rem 4rem 2.7rem 2.3rem;
+    border-radius: 15px;
+    border: 1px solid #242424;
+    background: linear-gradient(to bottom, #080808, #181818);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.extensionInfoTextBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.extensionInfoTitle{
+    color: #D0D0D0;
+    font-weight: 500;
+}
+
+.extensionInfoText{
+    font-weight: 200;
+    color: #D0D0D0;
+}
+
+.extensionInfoClaim{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 1.2rem;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+	margin-top: 2rem;
+}
+
+.extensionInfoClaim svg{
+    width: 22px;
+    flex-shrink: 0;
+    color: #000;
+}
+
+.extensionInfoChoice{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1.6rem 0;
+}
+
+.extensionInfoChoice:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #666;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.extensionInfoChoice span{
+    padding: 0rem 1.3rem;
+    color: #666;
+    font-size: 1.8rem;
+    font-weight: 200;
+    background: #181818;
+    position: relative;
+    z-index: 2;
+}
+
+.extensionInfoX2 span{
+    width: 100%;
+    background: #090909;
+    border: 1px solid #fff;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    position: relative;
+    position: relative;
+    top: -4px; 
+    right: -4px;
+    transition: .2s linear;
+}
+
+.extensionInfoX2:hover span{
+    top: -2px;
+    right: -2px;
+}
+
+.extensionInfoX2{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    background: #090909;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.extensionInfoX2 span svg{
+    width: 22px;
+    flex-shrink: 0;
+}
+
+.extensionDoubleBack{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    background: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    margin-top: 6rem;
+}
+
+.extensionDoubleBack svg{
+    width: 14px;
+    flex-shrink: 0;
+    color: #fff;
+}
+
+.extensionGame{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.extensionGame p{
+    flex-shrink: 0;
+    color: #D0D0D0;
+    font-weight: 200;
+}
+
+.extensionGameChoice{
+    width: 100%;
+    padding: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, .59);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.extensionGameChoice:before{
+    content: "";
+    display: block;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    filter: blur(60px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+
+.extensionGameChoice:first-child{
+    border: 1px solid rgba(220, 158, 35, .34);
+}
+
+.extensionGameChoice:first-child:before{
+    background: #DC9E23;
+}
+
+.extensionGameChoice:last-child{
+    border: 1px solid rgba(109, 204, 188, .34);
+}
+
+.extensionGameChoice:last-child:before{
+    background: #6DCCBC;
+}
+
+.extensionGameChoiceQuestion{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .05);
+    border: 1px solid rgba(255, 255, 255, .34);
+    position: relative;
+    z-index: 2;
+}
+
+.extensionGameChoiceQuestion svg{
+    width: 23px;
+    flex-shrink: 0;
+}
+
+.extensionGameChoice:first-child .extensionGameChoiceQuestion svg{
+    color: #DC9E23;
+}
+
+.extensionGameChoice:last-child .extensionGameChoiceQuestion svg{
+    color: #6DCCBC;
+}
+
+.extensionGameChoiceText{
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.modal{
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+    background: rgba(0, 0, 0, .57);
+	opacity: 0;
+	pointer-events: none;
+	transition: .2s linear;
+}
+
+.modal.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modalInner{
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 3.5rem);
+    margin: 1.75rem auto;
+}
+
+@media (max-width: 768px) {
+    .modalInner{
+        max-width: 460px;
+    }
+}
+
+.extensionModal{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    position: relative;
+	background: linear-gradient(to bottom, #080808, #181818);
+	max-width: 385px;
+}
+
+.upgradeModalClose{
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    z-index: 5;
+}
+
+.clientIdBlock{
+    width: 100%;
+    max-width: 340px;
+    padding: 0.8rem 1.2rem 0.9rem 1.9rem;
+    border-radius: 12px;
+    background: rgba(19, 19, 19, 0.83);
+    border: 1px solid rgba(255, 255, 255, .4);
+    font-family: 'OpenSans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+	margin-top: 1.5rem;
+}
+
+.clientIdCopy{
+    background: #101010;
+    border-radius: 50px;
+    padding: 0.4rem 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.8rem;
+}
+
+.clientIdCopy svg{
+    width: 21px;
+    flex-shrink: 0;
+    color: #fff;
+}
+
+.clientIdCopy:hover, .clientButton:hover{
+    opacity: 0.7;
+}
