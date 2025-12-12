@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <div class="header__content">
+                    <div class="header__btns">
+                        <button class="header__language header__language_active">
+                            Ру
+                        </button>
+
+                        <button class="header__language">
+                            En
+                        </button>
+
+                        <a href="#" class="item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2001_622)">
+                                    <path
+                                        d="M13.1978 3.99894C10.6576 1.45874 6.53914 1.45874 3.99894 3.99894C1.45874 6.53914 1.45874 10.6576 3.99894 13.1978C6.53914 15.738 10.6576 15.738 13.1978 13.1978C15.738 10.6576 15.738 6.53914 13.1978 3.99894ZM2.51841 2.51841C5.87628 -0.839469 11.3205 -0.839469 14.6784 2.51841C17.7856 5.6257 18.0175 10.5195 15.374 13.8935L19.6934 18.2128C20.1022 18.6217 20.1022 19.2845 19.6934 19.6934C19.2845 20.1022 18.6217 20.1022 18.2128 19.6934L13.8935 15.374C10.5195 18.0175 5.6257 17.7856 2.51841 14.6784C-0.839469 11.3205 -0.839469 5.87628 2.51841 2.51841Z"
+                                        fill="#004A44" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2001_622">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                        <button class="burger-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-menu-icon lucide-menu">
+                                <path d="M4 12h16" />
+                                <path d="M4 18h16" />
+                                <path d="M4 6h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="header__nav">
+                        <a href="#" class="header__link">Основатель</a>
+                        <a href="#" class="header__link">Группа компаний</a>
+                        <a href="#" class="header__link">Новости</a>
+                        <a href="#" class="header__link">Мероприятия</a>
+                        <a href="#" class="header__link">Инвестиции</a>
+                        <a href="#" class="header__link">Рабочие группы</a>
+                        <a href="#" class="header__link">География</a>
+                        <a href="#" class="header__link">Продукты</a>
+                        <a href="#" class="header__link">Менторство</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section section_default-bg section_first">
+                <div class="container">
+                    <div class="inner">
+                        <div class="head">
+                            <h1 class="title">НОВОСТИ</h1>
+
+                            <form action="#" class="search">
+                                <button class="search__btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2049_564)">
+                                            <path
+                                                d="M13.1978 3.99894C10.6576 1.45874 6.53914 1.45874 3.99894 3.99894C1.45874 6.53914 1.45874 10.6576 3.99894 13.1978C6.53914 15.738 10.6576 15.738 13.1978 13.1978C15.738 10.6576 15.738 6.53914 13.1978 3.99894ZM2.51841 2.51841C5.87628 -0.839469 11.3205 -0.839469 14.6784 2.51841C17.7856 5.6257 18.0175 10.5195 15.374 13.8935L19.6934 18.2128C20.1022 18.6217 20.1022 19.2845 19.6934 19.6934C19.2845 20.1022 18.6217 20.1022 18.2128 19.6934L13.8935 15.374C10.5195 18.0175 5.6257 17.7856 2.51841 14.6784C-0.839469 11.3205 -0.839469 5.87628 2.51841 2.51841Z"
+                                                fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2049_564">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+
+                                <input type="text" class="search__input" placeholder="Поиск">
+                            </form>
+                        </div>
+
+                        <div class="news">
+                            <div class="big-slider__slide news__item news__item_l">
+                                <div class="big-slider-card">
+                                    <a href="#" class="big-slider-card__img ibg">
+                                        <img src="images/events/4.png" alt="pic">
+                                    </a>
+
+                                    <div class="big-slider__content big-slider-card__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <a href="#" class="big-slider__title text">
+                                            Ждать или инвестировать?
+                                        </a>
+
+                                        <p class="big-slider__text text">
+                                            Формирование стандартов отрасли и их популяризация
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="big-slider-sub-card news__item">
+                                <a href="#" class="big-slider-sub-card__img ibg">
+                                    <img src="images/events/2.png" alt="pic">
+                                </a>
+
+                                <div
+                                    class="big-slider__content big-slider__content_acid big-slider-sub-card__content">
+                                    <p class="card-slider__date">
+                                        10-14 АПРЕЛЯ 2024
+                                    </p>
+
+                                    <a href="#" class="big-slider__title text">
+                                        Ждать или инвестировать?
+                                    </a>
+
+                                    <p class="big-slider__text text">
+                                        Формирование стандартов отрасли и их популяризация
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="big-slider-sub-card news__item">
+                                <a href="#" class="big-slider-sub-card__img ibg">
+                                    <img src="images/events/2.png" alt="pic">
+                                </a>
+
+                                <div
+                                    class="big-slider__content big-slider-sub-card__content">
+                                    <p class="card-slider__date">
+                                        10-14 АПРЕЛЯ 2024
+                                    </p>
+
+                                    <a href="#" class="big-slider__title text">
+                                        Ждать или инвестировать?
+                                    </a>
+
+                                    <p class="big-slider__text text">
+                                        Формирование стандартов отрасли и их популяризация
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="big-slider-sub-card news__item">
+                                <a href="#" class="big-slider-sub-card__img ibg">
+                                    <img src="images/events/2.png" alt="pic">
+                                </a>
+
+                                <div
+                                    class="big-slider__content big-slider__content_acid big-slider-sub-card__content">
+                                    <p class="card-slider__date">
+                                        10-14 АПРЕЛЯ 2024
+                                    </p>
+
+                                    <a href="#" class="big-slider__title text">
+                                        Ждать или инвестировать?
+                                    </a>
+
+                                    <p class="big-slider__text text">
+                                        Формирование стандартов отрасли и их популяризация
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="big-slider__slide news__item news__item_l">
+                                <div class="big-slider-card">
+                                    <a href="#" class="big-slider-card__img ibg">
+                                        <img src="images/events/4.png" alt="pic">
+                                    </a>
+
+                                    <div class="big-slider__content big-slider-card__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <a href="#" class="big-slider__title text">
+                                            Ждать или инвестировать?
+                                        </a>
+
+                                        <p class="big-slider__text text">
+                                            Формирование стандартов отрасли и их популяризация
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="big-slider-sub-card news__item">
+                                <a href="#" class="big-slider-sub-card__img ibg">
+                                    <img src="images/events/2.png" alt="pic">
+                                </a>
+
+                                <div
+                                    class="big-slider__content big-slider-sub-card__content">
+                                    <p class="card-slider__date">
+                                        10-14 АПРЕЛЯ 2024
+                                    </p>
+
+                                    <a href="#" class="big-slider__title text">
+                                        Ждать или инвестировать?
+                                    </a>
+
+                                    <p class="big-slider__text text">
+                                        Формирование стандартов отрасли и их популяризация
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="inner">
+                        <div class="head">
+                            <h2 class="title">ВИДЕО</h2>
+                            <div class="slider-btns">
+                                <button class="slider-btn slider-btn-prev">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 10C16.3 10 17.7083 10 18.5 10" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7 5C3 9 2.33333 9.66667 2 10L7 15" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="slider-btn slider-btn-next">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 10C3.7 10 2.29167 10 1.5 10" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 15C17 11 17.6667 10.3333 18 10L13 5" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper video-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide video-slider__slide">
+                                    <div class="video-slider__frame">
+                                        <img src="images/preview.png" alt="preview">
+
+                                        <div class="video-slider__btn">
+                                            <svg width="30" height="36" viewBox="0 0 30 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30 18L-1.63133e-06 35.3205L-1.17124e-07 0.67949L30 18Z"
+                                                    fill="#FDFFFF" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-slider__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <div class="video-slider__bottom">
+                                            <p class="video-slider__title">
+                                                Конференция в отеле Ритц Карлтон
+                                            </p>
+                                            <div class="video-slider__views">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 16.3299C9.61004 16.3299 7.67004 14.3899 7.67004 11.9999C7.67004 9.60992 9.61004 7.66992 12 7.66992C14.39 7.66992 16.33 9.60992 16.33 11.9999C16.33 14.3899 14.39 16.3299 12 16.3299ZM12 9.16992C10.44 9.16992 9.17004 10.4399 9.17004 11.9999C9.17004 13.5599 10.44 14.8299 12 14.8299C13.56 14.8299 14.83 13.5599 14.83 11.9999C14.83 10.4399 13.56 9.16992 12 9.16992Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M12 21.02C8.23996 21.02 4.68996 18.82 2.24996 15C1.18996 13.35 1.18996 10.66 2.24996 8.99998C4.69996 5.17998 8.24996 2.97998 12 2.97998C15.75 2.97998 19.3 5.17998 21.74 8.99998C22.8 10.65 22.8 13.34 21.74 15C19.3 18.82 15.75 21.02 12 21.02ZM12 4.47998C8.76996 4.47998 5.67996 6.41998 3.51996 9.80998C2.76996 10.98 2.76996 13.02 3.51996 14.19C5.67996 17.58 8.76996 19.52 12 19.52C15.23 19.52 18.32 17.58 20.48 14.19C21.23 13.02 21.23 10.98 20.48 9.80998C18.32 6.41998 15.23 4.47998 12 4.47998Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                                15 000 просмотров
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide video-slider__slide">
+                                    <div class="video-slider__frame">
+                                        <img src="images/preview.png" alt="preview">
+
+                                        <div class="video-slider__btn">
+                                            <svg width="30" height="36" viewBox="0 0 30 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30 18L-1.63133e-06 35.3205L-1.17124e-07 0.67949L30 18Z"
+                                                    fill="#FDFFFF" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-slider__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <div class="video-slider__bottom">
+                                            <p class="video-slider__title">
+                                                Конференция в отеле Ритц Карлтон
+                                            </p>
+                                            <div class="video-slider__views">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 16.3299C9.61004 16.3299 7.67004 14.3899 7.67004 11.9999C7.67004 9.60992 9.61004 7.66992 12 7.66992C14.39 7.66992 16.33 9.60992 16.33 11.9999C16.33 14.3899 14.39 16.3299 12 16.3299ZM12 9.16992C10.44 9.16992 9.17004 10.4399 9.17004 11.9999C9.17004 13.5599 10.44 14.8299 12 14.8299C13.56 14.8299 14.83 13.5599 14.83 11.9999C14.83 10.4399 13.56 9.16992 12 9.16992Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M12 21.02C8.23996 21.02 4.68996 18.82 2.24996 15C1.18996 13.35 1.18996 10.66 2.24996 8.99998C4.69996 5.17998 8.24996 2.97998 12 2.97998C15.75 2.97998 19.3 5.17998 21.74 8.99998C22.8 10.65 22.8 13.34 21.74 15C19.3 18.82 15.75 21.02 12 21.02ZM12 4.47998C8.76996 4.47998 5.67996 6.41998 3.51996 9.80998C2.76996 10.98 2.76996 13.02 3.51996 14.19C5.67996 17.58 8.76996 19.52 12 19.52C15.23 19.52 18.32 17.58 20.48 14.19C21.23 13.02 21.23 10.98 20.48 9.80998C18.32 6.41998 15.23 4.47998 12 4.47998Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                                15 000 просмотров
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide video-slider__slide">
+                                    <div class="video-slider__frame">
+                                        <img src="images/preview.png" alt="preview">
+
+                                        <div class="video-slider__btn">
+                                            <svg width="30" height="36" viewBox="0 0 30 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30 18L-1.63133e-06 35.3205L-1.17124e-07 0.67949L30 18Z"
+                                                    fill="#FDFFFF" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-slider__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <div class="video-slider__bottom">
+                                            <p class="video-slider__title">
+                                                Конференция в отеле Ритц Карлтон
+                                            </p>
+                                            <div class="video-slider__views">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 16.3299C9.61004 16.3299 7.67004 14.3899 7.67004 11.9999C7.67004 9.60992 9.61004 7.66992 12 7.66992C14.39 7.66992 16.33 9.60992 16.33 11.9999C16.33 14.3899 14.39 16.3299 12 16.3299ZM12 9.16992C10.44 9.16992 9.17004 10.4399 9.17004 11.9999C9.17004 13.5599 10.44 14.8299 12 14.8299C13.56 14.8299 14.83 13.5599 14.83 11.9999C14.83 10.4399 13.56 9.16992 12 9.16992Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M12 21.02C8.23996 21.02 4.68996 18.82 2.24996 15C1.18996 13.35 1.18996 10.66 2.24996 8.99998C4.69996 5.17998 8.24996 2.97998 12 2.97998C15.75 2.97998 19.3 5.17998 21.74 8.99998C22.8 10.65 22.8 13.34 21.74 15C19.3 18.82 15.75 21.02 12 21.02ZM12 4.47998C8.76996 4.47998 5.67996 6.41998 3.51996 9.80998C2.76996 10.98 2.76996 13.02 3.51996 14.19C5.67996 17.58 8.76996 19.52 12 19.52C15.23 19.52 18.32 17.58 20.48 14.19C21.23 13.02 21.23 10.98 20.48 9.80998C18.32 6.41998 15.23 4.47998 12 4.47998Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                                15 000 просмотров
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide video-slider__slide">
+                                    <div class="video-slider__frame">
+                                        <img src="images/preview.png" alt="preview">
+
+                                        <div class="video-slider__btn">
+                                            <svg width="30" height="36" viewBox="0 0 30 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30 18L-1.63133e-06 35.3205L-1.17124e-07 0.67949L30 18Z"
+                                                    fill="#FDFFFF" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-slider__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <div class="video-slider__bottom">
+                                            <p class="video-slider__title">
+                                                Конференция в отеле Ритц Карлтон
+                                            </p>
+                                            <div class="video-slider__views">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 16.3299C9.61004 16.3299 7.67004 14.3899 7.67004 11.9999C7.67004 9.60992 9.61004 7.66992 12 7.66992C14.39 7.66992 16.33 9.60992 16.33 11.9999C16.33 14.3899 14.39 16.3299 12 16.3299ZM12 9.16992C10.44 9.16992 9.17004 10.4399 9.17004 11.9999C9.17004 13.5599 10.44 14.8299 12 14.8299C13.56 14.8299 14.83 13.5599 14.83 11.9999C14.83 10.4399 13.56 9.16992 12 9.16992Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M12 21.02C8.23996 21.02 4.68996 18.82 2.24996 15C1.18996 13.35 1.18996 10.66 2.24996 8.99998C4.69996 5.17998 8.24996 2.97998 12 2.97998C15.75 2.97998 19.3 5.17998 21.74 8.99998C22.8 10.65 22.8 13.34 21.74 15C19.3 18.82 15.75 21.02 12 21.02ZM12 4.47998C8.76996 4.47998 5.67996 6.41998 3.51996 9.80998C2.76996 10.98 2.76996 13.02 3.51996 14.19C5.67996 17.58 8.76996 19.52 12 19.52C15.23 19.52 18.32 17.58 20.48 14.19C21.23 13.02 21.23 10.98 20.48 9.80998C18.32 6.41998 15.23 4.47998 12 4.47998Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                                15 000 просмотров
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide video-slider__slide">
+                                    <div class="video-slider__frame">
+                                        <img src="images/preview.png" alt="preview">
+
+                                        <div class="video-slider__btn">
+                                            <svg width="30" height="36" viewBox="0 0 30 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30 18L-1.63133e-06 35.3205L-1.17124e-07 0.67949L30 18Z"
+                                                    fill="#FDFFFF" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-slider__content">
+                                        <p class="card-slider__date card-slider-front__date">
+                                            10-14 АПРЕЛЯ 2024
+                                        </p>
+
+                                        <div class="video-slider__bottom">
+                                            <p class="video-slider__title">
+                                                Конференция в отеле Ритц Карлтон
+                                            </p>
+                                            <div class="video-slider__views">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 16.3299C9.61004 16.3299 7.67004 14.3899 7.67004 11.9999C7.67004 9.60992 9.61004 7.66992 12 7.66992C14.39 7.66992 16.33 9.60992 16.33 11.9999C16.33 14.3899 14.39 16.3299 12 16.3299ZM12 9.16992C10.44 9.16992 9.17004 10.4399 9.17004 11.9999C9.17004 13.5599 10.44 14.8299 12 14.8299C13.56 14.8299 14.83 13.5599 14.83 11.9999C14.83 10.4399 13.56 9.16992 12 9.16992Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M12 21.02C8.23996 21.02 4.68996 18.82 2.24996 15C1.18996 13.35 1.18996 10.66 2.24996 8.99998C4.69996 5.17998 8.24996 2.97998 12 2.97998C15.75 2.97998 19.3 5.17998 21.74 8.99998C22.8 10.65 22.8 13.34 21.74 15C19.3 18.82 15.75 21.02 12 21.02ZM12 4.47998C8.76996 4.47998 5.67996 6.41998 3.51996 9.80998C2.76996 10.98 2.76996 13.02 3.51996 14.19C5.67996 17.58 8.76996 19.52 12 19.52C15.23 19.52 18.32 17.58 20.48 14.19C21.23 13.02 21.23 10.98 20.48 9.80998C18.32 6.41998 15.23 4.47998 12 4.47998Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                                15 000 просмотров
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="section__btn section__btn_dark btn">
+                            больше
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 9.49995C13.2027 9.49995 16.9595 9.49995 17.5 9.49995M17.5 9.49995L12.5 5M17.5 9.49995L12.5 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__column footer__column_l">
+                        <div class="footer__links">
+                            <a href="#" class="footer__link">основатель</a>
+                            <a href="#" class="footer__link">ГРУППА КОМПАНИЙ</a>
+                            <a href="#" class="footer__link">НОВОСТИ</a>
+                            <a href="#" class="footer__link">МЕРОПРИЯТИЯ</a>
+                            <a href="#" class="footer__link">ИНВЕСТИЦИИ</a>
+                            <a href="#" class="footer__link">РАБОЧИЕ ГРУППЫ</a>
+                            <a href="#" class="footer__link">ГЕОГРАФИЯ</a>
+                            <a href="#" class="footer__link">ПРОДУКТЫ</a>
+                            <a href="#" class="footer__link">МЕНТЕРСТВО</a>
+                        </div>
+                    </div>
+                    <div class="footer__column footer__column_s">
+                        <div class="footer__contact">
+                            <div class="footer__part">
+                                <p class="footer__label">ПАРТНЁРАМ</p>
+                                <p class="footer__text text">
+                                    <span>Официальные партнёры мероприятия: </span>
+                                    <span>РосТехб РосАтом, АФК Система, МинЦифры РФ</span>
+                                </p>
+                            </div>
+                            <div class="footer__part">
+                                <p class="footer__label">СМИ</p>
+                                <p class="footer__text text">
+                                    <span>По вопросам рекламы, стендов и выступлений: </span>
+                                    <span>media@data-economy.ru</span>
+                                    <span>+7 921 944-65-34</span>
+                                </p>
+                            </div>
+                            <div class="footer__part">
+                                <p class="footer__label">КОНТАКТЫ</p>
+                                <p class="footer__text text">
+                                    <span>Официальные партнёры мероприятия: РусСофт, АЛРИИ, Деловая Россия Москва</span>
+                                    <span>ОГРН 1217700300840</span>
+                                    <span>Курдинская площадь, дом 1</span>
+                                    <span>+7 915 298-35-05</span>
+                                </p>
+                            </div>
+                            <div class="footer__socials">
+                                <a href="#" class="footer__social">
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.23741 6.45746C6.06923 4.34063 9.29121 2.94509 10.9033 2.27083C15.5063 0.345685 16.4627 0.0112675 17.0861 0.000107056C17.2232 -0.00220392 17.5298 0.0319646 17.7284 0.193996C17.8961 0.330811 17.9422 0.51563 17.9643 0.645347C17.9864 0.775063 18.0139 1.07056 17.992 1.30145C17.7426 3.93683 16.6633 10.3322 16.1142 13.2839C15.8818 14.5328 15.4244 14.9516 14.9815 14.9926C14.0189 15.0816 13.288 14.3529 12.3558 13.7385C10.897 12.7769 10.0729 12.1783 8.65691 11.24C7.02048 10.1557 8.08131 9.55967 9.0139 8.58566C9.25797 8.33076 13.4988 4.45196 13.5809 4.10009C13.5912 4.05608 13.6007 3.89205 13.5038 3.80543C13.4069 3.71881 13.2639 3.74843 13.1606 3.77199C13.0143 3.80538 10.6839 5.35425 6.16938 8.41859C5.5079 8.87533 4.90875 9.09787 4.37193 9.08621C3.78013 9.07335 2.64175 8.74974 1.79548 8.47313C0.757494 8.13385 -0.0674757 7.95447 0.00436067 7.37827C0.0417775 7.07814 0.452793 6.77121 1.23741 6.45746Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" class="footer__social">
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.23741 6.45746C6.06923 4.34063 9.29121 2.94509 10.9033 2.27083C15.5063 0.345685 16.4627 0.0112675 17.0861 0.000107056C17.2232 -0.00220392 17.5298 0.0319646 17.7284 0.193996C17.8961 0.330811 17.9422 0.51563 17.9643 0.645347C17.9864 0.775063 18.0139 1.07056 17.992 1.30145C17.7426 3.93683 16.6633 10.3322 16.1142 13.2839C15.8818 14.5328 15.4244 14.9516 14.9815 14.9926C14.0189 15.0816 13.288 14.3529 12.3558 13.7385C10.897 12.7769 10.0729 12.1783 8.65691 11.24C7.02048 10.1557 8.08131 9.55967 9.0139 8.58566C9.25797 8.33076 13.4988 4.45196 13.5809 4.10009C13.5912 4.05608 13.6007 3.89205 13.5038 3.80543C13.4069 3.71881 13.2639 3.74843 13.1606 3.77199C13.0143 3.80538 10.6839 5.35425 6.16938 8.41859C5.5079 8.87533 4.90875 9.09787 4.37193 9.08621C3.78013 9.07335 2.64175 8.74974 1.79548 8.47313C0.757494 8.13385 -0.0674757 7.95447 0.00436067 7.37827C0.0417775 7.07814 0.452793 6.77121 1.23741 6.45746Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column footer__column_l">
+                        <div class="footer__btns">
+                            <p class="footer__label">ПРЕЗЕНТАЦИИ</p>
+                            <a href="#" class="footer__btn btn">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 2C11 12.7027 11 16.4595 11 17M11 17L15.5 12M11 17L6.5 12"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                О КОМПАНИИ
+                            </a>
+                            <a href="#" class="footer__btn btn">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 2C11 12.7027 11 16.4595 11 17M11 17L15.5 12M11 17L6.5 12"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                КАТАЛОГ
+                            </a>
+                            <a href="#" class="footer__btn btn">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 2C11 12.7027 11 16.4595 11 17M11 17L15.5 12M11 17L6.5 12"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                СТАНДАРТИЗАЦИЯ
+                            </a>
+
+                            <a href="#" class="footer__btn btn">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 2C11 12.7027 11 16.4595 11 17M11 17L15.5 12M11 17L6.5 12"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                FACT SHEET (ENGLISH VERSION)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
